@@ -86,6 +86,10 @@ cd $VERSION
 make
 sudo make install
 
+export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+
+cd $HOME/programs/$FOLDER_NAME/$VERSION
+
 sudo chown -R $USER_NAME .
 
 wget http://curl.haxx.se/ca/cacert.pem
