@@ -40,3 +40,15 @@ cd $VERSION
 ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ssl=$HOME/programs/$FOLDER_NAME_OPENSSL/$OPENSSL_VERSION
 make
 sudo make install
+
+cd $HOME/programs/$FOLDER_NAME/$VERSION
+sudo chown -R $(whoami) .
+
+touch .envrc
+echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+echo "" >> .envrc
+direnv allow
+
+cd $HOME/sources/$FOLDER_NAME
+rm -rf $VERSION
+rm "otp_src_$VERSION.tar.gz"
