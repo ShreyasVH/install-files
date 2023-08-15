@@ -1,8 +1,8 @@
 FOLDER_NAME=elixir
-VERSION=1.15.4
+VERSION=1.15.3
 
 FOLDER_NAME_ERLANG=erlang
-ERLANG_VERSION=25.3.2.5
+ERLANG_VERSION=26.0.2
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -32,5 +32,19 @@ export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
 
 git clone https://github.com/elixir-lang/elixir.git
 cd elixir
+git checkout "v"$VERSION
 make
 sudo make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION
+
+cd $HOME/programs/$FOLDER_NAME/$VERSION
+sudo chown -R $(whoami) .
+
+touch .envrc
+echo 'export PATH=$HOME/programs/'"$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
+echo "" >> .envrc
+echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+echo "" >> .envrc
+direnv allow
+
+cd $HOME/sources/$FOLDER_NAME
+rm -rf elixir
