@@ -1,5 +1,5 @@
 FOLDER_NAME=elasticsearch
-VERSION=8.9.0
+VERSION=7.16.3
 
 JAVA_FOLDER_NAME=java
 JAVA_VERSION=17.0.7
@@ -32,7 +32,8 @@ touch start.sh
 echo "elasticsearch -d" >> start.sh
 
 touch stop.sh
-cp ~/workspace/myProjects/config-samples/elasticsearch/$VERSION/elasticsearch.yml config/
+rm config/elasticsearch.yml
+ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
 echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
 echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
 
