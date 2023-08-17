@@ -27,7 +27,7 @@ wget "https://ftp.postgresql.org/pub/source/v$VERSION/postgresql-$VERSION.tar.gz
 tar -xvf "postgresql-$VERSION.tar.gz"
 mv "postgresql-"$VERSION $VERSION
 cd $VERSION
-./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
+./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --without-readline
 make
 sudo make install
 
