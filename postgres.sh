@@ -1,5 +1,5 @@
 FOLDER_NAME=postgres
-VERSION=15.3
+VERSION=15.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
