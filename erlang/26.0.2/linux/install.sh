@@ -26,6 +26,8 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
+	bash ../../$FOLDER_NAME_PERL/$PERL_VERSION/linux/install.sh
+
 	cd $HOME/sources/$FOLDER_NAME
 
 	make clean distclean
