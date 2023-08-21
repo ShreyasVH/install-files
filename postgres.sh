@@ -44,8 +44,10 @@ direnv allow
 mkdir data
 initdb -d data
 
-cp ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/postgresql.conf data/
-cp ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/pg_hba.conf data/
+rm data/postgresql.conf
+ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
+rm data/pg_hba.conf
+ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 pg_ctl start -D data
 PORT=$(grep 'port = ' data/postgresql.conf | awk '{print $3}')
