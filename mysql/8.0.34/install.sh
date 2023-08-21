@@ -62,7 +62,6 @@ echo "" >> .envrc
 direnv allow
 
 mkdir data
-mkdir logs
 ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/my.cnf ./
 
 touch start.sh
@@ -70,7 +69,7 @@ echo "mysqld_safe --defaults-file=my.cnf &" >> start.sh
 
 touch stop.sh
 VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
-echo "mysqladmin --defaults-file=my.cnf -u shreyas -S mysql_$VERSION_STRING.sock --password=password shutdown" >> stop.sh
+echo "mysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown" >> stop.sh
 
 mysqld --defaults-file=my.cnf --initialize 2> initialize_db.log
 TEMP_PASSWORD=$(grep -e 'A temporary password is generated for root@localhost: ' initialize_db.log | awk '{print $13}')
@@ -84,7 +83,7 @@ echo $PORT
 echo 'Sleeping for 60s'
 sleep 60
 
-mysql -u root -S "mysql_$VERSION_STRING.sock" -P $PORT <<EOF
+mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
 FLUSH PRIVILEGES;
 CREATE USER 'shreyas'@'%' IDENTIFIED with mysql_native_password BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'shreyas'@'%';
