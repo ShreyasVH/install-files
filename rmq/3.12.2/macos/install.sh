@@ -41,6 +41,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	echo "" >> .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/sbin:"'$PATH' >> .envrc
 	echo "" >> .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
 	direnv allow
 
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/sbin:$PATH
