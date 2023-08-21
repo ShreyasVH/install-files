@@ -32,6 +32,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
+
+	cd $HOME/sources/$FOLDER_NAME
+	rm -rf $VERSION
+	rm "make-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files
