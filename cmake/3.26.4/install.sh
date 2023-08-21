@@ -1,5 +1,5 @@
 FOLDER_NAME=cmake
-VERSION=3.26.3
+VERSION=3.26.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
