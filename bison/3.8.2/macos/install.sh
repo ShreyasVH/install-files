@@ -1,5 +1,5 @@
-FOLDER_NAME=gmp
-VERSION=6.2.1
+FOLDER_NAME=bison
+VERSION=3.8.2
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -22,11 +22,11 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/gmp/gmp-$VERSION.tar.xz"
-	tar -xvf "gmp-$VERSION.tar.xz"
-	mv "gmp-"$VERSION $VERSION
+	wget "https://ftp.gnu.org/gnu/bison/bison-$VERSION.tar.gz"
+	tar -xvf "bison-$VERSION.tar.gz"
+	mv "bison-$VERSION" $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --disable-static
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
 
@@ -35,7 +35,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "gmp-$VERSION.tar.xz"
+	rm "bison-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files

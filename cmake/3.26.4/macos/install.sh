@@ -1,5 +1,5 @@
-FOLDER_NAME=gmp
-VERSION=6.2.1
+FOLDER_NAME=cmake
+VERSION=3.26.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -19,14 +19,18 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+fi
+
+if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
+	mkdir "$HOME/programs/$BOOST_FOLDER_NAME"
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/gmp/gmp-$VERSION.tar.xz"
-	tar -xvf "gmp-$VERSION.tar.xz"
-	mv "gmp-"$VERSION $VERSION
+	wget "https://github.com/Kitware/CMake/releases/download/v$VERSION/cmake-$VERSION.tar.gz"
+	tar -xvf "cmake-$VERSION.tar.gz"
+	mv "cmake-"$VERSION $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --disable-static
+	./bootstrap --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
 
@@ -35,7 +39,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "gmp-$VERSION.tar.xz"
+	rm "cmake-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files

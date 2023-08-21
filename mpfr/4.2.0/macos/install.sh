@@ -43,3 +43,5 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	rm -rf $VERSION
 	rm "mpfr-$VERSION.tar.gz"
 fi
+
+cd $HOME/install-files

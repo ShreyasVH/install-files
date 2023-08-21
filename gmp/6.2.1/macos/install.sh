@@ -37,3 +37,5 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	rm -rf $VERSION
 	rm "gmp-$VERSION.tar.xz"
 fi
+
+cd $HOME/install-files
