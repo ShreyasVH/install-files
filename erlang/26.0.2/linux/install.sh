@@ -7,6 +7,8 @@ FOLDER_NAME_PERL=perl
 FOLDER_NAME_OPENSSL=openssl
 OPENSSL_VERSION=3.0.10
 
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -26,7 +28,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash ../../$FOLDER_NAME_PERL/$PERL_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_PERL/$PERL_VERSION/linux/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
