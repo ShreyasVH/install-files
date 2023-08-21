@@ -55,6 +55,7 @@ cd $HOME/programs/$FOLDER_NAME/$VERSION
 sudo chown -R $(whoami) .
 
 export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+export PATH=$HOME/programs/$CMAKE_FOLDER_NAME/$CMAKE_VERSION/bin:$PATH
 
 touch .envrc
 echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
