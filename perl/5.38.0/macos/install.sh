@@ -1,11 +1,6 @@
-FOLDER_NAME=erlang
-VERSION=26.0.2
-
-PERL_VERSION=5.38.0
-FOLDER_NAME_PERL=perl
-
-FOLDER_NAME_OPENSSL=openssl
-OPENSSL_VERSION=3.0.10
+FOLDER_NAME=perl
+VERSION=5.38.0
+MINOR_VERSION=5.0
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -28,20 +23,18 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	make clean distclean
-
-	export PATH=$HOME/programs/$FOLDER_NAME_PERL/$PERL_VERSION/bin:$PATH
-
-	wget "https://github.com/erlang/otp/releases/download/OTP-$VERSION/otp_src_$VERSION.tar.gz"
-	tar -xvf "otp_src_$VERSION.tar.gz"
-	mv "otp_src_$VERSION" $VERSION
+	wget "https://www.cpan.org/src/$MINOR_VERSION/perl-$VERSION.tar.gz"
+	tar -xvf "perl-$VERSION.tar.gz"
+	mv "perl-$VERSION" $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ssl=$HOME/programs/$FOLDER_NAME_OPENSSL/$OPENSSL_VERSION
+	./Configure -des -Dprefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
+
+	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
@@ -50,7 +43,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "otp_src_$VERSION.tar.gz"
+	rm "perl-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files
