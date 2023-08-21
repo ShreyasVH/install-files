@@ -7,6 +7,9 @@ FOLDER_NAME_PERL=perl
 FOLDER_NAME_OPENSSL=openssl
 OPENSSL_VERSION=3.0.10
 
+NCURSES_FOLDER_NAME=ncurses
+NCURSES_VERSION=6.4
+
 INSTALL_FILES_DIR=$HOME/install-files
 
 if [ ! -d "$HOME/sources" ]; then
@@ -40,6 +43,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	tar -xvf "otp_src_$VERSION.tar.gz"
 	mv "otp_src_$VERSION" $VERSION
 	cd $VERSION
+	export CPPFLAGS="-I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include/ncurses -I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include"
+	export LDFLAGS="-L$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/lib"
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ssl=$HOME/programs/$FOLDER_NAME_OPENSSL/$OPENSSL_VERSION
 	make
 	sudo make install
