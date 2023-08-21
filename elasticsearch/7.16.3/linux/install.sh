@@ -23,6 +23,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	direnv allow
 
 	touch start.sh
+	echo "sudo sysctl -w vm.max_map_count=262144" >> start.sh
+	echo "" >> start.sh
 	echo "elasticsearch -d" >> start.sh
 
 	touch stop.sh
