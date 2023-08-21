@@ -19,16 +19,19 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+
+	cd $HOME/sources/$FOLDER_NAME
+
+	wget "https://ftp.gnu.org/gnu/make/make-$VERSION.tar.gz"
+	tar -xvf "make-$VERSION.tar.gz"
+	mv "make-$VERSION" $VERSION
+	cd $VERSION
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
+	make
+	sudo make install
+
+	cd $HOME/programs/$FOLDER_NAME/$VERSION
+	sudo chown -R $(whoami) .
 fi
 
-cd $HOME/sources/$FOLDER_NAME
-
-make clean distclean
-
-wget "https://ftp.gnu.org/gnu/make/make-$VERSION.tar.gz"
-tar -xvf "make-$VERSION.tar.gz"
-mv "make-$VERSION" $VERSION
-cd $VERSION
-./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
-make
-sudo make install
+cd $HOME/install-files
