@@ -18,7 +18,9 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
+fi
 
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/linux/install.sh
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/linux/install.sh
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_MAKE/$MAKE_VERSION/linux/install.sh
@@ -58,4 +60,3 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	cd ..
 	rm "rabbitmq-server-generic-unix-$VERSION.tar.xz"
 fi
-
