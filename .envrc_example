@@ -1,1 +1,2 @@
+#wget path
 export PATH=$HOME/programs/wget/1.21.4/bin:/$PATH
