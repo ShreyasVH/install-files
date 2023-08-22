@@ -1,5 +1,5 @@
-FOLDER_NAME=pkg-config
-VERSION=0.29.2
+FOLDER_NAME=zlib
+VERSION=1.3
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -20,11 +20,13 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	wget "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
-	tar -xvf "pkg-config-$VERSION.tar.gz"
-	mv "pkg-config-$VERSION" $VERSION
+	cd $HOME/sources/$FOLDER_NAME
+
+	wget "https://www.zlib.net/zlib-$VERSION.tar.gz"
+	tar -xvf "zlib-$VERSION.tar.gz"
+	mv "zlib-$VERSION" $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
 
@@ -33,7 +35,5 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "pkg-config-$VERSION.tar.gz"
+	rm "zlib-$VERSION.tar.gz"
 fi
-
-cd $HOME/install-files
