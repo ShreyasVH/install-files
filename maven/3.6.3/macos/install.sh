@@ -18,7 +18,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
-	cd $HOME/sources/$FOLDER_NAME
-	rm -rf $VERSION
+	cd ..
 	rm "apache-maven-$VERSION-bin.tar.gz"
 fi
