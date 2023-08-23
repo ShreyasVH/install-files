@@ -1,5 +1,5 @@
-FOLDER_NAME=zlib
-VERSION=1.3
+FOLDER_NAME=ncurses
+VERSION=6.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -17,15 +17,20 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
 fi
 
+if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
+	mkdir "$HOME/programs/$BOOST_FOLDER_NAME"
+fi
+
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://www.zlib.net/zlib-$VERSION.tar.gz"
-	tar -xvf "zlib-$VERSION.tar.gz"
-	mv "zlib-$VERSION" $VERSION
+	wget "https://ftp.gnu.org/gnu/ncurses/ncurses-$VERSION.tar.gz"
+	tar -xvf "ncurses-$VERSION.tar.gz"
+	mv "ncurses-$VERSION" $VERSION
 	cd $VERSION
+
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
@@ -35,7 +40,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "zlib-$VERSION.tar.gz"
+	rm "ncurses-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files

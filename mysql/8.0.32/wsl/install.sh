@@ -13,11 +13,6 @@ OPENSSL_VERSION=3.0.10
 BISON_FOLDER_NAME=bison
 BIRSON_VERSION=3.8.2
 
-NCURSES_FOLDER_NAME=ncurses
-NCURSES_VERSION=6.4
-
-INSTALL_FILES_DIR=$HOME/install-files
-
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -34,17 +29,16 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
 fi
 
-if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$BOOST_FOLDER_NAME"
-fi
-
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+fi
 
-	bash $INSTALL_FILES_DIR/$CMAKE_FOLDER_NAME/$CMAKE_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$BISON_FOLDER_NAME/$BIRSON_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/linux/install.sh
+if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
+	mkdir "$HOME/programs/$BOOST_FOLDER_NAME"
+
+	bash ../../$CMAKE_FOLDER_NAME/$CMAKE_VERSION/wsl/install.sh
+	bash ../../$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
+	bash ../../$BISON_FOLDER_NAME/$BIRSON_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -55,9 +49,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $VERSION
 	mkdir bld
 	cd bld
-	export CPPFLAGS="-I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include/ncurses -I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include"
-	export LDFLAGS="-L$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/lib"
-	cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BIRSON_VERSION/bin/bison -DCMAKE_PREFIX_PATH=$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION
+	cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BIRSON_VERSION/bin/bison
 	make
 	sudo make install
 
@@ -65,9 +57,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	sudo chown -R $(whoami) .
 
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
-	export PATH=$HOME/programs/$CMAKE_FOLDER_NAME/$CMAKE_VERSION/bin:$PATH
-	export PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/bin:$PATH
-	export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
 
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
@@ -75,6 +64,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	mkdir data
+	mkdir logs
 	ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/my.cnf ./
 
 	touch start.sh
@@ -82,22 +72,17 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	touch stop.sh
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
-	echo "mysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown" >> stop.sh
+	echo "mysqladmin --defaults-file=my.cnf -u shreyas -S mysql_$VERSION_STRING.sock --password=password shutdown" >> stop.sh
 
 	mysqld --defaults-file=my.cnf --initialize 2> initialize_db.log
 	TEMP_PASSWORD=$(grep -e 'A temporary password is generated for root@localhost: ' initialize_db.log | awk '{print $13}')
 	echo $TEMP_PASSWORD
 	mysql_ssl_rsa_setup --datadir=data
-	mkdir data/logs
 	mysqld_safe --defaults-file=my.cnf --skip-grant-tables &
 
 	PORT=$(grep -E '^ *port=' my.cnf | awk -F= '{print $2}' | tr -d ' ')
 	echo $PORT
-
-	echo 'Sleeping for 60s'
-	sleep 60
-
-	mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
+	mysql -u root -S "mysql_$VERSION_STRING.sock" -P $PORT <<EOF
 FLUSH PRIVILEGES;
 CREATE USER 'shreyas'@'%' IDENTIFIED with mysql_native_password BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'shreyas'@'%';

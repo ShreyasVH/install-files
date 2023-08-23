@@ -24,7 +24,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash ../../../$GMP_FOLDER_NAME/$GMP_VERSION/linux/install.sh
+	bash ../../../$GMP_FOLDER_NAME/$GMP_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 

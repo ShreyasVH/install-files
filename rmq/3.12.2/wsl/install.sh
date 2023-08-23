@@ -21,9 +21,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_MAKE/$MAKE_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_MAKE/$MAKE_VERSION/wsl/install.sh
 
 	cd $HOME/programs/$FOLDER_NAME
 

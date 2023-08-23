@@ -7,6 +7,9 @@ PKG_CONFIG_VERSION=0.29.2
 GETTEXT_FOLDER_NAME=gettext
 GETTEXT_VERSION=0.22
 
+ZLIB_FOLDER_NAME=zlib
+ZLIB_VERSION=1.3
+
 INSTALL_FILES_DIR=$HOME/install-files
 
 if [ ! -d "$HOME/sources" ]; then
@@ -30,6 +33,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	bash $INSTALL_FILES_DIR/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/wsl/install.sh
 	bash $INSTALL_FILES_DIR/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -37,6 +41,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export LDFLAGS="-L$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib"
 	export CPPFLAGS="-I$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include"
+
+	export PKG_CONFIG_PATH=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
+	export ZLIB_CFLAGS=$(pkg-config --cflags zlib)
+	export ZLIB_LIBS=$(pkg-config --libs zlib)
 
 	wget "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
 	tar -xvf "Python-"$VERSION".tgz"

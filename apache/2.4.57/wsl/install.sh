@@ -31,9 +31,9 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash $INSTALL_FILES_DIR/$APR_FOLDER_NAME/$APR_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$APR_UTIL_FOLDER_NAME/$APR_UTIL_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$PCRE_FOLDER_NAME/$PCRE_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$APR_FOLDER_NAME/$APR_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$APR_UTIL_FOLDER_NAME/$APR_UTIL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$PCRE_FOLDER_NAME/$PCRE_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 

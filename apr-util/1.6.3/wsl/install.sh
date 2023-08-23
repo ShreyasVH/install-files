@@ -1,8 +1,8 @@
-FOLDER_NAME=curl
-VERSION=8.2.1
+FOLDER_NAME=apr-util
+VERSION=1.6.3
 
-OPENSSL_VERSION=3.0.10
-OPENSSL_FOLDER_NAME=openssl
+APR_FOLDER_NAME=apr
+APR_VERSION=1.7.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -23,28 +23,31 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash ../../$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/linux/install.sh
+	bash ../../$APR_FOLDER_NAME/$APR_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
 	make clean distclean
 
-	wget "https://curl.se/download/curl-$VERSION.tar.gz"
-	tar -xvf "curl-$VERSION.tar.gz"
-	mv "curl-$VERSION" $VERSION
+	wget "https://archive.apache.org/dist/apr/apr-util-"$VERSION".tar.gz"
+	tar -xvf "apr-util-"$VERSION".tar.gz"
+	mv "apr-util-"$VERSION $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-apr=$HOME/programs/apr/$APR_VERSION/bin/apr-1-config
 	make
 	sudo make install
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
-	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+	touch .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	direnv allow
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
-	rm "curl-$VERSION.tar.gz"
+	rm "apr-util-"$VERSION".tar.gz"
 fi
 
 cd $HOME/install-files

@@ -1,8 +1,10 @@
-FOLDER_NAME=apr-util
-VERSION=1.6.3
+FOLDER_NAME=elixir
+VERSION=1.15.4
 
-APR_FOLDER_NAME=apr
-APR_VERSION=1.7.4
+FOLDER_NAME_ERLANG=erlang
+ERLANG_VERSION=26.0.2
+
+INSTALL_FILES_DIR=$HOME/install-files
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -23,31 +25,32 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash ../../$APR_FOLDER_NAME/$APR_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	make clean distclean
+	make clean
 
-	wget "https://archive.apache.org/dist/apr/apr-util-"$VERSION".tar.gz"
-	tar -xvf "apr-util-"$VERSION".tar.gz"
-	mv "apr-util-"$VERSION $VERSION
-	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-apr=$HOME/programs/apr/$APR_VERSION/bin/apr-1-config
+	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
+
+	git clone https://github.com/elixir-lang/elixir.git
+	cd elixir
+	git checkout "v"$VERSION
 	make
-	sudo make install
+	sudo make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
 	touch .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
 	direnv allow
 
 	cd $HOME/sources/$FOLDER_NAME
-	rm -rf $VERSION
-	rm "apr-util-"$VERSION".tar.gz"
+	rm -rf elixir
 fi
 
 cd $HOME/install-files

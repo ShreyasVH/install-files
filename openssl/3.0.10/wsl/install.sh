@@ -1,8 +1,8 @@
-FOLDER_NAME=elixir
-VERSION=1.15.4
+FOLDER_NAME=openssl
+VERSION=3.0.10
 
-FOLDER_NAME_ERLANG=erlang
-ERLANG_VERSION=26.0.2
+ZLIB_FOLDER_NAME=zlib
+ZLIB_VERSION=1.3
 
 INSTALL_FILES_DIR=$HOME/install-files
 
@@ -25,32 +25,30 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl/install.sh
 
-	cd $HOME/sources/$FOLDER_NAME
+	cd $HOME/sources/openssl
 
-	make clean
+	wget "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
+	tar -xvf "openssl-$VERSION.tar.gz"
+	mv "openssl-$VERSION" $VERSION
+	cd $VERSION
 
-	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
-
-	git clone https://github.com/elixir-lang/elixir.git
-	cd elixir
-	git checkout "v"$VERSION
+	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib --with-zlib-lib=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib --with-zlib-include=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include
 	make
-	sudo make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION
+	sudo make install
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
 	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
-	echo "" >> .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
 	direnv allow
 
 	cd $HOME/sources/$FOLDER_NAME
-	rm -rf elixir
+	rm -rf $VERSION
+	rm "openssl-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files

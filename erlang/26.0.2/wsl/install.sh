@@ -31,13 +31,11 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_PERL/$PERL_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_OPENSSL/$OPENSSL_VERSION/linux/install.sh
-	bash $INSTALL_FILES_DIR/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/linux/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_PERL/$PERL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$FOLDER_NAME_OPENSSL/$OPENSSL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
-
-	make clean distclean
 
 	export PATH=$HOME/programs/$FOLDER_NAME_PERL/$PERL_VERSION/bin:$PATH
 
