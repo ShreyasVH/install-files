@@ -1,6 +1,11 @@
 FOLDER_NAME=cmake
 VERSION=3.26.4
 
+OPENSSL_FOLDER_NAME=openssl
+OPENSSL_VERSION=3.0.10
+
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -19,10 +24,8 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
-fi
 
-if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$BOOST_FOLDER_NAME"
+	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -30,6 +33,7 @@ if [ ! -d "$HOME/programs/$BOOST_FOLDER_NAME" ]; then
 	tar -xvf "cmake-$VERSION.tar.gz"
 	mv "cmake-"$VERSION $VERSION
 	cd $VERSION
+	export OPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION
 	./bootstrap --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
