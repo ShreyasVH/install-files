@@ -26,7 +26,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash $INSTALL_FILES_DIR/$$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
