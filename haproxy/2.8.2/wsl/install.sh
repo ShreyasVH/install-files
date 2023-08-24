@@ -44,7 +44,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	touch start.sh
-	echo "sudo haproxy -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/haproxy.cfg -D" >> start.sh
+	echo "sudo haproxy -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/wsl/haproxy.cfg -D" >> start.sh
 
 	touch stop.sh
 	echo 'sudo kill -9 $(sudo lsof -t -i:80)' >> stop.sh
