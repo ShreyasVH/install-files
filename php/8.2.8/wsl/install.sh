@@ -10,7 +10,7 @@ OPENSSL_FOLDER_NAME=openssl
 PKG_CONFIG_VERSION=0.29.2
 PKG_CONFIG_FOLDER_NAME="pkg-config"
 
-ZLIB_VERSION=1.2.13
+ZLIB_VERSION=1.3
 ZLIB_FOLDER_NAME=zlib
 
 CURL_VERSION=8.2.1
@@ -28,7 +28,7 @@ AUTOCONF_FOLDER_NAME=autoconf
 APACHE_FOLDER_NAME=apache
 APACHE_VERSION=2.4.57
 
-POSTGRES_FOLDER_NAME=POSTGRES
+POSTGRES_FOLDER_NAME=postgres
 POSTGRES_VERSION=15.4
 
 GETTEXT_FOLDER_NAME=gettext
@@ -122,13 +122,29 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo "extension_dir=$EXTENSION_DIR" >> lib/php.ini
 	echo "" >> lib/php.ini
 
-	sudo pecl channel-update pecl.php.net
+	mkdir tmp
+	pear config-set cache_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
+	pear config-set download_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
+	pear config-set temp_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
 
-	sudo pecl install xdebug
+	pecl channel-update pecl.php.net
+
+	pecl install xdebug
 	echo "zend_extension=xdebug.so" >> lib/php.ini
 	echo "" >> lib/php.ini
 
-	sudo pecl install phalcon
+	pecl install phalcon
 	echo "extension=phalcon.so" >> lib/php.ini
 	echo "" >> lib/php.ini
+
+	pear install Console_Table
+
+	php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+	php composer-setup.php
+	mv composer.phar ~/programs/$FOLDER_NAME/$VERSION/bin/composer
+	rm composer-setup.php
+
+	cd $HOME/sources/$FOLDER_NAME
+	rm -rf $VERSION
+	rm "php-$VERSION.tar.gz"
 fi
