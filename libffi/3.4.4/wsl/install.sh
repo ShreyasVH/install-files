@@ -1,10 +1,5 @@
-FOLDER_NAME=bison
-VERSION=3.8.2
-
-M4_FOLDER_NAME=m4
-M4_VERSION=1.4.19
-
-INSTALL_FILES_DIR=$HOME/install-files
+FOLDER_NAME=libffi
+VERSION=3.4.4
 
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
@@ -25,15 +20,11 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash $INSTALL_FILES_DIR/$M4_FOLDER_NAME/$M4_VERSION/wsl/install.sh
-
-	export PATH=$HOME/programs/$M4_FOLDER_NAME/$M4_VERSION/bin:$PATH
-
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/bison/bison-$VERSION.tar.gz"
-	tar -xvf "bison-$VERSION.tar.gz"
-	mv "bison-$VERSION" $VERSION
+	wget "https://github.com/libffi/libffi/releases/download/v$VERSION/libffi-$VERSION.tar.gz"
+	tar -xvf "libffi-$VERSION.tar.gz"
+	mv "libffi-$VERSION" $VERSION
 	cd $VERSION
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
@@ -42,9 +33,12 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
-	cd $HOME/sources/$FOLDER_NAME
-	rm -rf $VERSION
-	rm "bison-$VERSION.tar.gz"
+	# cd $HOME/sources/$FOLDER_NAME
+	# rm -rf $VERSION
+	# rm "libffi-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files
+
+
+
