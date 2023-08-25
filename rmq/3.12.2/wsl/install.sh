@@ -47,6 +47,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo "" >> .envrc
 	direnv allow
 
+	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/rabbitmq.conf ./etc/rabbitmq/
+
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/sbin:$PATH
 
 	rabbitmq-plugins enable rabbitmq_management
