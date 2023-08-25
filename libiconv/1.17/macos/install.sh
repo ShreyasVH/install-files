@@ -20,6 +20,8 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
+	cd $HOME/sources/$FOLDER_NAME
+
 	wget "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-$VERSION.tar.gz"
 	tar -xvf "libiconv-$VERSION.tar.gz"
 	mv "libiconv-$VERSION" $VERSION

@@ -4,6 +4,8 @@ VERSION=8.2.1
 OPENSSL_VERSION=3.0.10
 OPENSSL_FOLDER_NAME=openssl
 
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -23,11 +25,11 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
-	bash ../../$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
+
+	export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
 
 	cd $HOME/sources/$FOLDER_NAME
-
-	make clean distclean
 
 	wget "https://curl.se/download/curl-$VERSION.tar.gz"
 	tar -xvf "curl-$VERSION.tar.gz"

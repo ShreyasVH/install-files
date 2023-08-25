@@ -16,7 +16,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
 
-	cs $HOME/sources/$FOLDER_NAME
+	cd $HOME/sources/$FOLDER_NAME
 
 	wget "https://ftp.gnu.org/gnu/automake/automake-$VERSION.tar.gz"
 	tar -xvf "automake-$VERSION.tar.gz"
