@@ -55,14 +55,16 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export CFLAGS="-I$HOME/programs/$BZIP2_FOLDER_NAME/$BZIP2_VERSION/include"
 
 	export PKG_CONFIG_PATH=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
-	export ZLIB_CFLAGS=$(pkg-config --cflags zlib)
-	export ZLIB_LIBS=$(pkg-config --libs zlib)
+	export CFLAGS="$CFLAGS $(pkg-config --cflags zlib)"
+	export LDFLAGS="$LDFLAGS $(pkg-config --libs zlib)"
 
 	export PKG_CONFIG_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
 	export CFLAGS="$CFLAGS $(pkg-config --cflags libffi)"
 	export LDFLAGS="$LDFLAGS $(pkg-config --libs libffi)"
 
 	export LD_LIBRARY_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib:$LD_LIBRARY_PATH
+	export LD_LIBRARY_PATH=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib:$LD_LIBRARY_PATH
+	export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
 
 	wget -q "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
 	tar -xvf "Python-"$VERSION".tgz"
