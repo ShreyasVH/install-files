@@ -10,11 +10,14 @@ GETTEXT_VERSION=0.22
 ZLIB_FOLDER_NAME=zlib
 ZLIB_VERSION=1.3
 
-OPENSSL_VERSION=3.0.10
+OPENSSL_VERSION=1.1.1
 OPENSSL_FOLDER_NAME=openssl
 
 LIBFFI_VERSION=3.4.4
 LIBFFI_FOLDER_NAME=libffi
+
+BZIP2_VERSION=1.0.8
+BZIP2_FOLDER_NAME=bzip2
 
 INSTALL_FILES_DIR=$HOME/install-files
 
@@ -47,16 +50,19 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH="$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH"
 
-	export LDFLAGS="-L$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib"
+	export LDFLAGS="-L$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib -L$HOME/programs/$BZIP2_FOLDER_NAME/$BZIP2_VERSION/lib"
 	export CPPFLAGS="-I$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include"
+	export CFLAGS="-I$HOME/programs/$BZIP2_FOLDER_NAME/$BZIP2_VERSION/include"
 
 	export PKG_CONFIG_PATH=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
 	export ZLIB_CFLAGS=$(pkg-config --cflags zlib)
 	export ZLIB_LIBS=$(pkg-config --libs zlib)
 
 	export PKG_CONFIG_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
-	export CFLAGS=$(pkg-config --cflags libffi)
-	export LDFLAGS=$(pkg-config --libs libffi)
+	export CFLAGS="$CFLAGS $(pkg-config --cflags libffi)"
+	export LDFLAGS="$LDFLAGS $(pkg-config --libs libffi)"
+
+	export LD_LIBRARY_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib:$LD_LIBRARY_PATH
 
 	wget "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
 	tar -xvf "Python-"$VERSION".tgz"
