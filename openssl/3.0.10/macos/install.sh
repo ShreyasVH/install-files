@@ -41,6 +41,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo "" >> .envrc
 	direnv allow
 
+	wget http://curl.haxx.se/ca/cacert.pem
+	sudo mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
+
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
 	rm "openssl-$VERSION.tar.gz"
