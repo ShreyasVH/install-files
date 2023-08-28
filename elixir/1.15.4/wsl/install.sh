@@ -29,15 +29,14 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	make clean
-
 	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
 
 	git clone https://github.com/elixir-lang/elixir.git
 	cd elixir
 	git checkout "v"$VERSION
+	make clean
 	make
-	sudo make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION
+	sudo env "PATH=$PATH" make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
