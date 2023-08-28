@@ -113,9 +113,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
-	wget http://curl.haxx.se/ca/cacert.pem
-	sudo mv cacert.pem $HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/ssl/cert.pem
-
 	EXTENSION_DIR=$HOME/programs/$FOLDER_NAME/$VERSION/lib/php/extensions/$(ls lib/php/extensions)
 	touch lib/php.ini
 
