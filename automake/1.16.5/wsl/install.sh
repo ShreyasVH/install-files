@@ -1,6 +1,11 @@
 FOLDER_NAME=automake
 VERSION=1.16.5
 
+AUTOCONF_FOLDER_NAME=autoconf
+AUTOCONF_VERSION=2.7.1
+
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -15,6 +20,10 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
+
+	bash $INSTALL_FILES_DIR/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/wsl/install.sh
+
+	export PATH=$HOME/programs/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/bin:$PATH
 
 	cd $HOME/sources/$FOLDER_NAME
 
