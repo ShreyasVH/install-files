@@ -31,7 +31,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://curl.se/download/curl-$VERSION.tar.gz"
+	wget --no-check-certificate "https://curl.se/download/curl-$VERSION.tar.gz"
 	tar -xvf "curl-$VERSION.tar.gz"
 	mv "curl-$VERSION" $VERSION
 	cd $VERSION

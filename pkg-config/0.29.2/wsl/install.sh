@@ -20,6 +20,8 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
+	cd $HOME/programs/$FOLDER_NAME
+
 	wget "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
 	tar -xvf "pkg-config-$VERSION.tar.gz"
 	mv "pkg-config-$VERSION" $VERSION
