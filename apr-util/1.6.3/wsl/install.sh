@@ -33,7 +33,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://archive.apache.org/dist/apr/apr-util-"$VERSION".tar.gz"
+	wget -q "https://archive.apache.org/dist/apr/apr-util-"$VERSION".tar.gz"
 	tar -xvf "apr-util-"$VERSION".tar.gz"
 	mv "apr-util-"$VERSION $VERSION
 	cd $VERSION

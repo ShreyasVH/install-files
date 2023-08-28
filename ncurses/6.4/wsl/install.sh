@@ -26,7 +26,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/ncurses/ncurses-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/gnu/ncurses/ncurses-$VERSION.tar.gz"
 	tar -xvf "ncurses-$VERSION.tar.gz"
 	mv "ncurses-$VERSION" $VERSION
 	cd $VERSION

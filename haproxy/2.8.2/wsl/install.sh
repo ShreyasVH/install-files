@@ -30,7 +30,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://www.haproxy.org/download/$MINOR_VERSION/src/haproxy-$VERSION.tar.gz"
+	wget -q "https://www.haproxy.org/download/$MINOR_VERSION/src/haproxy-$VERSION.tar.gz"
 	tar -xvf "haproxy-$VERSION.tar.gz"
 	mv "haproxy-$VERSION" $VERSION
 	cd $VERSION

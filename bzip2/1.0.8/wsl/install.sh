@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://sourceware.org/pub/bzip2/bzip2-$VERSION.tar.gz"
+	wget -q "https://sourceware.org/pub/bzip2/bzip2-$VERSION.tar.gz"
 	tar -xvf "bzip2-$VERSION.tar.gz"
 	mv "bzip2-$VERSION" $VERSION
 	cd $VERSION

@@ -23,7 +23,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/sources/$FOLDER_NAME
 
 	export CC=gcc
-	wget "https://ftp.gnu.org/gnu/gettext/gettext-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/gnu/gettext/gettext-$VERSION.tar.gz"
 	tar -xvf "gettext-$VERSION.tar.gz"
 	mv "gettext-$VERSION" $VERSION
 	cd $VERSION

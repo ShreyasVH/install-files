@@ -100,7 +100,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH=$HOME/programs/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/bin:$PATH
 
-	wget "https://www.php.net/distributions/php-$VERSION.tar.gz"
+	wget -q "https://www.php.net/distributions/php-$VERSION.tar.gz"
 	tar -xvf "php-$VERSION.tar.gz"
 	mv "php-"$VERSION $VERSION
 	cd $VERSION

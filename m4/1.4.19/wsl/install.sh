@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/m4/m4-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/gnu/m4/m4-$VERSION.tar.gz"
 	tar -xvf "m4-$VERSION.tar.gz"
 	mv "m4-$VERSION" $VERSION
 	cd $VERSION

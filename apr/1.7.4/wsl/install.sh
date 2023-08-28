@@ -24,7 +24,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	make clean distclean
 
-	wget "https://archive.apache.org/dist/apr/apr-"$VERSION".tar.gz"
+	wget -q "https://archive.apache.org/dist/apr/apr-"$VERSION".tar.gz"
 	tar -xvf "apr-"$VERSION".tar.gz"
 	mv "apr-"$VERSION $VERSION
 	cd $VERSION

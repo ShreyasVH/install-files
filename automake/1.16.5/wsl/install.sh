@@ -27,7 +27,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/automake/automake-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/gnu/automake/automake-$VERSION.tar.gz"
 	tar -xvf "automake-$VERSION.tar.gz"
 	mv "automake-$VERSION" $VERSION
 	cd $VERSION

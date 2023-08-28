@@ -64,7 +64,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export LD_LIBRARY_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib:$LD_LIBRARY_PATH
 
-	wget "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
+	wget -q "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
 	tar -xvf "Python-"$VERSION".tgz"
 	mv "Python-"$VERSION $VERSION
 	cd $VERSION

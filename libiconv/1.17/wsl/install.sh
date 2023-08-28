@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/pub/gnu/libiconv/libiconv-$VERSION.tar.gz"
 	tar -xvf "libiconv-$VERSION.tar.gz"
 	mv "libiconv-$VERSION" $VERSION
 	cd $VERSION

@@ -23,7 +23,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://www.cpan.org/src/$MINOR_VERSION/perl-$VERSION.tar.gz"
+	wget -q "https://www.cpan.org/src/$MINOR_VERSION/perl-$VERSION.tar.gz"
 	tar -xvf "perl-$VERSION.tar.gz"
 	mv "perl-$VERSION" $VERSION
 	cd $VERSION

@@ -24,7 +24,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://www.sqlite.org/$VERSION_YEAR/sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
+	wget -q "https://www.sqlite.org/$VERSION_YEAR/sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
 	tar -xvf "sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
 	mv "sqlite-autoconf-"$VERSION_FULLFORM $VERSION
 	cd $VERSION

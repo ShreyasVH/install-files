@@ -31,7 +31,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
 
-	git clone https://github.com/elixir-lang/elixir.git
+	git clone -q https://github.com/elixir-lang/elixir.git
 	cd elixir
 	git checkout "v"$VERSION
 	make clean

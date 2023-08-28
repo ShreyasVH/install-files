@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
+	wget -q "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
 	tar -xvf "pkg-config-$VERSION.tar.gz"
 	mv "pkg-config-$VERSION" $VERSION
 	cd $VERSION

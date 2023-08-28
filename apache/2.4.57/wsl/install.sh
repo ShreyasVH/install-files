@@ -37,7 +37,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://dlcdn.apache.org/httpd/httpd-"$VERSION".tar.gz"
+	wget -q "https://dlcdn.apache.org/httpd/httpd-"$VERSION".tar.gz"
 	tar -xvf "httpd-"$VERSION".tar.gz"
 	mv "httpd-"$VERSION $VERSION
 	cd $VERSION

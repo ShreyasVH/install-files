@@ -32,7 +32,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export LDFLAGS="-L$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib"
 	export CPPFLAGS="-I$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include"
 
-	wget "https://ftp.postgresql.org/pub/source/v$VERSION/postgresql-$VERSION.tar.gz"
+	wget -q "https://ftp.postgresql.org/pub/source/v$VERSION/postgresql-$VERSION.tar.gz"
 	tar -xvf "postgresql-$VERSION.tar.gz"
 	mv "postgresql-"$VERSION $VERSION
 	cd $VERSION

@@ -31,7 +31,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH=$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH
 
-	wget "https://github.com/redis/redis/archive/$VERSION.tar.gz"
+	wget -q "https://github.com/redis/redis/archive/$VERSION.tar.gz"
 	tar -xvf "$VERSION.tar.gz"
 	mv "redis-$VERSION" $VERSION
 	cd $VERSION

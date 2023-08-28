@@ -42,7 +42,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export PATH=$HOME/programs/$LIBTOOL_FOLDER_NAME/$LIBTOOL_VERSION/bin:$PATH
 	export LIBTOOL=$HOME/programs/$LIBTOOL_FOLDER_NAME/$LIBTOOL_VERSION/bin/libtool
 
-	wget "https://github.com/kkos/oniguruma/releases/download/v$VERSION/onig-$VERSION.tar.gz"
+	wget -q "https://github.com/kkos/oniguruma/releases/download/v$VERSION/onig-$VERSION.tar.gz"
 	tar -xvf "onig-$VERSION.tar.gz"
 	mv "onig-"$VERSION $VERSION
 	cd $VERSION

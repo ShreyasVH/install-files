@@ -30,7 +30,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://nodejs.org/dist/v"$VERSION"/node-v"$VERSION".tar.gz"
+	wget -q "https://nodejs.org/dist/v"$VERSION"/node-v"$VERSION".tar.gz"
 	tar -xvf "node-v"$VERSION".tar.gz"
 	mv "node-v"$VERSION $VERSION
 	cd $VERSION

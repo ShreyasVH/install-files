@@ -40,7 +40,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export PKG_CONFIG_PATH=$HOME/programs/$PYTHON_FOLDER_NAME/$PYTHON_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
 	export PYTHON_CFLAGS="-I$HOME/programs/$PYTHON_FOLDER_NAME/$PYTHON_VERSION/include/python3.11d"
 
-	wget "https://download.gnome.org/sources/libxml2/$MINOR_VERSION/libxml2-$VERSION.tar.xz"
+	wget -q "https://download.gnome.org/sources/libxml2/$MINOR_VERSION/libxml2-$VERSION.tar.xz"
 	tar -xvf "libxml2-$VERSION.tar.xz"
 	mv "libxml2-$VERSION" $VERSION
 	cd $VERSION

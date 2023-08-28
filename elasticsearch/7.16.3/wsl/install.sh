@@ -10,7 +10,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$VERSION-linux-x86_64.tar.gz"
+	wget -q "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$VERSION-linux-x86_64.tar.gz"
 	tar -xvf "elasticsearch-$VERSION-linux-x86_64.tar.gz"
 	mv "elasticsearch-$VERSION" $VERSION
 	cd $VERSION

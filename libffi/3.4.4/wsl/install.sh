@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://github.com/libffi/libffi/releases/download/v$VERSION/libffi-$VERSION.tar.gz"
+	wget -q "https://github.com/libffi/libffi/releases/download/v$VERSION/libffi-$VERSION.tar.gz"
 	tar -xvf "libffi-$VERSION.tar.gz"
 	mv "libffi-$VERSION" $VERSION
 	cd $VERSION

@@ -39,7 +39,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH=$HOME/programs/$FOLDER_NAME_PERL/$PERL_VERSION/bin:$PATH
 
-	wget "https://github.com/erlang/otp/releases/download/OTP-$VERSION/otp_src_$VERSION.tar.gz"
+	wget -q "https://github.com/erlang/otp/releases/download/OTP-$VERSION/otp_src_$VERSION.tar.gz"
 	tar -xvf "otp_src_$VERSION.tar.gz"
 	mv "otp_src_$VERSION" $VERSION
 	cd $VERSION

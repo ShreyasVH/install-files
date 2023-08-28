@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://ftp.gnu.org/gnu/make/make-$VERSION.tar.gz"
+	wget -q "https://ftp.gnu.org/gnu/make/make-$VERSION.tar.gz"
 	tar -xvf "make-$VERSION.tar.gz"
 	mv "make-$VERSION" $VERSION
 	cd $VERSION

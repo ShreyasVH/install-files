@@ -12,7 +12,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
-	wget "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/$VERSION+7/openlogic-openjdk-jre-$VERSION+7-linux-x64.tar.gz"
+	wget -q "https://builds.openlogic.com/downloadJDK/openlogic-openjdk-jre/$VERSION+7/openlogic-openjdk-jre-$VERSION+7-linux-x64.tar.gz"
 	tar -xvf "openlogic-openjdk-jre-$VERSION+7-linux-x64.tar.gz"
 	mv "openlogic-openjdk-jre-$VERSION+7-linux-x64" $VERSION
 

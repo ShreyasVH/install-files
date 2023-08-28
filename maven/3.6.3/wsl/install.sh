@@ -11,7 +11,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	wget "https://archive.apache.org/dist/maven/maven-$MAJOR_VERSION/$VERSION/binaries/apache-maven-$VERSION-bin.tar.gz"
+	wget -q "https://archive.apache.org/dist/maven/maven-$MAJOR_VERSION/$VERSION/binaries/apache-maven-$VERSION-bin.tar.gz"
 	tar -xvf "apache-maven-$VERSION-bin.tar.gz"
 	mv "apache-maven-"$VERSION $VERSION
 

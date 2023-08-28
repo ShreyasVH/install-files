@@ -22,7 +22,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://www.zlib.net/zlib-$VERSION.tar.gz"
+	wget -q "https://www.zlib.net/zlib-$VERSION.tar.gz"
 	tar -xvf "zlib-$VERSION.tar.gz"
 	mv "zlib-$VERSION" $VERSION
 	cd $VERSION

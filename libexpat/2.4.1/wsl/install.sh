@@ -23,7 +23,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://github.com/libexpat/libexpat/releases/download/R_$VERSION_STRING/expat-$VERSION.tar.gz"
+	wget -q "https://github.com/libexpat/libexpat/releases/download/R_$VERSION_STRING/expat-$VERSION.tar.gz"
 	tar -xvf "expat-$VERSION.tar.gz"
 	mv "expat-$VERSION" $VERSION
 	cd $VERSION
