@@ -1,6 +1,11 @@
 FOLDER_NAME=node
 VERSION=16.3.0
 
+PYTHON_FOLDER_NAME=python
+PYTHON_VERSION=3.9.18
+
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -19,6 +24,9 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+
+	bash $INSTALL_FILES_DIR/$PYTHON_FOLDER_NAME/$PYTHON_VERSION/wsl/install.sh
+	export PATH=$HOME/programs/$PYTHON_FOLDER_NAME/$PYTHON_VERSION/bin:$PATH
 
 	cd $HOME/sources/$FOLDER_NAME
 
