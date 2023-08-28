@@ -46,7 +46,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	tar -xvf "onig-$VERSION.tar.gz"
 	mv "onig-"$VERSION $VERSION
 	cd $VERSION
-	# libtoolize
+	libtoolize
 	aclocal
 	autoconf
 	automake --add-missing --copy
@@ -54,6 +54,13 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
 	make
 	sudo make install
+
+	cd $HOME/programs/$FOLDER_NAME/$VERSION
+	sudo chown -R $(whoami) .
+
+	cd $HOME/sources/$FOLDER_NAME
+	rm -rf $VERSION
+	rm "onig-$VERSION.tar.gz"
 fi
 
 cd $HOME/install-files
