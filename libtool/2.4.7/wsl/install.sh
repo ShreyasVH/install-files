@@ -1,6 +1,11 @@
 VERSION=2.4.7
 FOLDER_NAME=libtool
 
+M4_FOLDER_NAME=m4
+M4_VERSION=1.4.19
+
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/sources" ]; then
 	mkdir "$HOME/sources"
 fi
@@ -19,6 +24,10 @@ fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+
+	bash $INSTALL_FILES_DIR/$M4_FOLDER_NAME/$M4_VERSION/wsl/install.sh
+
+	export PATH=$HOME/programs/$M4_FOLDER_NAME/$M4_VERSION/bin:$PATH
 
 	cd $HOME/sources/$FOLDER_NAME
 
