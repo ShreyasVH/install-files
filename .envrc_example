@@ -1,2 +1,12 @@
 #wget path
-export PATH=$HOME/programs/wget/1.21.4/bin:/$PATH
+export PATH=
+
+export green='\e[32m'
+export cyan='\e[36m'
+export blue='\e[34m'
+export yellow='\e[33m'
+export clear='\e[0m'
+export blink='\e[5m'
+export bold='\e[1m'
+
+export USER_PASSWORD=
