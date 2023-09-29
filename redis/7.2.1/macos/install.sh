@@ -79,10 +79,16 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		mv $HOME/sources/$FOLDER_NAME/$VERSION/redis.conf ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/redis.conf.default
 		mv $HOME/sources/$FOLDER_NAME/$VERSION/sentinel.conf ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/sentinel.conf.default
 		echo "redis-server ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/redis.conf" >> start.sh
+		echo "" >> start.sh
+		echo "redis-sentinel ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/sentinel.conf" >> start.sh
+		echo "" >> start.sh
 
 		touch stop.sh
 		echo 'PORT=$(grep '\''^port '\'' ~/workspace/myProjects/config-samples/'"$FOLDER_NAME/$VERSION"'/macos/redis.conf | awk '\''{print $2}'\'')' >> stop.sh
+		echo 'SENTINEL_PORT=$(grep '\''^port '\'' ~/workspace/myProjects/config-samples/'"$FOLDER_NAME/$VERSION"'/macos/sentinel.conf | awk '\''{print $2}'\'')' >> stop.sh
+		echo 'kill -9 $SENTINEL_PORT' >> stop.sh
 		echo 'redis-cli -p $PORT shutdown' >> stop.sh
+		echo '' >> stop.sh
 
 		printf "\t${bold}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
