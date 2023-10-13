@@ -16,9 +16,16 @@ if [ ! -d "$HOME/programs" ]; then
 	mkdir "$HOME/programs"
 fi
 
+if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rabbitmq.conf ]; then
+	printf "rabbitmq.conf not found\n"
+	exit
+fi
+
 if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
+fi
 
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$FOLDER_NAME_MAKE/$MAKE_VERSION/macos/install.sh
@@ -29,12 +36,16 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	export PATH=$HOME/programs/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/bin:$PATH
 	export PATH=$HOME/programs/$FOLDER_NAME_MAKE/$MAKE_VERSION/bin:$PATH
 
-	wget --progress dot:giga "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/rabbitmq-server-generic-unix-$VERSION.tar.xz"
-	tar -xvf "rabbitmq-server-generic-unix-$VERSION.tar.xz"
+	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	wget -q --show-progress "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/rabbitmq-server-generic-unix-$VERSION.tar.xz"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf "rabbitmq-server-generic-unix-$VERSION.tar.xz"
 	mv "rabbitmq_server-$VERSION" $VERSION
 	cd $VERSION
 
-	sudo chown -R $(whoami) .
+	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
 	touch .envrc
 	echo 'export RABBITMQ_HOME=$HOME/programs/'"$FOLDER_NAME/$VERSION" >> .envrc
@@ -45,7 +56,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	echo "" >> .envrc
 	direnv allow
 
-	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/rabbitmq.conf ./etc/rabbitmq/
+	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rabbitmq.conf ./etc/rabbitmq/
 
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/sbin:$PATH
 
