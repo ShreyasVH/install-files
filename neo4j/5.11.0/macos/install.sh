@@ -1,0 +1,67 @@
+VERSION=5.11.0
+FOLDER_NAME=neo4j
+
+JAVA_FOLDER_NAME=java
+JAVA_VERSION=17.0.7
+
+INSTALL_FILES_DIR=$HOME/install-files
+
+if [ ! -d "$HOME/programs" ]; then
+	mkdir "$HOME/programs"
+fi
+
+if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
+	mkdir "$HOME/programs/$FOLDER_NAME"
+fi
+
+if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf ]; then
+	printf "neo4j.conf not found\n"
+	exit
+fi
+
+if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j-admin.conf ]; then
+	printf "neo4j-admin.conf not found\n"
+	exit
+fi
+
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/$JAVA_FOLDER_NAME/$JAVA_VERSION/macos/install.sh
+
+	cd $HOME/programs/$FOLDER_NAME
+
+	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
+
+	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	wget -q --show-progress "https://dist.neo4j.org/neo4j-community-$VERSION-unix.tar.gz"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf "neo4j-community-$VERSION-unix.tar.gz"
+	mv "neo4j-community-$VERSION" $VERSION
+	cd $VERSION
+
+	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+
+	touch .envrc
+	echo 'export PATH=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION/Contents/Home/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	echo 'export JAVA_HOME=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION"'/Contents/Home' >> .envrc
+	echo "" >> .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	direnv allow
+
+	mv conf/neo4j.conf $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf.default
+	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf conf/neo4j.conf
+	mv conf/neo4j-admin.conf $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j-admin.conf.default
+	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j-admin.conf conf/neo4j-admin.conf
+
+	touch start.sh
+	echo "neo4j start > neo4j_start.log 2>&1 &" >> start.sh
+
+	touch stop.sh
+	echo "neo4j stop > neo4j_stop.log 2>&1 &" >> stop.sh
+
+	cd ..
+	rm "neo4j-community-$VERSION-unix.tar.gz"
+fi
