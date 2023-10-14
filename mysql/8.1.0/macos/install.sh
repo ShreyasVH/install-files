@@ -109,10 +109,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		printf "\t${bold}${blink}${green}Setting up SSL RSA${clear}\n"
 		mysql_ssl_rsa_setup --datadir=data > $HOME/logs/$FOLDER_NAME/$VERSION/sslSetupLog.txt 2>&1
 		printf "\t${bold}${blink}${green}Initial run${clear}\n"
-		mysqld_safe --defaults-file=my.cnf --skip-grant-tables &
+		mysqld_safe --defaults-file=my.cnf --skip-grant-tables > $HOME/logs/$FOLDER_NAME/$VERSION/initializeStart.txt 2>&1 &
 
 		PORT=$(grep -E '^ *port=' my.cnf | awk -F= '{print $2}' | tr -d ' ')
-		echo $PORT
 
 		printf "\t${bold}${blink}${green}Sleeping for 60s${clear}\n"
 		sleep 60
