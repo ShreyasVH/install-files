@@ -65,8 +65,11 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "\t${bold}${blink}${green}Installing${clear}\n"
 	sudo make install > installOutput.txt 2>&1
 
-
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/event_rpcgen.py" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+		
+		printf "\t${bold}${blink}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf $VERSION
 		rm "libevent-$VERSION-stable.tar.gz"

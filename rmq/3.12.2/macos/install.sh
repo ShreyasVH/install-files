@@ -68,6 +68,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	touch stop.sh
 	echo "rabbitmqctl stop" >> stop.sh
 
+	printf "\t${bold}${green}Clearing${clear}\n"
 	cd ..
 	rm "rabbitmq-server-generic-unix-$VERSION.tar.xz"
 fi

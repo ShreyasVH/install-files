@@ -37,7 +37,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
+	curl -O "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf "openssl-$VERSION.tar.gz"
 	mv "openssl-$VERSION" $VERSION
@@ -60,7 +60,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		direnv allow
 
 		printf "\t\t${bold}${green}Installing Certificate${clear}\n"
-		wget -q --show-progress http://curl.haxx.se/ca/cacert.pem
+		curl -O -L http://curl.haxx.se/ca/cacert.pem
 		echo $USER_PASSWORD | sudo -S -p '' mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
 
 		printf "\t${bold}${green}Clearing${clear}\n"

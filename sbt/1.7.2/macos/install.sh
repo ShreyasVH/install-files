@@ -23,6 +23,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $VERSION
 	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
+	printf "\t${bold}${green}Clearing${clear}\n"
 	cd ..
 	rm "sbt-$VERSION.tgz"
 fi

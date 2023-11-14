@@ -62,6 +62,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	touch stop.sh
 	echo "neo4j stop > neo4j_stop.log 2>&1 &" >> stop.sh
 
+	printf "\t${bold}${green}Clearing${clear}\n"
 	cd ..
 	rm "neo4j-community-$VERSION-unix.tar.gz"
 fi

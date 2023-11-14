@@ -20,10 +20,18 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	unzip "openlogic-openjdk-jre-$VERSION+7-mac-x64.zip" > /dev/null 2>&1
 	mv "openlogic-openjdk-jre-$VERSION+7-mac-x64/jdk-$VERSION.jre" $VERSION
 
-	cd $VERSION
-	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/Contents/Home/bin/java" ]; then
+		cd $VERSION
+		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
-	cd ..
-	rm -rf "openlogic-openjdk-jre-$VERSION+7-mac-x64"
-	rm "openlogic-openjdk-jre-$VERSION+7-mac-x64.zip"
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/Contents/Home/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
+
+		printf "\t${bold}${green}Clearing${clear}\n"
+		cd ..
+		rm -rf "openlogic-openjdk-jre-$VERSION+7-mac-x64"
+		rm "openlogic-openjdk-jre-$VERSION+7-mac-x64.zip"
+	fi
 fi

@@ -32,7 +32,7 @@ POSTGRES_FOLDER_NAME=postgres
 POSTGRES_VERSION=15.4
 
 GETTEXT_FOLDER_NAME=gettext
-GETTEXT_VERSION=0.21.1
+GETTEXT_VERSION=0.20.1
 
 LIBICONV_FOLDER_NAME=libiconv
 LIBICONV_VERSION=1.17
@@ -46,6 +46,8 @@ PHP_EXTENSION_XDEBUG_VERSION=3.2.2
 PHP_EXTENSION_XDEBUG_FOLDER_NAME=xdebug
 PHP_EXTENSION_PHALCON_VERSION=5.3.0
 PHP_EXTENSION_PHALCON_FOLDER_NAME=phalcon
+PHP_EXTENSION_REDIS_VERSION=6.0.0
+PHP_EXTENSION_REDIS_FOLDER_NAME=redis
 
 INSTALL_FILES_DIR=$HOME/install-files
 
@@ -93,9 +95,14 @@ if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/memcached" ]; then
 	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/memcached"
 fi
 
+if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/redis" ]; then
+	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/redis"
+fi
+
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 
+	bash $INSTALL_FILES_DIR/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/macos/install.sh
@@ -141,19 +148,19 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
 
-	printf "\t${bold}${blink}${green}Downloading source code${clear}\n"
-	wget -q "https://www.php.net/distributions/php-$VERSION.tar.gz"
-	printf "\t${bold}${blink}${green}Extracting source code${clear}\n"
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	wget -q --show-progress "https://www.php.net/distributions/php-$VERSION.tar.gz"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf "php-$VERSION.tar.gz"
 	mv "php-"$VERSION $VERSION
 	cd $VERSION
-	printf "\t${bold}${blink}${green}Configuring${clear}\n"
+	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/php/$VERSION --with-apxs2=$HOME/programs/$APACHE_FOLDER_NAME/$APACHE_VERSION/bin/apxs --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Making${clear}\n"
+	printf "\t${bold}${green}Making${clear}\n"
 	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Installing${clear}\n"
-	sudo make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+	printf "\t${bold}${green}Installing${clear}\n"
+	echo $USER_PASSWORD | sudo -S -p '' make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
@@ -165,7 +172,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		direnv allow
 
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
-		sudo chown -R $(whoami) .
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
 		EXTENSION_DIR=$HOME/programs/$FOLDER_NAME/$VERSION/lib/php/extensions/$(ls lib/php/extensions)
 		touch lib/php.ini
@@ -182,42 +189,42 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		cd tmp
 		printf "\t${bold}${yellow}Installing xdebug extension${clear}\n"
-		printf "\t\t${bold}${blink}${green}Downloading source code${clear}\n"
+		printf "\t\t${bold}${green}Downloading source code${clear}\n"
 		wget -q "https://pecl.php.net/get/xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
-		printf "\t\t${bold}${blink}${green}Extracting source code${clear}\n"
+		printf "\t\t${bold}${green}Extracting source code${clear}\n"
 		tar -xf "xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
 		cd "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
-		printf "\t\t${bold}${blink}${green}Running phpize${clear}\n"
+		printf "\t\t${bold}${green}Running phpize${clear}\n"
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/phpizeOutput.txt 2>&1
-		printf "\t\t${bold}${blink}${green}Configuring${clear}\n"
+		printf "\t\t${bold}${green}Configuring${clear}\n"
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureOutput.txt 2>&1
-		printf "\t\t${bold}${blink}${green}Making${clear}\n"
+		printf "\t\t${bold}${green}Making${clear}\n"
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/makeOutput.txt 2>&1
 		mv modules/xdebug.so $EXTENSION_DIR
 		cd ..
-		rm "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
+		rm -rf "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
 		rm "xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo "zend_extension=xdebug.so" >> lib/php.ini
-		echo "xdebug.idekey=PHPSTORM" > lib/php.ini
-		echo "xdebug.mode=debug" > lib/php.ini
-		echo "xdebug.client_host=127.0.0.1" > lib/php.ini
-		echo "xdebug.client_port=9001" > lib/php.ini
+		echo "xdebug.idekey=PHPSTORM" >> lib/php.ini
+		echo "xdebug.mode=debug" >> lib/php.ini
+		echo "xdebug.client_host=127.0.0.1" >> lib/php.ini
+		echo "xdebug.client_port=9001" >> lib/php.ini
 
 		cd tmp
 		printf "\t${bold}${yellow}Installing phalcon extension${clear}\n"
-		printf "\t\t${bold}${blink}${green}Downloading source code${clear}\n"
+		printf "\t\t${bold}${green}Downloading source code${clear}\n"
 		wget -q "https://pecl.php.net/get/phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
-		printf "\t\t${bold}${blink}${green}Extracting source code${clear}\n"
+		printf "\t\t${bold}${green}Extracting source code${clear}\n"
 		tar -xf "phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
 		cd "phalcon-$PHP_EXTENSION_PHALCON_VERSION"
-		printf "\t\t${bold}${blink}${green}Running phpize${clear}\n"
+		printf "\t\t${bold}${green}Running phpize${clear}\n"
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/phpizeOutput.txt 2>&1
-		printf "\t\t${bold}${blink}${green}Configuring${clear}\n"
+		printf "\t\t${bold}${green}Configuring${clear}\n"
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/configureOutput.txt 2>&1
-		printf "\t\t${bold}${blink}${green}Making${clear}\n"
+		printf "\t\t${bold}${green}Making${clear}\n"
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/makeOutput.txt 2>&1
 		mv modules/phalcon.so $EXTENSION_DIR
 		cd ..
@@ -228,29 +235,57 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		cd tmp
 		printf "\t${bold}${yellow}Installing memcahced extension${clear}\n"
-		printf "\t\t${bold}${blink}${green}Downloading source code${clear}\n"
+		printf "\t\t${bold}${green}Downloading source code${clear}\n"
 		wget -q "https://pecl.php.net/get/memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
-		printf "\t\t${bold}${blink}${green}Extracting source code${clear}\n"
+		printf "\t\t${bold}${green}Extracting source code${clear}\n"
 		tar -xf "memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
 		cd "memcached-$PHP_EXTENSION_MEMCACHED_VERSION"
+		printf "\t\t${bold}${green}Running phpize${clear}\n"
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/phpizeOutput.txt 2>&1
+		printf "\t\t${bold}${green}Configuring${clear}\n"
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure --with-libmemcached-dir=$HOME/programs/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION --with-zlib-dir=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/configureOutput.txt 2>&1
+		printf "\t\t${bold}${green}Making${clear}\n"
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/makeOutput.txt 2>&1
 		mv modules/memcached.so $EXTENSION_DIR
 		cd ..
-		rm "memcached-$PHP_EXTENSION_MEMCACHED_VERSION"
+		rm -rf "memcached-$PHP_EXTENSION_MEMCACHED_VERSION"
 		rm "memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo "extension=memcached.so" >> lib/php.ini
 
-		pear install Console_Table
+		cd tmp
+		printf "\t${bold}${yellow}Installing redis extension${clear}\n"
+		printf "\t\t${bold}${green}Downloading source code${clear}\n"
+		wget -q "https://pecl.php.net/get/redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		printf "\t\t${bold}${green}Extracting source code${clear}\n"
+		tar -xf "redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		cd "redis-$PHP_EXTENSION_REDIS_VERSION"
+		printf "\t\t${bold}${green}Running phpize${clear}\n"
+		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/phpizeOutput.txt 2>&1
+		printf "\t\t${bold}${green}Configuring${clear}\n"
+		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/configureHelp.txt 2>&1
+		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/configureOutput.txt 2>&1
+		printf "\t\t${bold}${green}Making${clear}\n"
+		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/makeOutput.txt 2>&1
+		mv modules/redis.so $EXTENSION_DIR
+		cd ..
+		rm -rf "redis-$PHP_EXTENSION_REDIS_VERSION"
+		rm "redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo "extension=redis.so" >> lib/php.ini
 
-		php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-		php composer-setup.php
+		printf "\t${bold}${green}Installing Console Table${clear}\n"
+		pear install Console_Table > $HOME/logs/$FOLDER_NAME/$VERSION/consoleTableInstallation.txt 2>&1
+
+		printf "\t${bold}${green}Installing Composer${clear}\n"
+		php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" > $HOME/logs/$FOLDER_NAME/$VERSION/composerInstallation.txt 2>&1
+		printf "\t${bold}${green}Setting up Composer${clear}\n"
+		php composer-setup.php > $HOME/logs/$FOLDER_NAME/$VERSION/composerSetup.txt 2>&1
 		mv composer.phar ~/programs/$FOLDER_NAME/$VERSION/bin/composer
 		rm composer-setup.php
 
+		printf "\t${bold}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf $VERSION
 		rm "php-$VERSION.tar.gz"

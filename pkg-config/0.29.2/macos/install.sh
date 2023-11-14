@@ -36,13 +36,13 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
 
-
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
+	curl -O "https://pkgconfig.freedesktop.org/releases/pkg-config-$VERSION.tar.gz"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf "pkg-config-$VERSION.tar.gz"
 	mv "pkg-config-$VERSION" $VERSION
 	cd $VERSION
+	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	printf "\t${bold}${green}Making${clear}\n"
