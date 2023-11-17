@@ -1,0 +1,36 @@
+FOLDER_NAME=dotnet-core
+VERSION=8.0.100
+
+if [ ! -d "$HOME/programs" ]; then
+	mkdir "$HOME/programs"
+fi
+
+if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
+	mkdir "$HOME/programs/$FOLDER_NAME"
+fi
+
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	cd $HOME/programs/$FOLDER_NAME
+
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	wget -q --show-progress "https://download.visualstudio.microsoft.com/download/pr/2a79b5ad-82a7-4615-a73b-91bf24028471/0e6a5c6d7f8b792a421e3796a93ef0a1/dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+	mkdir $VERSION
+	mv "dotnet-sdk-$VERSION-osx-arm64.tar.gz" $VERSION/"dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+	cd $VERSION
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf "dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+
+	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+
+	touch .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	direnv allow
+
+	printf "\t${bold}${green}Clearing${clear}\n"
+	rm "dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+fi
+
+cd $HOME/install-files
