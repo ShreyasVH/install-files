@@ -12,7 +12,7 @@ fi
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://download.visualstudio.microsoft.com/download/pr/a8659f18-390b-46ed-afbf-c92f0353c1ec/95aad3eac0e9cd16e20efad4251656b8/dotnet-sdk-$VERSION-osx-arm64.tar.gz"
