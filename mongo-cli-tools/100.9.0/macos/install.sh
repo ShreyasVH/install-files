@@ -17,7 +17,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://fastdl.mongodb.org/tools/db/mongodb-database-tools-macos-arm64-$VERSION.zip"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	unzip "mongodb-database-tools-macos-arm64-$VERSION.zip"
+	unzip "mongodb-database-tools-macos-arm64-$VERSION.zip" > /dev/null 2>&1
 	mv "mongodb-database-tools-macos-arm64-$VERSION" $VERSION
 	cd $VERSION
 
