@@ -1,6 +1,11 @@
 VERSION=3.3.1
 FOLDER_NAME=scala
 
+JAVA_FOLDER_NAME=java
+JAVA_VERSION=20.0.2
+
+INSTALL_FILES_DIR=$HOME/install-files
+
 if [ ! -d "$HOME/programs" ]; then
 	mkdir "$HOME/programs"
 fi
@@ -10,6 +15,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/$JAVA_FOLDER_NAME/$JAVA_VERSION/macos/install.sh
+
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
@@ -25,6 +32,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	echo 'export JAVA_HOME=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION" >> .envrc
 	echo "" >> .envrc
 	direnv allow
 
