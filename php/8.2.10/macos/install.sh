@@ -163,6 +163,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo $USER_PASSWORD | sudo -S -p '' make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 
@@ -170,9 +172,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc
 		direnv allow
-
-		cd $HOME/programs/$FOLDER_NAME/$VERSION
-		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
 		EXTENSION_DIR=$HOME/programs/$FOLDER_NAME/$VERSION/lib/php/extensions/$(ls lib/php/extensions)
 		touch lib/php.ini
