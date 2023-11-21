@@ -1,8 +1,13 @@
 FOLDER_NAME=postgis
 VERSION=3.4.0
 
+if [ $# -lt 1 ]; then
+    printf "${bold}${red}Usage: $0 <arg1>${clear}"
+    exit 1
+fi
+
 POSTGRES_FOLDER_NAME=postgres
-POSTGRES_VERSION=16.0
+POSTGRES_VERSION=$1
 
 LIBXML_VERSION=2.11.5
 LIBXML_FOLDER_NAME=libxml2
@@ -10,26 +15,26 @@ LIBXML_FOLDER_NAME=libxml2
 GEOS_VERSION=3.12.0
 GEOS_FOLDER_NAME=geos
 
-PROJ_VERSION=9.3.0
+PROJ_VERSION=9.2.1
 PROJ_FOLDER_NAME=proj
 
 PKG_CONFIG_VERSION=0.29.2
 PKG_CONFIG_FOLDER_NAME="pkg-config"
 
-SQLITE_VERSION=3.43.1
+SQLITE_VERSION=3.42.0
 SQLITE_FOLDER_NAME=sqlite3
 
-LIBTIFF_VERSION=4.6.0
+LIBTIFF_VERSION=4.5.1
 LIBTIFF_FOLDER_NAME=libtiff
 
-CURL_VERSION=8.3.0
+CURL_VERSION=8.2.1
 CURL_FOLDER_NAME=curl
 
 GETTEXT_FOLDER_NAME=gettext
 GETTEXT_VERSION=0.22
 
 ZLIB_FOLDER_NAME=zlib
-ZLIB_VERSION=1.3
+ZLIB_VERSION=1.2.13
 
 INSTALL_FILES_DIR=$HOME/install-files
 
@@ -57,13 +62,7 @@ if [ ! -d "$HOME/logs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/logs/$FOLDER_NAME"
 fi
 
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
-
+if [ ! -e "$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/lib/postgis-3.dylib" ]; then
 	bash $INSTALL_FILES_DIR/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$GEOS_FOLDER_NAME/$GEOS_VERSION/macos/install.sh
@@ -95,7 +94,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://postgis.net/stuff/postgis-$VERSION.tar.gz"
