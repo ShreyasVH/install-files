@@ -36,7 +36,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export PATH=$HOME/programs/$FOLDER_NAME_ELIXIR/$ELIXIR_VERSION/bin:$PATH
 	export PATH=$HOME/programs/$FOLDER_NAME_MAKE/$MAKE_VERSION/bin:$PATH
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/rabbitmq-server-generic-unix-$VERSION.tar.xz"

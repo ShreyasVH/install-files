@@ -34,24 +34,24 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd "$HOME/sources/$FOLDER_NAME"
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
-	printf "\t${bold}${blink}${green}Downloading source code${clear}\n"
+	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q "http://libestr.adiscon.com/files/download/libestr-$VERSION.tar.gz"
-	printf "\t${bold}${blink}${green}Extracting source code${clear}\n"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf "libestr-$VERSION.tar.gz"
 	mv "libestr-$VERSION" $VERSION
 	cd $VERSION
-	printf "\t${bold}${blink}${green}Configuring${clear}\n"
+	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Making${clear}\n"
+	printf "\t${bold}${green}Making${clear}\n"
 	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Installing${clear}\n"
+	printf "\t${bold}${green}Installing${clear}\n"
 	sudo make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/pkgconfig/libestr.pc" ]; then
-		printf "\t${bold}${blink}${green}Clearing${clear}\n"
+		printf "\t${bold}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf $VERSION
 		rm "libestr-$VERSION.tar.gz"

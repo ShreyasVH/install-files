@@ -63,21 +63,21 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	export PATH=$HOME/programs/$CMAKE_FOLDER_NAME/$CMAKE_VERSION/bin:$PATH
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 	
-	printf "\t${bold}${blink}${green}Downloading source code${clear}\n"
+	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://dev.mysql.com/get/Downloads/MySQL-$MINOR_VERSION/mysql-$VERSION.tar.gz"
-	printf "\t${bold}${blink}${green}Extracting source code${clear}\n"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf "mysql-$VERSION.tar.gz"
 	mv "mysql-"$VERSION $VERSION
 	cd $VERSION
 	mkdir bld
 	cd bld
-	printf "\t${bold}${blink}${green}Configuring${clear}\n"
+	printf "\t${bold}${green}Configuring${clear}\n"
 	cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BIRSON_VERSION/bin/bison > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Making${clear}\n"
+	printf "\t${bold}${green}Making${clear}\n"
 	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	printf "\t${bold}${blink}${green}Installing${clear}\n"
+	printf "\t${bold}${green}Installing${clear}\n"
 	echo $USER_PASSWORD | sudo -S make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mysql" ]; then
@@ -103,17 +103,17 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
 		echo "mysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown" >> stop.sh
 
-		printf "\t${bold}${blink}${green}Initializing DB${clear}\n"
+		printf "\t${bold}${green}Initializing DB${clear}\n"
 		mysqld --defaults-file=my.cnf --initialize 2> $HOME/logs/$FOLDER_NAME/$VERSION/initialize_db.log
 		TEMP_PASSWORD=$(grep -e 'A temporary password is generated for root@localhost: ' $HOME/logs/$FOLDER_NAME/$VERSION/initialize_db.log | awk '{print $13}')
-		printf "\t${bold}${blink}${green}Setting up SSL RSA${clear}\n"
+		printf "\t${bold}${green}Setting up SSL RSA${clear}\n"
 		mysql_ssl_rsa_setup --datadir=data > $HOME/logs/$FOLDER_NAME/$VERSION/sslSetupLog.txt 2>&1
-		printf "\t${bold}${blink}${green}Initial run${clear}\n"
+		printf "\t${bold}${green}Initial run${clear}\n"
 		mysqld_safe --defaults-file=my.cnf --skip-grant-tables > $HOME/logs/$FOLDER_NAME/$VERSION/initializeStart.txt 2>&1 &
 
 		PORT=$(grep -E '^ *port=' my.cnf | awk -F= '{print $2}' | tr -d ' ')
 
-		printf "\t${bold}${blink}${green}Sleeping for 60s${clear}\n"
+		printf "\t${bold}${green}Sleeping for 60s${clear}\n"
 		sleep 60
 
 		mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
@@ -125,7 +125,7 @@ EOF
 
 		bash stop.sh
 
-		printf "\t${bold}${blink}${green}Clearing${clear}\n"
+		printf "\t${bold}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf $VERSION
 		rm "mysql-$VERSION.tar.gz"
