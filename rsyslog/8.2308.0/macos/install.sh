@@ -1,56 +1,28 @@
 VERSION=8.2308.0
 FOLDER_NAME=rsyslog
 
-LIBESTR_FOLDER_NAME=libestr
-LIBESTR_VERSION=0.1.11
+cd $INSTALL_FILES_DIR
 
-PKG_CONFIG_VERSION=0.29.2
+LIBESTR_FOLDER_NAME=libestr
+LIBESTR_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBESTR_FOLDER_NAME" '.[$folder][$version][$name]')
+
 PKG_CONFIG_FOLDER_NAME="pkg-config"
+PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
 
 LIBFASTJSON_FOLDER_NAME=libfastjson
-LIBFASTJSON_VERSION=1.2304.0
+LIBFASTJSON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBFASTJSON_FOLDER_NAME" '.[$folder][$version][$name]')
 
 E2FSPROGS_FOLDER_NAME=e2fsprogs
-E2FSPROGS_VERSION=1.47.0
+E2FSPROGS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$E2FSPROGS_FOLDER_NAME" '.[$folder][$version][$name]')
 
 LIBGCRYPT_FOLDER_NAME=libgcrypt
-LIBGCRYPT_VERSION=1.10.2
+LIBGCRYPT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBGCRYPT_FOLDER_NAME" '.[$folder][$version][$name]')
 
-CURL_VERSION=8.2.1
 CURL_FOLDER_NAME=curl
+CURL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CURL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-INSTALL_FILES_DIR=$HOME/install-files
-
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/logs" ]; then
-	mkdir "$HOME/logs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rsyslogd" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	bash $INSTALL_FILES_DIR/$LIBESTR_FOLDER_NAME/$LIBESTR_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/macos/install.sh
@@ -83,37 +55,33 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q "https://www.rsyslog.com/files/download/rsyslog/rsyslog-$VERSION.tar.gz"
+	ARCHIVE_FILE="rsyslog-$VERSION.tar.gz"
+	wget -q "https://www.rsyslog.com/files/download/rsyslog/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	tar -xf "rsyslog-$VERSION.tar.gz"
+	tar -xf $ARCHIVE_FILE
 	mv "rsyslog-$VERSION" $VERSION
 	cd $VERSION
 	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
-	printf "\t${bold}${green}Making${clear}\n"
-	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	printf "\t${bold}${green}Installing${clear}\n"
-	sudo make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
-
-	cd $HOME/programs/$FOLDER_NAME/$VERSION
-	sudo chown -R $(whoami) .
-
-	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/sbin:"'$PATH' >> .envrc
-	echo "" >> .envrc
-	direnv allow
-
-	touch start.sh
-	echo "sudo sbin/rsyslogd -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rsyslog.conf &" >> start.sh
-
-	touch stop.sh
-	echo 'sudo kill -9 $(sudo lsof -t -i:514)' >> stop.sh
+	
+	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rsyslogd" ]; then
-		printf "\t${bold}${green}Clearing${clear}\n"
-		cd $HOME/sources/$FOLDER_NAME
-		rm -rf $VERSION
-		rm "rsyslog-$VERSION.tar.gz"
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
+
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
+
+		touch start.sh
+		echo "sudo sbin/rsyslogd -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rsyslog.conf &" >> start.sh
+
+		touch stop.sh
+		echo 'sudo kill -9 $(sudo lsof -t -i:514)' >> stop.sh
+
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 	fi
 fi

@@ -2,3 +2,8 @@
 .envrc
 data
 node_modules
+untested
+src
+refreshInstallOutput.txt
+test.sh
+test.js

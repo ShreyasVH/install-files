@@ -1,47 +1,19 @@
 FOLDER_NAME=elixir
 VERSION=1.15.4
 
-FOLDER_NAME_ERLANG=erlang
-ERLANG_VERSION=26.0.2
+cd $INSTALL_FILES_DIR
 
-INSTALL_FILES_DIR=$HOME/install-files
+ERLANG_FOLDER_NAME=erlang
+ERLANG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ERLANG_FOLDER_NAME" '.[$folder][$version][$name]')
 
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/logs" ]; then
-	mkdir "$HOME/logs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
-
-	bash $INSTALL_FILES_DIR/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$ERLANG_FOLDER_NAME/$ERLANG_VERSION/macos/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
+	export PATH=$HOME/programs/$ERLANG_FOLDER_NAME/$ERLANG_VERSION/bin:$PATH
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
@@ -59,7 +31,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
 		touch .envrc
-		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
+		echo 'export PATH=$HOME/programs/'"$ERLANG_FOLDER_NAME/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc
 		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc

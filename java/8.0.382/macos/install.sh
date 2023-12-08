@@ -1,39 +1,32 @@
 FOLDER_NAME=java
 VERSION=8.0.382
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://builds.openlogic.com/downloadJDK/openlogic-openjdk/8u382-b05/openlogic-openjdk-8u382-b05-mac-x64.zip"
+	wget -q --show-progress "https://github.com/bell-sw/Liberica/releases/download/8u382+6/bellsoft-jdk8u382+6-macos-aarch64.tar.gz"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	unzip "openlogic-openjdk-8u382-b05-mac-x64.zip" > /dev/null 2>&1
-	mv "openlogic-openjdk-8u382-b05-mac-x64/jdk1.8.0_382.jdk" $VERSION
+	tar -xf "bellsoft-jdk8u382+6-macos-aarch64.tar.gz"
+	mv "jdk8u382.jdk" $VERSION
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/Contents/Home/bin/java" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 		cd $VERSION
 		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
 		touch .envrc
-		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/Contents/Home/bin:"'$PATH' >> .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc
 		direnv allow
 
 		printf "\t${bold}${green}Clearing${clear}\n"
 		cd ..
-		rm -rf "openlogic-openjdk-8u382-b05-mac-x64"
-		rm "openlogic-openjdk-8u382-b05-mac-x64.zip"
+		rm "bellsoft-jdk8u382+6-macos-aarch64.tar.gz"
 	fi
 fi
-
-cd $HOME/install-files

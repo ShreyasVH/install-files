@@ -1,15 +1,11 @@
 VERSION=1.21.4
 FOLDER_NAME=go
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
+cd $INSTALL_FILES_DIR
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"

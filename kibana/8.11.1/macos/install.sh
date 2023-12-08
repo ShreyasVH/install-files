@@ -1,20 +1,16 @@
 FOLDER_NAME=kibana
 VERSION=8.11.1
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+cd $INSTALL_FILES_DIR
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/kibana.yml ]; then
 	printf "kibana.yml not found\n"
 	exit
 fi
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/kibana" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+	
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"

@@ -1,44 +1,34 @@
 FOLDER_NAME=node
 VERSION=19.9.0
 
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
+cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
+	cd $HOME/programs/$FOLDER_NAME
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
-
-	cd $HOME/sources/$FOLDER_NAME
-
-	wget "https://nodejs.org/dist/v"$VERSION"/node-v"$VERSION".tar.gz"
-	tar -xvf "node-v"$VERSION".tar.gz"
-	mv "node-v"$VERSION $VERSION
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	wget -q --show-progress "https://nodejs.org/dist/v$VERSION/node-v$VERSION-darwin-arm64.tar.gz"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf "node-v$VERSION-darwin-arm64.tar.gz"
+	mv "node-v$VERSION-darwin-arm64" $VERSION
 	cd $VERSION
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION
-	make
-	sudo make install
 
-	cd $HOME/programs/$FOLDER_NAME/$VERSION
-	sudo chown -R $(whoami) .
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
+		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
-	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
-	echo "" >> .envrc
-	direnv allow
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
 
-	cd $HOME/sources/$FOLDER_NAME
-	rm -rf $VERSION
-	rm "node-v"$VERSION".tar.gz"
+		printf "\t${bold}${green}Clearing${clear}\n"
+		cd ..
+		rm "node-v$VERSION-darwin-arm64.tar.gz"
+	fi
 fi
+
+cd $HOME/install-files

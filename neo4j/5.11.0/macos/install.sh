@@ -1,18 +1,10 @@
 VERSION=5.11.0
 FOLDER_NAME=neo4j
 
+cd $INSTALL_FILES_DIR
+
 JAVA_FOLDER_NAME=java
-JAVA_VERSION=17.0.7
-
-INSTALL_FILES_DIR=$HOME/install-files
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
+JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf ]; then
 	printf "neo4j.conf not found\n"
@@ -25,11 +17,11 @@ if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/
 fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+
 	bash $INSTALL_FILES_DIR/$JAVA_FOLDER_NAME/$JAVA_VERSION/macos/install.sh
 
 	cd $HOME/programs/$FOLDER_NAME
-
-	export PATH=$HOME/programs/$FOLDER_NAME_ERLANG/$ERLANG_VERSION/bin:$PATH
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
@@ -43,9 +35,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
 	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION/Contents/Home/bin:"'$PATH' >> .envrc
+	echo 'export PATH=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
-	echo 'export JAVA_HOME=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION"'/Contents/Home' >> .envrc
+	echo 'export JAVA_HOME=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION" >> .envrc
 	echo "" >> .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc

@@ -1,106 +1,83 @@
 VERSION=8.2.11
 FOLDER_NAME=php
 
-LIBXML_VERSION=2.11.5
+cd $INSTALL_FILES_DIR
+
 LIBXML_FOLDER_NAME=libxml2
+LIBXML_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBXML_FOLDER_NAME" '.[$folder][$version][$name]')
 
-OPENSSL_VERSION=3.1.2
 OPENSSL_FOLDER_NAME=openssl
+OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-PKG_CONFIG_VERSION=0.29.2
 PKG_CONFIG_FOLDER_NAME="pkg-config"
+PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
 
-ZLIB_VERSION=1.3
 ZLIB_FOLDER_NAME=zlib
+ZLIB_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ZLIB_FOLDER_NAME" '.[$folder][$version][$name]')
 
-CURL_VERSION=8.3.0
 CURL_FOLDER_NAME=curl
+CURL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CURL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-SQLITE_VERSION=3.43.1
 SQLITE_FOLDER_NAME=sqlite3
+SQLITE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$SQLITE_FOLDER_NAME" '.[$folder][$version][$name]')
 
-ONIGURUMA_VERSION=6.9.8
 ONIGURUMA_FOLDER_NAME=oniguruma
+ONIGURUMA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ONIGURUMA_FOLDER_NAME" '.[$folder][$version][$name]')
 
-AUTOCONF_VERSION=2.71
 AUTOCONF_FOLDER_NAME=autoconf
+AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
 
 APACHE_FOLDER_NAME=apache
-APACHE_VERSION=2.4.57
+APACHE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APACHE_FOLDER_NAME" '.[$folder][$version][$name]')
 
 POSTGRES_FOLDER_NAME=postgres
-POSTGRES_VERSION=16.0
+POSTGRES_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$POSTGRES_FOLDER_NAME" '.[$folder][$version][$name]')
 
 GETTEXT_FOLDER_NAME=gettext
-GETTEXT_VERSION=0.20.1
+# GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
+GETTEXT_VERSION=0.22.4
+
+
+LIBINTL_LIB=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib
+LIBINTL_INC=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include
 
 LIBICONV_FOLDER_NAME=libiconv
-LIBICONV_VERSION=1.17
+LIBICONV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBICONV_FOLDER_NAME" '.[$folder][$version][$name]')
 
 LIBMEMCACHED_FOLDER_NAME=libmemcached
-LIBMEMCACHED_VERSION=1.0.18
+LIBMEMCACHED_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBMEMCACHED_FOLDER_NAME" '.[$folder][$version][$name]')
 
-PHP_EXTENSION_MEMCACHED_VERSION=3.2.0
-PHP_EXTENSION_MEMCACHED_FOLDER_NAME=memcached
-PHP_EXTENSION_XDEBUG_VERSION=3.2.2
-PHP_EXTENSION_XDEBUG_FOLDER_NAME=xdebug
-PHP_EXTENSION_PHALCON_VERSION=5.3.0
-PHP_EXTENSION_PHALCON_FOLDER_NAME=phalcon
-PHP_EXTENSION_REDIS_VERSION=6.0.0
-PHP_EXTENSION_REDIS_FOLDER_NAME=redis
+PHP_EXTENSION_MEMCACHED_FOLDER_NAME=php-memcached
+PHP_EXTENSION_MEMCACHED_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_MEMCACHED_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_XDEBUG_FOLDER_NAME=php-xdebug
+PHP_EXTENSION_XDEBUG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_XDEBUG_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_PHALCON_FOLDER_NAME=php-phalcon
+PHP_EXTENSION_PHALCON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_PHALCON_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_REDIS_FOLDER_NAME=php-redis
+PHP_EXTENSION_REDIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_REDIS_FOLDER_NAME" '.[$folder][$version][$name]')
 
-INSTALL_FILES_DIR=$HOME/install-files
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions"
+	fi
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME"
+	fi
 
-if [ ! -d "$HOME/logs" ]; then
-	mkdir "$HOME/logs"
-fi
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME"
+	fi
 
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME"
+	fi
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/xdebug" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/xdebug"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/phalcon" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/phalcon"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/memcached" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/memcached"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/redis" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/redis"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME"
+	fi
 
 	bash $INSTALL_FILES_DIR/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/macos/install.sh
@@ -114,6 +91,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	bash $INSTALL_FILES_DIR/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/macos/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -148,18 +126,17 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://www.php.net/distributions/php-$VERSION.tar.gz"
+	ARCHIVE_FILE="php-$VERSION.tar.gz"
+	wget -q --show-progress "https://www.php.net/distributions/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	tar -xf "php-$VERSION.tar.gz"
+	tar -xf $ARCHIVE_FILE
 	mv "php-"$VERSION $VERSION
 	cd $VERSION
 	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/php/$VERSION --with-apxs2=$HOME/programs/$APACHE_FOLDER_NAME/$APACHE_VERSION/bin/apxs --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
-	printf "\t${bold}${green}Making${clear}\n"
-	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	printf "\t${bold}${green}Installing${clear}\n"
-	echo $USER_PASSWORD | sudo -S -p '' make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
@@ -179,11 +156,11 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo "" >> lib/php.ini
 
 		mkdir tmp
-		pear config-set cache_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
-		pear config-set download_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
-		pear config-set temp_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp
+		pear config-set cache_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp > /dev/null 2>&1
+		pear config-set download_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp > /dev/null 2>&1
+		pear config-set temp_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp > /dev/null 2>&1
 
-		pecl channel-update pecl.php.net
+		pecl channel-update pecl.php.net > /dev/null 2>&1
 
 		cd tmp
 		printf "\t${bold}${yellow}Installing xdebug extension${clear}\n"
@@ -283,9 +260,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		mv composer.phar ~/programs/$FOLDER_NAME/$VERSION/bin/composer
 		rm composer-setup.php
 
-		printf "\t${bold}${green}Clearing${clear}\n"
-		cd $HOME/sources/$FOLDER_NAME
-		rm -rf $VERSION
-		rm "php-$VERSION.tar.gz"
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 	fi
 fi

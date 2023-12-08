@@ -1,11 +1,11 @@
 FOLDER_NAME=mongosh
 VERSION=2.0.2
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+cd $INSTALL_FILES_DIR
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
@@ -15,9 +15,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	unzip "mongosh-$VERSION-darwin-arm64.zip" > /dev/null 2>&1
 	mv "mongosh-$VERSION-darwin-arm64" $VERSION
-	cd $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongosh" ]; then
+		cd $VERSION
 		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
 		touch .envrc
