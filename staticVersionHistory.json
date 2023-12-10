@@ -97,6 +97,10 @@
 	],
 	"php-xdebug": [
 		{
+		   "version": "3.3.0",
+		   "releaseDateString": "2023-11-30T00:00:00Z"
+	    },
+		{
 		   "version": "3.2.2",
 		   "releaseDateString": "2023-07-14T00:00:00Z"
 	    },
@@ -198,6 +202,14 @@
 	    }
 	],
 	"haproxy": [
+		{
+		   "version": "2.9.0",
+		   "releaseDateString": "2023-12-05T15:25:00Z"
+	    },
+		{
+		   "version": "2.8.5",
+		   "releaseDateString": "2023-12-07T14:22:00Z"
+	    },
 		{
 		   "version": "2.8.4",
 		   "releaseDateString": "2023-11-17T23:36:07Z"
