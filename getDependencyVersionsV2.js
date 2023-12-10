@@ -48,57 +48,57 @@ const getDependencyVersions = (requiredProgram, requiredVersion) => {
 				for (const dependencyProgram of programData[requiredProgram].dependencies) {
 					let dependencyVersion;
 					if (versions.hasOwnProperty(dependencyProgram)) {
-						versions[dependencyProgram].sort((a, b) => {
-							if ((new Date(a.releaseDateString)).getTime() > (new Date(b.releaseDateString)).getTime()) {
-								return -1;
-							} else if ((new Date(a.releaseDateString)).getTime() < (new Date(b.releaseDateString)).getTime()) {
-								return 1;
-							} else {
-								if (a.majorVersion > b.majorVersion) {
-									return -1;
-								} else if (a.majorVersion < b.majorVersion) {
-									return 1;
-								} else {
-									if (a.minorVersion > b.minorVersion) {
-										return -1;
-									} else if (a.minorVersion < b.minorVersion) {
-										return 1;
-									} else {
-										if (a.patchVersion > b.patchVersion) {
-											return -1;
-										} else if (a.patchVersion < b.patchVersion) {
-											return 1;
-										} else {
-											return 0;
-										}
-									}
-								}
-							}
-						});
-
 						// versions[dependencyProgram].sort((a, b) => {
-						// 	if (a.majorVersion > b.majorVersion) {
+						// 	if ((new Date(a.releaseDateString)).getTime() > (new Date(b.releaseDateString)).getTime()) {
 						// 		return -1;
-						// 	} else if (a.majorVersion < b.majorVersion) {
+						// 	} else if ((new Date(a.releaseDateString)).getTime() < (new Date(b.releaseDateString)).getTime()) {
 						// 		return 1;
 						// 	} else {
-						// 		if (a.minorVersion > b.minorVersion) {
+						// 		if (a.majorVersion > b.majorVersion) {
 						// 			return -1;
-						// 		} else if (a.minorVersion < b.minorVersion) {
+						// 		} else if (a.majorVersion < b.majorVersion) {
 						// 			return 1;
 						// 		} else {
-						// 			if (a.patchVersion > b.patchVersion) {
+						// 			if (a.minorVersion > b.minorVersion) {
 						// 				return -1;
-						// 			} else if (a.patchVersion < b.patchVersion) {
+						// 			} else if (a.minorVersion < b.minorVersion) {
 						// 				return 1;
 						// 			} else {
-						// 				return 0;
+						// 				if (a.patchVersion > b.patchVersion) {
+						// 					return -1;
+						// 				} else if (a.patchVersion < b.patchVersion) {
+						// 					return 1;
+						// 				} else {
+						// 					return 0;
+						// 				}
 						// 			}
 						// 		}
 						// 	}
 						// });
 
-						console.log(JSON.stringify(versions[dependencyProgram], null, ' '));
+						versions[dependencyProgram].sort((a, b) => {
+							if (a.majorVersion > b.majorVersion) {
+								return -1;
+							} else if (a.majorVersion < b.majorVersion) {
+								return 1;
+							} else {
+								if (a.minorVersion > b.minorVersion) {
+									return -1;
+								} else if (a.minorVersion < b.minorVersion) {
+									return 1;
+								} else {
+									if (a.patchVersion > b.patchVersion) {
+										return -1;
+									} else if (a.patchVersion < b.patchVersion) {
+										return 1;
+									} else {
+										return 0;
+									}
+								}
+							}
+						});
+
+						// console.log(JSON.stringify(versions[dependencyProgram], null, ' '));
 
 
 						const eligibleVersions = versions[dependencyProgram].filter(i => (new Date(i.releaseDateString)).getTime() < releaseDate.getTime());

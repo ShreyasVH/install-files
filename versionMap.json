@@ -356,22 +356,22 @@
    "pcre2": "No version as per date"
   },
   "2.2.22": {
-   "apr": "0.9.20",
+   "apr": "1.4.5",
    "apr-util": "1.4.1",
    "pcre2": "No version as per date"
   },
   "2.4.0": {
-   "apr": "0.9.20",
+   "apr": "1.4.5",
    "apr-util": "1.4.1",
    "pcre2": "No version as per date"
   },
   "2.3.16": {
-   "apr": "0.9.20",
+   "apr": "1.4.5",
    "apr-util": "1.4.1",
    "pcre2": "No version as per date"
   },
   "2.3.15": {
-   "apr": "0.9.20",
+   "apr": "1.4.5",
    "apr-util": "1.3.12",
    "pcre2": "No version as per date"
   },
@@ -411,52 +411,52 @@
    "pcre2": "No version as per date"
   },
   "2.3.11": {
-   "apr": "0.9.19",
-   "apr-util": "0.9.19",
+   "apr": "1.4.2",
+   "apr-util": "1.3.10",
    "pcre2": "No version as per date"
   },
   "2.3.10": {
-   "apr": "0.9.19",
-   "apr-util": "0.9.19",
+   "apr": "1.4.2",
+   "apr-util": "1.3.10",
    "pcre2": "No version as per date"
   },
   "2.3.9": {
-   "apr": "0.9.19",
-   "apr-util": "0.9.19",
+   "apr": "1.4.2",
+   "apr-util": "1.3.10",
    "pcre2": "No version as per date"
   },
   "2.2.17": {
-   "apr": "0.9.19",
-   "apr-util": "0.9.19",
+   "apr": "1.4.2",
+   "apr-util": "1.3.10",
    "pcre2": "No version as per date"
   },
   "2.0.64": {
-   "apr": "0.9.19",
-   "apr-util": "0.9.19",
+   "apr": "1.4.2",
+   "apr-util": "1.3.10",
    "pcre2": "No version as per date"
   },
   "2.3.8": {
-   "apr": "1.3.12",
+   "apr": "1.4.2",
    "apr-util": "1.3.9",
    "pcre2": "No version as per date"
   },
   "2.3.7": {
-   "apr": "1.3.12",
+   "apr": "1.4.2",
    "apr-util": "1.3.9",
    "pcre2": "No version as per date"
   },
   "2.2.16": {
-   "apr": "1.3.12",
+   "apr": "1.4.2",
    "apr-util": "1.3.9",
    "pcre2": "No version as per date"
   },
   "2.3.6": {
-   "apr": "1.3.12",
+   "apr": "1.4.2",
    "apr-util": "1.3.9",
    "pcre2": "No version as per date"
   },
   "2.2.15": {
-   "apr": "1.3.12",
+   "apr": "1.4.2",
    "apr-util": "1.3.9",
    "pcre2": "No version as per date"
   },
@@ -541,28 +541,28 @@
    "pcre2": "No version as per date"
   },
   "2.2.6": {
-   "apr": "0.9.16",
-   "apr-util": "0.9.15",
+   "apr": "1.2.11",
+   "apr-util": "1.2.10",
    "pcre2": "No version as per date"
   },
   "2.0.61": {
-   "apr": "0.9.16",
-   "apr-util": "0.9.15",
+   "apr": "1.2.11",
+   "apr-util": "1.2.10",
    "pcre2": "No version as per date"
   },
   "2.2.5": {
-   "apr": "0.9.14",
-   "apr-util": "0.9.13",
+   "apr": "1.2.9",
+   "apr-util": "1.2.8",
    "pcre2": "No version as per date"
   },
   "2.0.60": {
-   "apr": "0.9.14",
-   "apr-util": "0.9.13",
+   "apr": "1.2.9",
+   "apr-util": "1.2.8",
    "pcre2": "No version as per date"
   },
   "2.2.4": {
-   "apr": "0.9.13",
-   "apr-util": "0.9.13",
+   "apr": "1.2.8",
+   "apr-util": "1.2.8",
    "pcre2": "No version as per date"
   },
   "2.2.3": {
@@ -596,8 +596,8 @@
    "pcre2": "No version as per date"
   },
   "2.2.1": {
-   "apr": "0.9.11",
-   "apr-util": "0.9.11",
+   "apr": "1.2.6",
+   "apr-util": "1.2.6",
    "pcre2": "No version as per date"
   },
   "2.2.0": {
@@ -651,18 +651,18 @@
    "pcre2": "No version as per date"
   },
   "2.1.3": {
-   "apr": "0.9.6",
-   "apr-util": "0.9.6",
+   "apr": "1.1.0",
+   "apr-util": "1.1.0",
    "pcre2": "No version as per date"
   },
   "2.0.53": {
-   "apr": "0.9.6",
-   "apr-util": "0.9.6",
+   "apr": "1.1.0",
+   "apr-util": "1.1.0",
    "pcre2": "No version as per date"
   },
   "2.1.2": {
-   "apr": "0.9.0",
-   "apr-util": "0.9.1",
+   "apr": "1.0.1",
+   "apr-util": "1.0.1",
    "pcre2": "No version as per date"
   },
   "2.1.1": {
@@ -1053,25 +1053,25 @@
    "apr": "1.4.6"
   },
   "1.4.1": {
-   "apr": "0.9.20"
+   "apr": "1.4.5"
   },
   "1.4.0": {
-   "apr": "0.9.20"
+   "apr": "1.4.5"
   },
   "1.3.12": {
    "apr": "1.4.4"
   },
   "1.3.11": {
-   "apr": "0.9.19"
+   "apr": "1.4.2"
   },
   "0.9.19": {
-   "apr": "0.9.19"
+   "apr": "1.4.2"
   },
   "0.9.18": {
-   "apr": "0.9.19"
+   "apr": "1.4.2"
   },
   "1.3.10": {
-   "apr": "1.3.12"
+   "apr": "1.4.2"
   },
   "1.3.9": {
    "apr": "1.3.8"
@@ -1080,16 +1080,16 @@
    "apr": "1.3.6"
   },
   "1.3.7": {
-   "apr": "0.9.18"
+   "apr": "1.3.5"
   },
   "1.3.6": {
    "apr": "1.3.5"
   },
   "0.9.17": {
-   "apr": "0.9.18"
+   "apr": "1.3.5"
   },
   "0.9.16": {
-   "apr": "0.9.18"
+   "apr": "1.3.5"
   },
   "1.3.5": {
    "apr": "1.3.4"
@@ -1116,37 +1116,37 @@
    "apr": "1.2.12"
   },
   "1.2.10": {
-   "apr": "0.9.16"
+   "apr": "1.2.11"
   },
   "0.9.15": {
-   "apr": "0.9.16"
+   "apr": "1.2.11"
   },
   "1.2.9": {
-   "apr": "0.9.15"
+   "apr": "1.2.10"
   },
   "0.9.14": {
-   "apr": "0.9.15"
+   "apr": "1.2.10"
   },
   "1.2.8": {
-   "apr": "0.9.13"
+   "apr": "1.2.8"
   },
   "0.9.13": {
-   "apr": "0.9.13"
+   "apr": "1.2.8"
   },
   "1.2.7": {
-   "apr": "0.9.12"
+   "apr": "1.2.6"
   },
   "0.9.12": {
-   "apr": "0.9.12"
+   "apr": "1.2.6"
   },
   "0.9.11": {
-   "apr": "0.9.11"
+   "apr": "1.2.6"
   },
   "1.2.6": {
    "apr": "1.2.6"
   },
   "0.9.10": {
-   "apr": "0.9.10"
+   "apr": "1.2.6"
   },
   "1.2.5": {
    "apr": "1.2.5"
@@ -1155,19 +1155,19 @@
    "apr": "1.2.4"
   },
   "0.9.9": {
-   "apr": "0.9.9"
+   "apr": "1.2.3"
   },
   "1.2.3": {
    "apr": "1.2.3"
   },
   "0.9.8": {
-   "apr": "0.9.8"
+   "apr": "1.2.2"
   },
   "1.2.2": {
    "apr": "1.2.2"
   },
   "0.9.7": {
-   "apr": "0.9.7"
+   "apr": "1.2.1"
   },
   "1.2.1": {
    "apr": "1.2.1"
@@ -1179,10 +1179,10 @@
    "apr": "1.1.1"
   },
   "0.9.6": {
-   "apr": "0.9.6"
+   "apr": "1.1.0"
   },
   "1.1.0": {
-   "apr": "0.9.0"
+   "apr": "1.0.1"
   },
   "1.0.0": {
    "apr": "1.0.1"
@@ -1228,16 +1228,16 @@
  },
  "curl": {
   "8.4.0": {
-   "openssl": "3.0.11"
+   "openssl": "3.1.3"
   },
   "8.3.0": {
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "8.2.1": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "8.2.0": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "8.1.2": {
    "openssl": "3.1.0"
@@ -1749,13 +1749,13 @@
  },
  "elixir": {
   "1.15.7": {
-   "erlang": "25.3.2.7"
+   "erlang": "26.1.2"
   },
   "1.15.6": {
    "erlang": "26.1"
   },
   "1.15.5": {
-   "erlang": "25.3.2.5"
+   "erlang": "26.0.2"
   },
   "1.15.4": {
    "erlang": "26.0.2"
@@ -1776,28 +1776,28 @@
    "erlang": "26.0"
   },
   "1.14.4": {
-   "erlang": "24.3.4.10"
+   "erlang": "25.3"
   },
   "1.14.3": {
-   "erlang": "24.3.4.8"
+   "erlang": "25.2.1"
   },
   "1.14.2": {
    "erlang": "25.1.2"
   },
   "1.14.1": {
-   "erlang": "24.3.4.6"
+   "erlang": "25.1.1"
   },
   "1.14.0": {
-   "erlang": "24.3.4.4"
+   "erlang": "25.0.4"
   },
   "1.13.4": {
    "erlang": "24.3.3"
   },
   "1.13.3": {
-   "erlang": "23.3.4.11"
+   "erlang": "24.2.1"
   },
   "1.13.2": {
-   "erlang": "22.3.4.24"
+   "erlang": "24.2"
   },
   "1.13.1": {
    "erlang": "24.2"
@@ -1806,13 +1806,13 @@
    "erlang": "24.1.7"
   },
   "1.12.3": {
-   "erlang": "23.3.4.6"
+   "erlang": "24.0.6"
   },
   "1.12.2": {
    "erlang": "24.0.3"
   },
   "1.12.1": {
-   "erlang": "23.2.7.4"
+   "erlang": "24.0.1"
   },
   "1.12.0": {
    "erlang": "24.0"
@@ -1824,7 +1824,7 @@
    "erlang": "23.2.1"
   },
   "1.11.2": {
-   "erlang": "22.3.4.12"
+   "erlang": "23.1.1"
   },
   "1.11.1": {
    "erlang": "23.1.1"
@@ -1833,10 +1833,10 @@
    "erlang": "23.1.1"
   },
   "1.10.4": {
-   "erlang": "22.3.4.2"
+   "erlang": "23.0.2"
   },
   "1.10.3": {
-   "erlang": "21.3.8.15"
+   "erlang": "22.3.3"
   },
   "1.10.2": {
    "erlang": "22.2.7"
@@ -1857,7 +1857,7 @@
    "erlang": "22.1.3"
   },
   "1.9.1": {
-   "erlang": "21.3.8.6"
+   "erlang": "22.0.7"
   },
   "1.9.0": {
    "erlang": "22.0.4"
@@ -1869,22 +1869,22 @@
    "erlang": "21.2.4"
   },
   "1.8.0": {
-   "erlang": "19.3.6.13"
+   "erlang": "21.2.2"
   },
   "1.7.4": {
-   "erlang": "19.3.6.12"
+   "erlang": "21.1.1"
   },
   "1.7.3": {
    "erlang": "21.0.6"
   },
   "1.7.2": {
-   "erlang": "20.3.8.4"
+   "erlang": "21.0.4"
   },
   "1.7.1": {
-   "erlang": "20.3.8.3"
+   "erlang": "21.0.4"
   },
   "1.7.0": {
-   "erlang": "20.3.8.3"
+   "erlang": "21.0.4"
   },
   "1.6.6": {
    "erlang": "21.0"
@@ -1896,7 +1896,7 @@
    "erlang": "20.3.1"
   },
   "1.6.3": {
-   "erlang": "18.3.4.8"
+   "erlang": "20.2.4"
   },
   "1.6.2": {
    "erlang": "20.2.4"
@@ -1947,7 +1947,7 @@
    "erlang": "19.0.2"
   },
   "1.3.1": {
-   "erlang": "18.3.4.1"
+   "erlang": "19.0"
   },
   "1.3.0": {
    "erlang": "18.3.4"
@@ -1959,7 +1959,7 @@
    "erlang": "18.3.2"
   },
   "1.2.4": {
-   "erlang": "18.2.4.1"
+   "erlang": "18.3"
   },
   "1.2.3": {
    "erlang": "18.2.4"
@@ -1971,7 +1971,7 @@
    "erlang": "18.2.2"
   },
   "1.2.0": {
-   "erlang": "17.5.6.7"
+   "erlang": "18.2.1"
   },
   "1.1.1": {
    "erlang": "18.1"
@@ -1980,7 +1980,7 @@
    "erlang": "18.1"
   },
   "1.0.5": {
-   "erlang": "17.5.6.1"
+   "erlang": "18.0"
   },
   "1.0.4": {
    "erlang": "17.5"
@@ -2108,76 +2108,76 @@
  },
  "erlang": {
   "25.3.2.7": {
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "perl": "5.38.0"
   },
   "26.1.2": {
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "perl": "5.38.0"
   },
   "24.3.4.14": {
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "perl": "5.38.0"
   },
   "26.1.1": {
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "perl": "5.38.0"
   },
   "26.1": {
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "perl": "5.38.0"
   },
   "25.3.2.6": {
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "perl": "5.38.0"
   },
   "25.3.2.5": {
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "perl": "5.38.0"
   },
   "26.0.2": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "25.3.2.3": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "24.3.4.13": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "26.0.1": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "23.3.4.19": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "25.3.2.2": {
-   "openssl": "3.0.9",
-   "perl": "5.36.1"
+   "openssl": "3.1.1",
+   "perl": "5.37.11"
   },
   "25.3.2.1": {
    "openssl": "3.1.0",
-   "perl": "5.36.1"
+   "perl": "5.37.11"
   },
   "24.3.4.12": {
    "openssl": "3.1.0",
-   "perl": "5.36.1"
+   "perl": "5.37.11"
   },
   "26.0": {
    "openssl": "3.1.0",
-   "perl": "5.36.1"
+   "perl": "5.37.11"
   },
   "25.3.2": {
    "openssl": "3.1.0",
-   "perl": "5.36.1"
+   "perl": "5.37.11"
   },
   "25.3.1": {
    "openssl": "3.1.0",
-   "perl": "5.36.1"
+   "perl": "5.37.11"
   },
   "24.3.4.11": {
    "openssl": "3.1.0",
@@ -2329,11 +2329,11 @@
   },
   "24.3.2": {
    "openssl": "3.0.2",
-   "perl": "5.34.1"
+   "perl": "5.35.9"
   },
   "24.3.1": {
    "openssl": "3.0.2",
-   "perl": "5.34.1"
+   "perl": "5.35.9"
   },
   "24.3": {
    "openssl": "3.0.1",
@@ -2553,23 +2553,23 @@
   },
   "22.3.4.16": {
    "openssl": "1.1.1",
-   "perl": "5.32.1"
+   "perl": "5.33.6"
   },
   "21.3.8.21": {
    "openssl": "1.1.1",
-   "perl": "5.32.1"
+   "perl": "5.33.6"
   },
   "23.2.5": {
    "openssl": "1.1.1",
-   "perl": "5.32.1"
+   "perl": "5.33.6"
   },
   "23.2.4": {
    "openssl": "1.1.1",
-   "perl": "5.32.1"
+   "perl": "5.33.6"
   },
   "21.3.8.20": {
    "openssl": "1.1.1",
-   "perl": "5.32.1"
+   "perl": "5.33.6"
   },
   "23.2.3": {
    "openssl": "1.1.1",
@@ -2685,7 +2685,7 @@
   },
   "22.3.4.2": {
    "openssl": "1.1.1",
-   "perl": "5.30.3"
+   "perl": "5.31.11"
   },
   "23.0.2": {
    "openssl": "1.1.1",
@@ -2797,11 +2797,11 @@
   },
   "20.3.8.24": {
    "openssl": "1.1.1",
-   "perl": "5.30.1"
+   "perl": "5.31.5"
   },
   "21.3.8.11": {
    "openssl": "1.1.1",
-   "perl": "5.30.1"
+   "perl": "5.31.5"
   },
   "22.1.7": {
    "openssl": "1.1.1",
@@ -2901,23 +2901,23 @@
   },
   "22.0.1": {
    "openssl": "1.1.1",
-   "perl": "5.10.1"
+   "perl": "5.29.10"
   },
   "21.3.8.2": {
    "openssl": "1.1.1",
-   "perl": "5.10.1"
+   "perl": "5.29.10"
   },
   "21.3.8.1": {
    "openssl": "1.1.1",
-   "perl": "5.10.1"
+   "perl": "5.29.10"
   },
   "22.0": {
    "openssl": "1.1.1",
-   "perl": "5.10.1"
+   "perl": "5.29.10"
   },
   "21.3.7.1": {
    "openssl": "1.1.1",
-   "perl": "5.10.1"
+   "perl": "5.29.10"
   },
   "21.3.8": {
    "openssl": "1.1.1",
@@ -3021,15 +3021,15 @@
   },
   "21.2": {
    "openssl": "1.1.1",
-   "perl": "5.28.1"
+   "perl": "5.29.5"
   },
   "20.3.8.15": {
    "openssl": "1.1.1",
-   "perl": "5.28.1"
+   "perl": "5.29.5"
   },
   "21.1.4": {
    "openssl": "1.1.1",
-   "perl": "5.28.1"
+   "perl": "5.29.5"
   },
   "21.1.3": {
    "openssl": "1.1.1",
@@ -3193,11 +3193,11 @@
   },
   "20.3.4": {
    "openssl": "No version as per date",
-   "perl": "5.26.2"
+   "perl": "5.27.10"
   },
   "20.3.3": {
    "openssl": "No version as per date",
-   "perl": "5.26.2"
+   "perl": "5.27.10"
   },
   "19.3.6.8": {
    "openssl": "No version as per date",
@@ -3297,15 +3297,15 @@
   },
   "20.1.2": {
    "openssl": "No version as per date",
-   "perl": "5.26.1"
+   "perl": "5.27.4"
   },
   "19.3.6.3": {
    "openssl": "No version as per date",
-   "perl": "5.26.1"
+   "perl": "5.27.4"
   },
   "20.1.1": {
    "openssl": "No version as per date",
-   "perl": "5.26.1"
+   "perl": "5.27.4"
   },
   "20.1": {
    "openssl": "No version as per date",
@@ -3481,7 +3481,7 @@
   },
   "18.3.3": {
    "openssl": "No version as per date",
-   "perl": "5.22.2"
+   "perl": "5.23.9"
   },
   "18.3.2": {
    "openssl": "No version as per date",
@@ -3521,15 +3521,15 @@
   },
   "17.5.6.7": {
    "openssl": "No version as per date",
-   "perl": "5.22.1"
+   "perl": "5.23.5"
   },
   "18.2.1": {
    "openssl": "No version as per date",
-   "perl": "5.22.1"
+   "perl": "5.23.5"
   },
   "18.2": {
    "openssl": "No version as per date",
-   "perl": "5.22.1"
+   "perl": "5.23.5"
   },
   "17.5.6.6": {
    "openssl": "No version as per date",
@@ -3641,7 +3641,7 @@
   },
   "17.3.2": {
    "openssl": "No version as per date",
-   "perl": "5.18.4"
+   "perl": "5.21.4"
   },
   "17.3.1": {
    "openssl": "No version as per date",
@@ -3649,7 +3649,7 @@
   },
   "17.3": {
    "openssl": "No version as per date",
-   "perl": "5.20.1"
+   "perl": "5.21.3"
   },
   "17.2.2": {
    "openssl": "No version as per date",
@@ -3726,22 +3726,22 @@
    "cmake": "3.24.3"
   },
   "3.11.0": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.7.5": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.10.3": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.9.3": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.8.3": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.7.4": {
-   "cmake": "3.22.5"
+   "cmake": "3.23.2"
   },
   "3.10.2": {
    "cmake": "3.22.1"
@@ -3917,25 +3917,25 @@
  },
  "haproxy": {
   "2.8.4": {
-   "openssl": "3.0.12"
+   "openssl": "3.1.4"
   },
   "2.8.3": {
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "2.8.2": {
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "2.8.1": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "2.8.0": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "2.7.10": {
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "2.7.9": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "2.7.8": {
    "openssl": "3.1.0"
@@ -3965,10 +3965,10 @@
    "openssl": "3.0.7"
   },
   "2.6.15": {
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "2.6.14": {
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "2.6.13": {
    "openssl": "3.1.0"
@@ -4576,19 +4576,19 @@
  "libxml2": {
   "2.12.1": {
    "pkg-config": "0.29.2",
-   "python": "3.11.6"
+   "python": "3.12.0"
   },
   "2.12.0": {
    "pkg-config": "0.29.2",
-   "python": "3.11.6"
+   "python": "3.12.0"
   },
   "2.11.6": {
    "pkg-config": "0.29.2",
-   "python": "3.11.6"
+   "python": "3.12.0"
   },
   "2.11.5": {
    "pkg-config": "0.29.2",
-   "python": "3.10.12"
+   "python": "3.11.4"
   },
   "2.11.4": {
    "pkg-config": "0.29.2",
@@ -4616,7 +4616,7 @@
   },
   "2.10.3": {
    "pkg-config": "0.29.2",
-   "python": "3.8.15"
+   "python": "3.10.8"
   },
   "2.10.2": {
    "pkg-config": "0.29.2",
@@ -4632,11 +4632,11 @@
   },
   "2.9.14": {
    "pkg-config": "0.29.2",
-   "python": "3.9.12"
+   "python": "3.10.4"
   },
   "2.9.13": {
    "pkg-config": "0.29.2",
-   "python": "3.9.10"
+   "python": "3.10.2"
   },
   "2.9.12": {
    "pkg-config": "0.29.2",
@@ -4648,7 +4648,7 @@
   },
   "2.9.10": {
    "pkg-config": "0.29.2",
-   "python": "3.5.8"
+   "python": "3.8.0"
   },
   "2.9.9": {
    "pkg-config": "0.29.2",
@@ -4656,7 +4656,7 @@
   },
   "2.9.8": {
    "pkg-config": "0.29.2",
-   "python": "3.5.5"
+   "python": "3.6.4"
   },
   "2.9.7": {
    "pkg-config": "0.29.2",
@@ -4668,11 +4668,11 @@
   },
   "2.9.5": {
    "pkg-config": "0.29.2",
-   "python": "3.4.7"
+   "python": "3.6.2"
   },
   "2.9.4": {
    "pkg-config": "No version as per date",
-   "python": "3.4.4"
+   "python": "3.5.1"
   },
   "2.9.3": {
    "pkg-config": "No version as per date",
@@ -4680,11 +4680,11 @@
   },
   "2.9.2": {
    "pkg-config": "No version as per date",
-   "python": "3.3.6"
+   "python": "3.4.2"
   },
   "2.9.1": {
    "pkg-config": "No version as per date",
-   "python": "2.7.4"
+   "python": "3.3.1"
   },
   "2.9.0": {
    "pkg-config": "No version as per date",
@@ -4696,15 +4696,15 @@
   },
   "2.7.8": {
    "pkg-config": "No version as per date",
-   "python": "2.6.6"
+   "python": "3.1.2"
   },
   "2.7.7": {
    "pkg-config": "No version as per date",
-   "python": "2.5.5"
+   "python": "3.1.1"
   },
   "2.7.6": {
    "pkg-config": "No version as per date",
-   "python": "2.6.3"
+   "python": "3.1.1"
   },
   "2.7.5": {
    "pkg-config": "No version as per date",
@@ -5106,7 +5106,7 @@
    "libevent": "2.0.12"
   },
   "1.4.5": {
-   "libevent": "1.4.5"
+   "libevent": "1.4.13"
   },
   "1.4.4": {
    "libevent": "1.4.13"
@@ -6476,32 +6476,32 @@
  "mysql": {
   "8.2.0": {
    "cmake": "3.27.7",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "bison": "3.8.2"
   },
   "8.0.35": {
    "cmake": "3.27.7",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "bison": "3.8.2"
   },
   "5.7.44": {
    "cmake": "3.27.6",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "bison": "3.8.2"
   },
   "8.0.34": {
    "cmake": "3.26.4",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "bison": "3.8.2"
   },
   "8.1.0": {
    "cmake": "3.26.4",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "bison": "3.8.2"
   },
   "5.7.43": {
    "cmake": "3.26.4",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "bison": "3.8.2"
   },
   "8.0.33": {
@@ -6535,12 +6535,12 @@
    "bison": "3.8.2"
   },
   "8.0.30": {
-   "cmake": "3.22.5",
+   "cmake": "3.23.2",
    "openssl": "3.0.5",
    "bison": "3.8.2"
   },
   "5.7.39": {
-   "cmake": "3.22.5",
+   "cmake": "3.23.2",
    "openssl": "3.0.3",
    "bison": "3.8.2"
   },
@@ -6630,7 +6630,7 @@
    "bison": "3.7.2"
   },
   "8.0.21": {
-   "cmake": "3.16.8",
+   "cmake": "3.17.3",
    "openssl": "1.1.1",
    "bison": "3.6.4"
   },
@@ -6660,7 +6660,7 @@
    "bison": "3.5.3"
   },
   "5.7.29": {
-   "cmake": "3.15.6",
+   "cmake": "3.16.1",
    "openssl": "1.1.1",
    "bison": "3.5"
   },
@@ -6747,12 +6747,12 @@
   "8.0.13": {
    "cmake": "3.12.3",
    "openssl": "1.1.1",
-   "bison": "2.1"
+   "bison": "3.1"
   },
   "5.7.24": {
    "cmake": "3.12.3",
    "openssl": "1.1.1",
-   "bison": "2.1"
+   "bison": "3.1"
   },
   "5.6.42": {
    "cmake": "3.12.2",
@@ -9517,14 +9517,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.9",
-   "openssl": "3.0.12",
+   "openssl": "3.1.4",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.4.0",
    "php-redis": "6.0.2",
    "php-sqlsrv": "5.11.1",
    "php-xdebug": "3.2.2",
-   "postgres": "11.22",
+   "postgres": "16.1",
    "sqlite3": "3.44.0",
    "zlib": "1.3"
   },
@@ -9537,14 +9537,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.9",
-   "openssl": "3.0.12",
+   "openssl": "3.1.4",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.4.0",
    "php-redis": "6.0.2",
    "php-sqlsrv": "5.11.1",
    "php-xdebug": "3.2.2",
-   "postgres": "11.22",
+   "postgres": "16.1",
    "sqlite3": "3.44.0",
    "zlib": "1.3"
   },
@@ -9557,14 +9557,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.9",
-   "openssl": "3.0.12",
+   "openssl": "3.1.4",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.4.0",
    "php-redis": "6.0.2",
    "php-sqlsrv": "5.11.1",
    "php-xdebug": "3.2.2",
-   "postgres": "11.22",
+   "postgres": "16.1",
    "sqlite3": "3.44.0",
    "zlib": "1.3"
   },
@@ -9577,7 +9577,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.9",
-   "openssl": "3.0.12",
+   "openssl": "3.1.4",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.3.1",
@@ -9597,7 +9597,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.9",
-   "openssl": "3.0.12",
+   "openssl": "3.1.4",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.3.1",
@@ -9637,7 +9637,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.3.1",
@@ -9657,14 +9657,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.3.0",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.2",
-   "postgres": "11.21",
+   "postgres": "15.4",
    "sqlite3": "3.43.0",
    "zlib": "1.3"
   },
@@ -9677,7 +9677,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.3.0",
@@ -9697,7 +9697,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.3",
@@ -9717,14 +9717,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.3",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.2",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.42.0",
    "zlib": "1.2.13"
   },
@@ -9737,14 +9737,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.3",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.2",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.42.0",
    "zlib": "1.2.13"
   },
@@ -9757,7 +9757,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.2",
@@ -9777,14 +9777,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.2",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.42.0",
    "zlib": "1.2.13"
   },
@@ -9797,14 +9797,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.1",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.42.0",
    "zlib": "1.2.13"
   },
@@ -9817,7 +9817,7 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.1",
@@ -9837,14 +9837,14 @@
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
    "oniguruma": "6.9.8",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2",
    "php-memcached": "3.2.0",
    "php-phalcon": "5.2.1",
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.42.0",
    "zlib": "1.2.13"
   },
@@ -9864,7 +9864,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.41.2",
    "zlib": "1.2.13"
   },
@@ -9884,7 +9884,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.20",
+   "postgres": "15.3",
    "sqlite3": "3.41.2",
    "zlib": "1.2.13"
   },
@@ -9904,7 +9904,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.41.2",
    "zlib": "1.2.13"
   },
@@ -9924,7 +9924,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.1",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.41.2",
    "zlib": "1.2.13"
   },
@@ -9944,7 +9944,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.0",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.41.1",
    "zlib": "1.2.13"
   },
@@ -9964,7 +9964,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.11.0",
    "php-xdebug": "3.2.0",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.41.1",
    "zlib": "1.2.13"
   },
@@ -9984,7 +9984,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10004,7 +10004,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10024,7 +10024,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "11.19",
+   "postgres": "15.2",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10044,7 +10044,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10064,7 +10064,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10084,7 +10084,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10104,7 +10104,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10124,7 +10124,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.2.0",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.1",
    "zlib": "1.2.13"
   },
@@ -10144,7 +10144,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.1.6",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.0",
    "zlib": "1.2.13"
   },
@@ -10164,7 +10164,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.1.6",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.0",
    "zlib": "1.2.13"
   },
@@ -10184,7 +10184,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "3.1.6",
-   "postgres": "10.23",
+   "postgres": "15.1",
    "sqlite3": "3.40.0",
    "zlib": "1.2.13"
   },
@@ -10264,7 +10264,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.3",
    "zlib": "1.2.12"
   },
@@ -10284,7 +10284,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.3",
    "zlib": "1.2.12"
   },
@@ -10304,7 +10304,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.3",
    "zlib": "1.2.12"
   },
@@ -10324,7 +10324,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.3",
    "zlib": "1.2.12"
   },
@@ -10344,7 +10344,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.2",
    "zlib": "1.2.12"
   },
@@ -10364,7 +10364,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.22",
+   "postgres": "14.5",
    "sqlite3": "3.39.2",
    "zlib": "1.2.12"
   },
@@ -10464,7 +10464,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.21",
+   "postgres": "14.3",
    "sqlite3": "3.38.5",
    "zlib": "1.2.12"
   },
@@ -10484,7 +10484,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.21",
+   "postgres": "14.3",
    "sqlite3": "3.38.5",
    "zlib": "1.2.12"
   },
@@ -10504,7 +10504,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.21",
+   "postgres": "14.3",
    "sqlite3": "3.38.5",
    "zlib": "1.2.12"
   },
@@ -10524,7 +10524,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.21",
+   "postgres": "14.3",
    "sqlite3": "3.38.5",
    "zlib": "1.2.12"
   },
@@ -10544,7 +10544,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.21",
+   "postgres": "14.3",
    "sqlite3": "3.38.5",
    "zlib": "1.2.12"
   },
@@ -10564,7 +10564,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.38.2",
    "zlib": "1.2.12"
   },
@@ -10584,7 +10584,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.38.2",
    "zlib": "1.2.12"
   },
@@ -10604,7 +10604,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.38.2",
    "zlib": "1.2.12"
   },
@@ -10624,7 +10624,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.38.1",
    "zlib": "1.2.11"
   },
@@ -10644,7 +10644,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.38.1",
    "zlib": "1.2.11"
   },
@@ -10664,7 +10664,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.37.2",
    "zlib": "1.2.11"
   },
@@ -10684,7 +10684,7 @@
    "php-redis": "5.3.7",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.37.2",
    "zlib": "1.2.11"
   },
@@ -10704,7 +10704,7 @@
    "php-redis": "5.3.6",
    "php-sqlsrv": "5.10.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.20",
+   "postgres": "14.2",
    "sqlite3": "3.37.2",
    "zlib": "1.2.11"
   },
@@ -10724,7 +10724,7 @@
    "php-redis": "5.3.6",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.37.2",
    "zlib": "1.2.11"
   },
@@ -10744,7 +10744,7 @@
    "php-redis": "5.3.6",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.37.2",
    "zlib": "1.2.11"
   },
@@ -10764,7 +10764,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.37.0",
    "zlib": "1.2.11"
   },
@@ -10784,7 +10784,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.37.0",
    "zlib": "1.2.11"
   },
@@ -10804,7 +10804,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.37.0",
    "zlib": "1.2.11"
   },
@@ -10824,7 +10824,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -10844,7 +10844,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -10864,7 +10864,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -10884,7 +10884,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.19",
+   "postgres": "14.1",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -10964,7 +10964,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -10984,7 +10984,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11004,7 +11004,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11024,7 +11024,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11044,7 +11044,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11064,7 +11064,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.18",
+   "postgres": "13.4",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11084,7 +11084,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11104,7 +11104,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11124,7 +11124,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11144,7 +11144,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11164,7 +11164,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.36.0",
    "zlib": "1.2.11"
   },
@@ -11184,7 +11184,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11204,7 +11204,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.17",
+   "postgres": "13.3",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11224,7 +11224,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11244,7 +11244,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11264,7 +11264,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11284,7 +11284,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11304,7 +11304,7 @@
    "php-redis": "5.3.4",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.35.5",
    "zlib": "1.2.11"
   },
@@ -11324,7 +11324,7 @@
    "php-redis": "5.3.3",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.34.1",
    "zlib": "1.2.11"
   },
@@ -11344,7 +11344,7 @@
    "php-redis": "5.3.3",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.16",
+   "postgres": "13.2",
    "sqlite3": "3.34.1",
    "zlib": "1.2.11"
   },
@@ -11364,7 +11364,7 @@
    "php-redis": "5.3.3",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.1",
    "zlib": "1.2.11"
   },
@@ -11384,7 +11384,7 @@
    "php-redis": "5.3.3",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.1",
    "zlib": "1.2.11"
   },
@@ -11404,7 +11404,7 @@
    "php-redis": "5.3.3",
    "php-sqlsrv": "5.9.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.1",
    "zlib": "1.2.11"
   },
@@ -11424,7 +11424,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.0",
    "zlib": "1.2.11"
   },
@@ -11444,7 +11444,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.0",
    "zlib": "1.2.11"
   },
@@ -11464,7 +11464,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.34.0",
    "zlib": "1.2.11"
   },
@@ -11484,7 +11484,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.33.0",
    "zlib": "1.2.11"
   },
@@ -11504,7 +11504,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.33.0",
    "zlib": "1.2.11"
   },
@@ -11524,7 +11524,7 @@
    "php-redis": "5.3.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.15",
+   "postgres": "13.1",
    "sqlite3": "3.33.0",
    "zlib": "1.2.11"
   },
@@ -11644,7 +11644,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.14",
+   "postgres": "12.4",
    "sqlite3": "3.33.0",
    "zlib": "1.2.11"
   },
@@ -11664,7 +11664,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.14",
+   "postgres": "12.4",
    "sqlite3": "3.33.0",
    "zlib": "1.2.11"
   },
@@ -11684,7 +11684,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11704,7 +11704,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11724,7 +11724,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11744,7 +11744,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11764,7 +11764,7 @@
    "php-redis": "5.3.0",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11784,7 +11784,7 @@
    "php-redis": "5.3.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.3",
    "zlib": "1.2.11"
   },
@@ -11804,7 +11804,7 @@
    "php-redis": "5.2.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.2",
    "zlib": "1.2.11"
   },
@@ -11824,7 +11824,7 @@
    "php-redis": "5.2.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.32.2",
    "zlib": "1.2.11"
   },
@@ -11844,7 +11844,7 @@
    "php-redis": "5.2.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11864,7 +11864,7 @@
    "php-redis": "5.2.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11884,7 +11884,7 @@
    "php-redis": "5.2.2",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.13",
+   "postgres": "12.3",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11904,7 +11904,7 @@
    "php-redis": "5.2.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11924,7 +11924,7 @@
    "php-redis": "5.2.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11944,7 +11944,7 @@
    "php-redis": "5.2.1",
    "php-sqlsrv": "5.8.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11964,7 +11964,7 @@
    "php-redis": "5.2.0",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -11984,7 +11984,7 @@
    "php-redis": "5.2.0",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -12004,7 +12004,7 @@
    "php-redis": "5.2.0",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -12024,7 +12024,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -12044,7 +12044,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -12064,7 +12064,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.8.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.12",
+   "postgres": "12.2",
    "sqlite3": "3.31.1",
    "zlib": "1.2.11"
   },
@@ -12084,7 +12084,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12104,7 +12104,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12124,7 +12124,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12144,7 +12144,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12164,7 +12164,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12184,7 +12184,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12204,7 +12204,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12224,7 +12224,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12244,7 +12244,7 @@
    "php-redis": "5.1.1",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.11",
+   "postgres": "12.1",
    "sqlite3": "3.30.1",
    "zlib": "1.2.11"
   },
@@ -12324,7 +12324,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.10",
+   "postgres": "11.5",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12344,7 +12344,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.10",
+   "postgres": "11.5",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12364,7 +12364,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.10",
+   "postgres": "11.5",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12384,7 +12384,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.10",
+   "postgres": "11.5",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12404,7 +12404,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.10",
+   "postgres": "11.5",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12424,7 +12424,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.9",
+   "postgres": "11.4",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12444,7 +12444,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.9",
+   "postgres": "11.4",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12464,7 +12464,7 @@
    "php-redis": "5.0.2",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.9",
+   "postgres": "11.4",
    "sqlite3": "3.29.0",
    "zlib": "1.2.11"
   },
@@ -12484,7 +12484,7 @@
    "php-redis": "5.0.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.9",
+   "postgres": "11.4",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12504,7 +12504,7 @@
    "php-redis": "5.0.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.9",
+   "postgres": "11.4",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12524,7 +12524,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.8",
+   "postgres": "11.3",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12544,7 +12544,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.8",
+   "postgres": "11.3",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12564,7 +12564,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.8",
+   "postgres": "11.3",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12584,7 +12584,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12604,7 +12604,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12624,7 +12624,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.28.0",
    "zlib": "1.2.11"
   },
@@ -12644,7 +12644,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12664,7 +12664,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12684,7 +12684,7 @@
    "php-redis": "4.3.0",
    "php-sqlsrv": "5.6.1",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12704,7 +12704,7 @@
    "php-redis": "4.2.0",
    "php-sqlsrv": "5.6.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12724,7 +12724,7 @@
    "php-redis": "4.2.0",
    "php-sqlsrv": "5.6.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12744,7 +12744,7 @@
    "php-redis": "4.2.0",
    "php-sqlsrv": "5.6.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.7",
+   "postgres": "11.2",
    "sqlite3": "3.27.2",
    "zlib": "1.2.11"
   },
@@ -12762,7 +12762,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12782,7 +12782,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12802,7 +12802,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12822,7 +12822,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12842,7 +12842,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12862,7 +12862,7 @@
    "php-memcached": "3.1.3",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12882,7 +12882,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12902,7 +12902,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12922,7 +12922,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12942,7 +12942,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12962,7 +12962,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.2.0",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.26.0",
@@ -12982,7 +12982,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "11.1",
    "sqlite3": "3.25.3",
@@ -13002,9 +13002,9 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
-   "postgres": "10.6",
+   "postgres": "11.0",
    "sqlite3": "3.25.3",
    "zlib": "1.2.11"
   },
@@ -13022,7 +13022,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.25.2",
@@ -13042,7 +13042,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.25.2",
@@ -13062,7 +13062,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.24.0",
@@ -13082,7 +13082,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.24.0",
@@ -13102,7 +13102,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.24.0",
@@ -13122,7 +13122,7 @@
    "php-memcached": "3.0.4",
    "php-phalcon": "No version as per date",
    "php-redis": "4.1.1",
-   "php-sqlsrv": "4.3.1",
+   "php-sqlsrv": "5.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "10.5",
    "sqlite3": "3.24.0",
@@ -13810,7 +13810,7 @@
   },
   "7.1.10": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.55.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.5",
@@ -13830,7 +13830,7 @@
   },
   "7.0.24": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.55.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.5",
@@ -13850,7 +13850,7 @@
   },
   "7.1.9": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.55.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13870,7 +13870,7 @@
   },
   "7.0.23": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.55.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13890,7 +13890,7 @@
   },
   "7.1.8": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13910,7 +13910,7 @@
   },
   "7.0.22": {
    "autoconf": "2.69",
-   "apache": "2.2.34",
+   "apache": "2.4.27",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13925,12 +13925,12 @@
    "php-sqlsrv": "4.3.0",
    "php-xdebug": "No version as per date",
    "postgres": "No version as per date",
-   "sqlite3": "3.18.2",
+   "sqlite3": "3.19.3",
    "zlib": "1.2.11"
   },
   "7.1.7": {
    "autoconf": "2.69",
-   "apache": "2.2.33",
+   "apache": "2.4.26",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13945,12 +13945,12 @@
    "php-sqlsrv": "4.1.6",
    "php-xdebug": "No version as per date",
    "postgres": "No version as per date",
-   "sqlite3": "3.18.2",
+   "sqlite3": "3.19.3",
    "zlib": "1.2.11"
   },
   "7.0.21": {
    "autoconf": "2.69",
-   "apache": "2.2.33",
+   "apache": "2.4.26",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13965,12 +13965,12 @@
    "php-sqlsrv": "4.1.6",
    "php-xdebug": "No version as per date",
    "postgres": "No version as per date",
-   "sqlite3": "3.18.2",
+   "sqlite3": "3.19.3",
    "zlib": "1.2.11"
   },
   "5.6.31": {
    "autoconf": "2.69",
-   "apache": "2.2.33",
+   "apache": "2.4.26",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -13985,12 +13985,12 @@
    "php-sqlsrv": "4.1.6",
    "php-xdebug": "No version as per date",
    "postgres": "No version as per date",
-   "sqlite3": "3.18.2",
+   "sqlite3": "3.19.3",
    "zlib": "1.2.11"
   },
   "7.1.6": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.54.0",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14010,7 +14010,7 @@
   },
   "7.0.20": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.54.0",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14030,7 +14030,7 @@
   },
   "7.1.5": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.54.0",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14050,7 +14050,7 @@
   },
   "7.0.19": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.54.0",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14070,7 +14070,7 @@
   },
   "7.1.4": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.53.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14090,7 +14090,7 @@
   },
   "7.0.18": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.53.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14110,7 +14110,7 @@
   },
   "7.1.3": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.53.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14130,7 +14130,7 @@
   },
   "7.0.17": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.53.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14150,7 +14150,7 @@
   },
   "7.1.2": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.52.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14170,7 +14170,7 @@
   },
   "7.0.16": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.52.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14190,7 +14190,7 @@
   },
   "5.6.30": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.52.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14210,7 +14210,7 @@
   },
   "7.1.1": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.52.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14230,7 +14230,7 @@
   },
   "7.0.15": {
    "autoconf": "2.69",
-   "apache": "2.2.32",
+   "apache": "2.4.25",
    "curl": "7.52.1",
    "gettext": "0.19.8.1",
    "libxml2": "2.9.4",
@@ -14592,7 +14592,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14612,7 +14612,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14632,7 +14632,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14652,7 +14652,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14672,7 +14672,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14692,7 +14692,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14712,7 +14712,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14732,7 +14732,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14752,7 +14752,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14772,7 +14772,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14792,7 +14792,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14812,7 +14812,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14832,7 +14832,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14852,7 +14852,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14872,7 +14872,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14892,7 +14892,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14912,7 +14912,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14932,7 +14932,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14952,7 +14952,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14972,7 +14972,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14992,7 +14992,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15012,7 +15012,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15030,9 +15030,9 @@
   },
   "5.6.14": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15050,9 +15050,9 @@
   },
   "5.5.30": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15070,7 +15070,7 @@
   },
   "5.6.13": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.44.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15090,7 +15090,7 @@
   },
   "5.5.29": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.44.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15110,7 +15110,7 @@
   },
   "5.4.45": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.44.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15130,7 +15130,7 @@
   },
   "5.6.12": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.43.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15150,7 +15150,7 @@
   },
   "5.5.28": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.43.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15170,7 +15170,7 @@
   },
   "5.4.44": {
    "autoconf": "2.69",
-   "apache": "2.2.31",
+   "apache": "2.4.16",
    "curl": "7.43.0",
    "gettext": "0.19.5.1",
    "libxml2": "2.9.2",
@@ -15192,7 +15192,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15212,7 +15212,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15232,7 +15232,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15252,7 +15252,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15272,7 +15272,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15292,7 +15292,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15312,7 +15312,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15332,7 +15332,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15352,7 +15352,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15372,7 +15372,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15392,7 +15392,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15412,7 +15412,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15432,7 +15432,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15452,7 +15452,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15472,7 +15472,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15492,7 +15492,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15512,7 +15512,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15532,7 +15532,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15552,7 +15552,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15572,7 +15572,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15592,7 +15592,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15610,9 +15610,9 @@
   },
   "5.6.4": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15630,9 +15630,9 @@
   },
   "5.5.20": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15650,9 +15650,9 @@
   },
   "5.4.36": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15670,9 +15670,9 @@
   },
   "5.6.3": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15690,9 +15690,9 @@
   },
   "5.5.19": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15710,9 +15710,9 @@
   },
   "5.4.35": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15730,7 +15730,7 @@
   },
   "5.6.2": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2.1",
    "libxml2": "2.9.1",
@@ -15750,7 +15750,7 @@
   },
   "5.5.18": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2.1",
    "libxml2": "2.9.1",
@@ -15770,7 +15770,7 @@
   },
   "5.4.34": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2.1",
    "libxml2": "2.9.1",
@@ -15790,7 +15790,7 @@
   },
   "5.6.1": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2.1",
    "libxml2": "2.9.1",
@@ -15810,7 +15810,7 @@
   },
   "5.4.33": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2",
    "libxml2": "2.9.1",
@@ -15830,7 +15830,7 @@
   },
   "5.5.17": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.38.0",
    "gettext": "0.19.2",
    "libxml2": "2.9.1",
@@ -15850,7 +15850,7 @@
   },
   "5.6.0": {
    "autoconf": "2.69",
-   "apache": "2.2.29",
+   "apache": "2.4.10",
    "curl": "7.37.1",
    "gettext": "0.19.2",
    "libxml2": "2.9.1",
@@ -15970,7 +15970,7 @@
   },
   "5.5.14": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.37.0",
    "gettext": "0.19.1",
    "libxml2": "2.9.1",
@@ -15990,7 +15990,7 @@
   },
   "5.4.30": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.37.0",
    "gettext": "0.19.1",
    "libxml2": "2.9.1",
@@ -16010,7 +16010,7 @@
   },
   "5.5.13": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.37.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16030,7 +16030,7 @@
   },
   "5.4.29": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.37.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16050,7 +16050,7 @@
   },
   "5.5.12": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16070,7 +16070,7 @@
   },
   "5.4.28": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16090,7 +16090,7 @@
   },
   "5.4.27": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16110,7 +16110,7 @@
   },
   "5.5.11": {
    "autoconf": "2.69",
-   "apache": "2.2.27",
+   "apache": "2.4.9",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "libxml2": "2.9.1",
@@ -16472,7 +16472,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3",
+   "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16492,7 +16492,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3",
+   "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16512,7 +16512,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.31.0",
-   "gettext": "0.18.3",
+   "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16530,9 +16530,9 @@
   },
   "5.3.27": {
    "autoconf": "2.69",
-   "apache": "2.0.65",
+   "apache": "2.4.4",
    "curl": "7.31.0",
-   "gettext": "0.18.3",
+   "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16550,7 +16550,7 @@
   },
   "5.4.17": {
    "autoconf": "2.69",
-   "apache": "2.0.65",
+   "apache": "2.4.4",
    "curl": "7.31.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16570,7 +16570,7 @@
   },
   "5.5.0": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.30.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16590,7 +16590,7 @@
   },
   "5.4.16": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.30.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16610,7 +16610,7 @@
   },
   "5.3.26": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.30.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16630,7 +16630,7 @@
   },
   "5.4.15": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.30.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16650,7 +16650,7 @@
   },
   "5.3.25": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.30.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.1",
@@ -16670,7 +16670,7 @@
   },
   "5.4.14": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.0",
@@ -16690,7 +16690,7 @@
   },
   "5.3.24": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.0",
@@ -16710,7 +16710,7 @@
   },
   "5.4.13": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.0",
@@ -16730,7 +16730,7 @@
   },
   "5.3.23": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
    "gettext": "0.18.2.1",
    "libxml2": "2.9.0",
@@ -16750,9 +16750,9 @@
   },
   "5.3.22": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2",
+   "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16770,9 +16770,9 @@
   },
   "5.4.12": {
    "autoconf": "2.69",
-   "apache": "2.2.24",
+   "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2",
+   "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16790,9 +16790,9 @@
   },
   "5.4.11": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.2",
+   "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16810,9 +16810,9 @@
   },
   "5.3.21": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.2",
+   "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16830,7 +16830,7 @@
   },
   "5.4.10": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16850,7 +16850,7 @@
   },
   "5.3.20": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16870,7 +16870,7 @@
   },
   "5.4.9": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16890,7 +16890,7 @@
   },
   "5.3.19": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.1",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16910,7 +16910,7 @@
   },
   "5.3.18": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.0",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16930,7 +16930,7 @@
   },
   "5.4.8": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.28.0",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16950,7 +16950,7 @@
   },
   "5.4.7": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.27.0",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -16970,7 +16970,7 @@
   },
   "5.3.17": {
    "autoconf": "2.69",
-   "apache": "2.2.23",
+   "apache": "2.4.3",
    "curl": "7.27.0",
    "gettext": "0.18.1.1",
    "libxml2": "2.9.0",
@@ -17250,7 +17250,7 @@
   },
   "5.3.10": {
    "autoconf": "2.68",
-   "apache": "2.2.22",
+   "apache": "2.4.0",
    "curl": "7.24.0",
    "gettext": "0.18.1.1",
    "libxml2": "2.7.8",
@@ -17490,9 +17490,9 @@
   },
   "5.3.2": {
    "autoconf": "2.65",
-   "apache": "2.2.15",
+   "apache": "2.3.5",
    "curl": "7.20.0",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -17512,7 +17512,7 @@
    "autoconf": "2.65",
    "apache": "2.3.5",
    "curl": "7.20.0",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -17532,7 +17532,7 @@
    "autoconf": "2.65",
    "apache": "2.3.4",
    "curl": "7.19.7",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -17552,7 +17552,7 @@
    "autoconf": "2.64",
    "apache": "2.3.3",
    "curl": "7.19.7",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -17570,9 +17570,9 @@
   },
   "5.2.11": {
    "autoconf": "2.64",
-   "apache": "2.2.13",
+   "apache": "2.3.2",
    "curl": "7.19.6",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "2.7.4",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -17592,9 +17592,9 @@
    "autoconf": "2.63",
    "apache": "2.3.2",
    "curl": "7.19.5",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "libxml2": "No version as per date",
-   "libiconv": "1.11.1",
+   "libiconv": "1.13",
    "libmemcached": "No version as per date",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
@@ -17910,7 +17910,7 @@
   },
   "5.2.0": {
    "autoconf": "No version as per date",
-   "apache": "2.0.59",
+   "apache": "2.2.3",
    "curl": "7.16.0",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -17930,7 +17930,7 @@
   },
   "5.1.6": {
    "autoconf": "No version as per date",
-   "apache": "2.0.59",
+   "apache": "2.2.3",
    "curl": "7.15.5",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -17950,7 +17950,7 @@
   },
   "5.1.5": {
    "autoconf": "No version as per date",
-   "apache": "2.0.59",
+   "apache": "2.2.3",
    "curl": "7.15.5",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -17970,7 +17970,7 @@
   },
   "4.4.4": {
    "autoconf": "No version as per date",
-   "apache": "2.0.59",
+   "apache": "2.2.3",
    "curl": "7.15.5",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -17990,7 +17990,7 @@
   },
   "4.4.3": {
    "autoconf": "No version as per date",
-   "apache": "2.0.59",
+   "apache": "2.2.3",
    "curl": "7.15.4",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -18010,7 +18010,7 @@
   },
   "5.1.4": {
    "autoconf": "No version as per date",
-   "apache": "2.0.58",
+   "apache": "2.2.2",
    "curl": "7.15.3",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -18030,7 +18030,7 @@
   },
   "5.1.3": {
    "autoconf": "No version as per date",
-   "apache": "2.0.58",
+   "apache": "2.2.2",
    "curl": "7.15.3",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -18050,7 +18050,7 @@
   },
   "5.1.2": {
    "autoconf": "No version as per date",
-   "apache": "2.0.58",
+   "apache": "2.2.2",
    "curl": "7.15.3",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -18130,7 +18130,7 @@
   },
   "4.4.1": {
    "autoconf": "No version as per date",
-   "apache": "2.0.55",
+   "apache": "2.1.8",
    "curl": "7.15.0",
    "gettext": "0.10.37",
    "libxml2": "No version as per date",
@@ -18710,7 +18710,7 @@
   },
   "4.0.3": {
    "autoconf": "No version as per date",
-   "apache": "1.3.12",
+   "apache": "1.3.14",
    "curl": "7.1.1",
    "gettext": "No version as per date",
    "libxml2": "No version as per date",
@@ -18730,7 +18730,7 @@
   },
   "4.0.2": {
    "autoconf": "No version as per date",
-   "apache": "1.3.12",
+   "apache": "1.3.14",
    "curl": "7.1.1",
    "gettext": "No version as per date",
    "libxml2": "No version as per date",
@@ -18750,7 +18750,7 @@
   },
   "4.0.1": {
    "autoconf": "No version as per date",
-   "apache": "1.3.12",
+   "apache": "1.3.14",
    "curl": "6.5.2",
    "gettext": "No version as per date",
    "libxml2": "No version as per date",
@@ -18770,7 +18770,7 @@
   },
   "4.0.0": {
    "autoconf": "No version as per date",
-   "apache": "1.3.12",
+   "apache": "1.3.14",
    "curl": "6.5.2",
    "gettext": "No version as per date",
    "libxml2": "No version as per date",
@@ -18792,7 +18792,7 @@
  "postgis": {
   "3.4.1": {
    "libxml2": "2.12.0",
-   "geos": "3.9.5",
+   "geos": "3.12.1",
    "proj": "9.3.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.44.0",
@@ -18803,7 +18803,7 @@
   },
   "3.3.5": {
    "libxml2": "2.12.0",
-   "geos": "3.9.5",
+   "geos": "3.12.1",
    "proj": "9.3.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.44.0",
@@ -18814,7 +18814,7 @@
   },
   "3.2.6": {
    "libxml2": "2.12.0",
-   "geos": "3.9.5",
+   "geos": "3.12.1",
    "proj": "9.3.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.44.0",
@@ -18825,7 +18825,7 @@
   },
   "3.1.10": {
    "libxml2": "2.12.0",
-   "geos": "3.9.5",
+   "geos": "3.12.1",
    "proj": "9.3.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.44.0",
@@ -18836,7 +18836,7 @@
   },
   "3.0.10": {
    "libxml2": "2.12.0",
-   "geos": "3.9.5",
+   "geos": "3.12.1",
    "proj": "9.3.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.44.0",
@@ -19144,7 +19144,7 @@
   },
   "3.1.4": {
    "libxml2": "2.9.12",
-   "geos": "3.8.2",
+   "geos": "3.9.1",
    "proj": "8.1.1",
    "pkg-config": "0.29.2",
    "sqlite3": "3.36.0",
@@ -19155,7 +19155,7 @@
   },
   "3.0.4": {
    "libxml2": "2.9.12",
-   "geos": "3.8.2",
+   "geos": "3.9.1",
    "proj": "8.1.1",
    "pkg-config": "0.29.2",
    "sqlite3": "3.36.0",
@@ -19166,7 +19166,7 @@
   },
   "3.1.3": {
    "libxml2": "2.9.12",
-   "geos": "3.8.2",
+   "geos": "3.9.1",
    "proj": "8.1.0",
    "pkg-config": "0.29.2",
    "sqlite3": "3.36.0",
@@ -19177,7 +19177,7 @@
   },
   "3.1.2": {
    "libxml2": "2.9.12",
-   "geos": "3.8.2",
+   "geos": "3.9.1",
    "proj": "8.0.1",
    "pkg-config": "0.29.2",
    "sqlite3": "3.35.5",
@@ -19255,7 +19255,7 @@
   "2.3.11": {
    "libxml2": "2.9.10",
    "geos": "3.8.1",
-   "proj": "6.3.2",
+   "proj": "7.0.1",
    "pkg-config": "0.29.2",
    "sqlite3": "3.32.1",
    "libtiff": "4.1.0",
@@ -19565,7 +19565,7 @@
    "geos": "3.6.1",
    "proj": "4.9.3",
    "pkg-config": "0.29.2",
-   "sqlite3": "3.18.2",
+   "sqlite3": "3.19.3",
    "libtiff": "4.0.8",
    "curl": "7.54.1",
    "gettext": "0.19.8.1",
@@ -19606,7 +19606,7 @@
   },
   "2.3.1": {
    "libxml2": "2.9.4",
-   "geos": "3.4.3",
+   "geos": "3.6.0",
    "proj": "4.9.3",
    "pkg-config": "No version as per date",
    "sqlite3": "3.15.1",
@@ -19617,7 +19617,7 @@
   },
   "2.2.4": {
    "libxml2": "2.9.4",
-   "geos": "3.4.3",
+   "geos": "3.6.0",
    "proj": "4.9.3",
    "pkg-config": "No version as per date",
    "sqlite3": "3.15.1",
@@ -19656,7 +19656,7 @@
    "sqlite3": "3.11.1",
    "libtiff": "4.0.6",
    "curl": "7.47.1",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "zlib": "1.2.8"
   },
   "2.2.0": {
@@ -19667,7 +19667,7 @@
    "sqlite3": "3.10.2",
    "libtiff": "4.0.6",
    "curl": "7.47.1",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "zlib": "1.2.8"
   },
   "2.2.1": {
@@ -19678,137 +19678,137 @@
    "sqlite3": "3.9.2",
    "libtiff": "4.0.6",
    "curl": "7.46.0",
-   "gettext": "0.19.7",
+   "gettext": "0.19.5.1",
    "zlib": "1.2.8"
   },
   "2.1.8": {
    "libxml2": "2.9.2",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.9.1",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.10",
    "libtiff": "4.0.4",
    "curl": "7.43.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "zlib": "1.2.8"
   },
   "2.1.7": {
    "libxml2": "2.9.2",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.9.1",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.8",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "zlib": "1.2.8"
   },
   "2.0.7": {
    "libxml2": "2.9.2",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.9.1",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.8",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "zlib": "1.2.8"
   },
   "2.1.6": {
    "libxml2": "2.9.2",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.9.1",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.8",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "zlib": "1.2.8"
   },
   "2.1.5": {
    "libxml2": "2.9.2",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.9.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.7",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.39.0",
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "zlib": "1.2.8"
   },
   "2.1.4": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.6",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.38.0",
    "gettext": "0.19.2",
    "zlib": "1.2.8"
   },
   "2.0.6": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.4",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "zlib": "1.2.8"
   },
   "2.1.3": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.4",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "zlib": "1.2.8"
   },
   "2.1.2": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.4",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "zlib": "1.2.8"
   },
   "2.0.5": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.4",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.36.0",
    "gettext": "0.18.3.2",
    "zlib": "1.2.8"
   },
   "2.1.1": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.1",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.33.0",
    "gettext": "0.18.3.1",
    "zlib": "1.2.8"
   },
   "2.0.4": {
    "libxml2": "2.9.1",
-   "geos": "3.3.9",
+   "geos": "3.4.2",
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.8.0",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.32.0",
    "gettext": "0.18.3.1",
    "zlib": "1.2.8"
@@ -19819,7 +19819,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.17",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.32.0",
    "gettext": "0.18.3.1",
    "zlib": "1.2.8"
@@ -19830,7 +19830,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.14",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.28.1",
    "gettext": "0.18.1.1",
    "zlib": "1.2.7"
@@ -19841,7 +19841,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.14",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.28.0",
    "gettext": "0.18.1.1",
    "zlib": "1.2.7"
@@ -19852,7 +19852,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.14",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.28.0",
    "gettext": "0.18.1.1",
    "zlib": "1.2.7"
@@ -19863,7 +19863,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.14",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.28.0",
    "gettext": "0.18.1.1",
    "zlib": "1.2.7"
@@ -19896,7 +19896,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.11",
-   "libtiff": "3.9.6",
+   "libtiff": "4.0.1",
    "curl": "7.25.0",
    "gettext": "0.18.1.1",
    "zlib": "1.2.7"
@@ -19907,7 +19907,7 @@
    "proj": "4.8.0",
    "pkg-config": "No version as per date",
    "sqlite3": "3.7.11",
-   "libtiff": "3.9.6",
+   "libtiff": "4.0.1",
    "curl": "7.25.0",
    "gettext": "0.18.1.1",
    "zlib": "1.2.6"
@@ -19942,7 +19942,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.20.0",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "zlib": "No version as per date"
   },
   "1.4.2": {
@@ -19953,7 +19953,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.20.0",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "zlib": "No version as per date"
   },
   "1.5.0": {
@@ -19964,7 +19964,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.19.7",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "zlib": "No version as per date"
   },
   "1.4.1": {
@@ -19975,18 +19975,18 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.19.7",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "zlib": "No version as per date"
   },
   "1.4.0": {
    "libxml2": "No version as per date",
-   "geos": "3.0.4",
+   "geos": "3.1.1",
    "proj": "No version as per date",
    "pkg-config": "No version as per date",
    "sqlite3": "3.6.15",
    "libtiff": "3.8.2",
    "curl": "7.19.5",
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "zlib": "No version as per date"
   },
   "1.3.6": {
@@ -20523,37 +20523,37 @@
    "postgis": "3.2.2"
   },
   "14.4": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "14.3": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "13.7": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "12.11": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "11.16": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "10.21": {
-   "postgis": "2.4.10"
+   "postgis": "3.2.1"
   },
   "14.2": {
-   "postgis": "3.0.5"
+   "postgis": "3.2.0"
   },
   "13.6": {
-   "postgis": "3.0.5"
+   "postgis": "3.2.0"
   },
   "12.10": {
-   "postgis": "3.0.5"
+   "postgis": "3.2.0"
   },
   "11.15": {
-   "postgis": "3.0.5"
+   "postgis": "3.2.0"
   },
   "10.20": {
-   "postgis": "3.0.5"
+   "postgis": "3.2.0"
   },
   "14.1": {
    "postgis": "3.1.4"
@@ -20625,22 +20625,22 @@
    "postgis": "3.0.2"
   },
   "12.4": {
-   "postgis": "2.3.11"
+   "postgis": "3.0.1"
   },
   "11.9": {
-   "postgis": "2.3.11"
+   "postgis": "3.0.1"
   },
   "10.14": {
-   "postgis": "2.3.11"
+   "postgis": "3.0.1"
   },
   "12.3": {
-   "postgis": "2.5.4"
+   "postgis": "3.0.1"
   },
   "11.8": {
-   "postgis": "2.5.4"
+   "postgis": "3.0.1"
   },
   "10.13": {
-   "postgis": "2.5.4"
+   "postgis": "3.0.1"
   },
   "12.2": {
    "postgis": "3.0.0"
@@ -20664,28 +20664,28 @@
    "postgis": "2.5.3"
   },
   "11.5": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "10.10": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "11.4": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "10.9": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "11.3": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "10.8": {
-   "postgis": "2.3.9"
+   "postgis": "2.5.2"
   },
   "11.2": {
-   "postgis": "2.4.6"
+   "postgis": "2.5.1"
   },
   "10.7": {
-   "postgis": "2.4.6"
+   "postgis": "2.5.1"
   },
   "11.1": {
    "postgis": "2.5.0"
@@ -20703,10 +20703,10 @@
    "postgis": "2.4.4"
   },
   "10.3": {
-   "postgis": "2.3.6"
+   "postgis": "2.4.3"
   },
   "10.2": {
-   "postgis": "2.3.6"
+   "postgis": "2.4.3"
   },
   "10.1": {
    "postgis": "2.4.1"
@@ -20721,14 +20721,14 @@
    "sqlite3": "3.43.0",
    "libtiff": "4.5.1",
    "curl": "8.2.1",
-   "openssl": "3.0.10"
+   "openssl": "3.1.2"
   },
   "9.2.1": {
    "cmake": "3.26.4",
    "sqlite3": "3.42.0",
    "libtiff": "4.5.0",
    "curl": "8.1.2",
-   "openssl": "3.0.9"
+   "openssl": "3.1.1"
   },
   "9.2.0": {
    "cmake": "3.25.2",
@@ -20752,14 +20752,14 @@
    "openssl": "3.0.5"
   },
   "9.0.1": {
-   "cmake": "3.22.5",
+   "cmake": "3.23.2",
    "sqlite3": "3.38.5",
    "libtiff": "4.4.0",
    "curl": "7.83.1",
    "openssl": "3.0.3"
   },
   "9.0.0": {
-   "cmake": "3.21.5",
+   "cmake": "3.22.2",
    "sqlite3": "3.38.0",
    "libtiff": "4.3.0",
    "curl": "7.81.0",
@@ -20829,7 +20829,7 @@
    "openssl": "1.1.1"
   },
   "7.1.0": {
-   "cmake": "3.16.8",
+   "cmake": "3.17.3",
    "sqlite3": "3.32.3",
    "libtiff": "4.1.0",
    "curl": "7.71.1",
@@ -20950,21 +20950,21 @@
   "4.9.1": {
    "cmake": "3.2.0",
    "sqlite3": "3.8.8",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.41.0",
    "openssl": "No version as per date"
   },
   "4.9.0": {
    "cmake": "3.0.2",
    "sqlite3": "3.8.6",
-   "libtiff": "3.9.7",
+   "libtiff": "4.0.3",
    "curl": "7.38.0",
    "openssl": "No version as per date"
   },
   "4.8.0": {
    "cmake": "2.8.7",
    "sqlite3": "3.7.10",
-   "libtiff": "3.9.6",
+   "libtiff": "4.0.1",
    "curl": "7.24.0",
    "openssl": "No version as per date"
   },
@@ -20979,57 +20979,57 @@
  "python": {
   "3.12.0": {
    "gettext": "0.22.2",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "pkg-config": "0.29.2"
   },
   "3.11.6": {
    "gettext": "0.22.2",
-   "openssl": "3.0.11",
+   "openssl": "3.1.3",
    "pkg-config": "0.29.2"
   },
   "3.11.5": {
    "gettext": "0.22",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.10.13": {
    "gettext": "0.22",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.9.18": {
    "gettext": "0.22",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.8.18": {
    "gettext": "0.22",
-   "openssl": "3.0.10",
+   "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.11.4": {
    "gettext": "0.21.1",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2"
   },
   "3.10.12": {
    "gettext": "0.21.1",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.17": {
    "gettext": "0.21.1",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.17": {
    "gettext": "0.21.1",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.17": {
    "gettext": "0.21.1",
-   "openssl": "3.0.9",
+   "openssl": "3.1.1",
    "pkg-config": "0.29.2"
   },
   "3.11.3": {
@@ -21563,37 +21563,37 @@
    "pkg-config": "No version as per date"
   },
   "3.4.4": {
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.5.1": {
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.11": {
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.5.0": {
-   "gettext": "0.19.6",
+   "gettext": "0.19.5.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.10": {
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.3": {
-   "gettext": "0.19.4",
+   "gettext": "0.19.2.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.9": {
-   "gettext": "0.19.3",
+   "gettext": "0.19.2.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
@@ -21758,32 +21758,32 @@
    "pkg-config": "No version as per date"
   },
   "3.1.2": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.5": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.5.5": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.4": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.3": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.1": {
-   "gettext": "0.16.1",
+   "gettext": "0.17",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
@@ -22539,37 +22539,37 @@
  "rmq": {
   "3.12.10": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.11.26": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.12.9": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.12.8": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.11.25": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.12.7": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.11.24": {
    "elixir": "1.15.7",
-   "erlang": "25.3.2.7",
+   "erlang": "26.1.2",
    "make": "4.4.1"
   },
   "3.12.6": {
@@ -22584,27 +22584,27 @@
   },
   "3.11.23": {
    "elixir": "1.15.5",
-   "erlang": "25.3.2.6",
+   "erlang": "26.0.2",
    "make": "4.4.1"
   },
   "3.12.4": {
    "elixir": "1.15.4",
-   "erlang": "25.3.2.5",
+   "erlang": "26.0.2",
    "make": "4.4.1"
   },
   "3.11.22": {
    "elixir": "1.15.4",
-   "erlang": "25.3.2.5",
+   "erlang": "26.0.2",
    "make": "4.4.1"
   },
   "3.12.3": {
    "elixir": "1.15.4",
-   "erlang": "25.3.2.5",
+   "erlang": "26.0.2",
    "make": "4.4.1"
   },
   "3.11.21": {
    "elixir": "1.15.4",
-   "erlang": "25.3.2.5",
+   "erlang": "26.0.2",
    "make": "4.4.1"
   },
   "3.10.25": {
@@ -22634,22 +22634,22 @@
   },
   "3.11.18": {
    "elixir": "1.14.5",
-   "erlang": "23.3.4.19",
+   "erlang": "26.0",
    "make": "4.4.1"
   },
   "3.10.24": {
    "elixir": "1.14.5",
-   "erlang": "23.3.4.19",
+   "erlang": "26.0",
    "make": "4.4.1"
   },
   "3.12.0": {
    "elixir": "1.14.5",
-   "erlang": "25.3.2.1",
+   "erlang": "26.0",
    "make": "4.4.1"
   },
   "3.11.17": {
    "elixir": "1.14.5",
-   "erlang": "25.3.2.1",
+   "erlang": "26.0",
    "make": "4.4.1"
   },
   "3.10.23": {
@@ -22684,22 +22684,22 @@
   },
   "3.11.13": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.10",
+   "erlang": "25.3",
    "make": "4.4.1"
   },
   "3.11.12": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.10",
+   "erlang": "25.3",
    "make": "4.4.1"
   },
   "3.10.20": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.10",
+   "erlang": "25.3",
    "make": "4.4.1"
   },
   "3.11.11": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.10",
+   "erlang": "25.3",
    "make": "4.4.1"
   },
   "3.9.29": {
@@ -22709,12 +22709,12 @@
   },
   "3.11.10": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.9",
+   "erlang": "25.2.3",
    "make": "4.4.1"
   },
   "3.10.19": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.9",
+   "erlang": "25.2.3",
    "make": "4.4.1"
   },
   "3.11.9": {
@@ -22754,17 +22754,17 @@
   },
   "3.11.7": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.8",
+   "erlang": "25.2.1",
    "make": "4.4"
   },
   "3.10.14": {
    "elixir": "1.14.3",
-   "erlang": "24.3.4.8",
+   "erlang": "25.2.1",
    "make": "4.4"
   },
   "3.11.6": {
    "elixir": "1.14.2",
-   "erlang": "24.3.4.7",
+   "erlang": "25.2",
    "make": "4.4"
   },
   "3.11.5": {
@@ -22814,27 +22814,27 @@
   },
   "3.11.2": {
    "elixir": "1.14.1",
-   "erlang": "24.3.4.6",
+   "erlang": "25.1.1",
    "make": "No version as per date"
   },
   "3.10.10": {
    "elixir": "1.14.1",
-   "erlang": "24.3.4.6",
+   "erlang": "25.1.1",
    "make": "No version as per date"
   },
   "3.9.24": {
    "elixir": "1.14.1",
-   "erlang": "24.3.4.6",
+   "erlang": "25.1.1",
    "make": "No version as per date"
   },
   "3.11.1": {
    "elixir": "1.14.1",
-   "erlang": "24.3.4.6",
+   "erlang": "25.1.1",
    "make": "No version as per date"
   },
   "3.10.9": {
    "elixir": "1.14.1",
-   "erlang": "24.3.4.6",
+   "erlang": "25.1.1",
    "make": "No version as per date"
   },
   "3.11.0": {
@@ -22864,17 +22864,17 @@
   },
   "3.10.6": {
    "elixir": "1.13.4",
-   "erlang": "23.2.7.5",
+   "erlang": "25.0.2",
    "make": "No version as per date"
   },
   "3.9.21": {
    "elixir": "1.13.4",
-   "erlang": "23.2.7.5",
+   "erlang": "25.0.2",
    "make": "No version as per date"
   },
   "3.8.35": {
    "elixir": "1.13.4",
-   "erlang": "23.2.7.5",
+   "erlang": "25.0.2",
    "make": "No version as per date"
   },
   "3.10.5": {
@@ -22929,22 +22929,22 @@
   },
   "3.10.1": {
    "elixir": "1.13.4",
-   "erlang": "23.3.4.14",
+   "erlang": "24.3.4",
    "make": "No version as per date"
   },
   "3.9.17": {
    "elixir": "1.13.4",
-   "erlang": "23.3.4.14",
+   "erlang": "24.3.4",
    "make": "No version as per date"
   },
   "3.8.31": {
    "elixir": "1.13.4",
-   "erlang": "23.3.4.14",
+   "erlang": "24.3.4",
    "make": "No version as per date"
   },
   "3.10.0": {
    "elixir": "1.13.4",
-   "erlang": "23.3.4.14",
+   "erlang": "24.3.4",
    "make": "No version as per date"
   },
   "3.9.16": {
@@ -22969,7 +22969,7 @@
   },
   "3.9.14": {
    "elixir": "1.13.3",
-   "erlang": "23.3.4.12",
+   "erlang": "24.3.2",
    "make": "No version as per date"
   },
   "3.8.28": {
@@ -22979,17 +22979,17 @@
   },
   "3.9.13": {
    "elixir": "1.13.2",
-   "erlang": "22.3.4.24",
+   "erlang": "24.2",
    "make": "No version as per date"
   },
   "3.9.12": {
    "elixir": "1.13.1",
-   "erlang": "22.3.4.24",
+   "erlang": "24.2",
    "make": "No version as per date"
   },
   "3.8.27": {
    "elixir": "1.13.1",
-   "erlang": "22.3.4.24",
+   "erlang": "24.2",
    "make": "No version as per date"
   },
   "3.9.11": {
@@ -23024,7 +23024,7 @@
   },
   "3.9.8": {
    "elixir": "1.12.3",
-   "erlang": "22.3.4.22",
+   "erlang": "24.1.2",
    "make": "No version as per date"
   },
   "3.9.7": {
@@ -23039,7 +23039,7 @@
   },
   "3.9.6": {
    "elixir": "1.12.3",
-   "erlang": "23.3.4.7",
+   "erlang": "24.0.6",
    "make": "No version as per date"
   },
   "3.8.22": {
@@ -23099,7 +23099,7 @@
   },
   "3.8.17": {
    "elixir": "1.12.1",
-   "erlang": "23.1.4.1",
+   "erlang": "24.0.2",
    "make": "No version as per date"
   },
   "3.8.16": {
@@ -23134,7 +23134,7 @@
   },
   "3.8.10": {
    "elixir": "1.11.3",
-   "erlang": "22.3.4.15",
+   "erlang": "23.2.2",
    "make": "No version as per date"
   },
   "3.8.9": {
@@ -23144,27 +23144,27 @@
   },
   "3.8.8": {
    "elixir": "1.10.4",
-   "erlang": "22.3.4.10",
+   "erlang": "23.0.3",
    "make": "No version as per date"
   },
   "3.8.7": {
    "elixir": "1.10.4",
-   "erlang": "22.3.4.7",
+   "erlang": "23.0.3",
    "make": "No version as per date"
   },
   "3.7.28": {
    "elixir": "1.10.4",
-   "erlang": "22.3.4.7",
+   "erlang": "23.0.3",
    "make": "No version as per date"
   },
   "3.8.6": {
    "elixir": "1.10.4",
-   "erlang": "22.3.4.5",
+   "erlang": "23.0.3",
    "make": "No version as per date"
   },
   "3.7.27": {
    "elixir": "1.10.4",
-   "erlang": "21.3.8.17",
+   "erlang": "23.0.3",
    "make": "No version as per date"
   },
   "3.8.5": {
@@ -23179,7 +23179,7 @@
   },
   "3.7.26": {
    "elixir": "1.10.3",
-   "erlang": "21.3.8.15",
+   "erlang": "22.3.3",
    "make": "No version as per date"
   },
   "3.7.25": {
@@ -23189,7 +23189,7 @@
   },
   "3.8.3": {
    "elixir": "1.10.2",
-   "erlang": "21.3.8.14",
+   "erlang": "22.2.8",
    "make": "No version as per date"
   },
   "3.7.24": {
@@ -23239,22 +23239,22 @@
   },
   "3.7.18": {
    "elixir": "1.9.1",
-   "erlang": "21.3.8.7",
+   "erlang": "22.0.7",
    "make": "No version as per date"
   },
   "3.7.17": {
    "elixir": "1.9.1",
-   "erlang": "21.3.8.6",
+   "erlang": "22.0.7",
    "make": "No version as per date"
   },
   "3.7.16": {
    "elixir": "1.9.0",
-   "erlang": "21.3.8.5",
+   "erlang": "22.0.5",
    "make": "No version as per date"
   },
   "3.7.15": {
    "elixir": "1.8.2",
-   "erlang": "21.3.8.2",
+   "erlang": "22.0.1",
    "make": "No version as per date"
   },
   "3.7.14": {
@@ -23269,7 +23269,7 @@
   },
   "3.7.12": {
    "elixir": "1.8.1",
-   "erlang": "20.3.8.19",
+   "erlang": "21.2.5",
    "make": "No version as per date"
   },
   "3.7.11": {
@@ -23279,7 +23279,7 @@
   },
   "3.7.10": {
    "elixir": "1.7.4",
-   "erlang": "20.3.8.17",
+   "erlang": "21.2.2",
    "make": "No version as per date"
   },
   "3.7.9": {
@@ -23289,7 +23289,7 @@
   },
   "3.7.8": {
    "elixir": "1.7.3",
-   "erlang": "19.3.6.11",
+   "erlang": "21.0.9",
    "make": "No version as per date"
   },
   "3.7.7": {
@@ -23304,12 +23304,12 @@
   },
   "3.7.5": {
    "elixir": "1.6.5",
-   "erlang": "19.3.6.9",
+   "erlang": "20.3.6",
    "make": "No version as per date"
   },
   "3.7.4": {
    "elixir": "1.6.2",
-   "erlang": "18.3.4.8",
+   "erlang": "20.2.4",
    "make": "No version as per date"
   },
   "3.7.3": {
@@ -23329,7 +23329,7 @@
   },
   "3.7.0": {
    "elixir": "1.5.2",
-   "erlang": "18.3.4.1.1",
+   "erlang": "20.1.7",
    "make": "No version as per date"
   }
  },
@@ -23371,7 +23371,7 @@
    "e2fsprogs": "1.47.0",
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
-   "libgcrypt": "1.8.10",
+   "libgcrypt": "1.10.1",
    "pkg-config": "0.29.2"
   },
   "8.2212.0": {
@@ -23427,7 +23427,7 @@
    "e2fsprogs": "1.46.5",
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
-   "libgcrypt": "1.8.9",
+   "libgcrypt": "1.10.0",
    "pkg-config": "0.29.2"
   },
   "8.2112.0": {
@@ -23451,7 +23451,7 @@
    "e2fsprogs": "1.46.3",
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
-   "libgcrypt": "1.8.8",
+   "libgcrypt": "1.9.3",
    "pkg-config": "0.29.2"
   },
   "8.2106.0": {
@@ -23459,7 +23459,7 @@
    "e2fsprogs": "1.46.2",
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
-   "libgcrypt": "1.8.8",
+   "libgcrypt": "1.9.3",
    "pkg-config": "0.29.2"
   },
   "8.2104.0": {
@@ -23619,7 +23619,7 @@
    "e2fsprogs": "1.44.4",
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
-   "libgcrypt": "1.7.10",
+   "libgcrypt": "1.8.3",
    "pkg-config": "0.29.2"
   },
   "8.37.0": {
@@ -23627,7 +23627,7 @@
    "e2fsprogs": "1.44.3",
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
-   "libgcrypt": "1.7.10",
+   "libgcrypt": "1.8.3",
    "pkg-config": "0.29.2"
   },
   "8.36.0": {
@@ -23635,7 +23635,7 @@
    "e2fsprogs": "1.44.2",
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
-   "libgcrypt": "1.7.10",
+   "libgcrypt": "1.8.3",
    "pkg-config": "0.29.2"
   },
   "8.35.0": {
@@ -23683,7 +23683,7 @@
    "e2fsprogs": "1.43.7",
    "libestr": "0.1.10",
    "libfastjson": "0.99.7",
-   "libgcrypt": "1.7.9",
+   "libgcrypt": "1.8.1",
    "pkg-config": "0.29.2"
   },
   "8.30.0": {
@@ -23691,7 +23691,7 @@
    "e2fsprogs": "1.43.6",
    "libestr": "0.1.10",
    "libfastjson": "0.99.7",
-   "libgcrypt": "1.7.9",
+   "libgcrypt": "1.8.1",
    "pkg-config": "0.29.2"
   },
   "8.29.0": {
@@ -23755,7 +23755,7 @@
    "e2fsprogs": "1.43.3",
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
-   "libgcrypt": "1.5.6",
+   "libgcrypt": "1.7.3",
    "pkg-config": "No version as per date"
   },
   "8.22.0": {
@@ -23763,7 +23763,7 @@
    "e2fsprogs": "1.43.3",
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
-   "libgcrypt": "1.5.6",
+   "libgcrypt": "1.7.3",
    "pkg-config": "No version as per date"
   },
   "8.21.0": {
@@ -23771,7 +23771,7 @@
    "e2fsprogs": "1.43.1",
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
-   "libgcrypt": "1.5.6",
+   "libgcrypt": "1.7.3",
    "pkg-config": "No version as per date"
   },
   "8.20.0": {
@@ -23819,7 +23819,7 @@
    "e2fsprogs": "1.42.13",
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
-   "libgcrypt": "1.5.5",
+   "libgcrypt": "1.6.5",
    "pkg-config": "No version as per date"
   },
   "8.17.0": {
@@ -23827,7 +23827,7 @@
    "e2fsprogs": "1.42.13",
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
-   "libgcrypt": "1.5.5",
+   "libgcrypt": "1.6.5",
    "pkg-config": "No version as per date"
   },
   "8.16.0": {
@@ -23995,7 +23995,7 @@
    "e2fsprogs": "1.42.11",
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
-   "libgcrypt": "1.5.4",
+   "libgcrypt": "1.6.1",
    "pkg-config": "No version as per date"
   },
   "8.3.5": {
@@ -24003,7 +24003,7 @@
    "e2fsprogs": "1.42.11",
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
-   "libgcrypt": "1.5.4",
+   "libgcrypt": "1.6.1",
    "pkg-config": "No version as per date"
   },
   "8.3.4": {

@@ -19,7 +19,7 @@ const fs = require('fs');
 
 			for (const versionDetails of eligibleVersions) {
 				const version = versionDetails.version
-				const pathToCheck = process.env.HOME + '/programs/' + programName + '/' + version + details.path;
+				const pathToCheck = process.env.HOME + '/programs_new/' + programName + '/' + version + details.path;
 				if (!fs.existsSync(pathToCheck)) {
 					if (!missingVersions.hasOwnProperty(programName)) {
 						missingVersions[programName] = [];

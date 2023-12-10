@@ -1,28 +1,12 @@
 const getDependencyVersions = require('./getDependencyVersionsV2.js').getDependencyVersions;
+const merge = require('./src/utils.js').merge;
 
 const path = require('path');
 const scriptName = path.basename(__filename);
 const fileNameParts = process.argv[1].split(path.sep);
 const fileName = fileNameParts[fileNameParts.length - 1];
 
-const merge = (a, b) => {
-	const mergedObject = {};
-	for (const key of Object.keys(a)) {
-		mergedObject[key] = a[key].concat(b[key] || []);
-	}
 
-	for (const key of Object.keys(b)) {
-		if (!a.hasOwnProperty(key)) {
-			mergedObject[key] = b[key];
-		}
-	}
-
-	for (const key of Object.keys(mergedObject)) {
-		mergedObject[key] = mergedObject[key].filter((item, index) => mergedObject[key].indexOf(item) === index);
-	}
-
-	return mergedObject;
-}
 
 const getAllRequiredDependencies = (programName, version) => {
 	let dependencies = {};

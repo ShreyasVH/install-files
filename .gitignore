@@ -3,7 +3,9 @@
 data
 node_modules
 untested
-src
 refreshInstallOutput.txt
 test.sh
 test.js
+pendingVersions.json
+missingVersions.json
+missingInstallFiles.json
