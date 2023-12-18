@@ -1233,6 +1233,10 @@
  ],
  "cmake": [
   {
+   "version": "3.28.1",
+   "releaseDateString": "2023-12-14T16:19:48Z"
+  },
+  {
    "version": "3.28.0",
    "releaseDateString": "2023-12-06T14:26:11Z"
   },
@@ -1986,6 +1990,10 @@
   }
  ],
  "cockroach": [
+  {
+   "version": "23.1.13",
+   "releaseDateString": "2023-12-01T18:43:02Z"
+  },
   {
    "version": "22.2.17",
    "releaseDateString": "2023-11-15T17:14:52Z"
@@ -5053,6 +5061,14 @@
  ],
  "elasticsearch": [
   {
+   "version": "8.11.3",
+   "releaseDateString": "2023-12-12T13:32:35Z"
+  },
+  {
+   "version": "7.17.16",
+   "releaseDateString": "2023-12-12T13:21:11Z"
+  },
+  {
    "version": "8.11.2",
    "releaseDateString": "2023-12-07T12:55:49Z"
   },
@@ -6896,6 +6912,10 @@
   }
  ],
  "erlang": [
+  {
+   "version": "26.2",
+   "releaseDateString": "2023-12-11T13:07:16Z"
+  },
   {
    "version": "26.1.2",
    "releaseDateString": "2023-10-11T15:12:39Z"
@@ -9146,6 +9166,14 @@
   }
  ],
  "kibana": [
+  {
+   "version": "8.11.3",
+   "releaseDateString": "2023-12-12T13:32:35Z"
+  },
+  {
+   "version": "7.17.16",
+   "releaseDateString": "2023-12-12T13:21:11Z"
+  },
   {
    "version": "8.11.2",
    "releaseDateString": "2023-12-07T12:55:49Z"
@@ -11759,6 +11787,10 @@
  ],
  "libxml2": [
   {
+   "version": "2.12.3",
+   "releaseDateString": "2023-12-12T14:57:50Z"
+  },
+  {
    "version": "2.12.2",
    "releaseDateString": "2023-12-05T20:00:11Z"
   },
@@ -12106,6 +12138,14 @@
   }
  ],
  "mongo": [
+  {
+   "version": "7.2.0",
+   "releaseDateString": "2023-12-14T23:03:25Z"
+  },
+  {
+   "version": "4.4.27",
+   "releaseDateString": "2023-12-13T00:23:19Z"
+  },
   {
    "version": "4.2.25",
    "releaseDateString": "2023-12-04T19:01:15Z"
@@ -16086,6 +16126,10 @@
   }
  ],
  "neo4j": [
+  {
+   "version": "5.15.0",
+   "releaseDateString": "2023-12-15T14:50:53Z"
+  },
   {
    "version": "5.14.0",
    "releaseDateString": "2023-11-24T10:11:55Z"
@@ -29001,6 +29045,10 @@
  ],
  "rmq": [
   {
+   "version": "3.11.27",
+   "releaseDateString": "2023-12-13T11:38:29Z"
+  },
+  {
    "version": "3.12.10",
    "releaseDateString": "2023-11-22T03:45:11Z"
   },
@@ -29638,6 +29686,10 @@
   }
  ],
  "rsyslog": [
+  {
+   "version": "8.2312.0",
+   "releaseDateString": "2023-12-11T09:31:42Z"
+  },
   {
    "version": "8.2310.0",
    "releaseDateString": "2023-10-09T07:20:51Z"
@@ -31695,6 +31747,10 @@
  ],
  "sbt": [
   {
+   "version": "1.9.8",
+   "releaseDateString": "2023-12-14T04:45:13Z"
+  },
+  {
    "version": "1.9.7",
    "releaseDateString": "2023-10-22T22:24:25Z"
   },
@@ -33474,6 +33530,10 @@
   }
  ],
  "boost": [
+  {
+   "version": "1.84.0",
+   "releaseDateString": "2023-12-06T21:00:05Z"
+  },
   {
    "version": "1.83.0",
    "releaseDateString": "2023-08-08T21:00:07Z"
