@@ -38,6 +38,6 @@ if (fileName === scriptName) {
 		const programName = process.argv[2];
 		const version = process.argv[3];
 
-		getMissingInslallFiles(programName, version);
+		console.log(JSON.stringify(getMissingInslallFiles(programName, version), null, ' '));
 	})();
 }
