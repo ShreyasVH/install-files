@@ -1,4 +1,4 @@
-VERSION=1.6.22
+VERSION=1.6.20
 FOLDER_NAME=memcached
 
 cd $INSTALL_FILES_DIR
@@ -30,14 +30,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memcached" ]; then
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memcached" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
-		sudo chown -R $(whoami) .
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
 		touch .envrc
 		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc
 		direnv allow
 
-		PORT=1037
+		PORT=1065
 
 		touch start.sh
 		echo "memcached -p $PORT -d > memcached.log 2>&1 &" >> start.sh
