@@ -1,96 +1,34 @@
 date
 
 programs=()
-versions=()
 failed_versions=()
 
 
 programs+=("java")
-versions+=("8.0.382 11.0.19 17.0.7 19 19.0.2 20.0.2 21 21.0.1")
-
-
 programs+=("python")
-versions+=("3.11.4")
-
 programs+=("php")
-versions+=("8.2.7 8.2.8 8.2.9 8.2.10 8.2.11")
-
 programs+=("ruby")
-versions+=("3.2.2")
-
 programs+=("go")
-versions+=("1.21.4")
-
 programs+=("scala")
-versions+=("3.2.2 3.3.1")
-
 programs+=("kotlin")
-versions+=("1.9.20")
-
 programs+=("perl")
-versions+=("5.38.0")
-
 programs+=("redis")
-versions+=("7.0.12 7.0.13 7.2.1 7.2.3")
-
 programs+=("memcached")
-versions+=("1.6.21 1.6.22")
-
-
-
 programs+=("rmq")
-versions+=("3.12.2")
-
-
-
 programs+=("apache")
-versions+=("2.4.55 2.4.56 2.4.57 2.4.58")
-
-
 programs+=("nginx")
-versions+=("1.25.1 1.25.3")
-
-
-
 programs+=("mysql")
-versions+=("8.0.34 8.1.0")
-
 programs+=("mongo")
-versions+=("6.0.6 7.0.1 7.0.3 7.1.1")
-
 programs+=("postgres")
-versions+=("15.3 15.4 16.0 16.1")
-
 programs+=("neo4j")
-versions+=("5.11.0 5.13.0")
-
-
 programs+=("elasticsearch")
-versions+=("7.16.3 7.17.15 8.9.2 8.10.0 8.10.1 8.10.2 8.10.3 8.10.4 8.11.0 8.11.1")
-
 programs+=("kibana")
-versions+=("8.9.2 8.11.1")
-
-
 programs+=("haproxy")
-versions+=("2.8.2 2.8.3")
-
-
 programs+=("maven")
-versions+=("3.8.8 3.9.5")
-
 programs+=("sbt")
-versions+=("1.7.2 1.8.1 1.9.7")
-
-
 programs+=("dotnet-core")
-versions+=("7.0.402 8.0.100")
-
 programs+=("rsyslog")
-versions+=("8.2308.0")
-
 programs+=("node")
-versions+=("16.3.0 18.16.0 19.9.0")
 
 
 rm -rf ~/sources_new
@@ -132,20 +70,29 @@ direnv allow
 
 for ((i = 0; i < ${#programs[@]}; i++)); do
     program="${programs[i]}"
-    versions_list="${versions[i]}"
-    echo "Program: $program"
+    programDirectory=$HOME/install-files/$program
+    echo "$program"
 
     path_to_check=$(cat "programData.json" | jq -r --arg folder $program '.[$folder].path')
-    
-    # Split versions into an array
-    IFS=" " read -ra version_array <<< "$versions_list"
-    
-    for version in "${version_array[@]}"; do
-        echo -e "\tVersion: $version"
-        bash $program/$version/macos/install.sh
-        cd $INSTALL_FILES_DIR
-        if [ ! -e "$HOME/programs/$program/$version"$path_to_check ]; then
-            failed_versions+=("$program-$version")
+
+    subdirectories=()
+
+    while IFS= read -r -d '' subdirectory; do
+        subdirectories+=("$subdirectory")
+    done < <(find "$programDirectory" -mindepth 1 -maxdepth 1 -type d -print0)
+
+    for subdir in "${subdirectories[@]}"; do
+        # echo "$subdir"
+        path=$(echo $programDirectory | sed 's/\//\\\//g')
+        # echo $path
+        version=$(echo $subdir | sed "s/$path\///g")
+        if [ -d $subdir/macos ]; then
+            printf "\t$version\n"
+            bash $programDirectory/$version/macos/install.sh
+            cd $INSTALL_FILES_DIR
+            if [ ! -e "$HOME/programs/$program/$version"$path_to_check ]; then
+                failed_versions+=("$program-$version")
+            fi
         fi
     done
 done
