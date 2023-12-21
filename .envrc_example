@@ -1,12 +1,23 @@
-#wget path
+# wget 1.21.4 path
+export PATH=
+
+# jq 1.7 path
+export PATH=
+
+export VERSION_MAP_PATH=
+
+# node 18.16.0
 export PATH=
 
 export green='\e[32m'
 export cyan='\e[36m'
 export blue='\e[34m'
 export yellow='\e[33m'
+export red='\e[31m'
 export clear='\e[0m'
 export blink='\e[5m'
 export bold='\e[1m'
 
 export USER_PASSWORD=
+
+export INSTALL_FILES_DIR=

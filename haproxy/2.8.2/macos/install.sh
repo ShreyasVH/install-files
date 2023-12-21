@@ -2,57 +2,30 @@ FOLDER_NAME=haproxy
 VERSION=2.8.2
 MINOR_VERSION=2.8
 
+cd $INSTALL_FILES_DIR
+
 OPENSSL_FOLDER_NAME=openssl
-OPENSSL_VERSION=3.0.10
-
-INSTALL_FILES_DIR=$HOME/install-files
-
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/logs" ]; then
-	mkdir "$HOME/logs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/logs/$FOLDER_NAME/$VERSION"
-fi
+OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/haproxy.cfg ]; then
 	printf "haproxy.cfg not found\n"
 	exit
 fi
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/wsl/install.sh
+	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/macos/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://www.haproxy.org/download/$MINOR_VERSION/src/haproxy-$VERSION.tar.gz"
+	ARCHIVE_FILE="haproxy-$VERSION.tar.gz"
+	wget -q --show-progress "https://www.haproxy.org/download/$MINOR_VERSION/src/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	tar -xf "haproxy-$VERSION.tar.gz"
+	tar -xf $ARCHIVE_FILE
 	mv "haproxy-$VERSION" $VERSION
 	cd $VERSION
 	printf "\t${bold}${green}Making${clear}\n"
@@ -75,9 +48,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		touch stop.sh
 		echo 'echo '$USER_PASSWORD' | sudo -S -p "" kill -9 $(echo '$USER_PASSWORD' | sudo -S -p "" lsof -t -i:80)' >> stop.sh
 
-		printf "\t${bold}${green}Clearing${clear}\n"
-		cd $HOME/sources/$FOLDER_NAME
-		rm -rf $VERSION
-		rm "haproxy-$VERSION.tar.gz"
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 	fi
 fi

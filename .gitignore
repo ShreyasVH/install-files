@@ -1,1 +1,11 @@
+.DS_Store
 .envrc
+data
+node_modules
+untested
+refreshInstallOutput.txt
+test.sh
+test.js
+pendingVersions.json
+missingVersions.json
+missingInstallFiles.json

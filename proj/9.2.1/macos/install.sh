@@ -1,41 +1,25 @@
 FOLDER_NAME=proj
 VERSION=9.2.1
 
+cd $INSTALL_FILES_DIR
+
 CMAKE_FOLDER_NAME=cmake
-CMAKE_VERSION=3.26.4
+CMAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CMAKE_FOLDER_NAME" '.[$folder][$version][$name]')
 
-SQLITE_VERSION=3.42.0
 SQLITE_FOLDER_NAME=sqlite3
+SQLITE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$SQLITE_FOLDER_NAME" '.[$folder][$version][$name]')
 
-LIBTIFF_VERSION=4.5.1
 LIBTIFF_FOLDER_NAME=libtiff
+LIBTIFF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBTIFF_FOLDER_NAME" '.[$folder][$version][$name]')
 
-CURL_VERSION=8.2.1
 CURL_FOLDER_NAME=curl
+CURL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CURL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-OPENSSL_VERSION=3.0.10
 OPENSSL_FOLDER_NAME=openssl
+OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-INSTALL_FILES_DIR=$HOME/install-files
-
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libproj.dylib" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	bash $INSTALL_FILES_DIR/$SQLITE_FOLDER_NAME/$SQLITE_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$CMAKE_FOLDER_NAME/$CMAKE_VERSION/macos/install.sh
@@ -49,20 +33,26 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	wget "https://download.osgeo.org/proj/proj-$VERSION.tar.gz"
-	tar -xvf "proj-$VERSION.tar.gz"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	ARCHIVE_FILE="proj-$VERSION.tar.gz"
+	wget -q --show-progress "https://download.osgeo.org/proj/$ARCHIVE_FILE"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf $ARCHIVE_FILE
 	mv "proj-$VERSION" $VERSION
 	cd $VERSION
 	mkdir bld
 	cd bld
-	cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DCMAKE_PREFIX_PATH=$HOME/programs/$SQLITE_FOLDER_NAME/$SQLITE_VERSION -DTIFF_LIBRARY_RELEASE=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/lib/libtiff.dylib -DTIFF_INCLUDE_DIR=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/include -DCURL_LIBRARY=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/lib/libcurl.dylib -DCURL_INCLUDE_DIR=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/include
-	make
-	sudo make install
+	printf "\t${bold}${green}Running cmake${clear}\n"
+	cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DCMAKE_PREFIX_PATH=$HOME/programs/$SQLITE_FOLDER_NAME/$SQLITE_VERSION -DTIFF_LIBRARY_RELEASE=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/lib/libtiff.dylib -DTIFF_INCLUDE_DIR=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/include -DCURL_LIBRARY=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/lib/libcurl.dylib -DCURL_INCLUDE_DIR=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/include > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
-	cd $HOME/programs/$FOLDER_NAME/$VERSION
-	sudo chown -R $(whoami) .
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libproj.dylib" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
-	cd $HOME/sources/$FOLDER_NAME
-	sudo rm -rf $VERSION
-	rm "proj-$VERSION.tar.gz"
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
+	fi
 fi

@@ -1,23 +1,19 @@
 FOLDER_NAME=kibana
 VERSION=8.9.2
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+cd $INSTALL_FILES_DIR
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/kibana.yml ]; then
 	printf "kibana.yml not found\n"
 	exit
 fi
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/kibana" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://artifacts.elastic.co/downloads/kibana/kibana-$VERSION-darwin-x86_64.tar.gz"

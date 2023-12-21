@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "puppeteer": "^21.5.2"
+  },
+  "name": "install-files",
+  "version": "1.0.0",
+  "scripts": {
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

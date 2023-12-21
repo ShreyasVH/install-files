@@ -1,23 +1,19 @@
 FOLDER_NAME=mongo-cli-tools
 VERSION=100.9.0
 
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
+cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+	
 	cd $HOME/programs/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME${clear}\n"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	wget -q --show-progress "https://fastdl.mongodb.org/tools/db/mongodb-database-tools-macos-arm64-$VERSION.zip"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	unzip "mongodb-database-tools-macos-arm64-$VERSION.zip"
+	unzip "mongodb-database-tools-macos-arm64-$VERSION.zip" > /dev/null 2>&1
 	mv "mongodb-database-tools-macos-arm64-$VERSION" $VERSION
 	cd $VERSION
 
