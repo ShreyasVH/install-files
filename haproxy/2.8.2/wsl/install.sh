@@ -46,10 +46,12 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	touch start.sh
-	echo "sudo haproxy -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/wsl/haproxy.cfg -D" >> start.sh
+	echo 'export LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> start.sh
+	echo '' >> start.sh
+	echo "echo '$USER_PASSWORD' | sudo -S haproxy -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/haproxy.cfg -D" >> start.sh
 
 	touch stop.sh
-	echo 'sudo kill -9 $(sudo lsof -t -i:80)' >> stop.sh
+	echo 'echo '$USER_PASSWORD' | sudo -S kill -9 $(echo '$USER_PASSWORD' | sudo -S lsof -t -i:80)' >> stop.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 	rm -rf $VERSION
