@@ -9,7 +9,7 @@ const fs = require('fs');
 	const missingVersions = {};
 	for (const [programName, details] of Object.entries(programData)) {
 		if (details.isEntryPoint) {
-			let eligibleVersions = versionHistory[programName].filter(item => new Date(item.releaseDateString).getTime() >= ((new Date('2023-05-01')).getTime()));
+			let eligibleVersions = versionHistory[programName].filter(item => new Date(item.releaseDateString).getTime() >= ((new Date('2023-07-01')).getTime()));
 			if (eligibleVersions.length === 0) {
 				eligibleVersions = [
 					versionHistory[programName][0]
