@@ -16,7 +16,7 @@ if [ -e "$HOME/sources/$FOLDER_NAME/.DS_Store" ]; then
 	rm "$HOME/sources/$FOLDER_NAME/.DS_Store"
 fi
 
-if [ ! $(ls -A "$HOME/sources/$FOLDER_NAME") ]; then
+if [ -d $HOME/sources/$FOLDER_NAME ] && [ $(ls -A "$HOME/sources/$FOLDER_NAME" | wc -l) -eq 0 ]; then
 	cd ..
 	rm -rf $HOME/sources/$FOLDER_NAME
 fi

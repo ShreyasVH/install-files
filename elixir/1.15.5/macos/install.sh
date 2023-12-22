@@ -40,6 +40,15 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 		printf "\t${bold}${green}Clearing${clear}\n"
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf elixir
+
+		if [ -e "$HOME/sources/$FOLDER_NAME/.DS_Store" ]; then
+			rm "$HOME/sources/$FOLDER_NAME/.DS_Store"
+		fi
+
+		if [ -d $HOME/sources/$FOLDER_NAME ] && [ $(ls -A "$HOME/sources/$FOLDER_NAME" | wc -l) -eq 0 ]; then
+			cd ..
+			rm -rf $HOME/sources/$FOLDER_NAME
+		fi
 	fi
 fi
 
