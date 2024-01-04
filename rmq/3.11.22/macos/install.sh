@@ -48,6 +48,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	echo "" >> .envrc
 	echo 'export PATH=$HOME/programs/'"$ERLANG_FOLDER_NAME/$ERLANG_VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
+	DIST_PORT=$(grep 'listeners.tcp.dist = ' ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rabbitmq.conf | awk '{print $3}')
+	echo "export RABBITMQ_DIST_PORT=$DIST_PORT" >> .envrc
+	echo "" >> .envrc
+	EPMD_PORT=1115
+	echo "export ERL_EPMD_PORT=$EPMD_PORT" >> .envrc
+	echo "" >> .envrc
 	direnv allow
 
 	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rabbitmq.conf ./etc/rabbitmq/
