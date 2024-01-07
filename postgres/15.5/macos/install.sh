@@ -4,7 +4,7 @@ VERSION=15.5
 cd $INSTALL_FILES_DIR
 
 POSTGIS_FOLDER_NAME=postgis
-POSTGIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$POSTGIS_FOLDER_NAME" '.[$folder][$version][$name]')
+POSTGIS_VERSION=3.3.4
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/postgresql.conf ]; then
 	printf "postgresql.conf not found\n"
