@@ -29,24 +29,27 @@ programs+=("sbt")
 programs+=("dotnet-core")
 programs+=("rsyslog")
 programs+=("node")
+programs+=("erlang")
+programs+=("elixir")
+programs+=("mongo-cli-tools")
+programs+=("phpmyadmin")
 
+# rm -rf ~/sources_new
+# mv ~/sources ~/sources_bkp
+# mkdir ~/sources
 
-rm -rf ~/sources_new
-mv ~/sources ~/sources_bkp
-mkdir ~/sources
+# rm -rf ~/logs_new
+# mv ~/logs ~/logs_bkp
+# mkdir ~/logs
 
-rm -rf ~/logs_new
-mv ~/logs ~/logs_bkp
-mkdir ~/logs
-
-rm -rf ~/programs_new
-mv ~/programs ~/programs_bkp
-mkdir ~/programs
+# rm -rf ~/programs_new
+# mv ~/programs ~/programs_bkp
+# mkdir ~/programs
 
 JQ_VERSION=1.7
 
-mkdir ~/programs/jq
-cp -rp ~/programs_bkp/jq/$JQ_VERSION ~/programs/jq
+# mkdir ~/programs/jq
+# cp -rp ~/programs_bkp/jq/$JQ_VERSION ~/programs/jq
 
 direnv allow
 
@@ -54,17 +57,17 @@ WGET_WERSION=1.21.4
 PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "pkg-config" '.[$folder][$version][$name]')
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "openssl" '.[$folder][$version][$name]')
 
-mkdir ~/programs/pkg-config
-cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config
+# mkdir ~/programs/pkg-config
+# cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config
 
-mkdir ~/programs/openssl
-cp -rp ~/programs_bkp/openssl/$OPENSSL_VERSION ~/programs/openssl
+# mkdir ~/programs/openssl
+# cp -rp ~/programs_bkp/openssl/$OPENSSL_VERSION ~/programs/openssl
 
-mkdir ~/programs/wget
-cp -rp ~/programs_bkp/wget/$WGET_WERSION ~/programs/wget
+# mkdir ~/programs/wget
+# cp -rp ~/programs_bkp/wget/$WGET_WERSION ~/programs/wget
 
-# bash jq/1.7/macos/install.sh
-# bash wget/1.21.4/macos/install.sh
+# # bash jq/1.7/macos/install.sh
+# # bash wget/1.21.4/macos/install.sh
 
 direnv allow
 
@@ -103,13 +106,13 @@ for element in "${failed_versions[@]}"; do
 done
 
 
-mv ~/programs ~/programs_new
-mv ~/programs_bkp ~/programs
+# mv ~/programs ~/programs_new
+# mv ~/programs_bkp ~/programs
 
-mv ~/sources ~/sources_new
-mv ~/sources_bkp ~/sources
+# mv ~/sources ~/sources_new
+# mv ~/sources_bkp ~/sources
 
-mv ~/logs ~/logs_new
-mv ~/logs_bkp ~/logs
+# mv ~/logs ~/logs_new
+# mv ~/logs_bkp ~/logs
 
 date

@@ -325,6 +325,10 @@
  ],
  "php-phalcon": [
   {
+   "version": "5.6.0",
+   "releaseDateString": "2024-01-09T00:00:00Z"
+  },
+  {
    "version": "5.5.0",
    "releaseDateString": "2023-12-25T00:00:00Z"
   },
@@ -412,6 +416,10 @@
   }
  ],
  "haproxy": [
+  {
+   "version": "2.9.2",
+   "releaseDateString": "2024-01-11T15:07:00Z"
+  },
   {
    "version": "2.9.1",
    "releaseDateString": "2023-12-15T13:36:00Z"

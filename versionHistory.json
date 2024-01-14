@@ -4407,6 +4407,10 @@
  ],
  "elasticsearch": [
   {
+   "version": "8.11.4",
+   "releaseDateString": "2024-01-11T12:26:37Z"
+  },
+  {
    "version": "8.11.3",
    "releaseDateString": "2023-12-12T13:32:35Z"
   },
@@ -7709,6 +7713,14 @@
  ],
  "go": [
   {
+   "version": "1.21.6",
+   "releaseDateString": "2024-01-09T18:17:19Z"
+  },
+  {
+   "version": "1.20.13",
+   "releaseDateString": "2024-01-09T18:15:45Z"
+  },
+  {
    "version": "1.21.5",
    "releaseDateString": "2023-12-05T18:12:56Z"
   },
@@ -8516,6 +8528,10 @@
   }
  ],
  "kibana": [
+  {
+   "version": "8.11.4",
+   "releaseDateString": "2024-01-11T12:26:37Z"
+  },
   {
    "version": "8.11.3",
    "releaseDateString": "2023-12-12T13:32:35Z"
@@ -11492,6 +11508,18 @@
   }
  ],
  "mongo": [
+  {
+   "version": "6.0.13",
+   "releaseDateString": "2024-01-11T21:00:10Z"
+  },
+  {
+   "version": "5.0.24",
+   "releaseDateString": "2024-01-11T21:30:59Z"
+  },
+  {
+   "version": "4.4.28",
+   "releaseDateString": "2024-01-11T21:49:24Z"
+  },
   {
    "version": "7.0.5",
    "releaseDateString": "2023-12-28T21:40:02Z"
@@ -18836,6 +18864,10 @@
   }
  ],
  "node": [
+  {
+   "version": "20.11.0",
+   "releaseDateString": "2024-01-09T20:04:41Z"
+  },
   {
    "version": "21.5.0",
    "releaseDateString": "2023-12-19T18:59:29Z"
@@ -27581,6 +27613,14 @@
  ],
  "redis": [
   {
+   "version": "7.2.4",
+   "releaseDateString": "2024-01-09T11:51:49Z"
+  },
+  {
+   "version": "7.0.15",
+   "releaseDateString": "2024-01-09T11:51:41Z"
+  },
+  {
    "version": "7.2.3",
    "releaseDateString": "2023-11-01T12:38:13Z"
   },
@@ -28350,6 +28390,10 @@
   }
  ],
  "rmq": [
+  {
+   "version": "3.12.12",
+   "releaseDateString": "2024-01-04T20:33:37Z"
+  },
   {
    "version": "3.12.11",
    "releaseDateString": "2023-12-21T22:31:29Z"
@@ -33282,6 +33326,10 @@
   }
  ],
  "memcached": [
+  {
+   "version": "1.6.23",
+   "releaseDateString": "2024-01-09T21:22:56Z"
+  },
   {
    "version": "1.6.22",
    "releaseDateString": "2023-10-16T06:09:01Z"
