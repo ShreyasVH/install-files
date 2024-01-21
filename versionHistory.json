@@ -4407,6 +4407,10 @@
  ],
  "elasticsearch": [
   {
+   "version": "8.12.0",
+   "releaseDateString": "2024-01-17T15:39:15Z"
+  },
+  {
    "version": "8.11.4",
    "releaseDateString": "2024-01-11T12:26:37Z"
   },
@@ -7511,24 +7515,12 @@
    "releaseDateString": "2022-10-09T23:03:55Z"
   },
   {
-   "version": "0.21",
-   "releaseDateString": "2020-07-27T00:17:50Z"
-  },
-  {
    "version": "0.20.2",
    "releaseDateString": "2020-04-14T09:01:23Z"
   },
   {
    "version": "0.20.1",
    "releaseDateString": "2019-05-12T15:00:38Z"
-  },
-  {
-   "version": "0.20",
-   "releaseDateString": "2019-05-11T09:27:06Z"
-  },
-  {
-   "version": "0.19.8.1",
-   "releaseDateString": "2016-06-11T12:50:21Z"
   },
   {
    "version": "0.19.8",
@@ -7543,10 +7535,6 @@
    "releaseDateString": "2015-09-11T03:03:15Z"
   },
   {
-   "version": "0.19.5.1",
-   "releaseDateString": "2015-07-15T01:30:36Z"
-  },
-  {
    "version": "0.19.5",
    "releaseDateString": "2015-07-10T06:30:42Z"
   },
@@ -7559,10 +7547,6 @@
    "releaseDateString": "2014-10-16T08:49:53Z"
   },
   {
-   "version": "0.19.2.1",
-   "releaseDateString": "2014-10-01T06:35:12Z"
-  },
-  {
    "version": "0.19.2",
    "releaseDateString": "2014-07-14T05:29:15Z"
   },
@@ -7571,40 +7555,16 @@
    "releaseDateString": "2014-06-10T03:16:27Z"
   },
   {
-   "version": "0.19",
-   "releaseDateString": "2014-06-02T00:58:35Z"
-  },
-  {
-   "version": "0.18.3.2",
-   "releaseDateString": "2014-01-07T05:33:52Z"
-  },
-  {
-   "version": "0.18.3.1",
-   "releaseDateString": "2013-08-17T05:18:13Z"
-  },
-  {
    "version": "0.18.3",
    "releaseDateString": "2013-07-07T12:48:13Z"
-  },
-  {
-   "version": "0.18.2.1",
-   "releaseDateString": "2013-03-05T09:43:36Z"
   },
   {
    "version": "0.18.2",
    "releaseDateString": "2012-12-25T06:18:09Z"
   },
   {
-   "version": "0.18.1.1",
-   "releaseDateString": "2010-06-06T22:21:05Z"
-  },
-  {
    "version": "0.18.1",
    "releaseDateString": "2010-06-04T16:15:24Z"
-  },
-  {
-   "version": "0.18",
-   "releaseDateString": "2010-05-09T23:35:43Z"
   },
   {
    "version": "0.16.1",
@@ -7639,18 +7599,6 @@
    "releaseDateString": "2009-06-28T14:35:50Z"
   },
   {
-   "version": "0.17",
-   "releaseDateString": "2009-06-23T10:15:32Z"
-  },
-  {
-   "version": "0.16",
-   "releaseDateString": "2009-06-23T10:14:17Z"
-  },
-  {
-   "version": "0.15",
-   "releaseDateString": "2009-06-23T10:13:37Z"
-  },
-  {
    "version": "0.14.4",
    "releaseDateString": "2009-06-23T10:12:31Z"
   },
@@ -7667,24 +7615,12 @@
    "releaseDateString": "2009-06-23T10:11:46Z"
   },
   {
-   "version": "0.14",
-   "releaseDateString": "2009-06-23T10:11:45Z"
-  },
-  {
    "version": "0.13.1",
    "releaseDateString": "2009-06-23T10:11:31Z"
   },
   {
-   "version": "0.13",
-   "releaseDateString": "2009-06-23T10:11:26Z"
-  },
-  {
    "version": "0.12.1",
    "releaseDateString": "2009-06-23T10:10:37Z"
-  },
-  {
-   "version": "0.12",
-   "releaseDateString": "2009-06-23T10:10:31Z"
   },
   {
    "version": "0.11.4",
@@ -7697,10 +7633,6 @@
   {
    "version": "0.11.1",
    "releaseDateString": "2009-06-23T10:07:50Z"
-  },
-  {
-   "version": "0.11",
-   "releaseDateString": "2009-06-21T23:13:43Z"
   },
   {
    "version": "0.10.37",
@@ -8528,6 +8460,10 @@
   }
  ],
  "kibana": [
+  {
+   "version": "8.12.0",
+   "releaseDateString": "2024-01-17T15:39:15Z"
+  },
   {
    "version": "8.11.4",
    "releaseDateString": "2024-01-11T12:26:37Z"
@@ -11157,6 +11093,10 @@
  ],
  "libxml2": [
   {
+   "version": "2.12.4",
+   "releaseDateString": "2024-01-15T16:03:10Z"
+  },
+  {
    "version": "2.12.3",
    "releaseDateString": "2023-12-12T14:57:50Z"
   },
@@ -13437,6 +13377,10 @@
  ],
  "mongosh": [
   {
+   "version": "2.1.2",
+   "releaseDateString": "2024-01-17T11:15:04Z"
+  },
+  {
    "version": "2.1.1",
    "releaseDateString": "2023-12-03T03:06:45Z"
   },
@@ -13858,6 +13802,14 @@
   }
  ],
  "mysql": [
+  {
+   "version": "8.3.0",
+   "releaseDateString": "2023-12-14T14:49:18Z"
+  },
+  {
+   "version": "8.0.36",
+   "releaseDateString": "2023-12-12T18:05:31Z"
+  },
   {
    "version": "8.2.0",
    "releaseDateString": "2023-10-12T11:27:14Z"
@@ -18865,6 +18817,10 @@
  ],
  "node": [
   {
+   "version": "21.6.0",
+   "releaseDateString": "2024-01-15T14:46:41Z"
+  },
+  {
    "version": "20.11.0",
    "releaseDateString": "2024-01-09T20:04:41Z"
   },
@@ -22996,6 +22952,14 @@
   }
  ],
  "php": [
+  {
+   "version": "8.3.2",
+   "releaseDateString": "2024-01-16T13:45:59Z"
+  },
+  {
+   "version": "8.2.15",
+   "releaseDateString": "2024-01-16T12:17:59Z"
+  },
   {
    "version": "8.3.1",
    "releaseDateString": "2023-12-20T12:42:39Z"
@@ -30575,6 +30539,10 @@
  ],
  "ruby": [
   {
+   "version": "3.2.3",
+   "releaseDateString": "2024-01-18T06:26:39Z"
+  },
+  {
    "version": "3.3.0",
    "releaseDateString": "2023-12-25T05:59:38Z"
   },
@@ -31708,6 +31676,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "3.45.0",
+   "releaseDateString": "2024-01-15T17:01:13Z"
+  },
   {
    "version": "3.44.2",
    "releaseDateString": "2023-11-24T11:41:44Z"

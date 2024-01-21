@@ -5,34 +5,35 @@ failed_versions=()
 
 
 programs+=("java")
-programs+=("python")
+# programs+=("python")
 programs+=("php")
 programs+=("ruby")
-programs+=("go")
-programs+=("scala")
-programs+=("kotlin")
-programs+=("perl")
-programs+=("redis")
-programs+=("memcached")
-programs+=("rmq")
-programs+=("apache")
-programs+=("nginx")
+# programs+=("go")
+# programs+=("scala")
+# programs+=("kotlin")
+# programs+=("perl")
+# programs+=("redis")
+# programs+=("memcached")
+# programs+=("rmq")
+# programs+=("apache")
+# programs+=("nginx")
 programs+=("mysql")
-programs+=("mongo")
-programs+=("postgres")
-programs+=("neo4j")
+# programs+=("mongo")
+# programs+=("postgres")
+# programs+=("neo4j")
 programs+=("elasticsearch")
 programs+=("kibana")
-programs+=("haproxy")
-programs+=("maven")
-programs+=("sbt")
-programs+=("dotnet-core")
-programs+=("rsyslog")
+# programs+=("haproxy")
+# programs+=("maven")
+# programs+=("sbt")
+# programs+=("dotnet-core")
+# programs+=("rsyslog")
 programs+=("node")
-programs+=("erlang")
-programs+=("elixir")
-programs+=("mongo-cli-tools")
-programs+=("phpmyadmin")
+# programs+=("erlang")
+# programs+=("elixir")
+# programs+=("mongo-cli-tools")
+# programs+=("phpmyadmin")
+programs+=("sqlite3")
 
 # rm -rf ~/sources_new
 # mv ~/sources ~/sources_bkp
@@ -53,9 +54,9 @@ JQ_VERSION=1.7
 
 direnv allow
 
-WGET_WERSION=1.21.4
-PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "pkg-config" '.[$folder][$version][$name]')
-OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "openssl" '.[$folder][$version][$name]')
+# WGET_WERSION=1.21.4
+# PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "pkg-config" '.[$folder][$version][$name]')
+# OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "openssl" '.[$folder][$version][$name]')
 
 # mkdir ~/programs/pkg-config
 # cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config

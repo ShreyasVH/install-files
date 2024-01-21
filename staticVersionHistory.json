@@ -203,6 +203,18 @@
  ],
  "java": [
   {
+   "version": "21.0.2",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
+   "version": "17.0.10",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
+   "version": "11.0.22",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
    "version": "21.0.1",
    "releaseDateString": "2023-10-17T00:00:00Z"
   },
@@ -392,6 +404,24 @@
    "version": "5.0.3",
    "releaseDateString": "2022-10-06T00:00:00Z"
   }
+ ],
+ "m4": [
+     {
+        "version": "1.4.19",
+        "releaseDateString": "2021-05-28T17:55:00Z"
+     },
+     {
+        "version": "1.4.18",
+        "releaseDateString": "2016-12-31T17:39:00Z"
+     },
+     {
+        "version": "1.4.17",
+        "releaseDateString": "2013-09-22T03:11:00Z"
+     },
+     {
+        "version": "1.4.16",
+        "releaseDateString": "2011-03-01T14:45:00Z"
+     }
  ],
  "make": [
   {
