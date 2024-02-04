@@ -3,7 +3,7 @@ VERSION=1.17
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/iconv" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	cd $HOME/sources/$FOLDER_NAME

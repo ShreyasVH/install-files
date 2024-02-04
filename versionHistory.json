@@ -1237,6 +1237,10 @@
  ],
  "cmake": [
   {
+   "version": "3.28.2",
+   "releaseDateString": "2024-01-29T20:45:54Z"
+  },
+  {
    "version": "3.28.1",
    "releaseDateString": "2023-12-14T16:19:48Z"
   },
@@ -3426,6 +3430,10 @@
   }
  ],
  "curl": [
+  {
+   "version": "8.6.0",
+   "releaseDateString": "2024-01-31T07:06:02Z"
+  },
   {
    "version": "8.5.0",
    "releaseDateString": "2023-12-06T07:14:52Z"
@@ -5796,6 +5804,10 @@
   }
  ],
  "elixir": [
+  {
+   "version": "1.16.1",
+   "releaseDateString": "2024-01-31T09:24:07Z"
+  },
   {
    "version": "1.16.0",
    "releaseDateString": "2023-12-22T16:45:12Z"
@@ -13388,6 +13400,10 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "2.1.3",
+   "releaseDateString": "2024-01-24T10:40:49Z"
+  },
   {
    "version": "2.1.2",
    "releaseDateString": "2024-01-17T11:15:04Z"
@@ -31701,6 +31717,10 @@
  ],
  "sqlite3": [
   {
+   "version": "3.45.1",
+   "releaseDateString": "2024-01-30T16:01:20Z"
+  },
+  {
    "version": "3.45.0",
    "releaseDateString": "2024-01-15T17:01:13Z"
   },
@@ -34110,6 +34130,10 @@
   }
  ],
  "php-sqlsrv": [
+  {
+   "version": "5.12.0",
+   "releaseDateString": "2024-01-31T05:43:06Z"
+  },
   {
    "version": "5.11.1",
    "releaseDateString": "2023-09-06T00:09:51Z"

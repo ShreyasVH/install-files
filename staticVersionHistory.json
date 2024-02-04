@@ -447,6 +447,10 @@
  ],
  "haproxy": [
   {
+   "version": "2.9.4",
+   "releaseDateString": "2024-01-31T15:25:00Z"
+  },
+  {
    "version": "2.9.3",
    "releaseDateString": "2024-01-18T14:50:00Z"
   },
