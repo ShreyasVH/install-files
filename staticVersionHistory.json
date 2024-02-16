@@ -337,6 +337,10 @@
  ],
  "php-phalcon": [
   {
+   "version": "5.6.1",
+   "releaseDateString": "2024-02-08T00:00:00Z"
+  },
+  {
    "version": "5.6.0",
    "releaseDateString": "2024-01-09T00:00:00Z"
   },
@@ -580,6 +584,18 @@
   }
  ],
  "openssl": [
+  {
+   "version": "3.2.1",
+   "releaseDateString": "2024-01-30T14:03:52Z"
+  },
+  {
+   "version": "3.1.5",
+   "releaseDateString": "2024-01-30T14:03:52Z"
+  },
+  {
+   "version": "3.0.13",
+   "releaseDateString": "2024-01-30T14:03:52Z"
+  }, 
   {
    "version": "3.2.0",
    "releaseDateString": "2023-11-23T13:20:31Z"
