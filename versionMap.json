@@ -1206,6 +1206,41 @@
    "apr": "0.9.5"
   }
  },
+ "autoconf": {
+  "2.72": {
+   "m4": "1.4.19"
+  },
+  "2.71": {
+   "m4": "1.4.18"
+  },
+  "2.70": {
+   "m4": "1.4.18"
+  },
+  "2.69": {
+   "m4": "1.4.16"
+  },
+  "2.68": {
+   "m4": "No version as per date"
+  },
+  "2.67": {
+   "m4": "No version as per date"
+  },
+  "2.66": {
+   "m4": "No version as per date"
+  },
+  "2.65": {
+   "m4": "No version as per date"
+  },
+  "2.64": {
+   "m4": "No version as per date"
+  },
+  "2.63": {
+   "m4": "No version as per date"
+  },
+  "2.62": {
+   "m4": "No version as per date"
+  }
+ },
  "automake": {
   "1.16": {
    "autoconf": "2.69"
@@ -1227,6 +1262,9 @@
   }
  },
  "curl": {
+  "8.6.0": {
+   "openssl": "3.2.1"
+  },
   "8.5.0": {
    "openssl": "3.2.0"
   },
@@ -1751,6 +1789,12 @@
   }
  },
  "elixir": {
+  "1.16.1": {
+   "erlang": "26.2.1"
+  },
+  "1.16.0": {
+   "erlang": "26.2.1"
+  },
   "1.15.7": {
    "erlang": "26.1.2"
   },
@@ -2110,6 +2154,14 @@
   }
  },
  "erlang": {
+  "26.2.2": {
+   "openssl": "3.2.1",
+   "perl": "5.38.2"
+  },
+  "26.2.1": {
+   "openssl": "3.2.0",
+   "perl": "5.38.2"
+  },
   "26.2": {
    "openssl": "3.2.0",
    "perl": "5.38.2"
@@ -3255,6 +3307,15 @@
   }
  },
  "haproxy": {
+  "2.9.4": {
+   "openssl": "3.2.1"
+  },
+  "2.9.3": {
+   "openssl": "3.2.0"
+  },
+  "2.9.2": {
+   "openssl": "3.2.0"
+  },
   "2.9.1": {
    "openssl": "3.2.0"
   },
@@ -3347,6 +3408,9 @@
   }
  },
  "kotlin": {
+  "1.9.22": {
+   "java": "21.0.1"
+  },
   "1.9.21": {
    "java": "21.0.1"
   },
@@ -3922,6 +3986,18 @@
   }
  },
  "libxml2": {
+  "2.12.5": {
+   "pkg-config": "0.29.2",
+   "python": "3.12.1"
+  },
+  "2.11.7": {
+   "pkg-config": "0.29.2",
+   "python": "3.12.1"
+  },
+  "2.12.4": {
+   "pkg-config": "0.29.2",
+   "python": "3.12.1"
+  },
   "2.12.3": {
    "pkg-config": "0.29.2",
    "python": "3.12.1"
@@ -4224,6 +4300,9 @@
   }
  },
  "memcached": {
+  "1.6.23": {
+   "libevent": "2.1.12"
+  },
   "1.6.22": {
    "libevent": "2.1.12"
   },
@@ -4517,6 +4596,18 @@
   }
  },
  "mongo": {
+  "6.0.13": {
+   "mongosh": "2.1.1"
+  },
+  "5.0.24": {
+   "mongosh": "2.1.1"
+  },
+  "4.4.28": {
+   "mongosh": "2.1.1"
+  },
+  "7.0.5": {
+   "mongosh": "2.1.1"
+  },
   "7.2.0": {
    "mongosh": "2.1.1"
   },
@@ -5842,6 +5933,16 @@
   }
  },
  "mysql": {
+  "8.3.0": {
+   "cmake": "3.28.0",
+   "openssl": "3.2.0",
+   "bison": "3.8.2"
+  },
+  "8.0.36": {
+   "cmake": "3.28.0",
+   "openssl": "3.2.0",
+   "bison": "3.8.2"
+  },
   "8.2.0": {
    "cmake": "3.27.7",
    "openssl": "3.1.3",
@@ -7909,6 +8010,15 @@
   }
  },
  "neo4j": {
+  "4.4.30": {
+   "java": "21.0.2"
+  },
+  "5.16.0": {
+   "java": "21.0.2"
+  },
+  "4.4.29": {
+   "java": "21.0.1"
+  },
   "5.15.0": {
    "java": "21.0.1"
   },
@@ -8879,6 +8989,106 @@
   }
  },
  "php": {
+  "8.3.2": {
+   "autoconf": "2.72",
+   "apache": "2.4.58",
+   "curl": "8.5.0",
+   "gettext": "0.22.4",
+   "libxml2": "2.12.4",
+   "libiconv": "1.17",
+   "libmemcached": "1.0.18",
+   "oniguruma": "6.9.9",
+   "openssl": "3.2.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.2.0",
+   "php-phalcon": "5.6.0",
+   "php-redis": "6.0.2",
+   "php-sqlsrv": "5.11.1",
+   "php-xdebug": "3.3.1",
+   "postgres": "16.1",
+   "sqlite3": "3.45.0",
+   "zlib": "1.3"
+  },
+  "8.2.15": {
+   "autoconf": "2.72",
+   "apache": "2.4.58",
+   "curl": "8.5.0",
+   "gettext": "0.22.4",
+   "libxml2": "2.12.4",
+   "libiconv": "1.17",
+   "libmemcached": "1.0.18",
+   "oniguruma": "6.9.9",
+   "openssl": "3.2.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.2.0",
+   "php-phalcon": "5.6.0",
+   "php-redis": "6.0.2",
+   "php-sqlsrv": "5.11.1",
+   "php-xdebug": "3.3.1",
+   "postgres": "16.1",
+   "sqlite3": "3.45.0",
+   "zlib": "1.3"
+  },
+  "8.3.1": {
+   "autoconf": "2.71",
+   "apache": "2.4.58",
+   "curl": "8.5.0",
+   "gettext": "0.22.4",
+   "libxml2": "2.12.3",
+   "libiconv": "1.17",
+   "libmemcached": "1.0.18",
+   "oniguruma": "6.9.9",
+   "openssl": "3.2.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.2.0",
+   "php-phalcon": "5.4.0",
+   "php-redis": "6.0.2",
+   "php-sqlsrv": "5.11.1",
+   "php-xdebug": "3.3.1",
+   "postgres": "16.1",
+   "sqlite3": "3.44.2",
+   "zlib": "1.3"
+  },
+  "8.2.14": {
+   "autoconf": "2.71",
+   "apache": "2.4.58",
+   "curl": "8.5.0",
+   "gettext": "0.22.4",
+   "libxml2": "2.12.3",
+   "libiconv": "1.17",
+   "libmemcached": "1.0.18",
+   "oniguruma": "6.9.9",
+   "openssl": "3.2.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.2.0",
+   "php-phalcon": "5.4.0",
+   "php-redis": "6.0.2",
+   "php-sqlsrv": "5.11.1",
+   "php-xdebug": "3.3.1",
+   "postgres": "16.1",
+   "sqlite3": "3.44.2",
+   "zlib": "1.3"
+  },
+  "8.1.27": {
+   "autoconf": "2.71",
+   "apache": "2.4.58",
+   "curl": "8.5.0",
+   "gettext": "0.22.4",
+   "libxml2": "2.12.3",
+   "libiconv": "1.17",
+   "libmemcached": "1.0.18",
+   "oniguruma": "6.9.9",
+   "openssl": "3.2.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.2.0",
+   "php-phalcon": "5.4.0",
+   "php-redis": "6.0.2",
+   "php-sqlsrv": "5.11.1",
+   "php-xdebug": "3.3.1",
+   "postgres": "16.1",
+   "sqlite3": "3.44.2",
+   "zlib": "1.3"
+  },
   "8.3.0": {
    "autoconf": "2.71",
    "apache": "2.4.58",
@@ -9023,7 +9233,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.5",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9043,7 +9253,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.5",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9063,7 +9273,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.4",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9083,7 +9293,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.4",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9103,7 +9313,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.4",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9123,7 +9333,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.1.2",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.4",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9143,7 +9353,7 @@
    "autoconf": "2.71",
    "apache": "2.4.57",
    "curl": "8.1.2",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "libxml2": "2.11.4",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9623,7 +9833,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.85.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9643,7 +9853,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.85.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9663,7 +9873,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.85.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9683,7 +9893,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.85.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9703,7 +9913,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9723,7 +9933,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.10.2",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9743,7 +9953,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9763,7 +9973,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9783,7 +9993,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9803,7 +10013,7 @@
    "autoconf": "2.71",
    "apache": "2.4.54",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9823,7 +10033,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.83.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9843,7 +10053,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.83.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9863,7 +10073,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.83.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.17",
    "libmemcached": "1.0.18",
@@ -9883,7 +10093,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.83.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -9903,7 +10113,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.83.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.14",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -9923,7 +10133,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.13",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -9943,7 +10153,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.13",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -9963,7 +10173,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.13",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -9983,7 +10193,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.13",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10003,7 +10213,7 @@
    "autoconf": "2.71",
    "apache": "2.4.53",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.13",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10023,7 +10233,7 @@
    "autoconf": "2.71",
    "apache": "2.4.52",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10043,7 +10253,7 @@
    "autoconf": "2.71",
    "apache": "2.4.52",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10063,7 +10273,7 @@
    "autoconf": "2.71",
    "apache": "2.4.52",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10083,7 +10293,7 @@
    "autoconf": "2.71",
    "apache": "2.4.52",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10103,7 +10313,7 @@
    "autoconf": "2.71",
    "apache": "2.4.52",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10123,7 +10333,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10143,7 +10353,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10163,7 +10373,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10183,7 +10393,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10203,7 +10413,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10223,7 +10433,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10243,7 +10453,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10263,7 +10473,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.79.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10283,7 +10493,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.79.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10303,7 +10513,7 @@
    "autoconf": "2.71",
    "apache": "2.4.51",
    "curl": "7.79.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10323,7 +10533,7 @@
    "autoconf": "2.71",
    "apache": "2.4.49",
    "curl": "7.79.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10343,7 +10553,7 @@
    "autoconf": "2.71",
    "apache": "2.4.49",
    "curl": "7.79.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10363,7 +10573,7 @@
    "autoconf": "2.71",
    "apache": "2.4.49",
    "curl": "7.79.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10383,7 +10593,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10403,7 +10613,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10423,7 +10633,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10443,7 +10653,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10463,7 +10673,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10483,7 +10693,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10503,7 +10713,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10523,7 +10733,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10543,7 +10753,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10563,7 +10773,7 @@
    "autoconf": "2.71",
    "apache": "2.4.48",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.12",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10583,7 +10793,7 @@
    "autoconf": "2.71",
    "apache": "2.4.47",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10603,7 +10813,7 @@
    "autoconf": "2.71",
    "apache": "2.4.47",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10623,7 +10833,7 @@
    "autoconf": "2.71",
    "apache": "2.4.47",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10643,7 +10853,7 @@
    "autoconf": "2.71",
    "apache": "2.4.47",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10663,7 +10873,7 @@
    "autoconf": "2.71",
    "apache": "2.4.47",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10683,7 +10893,7 @@
    "autoconf": "2.71",
    "apache": "2.4.46",
    "curl": "7.75.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10703,7 +10913,7 @@
    "autoconf": "2.71",
    "apache": "2.4.46",
    "curl": "7.75.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10723,7 +10933,7 @@
    "autoconf": "2.71",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10743,7 +10953,7 @@
    "autoconf": "2.71",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10763,7 +10973,7 @@
    "autoconf": "2.71",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10783,7 +10993,7 @@
    "autoconf": "2.70",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10803,7 +11013,7 @@
    "autoconf": "2.70",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10823,7 +11033,7 @@
    "autoconf": "2.70",
    "apache": "2.4.46",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10843,7 +11053,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10863,7 +11073,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10883,7 +11093,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10903,7 +11113,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10923,7 +11133,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10943,7 +11153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.72.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10963,7 +11173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.72.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -10983,7 +11193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.72.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11003,7 +11213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.72.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11023,7 +11233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.72.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11043,7 +11253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11063,7 +11273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11083,7 +11293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.46",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "libxml2": "2.9.10",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11943,7 +12153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11963,7 +12173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -11983,7 +12193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.16",
    "libmemcached": "1.0.18",
@@ -12003,7 +12213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12023,7 +12233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12043,7 +12253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.39",
    "curl": "7.64.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12063,7 +12273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.38",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12083,7 +12293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.38",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12103,7 +12313,7 @@
    "autoconf": "2.69",
    "apache": "2.4.38",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12123,7 +12333,7 @@
    "autoconf": "2.69",
    "apache": "2.4.38",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12143,7 +12353,7 @@
    "autoconf": "2.69",
    "apache": "2.4.38",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12163,7 +12373,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12183,7 +12393,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12203,7 +12413,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12223,7 +12433,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.63.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.9",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12243,7 +12453,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12263,7 +12473,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12283,7 +12493,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12303,7 +12513,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12323,7 +12533,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12343,7 +12553,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12363,7 +12573,7 @@
    "autoconf": "2.69",
    "apache": "2.4.37",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12383,7 +12593,7 @@
    "autoconf": "2.69",
    "apache": "2.4.35",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12403,7 +12613,7 @@
    "autoconf": "2.69",
    "apache": "2.4.35",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12423,7 +12633,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12443,7 +12653,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12463,7 +12673,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12483,7 +12693,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12503,7 +12713,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12523,7 +12733,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12543,7 +12753,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12563,7 +12773,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12583,7 +12793,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12603,7 +12813,7 @@
    "autoconf": "2.69",
    "apache": "2.4.34",
    "curl": "7.61.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12623,7 +12833,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.60.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12643,7 +12853,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.60.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12663,7 +12873,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.60.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12683,7 +12893,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.60.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12703,7 +12913,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12723,7 +12933,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12743,7 +12953,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12763,7 +12973,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12783,7 +12993,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12803,7 +13013,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12823,7 +13033,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12843,7 +13053,7 @@
    "autoconf": "2.69",
    "apache": "2.4.33",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.8",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12863,7 +13073,7 @@
    "autoconf": "2.69",
    "apache": "2.4.30",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12883,7 +13093,7 @@
    "autoconf": "2.69",
    "apache": "2.4.30",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12903,7 +13113,7 @@
    "autoconf": "2.69",
    "apache": "2.4.30",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12923,7 +13133,7 @@
    "autoconf": "2.69",
    "apache": "2.4.30",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12943,7 +13153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12963,7 +13173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.58.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -12983,7 +13193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13003,7 +13213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13023,7 +13233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13043,7 +13253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13063,7 +13273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13083,7 +13293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13103,7 +13313,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.7",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13123,7 +13333,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.6",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13143,7 +13353,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.6",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13163,7 +13373,7 @@
    "autoconf": "2.69",
    "apache": "2.4.29",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.6",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13183,7 +13393,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.5",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13203,7 +13413,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.5",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13223,7 +13433,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13243,7 +13453,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13263,7 +13473,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13283,7 +13493,7 @@
    "autoconf": "2.69",
    "apache": "2.4.27",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13303,7 +13513,7 @@
    "autoconf": "2.69",
    "apache": "2.4.26",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13323,7 +13533,7 @@
    "autoconf": "2.69",
    "apache": "2.4.26",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13343,7 +13553,7 @@
    "autoconf": "2.69",
    "apache": "2.4.26",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13363,7 +13573,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.54.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13383,7 +13593,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.54.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13403,7 +13613,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.54.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13423,7 +13633,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.54.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13443,7 +13653,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.53.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13463,7 +13673,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.53.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13483,7 +13693,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.53.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13503,7 +13713,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.53.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13523,7 +13733,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13543,7 +13753,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.15",
    "libmemcached": "1.0.18",
@@ -13563,7 +13773,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13583,7 +13793,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13603,7 +13813,7 @@
    "autoconf": "2.69",
    "apache": "2.4.25",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13623,7 +13833,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13643,7 +13853,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13663,7 +13873,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13683,7 +13893,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13703,7 +13913,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13723,7 +13933,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.3",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13743,7 +13953,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.3",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13763,7 +13973,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.3",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13783,7 +13993,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.2",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13803,7 +14013,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13823,7 +14033,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.50.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13843,7 +14053,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13863,7 +14073,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13883,7 +14093,7 @@
    "autoconf": "2.69",
    "apache": "2.4.23",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13903,7 +14113,7 @@
    "autoconf": "2.69",
    "apache": "2.4.22",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13923,7 +14133,7 @@
    "autoconf": "2.69",
    "apache": "2.4.22",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13943,7 +14153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.22",
    "curl": "7.49.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13963,7 +14173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -13983,7 +14193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14003,7 +14213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.49.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.4",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14023,7 +14233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14043,7 +14253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14063,7 +14273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.20",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14083,7 +14293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14103,7 +14313,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14123,7 +14333,7 @@
    "autoconf": "2.69",
    "apache": "2.4.19",
    "curl": "7.48.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14143,7 +14353,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14163,7 +14373,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14183,7 +14393,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.1",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14203,7 +14413,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14223,7 +14433,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14243,7 +14453,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.47.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14263,7 +14473,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14283,7 +14493,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14303,7 +14513,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14323,7 +14533,7 @@
    "autoconf": "2.69",
    "apache": "2.4.18",
    "curl": "7.46.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14343,7 +14553,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14363,7 +14573,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.3",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14383,7 +14593,7 @@
    "autoconf": "2.69",
    "apache": "2.4.17",
    "curl": "7.45.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14403,7 +14613,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14423,7 +14633,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14443,7 +14653,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14463,7 +14673,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14483,7 +14693,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.44.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14503,7 +14713,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.43.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14523,7 +14733,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.43.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14543,7 +14753,7 @@
    "autoconf": "2.69",
    "apache": "2.4.16",
    "curl": "7.43.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.5",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14563,7 +14773,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14583,7 +14793,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14603,7 +14813,7 @@
    "autoconf": "2.69",
    "apache": "2.4.15",
    "curl": "7.43.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14623,7 +14833,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14643,7 +14853,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14663,7 +14873,7 @@
    "autoconf": "2.69",
    "apache": "2.4.13",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14683,7 +14893,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14703,7 +14913,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14723,7 +14933,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.42.1",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14743,7 +14953,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14763,7 +14973,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14783,7 +14993,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14803,7 +15013,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14823,7 +15033,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14843,7 +15053,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14863,7 +15073,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14883,7 +15093,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14903,7 +15113,7 @@
    "autoconf": "2.69",
    "apache": "2.4.12",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14923,7 +15133,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14943,7 +15153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14963,7 +15173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.11",
    "curl": "7.40.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -14983,7 +15193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15003,7 +15213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15023,7 +15233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15043,7 +15253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15063,7 +15273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15083,7 +15293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "libxml2": "2.9.2",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15103,7 +15313,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.38.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15123,7 +15333,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.38.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15143,7 +15353,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.38.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15163,7 +15373,7 @@
    "autoconf": "2.69",
    "apache": "2.4.10",
    "curl": "7.38.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15383,7 +15593,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.37.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15403,7 +15613,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.37.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15423,7 +15633,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15443,7 +15653,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15463,7 +15673,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15483,7 +15693,7 @@
    "autoconf": "2.69",
    "apache": "2.4.9",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15503,7 +15713,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.35.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15523,7 +15733,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.35.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "1.0.18",
@@ -15543,7 +15753,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.35.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15563,7 +15773,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.35.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15583,7 +15793,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.34.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15603,7 +15813,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.34.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15623,7 +15833,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15643,7 +15853,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15663,7 +15873,7 @@
    "autoconf": "2.69",
    "apache": "2.4.7",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15683,7 +15893,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15703,7 +15913,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15723,7 +15933,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15743,7 +15953,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15763,7 +15973,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15783,7 +15993,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15803,7 +16013,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15823,7 +16033,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15843,7 +16053,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15863,7 +16073,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.32.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15883,7 +16093,7 @@
    "autoconf": "2.69",
    "apache": "2.4.6",
    "curl": "7.31.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15903,7 +16113,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.31.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.3",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15923,7 +16133,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.31.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15943,7 +16153,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.30.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15963,7 +16173,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.30.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -15983,7 +16193,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.30.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16003,7 +16213,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.30.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16023,7 +16233,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.30.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.1",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16043,7 +16253,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16063,7 +16273,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16083,7 +16293,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16103,7 +16313,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16123,7 +16333,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16143,7 +16353,7 @@
    "autoconf": "2.69",
    "apache": "2.4.4",
    "curl": "7.29.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16163,7 +16373,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16183,7 +16393,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.2",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16203,7 +16413,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16223,7 +16433,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16243,7 +16453,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16263,7 +16473,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16283,7 +16493,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16303,7 +16513,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.28.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16323,7 +16533,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.27.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16343,7 +16553,7 @@
    "autoconf": "2.69",
    "apache": "2.4.3",
    "curl": "7.27.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.9.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16363,7 +16573,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.27.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16383,7 +16593,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.27.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16403,7 +16613,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16423,7 +16633,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16443,7 +16653,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16463,7 +16673,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.8.0",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16483,7 +16693,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16503,7 +16713,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16523,7 +16733,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16543,7 +16753,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16563,7 +16773,7 @@
    "autoconf": "2.69",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16583,7 +16793,7 @@
    "autoconf": "2.68",
    "apache": "2.4.2",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16603,7 +16813,7 @@
    "autoconf": "2.68",
    "apache": "2.4.1",
    "curl": "7.24.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16623,7 +16833,7 @@
    "autoconf": "2.68",
    "apache": "2.4.0",
    "curl": "7.24.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16643,7 +16853,7 @@
    "autoconf": "2.68",
    "apache": "2.3.16",
    "curl": "7.23.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16663,7 +16873,7 @@
    "autoconf": "2.68",
    "apache": "2.3.14",
    "curl": "7.21.7",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16683,7 +16893,7 @@
    "autoconf": "2.68",
    "apache": "2.3.14",
    "curl": "7.21.7",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.14",
    "libmemcached": "No version as per date",
@@ -16703,7 +16913,7 @@
    "autoconf": "2.68",
    "apache": "2.3.11",
    "curl": "7.21.4",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16723,7 +16933,7 @@
    "autoconf": "2.68",
    "apache": "2.3.10",
    "curl": "7.21.3",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16743,7 +16953,7 @@
    "autoconf": "2.68",
    "apache": "2.3.10",
    "curl": "7.21.3",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16763,7 +16973,7 @@
    "autoconf": "2.68",
    "apache": "2.3.10",
    "curl": "7.21.2",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16783,7 +16993,7 @@
    "autoconf": "2.68",
    "apache": "2.3.9",
    "curl": "7.21.2",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16803,7 +17013,7 @@
    "autoconf": "2.68",
    "apache": "2.3.9",
    "curl": "7.21.2",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16823,7 +17033,7 @@
    "autoconf": "2.66",
    "apache": "2.3.6",
    "curl": "7.21.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.7",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16843,7 +17053,7 @@
    "autoconf": "2.66",
    "apache": "2.3.6",
    "curl": "7.21.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "libxml2": "2.7.7",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16863,7 +17073,7 @@
    "autoconf": "2.65",
    "apache": "2.3.5",
    "curl": "7.20.0",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16883,7 +17093,7 @@
    "autoconf": "2.65",
    "apache": "2.3.5",
    "curl": "7.20.0",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16903,7 +17113,7 @@
    "autoconf": "2.65",
    "apache": "2.3.4",
    "curl": "7.19.7",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16923,7 +17133,7 @@
    "autoconf": "2.64",
    "apache": "2.3.3",
    "curl": "7.19.7",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16943,7 +17153,7 @@
    "autoconf": "2.64",
    "apache": "2.3.2",
    "curl": "7.19.6",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "2.7.4",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
@@ -16963,7 +17173,7 @@
    "autoconf": "2.63",
    "apache": "2.3.2",
    "curl": "7.19.5",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "libxml2": "No version as per date",
    "libiconv": "1.13",
    "libmemcached": "No version as per date",
@@ -18160,7 +18370,681 @@
    "zlib": "No version as per date"
   }
  },
+ "phpmyadmin": {
+  "5.2.1": {
+   "php": "8.2.2"
+  },
+  "4.9.11": {
+   "php": "8.2.2"
+  },
+  "5.2.0": {
+   "php": "8.1.6"
+  },
+  "5.1.4": {
+   "php": "8.1.6"
+  },
+  "5.1.3": {
+   "php": "8.1.2"
+  },
+  "4.9.10": {
+   "php": "8.1.2"
+  },
+  "4.9.9": {
+   "php": "8.1.2"
+  },
+  "5.1.2": {
+   "php": "8.1.2"
+  },
+  "4.9.8": {
+   "php": "8.1.2"
+  },
+  "5.1.1": {
+   "php": "8.0.7"
+  },
+  "5.1.0": {
+   "php": "8.0.2"
+  },
+  "5.0.4": {
+   "php": "7.4.11"
+  },
+  "4.9.7": {
+   "php": "7.4.11"
+  },
+  "5.0.3": {
+   "php": "7.4.11"
+  },
+  "4.9.6": {
+   "php": "7.4.11"
+  },
+  "5.0.2": {
+   "php": "7.4.4"
+  },
+  "4.9.5": {
+   "php": "7.4.4"
+  },
+  "5.0.1": {
+   "php": "7.4.1"
+  },
+  "4.9.4": {
+   "php": "7.4.1"
+  },
+  "5.0.0": {
+   "php": "7.4.1"
+  },
+  "4.9.3": {
+   "php": "7.4.1"
+  },
+  "4.9.2": {
+   "php": "7.3.12"
+  },
+  "4.9.1": {
+   "php": "7.3.9"
+  },
+  "4.9.0": {
+   "php": "7.3.6"
+  },
+  "4.8.5": {
+   "php": "7.3.1"
+  },
+  "4.8.4": {
+   "php": "7.3.0"
+  },
+  "4.8.3": {
+   "php": "7.2.9"
+  },
+  "4.8.2": {
+   "php": "7.2.7"
+  },
+  "4.8.1": {
+   "php": "7.2.6"
+  },
+  "4.8.0": {
+   "php": "7.2.4"
+  },
+  "4.7.9": {
+   "php": "7.2.3"
+  },
+  "4.7.8": {
+   "php": "7.2.2"
+  },
+  "4.7.7": {
+   "php": "7.2.0"
+  },
+  "4.7.6": {
+   "php": "7.2.0"
+  },
+  "4.7.5": {
+   "php": "7.1.10"
+  },
+  "4.7.4": {
+   "php": "7.1.8"
+  },
+  "4.7.3": {
+   "php": "7.1.7"
+  },
+  "4.7.2": {
+   "php": "7.1.6"
+  },
+  "4.7.1": {
+   "php": "7.1.5"
+  },
+  "4.7.0": {
+   "php": "7.1.3"
+  },
+  "4.6.6": {
+   "php": "7.1.1"
+  },
+  "4.6.5": {
+   "php": "7.0.13"
+  },
+  "4.6.4": {
+   "php": "7.0.9"
+  },
+  "4.6.3": {
+   "php": "7.0.8"
+  },
+  "4.6.2": {
+   "php": "7.0.7"
+  },
+  "4.6.1": {
+   "php": "7.0.6"
+  },
+  "4.6.0": {
+   "php": "7.0.4"
+  },
+  "4.5.5": {
+   "php": "7.0.3"
+  },
+  "4.5.4": {
+   "php": "7.0.2"
+  },
+  "4.5.3": {
+   "php": "7.0.1"
+  },
+  "4.5.2": {
+   "php": "5.6.15"
+  },
+  "4.5.1": {
+   "php": "5.6.14"
+  },
+  "4.5.0": {
+   "php": "5.6.13"
+  },
+  "4.4.15": {
+   "php": "5.6.13"
+  },
+  "4.4.14": {
+   "php": "5.6.12"
+  },
+  "4.4.13": {
+   "php": "5.6.12"
+  },
+  "4.4.12": {
+   "php": "5.6.11"
+  },
+  "4.4.11": {
+   "php": "5.6.10"
+  },
+  "4.4.10": {
+   "php": "5.6.10"
+  },
+  "4.4.9": {
+   "php": "5.6.9"
+  },
+  "4.4.8": {
+   "php": "5.6.9"
+  },
+  "4.4.7": {
+   "php": "5.6.9"
+  },
+  "4.4.6": {
+   "php": "5.6.8"
+  },
+  "4.4.5": {
+   "php": "5.6.8"
+  },
+  "4.4.4": {
+   "php": "5.6.8"
+  },
+  "4.4.3": {
+   "php": "5.6.8"
+  },
+  "4.4.2": {
+   "php": "5.6.7"
+  },
+  "4.4.1": {
+   "php": "5.6.7"
+  },
+  "4.4.0": {
+   "php": "5.6.7"
+  },
+  "4.3.13": {
+   "php": "5.6.7"
+  },
+  "4.3.12": {
+   "php": "5.6.6"
+  },
+  "4.3.11": {
+   "php": "5.6.6"
+  },
+  "4.3.10": {
+   "php": "5.6.6"
+  },
+  "4.3.9": {
+   "php": "5.6.5"
+  },
+  "4.3.8": {
+   "php": "5.6.5"
+  },
+  "4.3.7": {
+   "php": "5.6.4"
+  },
+  "4.3.6": {
+   "php": "5.6.4"
+  },
+  "4.3.5": {
+   "php": "5.6.4"
+  },
+  "4.3.4": {
+   "php": "5.6.4"
+  },
+  "4.3.3": {
+   "php": "5.6.4"
+  },
+  "4.3.2": {
+   "php": "5.6.3"
+  },
+  "4.3.1": {
+   "php": "5.6.3"
+  },
+  "4.3.0": {
+   "php": "5.6.3"
+  },
+  "4.2.13": {
+   "php": "5.6.3"
+  },
+  "4.2.12": {
+   "php": "5.6.3"
+  },
+  "4.2.11": {
+   "php": "5.6.2"
+  },
+  "4.2.10": {
+   "php": "5.6.1"
+  },
+  "4.2.9": {
+   "php": "5.6.0"
+  },
+  "4.2.8": {
+   "php": "5.6.0"
+  },
+  "4.2.7": {
+   "php": "5.5.15"
+  },
+  "4.2.6": {
+   "php": "5.5.14"
+  },
+  "4.2.5": {
+   "php": "5.5.14"
+  },
+  "4.2.4": {
+   "php": "5.5.13"
+  },
+  "4.2.3": {
+   "php": "5.5.13"
+  },
+  "4.2.2": {
+   "php": "5.5.12"
+  },
+  "4.2.1": {
+   "php": "5.5.12"
+  },
+  "4.2.0": {
+   "php": "5.5.12"
+  },
+  "4.1.14": {
+   "php": "5.5.11"
+  },
+  "4.1.13": {
+   "php": "5.5.11"
+  },
+  "4.1.12": {
+   "php": "5.5.10"
+  },
+  "4.1.11": {
+   "php": "5.5.10"
+  },
+  "4.1.10": {
+   "php": "5.5.10"
+  },
+  "4.1.9": {
+   "php": "5.5.10"
+  },
+  "4.1.8": {
+   "php": "5.5.9"
+  },
+  "4.1.7": {
+   "php": "5.5.9"
+  },
+  "4.1.6": {
+   "php": "5.5.8"
+  },
+  "4.1.5": {
+   "php": "5.5.8"
+  },
+  "4.1.4": {
+   "php": "5.5.7"
+  },
+  "4.1.3": {
+   "php": "5.5.7"
+  },
+  "4.1.2": {
+   "php": "5.5.7"
+  },
+  "4.1.1": {
+   "php": "5.5.7"
+  },
+  "4.1.0": {
+   "php": "5.5.7"
+  },
+  "4.0.10": {
+   "php": "5.5.6"
+  },
+  "4.0.9": {
+   "php": "5.5.5"
+  },
+  "4.0.8": {
+   "php": "5.5.4"
+  },
+  "4.0.7": {
+   "php": "5.5.4"
+  },
+  "4.0.6": {
+   "php": "5.5.3"
+  },
+  "4.0.5": {
+   "php": "5.5.1"
+  },
+  "4.0.4": {
+   "php": "5.4.16"
+  },
+  "4.0.3": {
+   "php": "5.4.16"
+  },
+  "4.0.2": {
+   "php": "5.4.15"
+  },
+  "4.0.1": {
+   "php": "5.4.15"
+  },
+  "4.0.0": {
+   "php": "5.4.14"
+  },
+  "3.5.8": {
+   "php": "5.4.13"
+  },
+  "3.5.7": {
+   "php": "5.4.11"
+  },
+  "3.5.6": {
+   "php": "5.4.11"
+  },
+  "3.5.5": {
+   "php": "5.4.10"
+  },
+  "3.5.4": {
+   "php": "5.4.8"
+  },
+  "3.5.3": {
+   "php": "5.4.7"
+  },
+  "3.5.2": {
+   "php": "5.4.4"
+  },
+  "3.5.1": {
+   "php": "5.4.1"
+  },
+  "3.4.11": {
+   "php": "5.4.0"
+  },
+  "3.5.0": {
+   "php": "5.4.0"
+  },
+  "3.4.10": {
+   "php": "5.3.10"
+  },
+  "3.4.9": {
+   "php": "5.3.8"
+  },
+  "3.4.8": {
+   "php": "5.3.8"
+  },
+  "3.4.7": {
+   "php": "5.3.8"
+  },
+  "3.4.6": {
+   "php": "5.3.8"
+  },
+  "3.4.5": {
+   "php": "5.3.8"
+  },
+  "3.4.4": {
+   "php": "5.3.8"
+  },
+  "3.4.3": {
+   "php": "5.3.6"
+  },
+  "3.4.2": {
+   "php": "5.3.6"
+  },
+  "3.4.1": {
+   "php": "5.3.6"
+  },
+  "3.4.0": {
+   "php": "5.3.6"
+  },
+  "3.3.10": {
+   "php": "5.3.6"
+  },
+  "3.3.9": {
+   "php": "5.3.4"
+  },
+  "3.3.8": {
+   "php": "5.3.3"
+  },
+  "3.3.7": {
+   "php": "5.3.3"
+  },
+  "2.11.11": {
+   "php": "5.3.3"
+  },
+  "3.3.6": {
+   "php": "5.3.3"
+  },
+  "3.3.5": {
+   "php": "5.3.3"
+  },
+  "3.3.4": {
+   "php": "5.3.2"
+  },
+  "3.3.3": {
+   "php": "5.3.2"
+  },
+  "2.11.0": {
+   "php": "5.3.2"
+  },
+  "2.2.0": {
+   "php": "5.3.2"
+  },
+  "3.3.2": {
+   "php": "5.3.2"
+  },
+  "3.3.1": {
+   "php": "5.3.2"
+  },
+  "3.3.0": {
+   "php": "5.3.2"
+  },
+  "3.2.5": {
+   "php": "5.3.1"
+  },
+  "3.2.4": {
+   "php": "5.3.1"
+  },
+  "3.2.3": {
+   "php": "5.3.1"
+  },
+  "3.2.2": {
+   "php": "5.3.1"
+  },
+  "3.2.0": {
+   "php": "5.3.1"
+  },
+  "3.1.5": {
+   "php": "5.3.1"
+  },
+  "3.1.4": {
+   "php": "5.3.1"
+  },
+  "3.1.3": {
+   "php": "5.3.1"
+  },
+  "3.1.2": {
+   "php": "5.3.1"
+  },
+  "3.1.1": {
+   "php": "5.3.1"
+  },
+  "3.1.0": {
+   "php": "5.3.1"
+  },
+  "3.0.1": {
+   "php": "5.3.1"
+  },
+  "3.0.0": {
+   "php": "5.3.1"
+  },
+  "2.11.10": {
+   "php": "5.3.1"
+  },
+  "2.11.9": {
+   "php": "5.3.1"
+  },
+  "2.11.8": {
+   "php": "5.3.1"
+  },
+  "2.11.7": {
+   "php": "5.3.1"
+  },
+  "2.11.6": {
+   "php": "5.3.1"
+  },
+  "2.11.5": {
+   "php": "5.3.1"
+  },
+  "2.11.4": {
+   "php": "5.3.1"
+  },
+  "2.11.3": {
+   "php": "5.3.1"
+  },
+  "2.11.2": {
+   "php": "5.3.1"
+  },
+  "2.11.1": {
+   "php": "5.3.1"
+  },
+  "2.10.3": {
+   "php": "5.3.1"
+  },
+  "2.10.2": {
+   "php": "5.3.1"
+  },
+  "2.10.0": {
+   "php": "5.3.1"
+  },
+  "2.9.2": {
+   "php": "5.3.1"
+  },
+  "2.9.0": {
+   "php": "5.3.1"
+  },
+  "2.8.1": {
+   "php": "5.3.1"
+  },
+  "2.5.6": {
+   "php": "5.3.1"
+  },
+  "2.5.4": {
+   "php": "5.3.1"
+  },
+  "2.5.2": {
+   "php": "5.3.1"
+  },
+  "2.5.1": {
+   "php": "5.3.1"
+  },
+  "2.5.0": {
+   "php": "5.3.1"
+  },
+  "2.4.0": {
+   "php": "5.3.1"
+  },
+  "2.3.2": {
+   "php": "5.3.1"
+  },
+  "2.3.1": {
+   "php": "5.3.1"
+  },
+  "2.3.0": {
+   "php": "5.3.1"
+  },
+  "2.2.6": {
+   "php": "5.3.1"
+  },
+  "2.2.5": {
+   "php": "5.3.1"
+  },
+  "2.2.4": {
+   "php": "5.3.1"
+  },
+  "2.2.3": {
+   "php": "5.3.1"
+  },
+  "2.2.2": {
+   "php": "5.3.1"
+  },
+  "2.2.1": {
+   "php": "5.3.1"
+  }
+ },
  "postgis": {
+  "3.4.2": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
+  "3.3.6": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
+  "3.2.7": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
+  "3.1.11": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
+  "3.0.11": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
+  "2.5.10": {
+   "libxml2": "2.12.5",
+   "geos": "3.12.1",
+   "proj": "9.3.1",
+   "pkg-config": "0.29.2",
+   "sqlite3": "3.45.1",
+   "libtiff": "4.6.0",
+   "curl": "8.6.0",
+   "gettext": "0.22.4",
+   "zlib": "1.3.1"
+  },
   "3.4.1": {
    "libxml2": "2.12.0",
    "geos": "3.12.1",
@@ -18224,7 +19108,7 @@
    "sqlite3": "3.42.0",
    "libtiff": "4.5.1",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "zlib": "1.2.13"
   },
   "3.3.4": {
@@ -18235,7 +19119,7 @@
    "sqlite3": "3.42.0",
    "libtiff": "4.5.1",
    "curl": "8.2.1",
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "zlib": "1.2.13"
   },
   "3.3.3": {
@@ -18345,7 +19229,7 @@
    "sqlite3": "3.39.3",
    "libtiff": "4.4.0",
    "curl": "7.85.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.3.0": {
@@ -18356,7 +19240,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.2.3": {
@@ -18367,7 +19251,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.1.7": {
@@ -18378,7 +19262,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.0.7": {
@@ -18389,7 +19273,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "2.5.8": {
@@ -18400,7 +19284,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.2.2": {
@@ -18411,7 +19295,7 @@
    "sqlite3": "3.39.2",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.1.6": {
@@ -18422,7 +19306,7 @@
    "sqlite3": "3.39.1",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.0.6": {
@@ -18433,7 +19317,7 @@
    "sqlite3": "3.39.1",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "2.5.7": {
@@ -18444,7 +19328,7 @@
    "sqlite3": "3.39.1",
    "libtiff": "4.4.0",
    "curl": "7.84.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "2.4.10": {
@@ -18455,7 +19339,7 @@
    "sqlite3": "3.38.2",
    "libtiff": "4.3.0",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "2.5.6": {
@@ -18466,7 +19350,7 @@
    "sqlite3": "3.38.2",
    "libtiff": "4.3.0",
    "curl": "7.82.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.12"
   },
   "3.2.1": {
@@ -18477,7 +19361,7 @@
    "sqlite3": "3.37.2",
    "libtiff": "4.3.0",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.0.5": {
@@ -18488,7 +19372,7 @@
    "sqlite3": "3.37.2",
    "libtiff": "4.3.0",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.5": {
@@ -18499,7 +19383,7 @@
    "sqlite3": "3.37.2",
    "libtiff": "4.3.0",
    "curl": "7.81.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.2.0": {
@@ -18510,7 +19394,7 @@
    "sqlite3": "3.37.0",
    "libtiff": "4.3.0",
    "curl": "7.80.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.4": {
@@ -18521,7 +19405,7 @@
    "sqlite3": "3.36.0",
    "libtiff": "4.3.0",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.0.4": {
@@ -18532,7 +19416,7 @@
    "sqlite3": "3.36.0",
    "libtiff": "4.3.0",
    "curl": "7.78.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.3": {
@@ -18543,7 +19427,7 @@
    "sqlite3": "3.36.0",
    "libtiff": "4.3.0",
    "curl": "7.77.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.2": {
@@ -18554,7 +19438,7 @@
    "sqlite3": "3.35.5",
    "libtiff": "4.3.0",
    "curl": "7.76.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.1": {
@@ -18565,7 +19449,7 @@
    "sqlite3": "3.34.1",
    "libtiff": "4.2.0",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.1.0": {
@@ -18576,7 +19460,7 @@
    "sqlite3": "3.34.0",
    "libtiff": "4.1.0",
    "curl": "7.74.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.0.3": {
@@ -18587,7 +19471,7 @@
    "sqlite3": "3.33.0",
    "libtiff": "4.1.0",
    "curl": "7.73.0",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "3.0.2": {
@@ -18598,7 +19482,7 @@
    "sqlite3": "3.33.0",
    "libtiff": "4.1.0",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "2.5.5": {
@@ -18609,7 +19493,7 @@
    "sqlite3": "3.33.0",
    "libtiff": "4.1.0",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "2.4.9": {
@@ -18620,7 +19504,7 @@
    "sqlite3": "3.33.0",
    "libtiff": "4.1.0",
    "curl": "7.71.1",
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "zlib": "1.2.11"
   },
   "2.3.11": {
@@ -18708,7 +19592,7 @@
    "sqlite3": "3.27.2",
    "libtiff": "4.0.10",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.7": {
@@ -18719,7 +19603,7 @@
    "sqlite3": "3.27.2",
    "libtiff": "4.0.10",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.9": {
@@ -18730,7 +19614,7 @@
    "sqlite3": "3.27.2",
    "libtiff": "4.0.10",
    "curl": "7.64.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.6": {
@@ -18741,7 +19625,7 @@
    "sqlite3": "3.25.3",
    "libtiff": "4.0.10",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.8": {
@@ -18752,7 +19636,7 @@
    "sqlite3": "3.25.3",
    "libtiff": "4.0.10",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.2.8": {
@@ -18763,7 +19647,7 @@
    "sqlite3": "3.25.3",
    "libtiff": "4.0.10",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.5.1": {
@@ -18774,7 +19658,7 @@
    "sqlite3": "3.25.3",
    "libtiff": "4.0.10",
    "curl": "7.62.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.5.0": {
@@ -18785,7 +19669,7 @@
    "sqlite3": "3.25.1",
    "libtiff": "4.0.9",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.5": {
@@ -18796,7 +19680,7 @@
    "sqlite3": "3.24.0",
    "libtiff": "4.0.9",
    "curl": "7.61.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.4": {
@@ -18807,7 +19691,7 @@
    "sqlite3": "3.23.0",
    "libtiff": "4.0.9",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.7": {
@@ -18818,7 +19702,7 @@
    "sqlite3": "3.23.0",
    "libtiff": "4.0.9",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.2.7": {
@@ -18829,7 +19713,7 @@
    "sqlite3": "3.23.0",
    "libtiff": "4.0.9",
    "curl": "7.59.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.3": {
@@ -18840,7 +19724,7 @@
    "sqlite3": "3.21.0",
    "libtiff": "4.0.9",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.6": {
@@ -18851,7 +19735,7 @@
    "sqlite3": "3.21.0",
    "libtiff": "4.0.9",
    "curl": "7.57.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.2": {
@@ -18862,7 +19746,7 @@
    "sqlite3": "3.21.0",
    "libtiff": "4.0.8",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.5": {
@@ -18873,7 +19757,7 @@
    "sqlite3": "3.21.0",
    "libtiff": "4.0.8",
    "curl": "7.56.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.1": {
@@ -18884,7 +19768,7 @@
    "sqlite3": "3.20.1",
    "libtiff": "4.0.8",
    "curl": "7.56.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.4": {
@@ -18895,7 +19779,7 @@
    "sqlite3": "3.20.1",
    "libtiff": "4.0.8",
    "curl": "7.56.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.2.6": {
@@ -18906,7 +19790,7 @@
    "sqlite3": "3.20.1",
    "libtiff": "4.0.8",
    "curl": "7.56.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.4.0": {
@@ -18917,7 +19801,7 @@
    "sqlite3": "3.20.1",
    "libtiff": "4.0.8",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.1.9": {
@@ -18928,7 +19812,7 @@
    "sqlite3": "3.20.1",
    "libtiff": "4.0.8",
    "curl": "7.55.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.3": {
@@ -18939,7 +19823,7 @@
    "sqlite3": "3.19.3",
    "libtiff": "4.0.8",
    "curl": "7.54.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.0.3": {
@@ -18950,7 +19834,7 @@
    "sqlite3": "3.19.2",
    "libtiff": "4.0.8",
    "curl": "7.54.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.2": {
@@ -18961,7 +19845,7 @@
    "sqlite3": "3.16.2",
    "libtiff": "4.0.7",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.2.5": {
@@ -18972,7 +19856,7 @@
    "sqlite3": "3.16.2",
    "libtiff": "4.0.7",
    "curl": "7.52.1",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.11"
   },
   "2.3.1": {
@@ -18983,7 +19867,7 @@
    "sqlite3": "3.15.1",
    "libtiff": "4.0.7",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.8"
   },
   "2.2.4": {
@@ -18994,7 +19878,7 @@
    "sqlite3": "3.15.1",
    "libtiff": "4.0.7",
    "curl": "7.51.0",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.8"
   },
   "2.2.3": {
@@ -19005,7 +19889,7 @@
    "sqlite3": "3.14.2",
    "libtiff": "4.0.6",
    "curl": "7.50.3",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.8"
   },
   "2.3.0": {
@@ -19016,7 +19900,7 @@
    "sqlite3": "3.14.2",
    "libtiff": "4.0.6",
    "curl": "7.50.3",
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "zlib": "1.2.8"
   },
   "2.2.2": {
@@ -19027,7 +19911,7 @@
    "sqlite3": "3.11.1",
    "libtiff": "4.0.6",
    "curl": "7.47.1",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "zlib": "1.2.8"
   },
   "2.2.0": {
@@ -19038,7 +19922,7 @@
    "sqlite3": "3.10.2",
    "libtiff": "4.0.6",
    "curl": "7.47.1",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "zlib": "1.2.8"
   },
   "2.2.1": {
@@ -19049,7 +19933,7 @@
    "sqlite3": "3.9.2",
    "libtiff": "4.0.6",
    "curl": "7.46.0",
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.7",
    "zlib": "1.2.8"
   },
   "2.1.8": {
@@ -19060,7 +19944,7 @@
    "sqlite3": "3.8.10",
    "libtiff": "4.0.4",
    "curl": "7.43.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "zlib": "1.2.8"
   },
   "2.1.7": {
@@ -19071,7 +19955,7 @@
    "sqlite3": "3.8.8",
    "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "zlib": "1.2.8"
   },
   "2.0.7": {
@@ -19082,7 +19966,7 @@
    "sqlite3": "3.8.8",
    "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "zlib": "1.2.8"
   },
   "2.1.6": {
@@ -19093,7 +19977,7 @@
    "sqlite3": "3.8.8",
    "libtiff": "4.0.3",
    "curl": "7.41.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "zlib": "1.2.8"
   },
   "2.1.5": {
@@ -19104,7 +19988,7 @@
    "sqlite3": "3.8.7",
    "libtiff": "4.0.3",
    "curl": "7.39.0",
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "zlib": "1.2.8"
   },
   "2.1.4": {
@@ -19126,7 +20010,7 @@
    "sqlite3": "3.8.4",
    "libtiff": "4.0.3",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.1.3": {
@@ -19137,7 +20021,7 @@
    "sqlite3": "3.8.4",
    "libtiff": "4.0.3",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.1.2": {
@@ -19148,7 +20032,7 @@
    "sqlite3": "3.8.4",
    "libtiff": "4.0.3",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.0.5": {
@@ -19159,7 +20043,7 @@
    "sqlite3": "3.8.4",
    "libtiff": "4.0.3",
    "curl": "7.36.0",
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.1.1": {
@@ -19170,7 +20054,7 @@
    "sqlite3": "3.8.1",
    "libtiff": "4.0.3",
    "curl": "7.33.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.0.4": {
@@ -19181,7 +20065,7 @@
    "sqlite3": "3.8.0",
    "libtiff": "4.0.3",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.1.0": {
@@ -19192,7 +20076,7 @@
    "sqlite3": "3.7.17",
    "libtiff": "4.0.3",
    "curl": "7.32.0",
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "zlib": "1.2.8"
   },
   "2.0.2": {
@@ -19203,7 +20087,7 @@
    "sqlite3": "3.7.14",
    "libtiff": "4.0.3",
    "curl": "7.28.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "1.5.8": {
@@ -19214,7 +20098,7 @@
    "sqlite3": "3.7.14",
    "libtiff": "4.0.3",
    "curl": "7.28.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "1.5.7": {
@@ -19225,7 +20109,7 @@
    "sqlite3": "3.7.14",
    "libtiff": "4.0.3",
    "curl": "7.28.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "1.5.6": {
@@ -19236,7 +20120,7 @@
    "sqlite3": "3.7.14",
    "libtiff": "4.0.3",
    "curl": "7.28.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "1.5.5": {
@@ -19247,7 +20131,7 @@
    "sqlite3": "3.7.13",
    "libtiff": "4.0.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "2.0.1": {
@@ -19258,7 +20142,7 @@
    "sqlite3": "3.7.13",
    "libtiff": "4.0.2",
    "curl": "7.26.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "1.5.4": {
@@ -19269,7 +20153,7 @@
    "sqlite3": "3.7.11",
    "libtiff": "4.0.1",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.7"
   },
   "2.0.0": {
@@ -19280,7 +20164,7 @@
    "sqlite3": "3.7.11",
    "libtiff": "4.0.1",
    "curl": "7.25.0",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "1.2.6"
   },
   "1.5.3": {
@@ -19291,7 +20175,7 @@
    "sqlite3": "3.7.7",
    "libtiff": "3.9.5",
    "curl": "7.21.7",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "No version as per date"
   },
   "1.5.2": {
@@ -19302,7 +20186,7 @@
    "sqlite3": "3.7.2",
    "libtiff": "3.9.4",
    "curl": "7.21.1",
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "zlib": "No version as per date"
   },
   "1.5.1": {
@@ -19313,7 +20197,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.20.0",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "zlib": "No version as per date"
   },
   "1.4.2": {
@@ -19324,7 +20208,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.20.0",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "zlib": "No version as per date"
   },
   "1.5.0": {
@@ -19335,7 +20219,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.19.7",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "zlib": "No version as per date"
   },
   "1.4.1": {
@@ -19346,7 +20230,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.9.2",
    "curl": "7.19.7",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "zlib": "No version as per date"
   },
   "1.4.0": {
@@ -19357,7 +20241,7 @@
    "sqlite3": "3.6.15",
    "libtiff": "3.8.2",
    "curl": "7.19.5",
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "zlib": "No version as per date"
   },
   "1.3.6": {
@@ -19791,6 +20675,21 @@
   }
  },
  "postgres": {
+  "16.2": {
+   "postgis": "3.4.1"
+  },
+  "15.6": {
+   "postgis": "3.4.1"
+  },
+  "14.11": {
+   "postgis": "3.4.1"
+  },
+  "13.14": {
+   "postgis": "3.4.1"
+  },
+  "12.18": {
+   "postgis": "3.4.1"
+  },
   "16.1": {
    "postgis": "3.4.0"
   },
@@ -20355,6 +21254,16 @@
   }
  },
  "python": {
+  "3.12.2": {
+   "gettext": "0.22.4",
+   "openssl": "3.2.1",
+   "pkg-config": "0.29.2"
+  },
+  "3.11.8": {
+   "gettext": "0.22.4",
+   "openssl": "3.2.1",
+   "pkg-config": "0.29.2"
+  },
   "3.12.1": {
    "gettext": "0.22.4",
    "openssl": "3.2.0",
@@ -20376,22 +21285,22 @@
    "pkg-config": "0.29.2"
   },
   "3.11.5": {
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.10.13": {
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.9.18": {
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
   "3.8.18": {
-   "gettext": "0.22",
+   "gettext": "0.21.1",
    "openssl": "3.1.2",
    "pkg-config": "0.29.2"
   },
@@ -20491,217 +21400,217 @@
    "pkg-config": "0.29.2"
   },
   "3.9.14": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.5",
    "pkg-config": "0.29.2"
   },
   "3.8.14": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.5",
    "pkg-config": "0.29.2"
   },
   "3.7.14": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.5",
    "pkg-config": "0.29.2"
   },
   "3.10.7": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.5",
    "pkg-config": "0.29.2"
   },
   "3.10.6": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.5",
    "pkg-config": "0.29.2"
   },
   "3.10.5": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.3",
    "pkg-config": "0.29.2"
   },
   "3.9.13": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.3",
    "pkg-config": "0.29.2"
   },
   "3.10.4": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.9.12": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.10.3": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.9.11": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.8.13": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.7.13": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.2",
    "pkg-config": "0.29.2"
   },
   "3.10.2": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.1",
    "pkg-config": "0.29.2"
   },
   "3.9.10": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.1",
    "pkg-config": "0.29.2"
   },
   "3.10.1": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.0",
    "pkg-config": "0.29.2"
   },
   "3.9.9": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.0",
    "pkg-config": "0.29.2"
   },
   "3.9.8": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.0",
    "pkg-config": "0.29.2"
   },
   "3.10.0": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "3.0.0",
    "pkg-config": "0.29.2"
   },
   "3.7.12": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.15": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.7": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.12": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.6": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.11": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.11": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.14": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.5": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.10": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.4": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.3": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.9": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.2": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.8": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.10": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.13": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.7": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.1": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.9.0": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.8.6": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.5.10": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.9": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.12": {
-   "gettext": "0.21",
+   "gettext": "0.20.2",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
@@ -20796,207 +21705,207 @@
    "pkg-config": "0.29.2"
   },
   "3.7.3": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.5.7": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.4.10": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "2.7.16": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.2": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.8": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.7.1": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.6.7": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "1.1.1",
    "pkg-config": "0.29.2"
   },
   "3.5.6": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.4.9": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.7.0": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.6": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "2.7.15": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.5": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.5.5": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.4.8": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.4": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.3": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.3.7": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "2.7.14": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.4.7": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.5.4": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.2": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.6.1": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "0.29.2"
   },
   "3.5.3": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.6": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.6.0": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.13": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.5.2": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.5": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.12": {
-   "gettext": "0.19.8.1",
+   "gettext": "0.19.8",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.4": {
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.5.1": {
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.11": {
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.5.0": {
-   "gettext": "0.19.5.1",
+   "gettext": "0.19.6",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.10": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.3": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.4",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.9": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.6": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.6": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.2": {
-   "gettext": "0.19.2.1",
+   "gettext": "0.19.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
@@ -21006,172 +21915,172 @@
    "pkg-config": "No version as per date"
   },
   "2.7.7": {
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.1": {
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.4.0": {
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.5": {
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.4": {
-   "gettext": "0.18.3.2",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.3": {
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.6": {
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.9": {
-   "gettext": "0.18.3.1",
+   "gettext": "0.18.3",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.2": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.5": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.5": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.1": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.4": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.4": {
-   "gettext": "0.18.2.1",
+   "gettext": "0.18.2",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.3.0": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.3": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.8": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.3": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.5": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.2": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.2.1": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.4": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.2": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.7": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.5.6": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.3": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.7.1": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.6": {
-   "gettext": "0.18.1.1",
+   "gettext": "0.18.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.2": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.5": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.5.5": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.4": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "2.6.3": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
   "3.1.1": {
-   "gettext": "0.17",
+   "gettext": "0.16.1",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date"
   },
@@ -21347,6 +22256,12 @@
   }
  },
  "redis": {
+  "7.2.4": {
+   "pkg-config": "0.29.2"
+  },
+  "7.0.15": {
+   "pkg-config": "0.29.2"
+  },
   "7.2.3": {
    "pkg-config": "0.29.2"
   },
@@ -21925,6 +22840,21 @@
   }
  },
  "rmq": {
+  "3.12.12": {
+   "elixir": "1.16.0",
+   "erlang": "26.2.1",
+   "make": "4.4.1"
+  },
+  "3.12.11": {
+   "elixir": "1.15.7",
+   "erlang": "26.2.1",
+   "make": "4.4.1"
+  },
+  "3.11.28": {
+   "elixir": "1.15.7",
+   "erlang": "26.2.1",
+   "make": "4.4.1"
+  },
   "3.11.27": {
    "elixir": "1.15.7",
    "erlang": "26.2",
@@ -25785,6 +26715,14 @@
   }
  },
  "ruby": {
+  "3.2.3": {
+   "libyaml": "0.2.5",
+   "openssl": "3.2.0"
+  },
+  "3.3.0": {
+   "libyaml": "0.2.5",
+   "openssl": "3.2.0"
+  },
   "3.2.2": {
    "libyaml": "0.2.5",
    "openssl": "3.1.0"

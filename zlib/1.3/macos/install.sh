@@ -12,7 +12,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libz.dylib" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="zlib-$VERSION.tar.gz"
-	wget -q --show-progress "https://www.zlib.net/$ARCHIVE_FILE"
+	wget -q --show-progress "https://www.zlib.net/fossils/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
 	mv "zlib-$VERSION" $VERSION

@@ -28,7 +28,7 @@ const fs = require('fs');
 		const pathTocheck = programData[programName].path;
 		const versions = getFiles('./' + programName);
 		for (const version of versions) {
-			const fullPath = process.env.HOME + '/programs_new/' + programName + '/' + version + pathTocheck;
+			const fullPath = process.env.HOME + '/programs/' + programName + '/' + version + pathTocheck;
 			const osFolders = getFiles('./' + programName + '/' + version);
 			if (osFolders.includes('macos') && !fs.existsSync(fullPath)) {
 				// console.log(fullPath);
