@@ -10377,6 +10377,14 @@
  ],
  "libffi": [
   {
+   "version": "3.4.6",
+   "releaseDateString": "2024-02-18T14:22:51Z"
+  },
+  {
+   "version": "3.4.5",
+   "releaseDateString": "2024-02-15T13:35:02Z"
+  },
+  {
    "version": "3.4.4",
    "releaseDateString": "2022-10-24T00:17:29Z"
   },
@@ -16687,6 +16695,10 @@
  ],
  "nginx": [
   {
+   "version": "1.25.4",
+   "releaseDateString": "2024-02-14T11:55:46Z"
+  },
+  {
    "version": "1.25.3",
    "releaseDateString": "2023-10-24T13:46:46Z"
   },
@@ -18924,6 +18936,18 @@
   }
  ],
  "node": [
+  {
+   "version": "21.6.2",
+   "releaseDateString": "2024-02-14T16:58:07Z"
+  },
+  {
+   "version": "20.11.1",
+   "releaseDateString": "2024-02-14T16:54:34Z"
+  },
+  {
+   "version": "18.19.1",
+   "releaseDateString": "2024-02-14T16:47:31Z"
+  },
   {
    "version": "21.6.1",
    "releaseDateString": "2024-01-22T19:14:34Z"
@@ -22165,6 +22189,10 @@
  ],
  "pcre2": [
   {
+   "version": "10.43",
+   "releaseDateString": "2024-02-16T17:12:25Z"
+  },
+  {
    "version": "10.42",
    "releaseDateString": "2022-12-12T17:16:53Z"
   },
@@ -23064,6 +23092,14 @@
   }
  ],
  "php": [
+  {
+   "version": "8.3.3",
+   "releaseDateString": "2024-02-13T15:40:43Z"
+  },
+  {
+   "version": "8.2.16",
+   "releaseDateString": "2024-02-13T15:14:49Z"
+  },
   {
    "version": "8.3.2",
    "releaseDateString": "2024-01-16T13:45:59Z"
@@ -25752,6 +25788,10 @@
   }
  ],
  "postgis": [
+  {
+   "version": "2.5.11",
+   "releaseDateString": "2024-02-14T21:08:42Z"
+  },
   {
    "version": "3.4.2",
    "releaseDateString": "2024-02-08T17:12:21Z"
@@ -28518,6 +28558,10 @@
   }
  ],
  "rmq": [
+  {
+   "version": "3.12.13",
+   "releaseDateString": "2024-02-16T03:24:23Z"
+  },
   {
    "version": "3.12.12",
    "releaseDateString": "2024-01-04T20:33:37Z"
@@ -31702,6 +31746,14 @@
   }
  ],
  "scala": [
+  {
+   "version": "3.4.0",
+   "releaseDateString": "2024-02-14T11:44:51Z"
+  },
+  {
+   "version": "3.3.2",
+   "releaseDateString": "2024-02-14T11:52:06Z"
+  },
   {
    "version": "3.3.1",
    "releaseDateString": "2023-09-05T12:36:39Z"

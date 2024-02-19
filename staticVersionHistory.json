@@ -1,6 +1,38 @@
 {
  "dotnet-core": [
   {
+   "version": "8.0.200",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "8.0.201",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "8.0.102",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "7.0.116",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "7.0.313",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "7.0.406",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "6.0.127",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
+   "version": "6.0.419",
+   "releaseDateString": "2024-02-14T12:28:00Z"
+  },
+  {
    "version": "8.0.101",
    "releaseDateString": "2024-01-09T23:35:00Z"
   },
@@ -14,6 +46,18 @@
   },
   {
    "version": "7.0.115",
+   "releaseDateString": "2024-01-09T23:35:00Z"
+  },
+  {
+   "version": "6.0.418",
+   "releaseDateString": "2024-01-09T23:35:00Z"
+  },
+  {
+   "version": "6.0.321",
+   "releaseDateString": "2024-01-09T23:35:00Z"
+  },
+  {
+   "version": "6.0.126",
    "releaseDateString": "2024-01-09T23:35:00Z"
   },
   {
@@ -450,6 +494,10 @@
   }
  ],
  "haproxy": [
+  {
+   "version": "2.9.5",
+   "releaseDateString": "2024-02-15T17:49:00Z"
+  },
   {
    "version": "2.9.4",
    "releaseDateString": "2024-01-31T15:25:00Z"
