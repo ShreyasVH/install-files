@@ -1,10 +1,15 @@
 FOLDER_NAME=openssl
 VERSION=3.1.2
 
+ZLIB_FOLDER_NAME=zlib
+ZLIB_VERSION=1.3
+
 cd $INSTALL_FILES_DIR
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
+
+	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -19,7 +24,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	cd $VERSION
 	printf "\t${bold}${green}Configuring${clear}\n"
 	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib --with-zlib-lib=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib --with-zlib-include=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
