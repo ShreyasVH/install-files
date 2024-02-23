@@ -9,6 +9,8 @@ cd $INSTALL_FILES_DIR
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
+	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl/install.sh
+
 	cd $HOME/sources/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
