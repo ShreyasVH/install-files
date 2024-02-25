@@ -16,26 +16,8 @@ OPENSSL_FOLDER_NAME=openssl
 LIBFFI_VERSION=3.4.4
 LIBFFI_FOLDER_NAME=libffi
 
-INSTALL_FILES_DIR=$HOME/install-files
-
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python3" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	bash $INSTALL_FILES_DIR/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/wsl/install.sh
 	bash $INSTALL_FILES_DIR/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/wsl/install.sh
@@ -58,18 +40,27 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	export CFLAGS=$(pkg-config --cflags libffi)
 	export LDFLAGS=$(pkg-config --libs libffi)
 
-	wget "https://www.python.org/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
-	tar -xvf "Python-"$VERSION".tgz"
+	export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
+
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	ARCHIVE_FILE="Python-"$VERSION".tgz"
+	wget -q --show-progress "https://www.python.org/ftp/python/"$VERSION"/$ARCHIVE_FILE"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf $ARCHIVE_FILE
 	mv "Python-"$VERSION $VERSION
 	cd $VERSION
-	./configure --with-pydebug --prefix="$HOME/programs/python/$VERSION" --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION
-	make -s -j2
-	sudo make install
+	printf "\t${bold}${green}Configuring${clear}\n"
+	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	./configure --with-pydebug --prefix="$HOME/programs/python/$VERSION" --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	printf "\t${bold}${green}Making${clear}\n"
+	make -s -j2 > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/install.sh $FOLDER_NAME $VERSION
 
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	sudo chown -R $(whoami) .
 
-	cd $HOME/sources/$FOLDER_NAME
-	sudo rm -rf $VERSION
-	rm "Python-"$VERSION".tgz"
+	bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 fi

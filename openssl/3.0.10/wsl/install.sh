@@ -4,54 +4,45 @@ VERSION=3.0.10
 ZLIB_FOLDER_NAME=zlib
 ZLIB_VERSION=1.3
 
-INSTALL_FILES_DIR=$HOME/install-files
+cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/sources" ]; then
-	mkdir "$HOME/sources"
-fi
-
-if [ ! -d "$HOME/programs" ]; then
-	mkdir "$HOME/programs"
-fi
-
-if [ ! -d "$HOME/sources/$FOLDER_NAME" ]; then
-	mkdir "$HOME/sources/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME"
-fi
-
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl/install.sh
 
-	cd $HOME/sources/openssl
+	cd $HOME/sources/$FOLDER_NAME
 
-	wget -q "https://www.openssl.org/source/openssl-$VERSION.tar.gz"
-	tar -xvf "openssl-$VERSION.tar.gz"
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
+	curl -OL "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	tar -xf $ARCHIVE_FILE
 	mv "openssl-$VERSION" $VERSION
 	cd $VERSION
+	printf "\t${bold}${green}Configuring${clear}\n"
+	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib --with-zlib-lib=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib --with-zlib-include=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib --with-zlib-lib=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib --with-zlib-include=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include
-	make
-	sudo make install
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
-	cd $HOME/programs/$FOLDER_NAME/$VERSION
-	sudo chown -R $(whoami) .
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
 
-	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
-	echo "" >> .envrc
-	direnv allow
+		printf "\t\t${bold}${green}Installing Certificate${clear}\n"
+		curl -OL http://curl.haxx.se/ca/cacert.pem
+		echo $USER_PASSWORD | sudo -S -p '' mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
 
-	wget -q http://curl.haxx.se/ca/cacert.pem
-	sudo mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
-
-	cd $HOME/sources/$FOLDER_NAME
-	rm -rf $VERSION
-	rm "openssl-$VERSION.tar.gz"
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
+	fi
 fi
 
 cd $HOME/install-files
