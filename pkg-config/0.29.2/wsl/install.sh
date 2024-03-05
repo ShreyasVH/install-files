@@ -12,7 +12,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="pkg-config-$VERSION.tar.gz"
-	curl -OL "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE"
+	curl -kOL "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
 	mv "pkg-config-$VERSION" $VERSION
