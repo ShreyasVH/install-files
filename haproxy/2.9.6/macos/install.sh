@@ -6,7 +6,6 @@ cd $INSTALL_FILES_DIR
 
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
-echo $OPENSSL_VERSION
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/haproxy.cfg ]; then
 	printf "haproxy.cfg not found\n"
