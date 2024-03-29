@@ -9469,7 +9469,7 @@
    "php-xdebug": "3.2.2",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.30": {
@@ -9491,7 +9491,7 @@
    "php-xdebug": "3.2.2",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.22": {
@@ -9513,7 +9513,7 @@
    "php-xdebug": "3.2.2",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.8": {
@@ -9535,7 +9535,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.21": {
@@ -9557,7 +9557,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.29": {
@@ -9579,7 +9579,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.7": {
@@ -9601,7 +9601,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.20": {
@@ -9623,7 +9623,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.42.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.19": {
@@ -9645,7 +9645,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.41.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.6": {
@@ -9667,7 +9667,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.3",
    "sqlite3": "3.41.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.5": {
@@ -9689,7 +9689,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.2",
    "sqlite3": "3.41.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.18": {
@@ -9711,7 +9711,7 @@
    "php-xdebug": "3.2.1",
    "postgres": "15.2",
    "sqlite3": "3.41.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.4": {
@@ -9733,7 +9733,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.2",
    "sqlite3": "3.41.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.17": {
@@ -9755,7 +9755,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.2",
    "sqlite3": "3.41.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.3": {
@@ -9777,7 +9777,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.2",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.16": {
@@ -9799,7 +9799,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.2",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.28": {
@@ -9821,7 +9821,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.2",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.2": {
@@ -9843,7 +9843,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.1",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.15": {
@@ -9865,7 +9865,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.1",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.14": {
@@ -9887,7 +9887,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.1",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.1": {
@@ -9909,7 +9909,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.1",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.27": {
@@ -9931,7 +9931,7 @@
    "php-xdebug": "3.2.0",
    "postgres": "15.1",
    "sqlite3": "3.40.1",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.2.0": {
@@ -9953,7 +9953,7 @@
    "php-xdebug": "3.1.6",
    "postgres": "15.1",
    "sqlite3": "3.40.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.13": {
@@ -9975,7 +9975,7 @@
    "php-xdebug": "3.1.6",
    "postgres": "15.1",
    "sqlite3": "3.40.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.26": {
@@ -9997,7 +9997,7 @@
    "php-xdebug": "3.1.6",
    "postgres": "15.1",
    "sqlite3": "3.40.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "7.4.33": {
@@ -10019,7 +10019,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "15.0",
    "sqlite3": "3.39.4",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.12": {
@@ -10041,7 +10041,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "15.0",
    "sqlite3": "3.39.4",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.0.25": {
@@ -10063,7 +10063,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "15.0",
    "sqlite3": "3.39.4",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.13"
   },
   "8.1.11": {
@@ -10085,7 +10085,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.3",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.24": {
@@ -10107,7 +10107,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.3",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "7.4.32": {
@@ -10129,7 +10129,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.3",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "7.4.31": {
@@ -10151,7 +10151,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.3",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.1.10": {
@@ -10173,7 +10173,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.23": {
@@ -10195,7 +10195,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.5",
    "sqlite3": "3.39.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.1.9": {
@@ -10217,7 +10217,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.4",
    "sqlite3": "3.39.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.22": {
@@ -10239,7 +10239,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.4",
    "sqlite3": "3.39.2",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.21": {
@@ -10261,7 +10261,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.4",
    "sqlite3": "3.39.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.1.8": {
@@ -10283,7 +10283,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.4",
    "sqlite3": "3.39.0",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.20": {
@@ -10305,7 +10305,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.3",
    "sqlite3": "3.38.5",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.1.7": {
@@ -10327,7 +10327,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.3",
    "sqlite3": "3.38.5",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "7.4.30": {
@@ -10349,7 +10349,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.3",
    "sqlite3": "3.38.5",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.1.6": {
@@ -10371,7 +10371,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.3",
    "sqlite3": "3.38.5",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.19": {
@@ -10393,7 +10393,7 @@
    "php-xdebug": "No version as per date",
    "postgres": "14.3",
    "sqlite3": "3.38.5",
-   "unixodbc": "No version as per date",
+   "unixodbc": "2.3.11",
    "zlib": "1.2.12"
   },
   "8.0.18": {

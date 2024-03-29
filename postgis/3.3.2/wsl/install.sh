@@ -1,5 +1,5 @@
 FOLDER_NAME=postgis
-VERSION=3.3.4
+VERSION=3.3.2
 
 if [ $# -lt 1 ]; then
     printf "${bold}${red}Usage: $0 <arg1>${clear}"
