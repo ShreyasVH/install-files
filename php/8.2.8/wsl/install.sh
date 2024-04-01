@@ -55,6 +55,8 @@ PHP_EXTENSION_PHALCON_FOLDER_NAME=php-phalcon
 PHP_EXTENSION_PHALCON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_PHALCON_FOLDER_NAME" '.[$folder][$version][$name]')
 PHP_EXTENSION_REDIS_FOLDER_NAME=php-redis
 PHP_EXTENSION_REDIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_REDIS_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_SQLSRV_FOLDER_NAME=php-sqlsrv
+PHP_EXTENSION_SQLSRV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_SQLSRV_FOLDER_NAME" '.[$folder][$version][$name]')
 
 INSTALL_FILES_DIR=$HOME/install-files
 
@@ -79,6 +81,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME" ]; then
 		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME"
+	fi
+
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME"
 	fi
 
 	bash $INSTALL_FILES_DIR/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/wsl/install.sh
@@ -234,10 +240,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		cd tmp
 		printf "\t${bold}${yellow}Installing sqlsrv extension${clear}\n"
 		printf "\t\t${bold}${green}Downloading source code${clear}\n"
-		wget -q "https://pecl.php.net/get/$PHP_EXTENSION_SQLSRV_FOLDER_NAME-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		wget -q --show-progress "https://pecl.php.net/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
 		printf "\t\t${bold}${green}Extracting source code${clear}\n"
-		tar -xf "$PHP_EXTENSION_SQLSRV_FOLDER_NAME-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
-		cd "$PHP_EXTENSION_SQLSRV_FOLDER_NAME-$PHP_EXTENSION_SQLSRV_VERSION"
+		tar -xf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		cd "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
 		printf "\t\t${bold}${green}Running phpize${clear}\n"
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/phpizeOutput.txt 2>&1
 		printf "\t\t${bold}${green}Configuring${clear}\n"
@@ -247,8 +253,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/makeOutput.txt 2>&1
 		mv modules/sqlsrv.so $EXTENSION_DIR
 		cd ..
-		rm -rf "$PHP_EXTENSION_SQLSRV_FOLDER_NAME-$PHP_EXTENSION_SQLSRV_VERSION"
-		rm "$PHP_EXTENSION_SQLSRV_FOLDER_NAME-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		rm -rf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
+		rm "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo "extension=sqlsrv.so" >> lib/php.ini
 
