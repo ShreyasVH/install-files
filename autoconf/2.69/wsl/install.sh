@@ -12,7 +12,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/autoconf" ]; then
 	bash $INSTALL_FILES_DIR/$M4_FOLDER_NAME/$M4_VERSION/wsl/install.sh
 
 	export PATH=$HOME/programs/$M4_FOLDER_NAME/$M4_VERSION/bin:$PATH
-	m4 --version
 
 	cd $HOME/sources/$FOLDER_NAME
 

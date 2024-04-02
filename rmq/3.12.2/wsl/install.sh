@@ -20,7 +20,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME"
 fi
 
-if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/rabbitmq.conf ]; then
+if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/wsl/rabbitmq.conf ]; then
 	printf "rabbitmq.conf not found\n"
 	exit
 fi
