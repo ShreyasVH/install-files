@@ -588,6 +588,15 @@
   "isEntryPoint": true,
   "path": "/bin/sqlite3"
  },
+ "ssh": {
+  "tagsUrl": "",
+  "dependencies": [
+   "openssl"
+  ],
+  "versionRegex": "V_\\d+_\\d+_P1",
+  "versionsLastUpdatedOn": 1711034851420,
+  "path": "/bin/ssh"
+ },
  "wget": {
   "tagsUrl": "",
   "dependencies": [
