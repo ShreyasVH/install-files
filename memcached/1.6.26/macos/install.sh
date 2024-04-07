@@ -37,7 +37,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memcached" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		PORT=1305
+		PORT=1320
 
 		touch start.sh
 		echo "memcached -p $PORT -d > memcached.log 2>&1 &" >> start.sh
