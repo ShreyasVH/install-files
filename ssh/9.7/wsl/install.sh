@@ -1,5 +1,6 @@
 FOLDER_NAME=ssh
 VERSION=9.7
+PORT=22
 
 ZLIB_FOLDER_NAME=zlib
 ZLIB_VERSION=1.3
@@ -21,8 +22,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ssh" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="openssh-"$VERSION"p1.tar.gz"
-	printf "$ARCHIVE_FILE"
-	printf "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/$ARCHIVE_FILE"
 	wget -q --show-progress "https://cdn.openbsd.org/pub/OpenBSD/OpenSSH/portable/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
@@ -48,6 +47,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ssh" ]; then
 
 		touch start.sh
 		echo "sudo /home/$(whoami)/programs/$FOLDER_NAME/$VERSION/sbin/sshd" >> start.sh
+
+		touch stop.sh
+		echo 'echo opensesame | sudo -S -p "" kill -9 $(echo opensesame | sudo -S -p "" lsof -t -i:'$PORT')' >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 	fi
