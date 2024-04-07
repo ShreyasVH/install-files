@@ -36,28 +36,37 @@ programs+=("openssl")
 programs+=("php")
 programs+=("mysql")
 
-# rm -rf ~/sources_new
-# mv ~/sources ~/sources_bkp
-# mkdir ~/sources
-
-# rm -rf ~/logs_new
-# mv ~/logs ~/logs_bkp
-# mkdir ~/logs
-
-# rm -rf ~/programs_new
-# mv ~/programs ~/programs_bkp
-# mkdir ~/programs
-
-JQ_VERSION=1.7
-
-if [ ! -d "$HOME/programs/jq" ]; then
-    mkdir ~/programs/jq
-    cp -rp ~/programs_bkp/jq/$JQ_VERSION ~/programs/jq
+rm -rf ~/sources_new
+if [ ! -d ~/sources_bkp ]; then
+    mv ~/sources ~/sources_bkp
+    mkdir ~/sources
 fi
+
+rm -rf ~/logs_new
+if [ ! -d ~/logs_bkp ]; then
+    mv ~/logs ~/logs_bkp
+    mkdir ~/logs
+fi
+
+rm -rf ~/programs_new
+if [ ! -d ~/programs_bkp ]; then
+    mv ~/programs ~/programs_bkp
+    mkdir ~/programs
+fi
+
+
+JQ_VERSION=1.7.1
+
+# if [ ! -d "$HOME/programs/jq" ]; then
+#     mkdir ~/programs/jq
+#     cp -rp ~/programs_bkp/jq/$JQ_VERSION ~/programs/jq
+# fi
+
+bash jq/$JQ_VERSION/macos/install.sh
 
 direnv allow
 
-WGET_WERSION=1.21.4
+WGET_WERSION=1.24.5
 PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "pkg-config" '.[$folder][$version][$name]')
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "openssl" '.[$folder][$version][$name]')
 
@@ -66,18 +75,17 @@ if [ ! -d "$HOME/programs/pkg-config" ]; then
     cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config
 fi
 
-if [ ! -d "$HOME/programs/openssl" ]; then
-    mkdir ~/programs/openssl
-    cp -rp ~/programs_bkp/openssl/$OPENSSL_VERSION ~/programs/openssl
-fi
+# if [ ! -d "$HOME/programs/openssl" ]; then
+#     mkdir ~/programs/openssl
+#     cp -rp ~/programs_bkp/openssl/$OPENSSL_VERSION ~/programs/openssl
+# fi
 
-if [ ! -d "$HOME/programs/wget" ]; then
-    mkdir ~/programs/wget
-    cp -rp ~/programs_bkp/wget/$WGET_WERSION ~/programs/wget
-fi
+# if [ ! -d "$HOME/programs/wget" ]; then
+#     mkdir ~/programs/wget
+#     cp -rp ~/programs_bkp/wget/$WGET_WERSION ~/programs/wget
+# fi
 
-# bash jq/1.7/macos/install.sh
-# bash wget/1.21.4/macos/install.sh
+bash wget/$WGET_WERSION/macos/install.sh
 
 direnv allow
 
@@ -88,26 +96,14 @@ for ((i = 0; i < ${#programs[@]}; i++)); do
 
     path_to_check=$(cat "programData.json" | jq -r --arg folder $program '.[$folder].path')
 
-    subdirectories=()
-
-    while IFS= read -r -d '' subdirectory; do
-        subdirectories+=("$subdirectory")
-    done < <(find "$programDirectory" -mindepth 1 -maxdepth 1 -type d -print0)
-
-    for subdir in "${subdirectories[@]}"; do
-        # echo "$subdir"
-        path=$(echo $programDirectory | sed 's/\//\\\//g')
-        # echo $path
-        version=$(echo $subdir | sed "s/$path\///g")
-        if [ -d $subdir/macos ]; then
-            printf "\t$version\n"
-            bash $programDirectory/$version/macos/install.sh
-            cd $INSTALL_FILES_DIR
-            if [ ! -e "$HOME/programs/$program/$version"$path_to_check ]; then
-                failed_versions+=("$program-$version")
-            fi
-        fi
-    done
+    path=$(echo $programDirectory | sed 's/\//\\\//g')
+    version=$(cat "latestVersions.json" | jq -r --arg folder $program '.[$folder]')
+    printf "\t$version\n"
+    bash $programDirectory/$version/macos/install.sh
+    cd $INSTALL_FILES_DIR
+    if [ ! -e "$HOME/programs/$program/$version"$path_to_check ]; then
+        failed_versions+=("$program-$version")
+    fi
 done
 
 printf "Failed programs:\n"
@@ -116,13 +112,13 @@ for element in "${failed_versions[@]}"; do
 done
 
 
-# mv ~/programs ~/programs_new
-# mv ~/programs_bkp ~/programs
+mv ~/programs ~/programs_new
+mv ~/programs_bkp ~/programs
 
-# mv ~/sources ~/sources_new
-# mv ~/sources_bkp ~/sources
+mv ~/sources ~/sources_new
+mv ~/sources_bkp ~/sources
 
-# mv ~/logs ~/logs_new
-# mv ~/logs_bkp ~/logs
+mv ~/logs ~/logs_new
+mv ~/logs_bkp ~/logs
 
 date

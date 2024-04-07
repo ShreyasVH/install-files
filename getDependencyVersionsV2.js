@@ -4,31 +4,13 @@ const path = require('path');
 const scriptName = path.basename(__filename);
 const fileNameParts = process.argv[1].split(path.sep);
 const fileName = fileNameParts[fileNameParts.length - 1];
+const setSubVersionInfo = require('./utils').setSubVersionInfo;
 
 const parseReleaseDate = releaseDateString => {
 	const releaseDateParts = releaseDateString.split('/');
 	const releaseDate = new Date(releaseDateParts[2], releaseDateParts[1] - 1, releaseDateParts[0]);
 	return releaseDate;
 };
-
-const setSubVersionInfo = (versionsData) => {
-	for (const [programName, versions] of Object.entries(versionsData)) {
-		versions.forEach(versionDetails => {
-			const version = versionDetails.version;
-			const parts = version.split('.');
-			if (parts.length > 3) {
-				parts[2] = parseInt(parts[2] + parts[3]);
-			}
-			const majorVersion = parseInt(parts[0]);
-			const minorVersion = parseInt(parts[1]);
-			const patchVersion = parseInt(parts[2]);
-
-			versionDetails.majorVersion = majorVersion;
-			versionDetails.minorVersion = minorVersion;
-			versionDetails.patchVersion = patchVersion;
-		});
-	}
-}
 
 const getDependencyVersions = (requiredProgram, requiredVersion) => {
 	const programData = JSON.parse(fs.readFileSync('programData.json').toString());

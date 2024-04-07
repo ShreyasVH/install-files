@@ -19,6 +19,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/perl" ]; then
 	mv "perl-$VERSION" $VERSION
 	cd $VERSION
 	echo $USER_PASSWORD | sudo -S -p "" chmod 755 $HOME/sources/$FOLDER_NAME/$VERSION/configure
+	printf "\t${bold}${green}Configuring${clear}\n"
 	./Configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./Configure -des -Dprefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
