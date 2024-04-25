@@ -1,6 +1,10 @@
 {
  "apache": [
   {
+   "version": "2.4.59",
+   "releaseDateString": "2024-04-04T13:33:58Z"
+  },
+  {
    "version": "2.4.58",
    "releaseDateString": "2023-10-19T09:09:34Z"
   },
@@ -1237,6 +1241,14 @@
  ],
  "cmake": [
   {
+   "version": "3.29.2",
+   "releaseDateString": "2024-04-11T14:42:49Z"
+  },
+  {
+   "version": "3.29.1",
+   "releaseDateString": "2024-04-03T16:16:13Z"
+  },
+  {
    "version": "3.29.0",
    "releaseDateString": "2024-03-21T14:04:09Z"
   },
@@ -2010,6 +2022,26 @@
   }
  ],
  "cockroach": [
+  {
+   "version": "23.1.19",
+   "releaseDateString": "2024-04-17T17:14:29Z"
+  },
+  {
+   "version": "23.2.4",
+   "releaseDateString": "2024-04-08T18:04:50Z"
+  },
+  {
+   "version": "23.1.18",
+   "releaseDateString": "2024-04-08T18:04:42Z"
+  },
+  {
+   "version": "23.2.3",
+   "releaseDateString": "2024-03-13T16:23:32Z"
+  },
+  {
+   "version": "23.1.17",
+   "releaseDateString": "2024-03-13T16:23:22Z"
+  },
   {
    "version": "23.2.2",
    "releaseDateString": "2024-02-23T04:30:09Z"
@@ -2825,6 +2857,14 @@
  ],
  "composer": [
   {
+   "version": "2.7.4",
+   "releaseDateString": "2024-04-22T19:17:04Z"
+  },
+  {
+   "version": "2.7.3",
+   "releaseDateString": "2024-04-19T19:40:58Z"
+  },
+  {
    "version": "2.7.2",
    "releaseDateString": "2024-03-11T16:12:19Z"
   },
@@ -3486,6 +3526,14 @@
   }
  ],
  "curl": [
+  {
+   "version": "8.7.1",
+   "releaseDateString": "2024-03-27T08:03:02Z"
+  },
+  {
+   "version": "8.7.0",
+   "releaseDateString": "2024-03-27T06:47:04Z"
+  },
   {
    "version": "8.6.0",
    "releaseDateString": "2024-01-31T07:06:02Z"
@@ -4474,6 +4522,26 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "7.17.20",
+   "releaseDateString": "2024-04-10T13:55:40Z"
+  },
+  {
+   "version": "8.13.2",
+   "releaseDateString": "2024-04-08T20:14:41Z"
+  },
+  {
+   "version": "8.13.1",
+   "releaseDateString": "2024-04-02T09:54:30Z"
+  },
+  {
+   "version": "8.13.0",
+   "releaseDateString": "2024-03-26T16:12:51Z"
+  },
+  {
+   "version": "7.17.19",
+   "releaseDateString": "2024-03-26T12:50:44Z"
+  },
   {
    "version": "8.12.2",
    "releaseDateString": "2024-02-22T15:34:58Z"
@@ -6363,6 +6431,10 @@
  ],
  "erlang": [
   {
+   "version": "26.2.4",
+   "releaseDateString": "2024-04-12T09:14:59Z"
+  },
+  {
    "version": "26.2.3",
    "releaseDateString": "2024-03-06T15:30:18Z"
   },
@@ -7749,6 +7821,14 @@
  ],
  "go": [
   {
+   "version": "1.22.2",
+   "releaseDateString": "2024-04-03T15:35:18Z"
+  },
+  {
+   "version": "1.21.9",
+   "releaseDateString": "2024-04-03T15:35:16Z"
+  },
+  {
    "version": "1.22.1",
    "releaseDateString": "2024-03-05T17:42:39Z"
   },
@@ -8584,6 +8664,26 @@
   }
  ],
  "kibana": [
+  {
+   "version": "7.17.20",
+   "releaseDateString": "2024-04-10T13:55:40Z"
+  },
+  {
+   "version": "8.13.2",
+   "releaseDateString": "2024-04-08T20:14:41Z"
+  },
+  {
+   "version": "8.13.1",
+   "releaseDateString": "2024-04-02T09:54:30Z"
+  },
+  {
+   "version": "8.13.0",
+   "releaseDateString": "2024-03-26T16:12:51Z"
+  },
+  {
+   "version": "7.17.19",
+   "releaseDateString": "2024-03-26T12:50:44Z"
+  },
   {
    "version": "8.12.2",
    "releaseDateString": "2024-02-22T15:34:58Z"
@@ -11629,6 +11729,18 @@
  ],
  "mongo": [
   {
+   "version": "6.0.15",
+   "releaseDateString": "2024-04-15T19:40:16Z"
+  },
+  {
+   "version": "7.3.1",
+   "releaseDateString": "2024-04-04T17:11:59Z"
+  },
+  {
+   "version": "7.0.8",
+   "releaseDateString": "2024-03-29T21:22:05Z"
+  },
+  {
    "version": "5.0.26",
    "releaseDateString": "2024-03-20T19:34:00Z"
   },
@@ -13592,6 +13704,18 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "2.2.4",
+   "releaseDateString": "2024-04-15T11:37:12Z"
+  },
+  {
+   "version": "2.2.3",
+   "releaseDateString": "2024-04-03T16:07:26Z"
+  },
+  {
+   "version": "2.2.2",
+   "releaseDateString": "2024-03-25T17:42:50Z"
+  },
   {
    "version": "2.2.1",
    "releaseDateString": "2024-03-19T08:07:45Z"
@@ -15701,6 +15825,10 @@
  ],
  "neo4j": [
   {
+   "version": "4.4.32",
+   "releaseDateString": "2024-03-26T10:01:42Z"
+  },
+  {
    "version": "5.18.1",
    "releaseDateString": "2024-03-18T11:03:53Z"
   },
@@ -16838,6 +16966,14 @@
   }
  ],
  "nginx": [
+  {
+   "version": "1.26.0",
+   "releaseDateString": "2024-04-23T13:40:08Z"
+  },
+  {
+   "version": "1.25.5",
+   "releaseDateString": "2024-04-16T14:27:50Z"
+  },
   {
    "version": "1.25.4",
    "releaseDateString": "2024-02-14T11:55:46Z"
@@ -19080,6 +19216,38 @@
   }
  ],
  "node": [
+  {
+   "version": "21.7.3",
+   "releaseDateString": "2024-04-10T16:06:56Z"
+  },
+  {
+   "version": "20.12.2",
+   "releaseDateString": "2024-04-10T16:15:40Z"
+  },
+  {
+   "version": "18.20.2",
+   "releaseDateString": "2024-04-10T16:23:39Z"
+  },
+  {
+   "version": "21.7.2",
+   "releaseDateString": "2024-04-03T13:33:23Z"
+  },
+  {
+   "version": "20.12.1",
+   "releaseDateString": "2024-04-03T13:43:17Z"
+  },
+  {
+   "version": "18.20.1",
+   "releaseDateString": "2024-04-03T13:56:20Z"
+  },
+  {
+   "version": "20.12.0",
+   "releaseDateString": "2024-03-26T17:20:49Z"
+  },
+  {
+   "version": "18.20.0",
+   "releaseDateString": "2024-03-26T17:19:29Z"
+  },
   {
    "version": "21.7.1",
    "releaseDateString": "2024-03-08T21:45:11Z"
@@ -23245,6 +23413,22 @@
  ],
  "php": [
   {
+   "version": "8.3.6",
+   "releaseDateString": "2024-04-10T14:20:12Z"
+  },
+  {
+   "version": "8.1.28",
+   "releaseDateString": "2024-04-10T05:44:12Z"
+  },
+  {
+   "version": "8.3.5",
+   "releaseDateString": "2024-04-09T21:33:24Z"
+  },
+  {
+   "version": "8.2.18",
+   "releaseDateString": "2024-04-09T18:02:58Z"
+  },
+  {
    "version": "8.3.4",
    "releaseDateString": "2024-03-12T23:41:52Z"
   },
@@ -27143,6 +27327,14 @@
  ],
  "python": [
   {
+   "version": "3.12.3",
+   "releaseDateString": "2024-04-09T08:09:14Z"
+  },
+  {
+   "version": "3.11.9",
+   "releaseDateString": "2024-04-02T08:25:06Z"
+  },
+  {
    "version": "3.10.14",
    "releaseDateString": "2024-03-19T21:46:28Z"
   },
@@ -28735,6 +28927,10 @@
  ],
  "rmq": [
   {
+   "version": "3.13.1",
+   "releaseDateString": "2024-03-29T06:27:00Z"
+  },
+  {
    "version": "3.13.0",
    "releaseDateString": "2024-02-22T17:19:24Z"
   },
@@ -29396,6 +29592,10 @@
   }
  ],
  "rsyslog": [
+  {
+   "version": "8.2404.0",
+   "releaseDateString": "2024-04-02T11:52:01Z"
+  },
   {
    "version": "8.2402.0",
    "releaseDateString": "2024-02-26T11:41:17Z"
@@ -30931,6 +31131,22 @@
  ],
  "ruby": [
   {
+   "version": "3.3.1",
+   "releaseDateString": "2024-04-23T10:20:14Z"
+  },
+  {
+   "version": "3.2.4",
+   "releaseDateString": "2024-04-23T10:20:09Z"
+  },
+  {
+   "version": "3.1.5",
+   "releaseDateString": "2024-04-23T10:20:59Z"
+  },
+  {
+   "version": "3.0.7",
+   "releaseDateString": "2024-04-23T10:23:26Z"
+  },
+  {
    "version": "3.2.3",
    "releaseDateString": "2024-01-18T06:26:39Z"
   },
@@ -31935,6 +32151,10 @@
  ],
  "scala": [
   {
+   "version": "3.4.1",
+   "releaseDateString": "2024-03-27T13:27:52Z"
+  },
+  {
    "version": "3.3.3",
    "releaseDateString": "2024-02-29T09:35:10Z"
   },
@@ -32084,6 +32304,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "3.45.3",
+   "releaseDateString": "2024-04-15T13:34:05Z"
+  },
   {
    "version": "3.45.2",
    "releaseDateString": "2024-03-12T11:06:23Z"
@@ -33285,6 +33509,10 @@
  ],
  "boost": [
   {
+   "version": "1.85.0",
+   "releaseDateString": "2024-04-11T18:45:05Z"
+  },
+  {
    "version": "1.84.0",
    "releaseDateString": "2023-12-06T21:00:05Z"
   },
@@ -33718,6 +33946,10 @@
   }
  ],
  "memcached": [
+  {
+   "version": "1.6.26",
+   "releaseDateString": "2024-03-27T20:21:53Z"
+  },
   {
    "version": "1.6.25",
    "releaseDateString": "2024-03-19T19:58:45Z"

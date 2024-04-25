@@ -1,6 +1,34 @@
 {
  "dotnet-core": [
   {
+   "version": "6.0.421",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "6.0.129",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "7.0.408",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "7.0.315",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "7.0.118",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "8.0.204",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
+   "version": "8.0.104",
+   "releaseDateString": "2024-04-10T12:03:00Z"
+  },
+  {
    "version": "6.0.420",
    "releaseDateString": "2024-03-12T10:21:00Z"
   },
@@ -277,281 +305,11 @@
    "releaseDateString": "2023-06-13T17:27:34Z"
   }
  ],
- "java": [
-  {
-   "version": "22",
-   "releaseDateString": "2024-03-19T00:00:00Z"
-  },
-  {
-   "version": "21.0.2",
-   "releaseDateString": "2024-01-16T00:00:00Z"
-  },
-  {
-   "version": "17.0.10",
-   "releaseDateString": "2024-01-16T00:00:00Z"
-  },
-  {
-   "version": "11.0.22",
-   "releaseDateString": "2024-01-16T00:00:00Z"
-  },
-  {
-   "version": "21.0.1",
-   "releaseDateString": "2023-10-17T00:00:00Z"
-  },
-  {
-   "version": "17.0.9",
-   "releaseDateString": "2023-10-17T00:00:00Z"
-  },
-  {
-   "version": "11.0.21",
-   "releaseDateString": "2023-10-17T00:00:00Z"
-  },
-  {
-   "version": "21",
-   "releaseDateString": "2023-09-19T00:00:00Z"
-  },
-  {
-   "version": "20.0.2",
-   "releaseDateString": "2023-07-18T00:00:00Z"
-  },
-  {
-   "version": "17.0.8",
-   "releaseDateString": "2023-07-18T00:00:00Z"
-  },
-  {
-   "version": "11.0.20",
-   "releaseDateString": "2023-07-18T00:00:00Z"
-  },
-  {
-   "version": "20.0.1",
-   "releaseDateString": "2023-04-18T00:00:00Z"
-  },
-  {
-   "version": "17.0.7",
-   "releaseDateString": "2023-04-18T00:00:00Z"
-  },
-  {
-   "version": "11.0.19",
-   "releaseDateString": "2023-04-18T00:00:00Z"
-  },
-  {
-   "version": "20",
-   "releaseDateString": "2023-03-21T00:00:00Z"
-  },
-  {
-   "version": "19.0.2",
-   "releaseDateString": "2023-01-17T00:00:00Z"
-  },
-  {
-   "version": "17.0.6",
-   "releaseDateString": "2023-01-17T00:00:00Z"
-  },
-  {
-   "version": "11.0.18",
-   "releaseDateString": "2023-01-17T00:00:00Z"
-  },
-  {
-   "version": "19.0.1",
-   "releaseDateString": "2022-10-18T00:00:00Z"
-  },
-  {
-   "version": "17.0.5",
-   "releaseDateString": "2022-10-18T00:00:00Z"
-  },
-  {
-   "version": "11.0.17",
-   "releaseDateString": "2022-10-18T00:00:00Z"
-  },
-  {
-   "version": "13.0.1",
-   "releaseDateString": "2019-10-15T00:00:00Z"
-  },
-  {
-   "version": "11.0.5",
-   "releaseDateString": "2019-10-15T00:00:00Z"
-  },
-  {
-   "version": "8.0.231",
-   "releaseDateString": "2019-10-15T00:00:00Z"
-  },
-  {
-   "version": "7.0.241",
-   "releaseDateString": "2019-10-15T00:00:00Z"
-  },
-  {
-   "version": "19",
-   "releaseDateString": "2022-09-20T00:00:00Z"
-  }
- ],
- "pkg-config": [
-  {
-   "version": "0.29.2",
-   "releaseDateString": "2017-03-20T17:08:00Z"
-  }
- ],
- "php-xdebug": [
-  {
-   "version": "3.3.1",
-   "releaseDateString": "2023-12-14T00:00:00Z"
-  },
-  {
-   "version": "3.3.0",
-   "releaseDateString": "2023-11-30T00:00:00Z"
-  },
-  {
-   "version": "3.2.2",
-   "releaseDateString": "2023-07-14T00:00:00Z"
-  },
-  {
-   "version": "3.2.1",
-   "releaseDateString": "2023-03-21T00:00:00Z"
-  },
-  {
-   "version": "3.2.0",
-   "releaseDateString": "2022-12-08T00:00:00Z"
-  },
-  {
-   "version": "3.1.6",
-   "releaseDateString": "2022-11-08T00:00:00Z"
-  }
- ],
- "php-phalcon": [
-  {
-   "version": "5.6.2",
-   "releaseDateString": "2024-03-14T00:00:00Z"
-  },
-  {
-   "version": "5.6.1",
-   "releaseDateString": "2024-02-08T00:00:00Z"
-  },
-  {
-   "version": "5.6.0",
-   "releaseDateString": "2024-01-09T00:00:00Z"
-  },
-  {
-   "version": "5.5.0",
-   "releaseDateString": "2023-12-25T00:00:00Z"
-  },
-  {
-   "version": "5.4.0",
-   "releaseDateString": "2023-10-25T00:00:00Z"
-  },
-  {
-   "version": "5.3.1",
-   "releaseDateString": "2023-09-12T00:00:00Z"
-  },
-  {
-   "version": "5.3.0",
-   "releaseDateString": "2023-08-15T00:00:00Z"
-  },
-  {
-   "version": "5.2.3",
-   "releaseDateString": "2023-07-26T00:00:00Z"
-  },
-  {
-   "version": "5.2.2",
-   "releaseDateString": "2023-06-18T00:00:00Z"
-  },
-  {
-   "version": "5.2.1",
-   "releaseDateString": "2023-02-28T00:00:00Z"
-  },
-  {
-   "version": "5.2.0",
-   "releaseDateString": "2023-02-27T00:00:00Z"
-  },
-  {
-   "version": "5.1.4",
-   "releaseDateString": "2023-01-10T00:00:00Z"
-  },
-  {
-   "version": "5.1.3",
-   "releaseDateString": "2022-12-25T00:00:00Z"
-  },
-  {
-   "version": "5.1.2",
-   "releaseDateString": "2022-12-01T00:00:00Z"
-  },
-  {
-   "version": "5.1.1",
-   "releaseDateString": "2022-11-13T00:00:00Z"
-  },
-  {
-   "version": "5.1.0",
-   "releaseDateString": "2022-11-01T00:00:00Z"
-  },
-  {
-   "version": "5.0.5",
-   "releaseDateString": "2022-10-24T00:00:00Z"
-  },
-  {
-   "version": "5.0.4",
-   "releaseDateString": "2022-10-18T00:00:00Z"
-  },
-  {
-   "version": "5.0.3",
-   "releaseDateString": "2022-10-06T00:00:00Z"
-  }
- ],
- "php-sqlsrv": [
-  {
-   "version": "5.12.0",
-   "releaseDateString": "2024-01-31T11:13:00Z"
-  },
-  {
-   "version": "5.11.1",
-   "releaseDateString": "2023-09-06T05:39:00Z"
-  },
-  {
-   "version": "5.11.0",
-   "releaseDateString": "2023-03-07T05:32:00Z"
-  }
- ],
- "m4": [
-  {
-   "version": "1.4.19",
-   "releaseDateString": "2021-05-28T17:55:00Z"
-  },
-  {
-   "version": "1.4.18",
-   "releaseDateString": "2016-12-31T17:39:00Z"
-  },
-  {
-   "version": "1.4.17",
-   "releaseDateString": "2013-09-22T03:11:00Z"
-  },
-  {
-   "version": "1.4.16",
-   "releaseDateString": "2011-03-01T14:45:00Z"
-  }
- ],
- "make": [
-  {
-   "version": "4.4.1",
-   "releaseDateString": "2023-02-26T15:06:00Z"
-  },
-  {
-   "version": "4.4",
-   "releaseDateString": "2022-10-31T02:49:00Z"
-  }
- ],
- "libmemcached": [
-  {
-   "version": "1.0.18",
-   "releaseDateString": "2014-02-09T00:00:00Z"
-  }
- ],
- "wget": [
-  {
-   "version": "1.24.5",
-   "releaseDateString": "2024-03-10T10:12:00Z"
-  },
-  {
-   "version": "1.21.4",
-   "releaseDateString": "2023-05-10T21:05:00Z"
-  }
- ],
  "haproxy": [
+  {
+   "version": "2.9.7",
+   "releaseDateString": "2024-04-05T18:23:00Z"
+  },
   {
    "version": "2.9.6",
    "releaseDateString": "2024-02-26T17:44:00Z"
@@ -693,7 +451,177 @@
    "releaseDateString": "2022-09-03T02:41:00Z"
   }
  ],
+ "java": [
+  {
+   "version": "22.0.1",
+   "releaseDateString": "2024-04-16T00:00:00Z"
+  },
+  {
+   "version": "21.0.3",
+   "releaseDateString": "2024-04-16T00:00:00Z"
+  },
+  {
+   "version": "17.0.11",
+   "releaseDateString": "2024-04-16T00:00:00Z"
+  },
+  {
+   "version": "11.0.23",
+   "releaseDateString": "2024-04-16T00:00:00Z"
+  },
+  {
+   "version": "22",
+   "releaseDateString": "2024-03-19T00:00:00Z"
+  },
+  {
+   "version": "21.0.2",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
+   "version": "17.0.10",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
+   "version": "11.0.22",
+   "releaseDateString": "2024-01-16T00:00:00Z"
+  },
+  {
+   "version": "21.0.1",
+   "releaseDateString": "2023-10-17T00:00:00Z"
+  },
+  {
+   "version": "17.0.9",
+   "releaseDateString": "2023-10-17T00:00:00Z"
+  },
+  {
+   "version": "11.0.21",
+   "releaseDateString": "2023-10-17T00:00:00Z"
+  },
+  {
+   "version": "21",
+   "releaseDateString": "2023-09-19T00:00:00Z"
+  },
+  {
+   "version": "20.0.2",
+   "releaseDateString": "2023-07-18T00:00:00Z"
+  },
+  {
+   "version": "17.0.8",
+   "releaseDateString": "2023-07-18T00:00:00Z"
+  },
+  {
+   "version": "11.0.20",
+   "releaseDateString": "2023-07-18T00:00:00Z"
+  },
+  {
+   "version": "20.0.1",
+   "releaseDateString": "2023-04-18T00:00:00Z"
+  },
+  {
+   "version": "17.0.7",
+   "releaseDateString": "2023-04-18T00:00:00Z"
+  },
+  {
+   "version": "11.0.19",
+   "releaseDateString": "2023-04-18T00:00:00Z"
+  },
+  {
+   "version": "20",
+   "releaseDateString": "2023-03-21T00:00:00Z"
+  },
+  {
+   "version": "19.0.2",
+   "releaseDateString": "2023-01-17T00:00:00Z"
+  },
+  {
+   "version": "17.0.6",
+   "releaseDateString": "2023-01-17T00:00:00Z"
+  },
+  {
+   "version": "11.0.18",
+   "releaseDateString": "2023-01-17T00:00:00Z"
+  },
+  {
+   "version": "19.0.1",
+   "releaseDateString": "2022-10-18T00:00:00Z"
+  },
+  {
+   "version": "17.0.5",
+   "releaseDateString": "2022-10-18T00:00:00Z"
+  },
+  {
+   "version": "11.0.17",
+   "releaseDateString": "2022-10-18T00:00:00Z"
+  },
+  {
+   "version": "13.0.1",
+   "releaseDateString": "2019-10-15T00:00:00Z"
+  },
+  {
+   "version": "11.0.5",
+   "releaseDateString": "2019-10-15T00:00:00Z"
+  },
+  {
+   "version": "8.0.231",
+   "releaseDateString": "2019-10-15T00:00:00Z"
+  },
+  {
+   "version": "7.0.241",
+   "releaseDateString": "2019-10-15T00:00:00Z"
+  },
+  {
+   "version": "19",
+   "releaseDateString": "2022-09-20T00:00:00Z"
+  }
+ ],
+ "jq": [
+  {
+   "version": "1.7.1",
+   "releaseDateString": "2023-12-14T12:50:00Z"
+  },
+  {
+   "version": "1.7",
+   "releaseDateString": "2023-09-07T12:35:00Z"
+  }
+ ],
+ "libmemcached": [
+  {
+   "version": "1.0.18",
+   "releaseDateString": "2014-02-09T00:00:00Z"
+  }
+ ],
+ "m4": [
+  {
+   "version": "1.4.19",
+   "releaseDateString": "2021-05-28T17:55:00Z"
+  },
+  {
+   "version": "1.4.18",
+   "releaseDateString": "2016-12-31T17:39:00Z"
+  },
+  {
+   "version": "1.4.17",
+   "releaseDateString": "2013-09-22T03:11:00Z"
+  },
+  {
+   "version": "1.4.16",
+   "releaseDateString": "2011-03-01T14:45:00Z"
+  }
+ ],
+ "make": [
+  {
+   "version": "4.4.1",
+   "releaseDateString": "2023-02-26T15:06:00Z"
+  },
+  {
+   "version": "4.4",
+   "releaseDateString": "2022-10-31T02:49:00Z"
+  }
+ ],
  "openssl": [
+  {
+   "version": "3.3.0",
+   "releaseDateString": "2024-04-09T12:26:08Z"
+  },
   {
    "version": "3.2.1",
    "releaseDateString": "2024-01-30T14:03:52Z"
@@ -783,14 +711,148 @@
    "releaseDateString": "2018-09-11T13:21:29Z"
   }
  ],
- "jq": [
+ "php-phalcon": [
   {
-   "version": "1.7.1",
-   "releaseDateString": "2023-12-14T12:50:00Z"
+   "version": "5.6.2",
+   "releaseDateString": "2024-03-14T00:00:00Z"
   },
   {
-   "version": "1.7",
-   "releaseDateString": "2023-09-07T12:35:00Z"
+   "version": "5.6.1",
+   "releaseDateString": "2024-02-08T00:00:00Z"
+  },
+  {
+   "version": "5.6.0",
+   "releaseDateString": "2024-01-09T00:00:00Z"
+  },
+  {
+   "version": "5.5.0",
+   "releaseDateString": "2023-12-25T00:00:00Z"
+  },
+  {
+   "version": "5.4.0",
+   "releaseDateString": "2023-10-25T00:00:00Z"
+  },
+  {
+   "version": "5.3.1",
+   "releaseDateString": "2023-09-12T00:00:00Z"
+  },
+  {
+   "version": "5.3.0",
+   "releaseDateString": "2023-08-15T00:00:00Z"
+  },
+  {
+   "version": "5.2.3",
+   "releaseDateString": "2023-07-26T00:00:00Z"
+  },
+  {
+   "version": "5.2.2",
+   "releaseDateString": "2023-06-18T00:00:00Z"
+  },
+  {
+   "version": "5.2.1",
+   "releaseDateString": "2023-02-28T00:00:00Z"
+  },
+  {
+   "version": "5.2.0",
+   "releaseDateString": "2023-02-27T00:00:00Z"
+  },
+  {
+   "version": "5.1.4",
+   "releaseDateString": "2023-01-10T00:00:00Z"
+  },
+  {
+   "version": "5.1.3",
+   "releaseDateString": "2022-12-25T00:00:00Z"
+  },
+  {
+   "version": "5.1.2",
+   "releaseDateString": "2022-12-01T00:00:00Z"
+  },
+  {
+   "version": "5.1.1",
+   "releaseDateString": "2022-11-13T00:00:00Z"
+  },
+  {
+   "version": "5.1.0",
+   "releaseDateString": "2022-11-01T00:00:00Z"
+  },
+  {
+   "version": "5.0.5",
+   "releaseDateString": "2022-10-24T00:00:00Z"
+  },
+  {
+   "version": "5.0.4",
+   "releaseDateString": "2022-10-18T00:00:00Z"
+  },
+  {
+   "version": "5.0.3",
+   "releaseDateString": "2022-10-06T00:00:00Z"
+  }
+ ],
+ "php-sqlsrv": [
+  {
+   "version": "5.12.0",
+   "releaseDateString": "2024-01-31T11:13:00Z"
+  },
+  {
+   "version": "5.11.1",
+   "releaseDateString": "2023-09-06T05:39:00Z"
+  },
+  {
+   "version": "5.11.0",
+   "releaseDateString": "2023-03-07T05:32:00Z"
+  }
+ ],
+ "php-xdebug": [
+  {
+   "version": "3.3.2",
+   "releaseDateString": "2024-04-15T00:00:00Z"
+  },
+  {
+   "version": "3.3.1",
+   "releaseDateString": "2023-12-14T00:00:00Z"
+  },
+  {
+   "version": "3.3.0",
+   "releaseDateString": "2023-11-30T00:00:00Z"
+  },
+  {
+   "version": "3.2.2",
+   "releaseDateString": "2023-07-14T00:00:00Z"
+  },
+  {
+   "version": "3.2.1",
+   "releaseDateString": "2023-03-21T00:00:00Z"
+  },
+  {
+   "version": "3.2.0",
+   "releaseDateString": "2022-12-08T00:00:00Z"
+  },
+  {
+   "version": "3.1.6",
+   "releaseDateString": "2022-11-08T00:00:00Z"
+  }
+ ],
+ "pkg-config": [
+  {
+   "version": "0.29.2",
+   "releaseDateString": "2017-03-20T17:08:00Z"
+  }
+ ],
+ "sed": [
+  {
+   "version": "4.9",
+   "releaseDateString": "2022-11-06T16:52:00Z"
+  }
+ ],
+ "tar": [
+  {
+   "version": "1.35",
+   "releaseDateString": "2023-07-18T03:16:00Z"
+  },
+  {
+   "version": "1.34",
+   "releaseDateString": "2021-02-13T06:32:00Z"
   }
  ],
  "unixodbc": [
@@ -801,6 +863,16 @@
   {
    "version": "2.3.11",
    "releaseDateString": "2022-05-02T00:00:00Z"
+  }
+ ],
+ "wget": [
+  {
+   "version": "1.24.5",
+   "releaseDateString": "2024-03-10T10:12:00Z"
+  },
+  {
+   "version": "1.21.4",
+   "releaseDateString": "2023-05-10T21:05:00Z"
   }
  ]
 }

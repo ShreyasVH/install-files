@@ -6,7 +6,7 @@ export PATH=
 
 export VERSION_MAP_PATH=
 
-# node 18.16.0
+# node 21.7.3
 export PATH=
 
 export green='\e[32m'
