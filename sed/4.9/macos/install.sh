@@ -1,0 +1,53 @@
+FOLDER_NAME=sed
+VERSION=4.9
+
+cd $INSTALL_FILES_DIR
+
+MAKE_FOLDER_NAME=make
+MAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAKE_FOLDER_NAME" '.[$folder][$version][$name]')
+
+TAR_FOLDER_NAME=tar
+TAR_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$TAR_FOLDER_NAME" '.[$folder][$version][$name]')
+
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sed" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
+
+	bash $INSTALL_FILES_DIR/$MAKE_FOLDER_NAME/$MAKE_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$TAR_FOLDER_NAME/$TAR_VERSION/macos/install.sh
+
+	export PATH=$HOME/programs/$MAKE_FOLDER_NAME/$MAKE_VERSION/bin:$PATH
+	# export PATH=$HOME/programs/$TAR_FOLDER_NAME/$TAR_VERSION/bin:$PATH
+	echo $USER_PASSWORD | sudo -S -p '' ln -s /usr/bin/sed /usr/local/binaries/sed
+
+	cd $HOME/sources/$FOLDER_NAME
+
+	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+
+	printf "\t${bold}${green}Downloading source code${clear}\n"
+	ARCHIVE_FILE="sed-$VERSION.tar.gz"
+	wget -q --show-progress "https://ftp.gnu.org/gnu/sed/$ARCHIVE_FILE"
+	printf "\t${bold}${green}Extracting source code${clear}\n"
+	/usr/bin/tar -xf $ARCHIVE_FILE
+	mv "sed-"$VERSION $VERSION
+	cd $VERSION
+	printf "\t${bold}${green}Configuring${clear}\n"
+	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
+
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sed" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
+
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
+
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
+	fi
+	echo $USER_PASSWORD | sudo -S -p '' rm /usr/local/binaries/sed
+fi
+
+cd $HOME/install-files
