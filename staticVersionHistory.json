@@ -1,6 +1,70 @@
 {
  "dotnet-core": [
   {
+   "version": "8.0.301",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "8.0.206",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "8.0.106",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "7.0.410",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "7.0.317",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "7.0.120",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "6.0.423",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "6.0.131",
+   "releaseDateString": "2024-05-29T22:08:00Z"
+  },
+  {
+   "version": "8.0.300",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "8.0.205",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "8.0.105",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "6.0.130",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "6.0.422",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "7.0.409",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "7.0.316",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
+   "version": "7.0.119",
+   "releaseDateString": "2024-05-14T22:23:00Z"
+  },
+  {
    "version": "6.0.421",
    "releaseDateString": "2024-04-10T12:03:00Z"
   },
@@ -305,7 +369,35 @@
    "releaseDateString": "2023-06-13T17:27:34Z"
   }
  ],
+ "gcc": [
+  {
+   "version": "14.1.0",
+   "releaseDateString": "2024-05-07T04:13:00Z"
+  }
+ ],
+ "gmp": [
+  {
+   "version": "6.3.0",
+   "releaseDateString": "2023-07-30T09:36:00Z"
+  },
+  {
+   "version": "6.2.1",
+   "releaseDateString": "2020-11-14T15:12:00Z"
+  }
+ ],
  "haproxy": [
+  {
+   "version": "3.0.2",
+   "releaseDateString": "2024-06-14T13:01:00Z"
+  },
+  {
+   "version": "3.0.1",
+   "releaseDateString": "2024-06-10T14:16:00Z"
+  },
+  {
+   "version": "3.0.0",
+   "releaseDateString": "2024-05-29T13:11:00Z"
+  },
   {
    "version": "2.9.7",
    "releaseDateString": "2024-04-05T18:23:00Z"
@@ -617,7 +709,39 @@
    "releaseDateString": "2022-10-31T02:49:00Z"
   }
  ],
+ "mpc": [
+  {
+   "version": "1.3.1",
+   "releaseDateString": "2022-12-16T09:35:00Z"
+  }
+ ],
+ "mpfr": [
+  {
+   "version": "4.2.1",
+   "releaseDateString": "2023-08-22T07:27:00Z"
+  },
+  {
+   "version": "4.2.0",
+   "releaseDateString": "2023-01-06T10:04:00Z"
+  }
+ ],
  "openssl": [
+  {
+   "version": "3.3.1",
+   "releaseDateString": "2024-06-04T15:15:27Z"
+  },
+  {
+   "version": "3.2.2",
+   "releaseDateString": "2024-06-04T15:15:27Z"
+  },
+  {
+   "version": "3.1.6",
+   "releaseDateString": "2024-06-04T15:15:27Z"
+  },
+  {
+   "version": "3.0.14",
+   "releaseDateString": "2024-06-04T15:15:27Z"
+  },
   {
    "version": "3.3.0",
    "releaseDateString": "2024-04-09T12:26:08Z"
@@ -712,6 +836,10 @@
   }
  ],
  "php-phalcon": [
+  {
+   "version": "5.7.0",
+   "releaseDateString": "2024-05-20T00:00:00Z"
+  },
   {
    "version": "5.6.2",
    "releaseDateString": "2024-03-14T00:00:00Z"

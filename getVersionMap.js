@@ -10,7 +10,9 @@ const getDependencyVersions = require('./getDependencyVersionsV2.js').getDepende
 
 	const versionMap = {};
 	for (const [programName, details] of Object.entries(programData)) {
+		console.log(programName);
 		if (details.hasOwnProperty('dependencies') && versionHistory.hasOwnProperty(programName)) {
+			// console.log(versionHistory[programName].length);
 			for (const versionDetails of versionHistory[programName]) {
 				// if ((new Date(versionDetails.releaseDateString)).getTime() > ((new Date()).getTime() - 365 * 24 * 3600 * 1000)) {
 				// console.log(programName);
@@ -19,6 +21,7 @@ const getDependencyVersions = require('./getDependencyVersionsV2.js').getDepende
 					}
 					
 					const version = versionDetails.version;
+					console.log(version);
 					versionMap[programName][version] = await getDependencyVersions(programName, version);
 				// }
 			}

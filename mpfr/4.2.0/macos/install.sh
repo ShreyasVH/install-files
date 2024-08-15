@@ -5,7 +5,6 @@ cd $INSTALL_FILES_DIR
 
 GMP_FOLDER_NAME=gmp
 GMP_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GMP_FOLDER_NAME" '.[$folder][$version][$name]')
-printf $GMP_VERSION
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libmpfr.dylib" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1

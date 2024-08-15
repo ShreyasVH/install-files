@@ -1,6 +1,14 @@
 {
  "apache": [
   {
+   "version": "2.4.61",
+   "releaseDateString": "2024-07-03T13:45:40Z"
+  },
+  {
+   "version": "2.4.60",
+   "releaseDateString": "2024-07-01T11:27:58Z"
+  },
+  {
    "version": "2.4.59",
    "releaseDateString": "2024-04-04T13:33:58Z"
   },
@@ -1241,6 +1249,34 @@
  ],
  "cmake": [
   {
+   "version": "3.30.0",
+   "releaseDateString": "2024-07-02T15:14:01Z"
+  },
+  {
+   "version": "3.29.6",
+   "releaseDateString": "2024-06-17T19:19:15Z"
+  },
+  {
+   "version": "3.29.5",
+   "releaseDateString": "2024-06-06T13:24:37Z"
+  },
+  {
+   "version": "3.29.4",
+   "releaseDateString": "2024-06-03T19:05:02Z"
+  },
+  {
+   "version": "3.28.6",
+   "releaseDateString": "2024-06-03T18:16:19Z"
+  },
+  {
+   "version": "3.29.3",
+   "releaseDateString": "2024-05-07T17:26:40Z"
+  },
+  {
+   "version": "3.28.5",
+   "releaseDateString": "2024-05-07T13:18:24Z"
+  },
+  {
    "version": "3.29.2",
    "releaseDateString": "2024-04-11T14:42:49Z"
   },
@@ -2022,6 +2058,38 @@
   }
  ],
  "cockroach": [
+  {
+   "version": "24.1.1",
+   "releaseDateString": "2024-06-13T14:44:27Z"
+  },
+  {
+   "version": "23.2.6",
+   "releaseDateString": "2024-06-13T01:30:18Z"
+  },
+  {
+   "version": "23.1.23",
+   "releaseDateString": "2024-06-11T16:14:35Z"
+  },
+  {
+   "version": "23.1.22",
+   "releaseDateString": "2024-05-21T14:18:41Z"
+  },
+  {
+   "version": "24.1.0",
+   "releaseDateString": "2024-05-15T19:56:00Z"
+  },
+  {
+   "version": "23.2.5",
+   "releaseDateString": "2024-05-03T21:34:33Z"
+  },
+  {
+   "version": "23.1.21",
+   "releaseDateString": "2024-04-29T13:15:57Z"
+  },
+  {
+   "version": "23.1.20",
+   "releaseDateString": "2024-04-29T07:35:19Z"
+  },
   {
    "version": "23.1.19",
    "releaseDateString": "2024-04-17T17:14:29Z"
@@ -2857,6 +2925,22 @@
  ],
  "composer": [
   {
+   "version": "2.7.7",
+   "releaseDateString": "2024-06-10T20:11:13Z"
+  },
+  {
+   "version": "2.2.24",
+   "releaseDateString": "2024-06-10T20:51:52Z"
+  },
+  {
+   "version": "2.7.6",
+   "releaseDateString": "2024-05-04T21:03:15Z"
+  },
+  {
+   "version": "2.7.5",
+   "releaseDateString": "2024-05-03T14:23:40Z"
+  },
+  {
    "version": "2.7.4",
    "releaseDateString": "2024-04-22T19:17:04Z"
   },
@@ -3526,6 +3610,10 @@
   }
  ],
  "curl": [
+  {
+   "version": "8.8.0",
+   "releaseDateString": "2024-05-22T05:54:44Z"
+  },
   {
    "version": "8.7.1",
    "releaseDateString": "2024-03-27T08:03:02Z"
@@ -4237,6 +4325,10 @@
  ],
  "e2fsprogs": [
   {
+   "version": "1.47.1",
+   "releaseDateString": "2024-05-21T03:03:42Z"
+  },
+  {
    "version": "1.47.0",
    "releaseDateString": "2023-02-07T03:32:20Z"
   },
@@ -4522,6 +4614,34 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "8.14.2",
+   "releaseDateString": "2024-07-01T09:30:01Z"
+  },
+  {
+   "version": "7.17.22",
+   "releaseDateString": "2024-06-13T14:40:50Z"
+  },
+  {
+   "version": "8.14.1",
+   "releaseDateString": "2024-06-12T14:37:40Z"
+  },
+  {
+   "version": "8.14.0",
+   "releaseDateString": "2024-06-05T13:41:27Z"
+  },
+  {
+   "version": "8.13.4",
+   "releaseDateString": "2024-05-14T09:46:40Z"
+  },
+  {
+   "version": "8.13.3",
+   "releaseDateString": "2024-05-03T10:43:03Z"
+  },
+  {
+   "version": "7.17.21",
+   "releaseDateString": "2024-05-03T10:30:00Z"
+  },
   {
    "version": "7.17.20",
    "releaseDateString": "2024-04-10T13:55:40Z"
@@ -5941,6 +6061,22 @@
  ],
  "elixir": [
   {
+   "version": "1.17.1",
+   "releaseDateString": "2024-06-18T11:11:00Z"
+  },
+  {
+   "version": "1.17.0",
+   "releaseDateString": "2024-06-12T10:23:37Z"
+  },
+  {
+   "version": "1.16.3",
+   "releaseDateString": "2024-05-20T22:14:25Z"
+  },
+  {
+   "version": "1.15.8",
+   "releaseDateString": "2024-05-20T22:16:44Z"
+  },
+  {
    "version": "1.16.2",
    "releaseDateString": "2024-03-10T10:54:45Z"
   },
@@ -6430,6 +6566,14 @@
   }
  ],
  "erlang": [
+  {
+   "version": "27.0",
+   "releaseDateString": "2024-05-17T12:25:58Z"
+  },
+  {
+   "version": "26.2.5",
+   "releaseDateString": "2024-05-02T13:07:57Z"
+  },
   {
    "version": "26.2.4",
    "releaseDateString": "2024-04-12T09:14:59Z"
@@ -7365,6 +7509,14 @@
  ],
  "geos": [
   {
+   "version": "3.12.2",
+   "releaseDateString": "2024-06-05T20:01:54Z"
+  },
+  {
+   "version": "3.11.4",
+   "releaseDateString": "2024-06-05T20:16:44Z"
+  },
+  {
    "version": "3.10.6",
    "releaseDateString": "2023-11-12T02:47:47Z"
   },
@@ -7820,6 +7972,30 @@
   }
  ],
  "go": [
+  {
+   "version": "1.22.5",
+   "releaseDateString": "2024-07-02T18:51:45Z"
+  },
+  {
+   "version": "1.21.12",
+   "releaseDateString": "2024-07-02T18:51:48Z"
+  },
+  {
+   "version": "1.22.4",
+   "releaseDateString": "2024-06-04T18:08:59Z"
+  },
+  {
+   "version": "1.21.11",
+   "releaseDateString": "2024-06-04T18:11:01Z"
+  },
+  {
+   "version": "1.22.3",
+   "releaseDateString": "2024-05-07T16:00:41Z"
+  },
+  {
+   "version": "1.21.10",
+   "releaseDateString": "2024-05-07T16:00:50Z"
+  },
   {
    "version": "1.22.2",
    "releaseDateString": "2024-04-03T15:35:18Z"
@@ -8664,6 +8840,34 @@
   }
  ],
  "kibana": [
+  {
+   "version": "8.14.2",
+   "releaseDateString": "2024-07-01T15:11:47Z"
+  },
+  {
+   "version": "7.17.22",
+   "releaseDateString": "2024-06-13T14:40:50Z"
+  },
+  {
+   "version": "8.14.1",
+   "releaseDateString": "2024-06-12T14:37:40Z"
+  },
+  {
+   "version": "7.17.21",
+   "releaseDateString": "2024-05-03T10:30:00Z"
+  },
+  {
+   "version": "8.14.0",
+   "releaseDateString": "2024-06-05T13:41:27Z"
+  },
+  {
+   "version": "8.13.4",
+   "releaseDateString": "2024-05-14T09:46:40Z"
+  },
+  {
+   "version": "8.13.3",
+   "releaseDateString": "2024-05-03T10:43:03Z"
+  },
   {
    "version": "7.17.20",
    "releaseDateString": "2024-04-10T13:55:40Z"
@@ -9871,6 +10075,14 @@
  ],
  "kotlin": [
   {
+   "version": "1.9.24",
+   "releaseDateString": "2024-05-03T12:14:11Z"
+  },
+  {
+   "version": "2.0.0",
+   "releaseDateString": "2024-05-16T20:18:04Z"
+  },
+  {
    "version": "1.9.23",
    "releaseDateString": "2024-03-06T12:05:01Z"
   },
@@ -10615,6 +10827,10 @@
  ],
  "libgcrypt": [
   {
+   "version": "1.11.0",
+   "releaseDateString": "2024-06-19T09:29:06Z"
+  },
+  {
    "version": "1.8.11",
    "releaseDateString": "2023-11-16T09:42:24Z"
   },
@@ -10848,6 +11064,14 @@
   }
  ],
  "libgpg-error": [
+  {
+   "version": "1.50",
+   "releaseDateString": "2024-06-19T08:50:23Z"
+  },
+  {
+   "version": "1.49",
+   "releaseDateString": "2024-04-25T08:21:58Z"
+  },
   {
    "version": "1.48",
    "releaseDateString": "2024-02-23T13:22:17Z"
@@ -11311,6 +11535,10 @@
  ],
  "libtool": [
   {
+   "version": "2.5.0",
+   "releaseDateString": "2024-05-13T17:36:59Z"
+  },
+  {
    "version": "2.4.7",
    "releaseDateString": "2022-03-17T02:45:04Z"
   },
@@ -11360,6 +11588,30 @@
   }
  ],
  "libxml2": [
+  {
+   "version": "2.13.2",
+   "releaseDateString": "2024-07-04T15:30:07Z"
+  },
+  {
+   "version": "2.13.1",
+   "releaseDateString": "2024-06-19T10:24:56Z"
+  },
+  {
+   "version": "2.13.0",
+   "releaseDateString": "2024-06-12T13:52:51Z"
+  },
+  {
+   "version": "2.12.8",
+   "releaseDateString": "2024-06-12T11:12:50Z"
+  },
+  {
+   "version": "2.12.7",
+   "releaseDateString": "2024-05-13T09:53:04Z"
+  },
+  {
+   "version": "2.11.8",
+   "releaseDateString": "2024-05-13T10:04:46Z"
+  },
   {
    "version": "2.12.6",
    "releaseDateString": "2024-03-15T11:32:33Z"
@@ -11526,6 +11778,14 @@
   }
  ],
  "maven": [
+  {
+   "version": "3.9.8",
+   "releaseDateString": "2024-06-13T08:22:38Z"
+  },
+  {
+   "version": "3.9.7",
+   "releaseDateString": "2024-05-22T09:48:33Z"
+  },
   {
    "version": "3.9.6",
    "releaseDateString": "2023-11-28T10:01:03Z"
@@ -11728,6 +11988,38 @@
   }
  ],
  "mongo": [
+  {
+   "version": "7.0.12",
+   "releaseDateString": "2024-06-25T17:20:51Z"
+  },
+  {
+   "version": "6.0.16",
+   "releaseDateString": "2024-06-25T20:46:37Z"
+  },
+  {
+   "version": "7.3.3",
+   "releaseDateString": "2024-06-11T01:57:22Z"
+  },
+  {
+   "version": "7.0.10",
+   "releaseDateString": "2024-05-06T21:06:03Z"
+  },
+  {
+   "version": "7.3.2",
+   "releaseDateString": "2024-04-29T22:42:21Z"
+  },
+  {
+   "version": "7.0.9",
+   "releaseDateString": "2024-04-24T15:44:36Z"
+  },
+  {
+   "version": "5.0.27",
+   "releaseDateString": "2024-06-04T02:28:00Z"
+  },
+  {
+   "version": "7.0.11",
+   "releaseDateString": "2024-05-21T16:48:44Z"
+  },
   {
    "version": "6.0.15",
    "releaseDateString": "2024-04-15T19:40:16Z"
@@ -13559,6 +13851,10 @@
  ],
  "mongo-cli-tools": [
   {
+   "version": "100.9.5",
+   "releaseDateString": "2024-06-17T14:34:15Z"
+  },
+  {
    "version": "100.9.4",
    "releaseDateString": "2023-12-07T16:15:11Z"
   },
@@ -13704,6 +14000,30 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "2.2.10",
+   "releaseDateString": "2024-06-21T22:44:29Z"
+  },
+  {
+   "version": "2.2.9",
+   "releaseDateString": "2024-06-14T10:11:05Z"
+  },
+  {
+   "version": "2.2.8",
+   "releaseDateString": "2024-06-13T10:55:22Z"
+  },
+  {
+   "version": "2.2.7",
+   "releaseDateString": "2024-06-13T10:55:22Z"
+  },
+  {
+   "version": "2.2.6",
+   "releaseDateString": "2024-05-16T17:24:32Z"
+  },
+  {
+   "version": "2.2.5",
+   "releaseDateString": "2024-04-24T13:54:19Z"
+  },
   {
    "version": "2.2.4",
    "releaseDateString": "2024-04-15T11:37:12Z"
@@ -14162,6 +14482,26 @@
   }
  ],
  "mysql": [
+  {
+   "version": "8.0.38",
+   "releaseDateString": "2024-06-13T05:42:48Z"
+  },
+  {
+   "version": "9.0.0",
+   "releaseDateString": "2024-06-07T07:15:03Z"
+  },
+  {
+   "version": "8.4.1",
+   "releaseDateString": "2024-06-03T08:42:06Z"
+  },
+  {
+   "version": "8.0.37",
+   "releaseDateString": "2024-05-02T12:03:28Z"
+  },
+  {
+   "version": "8.4.0",
+   "releaseDateString": "2024-04-10T06:20:46Z"
+  },
   {
    "version": "8.3.0",
    "releaseDateString": "2023-12-14T14:49:18Z"
@@ -15825,6 +16165,26 @@
  ],
  "neo4j": [
   {
+   "version": "4.4.35",
+   "releaseDateString": "2024-07-04T09:50:21Z"
+  },
+  {
+   "version": "5.20.0",
+   "releaseDateString": "2024-05-31T09:34:21Z"
+  },
+  {
+   "version": "4.4.34",
+   "releaseDateString": "2024-05-14T12:24:11Z"
+  },
+  {
+   "version": "4.4.33",
+   "releaseDateString": "2024-04-24T09:38:03Z"
+  },
+  {
+   "version": "5.19.0",
+   "releaseDateString": "2024-04-12T11:16:23Z"
+  },
+  {
    "version": "4.4.32",
    "releaseDateString": "2024-03-26T10:01:42Z"
   },
@@ -16966,6 +17326,14 @@
   }
  ],
  "nginx": [
+  {
+   "version": "1.27.0",
+   "releaseDateString": "2024-05-28T13:19:38Z"
+  },
+  {
+   "version": "1.26.1",
+   "releaseDateString": "2024-05-28T13:26:54Z"
+  },
   {
    "version": "1.26.0",
    "releaseDateString": "2024-04-23T13:40:08Z"
@@ -19216,6 +19584,46 @@
   }
  ],
  "node": [
+  {
+   "version": "22.4.0",
+   "releaseDateString": "2024-07-02T08:46:59Z"
+  },
+  {
+   "version": "20.15.0",
+   "releaseDateString": "2024-06-20T15:47:09Z"
+  },
+  {
+   "version": "22.3.0",
+   "releaseDateString": "2024-06-11T18:47:37Z"
+  },
+  {
+   "version": "20.14.0",
+   "releaseDateString": "2024-05-28T16:28:24Z"
+  },
+  {
+   "version": "18.20.3",
+   "releaseDateString": "2024-05-21T11:51:19Z"
+  },
+  {
+   "version": "22.2.0",
+   "releaseDateString": "2024-05-15T18:57:42Z"
+  },
+  {
+   "version": "20.13.1",
+   "releaseDateString": "2024-05-09T10:25:12Z"
+  },
+  {
+   "version": "20.13.0",
+   "releaseDateString": "2024-05-07T15:06:20Z"
+  },
+  {
+   "version": "22.1.0",
+   "releaseDateString": "2024-05-02T13:49:31Z"
+  },
+  {
+   "version": "22.0.0",
+   "releaseDateString": "2024-04-24T18:14:50Z"
+  },
   {
    "version": "21.7.3",
    "releaseDateString": "2024-04-10T16:06:56Z"
@@ -22509,6 +22917,10 @@
  ],
  "pcre2": [
   {
+   "version": "10.44",
+   "releaseDateString": "2024-06-07T14:09:00Z"
+  },
+  {
    "version": "10.43",
    "releaseDateString": "2024-02-16T17:12:25Z"
   },
@@ -22590,6 +23002,10 @@
   }
  ],
  "perl": [
+  {
+   "version": "5.40.0",
+   "releaseDateString": "2024-06-09T14:32:48Z"
+  },
   {
    "version": "5.38.2",
    "releaseDateString": "2023-11-29T16:09:58Z"
@@ -23412,6 +23828,34 @@
   }
  ],
  "php": [
+  {
+   "version": "8.3.9",
+   "releaseDateString": "2024-07-02T14:10:59Z"
+  },
+  {
+   "version": "8.2.21",
+   "releaseDateString": "2024-07-02T12:57:33Z"
+  },
+  {
+   "version": "8.1.29",
+   "releaseDateString": "2024-06-05T06:07:00Z"
+  },
+  {
+   "version": "8.3.8",
+   "releaseDateString": "2024-06-04T14:56:27Z"
+  },
+  {
+   "version": "8.2.20",
+   "releaseDateString": "2024-06-04T13:23:35Z"
+  },
+  {
+   "version": "8.3.7",
+   "releaseDateString": "2024-05-07T16:35:49Z"
+  },
+  {
+   "version": "8.2.19",
+   "releaseDateString": "2024-05-07T14:23:44Z"
+  },
   {
    "version": "8.3.6",
    "releaseDateString": "2024-04-10T14:20:12Z"
@@ -26755,6 +27199,26 @@
  ],
  "postgres": [
   {
+   "version": "16.3",
+   "releaseDateString": "2024-05-06T20:21:25Z"
+  },
+  {
+   "version": "15.7",
+   "releaseDateString": "2024-05-06T20:23:18Z"
+  },
+  {
+   "version": "14.12",
+   "releaseDateString": "2024-05-06T20:24:45Z"
+  },
+  {
+   "version": "13.15",
+   "releaseDateString": "2024-05-06T20:26:10Z"
+  },
+  {
+   "version": "12.19",
+   "releaseDateString": "2024-05-06T20:27:39Z"
+  },
+  {
    "version": "16.2",
    "releaseDateString": "2024-02-05T21:41:37Z"
   },
@@ -27169,6 +27633,10 @@
  ],
  "proj": [
   {
+   "version": "9.4.1",
+   "releaseDateString": "2024-05-27T19:08:24Z"
+  },
+  {
    "version": "9.4.0",
    "releaseDateString": "2024-03-01T16:57:51Z"
   },
@@ -27326,6 +27794,10 @@
   }
  ],
  "python": [
+  {
+   "version": "3.12.4",
+   "releaseDateString": "2024-06-06T18:26:44Z"
+  },
   {
    "version": "3.12.3",
    "releaseDateString": "2024-04-09T08:09:14Z"
@@ -28149,6 +28621,10 @@
  ],
  "redis": [
   {
+   "version": "7.2.5",
+   "releaseDateString": "2024-05-19T06:12:35Z"
+  },
+  {
    "version": "7.2.4",
    "releaseDateString": "2024-01-09T11:51:49Z"
   },
@@ -28927,6 +29403,22 @@
  ],
  "rmq": [
   {
+   "version": "3.13.4",
+   "releaseDateString": "2024-07-03T05:47:10Z"
+  },
+  {
+   "version": "3.13.3",
+   "releaseDateString": "2024-05-31T18:29:38Z"
+  },
+  {
+   "version": "3.12.14",
+   "releaseDateString": "2024-05-05T10:05:11Z"
+  },
+  {
+   "version": "3.13.2",
+   "releaseDateString": "2024-04-30T20:31:44Z"
+  },
+  {
    "version": "3.13.1",
    "releaseDateString": "2024-03-29T06:27:00Z"
   },
@@ -29592,6 +30084,10 @@
   }
  ],
  "rsyslog": [
+  {
+   "version": "8.2406.0",
+   "releaseDateString": "2024-07-01T09:19:48Z"
+  },
   {
    "version": "8.2404.0",
    "releaseDateString": "2024-04-02T11:52:01Z"
@@ -31131,6 +31627,18 @@
  ],
  "ruby": [
   {
+   "version": "3.3.3",
+   "releaseDateString": "2024-06-11T23:54:24Z"
+  },
+  {
+   "version": "3.3.2",
+   "releaseDateString": "2024-05-30T00:23:11Z"
+  },
+  {
+   "version": "3.1.6",
+   "releaseDateString": "2024-05-29T03:54:36Z"
+  },
+  {
    "version": "3.3.1",
    "releaseDateString": "2024-04-23T10:20:14Z"
   },
@@ -31685,6 +32193,10 @@
  ],
  "sbt": [
   {
+   "version": "1.10.0",
+   "releaseDateString": "2024-05-06T03:19:39Z"
+  },
+  {
    "version": "1.9.9",
    "releaseDateString": "2024-02-23T05:37:31Z"
   },
@@ -32151,6 +32663,10 @@
  ],
  "scala": [
   {
+   "version": "3.4.2",
+   "releaseDateString": "2024-05-13T12:45:20Z"
+  },
+  {
    "version": "3.4.1",
    "releaseDateString": "2024-03-27T13:27:52Z"
   },
@@ -32304,6 +32820,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "3.46.0",
+   "releaseDateString": "2024-05-23T13:25:27Z"
+  },
   {
    "version": "3.45.3",
    "releaseDateString": "2024-04-15T13:34:05Z"
@@ -33946,6 +34466,18 @@
   }
  ],
  "memcached": [
+  {
+   "version": "1.6.29",
+   "releaseDateString": "2024-06-29T00:35:49Z"
+  },
+  {
+   "version": "1.6.28",
+   "releaseDateString": "2024-05-31T16:08:18Z"
+  },
+  {
+   "version": "1.6.27",
+   "releaseDateString": "2024-05-06T04:22:50Z"
+  },
   {
    "version": "1.6.26",
    "releaseDateString": "2024-03-27T20:21:53Z"
