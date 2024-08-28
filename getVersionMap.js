@@ -21,7 +21,7 @@ const getDependencyVersions = require('./getDependencyVersionsV2.js').getDepende
 					}
 					
 					const version = versionDetails.version;
-					console.log(version);
+					// console.log(version);
 					versionMap[programName][version] = await getDependencyVersions(programName, version);
 				// }
 			}

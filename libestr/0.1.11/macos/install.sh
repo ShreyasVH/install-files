@@ -12,7 +12,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="libestr-$VERSION.tar.gz"
-	wget -q "http://libestr.adiscon.com/files/download/$ARCHIVE_FILE"
+	wget -q --show-progress "http://libestr.adiscon.com/files/download/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
 	mv "libestr-$VERSION" $VERSION

@@ -1,6 +1,46 @@
 {
  "dotnet-core": [
   {
+   "version": "8.0.401",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "8.0.400",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "8.0.304",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "8.0.108",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "6.0.425",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "6.0.133",
+   "releaseDateString": "2024-08-13T11:23:00Z"
+  },
+  {
+   "version": "8.0.303",
+   "releaseDateString": "2024-07-09T11:18:00Z"
+  },
+  {
+   "version": "8.0.107",
+   "releaseDateString": "2024-07-09T11:18:00Z"
+  },
+  {
+   "version": "6.0.424",
+   "releaseDateString": "2024-07-09T11:18:00Z"
+  },
+  {
+   "version": "6.0.132",
+   "releaseDateString": "2024-07-09T11:18:00Z"
+  },
+  {
    "version": "8.0.301",
    "releaseDateString": "2024-05-29T22:08:00Z"
   },
@@ -387,6 +427,18 @@
  ],
  "haproxy": [
   {
+   "version": "3.0.3",
+   "releaseDateString": "2024-07-11T14:08:00Z"
+  },
+  {
+   "version": "2.9.8",
+   "releaseDateString": "2024-06-11T12:07:00Z"
+  },
+  {
+   "version": "2.9.7",
+   "releaseDateString": "2024-04-05T18:23:00Z"
+  },
+  {
    "version": "3.0.2",
    "releaseDateString": "2024-06-14T13:01:00Z"
   },
@@ -544,6 +596,22 @@
   }
  ],
  "java": [
+  {
+   "version": "22.0.2",
+   "releaseDateString": "2024-07-16T00:00:00Z"
+  },
+  {
+   "version": "21.0.4",
+   "releaseDateString": "2024-07-16T00:00:00Z"
+  },
+  {
+   "version": "17.0.12",
+   "releaseDateString": "2024-07-16T00:00:00Z"
+  },
+  {
+   "version": "11.0.24",
+   "releaseDateString": "2024-07-16T00:00:00Z"
+  },
   {
    "version": "22.0.1",
    "releaseDateString": "2024-04-16T00:00:00Z"
@@ -836,6 +904,10 @@
   }
  ],
  "php-phalcon": [
+  {
+   "version": "5.8.0",
+   "releaseDateString": "2024-07-09T00:00:00Z"
+  },
   {
    "version": "5.7.0",
    "releaseDateString": "2024-05-20T00:00:00Z"

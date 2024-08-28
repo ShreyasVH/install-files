@@ -12,7 +12,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libext2fs.a" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="v$VERSION.tar.gz"
-	wget -q "https://github.com/tytso/e2fsprogs/archive/refs/tags/$ARCHIVE_FILE"
+	wget -q --show-progress "https://github.com/tytso/e2fsprogs/archive/refs/tags/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
 	mv "e2fsprogs-$VERSION" $VERSION
