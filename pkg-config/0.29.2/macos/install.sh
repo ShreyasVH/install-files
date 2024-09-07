@@ -19,7 +19,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	cd $VERSION
 	printf "\t${bold}${green}Configuring${clear}\n"
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	CFLAGS="-Wno-int-conversion" CXXFLAGS="-Wno-int-conversion" ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
