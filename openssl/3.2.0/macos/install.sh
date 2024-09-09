@@ -12,7 +12,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
 	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
-	curl -O "https://www.openssl.org/source/$ARCHIVE_FILE"
+	curl -OL "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
 	tar -xf $ARCHIVE_FILE
 	mv "openssl-$VERSION" $VERSION
