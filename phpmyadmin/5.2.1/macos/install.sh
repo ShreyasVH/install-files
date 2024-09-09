@@ -14,6 +14,8 @@ fi
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/index.php" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
+	bash $INSTALL_FILES_DIR/$PHP_FOLDER_NAME/$PHP_VERSION/macos/install.sh
+
 	cd $HOME/programs/$FOLDER_NAME
 
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
