@@ -163,7 +163,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		echo "extension_dir=$EXTENSION_DIR" >> lib/php.ini
 		echo "" >> lib/php.ini
 
-		echo "error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED" >> lib.php.ini
+		echo "error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED" >> lib/php.ini
 		echo "" >> lib/php.ini
 
 		mkdir tmp
