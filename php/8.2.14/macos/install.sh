@@ -154,6 +154,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		echo "extension_dir=$EXTENSION_DIR" >> lib/php.ini
 		echo "" >> lib/php.ini
 
+		echo "error_reporting = E_ALL & ~E_NOTICE & ~E_DEPRECATED" >> lib.php.ini
+		echo "" >> lib/php.ini
+
 		mkdir tmp
 		pear config-set cache_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp > /dev/null 2>&1
 		pear config-set download_dir $HOME/programs/$FOLDER_NAME/$VERSION/tmp > /dev/null 2>&1
