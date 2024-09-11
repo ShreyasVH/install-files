@@ -24,6 +24,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION:"'$PATH' >> .envrc
 	echo "" >> .envrc
 	direnv allow
+	source .envrc
+
+	dotnet tool install --global dotnet-ef --version 7.0.0
 
 	printf "\t${bold}${green}Clearing${clear}\n"
 	rm "dotnet-sdk-$VERSION-osx-arm64.tar.gz"
