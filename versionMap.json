@@ -2219,6 +2219,10 @@
   }
  },
  "erlang": {
+  "27.1.1": {
+   "openssl": "3.3.2",
+   "perl": "5.40.0"
+  },
   "27.1": {
    "openssl": "3.3.2",
    "perl": "5.40.0"
@@ -4834,6 +4838,9 @@
   }
  },
  "mongo": {
+  "8.0.1": {
+   "mongosh": "2.3.1"
+  },
   "6.0.18": {
    "mongosh": "2.3.1"
   },
@@ -8383,6 +8390,9 @@
   }
  },
  "neo4j": {
+  "5.24.1": {
+   "java": "23"
+  },
   "5.24.0": {
    "java": "23"
   },
@@ -23195,6 +23205,11 @@
   }
  },
  "python": {
+  "3.12.7": {
+   "gettext": "0.22.5",
+   "openssl": "3.3.2",
+   "pkg-config": "0.29.2"
+  },
   "3.11.10": {
    "gettext": "0.22.5",
    "openssl": "3.3.2",
@@ -24257,6 +24272,15 @@
   }
  },
  "redis": {
+  "7.4.1": {
+   "pkg-config": "0.29.2"
+  },
+  "7.2.6": {
+   "pkg-config": "0.29.2"
+  },
+  "6.2.16": {
+   "pkg-config": "0.29.2"
+  },
   "7.4.0": {
    "pkg-config": "0.29.2"
   },
@@ -25735,7 +25759,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.11.0",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3.1",
+   "openssl": "3.3.1"
   },
   "8.2406.0": {
    "curl": "8.8.0",
@@ -25743,7 +25769,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.11.0",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3.1",
+   "openssl": "3.3.1"
   },
   "8.2404.0": {
    "curl": "8.7.1",
@@ -25751,7 +25779,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3.1",
+   "openssl": "3.2.1"
   },
   "8.2402.0": {
    "curl": "8.6.0",
@@ -25759,7 +25789,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3.1",
+   "openssl": "3.2.1"
   },
   "8.2312.0": {
    "curl": "8.5.0",
@@ -25767,7 +25799,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3",
+   "openssl": "3.2.0"
   },
   "8.2310.0": {
    "curl": "8.3.0",
@@ -25775,7 +25809,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.3",
+   "openssl": "3.1.3"
   },
   "8.2308.0": {
    "curl": "8.2.1",
@@ -25783,7 +25819,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.1.2"
   },
   "8.2306.0": {
    "curl": "8.1.2",
@@ -25791,7 +25829,9 @@
    "libestr": "0.1.11",
    "libfastjson": "1.2304.0",
    "libgcrypt": "1.10.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.1.1"
   },
   "8.2304.0": {
    "curl": "8.0.1",
@@ -25799,7 +25839,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9.1",
    "libgcrypt": "1.10.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.1.0"
   },
   "8.2302.0": {
    "curl": "7.88.1",
@@ -25807,7 +25849,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.0.8"
   },
   "8.2212.0": {
    "curl": "7.86.0",
@@ -25815,7 +25859,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.0.7"
   },
   "8.2210.0": {
    "curl": "7.85.0",
@@ -25823,7 +25869,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.13",
+   "openssl": "3.0.5"
   },
   "8.2208.0": {
    "curl": "7.84.0",
@@ -25831,7 +25879,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.12",
+   "openssl": "3.0.5"
   },
   "8.2206.0": {
    "curl": "7.83.1",
@@ -25839,7 +25889,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.12",
+   "openssl": "3.0.3"
   },
   "8.2204.1": {
    "curl": "7.83.0",
@@ -25847,7 +25899,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.12",
+   "openssl": "3.0.3"
   },
   "8.2204.0": {
    "curl": "7.82.0",
@@ -25855,7 +25909,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.12",
+   "openssl": "3.0.2"
   },
   "8.2202.0": {
    "curl": "7.81.0",
@@ -25863,7 +25919,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.10.0",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "3.0.1"
   },
   "8.2112.0": {
    "curl": "7.80.0",
@@ -25871,7 +25929,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "3.0.1"
   },
   "8.2110.0": {
    "curl": "7.79.1",
@@ -25879,7 +25939,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "3.0.0"
   },
   "8.2108.0": {
    "curl": "7.78.0",
@@ -25887,7 +25949,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2106.0": {
    "curl": "7.77.0",
@@ -25895,7 +25959,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2104.0": {
    "curl": "7.76.1",
@@ -25903,7 +25969,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2102.0": {
    "curl": "7.75.0",
@@ -25911,7 +25979,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.9",
    "libgcrypt": "1.9.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2012.0": {
    "curl": "7.73.0",
@@ -25919,7 +25989,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.7",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2010.0": {
    "curl": "7.73.0",
@@ -25927,7 +25999,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.6",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2008.0": {
    "curl": "7.72.0",
@@ -25935,7 +26009,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.6",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2006.0": {
    "curl": "7.71.0",
@@ -25943,7 +26019,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2004.0": {
    "curl": "7.69.1",
@@ -25951,7 +26029,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2002.0": {
    "curl": "7.68.0",
@@ -25959,7 +26039,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.2001.0": {
    "curl": "7.68.0",
@@ -25967,7 +26049,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1911.0": {
    "curl": "7.67.0",
@@ -25975,7 +26059,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1910.0": {
    "curl": "7.66.0",
@@ -25983,7 +26069,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.5",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1908.0": {
    "curl": "7.65.3",
@@ -25991,7 +26079,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1907.0": {
    "curl": "7.65.1",
@@ -25999,7 +26089,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1905.0": {
    "curl": "7.64.1",
@@ -26007,7 +26099,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1904.0": {
    "curl": "7.64.1",
@@ -26015,7 +26109,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1903.0": {
    "curl": "7.64.0",
@@ -26023,7 +26119,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.1901.0": {
    "curl": "7.63.0",
@@ -26031,7 +26129,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.40.0": {
    "curl": "7.62.0",
@@ -26039,7 +26139,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.39.0": {
    "curl": "7.61.1",
@@ -26047,7 +26149,9 @@
    "libestr": "0.1.11",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.4",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.38.0": {
    "curl": "7.61.1",
@@ -26055,7 +26159,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "1.1.1"
   },
   "8.37.0": {
    "curl": "7.61.0",
@@ -26063,7 +26169,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.36.0": {
    "curl": "7.60.0",
@@ -26071,7 +26179,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.3",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.35.0": {
    "curl": "7.59.0",
@@ -26079,7 +26189,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.34.0": {
    "curl": "7.59.0",
@@ -26087,7 +26199,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.33.1": {
    "curl": "7.58.0",
@@ -26095,7 +26209,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.33.0": {
    "curl": "7.58.0",
@@ -26103,7 +26219,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.32.0": {
    "curl": "7.57.0",
@@ -26111,7 +26229,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.8",
    "libgcrypt": "1.8.2",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.31.0": {
    "curl": "7.56.1",
@@ -26119,7 +26239,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.7",
    "libgcrypt": "1.8.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.30.0": {
    "curl": "7.56.0",
@@ -26127,7 +26249,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.7",
    "libgcrypt": "1.8.1",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.29.0": {
    "curl": "7.54.1",
@@ -26135,7 +26259,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.6",
    "libgcrypt": "1.8.0",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.28.0": {
    "curl": "7.54.1",
@@ -26143,7 +26269,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.6",
    "libgcrypt": "1.7.7",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.27.0": {
    "curl": "7.54.0",
@@ -26151,7 +26279,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.5",
    "libgcrypt": "1.7.6",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.26.0": {
    "curl": "7.53.1",
@@ -26159,7 +26289,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.6",
-   "pkg-config": "0.29.2"
+   "pkg-config": "0.29.2",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.25.0": {
    "curl": "7.52.1",
@@ -26167,7 +26299,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "1.2.13": {
    "curl": "7.52.1",
@@ -26175,7 +26309,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.11",
+   "openssl": "No version as per date"
   },
   "8.24.0": {
    "curl": "7.52.1",
@@ -26183,7 +26319,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.10",
+   "openssl": "No version as per date"
   },
   "8.23.0": {
    "curl": "7.51.0",
@@ -26191,7 +26329,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.22.0": {
    "curl": "7.50.3",
@@ -26199,7 +26339,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.21.0": {
    "curl": "7.50.1",
@@ -26207,7 +26349,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.4",
    "libgcrypt": "1.7.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.20.0": {
    "curl": "7.49.1",
@@ -26215,7 +26359,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.7.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.12": {
    "curl": "7.49.1",
@@ -26223,7 +26369,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.7.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.11": {
    "curl": "7.49.1",
@@ -26231,7 +26379,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.7.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.19.0": {
    "curl": "7.49.1",
@@ -26239,7 +26389,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.7.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.18.0": {
    "curl": "7.48.0",
@@ -26247,7 +26399,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.7.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.10": {
    "curl": "7.48.0",
@@ -26255,7 +26409,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.6.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.17.0": {
    "curl": "7.47.1",
@@ -26263,7 +26419,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.2",
    "libgcrypt": "1.6.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.16.0": {
    "curl": "7.46.0",
@@ -26271,7 +26429,9 @@
    "libestr": "0.1.10",
    "libfastjson": "0.99.0",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.15.0": {
    "curl": "7.46.0",
@@ -26279,7 +26439,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.9": {
    "curl": "7.46.0",
@@ -26287,7 +26449,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.14.0": {
    "curl": "7.45.0",
@@ -26295,7 +26459,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.13.0": {
    "curl": "7.44.0",
@@ -26303,7 +26469,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.8": {
    "curl": "7.44.0",
@@ -26311,7 +26479,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.12.0": {
    "curl": "7.43.0",
@@ -26319,7 +26489,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.11.0": {
    "curl": "7.43.0",
@@ -26327,7 +26499,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.10.0": {
    "curl": "7.42.1",
@@ -26335,7 +26509,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.9.0": {
    "curl": "7.41.0",
@@ -26343,7 +26519,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.8.0": {
    "curl": "7.40.0",
@@ -26351,7 +26529,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.7.0": {
    "curl": "7.40.0",
@@ -26359,7 +26539,9 @@
    "libestr": "0.1.10",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.6.0": {
    "curl": "7.39.0",
@@ -26367,7 +26549,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.5.0": {
    "curl": "7.38.0",
@@ -26375,7 +26559,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.4.2": {
    "curl": "7.38.0",
@@ -26383,7 +26569,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.7": {
    "curl": "7.38.0",
@@ -26391,7 +26579,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.6": {
    "curl": "7.38.0",
@@ -26399,7 +26589,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.4.1": {
    "curl": "7.38.0",
@@ -26407,7 +26599,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.5": {
    "curl": "7.38.0",
@@ -26415,7 +26609,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.4": {
    "curl": "7.38.0",
@@ -26423,7 +26619,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.4.0": {
    "curl": "7.37.1",
@@ -26431,7 +26629,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.5": {
    "curl": "7.37.1",
@@ -26439,7 +26639,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.4": {
    "curl": "7.37.0",
@@ -26447,7 +26649,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.3": {
    "curl": "7.37.0",
@@ -26455,7 +26659,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.2.2": {
    "curl": "7.37.0",
@@ -26463,7 +26669,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.2": {
    "curl": "7.36.0",
@@ -26471,7 +26679,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.7": {
    "curl": "7.36.0",
@@ -26479,7 +26689,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.1": {
    "curl": "7.36.0",
@@ -26487,7 +26699,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.2.1": {
    "curl": "7.36.0",
@@ -26495,7 +26709,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.3.0": {
    "curl": "7.36.0",
@@ -26503,7 +26719,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.2.0": {
    "curl": "7.36.0",
@@ -26511,7 +26729,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.3": {
    "curl": "7.36.0",
@@ -26519,7 +26739,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.5": {
    "curl": "7.35.0",
@@ -26527,7 +26749,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.2": {
    "curl": "7.35.0",
@@ -26535,7 +26759,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.4": {
    "curl": "7.35.0",
@@ -26543,7 +26769,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.1": {
    "curl": "7.35.0",
@@ -26551,7 +26779,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.3": {
    "curl": "7.35.0",
@@ -26559,7 +26789,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.6": {
    "curl": "7.35.0",
@@ -26567,7 +26799,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.6.0": {
    "curl": "7.35.0",
@@ -26575,7 +26809,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.10": {
    "curl": "7.35.0",
@@ -26583,7 +26819,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.5": {
    "curl": "7.34.0",
@@ -26591,7 +26829,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.9": {
    "curl": "7.34.0",
@@ -26599,7 +26839,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.4": {
    "curl": "7.34.0",
@@ -26607,7 +26849,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.8": {
    "curl": "7.34.0",
@@ -26615,7 +26859,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.8": {
    "curl": "7.34.0",
@@ -26623,7 +26869,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.2": {
    "curl": "7.34.0",
@@ -26631,7 +26879,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.6.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.7": {
    "curl": "7.33.0",
@@ -26639,7 +26889,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.3": {
    "curl": "7.33.0",
@@ -26647,7 +26899,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.2": {
    "curl": "7.33.0",
@@ -26655,7 +26909,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.7": {
    "curl": "7.33.0",
@@ -26663,7 +26919,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.1": {
    "curl": "7.33.0",
@@ -26671,7 +26929,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "8.1.0": {
    "curl": "7.33.0",
@@ -26679,7 +26939,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.6": {
    "curl": "7.33.0",
@@ -26687,7 +26949,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.6": {
    "curl": "7.33.0",
@@ -26695,7 +26959,9 @@
    "libestr": "0.1.9",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.5": {
    "curl": "7.33.0",
@@ -26703,7 +26969,9 @@
    "libestr": "0.1.7",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.5": {
    "curl": "7.33.0",
@@ -26711,7 +26979,9 @@
    "libestr": "0.1.7",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.4": {
    "curl": "7.32.0",
@@ -26719,7 +26989,9 @@
    "libestr": "0.1.6",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.1": {
    "curl": "7.32.0",
@@ -26727,7 +26999,9 @@
    "libestr": "0.1.6",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.2": {
    "curl": "7.32.0",
@@ -26735,7 +27009,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.3": {
    "curl": "7.32.0",
@@ -26743,7 +27019,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.4": {
    "curl": "7.32.0",
@@ -26751,7 +27029,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.3": {
    "curl": "7.31.0",
@@ -26759,7 +27039,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.2.0": {
    "curl": "7.31.0",
@@ -26767,7 +27049,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.5": {
    "curl": "7.31.0",
@@ -26775,7 +27059,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.2": {
    "curl": "7.31.0",
@@ -26783,7 +27069,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.4": {
    "curl": "7.31.0",
@@ -26791,7 +27079,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.1": {
    "curl": "7.31.0",
@@ -26799,7 +27089,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.3": {
    "curl": "7.31.0",
@@ -26807,7 +27099,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.2": {
    "curl": "7.31.0",
@@ -26815,7 +27109,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.1": {
    "curl": "7.30.0",
@@ -26823,7 +27119,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.5.0": {
    "curl": "7.30.0",
@@ -26831,7 +27129,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.1": {
    "curl": "7.30.0",
@@ -26839,7 +27139,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.4.0": {
    "curl": "7.30.0",
@@ -26847,7 +27149,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.1.0": {
    "curl": "7.30.0",
@@ -26855,7 +27159,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.3.15": {
    "curl": "7.30.0",
@@ -26863,7 +27169,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.0.7": {
    "curl": "7.30.0",
@@ -26871,7 +27179,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.3.14": {
    "curl": "7.30.0",
@@ -26879,7 +27189,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "1.0.6": {
    "curl": "7.30.0",
@@ -26887,7 +27199,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.3.13": {
    "curl": "7.30.0",
@@ -26895,7 +27209,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.8",
+   "openssl": "No version as per date"
   },
   "7.3.12": {
    "curl": "7.30.0",
@@ -26903,7 +27219,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "1.0.5": {
    "curl": "7.30.0",
@@ -26911,7 +27229,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.11": {
    "curl": "7.30.0",
@@ -26919,7 +27239,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.7": {
    "curl": "7.30.0",
@@ -26927,7 +27249,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.10": {
    "curl": "7.29.0",
@@ -26935,7 +27259,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "1.0.3": {
    "curl": "7.29.0",
@@ -26943,7 +27269,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.9": {
    "curl": "7.29.0",
@@ -26951,7 +27279,9 @@
    "libestr": "0.1.5",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.8": {
    "curl": "7.29.0",
@@ -26959,7 +27289,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "1.0.2": {
    "curl": "7.29.0",
@@ -26967,7 +27299,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.7": {
    "curl": "7.29.0",
@@ -26975,7 +27309,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.6": {
    "curl": "7.29.0",
@@ -26983,7 +27319,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.6": {
    "curl": "7.28.1",
@@ -26991,7 +27329,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.5": {
    "curl": "7.28.1",
@@ -26999,7 +27339,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.5": {
    "curl": "7.28.1",
@@ -27007,7 +27349,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.4": {
    "curl": "7.28.1",
@@ -27015,7 +27359,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.4": {
    "curl": "7.28.1",
@@ -27023,7 +27369,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.3": {
    "curl": "7.28.1",
@@ -27031,7 +27379,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.2": {
    "curl": "7.28.0",
@@ -27039,7 +27389,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.3": {
    "curl": "7.28.0",
@@ -27047,7 +27399,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.2": {
    "curl": "7.28.0",
@@ -27055,7 +27409,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.1": {
    "curl": "7.28.0",
@@ -27063,7 +27419,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.2.0": {
    "curl": "7.28.0",
@@ -27071,7 +27429,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.6.0": {
    "curl": "7.28.0",
@@ -27079,7 +27439,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.1": {
    "curl": "7.28.0",
@@ -27087,7 +27449,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.12": {
    "curl": "7.28.0",
@@ -27095,7 +27459,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.10.1": {
    "curl": "7.28.0",
@@ -27103,7 +27469,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.11": {
    "curl": "7.28.0",
@@ -27111,7 +27479,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.10": {
    "curl": "7.28.0",
@@ -27119,7 +27489,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.5.1": {
    "curl": "7.28.0",
@@ -27127,7 +27499,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.9": {
    "curl": "7.27.0",
@@ -27135,7 +27509,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.3.0": {
    "curl": "7.27.0",
@@ -27143,7 +27519,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.8": {
    "curl": "7.27.0",
@@ -27151,7 +27529,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.7": {
    "curl": "7.27.0",
@@ -27159,7 +27539,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.6": {
    "curl": "7.27.0",
@@ -27167,7 +27549,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.5": {
    "curl": "7.27.0",
@@ -27175,7 +27559,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.4.2": {
    "curl": "7.27.0",
@@ -27183,7 +27569,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.4": {
    "curl": "7.27.0",
@@ -27191,7 +27579,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.3": {
    "curl": "7.27.0",
@@ -27199,7 +27589,9 @@
    "libestr": "0.1.4",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.2": {
    "curl": "7.27.0",
@@ -27207,7 +27599,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.1": {
    "curl": "7.27.0",
@@ -27215,7 +27609,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "7.1.0": {
    "curl": "7.27.0",
@@ -27223,7 +27619,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.4.1": {
    "curl": "7.27.0",
@@ -27231,7 +27629,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "1.0.1": {
    "curl": "7.27.0",
@@ -27239,7 +27639,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.5.0": {
    "curl": "7.27.0",
@@ -27247,7 +27649,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.10.0": {
    "curl": "7.27.0",
@@ -27255,7 +27659,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.8.13": {
    "curl": "7.27.0",
@@ -27263,7 +27669,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.4.0": {
    "curl": "7.27.0",
@@ -27271,7 +27679,9 @@
    "libestr": "0.1.3",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.3.12": {
    "curl": "7.26.0",
@@ -27279,7 +27689,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.3.11": {
    "curl": "7.26.0",
@@ -27287,7 +27699,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.2.2": {
    "curl": "7.26.0",
@@ -27295,7 +27709,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.8.12": {
    "curl": "7.26.0",
@@ -27303,7 +27719,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.3.10": {
    "curl": "7.26.0",
@@ -27311,7 +27729,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.3.9": {
    "curl": "7.25.0",
@@ -27319,7 +27739,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.8.11": {
    "curl": "7.25.0",
@@ -27327,7 +27749,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.2.1": {
    "curl": "7.25.0",
@@ -27335,7 +27759,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "5.9.7": {
    "curl": "7.25.0",
@@ -27343,7 +27769,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.7",
+   "openssl": "No version as per date"
   },
   "6.3.8": {
    "curl": "7.25.0",
@@ -27351,7 +27779,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.9.6": {
    "curl": "7.25.0",
@@ -27359,7 +27789,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.9.5": {
    "curl": "7.25.0",
@@ -27367,7 +27799,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.8.10": {
    "curl": "7.25.0",
@@ -27375,7 +27809,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.8.9": {
    "curl": "7.24.0",
@@ -27383,7 +27819,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.8.8": {
    "curl": "7.24.0",
@@ -27391,7 +27829,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "6.3.7": {
    "curl": "7.24.0",
@@ -27399,7 +27839,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.6",
+   "openssl": "No version as per date"
   },
   "5.8.7": {
    "curl": "7.23.1",
@@ -27407,7 +27849,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.5",
+   "openssl": "No version as per date"
   },
   "6.2.0": {
    "curl": "7.23.1",
@@ -27415,7 +27859,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.5",
+   "openssl": "No version as per date"
   },
   "5.9.4": {
    "curl": "7.23.1",
@@ -27423,7 +27869,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.5",
+   "openssl": "No version as per date"
   },
   "5.8.6": {
    "curl": "7.22.0",
@@ -27431,7 +27879,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.5",
+   "openssl": "No version as per date"
   },
   "6.3.6": {
    "curl": "7.22.0",
@@ -27439,7 +27889,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "1.2.5",
+   "openssl": "No version as per date"
   },
   "4.8.0": {
    "curl": "7.21.7",
@@ -27447,7 +27899,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.5": {
    "curl": "7.21.7",
@@ -27455,7 +27909,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.12": {
    "curl": "7.21.7",
@@ -27463,7 +27919,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.9.3": {
    "curl": "7.21.7",
@@ -27471,7 +27929,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.5": {
    "curl": "7.21.7",
@@ -27479,7 +27939,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.5": {
    "curl": "7.21.7",
@@ -27487,7 +27949,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.8": {
    "curl": "7.21.7",
@@ -27495,7 +27959,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.4": {
    "curl": "7.21.7",
@@ -27503,7 +27969,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.4": {
    "curl": "7.21.7",
@@ -27511,7 +27979,9 @@
    "libestr": "0.1.2",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.3": {
    "curl": "7.21.7",
@@ -27519,7 +27989,9 @@
    "libestr": "0.1.1",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.11": {
    "curl": "7.21.7",
@@ -27527,7 +27999,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.9.2": {
    "curl": "7.21.7",
@@ -27535,7 +28009,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.3": {
    "curl": "7.21.7",
@@ -27543,7 +28019,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.4": {
    "curl": "7.21.7",
@@ -27551,7 +28029,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.7": {
    "curl": "7.21.7",
@@ -27559,7 +28039,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.2": {
    "curl": "7.21.7",
@@ -27567,7 +28049,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.9.1": {
    "curl": "7.21.7",
@@ -27575,7 +28059,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.5.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.6": {
    "curl": "7.21.7",
@@ -27583,7 +28069,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.10": {
    "curl": "7.21.6",
@@ -27591,7 +28079,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.2": {
    "curl": "7.21.6",
@@ -27599,7 +28089,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.9": {
    "curl": "7.21.6",
@@ -27607,7 +28099,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.9.0": {
    "curl": "7.21.6",
@@ -27615,7 +28109,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.1": {
    "curl": "7.21.6",
@@ -27623,7 +28119,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.3.0": {
    "curl": "7.21.6",
@@ -27631,7 +28129,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.8": {
    "curl": "7.21.6",
@@ -27639,7 +28139,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.1": {
    "curl": "7.21.6",
@@ -27647,7 +28149,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.7": {
    "curl": "7.21.4",
@@ -27655,7 +28159,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.8.0": {
    "curl": "7.21.4",
@@ -27663,7 +28169,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.10": {
    "curl": "7.21.4",
@@ -27671,7 +28179,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.5": {
    "curl": "7.21.4",
@@ -27679,7 +28189,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.9": {
    "curl": "7.21.4",
@@ -27687,7 +28199,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.6": {
    "curl": "7.21.4",
@@ -27695,7 +28209,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.8": {
    "curl": "7.21.4",
@@ -27703,7 +28219,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.5": {
    "curl": "7.21.4",
@@ -27711,7 +28229,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.7": {
    "curl": "7.21.4",
@@ -27719,7 +28239,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.4": {
    "curl": "7.21.4",
@@ -27727,7 +28249,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.6": {
    "curl": "7.21.4",
@@ -27735,7 +28259,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.5": {
    "curl": "7.21.4",
@@ -27743,7 +28269,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.4": {
    "curl": "7.21.4",
@@ -27751,7 +28279,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.4": {
    "curl": "7.21.4",
@@ -27759,7 +28289,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.3": {
    "curl": "7.21.3",
@@ -27767,7 +28299,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.3": {
    "curl": "7.21.3",
@@ -27775,7 +28309,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.3": {
    "curl": "7.21.3",
@@ -27783,7 +28319,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.2": {
    "curl": "7.21.3",
@@ -27791,7 +28329,9 @@
    "libestr": "0.1.0",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.1": {
    "curl": "7.21.2",
@@ -27799,7 +28339,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.2": {
    "curl": "7.21.2",
@@ -27807,7 +28349,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.2": {
    "curl": "7.21.2",
@@ -27815,7 +28359,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.3": {
    "curl": "7.21.2",
@@ -27823,7 +28369,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.1": {
    "curl": "7.21.2",
@@ -27831,7 +28379,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.5": {
    "curl": "7.21.2",
@@ -27839,7 +28389,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.22.3": {
    "curl": "7.21.2",
@@ -27847,7 +28399,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.6.0": {
    "curl": "7.21.2",
@@ -27855,7 +28409,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.1": {
    "curl": "7.21.1",
@@ -27863,7 +28419,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.7.0": {
    "curl": "7.21.1",
@@ -27871,7 +28429,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "6.1.0": {
    "curl": "7.21.0",
@@ -27879,7 +28439,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.7": {
    "curl": "7.21.0",
@@ -27887,7 +28449,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.4": {
    "curl": "7.21.0",
@@ -27895,7 +28459,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.22.2": {
    "curl": "7.21.0",
@@ -27903,7 +28469,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.6": {
    "curl": "7.21.0",
@@ -27911,7 +28479,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.6",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.3": {
    "curl": "7.21.0",
@@ -27919,7 +28489,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.5": {
    "curl": "7.20.1",
@@ -27927,7 +28499,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.4": {
    "curl": "7.20.1",
@@ -27935,7 +28509,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.2": {
    "curl": "7.20.1",
@@ -27943,7 +28519,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.1": {
    "curl": "7.20.1",
@@ -27951,7 +28529,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.7.0": {
    "curl": "7.20.0",
@@ -27959,7 +28539,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.3": {
    "curl": "7.20.0",
@@ -27967,7 +28549,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.2": {
    "curl": "7.20.0",
@@ -27975,7 +28559,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.4.0": {
    "curl": "7.20.0",
@@ -27983,7 +28569,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.1": {
    "curl": "7.20.0",
@@ -27991,7 +28579,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.6.0": {
    "curl": "7.20.0",
@@ -27999,7 +28589,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.8": {
    "curl": "7.20.0",
@@ -28007,7 +28599,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.2": {
    "curl": "7.19.7",
@@ -28015,7 +28609,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.7": {
    "curl": "7.19.7",
@@ -28023,7 +28619,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.6": {
    "curl": "7.19.7",
@@ -28031,7 +28629,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.5",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "1.0.0": {
    "curl": "7.19.7",
@@ -28039,7 +28639,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.1": {
    "curl": "7.19.7",
@@ -28047,7 +28649,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.5.0": {
    "curl": "7.19.7",
@@ -28055,7 +28659,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.7": {
    "curl": "7.19.7",
@@ -28063,7 +28669,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.5": {
    "curl": "7.19.7",
@@ -28071,7 +28679,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.6": {
    "curl": "7.19.7",
@@ -28079,7 +28689,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.4": {
    "curl": "7.19.7",
@@ -28087,7 +28699,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.2.0": {
    "curl": "7.19.6",
@@ -28095,7 +28709,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.3": {
    "curl": "7.19.6",
@@ -28103,7 +28719,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.2": {
    "curl": "7.19.6",
@@ -28111,7 +28729,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.5": {
    "curl": "7.19.6",
@@ -28119,7 +28739,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.6": {
    "curl": "7.19.6",
@@ -28127,7 +28749,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.4.2": {
    "curl": "7.19.6",
@@ -28135,7 +28759,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.1": {
    "curl": "7.19.6",
@@ -28143,7 +28769,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.4": {
    "curl": "7.19.6",
@@ -28151,7 +28779,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.3": {
    "curl": "7.19.6",
@@ -28159,7 +28789,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.3.0": {
    "curl": "7.19.6",
@@ -28167,7 +28799,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.5": {
    "curl": "7.19.6",
@@ -28175,7 +28809,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.4.1": {
    "curl": "7.19.6",
@@ -28183,7 +28819,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.2": {
    "curl": "7.19.6",
@@ -28191,7 +28829,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.4.0": {
    "curl": "7.19.6",
@@ -28199,7 +28839,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.4": {
    "curl": "7.19.6",
@@ -28207,7 +28849,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.3": {
    "curl": "7.19.5",
@@ -28215,7 +28859,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.1": {
    "curl": "7.19.5",
@@ -28223,7 +28869,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.2": {
    "curl": "7.19.5",
@@ -28231,7 +28879,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.1": {
    "curl": "7.19.5",
@@ -28239,7 +28889,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.5.0": {
    "curl": "7.19.5",
@@ -28247,7 +28899,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.22.1": {
    "curl": "7.19.5",
@@ -28255,7 +28909,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.3.2": {
    "curl": "7.19.5",
@@ -28263,7 +28919,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.2.0": {
    "curl": "7.19.5",
@@ -28271,7 +28929,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "5.1.0": {
    "curl": "7.19.5",
@@ -28279,7 +28939,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.3.1": {
    "curl": "7.19.5",
@@ -28287,7 +28949,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.7": {
    "curl": "7.19.4",
@@ -28295,7 +28959,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.22.0": {
    "curl": "7.19.4",
@@ -28303,7 +28969,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.3.0": {
    "curl": "7.19.4",
@@ -28311,7 +28979,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.6": {
    "curl": "7.19.4",
@@ -28319,7 +28989,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "2.0.7": {
    "curl": "7.19.4",
@@ -28327,7 +28999,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.6": {
    "curl": "7.19.4",
@@ -28335,7 +29009,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.11": {
    "curl": "7.19.4",
@@ -28343,7 +29019,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.5": {
    "curl": "7.19.4",
@@ -28351,7 +29029,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.5": {
    "curl": "7.19.4",
@@ -28359,7 +29039,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "0.1.3": {
    "curl": "7.19.3",
@@ -28367,7 +29049,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.4": {
    "curl": "7.19.3",
@@ -28375,7 +29059,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.3": {
    "curl": "7.19.3",
@@ -28383,7 +29069,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.10": {
    "curl": "7.19.3",
@@ -28391,7 +29079,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.4": {
    "curl": "7.19.3",
@@ -28399,7 +29089,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.4",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.3": {
    "curl": "7.19.2",
@@ -28407,7 +29099,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.6": {
    "curl": "7.19.2",
@@ -28415,7 +29109,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.2": {
    "curl": "7.19.2",
@@ -28423,7 +29119,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.9": {
    "curl": "7.19.2",
@@ -28431,7 +29129,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.8": {
    "curl": "7.19.2",
@@ -28439,7 +29139,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.2": {
    "curl": "7.19.2",
@@ -28447,7 +29149,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.1": {
    "curl": "7.19.2",
@@ -28455,7 +29159,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.1": {
    "curl": "7.19.2",
@@ -28463,7 +29169,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "4.1.0": {
    "curl": "7.19.2",
@@ -28471,7 +29179,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.7": {
    "curl": "7.19.1",
@@ -28479,7 +29189,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.20.0": {
    "curl": "7.19.1",
@@ -28487,7 +29199,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.6": {
    "curl": "7.19.0",
@@ -28495,7 +29209,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.12": {
    "curl": "7.19.0",
@@ -28503,7 +29219,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.5": {
    "curl": "7.19.0",
@@ -28511,7 +29229,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.5": {
    "curl": "7.19.0",
@@ -28519,7 +29239,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.3",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.4": {
    "curl": "7.19.0",
@@ -28527,7 +29249,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.2",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.4": {
    "curl": "7.19.0",
@@ -28535,7 +29259,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.11": {
    "curl": "7.18.2",
@@ -28543,7 +29269,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.3": {
    "curl": "7.18.2",
@@ -28551,7 +29279,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.3": {
    "curl": "7.18.2",
@@ -28559,7 +29289,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.2": {
    "curl": "7.18.2",
@@ -28567,7 +29299,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "2.0.6": {
    "curl": "7.18.2",
@@ -28575,7 +29309,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.2": {
    "curl": "7.18.2",
@@ -28583,7 +29319,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.1": {
    "curl": "7.18.2",
@@ -28591,7 +29329,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.1": {
    "curl": "7.18.2",
@@ -28599,7 +29339,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.21.0": {
    "curl": "7.18.2",
@@ -28607,7 +29349,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.10": {
    "curl": "7.18.2",
@@ -28615,7 +29359,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.18.0": {
    "curl": "7.18.2",
@@ -28623,7 +29369,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.9": {
    "curl": "7.18.2",
@@ -28631,7 +29379,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.8": {
    "curl": "7.18.2",
@@ -28639,7 +29389,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.5": {
    "curl": "7.18.2",
@@ -28647,7 +29399,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.16.2": {
    "curl": "7.18.2",
@@ -28655,7 +29409,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.4": {
    "curl": "7.18.2",
@@ -28663,7 +29419,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.7": {
    "curl": "7.18.2",
@@ -28671,7 +29429,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.6": {
    "curl": "7.18.2",
@@ -28679,7 +29439,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.5": {
    "curl": "7.18.1",
@@ -28687,7 +29449,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.3": {
    "curl": "7.18.1",
@@ -28695,7 +29459,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.4": {
    "curl": "7.18.1",
@@ -28703,7 +29469,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.3": {
    "curl": "7.18.1",
@@ -28711,7 +29479,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.2": {
    "curl": "7.18.1",
@@ -28719,7 +29489,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "2.0.5": {
    "curl": "7.18.1",
@@ -28727,7 +29499,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.1": {
    "curl": "7.18.1",
@@ -28735,7 +29509,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.19.0": {
    "curl": "7.18.1",
@@ -28743,7 +29519,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.2": {
    "curl": "7.18.1",
@@ -28751,7 +29529,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.16.1": {
    "curl": "7.18.1",
@@ -28759,7 +29539,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.1",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.16.0": {
    "curl": "7.18.1",
@@ -28767,7 +29549,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.1": {
    "curl": "7.18.1",
@@ -28775,7 +29559,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.15.1": {
    "curl": "7.18.1",
@@ -28783,7 +29569,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.14.2": {
    "curl": "7.18.1",
@@ -28791,7 +29579,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "0.1.1": {
    "curl": "7.18.1",
@@ -28799,7 +29589,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "3.17.0": {
    "curl": "7.18.1",
@@ -28807,7 +29599,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   },
   "0.1.0": {
    "curl": "7.18.1",
@@ -28815,7 +29609,9 @@
    "libestr": "No version as per date",
    "libfastjson": "No version as per date",
    "libgcrypt": "1.4.0",
-   "pkg-config": "No version as per date"
+   "pkg-config": "No version as per date",
+   "zlib": "No version as per date",
+   "openssl": "No version as per date"
   }
  },
  "ruby": {
