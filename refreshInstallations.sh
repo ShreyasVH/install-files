@@ -70,10 +70,10 @@ WGET_WERSION=1.24.5
 PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "pkg-config" '.[$folder][$version][$name]')
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "wget" --arg version "$WGET_WERSION" --arg name "openssl" '.[$folder][$version][$name]')
 
-if [ ! -d "$HOME/programs/pkg-config" ]; then
-    mkdir ~/programs/pkg-config
-    cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config
-fi
+# if [ ! -d "$HOME/programs/pkg-config" ]; then
+#     mkdir ~/programs/pkg-config
+#     cp -rp ~/programs_bkp/pkg-config/$PKG_CONFIG_VERSION ~/programs/pkg-config
+# fi
 
 # if [ ! -d "$HOME/programs/openssl" ]; then
 #     mkdir ~/programs/openssl

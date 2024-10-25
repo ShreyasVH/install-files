@@ -1257,6 +1257,10 @@
  ],
  "cmake": [
   {
+   "version": "3.30.5",
+   "releaseDateString": "2024-10-08T13:22:29Z"
+  },
+  {
    "version": "3.30.4",
    "releaseDateString": "2024-09-27T13:18:53Z"
   },
@@ -2090,6 +2094,22 @@
   }
  ],
  "cockroach": [
+  {
+   "version": "23.2.13",
+   "releaseDateString": "2024-10-11T22:46:47Z"
+  },
+  {
+   "version": "24.1.6",
+   "releaseDateString": "2024-10-07T18:25:42Z"
+  },
+  {
+   "version": "24.2.4",
+   "releaseDateString": "2024-10-01T06:20:42Z"
+  },
+  {
+   "version": "23.1.28",
+   "releaseDateString": "2024-10-01T22:15:37Z"
+  },
   {
    "version": "23.1.27",
    "releaseDateString": "2024-10-01T21:29:47Z"
@@ -4743,6 +4763,14 @@
  ],
  "elasticsearch": [
   {
+   "version": "7.17.25",
+   "releaseDateString": "2024-10-14T15:56:47Z"
+  },
+  {
+   "version": "8.15.3",
+   "releaseDateString": "2024-10-09T20:18:39Z"
+  },
+  {
    "version": "8.15.2",
    "releaseDateString": "2024-09-18T10:30:25Z"
   },
@@ -6726,6 +6754,10 @@
   }
  ],
  "erlang": [
+  {
+   "version": "27.1.2",
+   "releaseDateString": "2024-10-17T08:41:53Z"
+  },
   {
    "version": "27.1.1",
    "releaseDateString": "2024-09-30T08:07:39Z"
@@ -9044,6 +9076,14 @@
   }
  ],
  "kibana": [
+  {
+   "version": "7.17.25",
+   "releaseDateString": "2024-10-16T11:01:21Z"
+  },
+  {
+   "version": "8.15.3",
+   "releaseDateString": "2024-10-08T20:13:57Z"
+  },
   {
    "version": "8.15.2",
    "releaseDateString": "2024-09-18T20:22:18Z"
@@ -14317,6 +14357,10 @@
  ],
  "mongosh": [
   {
+   "version": "2.3.2",
+   "releaseDateString": "2024-10-08T13:07:57Z"
+  },
+  {
    "version": "2.3.1",
    "releaseDateString": "2024-09-05T17:18:10Z"
   },
@@ -14826,6 +14870,18 @@
   }
  ],
  "mysql": [
+  {
+   "version": "9.1.0",
+   "releaseDateString": "2024-09-24T11:34:54Z"
+  },
+  {
+   "version": "8.0.40",
+   "releaseDateString": "2024-09-18T08:27:24Z"
+  },
+  {
+   "version": "8.4.3",
+   "releaseDateString": "2024-09-16T17:57:18Z"
+  },
   {
    "version": "9.0.1",
    "releaseDateString": "2024-07-12T19:17:15Z"
@@ -16520,6 +16576,14 @@
   }
  ],
  "neo4j": [
+  {
+   "version": "5.24.2",
+   "releaseDateString": "2024-10-10T21:58:39Z"
+  },
+  {
+   "version": "4.4.38",
+   "releaseDateString": "2024-10-08T14:49:29Z"
+  },
   {
    "version": "5.24.1",
    "releaseDateString": "2024-10-02T12:23:22Z"
@@ -19980,6 +20044,14 @@
   }
  ],
  "node": [
+  {
+   "version": "23.0.0",
+   "releaseDateString": "2024-10-16T14:01:27Z"
+  },
+  {
+   "version": "22.10.0",
+   "releaseDateString": "2024-10-16T22:28:19Z"
+  },
   {
    "version": "20.18.0",
    "releaseDateString": "2024-10-03T17:41:28Z"
@@ -24273,6 +24345,14 @@
  ],
  "php": [
   {
+   "version": "8.3.13",
+   "releaseDateString": "2024-10-22T18:41:38Z"
+  },
+  {
+   "version": "8.2.25",
+   "releaseDateString": "2024-10-22T15:25:20Z"
+  },
+  {
    "version": "8.1.30",
    "releaseDateString": "2024-09-26T17:27:18Z"
   },
@@ -28307,6 +28387,10 @@
  ],
  "python": [
   {
+   "version": "3.13.0",
+   "releaseDateString": "2024-10-07T05:02:14Z"
+  },
+  {
    "version": "3.12.7",
    "releaseDateString": "2024-10-01T02:08:48Z"
   },
@@ -30665,6 +30749,10 @@
  ],
  "rsyslog": [
   {
+   "version": "8.2410.0",
+   "releaseDateString": "2024-10-20T15:49:26Z"
+  },
+  {
    "version": "8.2408.0",
    "releaseDateString": "2024-08-19T18:23:42Z"
   },
@@ -32789,6 +32877,10 @@
  ],
  "sbt": [
   {
+   "version": "1.10.3",
+   "releaseDateString": "2024-10-20T03:01:34Z"
+  },
+  {
    "version": "1.10.2",
    "releaseDateString": "2024-09-16T01:59:10Z"
   },
@@ -33267,6 +33359,10 @@
  ],
  "scala": [
   {
+   "version": "3.5.2",
+   "releaseDateString": "2024-10-16T08:29:40Z"
+  },
+  {
    "version": "3.3.4",
    "releaseDateString": "2024-09-25T10:10:51Z"
   },
@@ -33440,6 +33536,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "3.47.0",
+   "releaseDateString": "2024-10-21T16:30:22Z"
+  },
   {
    "version": "3.46.1",
    "releaseDateString": "2024-08-13T09:16:08Z"
@@ -35099,6 +35199,10 @@
  ],
  "memcached": [
   {
+   "version": "1.6.32",
+   "releaseDateString": "2024-10-20T22:20:11Z"
+  },
+  {
    "version": "1.6.31",
    "releaseDateString": "2024-09-07T16:18:25Z"
   },
@@ -35578,6 +35682,10 @@
   }
  ],
  "php-memcached": [
+  {
+   "version": "3.3.0",
+   "releaseDateString": "2024-10-17T17:33:59Z"
+  },
   {
    "version": "3.2.0",
    "releaseDateString": "2022-03-24T12:57:18Z"
