@@ -14,7 +14,7 @@ const getMissingInslallFiles = (programName, version) => {
 
 	for (const [program, versions] of Object.entries(allRequiredDependencies)) {
 		for (const requiredVersion of versions) {
-			const installFilePath = process.env.HOME + '/install-files/' + program + '/' + requiredVersion + '/macos/install.sh';
+			const installFilePath = process.env.HOME + '/install-files/' + program + '/' + requiredVersion + '/' + process.env.OS_FOLDER + '/install.sh';
 			if (!fs.existsSync(installFilePath)) {
 				if (!missingInstallFiles.hasOwnProperty(program)) {
 					missingInstallFiles[program] = [];
