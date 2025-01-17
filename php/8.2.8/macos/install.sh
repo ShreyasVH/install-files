@@ -37,7 +37,9 @@ GETTEXT_FOLDER_NAME=gettext
 # GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
 GETTEXT_VERSION=0.22.4
 
-# Example paths (replace with your actual paths)
+UNIXODBC_FOLDER_NAME=unixodbc
+UNIXODBC_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$UNIXODBC_FOLDER_NAME" '.[$folder][$version][$name]')
+
 LIBINTL_LIB=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib
 LIBINTL_INC=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include
 
@@ -55,6 +57,8 @@ PHP_EXTENSION_PHALCON_FOLDER_NAME=php-phalcon
 PHP_EXTENSION_PHALCON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_PHALCON_FOLDER_NAME" '.[$folder][$version][$name]')
 PHP_EXTENSION_REDIS_FOLDER_NAME=php-redis
 PHP_EXTENSION_REDIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_REDIS_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_SQLSRV_FOLDER_NAME=php-sqlsrv
+PHP_EXTENSION_SQLSRV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_SQLSRV_FOLDER_NAME" '.[$folder][$version][$name]')
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
@@ -79,6 +83,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME"
 	fi
 
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME"
+	fi
+
 	bash $INSTALL_FILES_DIR/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/macos/install.sh
@@ -92,6 +100,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION/macos/install.sh
 	bash $INSTALL_FILES_DIR/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/macos/install.sh
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -249,6 +258,30 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		rm "redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo "extension=redis.so" >> lib/php.ini
+
+		cd tmp
+		export CPPFLAGS="-I$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/include"
+		export LDFLAGS="-L$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/lib"
+		printf "\t${bold}${yellow}Installing sqlsrv extension${clear}\n"
+		printf "\t\t${bold}${green}Downloading source code${clear}\n"
+		wget -q "https://pecl.php.net/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		printf "\t\t${bold}${green}Extracting source code${clear}\n"
+		tar -xf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		cd "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
+		printf "\t\t${bold}${green}Running phpize${clear}\n"
+		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/phpizeOutput.txt 2>&1
+		printf "\t\t${bold}${green}Configuring${clear}\n"
+		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureHelp.txt 2>&1
+		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureOutput.txt 2>&1
+		printf "\t\t${bold}${green}Making${clear}\n"
+		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/makeOutput.txt 2>&1
+		mv modules/sqlsrv.so $EXTENSION_DIR
+		ls modules
+		cd ..
+		rm -rf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
+		rm "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		echo "extension=sqlsrv.so" >> lib/php.ini
 
 		printf "\t${bold}${green}Installing Console Table${clear}\n"
 		pear install Console_Table > $HOME/logs/$FOLDER_NAME/$VERSION/consoleTableInstallation.txt 2>&1
