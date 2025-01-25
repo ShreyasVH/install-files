@@ -1,21 +1,27 @@
 FOLDER_NAME=apr-util
 VERSION=1.6.3
 
-cd $INSTALL_FILES_DIR
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
 
 APR_FOLDER_NAME=apr
 APR_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APR_FOLDER_NAME" '.[$folder][$version][$name]')
 
+source $INSTALL_FILES_DIR/utils.sh
+
+cd $INSTALL_FILES_DIR
+
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apu-1-config" ]; then
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	bash $INSTALL_FILES_DIR/$APR_FOLDER_NAME/$APR_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$APR_FOLDER_NAME/$APR_VERSION/macos/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
-
-	printf "\t${bold}${green}Downloading source code${clear}\n"
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+2))
 	ARCHIVE_FILE="apr-util-"$VERSION".tar.gz"
 	wget -q --show-progress "https://archive.apache.org/dist/apr/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"

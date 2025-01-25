@@ -1,6 +1,13 @@
 FOLDER_NAME=apr
 VERSION=1.7.2
 
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
+
+source $INSTALL_FILES_DIR/utils.sh
+
 cd $INSTALL_FILES_DIR
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apr-1-config" ]; then
@@ -8,9 +15,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apr-1-config" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH+1))
 
-	printf "\t${bold}${green}Downloading source code${clear}\n"
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+2))
 	ARCHIVE_FILE="apr-"$VERSION".tar.gz"
 	wget -q --show-progress "https://archive.apache.org/dist/apr/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
