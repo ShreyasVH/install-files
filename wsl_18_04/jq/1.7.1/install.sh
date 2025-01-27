@@ -1,5 +1,17 @@
-FOLDER_NAME=jq
-VERSION=1.7.1
+script_dir=$(dirname "$(realpath "$0")")
+version_dir=$(dirname "$script_dir")
+
+VERSION=$(basename $version_dir)
+
+program_dir=$(dirname "$version_dir")
+FOLDER_NAME=$(basename $program_dir)
+
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
+
+source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
@@ -9,9 +21,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jq" ]; then
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION"
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n" $((DEPTH+1))
 
-	printf "\t${bold}${green}Downloading source code${clear}\n"
+	print_message "${bold}${green}Downloading source code${clear}\n" $((DEPTH+2))
 	curl -O -L "https://github.com/jqlang/jq/releases/download/jq-$VERSION/jq-linux-amd64"
 	echo $USER_PASSWORD | sudo -S -p '' chmod +x jq-linux-amd64
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION/bin"
