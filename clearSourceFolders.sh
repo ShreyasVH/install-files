@@ -6,8 +6,11 @@ fi
 FOLDER_NAME=$1
 VERSION=$2
 ARCHIVE_FILE=$3
+DEPTH=$4
 
-printf "\t${bold}${green}Clearing${clear}\n"
+source $INSTALL_FILES_DIR/utils.sh
+
+print_message "${bold}${green}Clearing${clear}" $DEPTH
 cd $HOME/sources/$FOLDER_NAME
 rm -rf $VERSION
 rm $ARCHIVE_FILE
