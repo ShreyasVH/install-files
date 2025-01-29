@@ -418,7 +418,10 @@
   "tagsUrl": "",
   "versionRegex": "openssl-\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1702214325493,
-  "path": "/bin/openssl"
+  "path": "/bin/openssl",
+  "dependencies": [
+    "zlib"
+  ]
  },
  "pcre2": {
   "tagsUrl": "https://github.com/PCRE2Project/pcre2/tags",
