@@ -33,7 +33,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION/mongod" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=mongodb-linux-x86_64-ubuntu1804-$VERSION.tgz
+	ARCHIVE_FILE=mongodb-linux-x86_64-ubuntu2004-$VERSION.tgz
 	wget -q "https://fastdl.mongodb.org/linux/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
