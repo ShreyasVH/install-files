@@ -8,6 +8,7 @@ export PATH=
 export PATH=$HOME/programs/node/16.13.0/bin:$PATH
 
 export VERSION_MAP_PATH=
+export STATIC_VERSION_MAP_PATH=
 
 export INSTALL_FILES_DIR=$HOME/install-files
 
