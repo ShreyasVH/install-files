@@ -64,9 +64,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ssh" ]; then
 
 		print_message "${bold}${green}Creating host keys${clear}" $((DEPTH))
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
-		which ssh-keygen
 		export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
-		ssh-keygen -A
+		ssh-keygen -A > /dev/null
 
 		touch start.sh
 		echo 'export LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> start.sh
