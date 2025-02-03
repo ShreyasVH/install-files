@@ -21,6 +21,7 @@ if [ $# -ge 2 ]; then
     DEPTH=$2
 fi
 
+
 LIBXML_FOLDER_NAME=libxml2
 LIBXML_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBXML_FOLDER_NAME" '.[$folder][$version][$name]')
 

@@ -38,7 +38,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
-	bash $INSTALL_FILES_DIR/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/wsl_20_04/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -100,6 +100,7 @@ EOF
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 
-		bash $INSTALL_FILES_DIR/$OS/$POSTGIS_FOLDER_NAME/$POSTGIS_VERSION/install.sh $VERSION $((DEPTH+1))
+		cd $INSTALL_FILES_DIR
+		bash $OS/$POSTGIS_FOLDER_NAME/$POSTGIS_VERSION/install.sh $VERSION $((DEPTH+1))
 	fi
 fi
