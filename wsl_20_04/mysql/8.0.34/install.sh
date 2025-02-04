@@ -17,6 +17,7 @@ CMAKE_FOLDER_NAME=cmake
 CMAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CMAKE_FOLDER_NAME" '.[$folder][$version][$name]')
 
 BOOST_FOLDER_NAME=boost
+BOOST_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$BOOST_FOLDER_NAME" '.[$folder][$version][$name]')
 
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
@@ -53,6 +54,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mysql" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBTIRPC_FOLDER_NAME/$LIBTIRPC_VERSION/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$BOOST_FOLDER_NAME/$BOOST_VERSION/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
