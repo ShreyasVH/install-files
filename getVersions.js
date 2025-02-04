@@ -70,7 +70,7 @@ const getAllVersions = async (program, baseUrl) => {
     const allVersionsData = JSON.parse(fs.readFileSync(allVersionsFilePath).toString());
 
 	const browser  = await puppeteer.launch({
-		headless: 'new'
+		headless: 'shell'
 	});
 
     let allVersions = ((allVersionsData.hasOwnProperty(program)) ? allVersionsData[program] : []);

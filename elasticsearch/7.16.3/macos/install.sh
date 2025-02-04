@@ -16,9 +16,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
 
 	printf "\t${bold}${green}Downloading source code${clear}\n"
-	wget -q --show-progress "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$VERSION-darwin-x86_64.tar.gz"
+	ARCHIVE_FILE=elasticsearch-$VERSION-darwin-aarch64.tar.gz
+	wget -q --show-progress "https://artifacts.elastic.co/downloads/elasticsearch/$ARCHIVE_FILE"
 	printf "\t${bold}${green}Extracting source code${clear}\n"
-	tar -xf "elasticsearch-$VERSION-darwin-x86_64.tar.gz"
+	tar -xf $ARCHIVE_FILE
 	mv "elasticsearch-$VERSION" $VERSION
 	cd $VERSION
 
@@ -40,7 +41,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	printf "\t${bold}${green}Clearing${clear}\n"
 	cd ..
-	rm "elasticsearch-$VERSION-darwin-x86_64.tar.gz"
+	rm $ARCHIVE_FILE
 fi
 
 cd $HOME/install-files
