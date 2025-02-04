@@ -46,7 +46,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	direnv allow
 
 	touch start.sh
-	echo "SUDO_ASKPASS=/tmp/askpass.sh sudo -A sysctl -w vm.max_map_count=262144 > /dev/null" >> start.sh
+	echo "SUDO_ASKPASS=$HOME/askpass.sh sudo -A sysctl -w vm.max_map_count=262144 > /dev/null" >> start.sh
 	echo "" >> start.sh
 	echo "elasticsearch -d > elastic.log 2>&1 &" >> start.sh
 

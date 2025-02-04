@@ -30,7 +30,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 		cd $VERSION
-		SUDO_ASKPASS=/tmp/askpass.sh sudo -A chown -R $(whoami) .
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
 		touch .envrc
 		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc

@@ -196,7 +196,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		cd "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
 		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear} $((DEPTH+1))"
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureOutput.txt 2>&1
 		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
