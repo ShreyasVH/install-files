@@ -19,7 +19,7 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/boost.css" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/boost_$VERSION_STRING/boost.css" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))

@@ -24,3 +24,5 @@ export blink='\e[5m'
 export bold='\e[1m'
 
 export OS_FOLDER=
+
+export PROCESS_COUNT=

@@ -17,7 +17,7 @@ CMAKE_FOLDER_NAME=cmake
 CMAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CMAKE_FOLDER_NAME" '.[$folder][$version][$name]')
 
 BOOST_FOLDER_NAME=boost
-BOOST_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$BOOST_FOLDER_NAME" '.[$folder][$version][$name]')
+BOOST_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$BOOST_FOLDER_NAME" '.[$folder][$version][$name]')
 
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
@@ -74,6 +74,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mysql" ]; then
 	cd bld
 	export CPPFLAGS="-I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include/ncurses -I$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/include"
 	export LDFLAGS="-L$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION/lib"
+	print_message "${bold}${green}Running cmake${clear}" $((DEPTH))
 	cmake .. -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BISON_VERSION/bin/bison -DCMAKE_PREFIX_PATH=$HOME/programs/$NCURSES_FOLDER_NAME/$NCURSES_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
