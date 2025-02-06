@@ -89,6 +89,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mysql" ]; then
 		export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
 
 		touch .envrc
+		echo 'export LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> .envrc
 		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 		echo "" >> .envrc
 		direnv allow
