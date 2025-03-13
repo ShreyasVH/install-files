@@ -17,7 +17,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	bash $INSTALL_FILES_DIR/$ODBC_FOLDER_NAME/$ODBC_VERSION/wsl_20_04/install.sh $((DEPTH+1))
+	# bash $INSTALL_FILES_DIR/$ODBC_FOLDER_NAME/$ODBC_VERSION/wsl_20_04/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
@@ -45,8 +45,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 
-		odbcinst -i -d -f $HOME/programs/$ODBC_FOLDER_NAME/$ODBC_VERSION/odbcinst.ini > /dev/null 2>&1
-		sed -i '' "s|/opt/homebrew|$HOME/programs/odbc/$ODBC_VERSION|" etc/odbcinst.ini
+		# odbcinst -i -d -f $HOME/programs/$ODBC_FOLDER_NAME/$ODBC_VERSION/odbcinst.ini > /dev/null 2>&1
+		# sed -i '' "s|/opt/homebrew|$HOME/programs/odbc/$ODBC_VERSION|" etc/odbcinst.ini
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE
 	fi
