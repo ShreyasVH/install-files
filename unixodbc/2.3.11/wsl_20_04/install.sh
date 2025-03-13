@@ -17,7 +17,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	bash $INSTALL_FILES_DIR/$ODBC_FOLDER_NAME/$ODBC_VERSION/macos/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$ODBC_FOLDER_NAME/$ODBC_VERSION/wsl_20_04/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
