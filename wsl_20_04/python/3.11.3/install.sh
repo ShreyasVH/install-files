@@ -56,10 +56,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python3" ]; then
 	export ZLIB_LIBS=$(pkg-config --libs zlib)
 
 	export PKG_CONFIG_PATH=$HOME/programs/$LIBFFI_FOLDER_NAME/$LIBFFI_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
-	export CFLAGS=$(pkg-config --cflags libffi)
-	export LDFLAGS=$(pkg-config --libs libffi)
+	export CFLAGS="$(pkg-config --cflags libffi) $CFLAGS"
+	export LDFLAGS="$(pkg-config --libs libffi) $LDFLAGS"
 
-	export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
+	export PKG_CONFIG_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
+	export CFLAGS="$(pkg-config --cflags openssl) $CFLAGS"
+	export LDFLAGS="$(pkg-config --libs openssl) $LDFLAGS"
+
+	# export LD_LIBRARY_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib:$LD_LIBRARY_PATH
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="Python-"$VERSION".tgz"
@@ -69,8 +73,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python3" ]; then
 	mv "Python-"$VERSION $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
+	# export LD_LIBRARY_PATH=/home/shreyas/programs/openssl/3.1.0/lib:/home/shreyas/programs/libffi/3.4.4/lib:$LD_LIBRARY_PATH
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --with-pydebug --prefix="$HOME/programs/$FOLDER_NAME/$VERSION" --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --with-pydebug --prefix="$HOME/programs/$FOLDER_NAME/$VERSION" --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION LDFLAGS="-L/home/shreyas/programs/libffi/$LIBFFI_VERSION/lib -L/home/shreyas/programs/openssl/$OPENSSL_VERSION/lib -Wl,-rpath=/home/shreyas/programs/openssl/$OPENSSL_VERSION/lib:/home/shreyas/programs/libffi/$LIBFFI_VERSION/lib" CFLAGS="-I/home/shreyas/programs/libffi/$LIBFFI_VERSION/include -I/home/shreyas/programs/openssl/$OPENSSL_VERSION/include" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	print_message "${bold}${green}Making${clear}" $((DEPTH))
 	make -s -j2 > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
 	

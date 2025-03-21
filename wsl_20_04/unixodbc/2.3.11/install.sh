@@ -46,6 +46,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 		echo "" >> .envrc
 		direnv allow
 
+		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+
+		odbcinst -i -d -f /etc/odbcinst.ini > /dev/null 2>&1
+
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
 fi
