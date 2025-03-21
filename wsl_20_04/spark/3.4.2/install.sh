@@ -25,11 +25,11 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION/spark-submit" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=spark-$VERSION.tgz
+	ARCHIVE_FILE=spark-$VERSION-bin-hadoop3.tgz
 	wget -q "https://archive.apache.org/dist/spark/spark-$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
-	mv "spark-$VERSION" $VERSION
+	mv "spark-$VERSION-bin-hadoop3" $VERSION
 	cd $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/spark-submit" ]; then
