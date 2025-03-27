@@ -33,9 +33,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	wget -q "https://fastdl.mongodb.org/osx/mongodb-macos-arm64-$VERSION.tgz"
+	ARCHIVE_FILE=mongodb-macos-arm64-$VERSION.tgz
+	wget -q "https://fastdl.mongodb.org/osx/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	tar -xf "mongodb-macos-arm64-$VERSION.tgz"
+	tar -xf $ARCHIVE_FILE
 	mv "mongodb-macos-aarch64-$VERSION" $VERSION
 	cd $VERSION
 
@@ -58,9 +59,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo 'PORT=$(grep '\''port: '\'' ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/mongod.conf | awk '\''{print $2}'\'')' >> stop.sh
 		echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
 
-		printf "\t${bold}${green}Clearing${clear}\n"
+		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
-		rm "mongodb-macos-arm64-$VERSION.tgz"
+		rm $ARCHIVE_FILE
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 		cd $VERSION
