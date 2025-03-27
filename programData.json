@@ -634,6 +634,14 @@
   "versionsLastUpdatedOn": 1711034851420,
   "path": "/bin/ssh"
  },
+ "unixodbc": {
+  "tagsUrl": "",
+  "dependencies": [
+   "odbc"
+  ],
+  "isEntryPoint": true,
+  "path": "/bin/odbcinst"
+ },
  "wget": {
   "tagsUrl": "",
   "dependencies": [
