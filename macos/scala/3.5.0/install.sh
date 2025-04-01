@@ -25,7 +25,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	bash $INSTALL_FILES_DIR/$JAVA_FOLDER_NAME/$JAVA_VERSION/macos/install.sh
+	bash $INSTALL_FILES_DIR/$OS/$JAVA_FOLDER_NAME/$JAVA_VERSION/install.sh $((DEPTH+1))
 
 	cd $HOME/programs/$FOLDER_NAME
 

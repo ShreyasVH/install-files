@@ -20,7 +20,7 @@ cd $INSTALL_FILES_DIR
 JAVA_FOLDER_NAME=java
 JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sbt" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
@@ -30,19 +30,19 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=scala3-$VERSION.tar.gz
-	wget -q "https://github.com/lampepfl/dotty/releases/download/$VERSION/$ARCHIVE_FILE"
+	ARCHIVE_FILE=sbt-$VERSION.tgz
+	wget -q "https://github.com/sbt/sbt/releases/download/v$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
-	mv "scala3-$VERSION" $VERSION
+	mv sbt $VERSION
+
 	cd $VERSION
-
 	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
-
+	
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
-	echo 'export JAVA_HOME=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION" >> .envrc
+	echo 'export PATH=$HOME/programs/'"$JAVA_FOLDER_NAME/$JAVA_VERSION/bin:"'$PATH' >> .envrc
 	echo "" >> .envrc
 	direnv allow
 
@@ -50,4 +50,3 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd ..
 	rm $ARCHIVE_FILE
 fi
-
