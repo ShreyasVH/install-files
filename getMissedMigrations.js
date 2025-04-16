@@ -1,4 +1,5 @@
 const fs = require('fs');
+const os = require('os');
 
 const programData = JSON.parse(fs.readFileSync('programData.json').toString())
 
@@ -38,6 +39,9 @@ for (const program of programs) {
 	for (const version of versionFolders) {
 		const osFolders = getFolders(program + '/' + version);
 		for (const os of osFolders) {
+			if (os !== process.env.OS_FOLDER) {
+				continue
+			}
 			const newPath = os + '/' + program + '/' + version + '/install.sh';
 			if (!fs.existsSync(newPath)) {
 				if (!missedMigrations.hasOwnProperty(os)) {

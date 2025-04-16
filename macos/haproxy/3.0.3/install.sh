@@ -60,7 +60,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		direnv allow
 
 		touch start.sh
-		echo "echo $USER_PASSWORD | sudo -S -p '' haproxy -f ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/haproxy.cfg -D" >> start.sh
+		echo "echo $USER_PASSWORD | sudo -S -p '' haproxy -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg -D" >> start.sh
 
 		touch stop.sh
 		echo 'echo '$USER_PASSWORD' | sudo -S -p "" kill -9 $(echo '$USER_PASSWORD' | sudo -S -p "" lsof -t -i:80)' >> stop.sh
