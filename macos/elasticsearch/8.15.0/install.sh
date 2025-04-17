@@ -1,9 +1,23 @@
-FOLDER_NAME=elasticsearch
-VERSION=8.15.0
+version_dir=$(dirname "$(realpath "$0")")
+
+VERSION=$(basename $version_dir)
+
+program_dir=$(dirname "$version_dir")
+FOLDER_NAME=$(basename $program_dir)
+
+os_dir=$(dirname $program_dir)
+OS=$(basename $os_dir)
+
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
+
+source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/elasticsearch.yml ]; then
+if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml ]; then
 	printf "elasticsearch.yml not found\n"
 	exit
 fi
@@ -13,17 +27,17 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	printf "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}\n"
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	printf "\t${bold}${green}Downloading source code${clear}\n"
-	ARCHIVE_FILE=elasticsearch-$VERSION-darwin-aarch64.tar.gz
-	wget -q --show-progress "https://artifacts.elastic.co/downloads/elasticsearch/$ARCHIVE_FILE"
-	printf "\t${bold}${green}Extracting source code${clear}\n"
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	ARCHIVE_FILE=elasticsearch-$VERSION-darwin-x86_64.tar.gz
+	wget -q "https://artifacts.elastic.co/downloads/elasticsearch/$ARCHIVE_FILE"
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "elasticsearch-$VERSION" $VERSION
 	cd $VERSION
 
-	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
@@ -34,12 +48,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	echo "elasticsearch -d > elastic.log 2>&1 &" >> start.sh
 
 	touch stop.sh
-	mv config/elasticsearch.yml ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/elasticsearch.yml.default
-	ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/elasticsearch.yml config/elasticsearch.yml
+	mv config/elasticsearch.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml.default
+	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
 	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
 	echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
 
-	printf "\t${bold}${green}Clearing${clear}\n"
+	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..
 	rm $ARCHIVE_FILE
 fi

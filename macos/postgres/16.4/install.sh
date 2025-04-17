@@ -65,10 +65,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		print_message "${bold}${green}Initializing DB${clear}" $((DEPTH))
 		initdb -d data > $HOME/logs/$FOLDER_NAME/$VERSION/dbInitialization.txt 2>&1
 
-		mv data/postgresql.conf ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/postgresql.conf.default
-		ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/postgresql.conf data/postgresql.conf
-		mv data/pg_hba.conf ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/pg_hba.conf.default
-		ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/pg_hba.conf data/pg_hba.conf
+		mv data/postgresql.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
+		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
+		mv data/pg_hba.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf.default
+		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 		touch start.sh
 		echo "pg_ctl start -D data > postgresStart.txt 2>&1" >> start.sh
