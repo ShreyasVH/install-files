@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 
 	cd $HOME/programs/$FOLDER_NAME
 
@@ -41,7 +41,8 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 	source .envrc
 
-	dotnet tool install --global dotnet-ef --version 7.0.0
+	print_message "${bold}${green}Installing dotnet ef${clear}" $((DEPTH))
+	dotnet tool install --global dotnet-ef --version 7.0.0 > $HOME/logs/$FOLDER_NAME/$VERSION/dotnetEfInstall.txt 2>&1
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	rm $ARCHIVE_FILE
