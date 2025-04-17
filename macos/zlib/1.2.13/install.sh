@@ -31,6 +31,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libz.dylib" ]; then
 	tar -xf $ARCHIVE_FILE
 	mv "zlib-$VERSION" $VERSION
 	cd $VERSION
+	sed -i '' 's/\/\* No fdopen() \*\///' zutil.h
+	sed -i '' 's/define fdopen(fd,mode) NULL/\/\*define fdopen(fd,mode) NULL\*\//' zutil.h
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
