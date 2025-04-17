@@ -40,10 +40,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mysql" ]; then
 	tar -xf $ARCHIVE_FILE
 	mv "mysql-"$VERSION $VERSION
 	cd $VERSION
+	sed -i '' 's/\/\* No fdopen() \*\///' extra/zlib/zlib-1.2.13/zutil.h
+	sed -i '' 's/define fdopen(fd,mode) NULL/\/\*define fdopen(fd,mode) NULL\*\//' extra/zlib/zlib-1.2.13/zutil.h
 	mkdir bld
 	cd bld
 	printf "\t${bold}${green}Running cmake${clear}\n"
-	cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BISON_VERSION/bin/bison > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
+	cmake .. -DDOWNLOAD_BOOST=1 -DWITH_BOOST=$HOME/programs/$BOOST_FOLDER_NAME -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DOPENSSL_ROOT_DIR=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION -DBISON_EXECUTABLE=$HOME/programs/$BISON_FOLDER_NAME/$BISON_VERSION/bin/bison -DCMAKE_CXX_STANDARD=17 > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION
 
