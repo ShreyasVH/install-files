@@ -31,6 +31,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/cmake" ]; then
 	tar -xf $ARCHIVE_FILE
 	mv "cmake-"$VERSION $VERSION
 	cd $VERSION
+	sed -i '' 's/\/\* No fdopen() \*\///' Utilities/cmzlib/zutil.h
+	sed -i '' 's/define fdopen(fd,mode) NULL/\/\*define fdopen(fd,mode) NULL\*\//' Utilities/cmzlib/zutil.h
 	print_message "${bold}${green}Bootstrapping${clear}" $((DEPTH))
 	./bootstrap --help > $HOME/logs/$FOLDER_NAME/$VERSION/bootstrapHelp.txt 2>&1
 	./bootstrap --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/bootstrapOutput.txt 2>&1
