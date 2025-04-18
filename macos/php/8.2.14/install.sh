@@ -70,6 +70,8 @@ PHP_EXTENSION_PHALCON_FOLDER_NAME=php-phalcon
 PHP_EXTENSION_PHALCON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_PHALCON_FOLDER_NAME" '.[$folder][$version][$name]')
 PHP_EXTENSION_REDIS_FOLDER_NAME=php-redis
 PHP_EXTENSION_REDIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_REDIS_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_SQLSRV_FOLDER_NAME=php-sqlsrv
+PHP_EXTENSION_SQLSRV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_SQLSRV_FOLDER_NAME" '.[$folder][$version][$name]')
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
@@ -293,12 +295,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo "extension=sqlsrv.so" >> lib/php.ini
 
-		print_message "${bold}${green}Installing Console Table${clear}" $((DEPTH+1))
+		print_message "${bold}${green}Installing Console Table${clear}" $((DEPTH))
 		pear install Console_Table > $HOME/logs/$FOLDER_NAME/$VERSION/consoleTableInstallation.txt 2>&1
 
-		print_message "${bold}${green}Installing Composer${clear}" $((DEPTH+1))
+		print_message "${bold}${green}Installing Composer${clear}" $((DEPTH))
 		php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" > $HOME/logs/$FOLDER_NAME/$VERSION/composerInstallation.txt 2>&1
-		print_message "${bold}${green}Setting up Composer${clear}" $((DEPTH+1))
+		print_message "${bold}${green}Setting up Composer${clear}" $((DEPTH))
 		php composer-setup.php > $HOME/logs/$FOLDER_NAME/$VERSION/composerSetup.txt 2>&1
 		mv composer.phar ~/programs/$FOLDER_NAME/$VERSION/bin/composer
 		rm composer-setup.php
