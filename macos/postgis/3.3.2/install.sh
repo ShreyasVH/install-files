@@ -102,7 +102,7 @@ if [ ! -e "$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/lib/postgis-3.
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/lib/postgis-3.dylib" ]; then
+	if [ -e "$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/lib/postgis-3.so" ]; then
 		cd $HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION
 		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
