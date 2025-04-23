@@ -26,7 +26,8 @@ const excludedDirectories = [
 	'wsl_18_04',
 	'wsl_20_04',
 	'wsl_22_04',
-	'wsl_24_04'
+	'wsl_24_04',
+	'docker'
 ];
 
 
@@ -43,7 +44,9 @@ for (const program of programs) {
 				continue
 			}
 			const newPath = os + '/' + program + '/' + version + '/install.sh';
-			if (!fs.existsSync(newPath)) {
+			const dockerPath = 'docker/' + program + '/' + version + '/install.sh';
+			if (!fs.existsSync(newPath) && !fs.existsSync(dockerPath)) {
+				console.log(dockerPath)
 				if (!missedMigrations.hasOwnProperty(os)) {
 					missedMigrations[os] = {};
 				}
