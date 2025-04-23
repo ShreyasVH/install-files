@@ -96,6 +96,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME"
 	fi
 
+	if [ ! -d "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME" ]; then
+		mkdir "$HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME"
+	fi
+
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	bash $INSTALL_FILES_DIR/$OS/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/install.sh $((DEPTH+1))
@@ -274,18 +278,18 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		cd tmp
 		export CPPFLAGS="-I$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/include"
 		export LDFLAGS="-L$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/lib"
-		printf "\t${bold}${yellow}Installing sqlsrv extension${clear}\n"
-		printf "\t\t${bold}${green}Downloading source code${clear}\n"
+		print_message "${bold}${yellow}Installing sqlsrv extension${clear}" $((DEPTH+1))
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
 		wget -q "https://pecl.php.net/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
-		printf "\t\t${bold}${green}Extracting source code${clear}\n"
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
 		tar -xf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
 		cd "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
-		printf "\t\t${bold}${green}Running phpize${clear}\n"
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/phpizeOutput.txt 2>&1
-		printf "\t\t${bold}${green}Configuring${clear}\n"
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureOutput.txt 2>&1
-		printf "\t\t${bold}${green}Making${clear}\n"
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/makeOutput.txt 2>&1
 		mv modules/sqlsrv.so $EXTENSION_DIR
 		ls modules
