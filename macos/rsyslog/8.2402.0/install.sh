@@ -43,15 +43,6 @@ ZLIB_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
 
-AUTOCONF_FOLDER_NAME=autoconf
-AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
-
-AUTOMAKE_FOLDER_NAME=automake
-AUTOMAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOMAKE_FOLDER_NAME" '.[$folder][$version][$name]')
-
-LIBTOOL_FOLDER_NAME=libtool
-LIBTOOL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBTOOL_FOLDER_NAME" '.[$folder][$version][$name]')
-
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rsyslog.conf ]; then
 	print_message "${red}${bold}rsyslog.conf not found${clear}"
 	exit
@@ -68,17 +59,11 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rsyslogd" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$E2FSPROGS_FOLDER_NAME/$E2FSPROGS_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBGCRYPT_FOLDER_NAME/$LIBGCRYPT_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$CURL_FOLDER_NAME/$CURL_VERSION/install.sh $((DEPTH+1))
-	# bash $INSTALL_FILES_DIR/$OS/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/install.sh $((DEPTH+1))
-	# bash $INSTALL_FILES_DIR/$OS/$AUTOMAKE_FOLDER_NAME/$AUTOMAKE_VERSION/install.sh $((DEPTH+1))
-	# bash $INSTALL_FILES_DIR/$OS/$LIBTOOL_FOLDER_NAME/$LIBTOOL_VERSION/install.sh $((DEPTH+1))
 
 	cd "$HOME/sources/$FOLDER_NAME"
 
 	export PATH=$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH
 	export PATH=$HOME/programs/$LIBGCRYPT_FOLDER_NAME/$LIBGCRYPT_VERSION/bin:$PATH
-	# export PATH=$HOME/programs/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/bin:$PATH
-	# export PATH=$HOME/programs/$AUTOMAKE_FOLDER_NAME/$AUTOMAKE_VERSION/bin:$PATH
-	# export PATH=$HOME/programs/$LIBTOOL_FOLDER_NAME/$LIBTOOL_VERSION/bin:$PATH
 
 	export PKG_CONFIG_PATH=$HOME/programs/$LIBESTR_FOLDER_NAME/$LIBESTR_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
 	export LIBESTR_CFLAGS=$(pkg-config --cflags libestr)
@@ -105,24 +90,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rsyslogd" ]; then
 	export CURL_LIBS=$(pkg-config --libs libcurl)
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	# ARCHIVE_FILE="v$VERSION.tar.gz"
-	# wget -q "https://github.com/rsyslog/rsyslog/archive/refs/tags/$ARCHIVE_FILE"
 	ARCHIVE_FILE="rsyslog-$VERSION.tar.gz"
 	wget -q "https://www.rsyslog.com/files/download/rsyslog/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "rsyslog-$VERSION" $VERSION
 	cd $VERSION
-	# print_message "${bold}${green}Running libtoolize${clear}" $((DEPTH))
-	# libtoolize > $HOME/logs/$FOLDER_NAME/$VERSION/libtoolOutput.txt 2>&1
-	# print_message "${bold}${green}Running aclocal${clear}" $((DEPTH))
-	# aclocal > $HOME/logs/$FOLDER_NAME/$VERSION/aclocalOutput.txt 2>&1
-	# print_message "${bold}${green}Running autoconf${clear}" $((DEPTH))
-	# autoconf > $HOME/logs/$FOLDER_NAME/$VERSION/autoconfOutput.txt 2>&1
-	# print_message "${bold}${green}Running automake${clear}" $((DEPTH))
-	# automake --add-missing --copy > $HOME/logs/$FOLDER_NAME/$VERSION/automakeOutput.txt 2>&1
-	# print_message "${bold}${green}Running autoreconf${clear}" $((DEPTH))
-	# autoreconf -vfi > $HOME/logs/$FOLDER_NAME/$VERSION/autoreconfOutput.txt 2>&1
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
