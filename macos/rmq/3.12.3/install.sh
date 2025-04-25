@@ -74,7 +74,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	touch start.sh
 	echo "rabbitmq-server -detached" >> start.sh
-	echo "PORT=\$(grep 'listeners.tcp.default = ' \$HOME/workspace/myProjects/config-samples/rmq/$VERSION/macos/rabbitmq.conf | awk '{print \$3}')" >> start.sh
+	echo "PORT=\$(grep 'listeners.tcp.default = ' \$HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print \$3}')" >> start.sh
 	echo 'while [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]]; do :; done' >> start.sh
 	echo "rabbitmqctl trace_on -p / > traceEnable.log 2>&1" >> start.sh
 
@@ -84,13 +84,13 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	touch stop.sh
 	echo "rabbitmqctl stop > stopLog.log 2>&1" >> stop.sh
 
-	MANAGEMENT_PORT=$(grep 'management.tcp.port = ' $HOME/workspace/myProjects/config-samples/rmq/$VERSION/macos/rabbitmq.conf | awk '{print $3}')
+	MANAGEMENT_PORT=$(grep 'management.tcp.port = ' $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print $3}')
 	while [[ ! $(lsof -i:$MANAGEMENT_PORT -t | wc -l) -gt 0 ]]; do :; done
 	wget -q "http://localhost:$MANAGEMENT_PORT/cli/rabbitmqadmin"
 	chmod +x rabbitmqadmin
 	mv rabbitmqadmin sbin/
 
-	PORT=$(grep 'listeners.tcp.default = ' $HOME/workspace/myProjects/config-samples/rmq/$VERSION/macos/rabbitmq.conf | awk '{print $3}')
+	PORT=$(grep 'listeners.tcp.default = ' $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print $3}')
 	rabbitmqadmin -P $MANAGEMENT_PORT  declare queue name="trace" durable=true > /dev/null 2>&1
 	rabbitmqadmin -P $MANAGEMENT_PORT declare binding source="amq.rabbitmq.trace" destination="trace" routing_key=# > /dev/null 2>&1
 

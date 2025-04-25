@@ -46,7 +46,6 @@ for (const program of programs) {
 			const newPath = os + '/' + program + '/' + version + '/install.sh';
 			const dockerPath = 'docker/' + program + '/' + version + '/install.sh';
 			if (!fs.existsSync(newPath) && !fs.existsSync(dockerPath)) {
-				console.log(dockerPath)
 				if (!missedMigrations.hasOwnProperty(os)) {
 					missedMigrations[os] = {};
 				}

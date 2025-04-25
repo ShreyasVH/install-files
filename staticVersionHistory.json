@@ -1,6 +1,30 @@
 {
  "dotnet-core": [
   {
+   "version": "9.0.203",
+   "releaseDateString": "2025-03-28T23:04:00Z"
+  },
+  {
+   "version": "9.0.105",
+   "releaseDateString": "2025-03-28T23:04:00Z"
+  },
+  {
+   "version": "8.0.408",
+   "releaseDateString": "2025-03-28T23:04:00Z"
+  },
+  {
+   "version": "8.0.311",
+   "releaseDateString": "2025-03-28T23:04:00Z"
+  },
+  {
+   "version": "8.0.115",
+   "releaseDateString": "2025-03-28T23:04:00Z"
+  },
+  {
+   "version": "9.0.202",
+   "releaseDateString": "2025-03-11T23:02:00Z"
+  },
+  {
    "version": "9.0.201",
    "releaseDateString": "2025-03-11T23:02:00Z"
   },
@@ -471,6 +495,14 @@
  ],
  "haproxy": [
   {
+   "version": "3.1.7",
+   "releaseDateString": "2025-04-17T16:33:00Z"
+  },
+  {
+   "version": "3.1.6",
+   "releaseDateString": "2025-03-20T13:27:00Z"
+  },
+  {
    "version": "3.1.5",
    "releaseDateString": "2025-02-20T15:33:00Z"
   },
@@ -652,6 +684,26 @@
   }
  ],
  "java": [
+  {
+   "version": "24.0.1",
+   "releaseDateString": "2025-04-15T00:00:00Z"
+  },
+  {
+   "version": "24.0.1",
+   "releaseDateString": "2025-04-15T00:00:00Z"
+  },
+  {
+   "version": "17.0.15",
+   "releaseDateString": "2025-04-15T00:00:00Z"
+  },
+  {
+   "version": "11.0.27",
+   "releaseDateString": "2025-04-15T00:00:00Z"
+  },
+  {
+   "version": "24",
+   "releaseDateString": "2025-03-18T00:00:00Z"
+  },
   {
    "version": "23.0.2",
    "releaseDateString": "2025-01-21T00:00:00Z"
@@ -888,6 +940,10 @@
  "odbc": [
      {
         "version": "18.4.1.1",
+        "releaseDateString": "2025-03-19 23:04:00Z"
+     },
+     {
+        "version": "18.4.1.1",
         "releaseDateString": "2024-07-31 21:58:00Z"
      },
      {
@@ -916,6 +972,10 @@
      }
  ],
  "openssl": [
+  {
+   "version": "3.5.0",
+   "releaseDateString": "2025-04-08T18:39:00Z"
+  },
   {
    "version": "3.4.1",
    "releaseDateString": "2025-02-11T14:38:00Z"
@@ -1066,6 +1126,18 @@
   }
  ],
  "php-phalcon": [
+  {
+   "version": "5.9.3",
+   "releaseDateString": "2025-04-22T00:00:00Z"
+  },
+  {
+   "version": "5.9.2",
+   "releaseDateString": "2025-04-03T00:00:00Z"
+  },
+  {
+   "version": "5.9.1",
+   "releaseDateString": "2025-04-01T00:00:00Z"
+  },
   {
    "version": "5.9.0",
    "releaseDateString": "2025-03-09T00:00:00Z"

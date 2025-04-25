@@ -53,8 +53,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/nginx" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		mv conf/nginx.conf ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/nginx.conf.default
-		ln -s ~/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/nginx.conf conf/nginx.conf
+		mv conf/nginx.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/nginx.conf.default
+		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/nginx.conf conf/nginx.conf
 		echo "<html><body><h1>It works! (version: $VERSION)</h1></body></html>" > html/index.html
 
 		touch start.sh

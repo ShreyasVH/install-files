@@ -58,10 +58,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	echo "" >> .envrc
 	direnv allow
 
-	mv conf/neo4j.conf $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf.default
-	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j.conf conf/neo4j.conf
-	mv conf/neo4j-admin.conf $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j-admin.conf.default
-	ln -s $HOME/workspace/myProjects/config-samples/$FOLDER_NAME/$VERSION/macos/neo4j-admin.conf conf/neo4j-admin.conf
+	mv conf/neo4j.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/neo4j.conf.default
+	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/neo4j.conf conf/neo4j.conf
+	mv conf/neo4j-admin.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/neo4j-admin.conf.default
+	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/neo4j-admin.conf conf/neo4j-admin.conf
 
 	touch start.sh
 	echo "neo4j start > neo4j_start.log 2>&1 &" >> start.sh
