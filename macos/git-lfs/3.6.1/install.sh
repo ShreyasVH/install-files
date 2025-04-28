@@ -17,7 +17,7 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apr-1-config" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/git-lfs" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	cd $HOME/sources/$FOLDER_NAME
@@ -35,7 +35,15 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apr-1-config" ]; then
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A bash install.sh > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 
 	if [ -e "git-lfs" ]; then
-		SUDO_ASKPASS=$HOME/askpass.sh sudo -A mv git-lfs /usr/local/binaries
+		mkdir -p $HOME/programs/$FOLDER_NAME/$VERSION/bin
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A mv git-lfs $HOME/programs/$FOLDER_NAME/$VERSION/bin
+
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
+
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
