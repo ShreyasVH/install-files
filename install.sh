@@ -10,4 +10,4 @@ DEPTH=$3
 source $INSTALL_FILES_DIR/utils.sh
 
 print_message "${bold}${green}Installing${clear}" $DEPTH
-echo $USER_PASSWORD | sudo -S -p '' make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+SUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" LD_RUN_PATH="$LD_RUN_PATH" make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
