@@ -25,7 +25,6 @@ PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME"
 
 PYTHON_FOLDER_NAME=python
 PYTHON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PYTHON_FOLDER_NAME" '.[$folder][$version][$name]')
-# PYTHON_VERSION=3.11.3
 PYTHON_MAJOR_VERSION=$(echo $PYTHON_VERSION | cut -d '.' -f 1)
 PYTHON_MINOR_VERSION=$(echo $PYTHON_VERSION | cut -d '.' -f 2)
 
