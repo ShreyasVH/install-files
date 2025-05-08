@@ -634,6 +634,15 @@
   "versionsLastUpdatedOn": 1711034851420,
   "path": "/bin/ssh"
  },
+ "tar": {
+  "tagsUrl": "",
+  "dependencies": [
+   "libiconv"
+  ],
+  "versionRegex": "",
+  "versionsLastUpdatedOn": 1711034851420,
+  "path": "/bin/tar"
+ },
  "unixodbc": {
   "tagsUrl": "",
   "dependencies": [

@@ -17,7 +17,7 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/make" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ar" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	cd $HOME/sources/$FOLDER_NAME
@@ -39,7 +39,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/make" ]; then
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/make" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ar" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
