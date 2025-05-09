@@ -41,6 +41,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sudo" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown root:wheel bin/sudo
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chmod 4755 bin/sudo
+
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
 fi
