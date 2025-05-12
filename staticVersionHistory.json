@@ -547,6 +547,12 @@
    "releaseDateString": "2025-03-30T15:32:00Z"
   }
  ],
+ "grep": [
+  {
+   "version": "3.12",
+   "releaseDateString": "2025-04-10T12:06:00Z"
+  }
+ ],
  "gzip": [
   {
    "version": "1.14",
