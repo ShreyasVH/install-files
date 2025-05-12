@@ -661,6 +661,7 @@
  "tar": {
   "tagsUrl": "",
   "dependencies": [
+   "gzip",
    "libiconv"
   ],
   "versionRegex": "",

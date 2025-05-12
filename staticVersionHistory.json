@@ -547,6 +547,28 @@
    "releaseDateString": "2025-03-30T15:32:00Z"
   }
  ],
+ "gzip": [
+  {
+   "version": "1.14",
+   "releaseDateString": "2025-04-09T23:50:00Z"
+  },
+  {
+   "version": "1.13",
+   "releaseDateString": "2023-08-19T20:20:00Z"
+  },
+  {
+   "version": "1.12",
+   "releaseDateString": "2022-04-07T12:59:00Z"
+  },
+  {
+   "version": "1.11",
+   "releaseDateString": "2021-09-03T10:39:00Z"
+  },
+  {
+   "version": "1.10",
+   "releaseDateString": "2018-12-30T00:35:00Z"
+  }
+ ],
  "haproxy": [
   {
    "version": "3.1.7",
@@ -951,6 +973,12 @@
   {
    "version": "1.7",
    "releaseDateString": "2023-09-07T12:35:00Z"
+  }
+ ],
+ "less": [
+  {
+   "version": "668",
+   "releaseDateString": "2024-10-17T18:01:00Z"
   }
  ],
  "libmemcached": [
