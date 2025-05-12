@@ -662,7 +662,8 @@
   "tagsUrl": "",
   "dependencies": [
    "gzip",
-   "libiconv"
+   "libiconv",
+   "xz"
   ],
   "versionRegex": "",
   "versionsLastUpdatedOn": 1711034851420,
@@ -684,6 +685,13 @@
   ],
   "isEntryPoint": true,
   "path": "/bin/wget"
+ },
+ "xz": {
+  "tagsUrl": "https://github.com/tukaani-project/xz/tags",
+  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1746770610647,
+  "isEntryPoint": true,
+  "path": "/bin/xz"
  },
  "zlib": {
   "tagsUrl": "https://github.com/madler/zlib/tags",
