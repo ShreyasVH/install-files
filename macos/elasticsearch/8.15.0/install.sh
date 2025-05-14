@@ -59,7 +59,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	cp $HOME/workspace/myProjects/ssl/server.crt config
 	cp $HOME/workspace/myProjects/ssl/server.key config
-	cp $HOME/workspace/myProjects/ssl/rootCA.pem config
+	cp $HOME/workspace/myProjects/ssl/rootCA.crt config
 	
 	bash start.sh
 	print_message "${bold}${green}Waiting for elasticsearch to start${clear}" $((DEPTH))
