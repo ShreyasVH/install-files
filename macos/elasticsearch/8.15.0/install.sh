@@ -83,6 +83,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	bash stop.sh
 
+	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
+	DOMAIN_NAME=elastic_$VERSION_STRING.local.com
+	if ! grep -q "$DOMAIN_NAME" /etc/hosts; then
+	    SUDO_ASKPASS=$HOME/askpass.sh sudo -A sh -c "echo '127.0.0.1 ' $DOMAIN_NAME >> /etc/hosts"
+	fi
+
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..
 	rm $ARCHIVE_FILE
