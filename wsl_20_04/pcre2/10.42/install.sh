@@ -22,7 +22,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pcre2-config" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="pcre2-"$VERSION".tar.gz"

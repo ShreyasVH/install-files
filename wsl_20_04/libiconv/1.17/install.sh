@@ -22,7 +22,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/iconv" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="libiconv-$VERSION.tar.gz"
