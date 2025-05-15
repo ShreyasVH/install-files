@@ -17,22 +17,22 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
-	
+
 	cd $HOME/programs/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIEVE_FILE="mongodb-database-tools-ubuntu2204-x86_64-$VERSION.tgz"
-	wget -q "https://fastdl.mongodb.org/tools/db/$ARCHIEVE_FILE"
+	ARCHIVE_FILE=node-v$VERSION-linux-x64.tar.gz
+	wget -q "https://nodejs.org/dist/v$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	tar -xf $ARCHIEVE_FILE
-	mv "mongodb-database-tools-ubuntu2204-x86_64-$VERSION" $VERSION
+	tar -xf $ARCHIVE_FILE
+	mv "node-v$VERSION-linux-x64" $VERSION
 	cd $VERSION
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
 		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
 		touch .envrc
@@ -42,8 +42,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
 
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
-		rm $ARCHIEVE_FILE
+		rm $ARCHIVE_FILE
 	fi
 fi
 
 cd $HOME/install-files
+
+
