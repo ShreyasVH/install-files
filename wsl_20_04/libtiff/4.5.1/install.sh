@@ -22,7 +22,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libtiff.so" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="tiff-$VERSION.tar.gz"
@@ -33,13 +33,13 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libtiff.so" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --enable-shared > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libtiff.so" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
-		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi

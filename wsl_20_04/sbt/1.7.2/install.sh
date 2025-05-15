@@ -5,7 +5,6 @@ VERSION=$(basename $version_dir)
 program_dir=$(dirname "$version_dir")
 FOLDER_NAME=$(basename $program_dir)
 
-
 os_dir=$(dirname $program_dir)
 OS=$(basename $os_dir)
 
@@ -14,18 +13,17 @@ if [ $# -ge 1 ]; then
     DEPTH=$1
 fi
 
-JAVA_FOLDER_NAME=java
-JAVA_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
-
 source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
+JAVA_FOLDER_NAME=java
+JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sbt" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	bash $INSTALL_FILES_DIR/$OS/$JAVA_FOLDER_NAME/$JAVA_VERSION/install.sh $((DEPTH+1))
 
@@ -35,7 +33,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sbt" ]; then
 	ARCHIVE_FILE=sbt-$VERSION.tgz
 	wget -q "https://github.com/sbt/sbt/releases/download/v$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	tar -xf "sbt-$VERSION.tgz"
+	tar -xf $ARCHIVE_FILE
 	mv sbt $VERSION
 
 	cd $VERSION

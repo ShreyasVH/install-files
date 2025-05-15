@@ -13,17 +13,17 @@ if [ $# -ge 1 ]; then
     DEPTH=$1
 fi
 
-AUTOCONF_FOLDER_NAME=autoconf
-AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
-
 source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
+AUTOCONF_FOLDER_NAME=autoconf
+AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
+
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/automake" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	bash $INSTALL_FILES_DIR/$OS/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/install.sh $((DEPTH+1))
 

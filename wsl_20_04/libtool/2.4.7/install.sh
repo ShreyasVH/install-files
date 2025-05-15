@@ -13,23 +13,16 @@ if [ $# -ge 1 ]; then
     DEPTH=$1
 fi
 
-M4_FOLDER_NAME=m4
-M4_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$M4_FOLDER_NAME" '.[$folder][$version][$name]')
-
 source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION/bin/libtool" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/libtool" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
-
-	bash $INSTALL_FILES_DIR/$OS/$M4_FOLDER_NAME/$M4_VERSION/install.sh $((DEPTH+1))
-
-	export PATH=$HOME/programs/$M4_FOLDER_NAME/$M4_VERSION/bin:$PATH
-
 	cd $HOME/sources/$FOLDER_NAME
+
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="libtool-$VERSION.tar.gz"

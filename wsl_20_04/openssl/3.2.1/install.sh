@@ -13,9 +13,6 @@ if [ $# -ge 1 ]; then
     DEPTH=$1
 fi
 
-ZLIB_FOLDER_NAME=zlib
-ZLIB_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ZLIB_FOLDER_NAME" '.[$folder][$version][$name]')
-
 source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
@@ -23,11 +20,9 @@ cd $INSTALL_FILES_DIR
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
-
-	bash $INSTALL_FILES_DIR/$OS/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/install.sh $((DEPTH+1))
-
 	cd $HOME/sources/$FOLDER_NAME
+
+	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
@@ -38,7 +33,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib --with-zlib-lib=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib --with-zlib-include=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
