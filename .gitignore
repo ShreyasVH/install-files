@@ -11,3 +11,4 @@ missingVersions.json
 missingInstallFiles.json
 missedMigrations.json
 missedVersions.json
+npmInstallLog.log
