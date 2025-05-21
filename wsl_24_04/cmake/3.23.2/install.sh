@@ -17,31 +17,27 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-ODBC_FOLDER_NAME=odbc
-ODBC_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ODBC_FOLDER_NAME" '.[$folder][$version][$name]')
-
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
-	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/cmake" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
-
-	bash $INSTALL_FILES_DIR/$OS/$ODBC_FOLDER_NAME/$ODBC_VERSION/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
+
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="unixODBC-$VERSION.tar.gz"
-	wget -q "https://www.unixodbc.org/$ARCHIVE_FILE"
+	ARCHIVE_FILE="cmake-$VERSION.tar.gz"
+	wget -q "https://github.com/Kitware/CMake/releases/download/v$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
-	mv "unixODBC-$VERSION" $VERSION
+	mv "cmake-"$VERSION $VERSION
 	cd $VERSION
-	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
-	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	print_message "${bold}${green}Bootstrapping${clear}" $((DEPTH))
+	./bootstrap --help > $HOME/logs/$FOLDER_NAME/$VERSION/bootstrapHelp.txt 2>&1
+	./bootstrap --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/bootstrapOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/cmake" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
@@ -50,10 +46,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
-
-		odbcinst -i -d -f /etc/odbcinst.ini > /dev/null 2>&1
-
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
 fi
+
+cd $HOME/install-files

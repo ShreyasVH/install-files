@@ -7,6 +7,7 @@ ignored_folders["src"]=1
 ignored_folders["ubuntu_20_04"]=1
 ignored_folders["wsl_18_04"]=1
 ignored_folders["wsl_20_04"]=1
+ignored_folders["wsl_24_04"]=1
 
 
 for program_dir in ./*/; do
@@ -18,11 +19,11 @@ for program_dir in ./*/; do
 	    	for version_dir in "$program_dir"*/; do
 	    		if [ -d "$version_dir" ]; then
 			        version=$(basename "$version_dir")
-			        echo "\t$version"
+			        echo -e "\t$version"
 			        for os_dir in "$version_dir"*/; do
 			        	if [ -d "$os_dir" ]; then
 			        		os=$(basename "$os_dir")
-			        		echo "\t\t$os"
+			        		echo -e "\t\t$os"
 			        		if [ -d "$os/$program/$version" ]; then
 			        			rm -rf "$program/$version/$os"
 			        		fi

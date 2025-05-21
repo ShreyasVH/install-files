@@ -52,8 +52,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 
-		odbcinst -i -d -f $HOME/programs/$ODBC_FOLDER_NAME/$ODBC_VERSION/odbcinst.ini > /dev/null 2>&1
-		sed -i '' "s|/opt/homebrew|$HOME/programs/odbc/$ODBC_VERSION|" etc/odbcinst.ini
+		odbcinst -i -d -f /etc/odbcinst.ini > /dev/null 2>&1
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
