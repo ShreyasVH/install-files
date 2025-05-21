@@ -29,7 +29,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/unzip" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="unzip$VERSION_STRING.tar.gz"
-	wget --show-progress "https://downloads.sourceforge.net/project/infozip/UnZip%206.x%20%28latest%29/UnZip%206.0/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	wget --show-progress "https://downloads.sourceforge.net/infozip/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "unzip$VERSION_STRING" $VERSION
