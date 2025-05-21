@@ -1421,6 +1421,12 @@
    "releaseDateString": "2022-05-02T00:00:00Z"
   }
  ],
+ "unzip": [
+  {
+   "version": "6.0",
+   "releaseDateString": "2009-04-20T00:00:00Z"
+  }
+ ],
  "wget": [
   {
    "version": "1.25.0",
