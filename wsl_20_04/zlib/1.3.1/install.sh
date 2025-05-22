@@ -5,6 +5,9 @@ VERSION=$(basename $version_dir)
 program_dir=$(dirname "$version_dir")
 FOLDER_NAME=$(basename $program_dir)
 
+os_dir=$(dirname $program_dir)
+OS=$(basename $os_dir)
+
 DEPTH=1
 if [ $# -ge 1 ]; then
     DEPTH=$1
@@ -19,7 +22,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libz.so" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="zlib-$VERSION.tar.gz"
