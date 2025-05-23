@@ -17,6 +17,11 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
+if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml ]; then
+	printf "logstash.yml not found\n"
+	exit
+fi
+
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/logstash" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 
@@ -35,18 +40,19 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/logstash" ]; then
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
 	touch .envrc
-	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+	echo "export PATH=\$HOME/programs/$FOLDER_NAME/$VERSION/bin:\$PATH" >> .envrc
 	echo "" >> .envrc
 	direnv allow
 
-	touch start.sh
-	echo "logstash -d > elastic.log 2>&1 &" >> start.sh
+	mv config/logstash.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml.default
+	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml config/logstash.yml
 
-	# touch stop.sh
-	# mv config/elasticsearch.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml.default
-	# ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
-	# echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
-	# echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	touch start.sh
+	echo "logstash -f \$HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.conf > logstash.log 2>&1 &" >> start.sh
+
+	touch stop.sh
+	echo 'PORT=$(grep '\''api.http.port: '\'' config/logstash.yml | awk '\''{print $2}'\'')' >> stop.sh
+	echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..
