@@ -45,4 +45,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/autoconf" ]; then
 	fi
 fi
 
-cd $HOME/install-files

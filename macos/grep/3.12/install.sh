@@ -46,4 +46,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/grep" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

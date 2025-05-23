@@ -62,4 +62,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
 	fi
 fi
 
-cd $HOME/install-files
