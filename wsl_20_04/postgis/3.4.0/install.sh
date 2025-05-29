@@ -115,4 +115,3 @@ if [ ! -e "$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/lib/postgis-3.
 	fi
 fi
 
-cd $HOME/install-files

@@ -50,4 +50,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/cmake" ]; then
 	fi
 fi
 
-cd $HOME/install-files

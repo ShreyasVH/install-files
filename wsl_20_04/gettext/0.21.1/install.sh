@@ -46,4 +46,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/gettext" ]; then
 	fi
 fi
 
-cd $HOME/install-files

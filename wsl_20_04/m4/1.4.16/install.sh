@@ -45,4 +45,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/m4" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

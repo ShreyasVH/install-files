@@ -45,4 +45,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	fi
 fi
 
-cd $HOME/install-files
