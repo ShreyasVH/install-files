@@ -49,4 +49,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/dotnet" ]; then
 	rm $ARCHIVE_FILE
 fi
 
-cd $HOME/install-files

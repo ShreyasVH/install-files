@@ -45,4 +45,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/make" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

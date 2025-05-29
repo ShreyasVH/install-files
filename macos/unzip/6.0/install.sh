@@ -48,4 +48,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/unzip" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

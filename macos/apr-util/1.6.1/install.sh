@@ -49,4 +49,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apu-1-config" ]; then
 	fi
 fi
 
-cd $HOME/install-files

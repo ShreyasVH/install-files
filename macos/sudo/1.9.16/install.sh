@@ -48,4 +48,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sudo" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

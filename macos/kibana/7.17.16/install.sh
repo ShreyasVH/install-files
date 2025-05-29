@@ -58,4 +58,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/kibana" ]; then
 	rm $ARCHIVE_FILE
 fi
 
-cd $HOME/install-files

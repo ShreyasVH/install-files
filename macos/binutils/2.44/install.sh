@@ -47,4 +47,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ar" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+
