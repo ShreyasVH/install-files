@@ -50,4 +50,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/git" ]; then
 	fi
 fi
 
-cd $HOME/install-files

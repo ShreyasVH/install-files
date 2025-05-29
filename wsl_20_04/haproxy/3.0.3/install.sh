@@ -65,7 +65,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo 'SUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" ./sbin/haproxy -f ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/haproxy.cfg -D' >> start.sh
 
 		touch stop.sh
-		echo 'SUDO_ASKPASS=$HOME/askpass.sh sudo -A kill -9 $(SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -t -i:80)' >> stop.sh
+		echo "SUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat \$HOME/pids/haproxy.pid)" >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi

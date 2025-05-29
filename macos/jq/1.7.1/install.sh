@@ -34,4 +34,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jq" ]; then
 	direnv allow
 fi
 
-cd $HOME/install-files

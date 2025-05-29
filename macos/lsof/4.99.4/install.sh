@@ -45,4 +45,4 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/lsof" ]; then
 	fi
 fi
 
-cd $HOME/install-files
+

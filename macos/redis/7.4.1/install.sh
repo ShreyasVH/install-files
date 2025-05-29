@@ -83,4 +83,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 	fi
 fi
 
-cd $HOME/install-files
