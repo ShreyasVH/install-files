@@ -67,4 +67,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.so" ]; then
 	fi
 fi
 
-cd $HOME/install-files

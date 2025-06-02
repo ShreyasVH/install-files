@@ -54,4 +54,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	fi
 fi
 
-cd $HOME/install-files

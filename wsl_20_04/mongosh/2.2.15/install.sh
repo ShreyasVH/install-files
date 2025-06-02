@@ -46,4 +46,3 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	fi
 fi
 
-cd $HOME/install-files

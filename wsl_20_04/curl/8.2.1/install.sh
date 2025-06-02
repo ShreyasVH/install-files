@@ -55,4 +55,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/curl" ]; then
 	fi
 fi
 
-cd $HOME/install-files

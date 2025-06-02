@@ -49,4 +49,3 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	rm $ARCHIVE_FILE
 fi
 
-cd $HOME/install-files
