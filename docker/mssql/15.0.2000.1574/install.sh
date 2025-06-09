@@ -39,5 +39,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	touch stop.sh
 	echo "docker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > /dev/null 2>&1" > stop.sh
 fi
-
-cd $HOME/install-files

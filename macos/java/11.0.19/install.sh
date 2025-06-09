@@ -41,7 +41,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 		direnv allow
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
-		keytool -import -alias dev-server -keystore lib/security/cacerts -file $HOME/workspace/myProjects/ssl/server.pem -storepass changeit -noprompt
+		keytool -import -alias dev-server -keystore lib/security/cacerts -file $HOME/workspace/myProjects/ssl/server.pem -storepass changeit -noprompt > /dev/null 2>&1
 
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
