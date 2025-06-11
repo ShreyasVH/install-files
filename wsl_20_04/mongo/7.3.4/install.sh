@@ -65,7 +65,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo '' >> stop.sh
 		echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
 		echo -e '\techo "Stopping"' >> stop.sh
-		echo -e 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+		echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
 		echo 'fi' >> stop.sh
 
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
