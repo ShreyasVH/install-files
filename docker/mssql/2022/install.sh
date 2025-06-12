@@ -46,6 +46,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	echo '' >> stop.sh
 	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
-	echo -e "\tdocker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > /dev/null 2>&1" > stop.sh
+	echo -e "\tdocker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > /dev/null 2>&1" >> stop.sh
 	echo 'fi' >> stop.sh
 fi
