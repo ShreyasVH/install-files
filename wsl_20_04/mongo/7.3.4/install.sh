@@ -52,12 +52,21 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		direnv allow
 
 		touch start.sh
-		echo "mongod -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/mongod.conf --fork > mongo.log 2>&1 &" >> start.sh
+		echo 'PORT=$(grep '\''port: '\'' ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/mongod.conf | awk '\''{print $2}'\'')' >> start.sh
+		echo '' >> start.sh
+		echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+		echo -e '\techo "Starting"' >> start.sh
+		echo -e "\tmongod -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/mongod.conf --fork > mongo.log 2>&1 &" >> start.sh
+		echo 'fi' >> start.sh
 
 		touch stop.sh
 		PORT=$(grep 'port: ' ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/mongod.conf | awk '{print $2}')
 		echo 'PORT=$(grep '\''port: '\'' ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/mongod.conf | awk '\''{print $2}'\'')' >> stop.sh
-		echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+		echo '' >> stop.sh
+		echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+		echo -e '\techo "Stopping"' >> stop.sh
+		echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+		echo 'fi' >> stop.sh
 
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
@@ -65,7 +74,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 		cd $VERSION
-		bash start.sh
+		bash start.sh > /dev/null 2>&1
 
 		bash $INSTALL_FILES_DIR/$OS/$MONGO_SH_FOLDER_NAME/$MONGO_SH_VERSION/install.sh  $((DEPTH+1))
 
@@ -77,7 +86,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		export PATH=$HOME/programs/$MONGO_SH_FOLDER_NAME/$MONGO_SH_VERSION/bin:$PATH
 		mongosh --eval 'rs.initiate({_id: "myReplicaSet", members: [{ _id: 0, host: "127.0.0.1:'$PORT'" }]})' "mongodb://127.0.0.1:$PORT" > rsInitiateLog.txt
-		bash stop.sh
+		bash stop.sh > /dev/null 2>&1
 	fi
 fi
 

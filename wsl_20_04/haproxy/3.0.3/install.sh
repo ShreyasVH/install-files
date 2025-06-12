@@ -60,12 +60,21 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		direnv allow
 
 		touch start.sh
-		echo 'export LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> start.sh
+		echo 'PORT=80' >> start.sh
 		echo '' >> start.sh
-		echo 'SUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" ./sbin/haproxy -f ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/haproxy.cfg -D' >> start.sh
+		echo 'if ! SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> start.sh
+		echo -e '\techo "Starting"' >> start.sh
+		echo -e '\texport LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> start.sh
+		echo -e '\tSUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" ./sbin/haproxy -f ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/haproxy.cfg -D' >> start.sh
+		echo 'fi' >> start.sh
 
 		touch stop.sh
-		echo "SUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat \$HOME/pids/haproxy.pid)" >> stop.sh
+		echo 'PORT=80' >> stop.sh
+		echo '' >> stop.sh
+		echo 'if SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> stop.sh
+		echo -e '\techo "Stopping"' >> stop.sh
+		echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat \$HOME/pids/haproxy.pid)" >> stop.sh
+		echo 'fi' >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
