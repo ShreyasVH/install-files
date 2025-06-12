@@ -34,8 +34,18 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	docker compose -f $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml build > /dev/null 2>&1
 
 	touch start.sh
-	echo "docker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml up -d > /dev/null 2>&1" >> start.sh
+	echo 'PORT=1433' >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\tdocker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml up -d > /dev/null 2>&1" >> start.sh
+	echo 'fi' >> start.sh
 
 	touch stop.sh
-	echo "docker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > /dev/null 2>&1" > stop.sh
+	echo 'PORT=1433' >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e "\tdocker compose -p mssql -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > /dev/null 2>&1" > stop.sh
+	echo 'fi' >> stop.sh
 fi
