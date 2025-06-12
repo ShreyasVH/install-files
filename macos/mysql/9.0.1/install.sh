@@ -79,17 +79,14 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	print_message "${bold}${green}Sleeping for 60s${clear}" $((DEPTH))
 	sleep 60
 
-	USERNAME=$MYSQL_USERNAME
-	PASSWORD=$MYSQL_PASSWORD
-
 	mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
 FLUSH PRIVILEGES;
-CREATE USER '$USERNAME'@'%' IDENTIFIED with caching_sha2_password BY '$PASSWORD';
-GRANT ALL PRIVILEGES ON *.* TO '$USERNAME'@'%';
+CREATE USER '$MYSQL_USERNAME'@'%' IDENTIFIED with caching_sha2_password BY '$MYSQL_PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO '$MYSQL_USERNAME'@'%';
 FLUSH PRIVILEGES;
 EOF
 
-	mysqladmin --defaults-file=my.cnf -u $USERNAME --password=$PASSWORD -S data/mysql_${VERSION_STRING}.sock shutdown > shutdown.log 2>&1 &
+	mysqladmin --defaults-file=my.cnf -u $MYSQL_USERNAME --password=$MYSQL_PASSWORD -S data/mysql_${VERSION_STRING}.sock shutdown > shutdown.log 2>&1 &
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..

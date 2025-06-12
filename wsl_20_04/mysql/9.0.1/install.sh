@@ -81,12 +81,12 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
 FLUSH PRIVILEGES;
-CREATE USER 'shreyas'@'%' IDENTIFIED with caching_sha2_password BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'shreyas'@'%';
+CREATE USER '$MYSQL_USERNAME'@'%' IDENTIFIED with caching_sha2_password BY '$MYSQL_PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO '$MYSQL_USERNAME'@'%';
 FLUSH PRIVILEGES;
 EOF
 
-	bash stop.sh
+	mysqladmin --defaults-file=my.cnf -u $MYSQL_USERNAME --password=$MYSQL_PASSWORD -S data/mysql_${VERSION_STRING}.sock shutdown > shutdown.log 2>&1 &
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..

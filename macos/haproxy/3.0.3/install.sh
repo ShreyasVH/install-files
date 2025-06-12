@@ -64,7 +64,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo '' >> start.sh
 		echo 'if ! SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> start.sh
 		echo -e '\techo "Starting"' >> start.sh
-		echo "echo $USER_PASSWORD | sudo -S -p '' haproxy -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg -D" >> start.sh
+		echo -e "\techo $USER_PASSWORD | sudo -S -p '' haproxy -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg -D" >> start.sh
 		echo 'fi' >> start.sh
 
 		touch stop.sh
