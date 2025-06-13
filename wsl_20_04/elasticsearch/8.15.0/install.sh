@@ -72,7 +72,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	cp $HOME/workspace/myProjects/ssl/server.key config
 	cp $HOME/workspace/myProjects/ssl/rootCA.crt config
 	
-	bash start.sh
+	bash start.sh > /dev/null 2>&1
 	print_message "${bold}${green}Waiting for elasticsearch to start${clear}" $((DEPTH))
 	while [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]];
 	do
@@ -92,7 +92,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	curl -X POST "https://localhost:$PORT/_security/user/kibana_system/_password" -u "elastic:$PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}"
 
-	bash stop.sh
+	bash stop.sh > /dev/null 2>&1
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..
