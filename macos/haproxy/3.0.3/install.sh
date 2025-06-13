@@ -59,12 +59,13 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo "" >> .envrc
 		direnv allow
 
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg haproxy.cfg
 		touch start.sh
 		echo 'PORT=80' >> start.sh
 		echo '' >> start.sh
 		echo 'if ! SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> start.sh
 		echo -e '\techo "Starting"' >> start.sh
-		echo -e "\techo $USER_PASSWORD | sudo -S -p '' haproxy -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg -D" >> start.sh
+		echo -e "\techo $USER_PASSWORD | sudo -S -p '' haproxy -f haproxy.cfg -D" >> start.sh
 		echo 'fi' >> start.sh
 
 		touch stop.sh

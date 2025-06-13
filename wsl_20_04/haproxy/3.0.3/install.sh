@@ -59,13 +59,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo "" >> .envrc
 		direnv allow
 
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg haproxy.cfg
 		touch start.sh
 		echo 'PORT=80' >> start.sh
 		echo '' >> start.sh
 		echo 'if ! SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> start.sh
 		echo -e '\techo "Starting"' >> start.sh
 		echo -e '\texport LD_LIBRARY_PATH=$HOME/programs/'$OPENSSL_FOLDER_NAME'/'$OPENSSL_VERSION'/lib:$LD_LIBRARY_PATH' >> start.sh
-		echo -e '\tSUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" ./sbin/haproxy -f ~/workspace/myProjects/config-samples/'$OS'/'$FOLDER_NAME'/'$VERSION'/haproxy.cfg -D' >> start.sh
+		echo -e '\tSUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" ./sbin/haproxy -f haproxy.cfg -D' >> start.sh
 		echo 'fi' >> start.sh
 
 		touch stop.sh
