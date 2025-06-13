@@ -77,7 +77,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo '' >> stop.sh
 		echo 'if SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> stop.sh
 		echo -e '\techo "Stopping"' >> stop.sh
-		echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat \$HOME/pids/haproxy.pid)" >> stop.sh
+		echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat haproxy.pid)" >> stop.sh
 		echo 'fi' >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
