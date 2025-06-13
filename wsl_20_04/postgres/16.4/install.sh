@@ -65,10 +65,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		print_message "${bold}${green}Initializing DB${clear}" $((DEPTH))
 		initdb -d data > $HOME/logs/$FOLDER_NAME/$VERSION/dbInitialization.txt 2>&1
 
-		mv data/postgresql.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
-		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
-		mv data/pg_hba.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf.default
-		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
+		mv data/postgresql.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
+		mv data/pg_hba.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf.default
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 		touch start.sh
 		echo "PORT=\$(grep 'port = ' data/postgresql.conf | awk '{print \$3}')" >> start.sh
@@ -87,7 +87,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		echo 'fi' >> stop.sh
 
 		print_message "${bold}${green}Initial Start${clear}" $((DEPTH))
-		bash start.sh
+		bash start.sh > /dev/null 2>&1
 		PORT=$(grep 'port = ' data/postgresql.conf | awk '{print $3}')
 		print_message "${bold}${green}Creating Postgres User${clear}" $((DEPTH))
 		createuser -p $PORT -s postgres > $HOME/logs/$FOLDER_NAME/$VERSION/postgresUserCreation.txt 2>&1
@@ -98,7 +98,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 CREATE USER shreyas WITH ENCRYPTED PASSWORD 'password' SUPERUSER;
 EOF
 
-		bash stop.sh
+		bash stop.sh > /dev/null 2>&1
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 
