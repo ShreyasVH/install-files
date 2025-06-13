@@ -47,7 +47,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	mkdir data
-	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf ./
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf ./
 
 	touch start.sh
 	echo "PORT=\$(grep -E '^ *port=' my.cnf | awk -F= '{print \$2}' | tr -d ' ')" >> start.sh
