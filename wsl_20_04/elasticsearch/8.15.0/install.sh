@@ -58,7 +58,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	touch stop.sh
 	mv config/elasticsearch.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml.default
-	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
+	cp ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
 	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
 	echo '' >> stop.sh
 	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
@@ -66,7 +66,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
 	echo 'fi' >> stop.sh
 
-	PORT=$(grep 'http.port: ' $HOME/workspace/myProjects/config-samples/$OS/elasticsearch/$VERSION/elasticsearch.yml | awk '{print $2}')
+	PORT=$(grep 'http.port: ' config/elasticsearch.yml | awk '{print $2}')
 
 	cp $HOME/workspace/myProjects/ssl/server.crt config
 	cp $HOME/workspace/myProjects/ssl/server.key config
