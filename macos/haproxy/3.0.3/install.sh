@@ -60,6 +60,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		direnv allow
 
 		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg haproxy.cfg
+		cp $HOME/workspace/myProjects/ssl/server.pem server.pem
+		cp $HOME/workspace/myProjects/ssl/rootCA.crt rootCA.crt
+
 		touch start.sh
 		echo 'PORT=80' >> start.sh
 		echo '' >> start.sh
@@ -73,7 +76,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo '' >> stop.sh
 		echo 'if SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> stop.sh
 		echo -e '\techo "Stopping"' >> stop.sh
-		echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat \$HOME/pids/haproxy.pid)" >> stop.sh
+		echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A kill -9 \$(cat haproxy.pid)" >> stop.sh
 		echo 'fi' >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))

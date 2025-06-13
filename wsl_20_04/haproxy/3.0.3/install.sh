@@ -60,6 +60,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		direnv allow
 
 		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg haproxy.cfg
+		cp $HOME/workspace/myProjects/ssl/server.pem server.pem
+		cp $HOME/workspace/myProjects/ssl/rootCA.crt rootCA.crt
+
 		touch start.sh
 		echo 'PORT=80' >> start.sh
 		echo '' >> start.sh
