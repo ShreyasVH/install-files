@@ -26,3 +26,6 @@ export bold='\e[1m'
 export OS_FOLDER=
 
 export PROCESS_COUNT=
+
+export MYSQL_USERNAME=
+export MYSQL_PASSWORD=

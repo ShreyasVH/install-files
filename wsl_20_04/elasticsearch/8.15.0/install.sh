@@ -47,23 +47,32 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 
 	touch start.sh
-	echo "SUDO_ASKPASS=\$HOME/askpass.sh sudo -A sysctl -w vm.max_map_count=262144 > /dev/null" >> start.sh
+	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\tSUDO_ASKPASS=\$HOME/askpass.sh sudo -A sysctl -w vm.max_map_count=262144 > /dev/null" >> start.sh
 	echo "" >> start.sh
-	echo "elasticsearch -d > elastic.log 2>&1 &" >> start.sh
+	echo -e "\telasticsearch -d > elastic.log 2>&1 &" >> start.sh
+	echo 'fi' >> start.sh
 
 	touch stop.sh
 	mv config/elasticsearch.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml.default
-	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
+	cp ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
 	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
-	echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo 'fi' >> stop.sh
 
-	PORT=$(grep 'http.port: ' $HOME/workspace/myProjects/config-samples/$OS/elasticsearch/$VERSION/elasticsearch.yml | awk '{print $2}')
+	PORT=$(grep 'http.port: ' config/elasticsearch.yml | awk '{print $2}')
 
 	cp $HOME/workspace/myProjects/ssl/server.crt config
 	cp $HOME/workspace/myProjects/ssl/server.key config
 	cp $HOME/workspace/myProjects/ssl/rootCA.crt config
 	
-	bash start.sh
+	bash start.sh > /dev/null 2>&1
 	print_message "${bold}${green}Waiting for elasticsearch to start${clear}" $((DEPTH))
 	while [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]];
 	do
@@ -83,7 +92,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	curl -X POST "https://localhost:$PORT/_security/user/kibana_system/_password" -u "elastic:$PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}"
 
-	bash stop.sh
+	bash stop.sh > /dev/null 2>&1
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..

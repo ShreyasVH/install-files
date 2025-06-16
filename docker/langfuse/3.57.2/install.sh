@@ -30,12 +30,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml docker-compose.yml
+
 	print_message "${bold}${green}Building image${clear}"
-	docker compose -f $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml build > /dev/null 2>&1
+	docker compose -f docker-compose.yml build > compile.log 2>&1
 
 	touch start.sh
-	echo "docker compose -p $FOLDER_NAME -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml up -d > server.log 2>&1" >> start.sh
+	echo "docker compose -p $FOLDER_NAME -f docker-compose.yml up -d > server.log 2>&1" >> start.sh
 
 	touch stop.sh
-	echo "docker compose -p $FOLDER_NAME -f ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/docker-compose.yml stop > shutdown.log 2>&1" > stop.sh
+	echo "docker compose -p $FOLDER_NAME -f docker-compose.yml stop > shutdown.log 2>&1" >> stop.sh
 fi

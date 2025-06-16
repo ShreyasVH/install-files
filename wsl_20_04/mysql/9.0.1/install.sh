@@ -47,14 +47,24 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	mkdir data
-	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf ./
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf ./
 
 	touch start.sh
-	echo "mysqld_safe --defaults-file=my.cnf > mysql.log 2>&1 &" >> start.sh
+	echo "PORT=\$(grep -E '^ *port=' my.cnf | awk -F= '{print \$2}' | tr -d ' ')" >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\tmysqld_safe --defaults-file=my.cnf > mysql.log 2>&1 &" >> start.sh
+	echo 'fi' >> start.sh
 
 	touch stop.sh
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
-	echo "mysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown > shutdown.log 2>&1 &" >> stop.sh
+	echo "PORT=\$(grep -E '^ *port=' my.cnf | awk -F= '{print \$2}' | tr -d ' ')" >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e "\tmysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown > shutdown.log 2>&1 &" >> stop.sh
+	echo 'fi' >> stop.sh
 
 	print_message "${bold}${green}Initializing DB${clear}" $((DEPTH))
 	mysqld --defaults-file=my.cnf --initialize 2> $HOME/logs/$FOLDER_NAME/$VERSION/initialize_db.log
@@ -71,12 +81,12 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	mysql -u root -S "data/mysql_$VERSION_STRING.sock" -P $PORT <<EOF
 FLUSH PRIVILEGES;
-CREATE USER 'shreyas'@'%' IDENTIFIED with caching_sha2_password BY 'password';
-GRANT ALL PRIVILEGES ON *.* TO 'shreyas'@'%';
+CREATE USER '$MYSQL_USERNAME'@'%' IDENTIFIED with caching_sha2_password BY '$MYSQL_PASSWORD';
+GRANT ALL PRIVILEGES ON *.* TO '$MYSQL_USERNAME'@'%';
 FLUSH PRIVILEGES;
 EOF
 
-	bash stop.sh
+	mysqladmin --defaults-file=my.cnf -u $MYSQL_USERNAME --password=$MYSQL_PASSWORD -S data/mysql_${VERSION_STRING}.sock shutdown > shutdown.log 2>&1 &
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..
