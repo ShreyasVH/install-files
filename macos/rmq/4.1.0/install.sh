@@ -73,16 +73,25 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	rabbitmq-plugins enable rabbitmq_management > /dev/null 2>&1
 
 	touch start.sh
-	echo "rabbitmq-server -detached" >> start.sh
-	echo "PORT=\$(grep 'listeners.tcp.default = ' \$HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print \$3}')" >> start.sh
-	echo 'while [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]]; do :; done' >> start.sh
-	echo "rabbitmqctl trace_on -p / > traceEnable.log 2>&1" >> start.sh
+	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\trabbitmq-server -detached" >> start.sh
+	echo -e '\twhile [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]]; do :; done' >> start.sh
+	echo -e "\trabbitmqctl trace_on -p / > traceEnable.log 2>&1" >> start.sh
+	echo 'fi' >> start.sh
 
 	print_message "${bold}${green}Starting RMQ${clear}" $((DEPTH))
 	bash start.sh
 
 	touch stop.sh
-	echo "rabbitmqctl stop > stopLog.log 2>&1" >> stop.sh
+	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e "\trabbitmqctl stop > stopLog.log 2>&1" >> stop.sh
+	echo 'fi' >> stop.sh
 
 	MANAGEMENT_PORT=$(grep 'management.tcp.port = ' $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print $3}')
 	while [[ ! $(lsof -i:$MANAGEMENT_PORT -t | wc -l) -gt 0 ]]; do :; done
