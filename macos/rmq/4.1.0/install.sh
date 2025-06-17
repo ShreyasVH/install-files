@@ -65,7 +65,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	echo "" >> .envrc
 	direnv allow
 
-	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf ./etc/rabbitmq/
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf ./etc/rabbitmq/
 
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/sbin:$PATH
 
