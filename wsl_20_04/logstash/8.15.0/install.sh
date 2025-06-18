@@ -45,14 +45,24 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/logstash" ]; then
 	direnv allow
 
 	mv config/logstash.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml.default
-	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml config/logstash.yml
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.yml config/logstash.yml
+	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.conf config/logstash.conf
 
 	touch start.sh
-	echo "logstash -f \$HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/logstash.conf > logstash.log 2>&1 &" >> start.sh
+	echo 'PORT=$(grep '\''api.http.port: '\'' config/logstash.yml | awk '\''{print $2}'\'')' >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\tlogstash -f config/logstash.conf > logstash.log 2>&1 &" >> start.sh
+	echo 'fi' >> start.sh
 
 	touch stop.sh
 	echo 'PORT=$(grep '\''api.http.port: '\'' config/logstash.yml | awk '\''{print $2}'\'')' >> stop.sh
-	echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo 'fi' >> stop.sh
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	cd ..

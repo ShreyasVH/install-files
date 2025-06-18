@@ -45,13 +45,22 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/kibana" ]; then
 	direnv allow
 
 	touch start.sh
-	echo "kibana serve > kibana.log 2>&1 &" >> start.sh
+	echo 'PORT=$(grep '\''server.port: '\'' config/kibana.yml | awk '\''{print $2}'\'')' >> start.sh
+	echo '' >> start.sh
+	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo -e '\techo "Starting"' >> start.sh
+	echo -e "\tkibana serve > kibana.log 2>&1 &" >> start.sh
+	echo 'fi' >> start.sh
 
 	touch stop.sh
 	mv config/kibana.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/kibana.yml.default
-	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/kibana.yml config/kibana.yml
+	cp ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/kibana.yml config/kibana.yml
 	echo 'PORT=$(grep '\''server.port: '\'' config/kibana.yml | awk '\''{print $2}'\'')' >> stop.sh
-	echo 'kill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo '' >> stop.sh
+	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo -e '\techo "Stopping"' >> stop.sh
+	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo 'fi' >> stop.sh
 
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
 	DOMAIN_NAME=kibana_$VERSION_STRING.local.com
