@@ -2,7 +2,7 @@
  "adminer": {
   "tagsUrl": "https://github.com/vrana/adminer/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914827681,
+  "versionsLastUpdatedOn": 1750490282825,
   "isEntryPoint": true,
   "path": "index.php"
  },
@@ -14,14 +14,14 @@
    "pcre2"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914829960,
+  "versionsLastUpdatedOn": 1750490284968,
   "isEntryPoint": true,
   "path": "/bin/apachectl"
  },
  "apr": {
   "tagsUrl": "https://github.com/apache/apr/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914832160,
+  "versionsLastUpdatedOn": 1750490287156,
   "path": "/bin/apr-1-config"
  },
  "apr-util": {
@@ -30,13 +30,13 @@
    "apr"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914834443,
+  "versionsLastUpdatedOn": 1750490289026,
   "path": "/bin/apu-1-config"
  },
  "autoconf": {
   "tagsUrl": "https://github.com/autotools-mirror/autoconf/tags",
   "versionRegex": "v\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914837033,
+  "versionsLastUpdatedOn": 1750490291447,
   "path": "/bin/autoconf",
   "dependencies": [
    "m4"
@@ -48,37 +48,37 @@
    "autoconf"
   ],
   "versionRegex": "v\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914839147,
+  "versionsLastUpdatedOn": 1750490293672,
   "path": "/bin/automake"
  },
  "bison": {
   "tagsUrl": "https://github.com/akimd/bison/tags",
   "versionRegex": "v\\d+\\.\\d+(\\.)?(\\d)*",
-  "versionsLastUpdatedOn": 1747914841498,
+  "versionsLastUpdatedOn": 1750490295974,
   "path": "/bin/bison"
  },
  "boost": {
   "tagsUrl": "https://github.com/boostorg/boost/tags",
   "versionRegex": "boost-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914843604
+  "versionsLastUpdatedOn": 1750490298117
  },
  "cmake": {
   "tagsUrl": "https://github.com/Kitware/CMake/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914845728,
+  "versionsLastUpdatedOn": 1750490300518,
   "path": "/bin/cmake"
  },
  "cockroach": {
   "tagsUrl": "https://github.com/cockroachdb/cockroach/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914848358,
+  "versionsLastUpdatedOn": 1750490305054,
   "isEntryPoint": false,
   "path": "/bin/cockroach"
  },
  "composer": {
   "tagsUrl": "https://github.com/composer/composer/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914851558
+  "versionsLastUpdatedOn": 1750490308215
  },
  "curl": {
   "tagsUrl": "https://github.com/curl/curl/tags",
@@ -86,7 +86,7 @@
    "openssl"
   ],
   "versionRegex": "curl-\\d+_\\d+_\\d+",
-  "versionsLastUpdatedOn": 1747914854544,
+  "versionsLastUpdatedOn": 1750490311269,
   "path": "/bin/curl"
  },
  "dotnet-core": {
@@ -99,13 +99,13 @@
  "e2fsprogs": {
   "tagsUrl": "https://github.com/tytso/e2fsprogs/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914856894,
+  "versionsLastUpdatedOn": 1750490313435,
   "path": "/lib/libext2fs.a"
  },
  "elasticsearch": {
   "tagsUrl": "https://github.com/elastic/elasticsearch/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914859425,
+  "versionsLastUpdatedOn": 1750490315882,
   "isEntryPoint": true,
   "path": "/bin/elasticsearch"
  },
@@ -115,7 +115,7 @@
    "erlang"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914861661,
+  "versionsLastUpdatedOn": 1750490318280,
   "isEntryPoint": true,
   "path": "/bin/elixir"
  },
@@ -126,7 +126,7 @@
    "perl"
   ],
   "versionRegex": "OTP-\\d+\\.\\d+(\\.\\d+)?",
-  "versionsLastUpdatedOn": 1747914863906,
+  "versionsLastUpdatedOn": 1750490320574,
   "isEntryPoint": true,
   "path": "/bin/erl"
  },
@@ -149,13 +149,13 @@
    "cmake"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914866067,
+  "versionsLastUpdatedOn": 1750490322744,
   "path": "/bin/geos-config"
  },
  "gettext": {
   "tagsUrl": "https://github.com/autotools-mirror/gettext/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914868317,
+  "versionsLastUpdatedOn": 1750490324925,
   "path": "/bin/gettext"
  },
  "git": {
@@ -172,7 +172,7 @@
  "go": {
   "tagsUrl": "https://github.com/golang/go/tags",
   "versionRegex": "go\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914870294,
+  "versionsLastUpdatedOn": 1750490327079,
   "isEntryPoint": true,
   "path": "/bin/go"
  },
@@ -192,15 +192,15 @@
  },
  "jq": {
   "tagsUrl": "https://github.com/jqlang/jq/tags",
-  "versionRegex": "jq-\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914872560,
+  "versionRegex": "jq-\\d+\\.\\d+(\\.\\d)*",
+  "versionsLastUpdatedOn": 1750493290360,
   "isEntryPoint": true,
   "path": "/bin/jq"
  },
  "kibana": {
   "tagsUrl": "https://github.com/elastic/kibana/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914875174,
+  "versionsLastUpdatedOn": 1750490333092,
   "isEntryPoint": true,
   "path": "/bin/kibana"
  },
@@ -210,14 +210,14 @@
    "java"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914989645,
+  "versionsLastUpdatedOn": 1750490487809,
   "isEntryPoint": true,
   "path": "/bin/kotlin"
  },
  "libestr": {
   "tagsUrl": "https://github.com/rsyslog/libestr/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747914991870,
+  "versionsLastUpdatedOn": 1750490489723,
   "path": "/lib/libestr.dylib"
  },
  "libevent": {
@@ -227,7 +227,7 @@
    "pkg-config"
   ],
   "versionRegex": "release-\\d+\\.\\d+\\.\\d+-stable",
-  "versionsLastUpdatedOn": 1747914994219,
+  "versionsLastUpdatedOn": 1750490491889,
   "path": "/lib/libevent.dylib"
  },
  "libfastjson": {
@@ -238,18 +238,18 @@
    "libtool"
   ],
   "versionRegex": "v\\d+\\.\\d+(\\.\\d+)+",
-  "versionsLastUpdatedOn": 1747914996375,
+  "versionsLastUpdatedOn": 1750490494124,
   "path": "/lib/libfastjson.dylib"
  },
  "libexpat": {
   "tagsUrl": "https://github.com/libexpat/libexpat/tags",
   "versionRegex": "R_\\d+_\\d+_\\d+",
-  "versionsLastUpdatedOn": 1747914998527
+  "versionsLastUpdatedOn": 1750490496394
  },
  "libffi": {
   "tagsUrl": "https://github.com/libffi/libffi/tags",
   "versionRegex": "v\\d+\\.\\d+(\\.\\d+)*",
-  "versionsLastUpdatedOn": 1747915000664
+  "versionsLastUpdatedOn": 1750490498645
  },
  "libgcrypt": {
   "tagsUrl": "https://github.com/gpg/libgcrypt/tags",
@@ -257,19 +257,19 @@
    "libgpg-error"
   ],
   "versionRegex": "libgcrypt-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915002704,
+  "versionsLastUpdatedOn": 1750490500853,
   "path": "/lib/libgcrypt.dylib"
  },
  "libgpg-error": {
   "tagsUrl": "https://github.com/gpg/libgpg-error/tags",
   "versionRegex": "libgpg-error-\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915004904,
+  "versionsLastUpdatedOn": 1750490503075,
   "path": "/lib/libgpg-error.dylib"
  },
  "libiconv": {
   "tagsUrl": "https://github.com/roboticslibrary/libiconv/tags",
   "versionRegex": "v\\d+\\.\\d+(\\.\\d+)*",
-  "versionsLastUpdatedOn": 1747915006899,
+  "versionsLastUpdatedOn": 1750490505316,
   "path": "/lib/libiconv.dylib"
  },
  "libmemcached": {
@@ -280,13 +280,13 @@
  "libtiff": {
   "tagsUrl": "https://github.com/libsdl-org/libtiff/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915008974,
+  "versionsLastUpdatedOn": 1750490507272,
   "path": "/lib/libtiff.dylib"
  },
  "libtool": {
   "tagsUrl": "https://github.com/autotools-mirror/libtool/tags",
   "versionRegex": "v\\d+\\.\\d+(\\.\\d+)?",
-  "versionsLastUpdatedOn": 1747915011320,
+  "versionsLastUpdatedOn": 1750490509615,
   "path": "/lib/libltdl.dylib"
  },
  "libxml2": {
@@ -296,19 +296,19 @@
    "python"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915014296,
+  "versionsLastUpdatedOn": 1750490511641,
   "path": "/lib/libxml2.dylib"
  },
  "libyaml": {
   "tagsUrl": "https://github.com/yaml/libyaml/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
   "path": "/lib/libyaml.dylib",
-  "versionsLastUpdatedOn": 1747915016553
+  "versionsLastUpdatedOn": 1750490513942
  },
  "lsof": {
   "tagsUrl": "https://github.com/lsof-org/lsof/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915018765,
+  "versionsLastUpdatedOn": 1750490516155,
   "isEntryPoint": true,
   "path": "/bin/lsof"
  },
@@ -326,7 +326,7 @@
    "java"
   ],
   "versionRegex": "maven-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915020943,
+  "versionsLastUpdatedOn": 1750490518378,
   "isEntryPoint": true,
   "path": "/bin/mvn"
  },
@@ -336,7 +336,7 @@
    "libevent"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915023203,
+  "versionsLastUpdatedOn": 1750490520584,
   "isEntryPoint": true,
   "path": "/bin/memcached"
  },
@@ -346,21 +346,21 @@
    "mongosh"
   ],
   "versionRegex": "r\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915025356,
+  "versionsLastUpdatedOn": 1750490524909,
   "isEntryPoint": true,
   "path": "/bin/mongod"
  },
  "mongo-cli-tools": {
   "tagsUrl": "https://github.com/mongodb/mongo-tools/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915027789,
+  "versionsLastUpdatedOn": 1750490527053,
   "isEntryPoint": true,
   "path": "/bin/mongodump"
  },
  "mongosh": {
   "tagsUrl": "https://github.com/mongodb-js/mongosh/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915031643,
+  "versionsLastUpdatedOn": 1750490538611,
   "path": "/bin/mongosh"
  },
  "mpc": {
@@ -385,7 +385,7 @@
    "bison"
   ],
   "versionRegex": "mysql-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915034027,
+  "versionsLastUpdatedOn": 1750490540766,
   "isEntryPoint": true,
   "path": "/bin/mysql"
  },
@@ -399,21 +399,21 @@
    "java"
   ],
   "versionRegex": "\\d\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915036169,
+  "versionsLastUpdatedOn": 1750490542992,
   "isEntryPoint": true,
   "path": "/bin/neo4j"
  },
  "nginx": {
   "tagsUrl": "https://github.com/nginx/nginx/tags",
   "versionRegex": "release-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915038155,
+  "versionsLastUpdatedOn": 1750490545215,
   "isEntryPoint": true,
   "path": "/sbin/nginx"
  },
  "node": {
   "tagsUrl": "https://github.com/nodejs/node/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915041320,
+  "versionsLastUpdatedOn": 1750490548538,
   "isEntryPoint": true,
   "path": "/bin/node"
  },
@@ -425,7 +425,7 @@
    "libtool"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915043643,
+  "versionsLastUpdatedOn": 1750490550667,
   "path": "/bin/onig-config"
  },
  "openssl": {
@@ -440,13 +440,13 @@
  "pcre2": {
   "tagsUrl": "https://github.com/PCRE2Project/pcre2/tags",
   "versionRegex": "pcre2-\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915045728,
+  "versionsLastUpdatedOn": 1750490553784,
   "path": "/bin/pcre2-config"
  },
  "perl": {
   "tagsUrl": "https://github.com/Perl/perl5/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915048099,
+  "versionsLastUpdatedOn": 1750490555981,
   "isEntryPoint": true,
   "path": "/bin/perl"
  },
@@ -478,29 +478,29 @@
    "zlib"
   ],
   "versionRegex": "php-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915050483,
+  "versionsLastUpdatedOn": 1750490557950,
   "isEntryPoint": true,
   "path": "/bin/php"
  },
  "php-memcached": {
   "tagsUrl": "https://github.com/php-memcached-dev/php-memcached/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915052697
+  "versionsLastUpdatedOn": 1750490560191
  },
  "php-redis": {
   "tagsUrl": "https://github.com/phpredis/phpredis/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915055054
+  "versionsLastUpdatedOn": 1750490562576
  },
  "php-sqlsrv": {
   "tagsUrl": "https://github.com/microsoft/msphpsql/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915057702
+  "versionsLastUpdatedOn": 1750490565030
  },
  "phpmemadmin": {
   "tagsUrl": "https://github.com/clickalicious/phpmemadmin/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915059932,
+  "versionsLastUpdatedOn": 1750490567346,
   "isEntryPoint": true,
   "path": "/index.php",
   "dependencies": [
@@ -510,7 +510,7 @@
  "phpmyadmin": {
   "tagsUrl": "https://github.com/phpmyadmin/phpmyadmin/tags",
   "versionRegex": "RELEASE_\\d+_\\d+_\\d+",
-  "versionsLastUpdatedOn": 1747915062222,
+  "versionsLastUpdatedOn": 1750490570472,
   "isEntryPoint": true,
   "path": "/index.php",
   "dependencies": [
@@ -535,7 +535,7 @@
    "zlib"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915064558
+  "versionsLastUpdatedOn": 1750490573607
  },
  "postgres": {
   "tagsUrl": "https://github.com/postgres/postgres/tags",
@@ -543,7 +543,7 @@
    "postgis"
   ],
   "versionRegex": "REL_\\d+_\\d+",
-  "versionsLastUpdatedOn": 1747915066882,
+  "versionsLastUpdatedOn": 1750490575750,
   "isEntryPoint": true,
   "path": "/bin/psql"
  },
@@ -557,7 +557,7 @@
    "openssl"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915068973,
+  "versionsLastUpdatedOn": 1750490578007,
   "path": "/bin/proj"
  },
  "python": {
@@ -568,7 +568,7 @@
    "pkg-config"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915072166,
+  "versionsLastUpdatedOn": 1750490581099,
   "isEntryPoint": true,
   "path": "/bin/python3"
  },
@@ -578,7 +578,7 @@
    "pkg-config"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915074395,
+  "versionsLastUpdatedOn": 1750490583422,
   "path": "/bin/redis-cli",
   "isEntryPoint": true
  },
@@ -590,7 +590,7 @@
    "make"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915076851,
+  "versionsLastUpdatedOn": 1750490585770,
   "isEntryPoint": true,
   "path": "/sbin/rabbitmq-server"
  },
@@ -607,7 +607,7 @@
    "openssl"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915079574,
+  "versionsLastUpdatedOn": 1750490588068,
   "isEntryPoint": true,
   "path": "/sbin/rsyslogd"
  },
@@ -618,7 +618,7 @@
    "openssl"
   ],
   "versionRegex": "v\\d+_\\d+_\\d+",
-  "versionsLastUpdatedOn": 1747915081872,
+  "versionsLastUpdatedOn": 1750490590367,
   "isEntryPoint": true,
   "path": "/bin/ruby"
  },
@@ -628,7 +628,7 @@
    "java"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915084295,
+  "versionsLastUpdatedOn": 1750490592565,
   "isEntryPoint": true,
   "path": "/bin/sbt"
  },
@@ -638,20 +638,20 @@
    "java"
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915086757,
+  "versionsLastUpdatedOn": 1750490595079,
   "isEntryPoint": true,
   "path": "/bin/scala"
  },
  "sqlcmd": {
   "tagsUrl": "https://github.com/microsoft/go-sqlcmd/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915094893,
+  "versionsLastUpdatedOn": 1750490597526,
   "path": "/bin/sqlcmd"
  },
  "sqlite3": {
   "tagsUrl": "https://github.com/sqlite/sqlite/tags",
   "versionRegex": "version-\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915096849,
+  "versionsLastUpdatedOn": 1750490599603,
   "isEntryPoint": true,
   "path": "/bin/sqlite3"
  },
@@ -695,14 +695,14 @@
  "xz": {
   "tagsUrl": "https://github.com/tukaani-project/xz/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1747915100070,
+  "versionsLastUpdatedOn": 1750490602511,
   "isEntryPoint": true,
   "path": "/bin/xz"
  },
  "zlib": {
   "tagsUrl": "https://github.com/madler/zlib/tags",
   "versionRegex": "v\\d+\\.\\d+(\\.\\d+)?",
-  "versionsLastUpdatedOn": 1747915102218,
+  "versionsLastUpdatedOn": 1750490604720,
   "path": "/lib/libz.dylib"
  }
 }

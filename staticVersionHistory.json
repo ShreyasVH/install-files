@@ -31,6 +31,62 @@
  ],
  "dotnet-core": [
   {
+   "version": "9.0.301",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "9.0.205",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "9.0.107",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "8.0.411",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "8.0.314",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "8.0.117",
+   "releaseDateString": "2025-06-11T12:09:00Z"
+  },
+  {
+   "version": "9.0.300",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "9.0.204",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "9.0.106",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "8.0.410",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "8.0.313",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "8.0.409",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "8.0.312",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
+   "version": "8.0.116",
+   "releaseDateString": "2025-05-14T02:10:00Z"
+  },
+  {
    "version": "9.0.203",
    "releaseDateString": "2025-03-28T23:04:00Z"
   },
@@ -527,6 +583,10 @@
  ],
  "git": [
   {
+   "version": "2.50.0",
+   "releaseDateString": "2025-06-16T16:47:00Z"
+  },
+  {
    "version": "2.49.0",
    "releaseDateString": "2025-03-14T16:58:00Z"
   }
@@ -576,6 +636,18 @@
   }
  ],
  "haproxy": [
+  {
+   "version": "3.2.1",
+   "releaseDateString": "2025-06-11T16:12:00Z"
+  },
+  {
+   "version": "3.2.0",
+   "releaseDateString": "2025-05-28T14:45:00Z"
+  },
+  {
+   "version": "3.1.8",
+   "releaseDateString": "2025-06-02T14:05:00Z"
+  },
   {
    "version": "3.1.7",
    "releaseDateString": "2025-04-17T16:33:00Z"
@@ -975,17 +1047,11 @@
    "releaseDateString": "2022-09-20T00:00:00Z"
   }
  ],
- "jq": [
-  {
-   "version": "1.7.1",
-   "releaseDateString": "2023-12-14T12:50:00Z"
-  },
-  {
-   "version": "1.7",
-   "releaseDateString": "2023-09-07T12:35:00Z"
-  }
- ],
  "less": [
+  {
+   "version": "679",
+   "releaseDateString": "2025-06-19T22:05:00Z"
+  },
   {
    "version": "668",
    "releaseDateString": "2024-10-17T18:01:00Z"
@@ -998,6 +1064,10 @@
   }
  ],
  "m4": [
+  {
+   "version": "1.4.20",
+   "releaseDateString": "2025-05-10T13:52:00Z"
+  },
   {
    "version": "1.4.19",
    "releaseDateString": "2021-05-28T17:55:00Z"
@@ -1033,6 +1103,10 @@
  ],
  "mpfr": [
   {
+   "version": "4.2.2",
+   "releaseDateString": "2025-03-20T09:38:00Z"
+  },
+  {
    "version": "4.2.1",
    "releaseDateString": "2023-08-22T07:27:00Z"
   },
@@ -1043,7 +1117,7 @@
  ],
  "odbc": [
      {
-        "version": "18.4.1.1",
+        "version": "18.5.1.1",
         "releaseDateString": "2025-03-19 23:04:00Z"
      },
      {
@@ -1346,6 +1420,14 @@
   }
  ],
  "php-xdebug": [
+  {
+   "version": "3.4.4",
+   "releaseDateString": "2025-06-12T00:00:00Z"
+  },
+  {
+   "version": "3.4.3",
+   "releaseDateString": "2025-05-14T00:00:00Z"
+  },
   {
    "version": "3.4.2",
    "releaseDateString": "2025-03-09T00:00:00Z"
