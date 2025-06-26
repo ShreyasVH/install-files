@@ -48,7 +48,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 	tar -xf $ARCHIVE_FILE
 	mv "redis-$VERSION" $VERSION
 	cd $VERSION
-	sed -i '' 's/#ifdef __APPLE__/#ifdef __APPLE__\n#define _DARWIN_C_SOURCE/' src/config.h
 	
 	bash $INSTALL_FILES_DIR/make.sh $FOLDER_NAME $VERSION $((DEPTH))
 

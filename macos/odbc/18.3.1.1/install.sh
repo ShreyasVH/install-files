@@ -2,6 +2,7 @@ version_dir=$(dirname "$(realpath "$0")")
 
 VERSION=$(basename $version_dir)
 MAJOR_VERSION=$(echo $VERSION | cut -d '.' -f 1)
+echo $MAJOR_VERSION
 
 program_dir=$(dirname "$version_dir")
 FOLDER_NAME=$(basename $program_dir)
@@ -32,7 +33,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libmsodbcsql.$MAJOR_VERSION.
 	tar -xf $ARCHIVE_FILE
 	mv "msodbcsql-$VERSION" $VERSION
 	cd $VERSION
-	if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libmsodbcsql.$MAJOR_VERSION.dylib" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libmsodbcsql.$MAJOR_VERSION.dylib" ]; then
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
 		rm $ARCHIVE_FILE
