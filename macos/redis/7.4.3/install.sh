@@ -67,17 +67,35 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 		touch start.sh
 		mv $HOME/sources/$FOLDER_NAME/$VERSION/redis.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/redis.conf.default
 		mv $HOME/sources/$FOLDER_NAME/$VERSION/sentinel.conf ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/sentinel.conf.default
-		echo "redis-server ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/redis.conf" >> start.sh
-		echo "" >> start.sh
-		echo "redis-sentinel ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/sentinel.conf" >> start.sh
-		echo "" >> start.sh
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/redis.conf ./
+		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/sentinel.conf ./
+		echo 'PORT=$(grep '\''^port '\'' redis.conf | awk '\''{print $2}'\'')' >> start.sh
+		echo '' >> start.sh
+		echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+		echo -e '\techo "Starting"' >> start.sh
+		echo -e "\tredis-server redis.conf" >> start.sh
+		echo 'fi' >> start.sh
+		echo '' >> start.sh
+		echo 'SENTINEL_PORT=$(grep '\''^port '\'' sentinel.conf | awk '\''{print $2}'\'')' >> start.sh
+		echo 'if ! lsof -i :$SENTINEL_PORT > /dev/null; then' >> start.sh
+		echo -e '\techo "Starting sentinel"' >> start.sh
+		echo -e "\tredis-sentinel sentinel.conf" >> start.sh
+		echo 'fi' >> start.sh
 
 		touch stop.sh
-		echo 'PORT=$(grep '\''^port '\'' ~/workspace/myProjects/config-samples/'"$OS/$FOLDER_NAME/$VERSION"'/redis.conf | awk '\''{print $2}'\'')' >> stop.sh
-		echo 'SENTINEL_PORT=$(grep '\''^port '\'' ~/workspace/myProjects/config-samples/'"$OS/$FOLDER_NAME/$VERSION"'/sentinel.conf | awk '\''{print $2}'\'')' >> stop.sh
-		echo 'kill -9 $(lsof -i:$SENTINEL_PORT -t)' >> stop.sh
-		echo 'redis-cli -p $PORT shutdown' >> stop.sh
+		echo 'SENTINEL_PORT=$(grep '\''^port '\'' sentinel.conf | awk '\''{print $2}'\'')' >> stop.sh
 		echo '' >> stop.sh
+		echo 'if lsof -i :$SENTINEL_PORT > /dev/null; then' >> stop.sh
+		echo -e '\techo "Stopping sentinel"' >> stop.sh
+		echo -e '\tkill -9 $(lsof -i:$SENTINEL_PORT -t)' >> stop.sh
+		echo 'fi' >> stop.sh
+		echo '' >> stop.sh
+		echo 'PORT=$(grep '\''^port '\'' redis.conf | awk '\''{print $2}'\'')' >> stop.sh
+		echo '' >> stop.sh
+		echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+		echo -e '\techo "Stopping"' >> stop.sh
+		echo -e '\tredis-cli -p $PORT shutdown' >> stop.sh
+		echo 'fi' >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
