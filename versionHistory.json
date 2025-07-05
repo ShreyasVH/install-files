@@ -2171,6 +2171,14 @@
  ],
  "cockroach": [
   {
+   "version": "25.2.2",
+   "releaseDateString": "2025-06-13 21:11:05 UTC"
+  },
+  {
+   "version": "24.3.15",
+   "releaseDateString": "2025-06-13 05:15:34 UTC"
+  },
+  {
    "version": "25.1.7",
    "releaseDateString": "2025-05-22 14:44:04 UTC"
   },
@@ -9703,6 +9711,10 @@
  ],
  "jq": [
   {
+   "version": "1.8.1",
+   "releaseDateString": "2025-07-01 10:36:15 UTC"
+  },
+  {
    "version": "1.8.0",
    "releaseDateString": "2025-06-01 05:51:24 UTC"
   },
@@ -13209,6 +13221,14 @@
  ],
  "mongo": [
   {
+   "version": "8.1.2",
+   "releaseDateString": "2025-07-01T22:39:32Z"
+  },
+  {
+   "version": "8.0.11",
+   "releaseDateString": "2025-06-30T20:30:31Z"
+  },
+  {
    "version": "8.0.10",
    "releaseDateString": "2025-05-28T19:37:39Z"
   },
@@ -15380,6 +15400,14 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "2.5.5",
+   "releaseDateString": "2025-07-02T13:57:45Z"
+  },
+  {
+   "version": "2.5.4",
+   "releaseDateString": "2025-06-30 14:23:29 UTC"
+  },
   {
    "version": "2.5.2",
    "releaseDateString": "2025-06-02 13:03:37 UTC"
@@ -24875,6 +24903,10 @@
  ],
  "perl": [
   {
+   "version": "5.42.0",
+   "releaseDateString": "2025-07-03T15:28:02Z"
+  },
+  {
    "version": "5.40.2",
    "releaseDateString": "2025-04-13T08:54:07Z"
   },
@@ -24929,18 +24961,6 @@
   {
    "version": "5.36.0",
    "releaseDateString": "2022-05-27T23:54:32Z"
-  },
-  {
-   "version": "5.35.11",
-   "releaseDateString": "2022-04-20T18:20:21Z"
-  },
-  {
-   "version": "5.35.10",
-   "releaseDateString": "2022-03-20T10:56:58Z"
-  },
-  {
-   "version": "5.34.1",
-   "releaseDateString": "2022-03-12T17:38:49Z"
   },
   {
    "version": "5.34.0",
@@ -25676,6 +25696,26 @@
   }
  ],
  "php": [
+  {
+   "version": "8.4.10",
+   "releaseDateString": "2025-07-02 02:23:23 UTC"
+  },
+  {
+   "version": "8.4.9",
+   "releaseDateString": "2025-07-01 14:16:19 UTC"
+  },
+  {
+   "version": "8.3.23",
+   "releaseDateString": "2025-07-01 16:52:47 UTC"
+  },
+  {
+   "version": "8.2.29",
+   "releaseDateString": "2025-07-01 17:01:52 UTC"
+  },
+  {
+   "version": "8.1.33",
+   "releaseDateString": "2025-07-01 21:14:08 UTC"
+  },
   {
    "version": "8.4.8",
    "releaseDateString": "2025-06-03 16:40:48 UTC"
@@ -31738,6 +31778,10 @@
   }
  ],
  "rmq": [
+  {
+   "version": "4.1.2",
+   "releaseDateString": "2025-07-02 11:12:18 UTC"
+  },
   {
    "version": "4.1.1",
    "releaseDateString": "2025-06-04 17:03:03 UTC"
@@ -38354,6 +38398,10 @@
   }
  ],
  "lsof": [
+  {
+   "version": "4.99.5",
+   "releaseDateString": "2025-07-01T04:32:21Z"
+  },
   {
    "version": "4.99.4",
    "releaseDateString": "2024-11-18T02:11:27Z"

@@ -1245,25 +1245,25 @@
    "m4": "1.4.16"
   },
   "2.68": {
-   "m4": "No version as per date"
+   "m4": "1.4.15"
   },
   "2.67": {
-   "m4": "No version as per date"
+   "m4": "1.4.14"
   },
   "2.66": {
-   "m4": "No version as per date"
+   "m4": "1.4.14"
   },
   "2.65": {
-   "m4": "No version as per date"
+   "m4": "1.4.13"
   },
   "2.64": {
-   "m4": "No version as per date"
+   "m4": "1.4.13"
   },
   "2.63": {
-   "m4": "No version as per date"
+   "m4": "1.4.11"
   },
   "2.62": {
-   "m4": "No version as per date"
+   "m4": "1.4.11"
   }
  },
  "automake": {
@@ -2438,23 +2438,23 @@
   },
   "25.0": {
    "openssl": "3.0.3",
-   "perl": "5.35.11"
+   "perl": "5.34.0"
   },
   "24.3.4": {
    "openssl": "3.0.2",
-   "perl": "5.35.11"
+   "perl": "5.34.0"
   },
   "24.3.3": {
    "openssl": "3.0.2",
-   "perl": "5.35.10"
+   "perl": "5.34.0"
   },
   "24.3.2": {
    "openssl": "3.0.2",
-   "perl": "5.34.1"
+   "perl": "5.34.0"
   },
   "24.3.1": {
    "openssl": "3.0.2",
-   "perl": "5.34.1"
+   "perl": "5.34.0"
   },
   "24.3": {
    "openssl": "3.0.1",
@@ -3536,6 +3536,9 @@
   }
  },
  "haproxy": {
+  "3.2.2": {
+   "openssl": "3.5.1"
+  },
   "3.2.1": {
    "openssl": "3.5.0"
   },
@@ -5050,6 +5053,12 @@
   }
  },
  "mongo": {
+  "8.1.2": {
+   "mongosh": "2.5.4"
+  },
+  "8.0.11": {
+   "mongosh": "2.5.4"
+  },
   "8.0.10": {
    "mongosh": "2.5.1"
   },
@@ -9817,6 +9826,9 @@
   }
  },
  "openssl": {
+  "3.5.1": {
+   "zlib": "1.3.1"
+  },
   "3.5.0": {
    "zlib": "1.3.1"
   },
@@ -9933,6 +9945,116 @@
   }
  },
  "php": {
+  "8.4.10": {
+   "autoconf": "2.72",
+   "apache": "2.4.63",
+   "curl": "8.14.1",
+   "gettext": "0.22.5",
+   "libxml2": "2.14.4",
+   "libiconv": "1.18",
+   "libmemcached": "1.0.18",
+   "m4": "1.4.20",
+   "oniguruma": "6.9.10",
+   "openssl": "3.5.1",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.3.0",
+   "php-phalcon": "5.9.3",
+   "php-redis": "6.2.0",
+   "php-sqlsrv": "5.12.0",
+   "php-xdebug": "3.4.4",
+   "postgres": "17.5",
+   "sqlite3": "3.50.2",
+   "unixodbc": "2.3.12",
+   "zlib": "1.3.1"
+  },
+  "8.4.9": {
+   "autoconf": "2.72",
+   "apache": "2.4.63",
+   "curl": "8.14.1",
+   "gettext": "0.22.5",
+   "libxml2": "2.14.4",
+   "libiconv": "1.18",
+   "libmemcached": "1.0.18",
+   "m4": "1.4.20",
+   "oniguruma": "6.9.10",
+   "openssl": "3.5.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.3.0",
+   "php-phalcon": "5.9.3",
+   "php-redis": "6.2.0",
+   "php-sqlsrv": "5.12.0",
+   "php-xdebug": "3.4.4",
+   "postgres": "17.5",
+   "sqlite3": "3.50.2",
+   "unixodbc": "2.3.12",
+   "zlib": "1.3.1"
+  },
+  "8.3.23": {
+   "autoconf": "2.72",
+   "apache": "2.4.63",
+   "curl": "8.14.1",
+   "gettext": "0.22.5",
+   "libxml2": "2.14.4",
+   "libiconv": "1.18",
+   "libmemcached": "1.0.18",
+   "m4": "1.4.20",
+   "oniguruma": "6.9.10",
+   "openssl": "3.5.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.3.0",
+   "php-phalcon": "5.9.3",
+   "php-redis": "6.2.0",
+   "php-sqlsrv": "5.12.0",
+   "php-xdebug": "3.4.4",
+   "postgres": "17.5",
+   "sqlite3": "3.50.2",
+   "unixodbc": "2.3.12",
+   "zlib": "1.3.1"
+  },
+  "8.2.29": {
+   "autoconf": "2.72",
+   "apache": "2.4.63",
+   "curl": "8.14.1",
+   "gettext": "0.22.5",
+   "libxml2": "2.14.4",
+   "libiconv": "1.18",
+   "libmemcached": "1.0.18",
+   "m4": "1.4.20",
+   "oniguruma": "6.9.10",
+   "openssl": "3.5.0",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.3.0",
+   "php-phalcon": "5.9.3",
+   "php-redis": "6.2.0",
+   "php-sqlsrv": "5.12.0",
+   "php-xdebug": "3.4.4",
+   "postgres": "17.5",
+   "sqlite3": "3.50.2",
+   "unixodbc": "2.3.12",
+   "zlib": "1.3.1"
+  },
+  "8.1.33": {
+   "autoconf": "2.72",
+   "apache": "2.4.63",
+   "curl": "8.14.1",
+   "gettext": "0.22.5",
+   "libxml2": "2.14.4",
+   "libiconv": "1.18",
+   "libmemcached": "1.0.18",
+   "m4": "1.4.20",
+   "oniguruma": "6.9.10",
+   "openssl": "3.5.1",
+   "pkg-config": "0.29.2",
+   "php-memcached": "3.3.0",
+   "php-phalcon": "5.9.3",
+   "php-redis": "6.2.0",
+   "php-sqlsrv": "5.12.0",
+   "php-xdebug": "3.4.4",
+   "postgres": "17.5",
+   "sqlite3": "3.50.2",
+   "unixodbc": "2.3.12",
+   "zlib": "1.3.1"
+  },
   "8.4.8": {
    "autoconf": "2.72",
    "apache": "2.4.63",
@@ -19709,7 +19831,7 @@
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.15",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19731,7 +19853,7 @@
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.15",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19753,7 +19875,7 @@
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.15",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19775,7 +19897,7 @@
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.15",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19797,7 +19919,7 @@
    "libxml2": "2.7.8",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.15",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19819,7 +19941,7 @@
    "libxml2": "2.7.7",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.14",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19841,7 +19963,7 @@
    "libxml2": "2.7.7",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.14",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19863,7 +19985,7 @@
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.14",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19885,7 +20007,7 @@
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19907,7 +20029,7 @@
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19929,7 +20051,7 @@
    "libxml2": "2.7.6",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19951,7 +20073,7 @@
    "libxml2": "2.7.4",
    "libiconv": "1.13.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19973,7 +20095,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.13",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -19995,7 +20117,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.13",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20017,7 +20139,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.12",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20039,7 +20161,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.12",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20061,7 +20183,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.12",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20083,7 +20205,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.11",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20105,7 +20227,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.11",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20127,7 +20249,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.10",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20149,7 +20271,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.10",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20171,7 +20293,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.10",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20193,7 +20315,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.9",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20215,7 +20337,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.9",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20237,7 +20359,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.9",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20259,7 +20381,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.8",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20281,7 +20403,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.8",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20303,7 +20425,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.8",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20325,7 +20447,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.7",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20347,7 +20469,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.5",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20369,7 +20491,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.5",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20391,7 +20513,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.5",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20413,7 +20535,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.5",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20435,7 +20557,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20457,7 +20579,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20479,7 +20601,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20501,7 +20623,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20523,7 +20645,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20545,7 +20667,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20567,7 +20689,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20589,7 +20711,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.3",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20611,7 +20733,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.3",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20633,7 +20755,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.3",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20655,7 +20777,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.2",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20677,7 +20799,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.2",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20699,7 +20821,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.2",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20721,7 +20843,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.2",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20743,7 +20865,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.2",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20765,7 +20887,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.1",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20787,7 +20909,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.1",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20809,7 +20931,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4.1",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20831,7 +20953,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20853,7 +20975,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20875,7 +20997,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20897,7 +21019,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20919,7 +21041,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20941,7 +21063,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20963,7 +21085,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -20985,7 +21107,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21007,7 +21129,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21029,7 +21151,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21051,7 +21173,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21073,7 +21195,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21095,7 +21217,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21117,7 +21239,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21139,7 +21261,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21161,7 +21283,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21183,7 +21305,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21205,7 +21327,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21227,7 +21349,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21249,7 +21371,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -21271,7 +21393,7 @@
    "libxml2": "No version as per date",
    "libiconv": "1.1",
    "libmemcached": "No version as per date",
-   "m4": "No version as per date",
+   "m4": "1.4",
    "oniguruma": "No version as per date",
    "openssl": "No version as per date",
    "pkg-config": "No version as per date",
@@ -26265,6 +26387,11 @@
   }
  },
  "rmq": {
+  "4.1.2": {
+   "elixir": "1.18.4",
+   "erlang": "28.0.1",
+   "make": "4.4.1"
+  },
   "4.1.1": {
    "elixir": "1.18.4",
    "erlang": "28.0",
@@ -26673,522 +26800,522 @@
   "3.11.2": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.10": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.24": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.11.1": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.9": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.11.0": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.8": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.23": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.7": {
    "elixir": "1.13.4",
    "erlang": "25.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.22": {
    "elixir": "1.13.4",
    "erlang": "25.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.6": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.21": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.35": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.5": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.20": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.34": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.4": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.3": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.19": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.33": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.2": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.18": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.32": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.1": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.17": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.31": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.10.0": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.16": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.30": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.15": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.29": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.14": {
    "elixir": "1.13.3",
    "erlang": "24.3.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.28": {
    "elixir": "1.13.3",
    "erlang": "24.3.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.13": {
    "elixir": "1.13.2",
    "erlang": "24.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.12": {
    "elixir": "1.13.1",
    "erlang": "24.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.27": {
    "elixir": "1.13.1",
    "erlang": "24.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.11": {
    "elixir": "1.12.3",
    "erlang": "24.1.7",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.10": {
    "elixir": "1.12.3",
    "erlang": "24.1.6",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.26": {
    "elixir": "1.12.3",
    "erlang": "24.1.6",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.25": {
    "elixir": "1.12.3",
    "erlang": "24.1.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.9": {
    "elixir": "1.12.3",
    "erlang": "24.1.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.24": {
    "elixir": "1.12.3",
    "erlang": "24.1.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.8": {
    "elixir": "1.12.3",
    "erlang": "24.1.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.7": {
    "elixir": "1.12.3",
    "erlang": "24.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.23": {
    "elixir": "1.12.3",
    "erlang": "24.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.6": {
    "elixir": "1.12.3",
    "erlang": "24.0.6",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.22": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.5": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.4": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.3": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.21": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.2": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.20": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.1": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.9.0": {
    "elixir": "1.12.2",
    "erlang": "24.0.4",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.19": {
    "elixir": "1.12.2",
    "erlang": "24.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.18": {
    "elixir": "1.12.1",
    "erlang": "24.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.17": {
    "elixir": "1.12.1",
    "erlang": "24.0.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.16": {
    "elixir": "1.11.4",
    "erlang": "23.3.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.15": {
    "elixir": "1.11.4",
    "erlang": "23.3.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.14": {
    "elixir": "1.11.3",
    "erlang": "23.2.7",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.13": {
    "elixir": "1.11.3",
    "erlang": "23.2.6",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.12": {
    "elixir": "1.11.3",
    "erlang": "23.2.5",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.11": {
    "elixir": "1.11.3",
    "erlang": "23.2.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.10": {
    "elixir": "1.11.3",
    "erlang": "23.2.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.9": {
    "elixir": "1.10.4",
    "erlang": "23.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.8": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.7": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.28": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.6": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.27": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.5": {
    "elixir": "1.10.3",
    "erlang": "23.0.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.4": {
    "elixir": "1.10.3",
    "erlang": "23.0.1",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.26": {
    "elixir": "1.10.3",
    "erlang": "22.3.3",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.25": {
    "elixir": "1.10.2",
    "erlang": "22.3.2",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.8.3": {
    "elixir": "1.10.2",
    "erlang": "22.2.8",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.24": {
    "elixir": "1.10.1",
    "erlang": "22.2.6",
-   "make": "No version as per date"
+   "make": "4.3"
   },
   "3.7.23": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.8.2": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.22": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.21": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.8.1": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.20": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.19": {
    "elixir": "1.9.1",
    "erlang": "22.1.1",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.8.0": {
    "elixir": "1.9.1",
    "erlang": "22.1.1",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.18": {
    "elixir": "1.9.1",
    "erlang": "22.0.7",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.17": {
    "elixir": "1.9.1",
    "erlang": "22.0.7",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.16": {
    "elixir": "1.9.0",
    "erlang": "22.0.5",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.15": {
    "elixir": "1.8.2",
    "erlang": "22.0.1",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.14": {
    "elixir": "1.8.1",
    "erlang": "21.3.2",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.13": {
    "elixir": "1.8.1",
    "erlang": "21.2.7",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.12": {
    "elixir": "1.8.1",
    "erlang": "21.2.5",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.11": {
    "elixir": "1.8.1",
    "erlang": "21.2.4",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.10": {
    "elixir": "1.7.4",
    "erlang": "21.2.2",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.9": {
    "elixir": "1.7.4",
    "erlang": "21.1.2",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.8": {
    "elixir": "1.7.3",
    "erlang": "21.0.9",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.7": {
    "elixir": "1.6.6",
    "erlang": "21.0.2",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.6": {
    "elixir": "1.6.5",
    "erlang": "20.3.8",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.5": {
    "elixir": "1.6.5",
    "erlang": "20.3.6",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.4": {
    "elixir": "1.6.2",
    "erlang": "20.2.4",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.3": {
    "elixir": "1.6.0",
    "erlang": "20.2.2",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.2": {
    "elixir": "1.5.2",
    "erlang": "20.2.1",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.1": {
    "elixir": "1.5.2",
    "erlang": "20.2.1",
-   "make": "No version as per date"
+   "make": "4.2.1"
   },
   "3.7.0": {
    "elixir": "1.5.2",
    "erlang": "20.1.7",
-   "make": "No version as per date"
+   "make": "4.2.1"
   }
  },
  "rsyslog": {
@@ -32010,7 +32137,7 @@
    "java": "No version as per date"
   },
   "0.13.15": {
-   "java": "8.0.312"
+   "java": "No version as per date"
   },
   "0.13.14": {
    "java": "No version as per date"
@@ -32037,7 +32164,7 @@
    "java": "No version as per date"
   },
   "0.13.6": {
-   "java": "8.0.312"
+   "java": "No version as per date"
   },
   "0.13.5": {
    "java": "No version as per date"
@@ -32282,18 +32409,6 @@
    "java": "No version as per date"
   }
  },
- "tar": {
-  "1.35": {
-   "gzip": "1.12",
-   "libiconv": "1.17",
-   "xz": "5.4.3"
-  },
-  "1.34": {
-   "gzip": "1.10",
-   "libiconv": "1.16",
-   "xz": "No version as per date"
-  }
- },
  "unixodbc": {
   "2.3.12": {
    "odbc": "18.3.1.1"
@@ -32314,6 +32429,186 @@
   "1.21.4": {
    "openssl": "3.1.0",
    "pkg-config": "0.29.2"
+  },
+  "1.21.3": {
+   "openssl": "3.0.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.21.2": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.21.1": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.21": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.20.3": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.20.2": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.20.1": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.20": {
+   "openssl": "1.1.1",
+   "pkg-config": "0.29.2"
+  },
+  "1.19.5": {
+   "openssl": "No version as per date",
+   "pkg-config": "0.29.2"
+  },
+  "1.19.4": {
+   "openssl": "No version as per date",
+   "pkg-config": "0.29.2"
+  },
+  "1.19.3": {
+   "openssl": "No version as per date",
+   "pkg-config": "0.29.2"
+  },
+  "1.19.2": {
+   "openssl": "No version as per date",
+   "pkg-config": "0.29.2"
+  },
+  "1.19.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.19": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.18": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.17.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.17": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.16.3": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.16.2": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.16.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.16": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.15": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.14": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.13.4": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.13.3": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.13": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.13.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.12": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.11.4": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.11.3": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.11.2": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.11.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.11": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.10.2": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.10.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.10": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.9.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.9": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.8.2": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.8.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.8": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.7.1": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.7": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.6": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
+  },
+  "1.5.3": {
+   "openssl": "No version as per date",
+   "pkg-config": "No version as per date"
   }
  }
 }
