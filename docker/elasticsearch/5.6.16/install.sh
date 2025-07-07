@@ -23,7 +23,7 @@ if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/do
 fi
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml ]; then
-	print_message "${red}${bold}docker-compose.yml not found${clear}"
+	print_message "${red}${bold}elasticsearch.yml not found${clear}"
 	exit
 fi
 
