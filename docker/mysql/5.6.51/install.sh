@@ -67,7 +67,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	printf "\n"
 
 	print_message "Granting privileges" $((DEPTH))
-	docker exec -i $VERSION mysql -u root -P $MYSQL_PORT -p"$MYSQL_PASSWORD" > /dev/null 2>&1 <<EOF
+	docker exec -i $VERSION mysql -u root -P $MYSQL_PORT -p"$MYSQL_PASSWORD"<<EOF
 FLUSH PRIVILEGES;
 GRANT ALL PRIVILEGES ON *.* TO '$MYSQL_USERNAME'@'%';
 FLUSH PRIVILEGES;
