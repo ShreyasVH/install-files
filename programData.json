@@ -577,15 +577,28 @@
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1751693763228
  },
+ "php-phalcon": {
+  "tagsUrl": "https://pecl.php.net/package/phalcon",
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1751693767901,
+  "refreshVersionScript": "pecl"
+ },
  "php-redis": {
   "tagsUrl": "https://github.com/phpredis/phpredis/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1751693765468
  },
  "php-sqlsrv": {
-  "tagsUrl": "https://github.com/microsoft/msphpsql/tags",
-  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1751693767901
+  "tagsUrl": "https://pecl.php.net/package/sqlsrv",
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1751693767901,
+  "refreshVersionScript": "pecl"
+ },
+ "php-xdebug": {
+  "tagsUrl": "https://pecl.php.net/package/xdebug",
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1751693763228,
+  "refreshVersionScript": "pecl"
  },
  "phpmemadmin": {
   "tagsUrl": "https://github.com/clickalicious/phpmemadmin/tags",
