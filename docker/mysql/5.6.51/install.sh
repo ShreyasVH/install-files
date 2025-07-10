@@ -57,6 +57,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	echo -e "\tdocker compose -p mysql -f docker-compose.yml stop > /dev/null 2>&1" >> stop.sh
 	echo 'fi' >> stop.sh
 
+	# print_message "${bold}${green}Sleeping for 60s${clear}" $((DEPTH))
+	# sleep 60
+
 	bash start.sh > /dev/null 2>&1
 	MYSQL_PORT=$(grep -E '^ *port=' my.cnf | awk -F= '{print $2}' | tr -d ' ')
 	print_message "Waiting for mysql to start" $((DEPTH))
@@ -66,8 +69,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	done
 	printf "\n"
 
+	print_message "Waiting for root access to be usable" $((DEPTH))
+	until docker exec $VERSION mysql -u root -P $MYSQL_PORT -p"$MYSQL_PASSWORD" -e "SHOW DATABASES;" > /dev/null 2>&1; do
+	    printf "."
+	    sleep 2
+	done
+	printf "\n"
+
+
 	print_message "Granting privileges" $((DEPTH))
-	docker exec -i $VERSION mysql -u root -P $MYSQL_PORT -p"$MYSQL_PASSWORD" > /dev/null 2>&1 <<EOF
+	docker exec -i $VERSION mysql -u root -P $MYSQL_PORT -p"$MYSQL_PASSWORD"<<EOF
 FLUSH PRIVILEGES;
 GRANT ALL PRIVILEGES ON *.* TO '$MYSQL_USERNAME'@'%';
 FLUSH PRIVILEGES;
