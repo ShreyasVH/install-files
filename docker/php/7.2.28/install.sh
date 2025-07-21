@@ -22,7 +22,7 @@ if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/Do
 	exit
 fi
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
 	mkdir $HOME/programs/$FOLDER_NAME/$VERSION
 
