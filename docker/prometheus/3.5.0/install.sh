@@ -42,7 +42,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	docker compose -f docker-compose.yml build > /dev/null 2>&1
 
 	touch start.sh
-	PORT=1444
+	PORT=$(sed -n 's/^[[:space:]]*- "\(.*\):.*"/\1/p' docker-compose.yml)
 	echo "PORT=$PORT" >> start.sh
 	echo '' >> start.sh
 	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
