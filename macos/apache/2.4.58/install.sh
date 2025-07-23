@@ -56,7 +56,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apachectl" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-apr=$HOME/programs/$APR_FOLDER_NAME/$APR_VERSION/bin/apr-1-config --with-apr-util=$HOME/programs/$APR_UTIL_FOLDER_NAME/$APR_UTIL_VERSION/bin/apu-1-config --with-pcre=$HOME/programs/$PCRE_FOLDER_NAME/$PCRE_VERSION/bin/pcre2-config > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-apr=$HOME/programs/$APR_FOLDER_NAME/$APR_VERSION/bin/apr-1-config --with-apr-util=$HOME/programs/$APR_UTIL_FOLDER_NAME/$APR_UTIL_VERSION/bin/apu-1-config --with-pcre=$HOME/programs/$PCRE_FOLDER_NAME/$PCRE_VERSION/bin/pcre2-config --enable-so --enable-proxy --enable-proxy-fcgi --enable-actions > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
