@@ -59,7 +59,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg haproxy.cfg
+		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/haproxy.cfg $HOME/programs/$FOLDER_NAME/$VERSION
 		cp $HOME/workspace/myProjects/ssl/server.pem server.pem
 		cp $HOME/workspace/myProjects/ssl/rootCA.crt rootCA.crt
 
