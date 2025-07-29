@@ -38,7 +38,6 @@ const getLatestVersions = () => {
 			}
 		});
 
-
 		latestVersions[program] = programVersions[0].version;
 	}
 

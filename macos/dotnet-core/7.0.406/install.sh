@@ -1,0 +1,50 @@
+version_dir=$(dirname "$(realpath "$0")")
+
+VERSION=$(basename $version_dir)
+
+program_dir=$(dirname "$version_dir")
+FOLDER_NAME=$(basename $program_dir)
+
+os_dir=$(dirname $program_dir)
+OS=$(basename $os_dir)
+
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
+
+source $INSTALL_FILES_DIR/utils.sh
+
+cd $INSTALL_FILES_DIR
+
+if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
+
+	cd $HOME/programs/$FOLDER_NAME
+
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
+
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	ARCHIVE_FILE=dotnet-sdk-$VERSION-osx-arm64.tar.gz
+	wget -q "https://download.visualstudio.microsoft.com/download/pr/188a79a4-50f2-4a36-b56b-6a764d5458c4/033b59ec3d8e0ab8d76ca6763be7ae5c/$ARCHIVE_FILE"
+	mkdir $VERSION
+	mv $ARCHIVE_FILE $VERSION/"dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+	cd $VERSION
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	tar -xf $ARCHIVE_FILE
+
+	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
+
+	touch .envrc
+	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION:"'$PATH' >> .envrc
+	echo "" >> .envrc
+	direnv allow
+	source .envrc
+
+	print_message "${bold}${green}Installing dotnet ef${clear}" $((DEPTH))
+	dotnet tool install --global dotnet-ef --version 7.0.0 > $HOME/logs/$FOLDER_NAME/$VERSION/dotnetEfInstall.txt 2>&1
+
+	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
+	rm $ARCHIVE_FILE
+fi
+

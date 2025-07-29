@@ -5,6 +5,9 @@ fi
 
 FOLDER_NAME=$1
 VERSION=$2
+DEPTH=$3
 
-printf "\t${bold}${green}Installing${clear}\n"
-echo $USER_PASSWORD | sudo -S -p '' make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+source $INSTALL_FILES_DIR/utils.sh
+
+print_message "${bold}${green}Installing${clear}" $DEPTH
+SUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" LD_RUN_PATH="$LD_RUN_PATH" make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1

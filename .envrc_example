@@ -4,10 +4,15 @@ export PATH=
 # jq 1.7.1 path
 export PATH=
 
-export VERSION_MAP_PATH=
+# node 16.13.0 path
+export PATH=$HOME/programs/node/16.13.0/bin:$PATH
 
-# node 21.7.3
-export PATH=
+export VERSION_MAP_PATH=
+export STATIC_VERSION_MAP_PATH=
+
+export INSTALL_FILES_DIR=$HOME/install-files
+
+export USER_PASSWORD=opensesame
 
 export green='\e[32m'
 export cyan='\e[36m'
@@ -18,6 +23,9 @@ export clear='\e[0m'
 export blink='\e[5m'
 export bold='\e[1m'
 
-export USER_PASSWORD=
+export OS_FOLDER=
 
-export INSTALL_FILES_DIR=
+export PROCESS_COUNT=
+
+export MYSQL_USERNAME=
+export MYSQL_PASSWORD=
