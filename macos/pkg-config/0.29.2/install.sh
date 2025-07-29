@@ -33,7 +33,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	CFLAGS="-Wno-int-conversion" CXXFLAGS="-Wno-int-conversion" ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	export SDKROOT=$(xcrun --sdk macosx --show-sdk-path)
+	CXXFLAGS="-Wno-int-conversion" ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib CFLAGS="-Wno-int-conversion -isysroot $SDKROOT" LDFLAGS="-isysroot $SDKROOT" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
