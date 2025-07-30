@@ -47,12 +47,12 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 
 	mkdir data
-	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf ./
+	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/my.cnf $HOME/programs/$FOLDER_NAME/$VERSION/my.cnf
 
 	touch start.sh
 	echo "PORT=\$(grep -E '^ *port=' my.cnf | awk -F= '{print \$2}' | tr -d ' ')" >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if [ ! -e data/mysql.pid ]; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
 	echo -e "\tmysqld_safe --defaults-file=my.cnf > mysql.log 2>&1 &" >> start.sh
 	echo 'fi' >> start.sh
@@ -61,9 +61,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
 	echo "PORT=\$(grep -E '^ *port=' my.cnf | awk -F= '{print \$2}' | tr -d ' ')" >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if [ -e mysql.pid ]; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
 	echo -e "\tmysqladmin --defaults-file=my.cnf -u shreyas -S data/mysql_$VERSION_STRING.sock --password=password shutdown > shutdown.log 2>&1 &" >> stop.sh
+	echo -e '\trm data/mysql.pid' >> stop.sh
 	echo 'fi' >> stop.sh
 
 	print_message "${bold}${green}Initializing DB${clear}" $((DEPTH))
