@@ -66,14 +66,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		initdb -d data > $HOME/logs/$FOLDER_NAME/$VERSION/dbInitialization.txt 2>&1
 
 		mv data/postgresql.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
-		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
+		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
 		mv data/pg_hba.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf.default
-		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
+		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 		touch start.sh
 		echo "PORT=\$(grep 'port = ' data/postgresql.conf | awk '{print \$3}')" >> start.sh
 		echo '' >> start.sh
-		echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+		echo 'if [ ! -e data/postmaster.pid ]; then' >> start.sh
 		echo -e '\techo "Starting"' >> start.sh
 		echo -e "\tpg_ctl start -D data > postgresStart.txt 2>&1" >> start.sh
 		echo 'fi' >> start.sh
@@ -81,7 +81,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		touch stop.sh
 		echo "PORT=\$(grep 'port = ' data/postgresql.conf | awk '{print \$3}')" >> stop.sh
 		echo '' >> stop.sh
-		echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+		echo 'if [ -e data/postmaster.pid ]; then' >> stop.sh
 		echo -e '\techo "Stopping"' >> stop.sh
 		echo -e '\tpg_ctl stop -D data > postgresStop.txt 2>&1' >> stop.sh
 		echo 'fi' >> stop.sh
