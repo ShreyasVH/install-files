@@ -66,9 +66,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		initdb -d data > $HOME/logs/$FOLDER_NAME/$VERSION/dbInitialization.txt 2>&1
 
 		mv data/postgresql.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
-		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
+		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
 		mv data/pg_hba.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf.default
-		cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
+		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 		touch start.sh
 		echo "PORT=\$(grep 'port = ' data/postgresql.conf | awk '{print \$3}')" >> start.sh
