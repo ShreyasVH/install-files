@@ -49,19 +49,20 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	touch start.sh
 	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if [ ! -e elastic.pid ]; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
-	echo -e "\telasticsearch -d > elastic.log 2>&1 &" >> start.sh
+	echo -e "\telasticsearch -d -p elastic.pid > elastic.log 2>&1 &" >> start.sh
 	echo 'fi' >> start.sh
 
 	touch stop.sh
 	mv config/elasticsearch.yml $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml.default
-	cp $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
+	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/elasticsearch.yml config/elasticsearch.yml
 	echo 'PORT=$(grep '\''http.port: '\'' config/elasticsearch.yml | awk '\''{print $2}'\'')' >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if [ -e elastic.pid ]; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
-	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo -e '\tkill -9 $(cat elastic.pid)' >> stop.sh
+	echo -e '\trm elastic.pid' >> stop.sh
 	echo 'fi' >> stop.sh
 
 	PORT=$(grep 'http.port: ' config/elasticsearch.yml | awk '{print $2}')
