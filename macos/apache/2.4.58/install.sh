@@ -76,10 +76,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apachectl" ]; then
 		direnv allow
 
 		touch start.sh
-		echo "apachectl start" >> start.sh
+		echo "if [ ! -e apache.pid ]; then" >> start.sh
+		echo -e '\techo "Starting"' >> start.sh
+		echo -e "\tapachectl start" >> start.sh
+		echo "fi" >> start.sh
 
 		touch stop.sh
-		echo 'apachectl stop' >> stop.sh
+		echo "if [ -e apache.pid ]; then" >> stop.sh
+		echo -e '\techo "Stopping"' >> stop.sh
+		echo -e '\tapachectl stop' >> stop.sh
+		echo "fi" >> stop.sh
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
