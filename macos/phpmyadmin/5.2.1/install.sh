@@ -51,10 +51,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/index.php" ]; then
 
 	touch start.sh
 	PORT=9100
-	echo "php -S '0.0.0.0:$PORT' -t . > phpmyadmin.log 2>&1 &" >> start.sh
+	echo "if ! lsof -i :$PORT > /dev/null; then" >> start.sh
+	echo -e "\tStarting" >> start.sh
+	echo -e "\tphp -S '0.0.0.0:$PORT' -t . > phpmyadmin.log 2>&1 &" >> start.sh
+	echo "fi" >> start.sh
 
 	touch stop.sh
-	echo 'kill -9 $(lsof -t -i:'$PORT')' >> stop.sh
+	echo "if lsof -i :$PORT > /dev/null; then" >> stop.sh
+	echo -e "\tStopping" >> stop.sh
+	echo -e '\tkill -9 $(lsof -t -i:'$PORT')' >> stop.sh
+	echo "fi" >> stop.sh
 
 	mv config.sample.inc.php ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/config.inc.php.default
 	ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/config.inc.php ./
