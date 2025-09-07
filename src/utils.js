@@ -17,4 +17,9 @@ const merge = (a, b) => {
 	return mergedObject;
 }
 
+const capitalize = word => {
+	return word[0].toUpperCase() + word.substring(1).toLowerCase();
+};
+
 exports.merge = merge;
+exports.capitalize = capitalize;
