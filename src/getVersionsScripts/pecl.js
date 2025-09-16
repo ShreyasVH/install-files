@@ -49,7 +49,7 @@ const filterVersions = (programName, programDetails, allVersions) => {
 
 const getAllVersions = async (program, url) => {
 	const programData = JSON.parse(fs.readFileSync('programData.json').toString());
-    const versionHistoryFilePath = 'staticVersionHistory.json';
+    const versionHistoryFilePath = 'versionHistory.json';
     const versionHistory = JSON.parse(fs.readFileSync(versionHistoryFilePath).toString());
 
     const allVersionsFilePath = 'allVersions.json';
