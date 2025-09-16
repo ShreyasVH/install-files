@@ -7,33 +7,17 @@ const fileNameParts = process.argv[1].split(path.sep);
 const fileName = fileNameParts[fileNameParts.length - 1];
 
 const getAllVersionsFromHTML = () => {
-	const versionElements = [...document.querySelectorAll('table tbody tr')].filter((ele, index) => index > 2);
+	const versionElements = [...[...document.querySelectorAll('table')][6].querySelectorAll('tbody tr')].filter((ele, index) => index > 2);
 
 	const versionDetails = versionElements.map(ele => {
 		const cells = ele.children;
-		const linkElement = cells[1];
-		if (linkElement) {
-			const versionElement = linkElement.querySelector('a');
-			let version;
-			let versionText;
-			if (versionElement && versionElement.innerText.match(/(.*).tar.gz$/)) {
-				versionText = versionElement.innerText;
-				version = versionText.match(/(.*).tar.gz$/)[1];
-			}
-
-			const releaseDateElement = cells[2];
-			let releaseDateString;
-			if (releaseDateElement) {
-				releaseDateString = releaseDateElement.innerText.trimEnd();
-			}
-
-			return {
-				version,
-				releaseDateString
-			};
-		}
-	})
-	.filter(item => item && item.version);
+		const versionElement = cells[0];
+		const releaseDateElement = cells[2];
+		return {
+			version: versionElement.innerText,
+			releaseDateString: releaseDateElement.innerText 
+		};
+	});
 	return {
 		versions: versionDetails
 	};
@@ -89,6 +73,7 @@ const getAllVersions = async (program, url) => {
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
 	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
+	console.log(JSON.stringify(versionsResponse, null, ' '));
 
 	const existingVersions = allVersions.map(item => item.version);
 
