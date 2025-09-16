@@ -23,8 +23,8 @@ const fs = require('fs');
 			}
 			
 
-			// programData[programName].versionsLastUpdatedOn = (new Date()).getTime();
-			// fs.writeFileSync(filePath, JSON.stringify(programData, null, ' '));
+			programData[programName].versionsLastUpdatedOn = (new Date()).getTime();
+			fs.writeFileSync(filePath, JSON.stringify(programData, null, ' '));
 		}
 	}
 })();
