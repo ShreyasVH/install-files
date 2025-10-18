@@ -25375,10 +25375,6 @@
  ],
  "perl": [
   {
-   "version": "5.40.3",
-   "releaseDateString": "2025-08-03T09:38:13Z"
-  },
-  {
    "version": "5.38.5",
    "releaseDateString": "2025-08-03T09:37:58Z"
   },
