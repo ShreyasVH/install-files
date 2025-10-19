@@ -655,7 +655,7 @@
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1751693770288,
   "isEntryPoint": true,
-  "path": "/index.php",
+  "path": "/web/index.php",
   "dependencies": [
    "php"
   ],
