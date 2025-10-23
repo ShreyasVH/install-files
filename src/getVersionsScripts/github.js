@@ -70,7 +70,12 @@ const getAllVersions = async (program, baseUrl) => {
     const allVersionsData = JSON.parse(fs.readFileSync(allVersionsFilePath).toString());
 
 	const browser  = await puppeteer.launch({
-		headless: 'shell'
+		headless: 'shell',
+		args: [
+		    '--no-sandbox',
+		    '--disable-setuid-sandbox',
+		    '--ignore-certificate-errors'
+		]
 	});
 
     let allVersions = ((allVersionsData.hasOwnProperty(program)) ? allVersionsData[program] : []);
@@ -92,6 +97,7 @@ const getAllVersions = async (program, baseUrl) => {
 	    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
     	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
+    	console.log(versionsResponse);
 
     	const existingVersions = allVersions.map(item => item.version);
     	const existingVersionsReached = versionsResponse.versions.some(item => existingVersions.includes(item.version));

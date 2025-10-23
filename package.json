@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "puppeteer": "^21.5.2"
+    "puppeteer": "^24.9.0"
   },
   "name": "install-files",
   "version": "1.0.0",
