@@ -19,7 +19,12 @@ const fs = require('fs');
 			if (details.scriptName) {
 				const scriptName = `getAllVersions${capitalize(details.scriptName)}`;
 				console.log(scriptName);
-				await versionGetters[scriptName](programName, details.tagsUrl);
+				try {
+					await versionGetters[scriptName](programName, details.tagsUrl);
+				} catch (e) {
+					console.log(e);
+				}
+				
 			}
 			
 
