@@ -41,9 +41,6 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	direnv allow
 	source .envrc
 
-	print_message "${bold}${green}Installing dotnet ef${clear}" $((DEPTH))
-	dotnet tool install --global dotnet-ef --version 7.0.0 > $HOME/logs/$FOLDER_NAME/$VERSION/dotnetEfInstall.txt 2>&1
-
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	rm $ARCHIVE_FILE
 fi
