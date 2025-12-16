@@ -25887,22 +25887,6 @@
  ],
  "perl": [
   {
-   "version": "5.43.5",
-   "releaseDateString": "2025-11-19T16:48:44Z"
-  },
-  {
-   "version": "5.43.4",
-   "releaseDateString": "2025-10-22T18:05:20Z"
-  },
-  {
-   "version": "5.43.3",
-   "releaseDateString": "2025-09-23T04:53:06Z"
-  },
-  {
-   "version": "5.43.2",
-   "releaseDateString": "2025-08-20T19:00:15Z"
-  },
-  {
    "version": "5.40.3",
    "releaseDateString": "2025-08-03T09:38:13Z"
   },
@@ -25911,28 +25895,8 @@
    "releaseDateString": "2025-08-03T09:37:58Z"
   },
   {
-   "version": "5.43.1",
-   "releaseDateString": "2025-07-20T17:41:52Z"
-  },
-  {
-   "version": "5.43.0",
-   "releaseDateString": "2025-07-04T06:05:24Z"
-  },
-  {
    "version": "5.42.0",
    "releaseDateString": "2025-07-03T15:28:02Z"
-  },
-  {
-   "version": "5.41.13",
-   "releaseDateString": "2025-05-28T16:29:33Z"
-  },
-  {
-   "version": "5.41.12",
-   "releaseDateString": "2025-04-21T22:45:44Z"
-  },
-  {
-   "version": "5.41.11",
-   "releaseDateString": "2025-04-21T01:47:58Z"
   },
   {
    "version": "5.40.2",
@@ -25943,18 +25907,6 @@
    "releaseDateString": "2025-04-13T08:53:46Z"
   },
   {
-   "version": "5.41.10",
-   "releaseDateString": "2025-03-21T10:34:03Z"
-  },
-  {
-   "version": "5.41.9",
-   "releaseDateString": "2025-02-23T23:00:35Z"
-  },
-  {
-   "version": "5.41.8",
-   "releaseDateString": "2025-01-20T20:20:03Z"
-  },
-  {
    "version": "5.40.1",
    "releaseDateString": "2025-01-18T18:44:35Z"
   },
@@ -25963,60 +25915,8 @@
    "releaseDateString": "2025-01-18T18:43:47Z"
   },
   {
-   "version": "5.41.7",
-   "releaseDateString": "2024-12-20T13:48:35Z"
-  },
-  {
-   "version": "5.41.6",
-   "releaseDateString": "2024-11-19T15:34:53Z"
-  },
-  {
-   "version": "5.41.5",
-   "releaseDateString": "2024-10-20T17:47:25Z"
-  },
-  {
-   "version": "5.41.4",
-   "releaseDateString": "2024-09-20T06:51:50Z"
-  },
-  {
-   "version": "5.41.3",
-   "releaseDateString": "2024-08-29T13:12:51Z"
-  },
-  {
-   "version": "5.41.2",
-   "releaseDateString": "2024-07-20T20:39:53Z"
-  },
-  {
-   "version": "5.41.1",
-   "releaseDateString": "2024-07-02T11:16:34Z"
-  },
-  {
-   "version": "5.41.0",
-   "releaseDateString": "2024-06-10T17:06:15Z"
-  },
-  {
    "version": "5.40.0",
    "releaseDateString": "2024-06-09T14:32:48Z"
-  },
-  {
-   "version": "5.39.10",
-   "releaseDateString": "2024-04-27T16:04:32Z"
-  },
-  {
-   "version": "5.39.9",
-   "releaseDateString": "2024-03-20T13:52:09Z"
-  },
-  {
-   "version": "5.39.8",
-   "releaseDateString": "2024-02-23T13:16:39Z"
-  },
-  {
-   "version": "5.39.7",
-   "releaseDateString": "2024-01-20T10:59:09Z"
-  },
-  {
-   "version": "5.39.6",
-   "releaseDateString": "2023-12-30T09:47:55Z"
   },
   {
    "version": "5.38.2",
@@ -26043,84 +25943,12 @@
    "releaseDateString": "2023-11-25T15:07:28Z"
   },
   {
-   "version": "5.39.5",
-   "releaseDateString": "2023-11-20T02:18:58Z"
-  },
-  {
-   "version": "5.39.4",
-   "releaseDateString": "2023-10-25T15:27:59Z"
-  },
-  {
-   "version": "5.39.3",
-   "releaseDateString": "2023-09-20T15:30:02Z"
-  },
-  {
-   "version": "5.39.2",
-   "releaseDateString": "2023-08-20T22:39:08Z"
-  },
-  {
-   "version": "5.39.1",
-   "releaseDateString": "2023-07-20T16:49:42Z"
-  },
-  {
-   "version": "5.39.0",
-   "releaseDateString": "2023-07-04T20:04:46Z"
-  },
-  {
    "version": "5.38.0",
    "releaseDateString": "2023-07-02T23:00:11Z"
   },
   {
    "version": "5.36.1",
    "releaseDateString": "2023-04-23T14:36:04Z"
-  },
-  {
-   "version": "5.37.11",
-   "releaseDateString": "2023-04-20T17:33:36Z"
-  },
-  {
-   "version": "5.37.10",
-   "releaseDateString": "2023-03-20T21:49:09Z"
-  },
-  {
-   "version": "5.37.9",
-   "releaseDateString": "2023-02-20T20:40:20Z"
-  },
-  {
-   "version": "5.37.8",
-   "releaseDateString": "2023-01-20T11:21:23Z"
-  },
-  {
-   "version": "5.37.7",
-   "releaseDateString": "2022-12-20T14:12:30Z"
-  },
-  {
-   "version": "5.37.6",
-   "releaseDateString": "2022-11-20T10:43:44Z"
-  },
-  {
-   "version": "5.37.5",
-   "releaseDateString": "2022-10-20T20:47:55Z"
-  },
-  {
-   "version": "5.37.4",
-   "releaseDateString": "2022-09-20T23:58:40Z"
-  },
-  {
-   "version": "5.37.3",
-   "releaseDateString": "2022-09-08T00:27:42Z"
-  },
-  {
-   "version": "5.37.2",
-   "releaseDateString": "2022-07-20T23:16:41Z"
-  },
-  {
-   "version": "5.37.1",
-   "releaseDateString": "2022-06-20T18:28:28Z"
-  },
-  {
-   "version": "5.37.0",
-   "releaseDateString": "2022-05-28T02:37:30Z"
   },
   {
    "version": "5.36.0",
