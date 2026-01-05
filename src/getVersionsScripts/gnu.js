@@ -39,6 +39,34 @@ const getAllVersionsFromHTML = () => {
 	};
 };
 
+const getAllVersionsFromHTMLFromMirror = () => {
+	const versionElements = [...document.querySelectorAll('a')];
+
+	const versionDetails = versionElements.map(versionElement => {
+		let version;
+		let releaseDateString;
+		if (versionElement && versionElement.innerText.match(/(.*).tar.gz$/)) {
+			const versionText = versionElement.innerText;
+			version = versionText.match(/(.*).tar.gz$/)[1];
+
+			const releaseDateElement = versionElement.nextSibling;
+			const releaseDateText = releaseDateElement.data;
+
+			const releaseDateParts = releaseDateText.trim().split(' ');
+			releaseDateString = `${releaseDateParts[0]} ${releaseDateParts[1]}`;
+		}
+
+		return {
+			version,
+			releaseDateString
+		};
+	})
+	.filter(item => item && item.version);
+	return {
+		versions: versionDetails
+	};
+};
+
 const getVersionString = (programName, programDetails, rawVersionString) => {
 	let versionString = rawVersionString.replace(programName, '').replaceAll(/[a-zA-Z-]/g, '');
 	if (versionString[0] === '_') {
@@ -88,14 +116,20 @@ const getAllVersions = async (program, url) => {
     });
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
+    let versionsResponse;
+    if (url.includes('rediris')) {
+    	versionsResponse = await page.evaluate(getAllVersionsFromHTML);
+    } else {
+    	versionsResponse = await page.evaluate(getAllVersionsFromHTMLFromMirror);
+    }
+	
 
 	const existingVersions = allVersions.map(item => item.version);
 
 	const newVersions = versionsResponse.versions.filter(item => !existingVersions.includes(item.version));
 
 	allVersions = newVersions.concat(allVersions);
-	console.log(allVersions);
+	// console.log(allVersions);
 	await page.close();
 
     await browser.close();

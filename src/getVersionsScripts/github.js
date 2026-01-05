@@ -97,7 +97,7 @@ const getAllVersions = async (program, baseUrl) => {
 	    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
     	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
-    	console.log(versionsResponse);
+    	// console.log(versionsResponse);
 
     	const existingVersions = allVersions.map(item => item.version);
     	const existingVersionsReached = versionsResponse.versions.some(item => existingVersions.includes(item.version));
