@@ -703,6 +703,10 @@
  ],
  "haproxy": [
   {
+   "version": "3.3.1",
+   "releaseDateString": "2025-12-19T15:44:00Z"
+  },
+  {
    "version": "3.3.0",
    "releaseDateString": "2025-11-26T15:10:00Z"
   },
@@ -1200,6 +1204,10 @@
   }
  ],
  "odbc": [
+  {
+   "version": "18.6.1.1",
+   "releaseDateString": "2025-12-16 23:23:00Z"
+  },
   {
    "version": "18.5.1.1",
    "releaseDateString": "2025-03-19 23:04:00Z"

@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/m4" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="m4-$VERSION.tar.xz"
-	wget -q "https://ftp.gnu.org/gnu/m4/$ARCHIVE_FILE"
+	wget --show-progress "https://ftp.rediris.es/mirror/GNU/m4/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "m4-$VERSION" $VERSION

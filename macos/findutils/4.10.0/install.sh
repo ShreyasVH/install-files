@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/find" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="findutils-$VERSION.tar.xz"
-	wget -q "https://ftp.gnu.org/gnu/findutils/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/findutils/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "findutils-$VERSION" $VERSION
