@@ -33,7 +33,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/automake" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="automake-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/automake/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/automake/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "automake-$VERSION" $VERSION

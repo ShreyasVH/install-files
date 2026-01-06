@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/date" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="coreutils-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/coreutils/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/coreutils/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "coreutils-$VERSION" $VERSION

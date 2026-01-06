@@ -41,7 +41,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/wget" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="wget-$VERSION.tar.gz"
-	curl -s -O "https://ftp.gnu.org/gnu/wget/$ARCHIVE_FILE"
+	curl -s -O "https://ftp.rediris.es/mirror/GNU/wget/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "wget-$VERSION" $VERSION
