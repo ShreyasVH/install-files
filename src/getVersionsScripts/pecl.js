@@ -7,7 +7,7 @@ const fileNameParts = process.argv[1].split(path.sep);
 const fileName = fileNameParts[fileNameParts.length - 1];
 
 const getAllVersionsFromHTML = () => {
-	const versionElements = [...[...document.querySelectorAll('table')][6].querySelectorAll('tbody tr')].filter((ele, index) => index > 2);
+	const versionElements = [...[...document.querySelectorAll('table')][6].querySelectorAll('tbody tr')].filter((ele, index) => index > 1);
 
 	const versionDetails = versionElements.map(ele => {
 		const cells = ele.children;

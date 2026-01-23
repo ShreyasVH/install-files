@@ -7,6 +7,30 @@
  ],
  "dotnet-core": [
   {
+   "version": "10.0.102",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
+   "version": "9.0.309",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
+   "version": "9.0.310",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
+   "version": "9.0.113",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
+   "version": "8.0.417",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
+   "version": "8.0.123",
+   "releaseDateString": "2026-01-14T01:22:00Z"
+  },
+  {
    "version": "10.0.101",
    "releaseDateString": "2025-12-10T12:02:00Z"
   },
@@ -948,6 +972,22 @@
   }
  ],
  "java": [
+  {
+   "version": "25.0.2",
+   "releaseDateString": "2026-01-20T00:00:00Z"
+  },
+  {
+   "version": "21.0.10",
+   "releaseDateString": "2026-01-20T00:00:00Z"
+  },
+  {
+   "version": "17.0.18",
+   "releaseDateString": "2026-01-20T00:00:00Z"
+  },
+  {
+   "version": "11.0.30",
+   "releaseDateString": "2026-01-20T00:00:00Z"
+  },
   {
    "version": "25.0.1",
    "releaseDateString": "2025-10-21T00:00:00Z"
