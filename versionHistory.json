@@ -5447,6 +5447,18 @@
  ],
  "elasticsearch": [
   {
+   "version": "9.3.0",
+   "releaseDateString": "2026-01-28T18:57:57Z"
+  },
+  {
+   "version": "9.2.5",
+   "releaseDateString": "2026-01-28 15:38:51 UTC"
+  },
+  {
+   "version": "8.19.11",
+   "releaseDateString": "2026-01-28 17:31:30 UTC"
+  },
+  {
    "version": "9.1.10",
    "releaseDateString": "2026-01-08T16:22:53Z"
   },
@@ -9317,6 +9329,14 @@
  ],
  "go": [
   {
+   "version": "1.25.7",
+   "releaseDateString": "2026-02-04T15:46:51Z"
+  },
+  {
+   "version": "1.24.13",
+   "releaseDateString": "2026-02-04T15:46:48Z"
+  },
+  {
    "version": "1.25.6",
    "releaseDateString": "2026-01-15T18:28:34Z"
   },
@@ -10360,6 +10380,18 @@
   }
  ],
  "kibana": [
+  {
+   "version": "9.3.0",
+   "releaseDateString": "2026-01-28 22:36:46 UTC"
+  },
+  {
+   "version": "9.2.5",
+   "releaseDateString": "2026-01-28T19:35:56Z"
+  },
+  {
+   "version": "8.19.11",
+   "releaseDateString": "2026-01-28 15:15:15 UTC"
+  },
   {
    "version": "9.2.4",
    "releaseDateString": "2026-01-08 20:59:13 UTC"
@@ -11903,6 +11935,10 @@
  ],
  "kotlin": [
   {
+   "version": "2.3.10",
+   "releaseDateString": "2026-01-30T11:36:52Z"
+  },
+  {
    "version": "2.2.10",
    "releaseDateString": "2025-08-05T12:15:13Z"
   },
@@ -12458,6 +12494,10 @@
   }
  ],
  "libexpat": [
+  {
+   "version": "2.7.4",
+   "releaseDateString": "2026-01-31 11:19:21 UTC"
+  },
   {
    "version": "2.7.3",
    "releaseDateString": "2025-09-24 19:24:30 UTC"
@@ -18729,6 +18769,14 @@
  ],
  "neo4j": [
   {
+   "version": "5.26.21",
+   "releaseDateString": "2026-02-03T14:49:09Z"
+  },
+  {
+   "version": "4.4.48",
+   "releaseDateString": "2026-02-03T17:56:53Z"
+  },
+  {
    "version": "4.4.47",
    "releaseDateString": "2026-01-29T12:28:24Z"
   },
@@ -20050,6 +20098,14 @@
   }
  ],
  "nginx": [
+  {
+   "version": "1.29.5",
+   "releaseDateString": "2026-02-04T15:22:01Z"
+  },
+  {
+   "version": "1.28.2",
+   "releaseDateString": "2026-02-04T17:28:08Z"
+  },
   {
    "version": "1.28.1",
    "releaseDateString": "2025-12-23T18:43:43Z"
@@ -22364,6 +22420,10 @@
   }
  ],
  "node": [
+  {
+   "version": "25.6.0",
+   "releaseDateString": "2026-02-03 11:38:06 UTC"
+  },
   {
    "version": "25.5.0",
    "releaseDateString": "2026-01-26 20:30:59 UTC"
@@ -31443,6 +31503,14 @@
  ],
  "python": [
   {
+   "version": "3.14.3",
+   "releaseDateString": "2026-02-03T15:32:20Z"
+  },
+  {
+   "version": "3.13.12",
+   "releaseDateString": "2026-02-03 21:49:13 UTC"
+  },
+  {
    "version": "3.14.2",
    "releaseDateString": "2025-12-05T16:49:16Z"
   },
@@ -36360,6 +36428,10 @@
   }
  ],
  "sbt": [
+  {
+   "version": "1.12.2",
+   "releaseDateString": "2026-02-04 05:33:24 UTC"
+  },
   {
    "version": "1.12.1",
    "releaseDateString": "2026-01-26 11:02:28 UTC"
