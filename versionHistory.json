@@ -2251,6 +2251,18 @@
  ],
  "cockroach": [
   {
+   "version": "25.4.4",
+   "releaseDateString": "2026-02-04 01:01:42 UTC"
+  },
+  {
+   "version": "25.2.12",
+   "releaseDateString": "2026-02-04 17:44:46 UTC"
+  },
+  {
+   "version": "24.3.26",
+   "releaseDateString": "2026-01-20 19:13:08 UTC"
+  },
+  {
    "version": "25.4.3",
    "releaseDateString": "2026-01-07 15:57:56 UTC"
   },
@@ -5446,6 +5458,18 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "9.3.0",
+   "releaseDateString": "2026-01-28T18:57:57Z"
+  },
+  {
+   "version": "9.2.5",
+   "releaseDateString": "2026-01-28 15:38:51 UTC"
+  },
+  {
+   "version": "8.19.11",
+   "releaseDateString": "2026-01-28 17:31:30 UTC"
+  },
   {
    "version": "9.1.10",
    "releaseDateString": "2026-01-08T16:22:53Z"
@@ -9317,6 +9341,18 @@
  ],
  "go": [
   {
+   "version": "1.26.0",
+   "releaseDateString": "2026-02-10T19:27:55Z"
+  },
+  {
+   "version": "1.25.7",
+   "releaseDateString": "2026-02-04T15:46:51Z"
+  },
+  {
+   "version": "1.24.13",
+   "releaseDateString": "2026-02-04T15:46:48Z"
+  },
+  {
    "version": "1.25.6",
    "releaseDateString": "2026-01-15T18:28:34Z"
   },
@@ -10360,6 +10396,18 @@
   }
  ],
  "kibana": [
+  {
+   "version": "9.3.0",
+   "releaseDateString": "2026-01-28 22:36:46 UTC"
+  },
+  {
+   "version": "9.2.5",
+   "releaseDateString": "2026-01-28T19:35:56Z"
+  },
+  {
+   "version": "8.19.11",
+   "releaseDateString": "2026-01-28 15:15:15 UTC"
+  },
   {
    "version": "9.2.4",
    "releaseDateString": "2026-01-08 20:59:13 UTC"
@@ -11903,6 +11951,10 @@
  ],
  "kotlin": [
   {
+   "version": "2.3.10",
+   "releaseDateString": "2026-01-30T11:36:52Z"
+  },
+  {
    "version": "2.2.10",
    "releaseDateString": "2025-08-05T12:15:13Z"
   },
@@ -12458,6 +12510,10 @@
   }
  ],
  "libexpat": [
+  {
+   "version": "2.7.4",
+   "releaseDateString": "2026-01-31 11:19:21 UTC"
+  },
   {
    "version": "2.7.3",
    "releaseDateString": "2025-09-24 19:24:30 UTC"
@@ -14064,6 +14120,30 @@
   }
  ],
  "mongo": [
+  {
+   "version": "8.2.5",
+   "releaseDateString": "2026-02-10T21:07:36Z"
+  },
+  {
+   "version": "8.2.4",
+   "releaseDateString": "2026-02-10T19:33:53Z"
+  },
+  {
+   "version": "8.0.19",
+   "releaseDateString": "2026-02-10T21:11:23Z"
+  },
+  {
+   "version": "8.0.18",
+   "releaseDateString": "2026-02-10T19:41:09Z"
+  },
+  {
+   "version": "7.0.30",
+   "releaseDateString": "2026-02-10T21:13:56Z"
+  },
+  {
+   "version": "7.0.29",
+   "releaseDateString": "2026-02-10T19:44:41Z"
+  },
   {
    "version": "6.0.27",
    "releaseDateString": "2025-12-23T16:21:51Z"
@@ -16348,6 +16428,10 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "2.7.0",
+   "releaseDateString": "2026-02-11 16:27:31 UTC"
+  },
   {
    "version": "2.6.0",
    "releaseDateString": "2026-01-13T16:48:43Z"
@@ -18729,6 +18813,14 @@
  ],
  "neo4j": [
   {
+   "version": "5.26.21",
+   "releaseDateString": "2026-02-03T14:49:09Z"
+  },
+  {
+   "version": "4.4.48",
+   "releaseDateString": "2026-02-03T17:56:53Z"
+  },
+  {
    "version": "4.4.47",
    "releaseDateString": "2026-01-29T12:28:24Z"
   },
@@ -20050,6 +20142,14 @@
   }
  ],
  "nginx": [
+  {
+   "version": "1.29.5",
+   "releaseDateString": "2026-02-04T15:22:01Z"
+  },
+  {
+   "version": "1.28.2",
+   "releaseDateString": "2026-02-04T17:28:08Z"
+  },
   {
    "version": "1.28.1",
    "releaseDateString": "2025-12-23T18:43:43Z"
@@ -22364,6 +22464,18 @@
   }
  ],
  "node": [
+  {
+   "version": "25.6.1",
+   "releaseDateString": "2026-02-10 13:17:35 UTC"
+  },
+  {
+   "version": "24.13.1",
+   "releaseDateString": "2026-02-10 13:17:35 UTC"
+  },
+  {
+   "version": "25.6.0",
+   "releaseDateString": "2026-02-03 11:38:06 UTC"
+  },
   {
    "version": "25.5.0",
    "releaseDateString": "2026-01-26 20:30:59 UTC"
@@ -26985,6 +27097,14 @@
  ],
  "php": [
   {
+   "version": "8.5.3",
+   "releaseDateString": "2026-02-10 18:31:40 UTC"
+  },
+  {
+   "version": "8.4.18",
+   "releaseDateString": "2026-02-10 17:49:07 UTC"
+  },
+  {
    "version": "8.5.2",
    "releaseDateString": "2026-01-13 21:43:51 UTC"
   },
@@ -29965,6 +30085,34 @@
  ],
  "postgis": [
   {
+   "version": "3.6.2",
+   "releaseDateString": "2026-02-10T01:13:24Z"
+  },
+  {
+   "version": "3.5.5",
+   "releaseDateString": "2026-02-09T20:25:33Z"
+  },
+  {
+   "version": "3.4.5",
+   "releaseDateString": "2026-02-09T22:56:14Z"
+  },
+  {
+   "version": "3.3.9",
+   "releaseDateString": "2026-02-09T10:55:04Z"
+  },
+  {
+   "version": "3.2.9",
+   "releaseDateString": "2026-02-09T02:01:25Z"
+  },
+  {
+   "version": "3.0.12",
+   "releaseDateString": "2026-02-09T06:17:20Z"
+  },
+  {
+   "version": "3.1.13",
+   "releaseDateString": "2026-02-07T06:48:49Z"
+  },
+  {
    "version": "3.6.1",
    "releaseDateString": "2025-11-13T18:41:36Z"
   },
@@ -30638,6 +30786,26 @@
   }
  ],
  "postgres": [
+  {
+   "version": "18.2",
+   "releaseDateString": "2026-02-09T21:49:49Z"
+  },
+  {
+   "version": "17.8",
+   "releaseDateString": "2026-02-09T21:51:54Z"
+  },
+  {
+   "version": "16.12",
+   "releaseDateString": "2026-02-09T21:53:53Z"
+  },
+  {
+   "version": "15.16",
+   "releaseDateString": "2026-02-09T21:55:28Z"
+  },
+  {
+   "version": "14.21",
+   "releaseDateString": "2026-02-09T21:57:12Z"
+  },
   {
    "version": "18.1",
    "releaseDateString": "2025-11-10T21:52:06Z"
@@ -31442,6 +31610,14 @@
   }
  ],
  "python": [
+  {
+   "version": "3.14.3",
+   "releaseDateString": "2026-02-03T15:32:20Z"
+  },
+  {
+   "version": "3.13.12",
+   "releaseDateString": "2026-02-03 21:49:13 UTC"
+  },
   {
    "version": "3.14.2",
    "releaseDateString": "2025-12-05T16:49:16Z"
@@ -32428,6 +32604,18 @@
   }
  ],
  "redis": [
+  {
+   "version": "8.6.0",
+   "releaseDateString": "2026-02-10T14:08:46Z"
+  },
+  {
+   "version": "8.4.1",
+   "releaseDateString": "2026-02-08T07:03:30Z"
+  },
+  {
+   "version": "8.2.4",
+   "releaseDateString": "2026-02-08T07:09:02Z"
+  },
   {
    "version": "6.2.21",
    "releaseDateString": "2025-11-02T07:16:08Z"
@@ -36361,6 +36549,10 @@
  ],
  "sbt": [
   {
+   "version": "1.12.2",
+   "releaseDateString": "2026-02-04 05:33:24 UTC"
+  },
+  {
    "version": "1.12.1",
    "releaseDateString": "2026-01-26 11:02:28 UTC"
   },
@@ -39860,6 +40052,10 @@
   }
  ],
  "adminer": [
+  {
+   "version": "5.4.2",
+   "releaseDateString": "2026-02-08T15:44:05Z"
+  },
   {
    "version": "5.4.1",
    "releaseDateString": "2025-09-26T15:38:02Z"
