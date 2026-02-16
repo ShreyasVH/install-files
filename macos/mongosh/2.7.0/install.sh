@@ -25,9 +25,10 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	wget -q "https://downloads.mongodb.com/compass/mongosh-$VERSION-darwin-arm64.zip"
+	ARCHIVE_FILE="mongosh-$VERSION-darwin-arm64.zip"
+	wget -q "https://downloads.mongodb.com/compass/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	unzip "mongosh-$VERSION-darwin-arm64.zip" > /dev/null 2>&1
+	unzip "$ARCHIVE_FILE" > /dev/null 2>&1
 	mv "mongosh-$VERSION-darwin-arm64" $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongosh" ]; then
@@ -41,7 +42,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 		cd ..
-		rm "mongosh-$VERSION-darwin-arm64.zip"
+		rm "$ARCHIVE_FILE"
 	fi
 fi
 
