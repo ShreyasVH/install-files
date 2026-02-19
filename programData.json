@@ -815,6 +815,13 @@
   "path": "/bin/sed",
   "scriptName": "gnu"
  },
+ "sqlcl": {
+  "tagsUrl": "",
+  "dependencies": [
+   "java"
+  ],
+  "path": "/bin/sql"
+ },
  "sqlcmd": {
   "tagsUrl": "https://github.com/microsoft/go-sqlcmd/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",

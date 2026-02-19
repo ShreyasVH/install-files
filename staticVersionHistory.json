@@ -1319,6 +1319,12 @@
    "releaseDateString": "2017-03-20T17:08:00Z"
   }
  ],
+ "sqlcl": [
+  {
+   "version": "25.4.1.022.0618",
+   "releaseDateString": "2026-01-23T00:00:00Z"
+  }
+ ],
  "sudo": [
   {
    "version": "1.9.16",
