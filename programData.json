@@ -3,7 +3,6 @@
   "tagsUrl": "https://github.com/vrana/adminer/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1771656723622,
-  "isEntryPoint": true,
   "path": "index.php",
   "scriptName": "github"
  },
