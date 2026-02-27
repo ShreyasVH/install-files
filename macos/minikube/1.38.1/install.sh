@@ -1,5 +1,3 @@
-
-
 version_dir=$(dirname "$(realpath "$0")")
 
 VERSION=$(basename $version_dir)
