@@ -23,6 +23,11 @@ JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg
 MAVEN_FOLDER_NAME=maven
 MAVEN_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAVEN_FOLDER_NAME" '.[$folder][$version][$name]')
 
+if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/jenkins.conf ]; then
+	printf "jenkins.conf not found\n"
+	exit
+fi
+
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 
@@ -56,15 +61,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
 	echo "export PATH=\$MAVEN_HOME/bin:\$PATH" >> .envrc
 	direnv allow
 
-	PORT=1535
+	ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/jenkins.conf jenkins.conf
+
+	PORT=$(grep 'port=' jenkins.conf | awk -F= '{print $2}')
 	touch start.sh
 	echo "PID_FILE=jenkins.pid" >> start.sh
 	echo "export JENKINS_HOME=./jenkins_home" >> start.sh
-	# echo "echo \$JAVA_HOME" >> start.sh
 	echo "if [[ ! -e \$PID_FILE ]]; then" >> start.sh
 	echo -e "\techo 'Starting'" >> start.sh
-	# echo -e "\twhich java" >> start.sh
-	# echo -e "\techo \$JAVA_HOME" >> start.sh
 	echo -e "\tjava -Djenkins.install.runSetupWizard=false -jar jenkins.war --httpPort=$PORT > server.log 2>&1 &" >> start.sh
 	echo -e "\techo \$! > \$PID_FILE" >> start.sh
 	echo "fi" >> start.sh
@@ -90,16 +94,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
 	curl -O -s "${JENKINS_URL}/jnlpJars/jenkins-cli.jar"
 
 	print_message "${bold}${green}Creating user${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL groovy = < $CREATE_USER_FILE_PATH $JENKINS_USER $JENKINS_PASSWORD
+	java -jar jenkins-cli.jar -s $JENKINS_URL groovy = < $CREATE_USER_FILE_PATH $JENKINS_USERNAME $JENKINS_PASSWORD
 
 	print_message "${bold}${green}Fetching update center data${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USER:$JENKINS_PASSWORD" groovy = < $FETCH_UPDATE_CENTER_DATA_PATH
+	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" groovy = < $FETCH_UPDATE_CENTER_DATA_PATH
 
 	print_message "${bold}${green}Installing default plugins${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USER:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view
 
 	print_message "${bold}${green}Restarting${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USER:$JENKINS_PASSWORD" safe-restart
+	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" safe-restart
 
 	print_message "${bold}${green}Waiting for jenkins to start${clear}" $((DEPTH))
 	JENKINS_URL="http://localhost:$PORT"
@@ -108,10 +112,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
 	done
 
 	print_message "${bold}${green}Setting credentials${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USER:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS
 
 	print_message "${bold}${green}Creating multi branch pipeline${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USER:$JENKINS_PASSWORD groovy = < $CREATE_MULTI_BRANCH_PIPELINE_PATH "spring-boot-unit-test" $GITHUB_USERNAME "spring-boot-unit-test"
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_MULTI_BRANCH_PIPELINE_PATH "spring-boot-unit-test" $GITHUB_USERNAME "spring-boot-unit-test"
 
 	zsh stop.sh
 
