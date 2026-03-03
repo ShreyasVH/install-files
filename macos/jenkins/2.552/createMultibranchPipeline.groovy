@@ -38,7 +38,7 @@ mbp.getSourcesList().add(branchSource)
 
 mbp.setOrphanedItemStrategy(new DefaultOrphanedItemStrategy(true, "", ""))
 
-mbp.addTrigger(new com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger("1m"))
+// mbp.addTrigger(new com.cloudbees.hudson.plugins.folder.computed.PeriodicFolderTrigger("1m"))
 
 mbp.save()
 

@@ -114,8 +114,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
 	print_message "${bold}${green}Setting credentials${clear}" $((DEPTH))
 	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS
 
-	print_message "${bold}${green}Creating multi branch pipeline${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_MULTI_BRANCH_PIPELINE_PATH "spring-boot-unit-test" $GITHUB_USERNAME "spring-boot-unit-test"
+	# print_message "${bold}${green}Creating multi branch pipeline${clear}" $((DEPTH))
+	# java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_MULTI_BRANCH_PIPELINE_PATH "spring-boot-unit-test" $GITHUB_USERNAME "spring-boot-unit-test"
 
 	zsh stop.sh
 
