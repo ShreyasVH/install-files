@@ -286,6 +286,17 @@
   "isEntryPoint": true,
   "path": "/bin/java"
  },
+ "jenkins": {
+  "tagsUrl": "https://github.com/jenkinsci/jenkins/tags",
+  "versionRegex": "jenkins-\\d+\\.\\d+(\\.\\d)*",
+  "versionsLastUpdatedOn": 1772345637106,
+  "path": "/bin/jenkins.war",
+  "dependencies": [
+   "java",
+   "maven"
+  ],
+  "scriptName": "github"
+ },
  "jq": {
   "tagsUrl": "https://github.com/jqlang/jq/tags",
   "versionRegex": "jq-\\d+\\.\\d+(\\.\\d)*",
