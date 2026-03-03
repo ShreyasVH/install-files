@@ -28,7 +28,7 @@ if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/je
 	exit
 fi
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jenkins.war" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
