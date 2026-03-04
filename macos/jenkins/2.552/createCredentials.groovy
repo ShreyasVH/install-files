@@ -10,11 +10,13 @@ def store = Jenkins.instance
 
 def githubUsername = args[0].toString()
 def githubToken = args[1].toString()
+def id = args[2].toString()
+def description = args[3].toString()
 
 def creds = new UsernamePasswordCredentialsImpl(
     CredentialsScope.GLOBAL,
-    "github-creds",        // ID
-    "Github credentials", // Description
+    id,        // ID
+    description, // Description
     githubUsername,
     githubToken
 )

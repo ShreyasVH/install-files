@@ -111,11 +111,11 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	  sleep 2
 	done
 
-	print_message "${bold}${green}Setting credentials${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS
+	print_message "${bold}${green}Setting github credentials${clear}" $((DEPTH))
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS "github-creds" "Github credentials"
 
-	# print_message "${bold}${green}Creating multi branch pipeline${clear}" $((DEPTH))
-	# java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_MULTI_BRANCH_PIPELINE_PATH "spring-boot-unit-test" $GITHUB_USERNAME "spring-boot-unit-test"
+	print_message "${bold}${green}Setting docker credentials${clear}" $((DEPTH))
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $DOCKER_USERNAME $DOCKER_TOKEN_JENKINS "docker-creds" "Docker credentials"
 
 	zsh stop.sh
 
