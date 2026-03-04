@@ -44,6 +44,6 @@ mbp.save()
 
 // println "Created/updated multibranch job: ${jobName}"
 
-// mbp.scheduleBuild2(0)
+mbp.scheduleBuild2(0)
 
 // println "Indexing finished"
