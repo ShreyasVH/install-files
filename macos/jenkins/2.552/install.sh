@@ -100,7 +100,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" groovy = < $FETCH_UPDATE_CENTER_DATA_PATH
 
 	print_message "${bold}${green}Installing default plugins${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view basic-branch-build-strategies
 
 	print_message "${bold}${green}Restarting${clear}" $((DEPTH))
 	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" safe-restart

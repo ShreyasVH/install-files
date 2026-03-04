@@ -6,6 +6,7 @@ import jenkins.branch.*
 import jenkins.scm.api.*
 import org.jenkinsci.plugins.github_branch_source.*
 import com.cloudbees.hudson.plugins.folder.computed.DefaultOrphanedItemStrategy
+import jenkins.branch.buildstrategies.basic.*
 
 def j = Jenkins.instance
 
@@ -33,6 +34,10 @@ githubSource.traits = [
 ]
 
 def branchSource = new BranchSource(githubSource)
+branchSource.setBuildStrategies([
+  new SkipInitialBuildOnFirstBranchIndexing()
+] as List<BranchBuildStrategy>)
+
 mbp.getSourcesList().clear()
 mbp.getSourcesList().add(branchSource)
 
