@@ -42808,5 +42808,3903 @@
    "version": "1.5.3",
    "releaseDateString": "1998-09-23 02:35"
   }
+ ],
+ "jenkins": [
+  {
+   "version": "2.552",
+   "releaseDateString": "2026-02-24T06:43:50Z"
+  },
+  {
+   "version": "2.551",
+   "releaseDateString": "2026-02-16T15:39:55Z"
+  },
+  {
+   "version": "2.541.2",
+   "releaseDateString": "2026-02-16T12:38:26Z"
+  },
+  {
+   "version": "2.550",
+   "releaseDateString": "2026-02-10T06:41:50Z"
+  },
+  {
+   "version": "2.549",
+   "releaseDateString": "2026-02-03T15:52:43Z"
+  },
+  {
+   "version": "2.548",
+   "releaseDateString": "2026-01-27T06:42:55Z"
+  },
+  {
+   "version": "2.541.1",
+   "releaseDateString": "2026-01-21T09:24:33Z"
+  },
+  {
+   "version": "2.547",
+   "releaseDateString": "2026-01-20T06:41:48Z"
+  },
+  {
+   "version": "2.546",
+   "releaseDateString": "2026-01-13T06:41:44Z"
+  },
+  {
+   "version": "2.545",
+   "releaseDateString": "2026-01-06T06:42:50Z"
+  },
+  {
+   "version": "2.544",
+   "releaseDateString": "2025-12-30T06:44:02Z"
+  },
+  {
+   "version": "2.543",
+   "releaseDateString": "2025-12-23T06:40:41Z"
+  },
+  {
+   "version": "2.542",
+   "releaseDateString": "2025-12-16T11:28:32Z"
+  },
+  {
+   "version": "2.541",
+   "releaseDateString": "2025-12-08T17:18:44Z"
+  },
+  {
+   "version": "2.528.3",
+   "releaseDateString": "2025-12-08T13:52:24Z"
+  },
+  {
+   "version": "2.540",
+   "releaseDateString": "2025-12-02T12:31:26Z"
+  },
+  {
+   "version": "2.539",
+   "releaseDateString": "2025-11-25T15:01:04Z"
+  },
+  {
+   "version": "2.538",
+   "releaseDateString": "2025-11-19T06:10:29Z"
+  },
+  {
+   "version": "2.537",
+   "releaseDateString": "2025-11-18T12:31:25Z"
+  },
+  {
+   "version": "2.528.2",
+   "releaseDateString": "2025-11-12T13:18:13Z"
+  },
+  {
+   "version": "2.536",
+   "releaseDateString": "2025-11-11T16:33:06Z"
+  },
+  {
+   "version": "2.535",
+   "releaseDateString": "2025-11-04T12:31:36Z"
+  },
+  {
+   "version": "2.534",
+   "releaseDateString": "2025-10-28T12:29:12Z"
+  },
+  {
+   "version": "2.533",
+   "releaseDateString": "2025-10-21T16:56:57Z"
+  },
+  {
+   "version": "2.528.1",
+   "releaseDateString": "2025-10-15T10:42:28Z"
+  },
+  {
+   "version": "2.532",
+   "releaseDateString": "2025-10-14T12:27:04Z"
+  },
+  {
+   "version": "2.531",
+   "releaseDateString": "2025-10-07T12:25:57Z"
+  },
+  {
+   "version": "2.530",
+   "releaseDateString": "2025-09-30T12:23:42Z"
+  },
+  {
+   "version": "2.529",
+   "releaseDateString": "2025-09-23T12:23:48Z"
+  },
+  {
+   "version": "2.528",
+   "releaseDateString": "2025-09-15T23:04:54Z"
+  },
+  {
+   "version": "2.516.3",
+   "releaseDateString": "2025-09-15T11:45:55Z"
+  },
+  {
+   "version": "2.527",
+   "releaseDateString": "2025-09-09T12:24:01Z"
+  },
+  {
+   "version": "2.526",
+   "releaseDateString": "2025-09-02T16:38:59Z"
+  },
+  {
+   "version": "2.525",
+   "releaseDateString": "2025-08-26T12:22:55Z"
+  },
+  {
+   "version": "2.516.2",
+   "releaseDateString": "2025-08-20T15:48:46Z"
+  },
+  {
+   "version": "2.524",
+   "releaseDateString": "2025-08-19T13:08:53Z"
+  },
+  {
+   "version": "2.523",
+   "releaseDateString": "2025-08-12T13:07:48Z"
+  },
+  {
+   "version": "2.522",
+   "releaseDateString": "2025-08-05T13:07:43Z"
+  },
+  {
+   "version": "2.521",
+   "releaseDateString": "2025-07-29T13:10:02Z"
+  },
+  {
+   "version": "2.516.1",
+   "releaseDateString": "2025-07-23T11:27:35Z"
+  },
+  {
+   "version": "2.520",
+   "releaseDateString": "2025-07-22T13:07:51Z"
+  },
+  {
+   "version": "2.519",
+   "releaseDateString": "2025-07-15T13:07:49Z"
+  },
+  {
+   "version": "2.518",
+   "releaseDateString": "2025-07-08T13:08:54Z"
+  },
+  {
+   "version": "2.517",
+   "releaseDateString": "2025-07-01T13:06:32Z"
+  },
+  {
+   "version": "2.504.3",
+   "releaseDateString": "2025-06-25T13:49:18Z"
+  },
+  {
+   "version": "2.516",
+   "releaseDateString": "2025-06-24T13:05:44Z"
+  },
+  {
+   "version": "2.515",
+   "releaseDateString": "2025-06-17T13:07:42Z"
+  },
+  {
+   "version": "2.514",
+   "releaseDateString": "2025-06-10T13:02:52Z"
+  },
+  {
+   "version": "2.513",
+   "releaseDateString": "2025-06-03T13:03:55Z"
+  },
+  {
+   "version": "2.504.2",
+   "releaseDateString": "2025-05-28T12:45:12Z"
+  },
+  {
+   "version": "2.512",
+   "releaseDateString": "2025-05-27T13:01:59Z"
+  },
+  {
+   "version": "2.511",
+   "releaseDateString": "2025-05-20T13:03:08Z"
+  },
+  {
+   "version": "2.510",
+   "releaseDateString": "2025-05-13T14:33:55Z"
+  },
+  {
+   "version": "2.509",
+   "releaseDateString": "2025-05-06T13:04:02Z"
+  },
+  {
+   "version": "2.504.1",
+   "releaseDateString": "2025-04-30T12:50:17Z"
+  },
+  {
+   "version": "2.508",
+   "releaseDateString": "2025-04-29T13:33:24Z"
+  },
+  {
+   "version": "2.507",
+   "releaseDateString": "2025-04-22T14:05:21Z"
+  },
+  {
+   "version": "2.506",
+   "releaseDateString": "2025-04-15T13:47:18Z"
+  },
+  {
+   "version": "2.505",
+   "releaseDateString": "2025-04-08T13:59:15Z"
+  },
+  {
+   "version": "2.504",
+   "releaseDateString": "2025-03-31T13:10:14Z"
+  },
+  {
+   "version": "2.492.3",
+   "releaseDateString": "2025-03-31T13:14:18Z"
+  },
+  {
+   "version": "2.503",
+   "releaseDateString": "2025-03-25T14:01:20Z"
+  },
+  {
+   "version": "2.502",
+   "releaseDateString": "2025-03-18T13:51:20Z"
+  },
+  {
+   "version": "2.501",
+   "releaseDateString": "2025-03-11T13:49:05Z"
+  },
+  {
+   "version": "2.500",
+   "releaseDateString": "2025-03-04T10:34:35Z"
+  },
+  {
+   "version": "2.492.2",
+   "releaseDateString": "2025-03-03T17:25:06Z"
+  },
+  {
+   "version": "2.499",
+   "releaseDateString": "2025-02-25T15:56:49Z"
+  },
+  {
+   "version": "2.498",
+   "releaseDateString": "2025-02-18T14:10:14Z"
+  },
+  {
+   "version": "2.497",
+   "releaseDateString": "2025-02-11T14:10:23Z"
+  },
+  {
+   "version": "2.492.1",
+   "releaseDateString": "2025-02-05T13:22:15Z"
+  },
+  {
+   "version": "2.496",
+   "releaseDateString": "2025-02-04T13:38:06Z"
+  },
+  {
+   "version": "2.495",
+   "releaseDateString": "2025-01-28T13:58:52Z"
+  },
+  {
+   "version": "2.494",
+   "releaseDateString": "2025-01-21T13:51:35Z"
+  },
+  {
+   "version": "2.493",
+   "releaseDateString": "2025-01-14T13:40:38Z"
+  },
+  {
+   "version": "2.479.3",
+   "releaseDateString": "2025-01-08T13:58:14Z"
+  },
+  {
+   "version": "2.492",
+   "releaseDateString": "2025-01-07T13:46:06Z"
+  },
+  {
+   "version": "2.491",
+   "releaseDateString": "2024-12-19T15:05:15Z"
+  },
+  {
+   "version": "2.490",
+   "releaseDateString": "2024-12-17T13:45:57Z"
+  },
+  {
+   "version": "2.489",
+   "releaseDateString": "2024-12-10T13:55:06Z"
+  },
+  {
+   "version": "2.488",
+   "releaseDateString": "2024-12-03T13:54:11Z"
+  },
+  {
+   "version": "2.487",
+   "releaseDateString": "2024-11-25T19:14:51Z"
+  },
+  {
+   "version": "2.479.2",
+   "releaseDateString": "2024-11-25T15:21:18Z"
+  },
+  {
+   "version": "2.486",
+   "releaseDateString": "2024-11-19T13:49:45Z"
+  },
+  {
+   "version": "2.485",
+   "releaseDateString": "2024-11-12T13:58:29Z"
+  },
+  {
+   "version": "2.484",
+   "releaseDateString": "2024-11-05T13:51:04Z"
+  },
+  {
+   "version": "2.479.1",
+   "releaseDateString": "2024-10-30T13:02:35Z"
+  },
+  {
+   "version": "2.483",
+   "releaseDateString": "2024-10-29T13:43:58Z"
+  },
+  {
+   "version": "2.482",
+   "releaseDateString": "2024-10-22T13:43:00Z"
+  },
+  {
+   "version": "2.481",
+   "releaseDateString": "2024-10-15T13:52:44Z"
+  },
+  {
+   "version": "2.480",
+   "releaseDateString": "2024-10-08T14:08:31Z"
+  },
+  {
+   "version": "2.479",
+   "releaseDateString": "2024-09-27T11:17:44Z"
+  },
+  {
+   "version": "2.478",
+   "releaseDateString": "2024-09-24T13:48:23Z"
+  },
+  {
+   "version": "2.462.3",
+   "releaseDateString": "2024-09-19T18:31:54Z"
+  },
+  {
+   "version": "2.477",
+   "releaseDateString": "2024-09-17T13:51:34Z"
+  },
+  {
+   "version": "2.476",
+   "releaseDateString": "2024-09-10T14:09:56Z"
+  },
+  {
+   "version": "2.475",
+   "releaseDateString": "2024-09-04T12:22:06Z"
+  },
+  {
+   "version": "2.462.2",
+   "releaseDateString": "2024-09-04T07:57:13Z"
+  },
+  {
+   "version": "2.474",
+   "releaseDateString": "2024-08-27T13:51:01Z"
+  },
+  {
+   "version": "2.473",
+   "releaseDateString": "2024-08-20T13:40:21Z"
+  },
+  {
+   "version": "2.472",
+   "releaseDateString": "2024-08-13T13:50:51Z"
+  },
+  {
+   "version": "2.471",
+   "releaseDateString": "2024-08-06T10:30:26Z"
+  },
+  {
+   "version": "2.462.1",
+   "releaseDateString": "2024-08-05T18:18:55Z"
+  },
+  {
+   "version": "2.452.4",
+   "releaseDateString": "2024-08-05T15:40:24Z"
+  },
+  {
+   "version": "2.470",
+   "releaseDateString": "2024-07-30T17:24:44Z"
+  },
+  {
+   "version": "2.469",
+   "releaseDateString": "2024-07-23T13:33:48Z"
+  },
+  {
+   "version": "2.468",
+   "releaseDateString": "2024-07-16T13:36:31Z"
+  },
+  {
+   "version": "2.452.3",
+   "releaseDateString": "2024-07-10T16:17:43Z"
+  },
+  {
+   "version": "2.467",
+   "releaseDateString": "2024-07-09T17:52:36Z"
+  },
+  {
+   "version": "2.466",
+   "releaseDateString": "2024-07-02T18:29:58Z"
+  },
+  {
+   "version": "2.465",
+   "releaseDateString": "2024-07-02T13:43:58Z"
+  },
+  {
+   "version": "2.464",
+   "releaseDateString": "2024-06-25T13:25:01Z"
+  },
+  {
+   "version": "2.463",
+   "releaseDateString": "2024-06-18T13:25:00Z"
+  },
+  {
+   "version": "2.452.2",
+   "releaseDateString": "2024-06-12T14:37:39Z"
+  },
+  {
+   "version": "2.462",
+   "releaseDateString": "2024-06-11T13:29:40Z"
+  },
+  {
+   "version": "2.461",
+   "releaseDateString": "2024-06-04T13:14:56Z"
+  },
+  {
+   "version": "2.460",
+   "releaseDateString": "2024-05-28T13:18:36Z"
+  },
+  {
+   "version": "2.459",
+   "releaseDateString": "2024-05-21T13:12:34Z"
+  },
+  {
+   "version": "2.452.1",
+   "releaseDateString": "2024-05-15T07:37:46Z"
+  },
+  {
+   "version": "2.458",
+   "releaseDateString": "2024-05-14T13:15:24Z"
+  },
+  {
+   "version": "2.457",
+   "releaseDateString": "2024-05-07T14:35:14Z"
+  },
+  {
+   "version": "2.456",
+   "releaseDateString": "2024-04-30T13:05:06Z"
+  },
+  {
+   "version": "2.455",
+   "releaseDateString": "2024-04-23T13:09:32Z"
+  },
+  {
+   "version": "2.440.3",
+   "releaseDateString": "2024-04-17T14:48:06Z"
+  },
+  {
+   "version": "2.454",
+   "releaseDateString": "2024-04-16T13:14:28Z"
+  },
+  {
+   "version": "2.453",
+   "releaseDateString": "2024-04-09T13:02:56Z"
+  },
+  {
+   "version": "2.452",
+   "releaseDateString": "2024-04-02T13:11:42Z"
+  },
+  {
+   "version": "2.451",
+   "releaseDateString": "2024-03-26T13:00:35Z"
+  },
+  {
+   "version": "2.440.2",
+   "releaseDateString": "2024-03-20T14:50:03Z"
+  },
+  {
+   "version": "2.450",
+   "releaseDateString": "2024-03-19T13:03:00Z"
+  },
+  {
+   "version": "2.449",
+   "releaseDateString": "2024-03-12T13:08:28Z"
+  },
+  {
+   "version": "2.448",
+   "releaseDateString": "2024-03-05T13:03:43Z"
+  },
+  {
+   "version": "2.447",
+   "releaseDateString": "2024-02-27T13:12:43Z"
+  },
+  {
+   "version": "2.440.1",
+   "releaseDateString": "2024-02-21T08:52:53Z"
+  },
+  {
+   "version": "2.446",
+   "releaseDateString": "2024-02-20T13:03:42Z"
+  },
+  {
+   "version": "2.445",
+   "releaseDateString": "2024-02-13T13:22:34Z"
+  },
+  {
+   "version": "2.444",
+   "releaseDateString": "2024-02-06T13:08:09Z"
+  },
+  {
+   "version": "2.443",
+   "releaseDateString": "2024-01-30T13:06:57Z"
+  },
+  {
+   "version": "2.442",
+   "releaseDateString": "2024-01-22T21:35:22Z"
+  },
+  {
+   "version": "2.426.3",
+   "releaseDateString": "2024-01-22T16:48:14Z"
+  },
+  {
+   "version": "2.441",
+   "releaseDateString": "2024-01-16T13:07:08Z"
+  },
+  {
+   "version": "2.440",
+   "releaseDateString": "2024-01-10T04:35:17Z"
+  },
+  {
+   "version": "2.439",
+   "releaseDateString": "2024-01-02T13:11:25Z"
+  },
+  {
+   "version": "2.438",
+   "releaseDateString": "2023-12-26T13:04:44Z"
+  },
+  {
+   "version": "2.437",
+   "releaseDateString": "2023-12-19T13:10:58Z"
+  },
+  {
+   "version": "2.426.2",
+   "releaseDateString": "2023-12-13T16:59:41Z"
+  },
+  {
+   "version": "2.436",
+   "releaseDateString": "2023-12-12T13:08:25Z"
+  },
+  {
+   "version": "2.435",
+   "releaseDateString": "2023-12-05T13:31:24Z"
+  },
+  {
+   "version": "2.434",
+   "releaseDateString": "2023-11-28T13:19:32Z"
+  },
+  {
+   "version": "2.433",
+   "releaseDateString": "2023-11-21T13:07:19Z"
+  },
+  {
+   "version": "2.426.1",
+   "releaseDateString": "2023-11-15T14:39:25Z"
+  },
+  {
+   "version": "2.432",
+   "releaseDateString": "2023-11-14T13:12:09Z"
+  },
+  {
+   "version": "2.431",
+   "releaseDateString": "2023-11-07T13:01:47Z"
+  },
+  {
+   "version": "2.430",
+   "releaseDateString": "2023-10-31T12:46:32Z"
+  },
+  {
+   "version": "2.429",
+   "releaseDateString": "2023-10-24T13:07:10Z"
+  },
+  {
+   "version": "2.414.3",
+   "releaseDateString": "2023-10-18T15:19:16Z"
+  },
+  {
+   "version": "2.428",
+   "releaseDateString": "2023-10-17T12:56:05Z"
+  },
+  {
+   "version": "2.427",
+   "releaseDateString": "2023-10-10T12:47:23Z"
+  },
+  {
+   "version": "2.426",
+   "releaseDateString": "2023-10-03T13:01:53Z"
+  },
+  {
+   "version": "2.425",
+   "releaseDateString": "2023-09-26T13:04:02Z"
+  },
+  {
+   "version": "2.424",
+   "releaseDateString": "2023-09-18T16:31:19Z"
+  },
+  {
+   "version": "2.414.2",
+   "releaseDateString": "2023-09-18T13:30:56Z"
+  },
+  {
+   "version": "2.423",
+   "releaseDateString": "2023-09-12T13:03:04Z"
+  },
+  {
+   "version": "2.422",
+   "releaseDateString": "2023-09-05T12:43:13Z"
+  },
+  {
+   "version": "2.421",
+   "releaseDateString": "2023-08-29T13:02:09Z"
+  },
+  {
+   "version": "2.414.1",
+   "releaseDateString": "2023-08-23T10:05:41Z"
+  },
+  {
+   "version": "2.420",
+   "releaseDateString": "2023-08-22T18:10:54Z"
+  },
+  {
+   "version": "2.419",
+   "releaseDateString": "2023-08-15T12:57:57Z"
+  },
+  {
+   "version": "2.418",
+   "releaseDateString": "2023-08-08T16:52:19Z"
+  },
+  {
+   "version": "2.417",
+   "releaseDateString": "2023-08-01T13:08:03Z"
+  },
+  {
+   "version": "2.416",
+   "releaseDateString": "2023-07-24T16:59:26Z"
+  },
+  {
+   "version": "2.401.3",
+   "releaseDateString": "2023-07-24T17:03:04Z"
+  },
+  {
+   "version": "2.415",
+   "releaseDateString": "2023-07-18T12:41:14Z"
+  },
+  {
+   "version": "2.414",
+   "releaseDateString": "2023-07-11T13:06:55Z"
+  },
+  {
+   "version": "2.413",
+   "releaseDateString": "2023-07-04T12:59:03Z"
+  },
+  {
+   "version": "2.401.2",
+   "releaseDateString": "2023-06-28T11:12:05Z"
+  },
+  {
+   "version": "2.412",
+   "releaseDateString": "2023-06-27T12:54:54Z"
+  },
+  {
+   "version": "2.411",
+   "releaseDateString": "2023-06-20T13:03:54Z"
+  },
+  {
+   "version": "2.410",
+   "releaseDateString": "2023-06-13T12:54:32Z"
+  },
+  {
+   "version": "2.409",
+   "releaseDateString": "2023-06-06T18:53:32Z"
+  },
+  {
+   "version": "2.408",
+   "releaseDateString": "2023-06-06T12:53:10Z"
+  },
+  {
+   "version": "2.401.1",
+   "releaseDateString": "2023-05-31T09:48:35Z"
+  },
+  {
+   "version": "2.407",
+   "releaseDateString": "2023-05-30T12:59:15Z"
+  },
+  {
+   "version": "2.406",
+   "releaseDateString": "2023-05-23T19:27:56Z"
+  },
+  {
+   "version": "2.405",
+   "releaseDateString": "2023-05-16T12:54:51Z"
+  },
+  {
+   "version": "2.404",
+   "releaseDateString": "2023-05-09T12:38:10Z"
+  },
+  {
+   "version": "2.387.3",
+   "releaseDateString": "2023-05-03T12:12:10Z"
+  },
+  {
+   "version": "2.403",
+   "releaseDateString": "2023-05-02T13:03:00Z"
+  },
+  {
+   "version": "2.402",
+   "releaseDateString": "2023-04-25T12:57:34Z"
+  },
+  {
+   "version": "2.401",
+   "releaseDateString": "2023-04-18T12:45:41Z"
+  },
+  {
+   "version": "2.400",
+   "releaseDateString": "2023-04-11T13:00:28Z"
+  },
+  {
+   "version": "2.387.2",
+   "releaseDateString": "2023-04-05T11:43:55Z"
+  },
+  {
+   "version": "2.399",
+   "releaseDateString": "2023-04-04T20:04:40Z"
+  },
+  {
+   "version": "2.398",
+   "releaseDateString": "2023-04-04T12:49:53Z"
+  },
+  {
+   "version": "2.397",
+   "releaseDateString": "2023-03-28T13:01:31Z"
+  },
+  {
+   "version": "2.396",
+   "releaseDateString": "2023-03-21T12:50:18Z"
+  },
+  {
+   "version": "2.395",
+   "releaseDateString": "2023-03-14T12:46:50Z"
+  },
+  {
+   "version": "2.394",
+   "releaseDateString": "2023-03-06T23:01:11Z"
+  },
+  {
+   "version": "2.387.1",
+   "releaseDateString": "2023-03-06T17:19:12Z"
+  },
+  {
+   "version": "2.375.4",
+   "releaseDateString": "2023-03-06T14:24:32Z"
+  },
+  {
+   "version": "2.393",
+   "releaseDateString": "2023-02-28T13:15:05Z"
+  },
+  {
+   "version": "2.392",
+   "releaseDateString": "2023-02-21T13:13:34Z"
+  },
+  {
+   "version": "2.391",
+   "releaseDateString": "2023-02-14T12:43:56Z"
+  },
+  {
+   "version": "2.375.3",
+   "releaseDateString": "2023-02-08T13:06:54Z"
+  },
+  {
+   "version": "2.390",
+   "releaseDateString": "2023-02-07T13:07:49Z"
+  },
+  {
+   "version": "2.389",
+   "releaseDateString": "2023-01-31T12:47:44Z"
+  },
+  {
+   "version": "2.388",
+   "releaseDateString": "2023-01-24T12:46:29Z"
+  },
+  {
+   "version": "2.387",
+   "releaseDateString": "2023-01-17T13:01:18Z"
+  },
+  {
+   "version": "2.375.2",
+   "releaseDateString": "2023-01-11T09:45:59Z"
+  },
+  {
+   "version": "2.386",
+   "releaseDateString": "2023-01-10T13:35:49Z"
+  },
+  {
+   "version": "2.385",
+   "releaseDateString": "2023-01-03T13:41:11Z"
+  },
+  {
+   "version": "2.384",
+   "releaseDateString": "2022-12-27T12:56:58Z"
+  },
+  {
+   "version": "2.383",
+   "releaseDateString": "2022-12-20T13:36:10Z"
+  },
+  {
+   "version": "2.382",
+   "releaseDateString": "2022-12-13T12:45:05Z"
+  },
+  {
+   "version": "2.381",
+   "releaseDateString": "2022-12-06T13:35:34Z"
+  },
+  {
+   "version": "2.375.1",
+   "releaseDateString": "2022-11-30T10:15:57Z"
+  },
+  {
+   "version": "2.380",
+   "releaseDateString": "2022-11-29T13:15:26Z"
+  },
+  {
+   "version": "2.379",
+   "releaseDateString": "2022-11-22T13:32:08Z"
+  },
+  {
+   "version": "2.378",
+   "releaseDateString": "2022-11-15T12:51:32Z"
+  },
+  {
+   "version": "2.361.4",
+   "releaseDateString": "2022-11-14T10:15:19Z"
+  },
+  {
+   "version": "2.377",
+   "releaseDateString": "2022-11-08T12:57:15Z"
+  },
+  {
+   "version": "2.361.3",
+   "releaseDateString": "2022-11-02T09:13:50Z"
+  },
+  {
+   "version": "2.376",
+   "releaseDateString": "2022-11-01T23:47:36Z"
+  },
+  {
+   "version": "2.375",
+   "releaseDateString": "2022-10-25T12:48:22Z"
+  },
+  {
+   "version": "2.374",
+   "releaseDateString": "2022-10-18T12:44:06Z"
+  },
+  {
+   "version": "2.373",
+   "releaseDateString": "2022-10-11T12:59:24Z"
+  },
+  {
+   "version": "2.361.2",
+   "releaseDateString": "2022-10-05T10:12:03Z"
+  },
+  {
+   "version": "2.372",
+   "releaseDateString": "2022-10-04T12:50:50Z"
+  },
+  {
+   "version": "2.371",
+   "releaseDateString": "2022-09-27T15:25:38Z"
+  },
+  {
+   "version": "2.370",
+   "releaseDateString": "2022-09-21T13:09:32Z"
+  },
+  {
+   "version": "2.369",
+   "releaseDateString": "2022-09-20T13:24:21Z"
+  },
+  {
+   "version": "2.368",
+   "releaseDateString": "2022-09-13T13:07:55Z"
+  },
+  {
+   "version": "2.361.1",
+   "releaseDateString": "2022-09-07T09:15:26Z"
+  },
+  {
+   "version": "2.367",
+   "releaseDateString": "2022-09-06T13:01:16Z"
+  },
+  {
+   "version": "2.366",
+   "releaseDateString": "2022-08-30T13:11:17Z"
+  },
+  {
+   "version": "2.365",
+   "releaseDateString": "2022-08-23T13:12:03Z"
+  },
+  {
+   "version": "2.364",
+   "releaseDateString": "2022-08-16T12:21:22Z"
+  },
+  {
+   "version": "2.346.3",
+   "releaseDateString": "2022-08-10T09:24:50Z"
+  },
+  {
+   "version": "2.363",
+   "releaseDateString": "2022-08-09T12:40:40Z"
+  },
+  {
+   "version": "2.362",
+   "releaseDateString": "2022-08-02T12:38:32Z"
+  },
+  {
+   "version": "2.361",
+   "releaseDateString": "2022-07-26T12:45:30Z"
+  },
+  {
+   "version": "2.360",
+   "releaseDateString": "2022-07-19T12:38:10Z"
+  },
+  {
+   "version": "2.346.2",
+   "releaseDateString": "2022-07-13T16:27:11Z"
+  },
+  {
+   "version": "2.359",
+   "releaseDateString": "2022-07-12T12:44:20Z"
+  },
+  {
+   "version": "2.358",
+   "releaseDateString": "2022-07-06T08:59:59Z"
+  },
+  {
+   "version": "2.357",
+   "releaseDateString": "2022-06-28T12:43:14Z"
+  },
+  {
+   "version": "2.346.1",
+   "releaseDateString": "2022-06-16T14:20:35Z"
+  },
+  {
+   "version": "2.356",
+   "releaseDateString": "2022-06-15T20:35:51Z"
+  },
+  {
+   "version": "2.332.4",
+   "releaseDateString": "2022-06-15T17:55:00Z"
+  },
+  {
+   "version": "2.355",
+   "releaseDateString": "2022-06-14T12:52:57Z"
+  },
+  {
+   "version": "2.354",
+   "releaseDateString": "2022-06-08T17:35:50Z"
+  },
+  {
+   "version": "2.353",
+   "releaseDateString": "2022-06-08T03:50:26Z"
+  },
+  {
+   "version": "2.352",
+   "releaseDateString": "2022-06-07T21:59:22Z"
+  },
+  {
+   "version": "2.351",
+   "releaseDateString": "2022-06-07T19:15:18Z"
+  },
+  {
+   "version": "2.350",
+   "releaseDateString": "2022-06-01T08:54:55Z"
+  },
+  {
+   "version": "2.349",
+   "releaseDateString": "2022-05-24T12:25:50Z"
+  },
+  {
+   "version": "2.348",
+   "releaseDateString": "2022-05-17T12:24:07Z"
+  },
+  {
+   "version": "2.347",
+   "releaseDateString": "2022-05-10T15:21:46Z"
+  },
+  {
+   "version": "2.332.3",
+   "releaseDateString": "2022-05-04T15:13:19Z"
+  },
+  {
+   "version": "2.346",
+   "releaseDateString": "2022-05-03T20:33:25Z"
+  },
+  {
+   "version": "2.345",
+   "releaseDateString": "2022-04-26T12:31:17Z"
+  },
+  {
+   "version": "2.344",
+   "releaseDateString": "2022-04-19T12:31:57Z"
+  },
+  {
+   "version": "2.343",
+   "releaseDateString": "2022-04-12T12:35:02Z"
+  },
+  {
+   "version": "2.332.2",
+   "releaseDateString": "2022-04-06T10:59:16Z"
+  },
+  {
+   "version": "2.342",
+   "releaseDateString": "2022-04-05T12:36:31Z"
+  },
+  {
+   "version": "2.341",
+   "releaseDateString": "2022-03-29T14:59:14Z"
+  },
+  {
+   "version": "2.340",
+   "releaseDateString": "2022-03-22T12:53:38Z"
+  },
+  {
+   "version": "2.339",
+   "releaseDateString": "2022-03-15T13:23:45Z"
+  },
+  {
+   "version": "2.332.1",
+   "releaseDateString": "2022-03-09T16:07:56Z"
+  },
+  {
+   "version": "2.338",
+   "releaseDateString": "2022-03-08T12:31:22Z"
+  },
+  {
+   "version": "2.337",
+   "releaseDateString": "2022-03-01T12:26:39Z"
+  },
+  {
+   "version": "2.336",
+   "releaseDateString": "2022-02-22T12:30:29Z"
+  },
+  {
+   "version": "2.335",
+   "releaseDateString": "2022-02-16T15:26:22Z"
+  },
+  {
+   "version": "2.334",
+   "releaseDateString": "2022-02-08T00:22:17Z"
+  },
+  {
+   "version": "2.319.3",
+   "releaseDateString": "2022-02-07T19:10:51Z"
+  },
+  {
+   "version": "2.333",
+   "releaseDateString": "2022-02-01T12:27:21Z"
+  },
+  {
+   "version": "2.332",
+   "releaseDateString": "2022-01-25T12:28:51Z"
+  },
+  {
+   "version": "2.331",
+   "releaseDateString": "2022-01-21T15:16:16Z"
+  },
+  {
+   "version": "2.330",
+   "releaseDateString": "2022-01-11T17:10:08Z"
+  },
+  {
+   "version": "2.329",
+   "releaseDateString": "2022-01-11T12:37:23Z"
+  },
+  {
+   "version": "2.319.2",
+   "releaseDateString": "2022-01-10T16:30:43Z"
+  },
+  {
+   "version": "2.328",
+   "releaseDateString": "2022-01-04T12:23:05Z"
+  },
+  {
+   "version": "2.327",
+   "releaseDateString": "2021-12-28T12:29:49Z"
+  },
+  {
+   "version": "2.326",
+   "releaseDateString": "2021-12-21T12:41:46Z"
+  },
+  {
+   "version": "2.325",
+   "releaseDateString": "2021-12-14T12:37:17Z"
+  },
+  {
+   "version": "2.324",
+   "releaseDateString": "2021-12-07T12:28:44Z"
+  },
+  {
+   "version": "2.319.1",
+   "releaseDateString": "2021-12-01T17:03:03Z"
+  },
+  {
+   "version": "2.323",
+   "releaseDateString": "2021-11-30T16:52:47Z"
+  },
+  {
+   "version": "2.322",
+   "releaseDateString": "2021-11-23T12:37:02Z"
+  },
+  {
+   "version": "2.321",
+   "releaseDateString": "2021-11-16T12:28:37Z"
+  },
+  {
+   "version": "2.320",
+   "releaseDateString": "2021-11-09T12:28:25Z"
+  },
+  {
+   "version": "2.319",
+   "releaseDateString": "2021-11-02T18:27:39Z"
+  },
+  {
+   "version": "2.303.3",
+   "releaseDateString": "2021-11-02T15:25:36Z"
+  },
+  {
+   "version": "2.318",
+   "releaseDateString": "2021-10-26T12:31:00Z"
+  },
+  {
+   "version": "2.317",
+   "releaseDateString": "2021-10-19T12:41:02Z"
+  },
+  {
+   "version": "2.316",
+   "releaseDateString": "2021-10-12T12:29:09Z"
+  },
+  {
+   "version": "2.315",
+   "releaseDateString": "2021-10-05T10:56:29Z"
+  },
+  {
+   "version": "2.303.2",
+   "releaseDateString": "2021-10-05T08:41:39Z"
+  },
+  {
+   "version": "2.314",
+   "releaseDateString": "2021-09-28T16:49:30Z"
+  },
+  {
+   "version": "2.313",
+   "releaseDateString": "2021-09-21T12:23:11Z"
+  },
+  {
+   "version": "2.312",
+   "releaseDateString": "2021-09-14T12:20:51Z"
+  },
+  {
+   "version": "2.311",
+   "releaseDateString": "2021-09-09T10:40:34Z"
+  },
+  {
+   "version": "2.310",
+   "releaseDateString": "2021-09-07T12:23:49Z"
+  },
+  {
+   "version": "2.309",
+   "releaseDateString": "2021-08-31T12:28:29Z"
+  },
+  {
+   "version": "2.303.1",
+   "releaseDateString": "2021-08-25T10:53:55Z"
+  },
+  {
+   "version": "2.308",
+   "releaseDateString": "2021-08-24T12:51:25Z"
+  },
+  {
+   "version": "2.307",
+   "releaseDateString": "2021-08-17T12:27:36Z"
+  },
+  {
+   "version": "2.306",
+   "releaseDateString": "2021-08-10T12:19:18Z"
+  },
+  {
+   "version": "2.305",
+   "releaseDateString": "2021-08-03T12:16:29Z"
+  },
+  {
+   "version": "2.289.3",
+   "releaseDateString": "2021-07-28T14:12:22Z"
+  },
+  {
+   "version": "2.304",
+   "releaseDateString": "2021-07-27T12:21:31Z"
+  },
+  {
+   "version": "2.303",
+   "releaseDateString": "2021-07-22T12:46:35Z"
+  },
+  {
+   "version": "2.302",
+   "releaseDateString": "2021-07-13T12:21:29Z"
+  },
+  {
+   "version": "2.301",
+   "releaseDateString": "2021-07-06T12:31:59Z"
+  },
+  {
+   "version": "2.300",
+   "releaseDateString": "2021-06-28T13:27:17Z"
+  },
+  {
+   "version": "2.289.2",
+   "releaseDateString": "2021-06-28T13:08:04Z"
+  },
+  {
+   "version": "2.299",
+   "releaseDateString": "2021-06-22T12:18:32Z"
+  },
+  {
+   "version": "2.298",
+   "releaseDateString": "2021-06-15T12:24:25Z"
+  },
+  {
+   "version": "2.297",
+   "releaseDateString": "2021-06-08T12:21:19Z"
+  },
+  {
+   "version": "2.289.1",
+   "releaseDateString": "2021-06-02T16:08:45Z"
+  },
+  {
+   "version": "2.296",
+   "releaseDateString": "2021-06-01T12:35:31Z"
+  },
+  {
+   "version": "2.295",
+   "releaseDateString": "2021-05-25T17:17:53Z"
+  },
+  {
+   "version": "2.294",
+   "releaseDateString": "2021-05-25T12:37:55Z"
+  },
+  {
+   "version": "2.293",
+   "releaseDateString": "2021-05-12T18:18:07Z"
+  },
+  {
+   "version": "2.292",
+   "releaseDateString": "2021-05-11T12:10:08Z"
+  },
+  {
+   "version": "2.277.4",
+   "releaseDateString": "2021-05-05T11:12:28Z"
+  },
+  {
+   "version": "2.291",
+   "releaseDateString": "2021-05-04T12:14:35Z"
+  },
+  {
+   "version": "2.290",
+   "releaseDateString": "2021-04-28T11:54:38Z"
+  },
+  {
+   "version": "2.289",
+   "releaseDateString": "2021-04-20T12:27:24Z"
+  },
+  {
+   "version": "2.277.3",
+   "releaseDateString": "2021-04-20T15:55:35Z"
+  },
+  {
+   "version": "2.288",
+   "releaseDateString": "2021-04-13T12:21:14Z"
+  },
+  {
+   "version": "2.287",
+   "releaseDateString": "2021-04-06T10:53:53Z"
+  },
+  {
+   "version": "2.277.2",
+   "releaseDateString": "2021-04-06T10:39:31Z"
+  },
+  {
+   "version": "2.286",
+   "releaseDateString": "2021-03-30T12:18:02Z"
+  },
+  {
+   "version": "2.285",
+   "releaseDateString": "2021-03-23T15:32:43Z"
+  },
+  {
+   "version": "2.284",
+   "releaseDateString": "2021-03-16T12:31:49Z"
+  },
+  {
+   "version": "2.277.1",
+   "releaseDateString": "2021-03-10T14:45:00Z"
+  },
+  {
+   "version": "2.283",
+   "releaseDateString": "2021-03-09T12:25:31Z"
+  },
+  {
+   "version": "2.282",
+   "releaseDateString": "2021-03-02T12:38:40Z"
+  },
+  {
+   "version": "2.281",
+   "releaseDateString": "2021-02-23T12:36:20Z"
+  },
+  {
+   "version": "2.280",
+   "releaseDateString": "2021-02-16T12:28:38Z"
+  },
+  {
+   "version": "2.263.4",
+   "releaseDateString": "2021-02-10T15:48:48Z"
+  },
+  {
+   "version": "2.279",
+   "releaseDateString": "2021-02-09T12:31:10Z"
+  },
+  {
+   "version": "2.278",
+   "releaseDateString": "2021-02-02T12:24:57Z"
+  },
+  {
+   "version": "2.277",
+   "releaseDateString": "2021-01-26T12:25:38Z"
+  },
+  {
+   "version": "2.263.3",
+   "releaseDateString": "2021-01-25T16:55:24Z"
+  },
+  {
+   "version": "2.276",
+   "releaseDateString": "2021-01-20T20:30:20Z"
+  },
+  {
+   "version": "2.275",
+   "releaseDateString": "2021-01-11T23:00:25Z"
+  },
+  {
+   "version": "2.263.2",
+   "releaseDateString": "2021-01-11T22:31:10Z"
+  },
+  {
+   "version": "2.274",
+   "releaseDateString": "2021-01-05T12:21:01Z"
+  },
+  {
+   "version": "2.273",
+   "releaseDateString": "2020-12-29T12:23:22Z"
+  },
+  {
+   "version": "2.272",
+   "releaseDateString": "2020-12-22T12:37:48Z"
+  },
+  {
+   "version": "2.271",
+   "releaseDateString": "2020-12-15T12:18:20Z"
+  },
+  {
+   "version": "2.270",
+   "releaseDateString": "2020-12-08T12:20:08Z"
+  },
+  {
+   "version": "2.263.1",
+   "releaseDateString": "2020-12-02T11:15:29Z"
+  },
+  {
+   "version": "2.269",
+   "releaseDateString": "2020-12-01T12:32:26Z"
+  },
+  {
+   "version": "2.268",
+   "releaseDateString": "2020-11-24T12:35:10Z"
+  },
+  {
+   "version": "2.267",
+   "releaseDateString": "2020-11-17T12:13:12Z"
+  },
+  {
+   "version": "2.266",
+   "releaseDateString": "2020-11-10T12:37:17Z"
+  },
+  {
+   "version": "2.249.3",
+   "releaseDateString": "2020-11-04T14:48:00Z"
+  },
+  {
+   "version": "2.265",
+   "releaseDateString": "2020-11-03T12:33:07Z"
+  },
+  {
+   "version": "2.264",
+   "releaseDateString": "2020-10-27T12:16:52Z"
+  },
+  {
+   "version": "2.263",
+   "releaseDateString": "2020-10-20T12:14:03Z"
+  },
+  {
+   "version": "2.262",
+   "releaseDateString": "2020-10-15T16:34:17Z"
+  },
+  {
+   "version": "2.261",
+   "releaseDateString": "2020-10-13T12:28:52Z"
+  },
+  {
+   "version": "2.249.2",
+   "releaseDateString": "2020-10-07T15:32:36Z"
+  },
+  {
+   "version": "2.260",
+   "releaseDateString": "2020-10-06T12:19:29Z"
+  },
+  {
+   "version": "2.259",
+   "releaseDateString": "2020-09-29T12:21:04Z"
+  },
+  {
+   "version": "2.258",
+   "releaseDateString": "2020-09-22T13:57:44Z"
+  },
+  {
+   "version": "2.257",
+   "releaseDateString": "2020-09-15T12:19:43Z"
+  },
+  {
+   "version": "2.249.1",
+   "releaseDateString": "2020-09-09T15:50:52Z"
+  },
+  {
+   "version": "2.256",
+   "releaseDateString": "2020-09-08T12:19:15Z"
+  },
+  {
+   "version": "2.255",
+   "releaseDateString": "2020-09-01T12:19:29Z"
+  },
+  {
+   "version": "2.254",
+   "releaseDateString": "2020-08-25T12:21:49Z"
+  },
+  {
+   "version": "2.253",
+   "releaseDateString": "2020-08-18T12:27:42Z"
+  },
+  {
+   "version": "2.235.5",
+   "releaseDateString": "2020-08-14T20:34:58Z"
+  },
+  {
+   "version": "2.252",
+   "releaseDateString": "2020-08-07T10:34:54Z"
+  },
+  {
+   "version": "2.235.4",
+   "releaseDateString": "2020-08-07T09:36:58Z"
+  },
+  {
+   "version": "2.251",
+   "releaseDateString": "2020-08-04T12:29:00Z"
+  },
+  {
+   "version": "2.250",
+   "releaseDateString": "2020-07-28T12:25:19Z"
+  },
+  {
+   "version": "2.235.3",
+   "releaseDateString": "2020-07-27T16:54:42Z"
+  },
+  {
+   "version": "2.249",
+   "releaseDateString": "2020-07-24T13:44:25Z"
+  },
+  {
+   "version": "2.248",
+   "releaseDateString": "2020-07-22T00:32:06Z"
+  },
+  {
+   "version": "2.247",
+   "releaseDateString": "2020-07-21T17:12:09Z"
+  },
+  {
+   "version": "2.246",
+   "releaseDateString": "2020-07-21T13:14:12Z"
+  },
+  {
+   "version": "2.245",
+   "releaseDateString": "2020-07-13T10:38:22Z"
+  },
+  {
+   "version": "2.235.2",
+   "releaseDateString": "2020-07-13T16:40:34Z"
+  },
+  {
+   "version": "2.244",
+   "releaseDateString": "2020-07-07T11:01:07Z"
+  },
+  {
+   "version": "2.243",
+   "releaseDateString": "2020-06-30T12:20:14Z"
+  },
+  {
+   "version": "2.242",
+   "releaseDateString": "2020-06-23T18:51:55Z"
+  },
+  {
+   "version": "2.235.1",
+   "releaseDateString": "2020-06-17T19:15:53Z"
+  },
+  {
+   "version": "2.241",
+   "releaseDateString": "2020-06-16T12:20:34Z"
+  },
+  {
+   "version": "2.240",
+   "releaseDateString": "2020-06-08T12:20:03Z"
+  },
+  {
+   "version": "2.239",
+   "releaseDateString": "2020-06-03T17:25:40Z"
+  },
+  {
+   "version": "2.222.4",
+   "releaseDateString": "2020-05-28T14:54:07Z"
+  },
+  {
+   "version": "2.238",
+   "releaseDateString": "2020-05-25T12:33:45Z"
+  },
+  {
+   "version": "2.237",
+   "releaseDateString": "2020-05-18T14:48:43Z"
+  },
+  {
+   "version": "2.236",
+   "releaseDateString": "2020-05-11T14:15:34Z"
+  },
+  {
+   "version": "2.235",
+   "releaseDateString": "2020-05-04T16:26:25Z"
+  },
+  {
+   "version": "2.234",
+   "releaseDateString": "2020-04-27T11:15:56Z"
+  },
+  {
+   "version": "2.222.3",
+   "releaseDateString": "2020-04-24T22:38:33Z"
+  },
+  {
+   "version": "2.233",
+   "releaseDateString": "2020-04-20T13:02:39Z"
+  },
+  {
+   "version": "2.232",
+   "releaseDateString": "2020-04-16T13:04:30Z"
+  },
+  {
+   "version": "2.231",
+   "releaseDateString": "2020-04-14T15:25:26Z"
+  },
+  {
+   "version": "2.230",
+   "releaseDateString": "2020-04-06T06:12:29Z"
+  },
+  {
+   "version": "2.229",
+   "releaseDateString": "2020-03-30T05:59:03Z"
+  },
+  {
+   "version": "2.228",
+   "releaseDateString": "2020-03-23T22:41:53Z"
+  },
+  {
+   "version": "2.227",
+   "releaseDateString": "2020-03-23T04:17:42Z"
+  },
+  {
+   "version": "2.222.1",
+   "releaseDateString": "2020-03-23T17:54:22Z"
+  },
+  {
+   "version": "2.204.6",
+   "releaseDateString": "2020-03-23T16:15:39Z"
+  },
+  {
+   "version": "2.226",
+   "releaseDateString": "2020-03-16T00:06:44Z"
+  },
+  {
+   "version": "2.225",
+   "releaseDateString": "2020-03-10T06:10:24Z"
+  },
+  {
+   "version": "2.224",
+   "releaseDateString": "2020-03-08T21:11:00Z"
+  },
+  {
+   "version": "2.204.5",
+   "releaseDateString": "2020-03-07T21:15:43Z"
+  },
+  {
+   "version": "2.204.4",
+   "releaseDateString": "2020-03-03T17:50:17Z"
+  },
+  {
+   "version": "2.223",
+   "releaseDateString": "2020-03-02T01:40:20Z"
+  },
+  {
+   "version": "2.204.3",
+   "releaseDateString": "2020-02-28T18:32:36Z"
+  },
+  {
+   "version": "2.222",
+   "releaseDateString": "2020-02-24T01:52:57Z"
+  },
+  {
+   "version": "2.221",
+   "releaseDateString": "2020-02-19T19:44:31Z"
+  },
+  {
+   "version": "2.220",
+   "releaseDateString": "2020-02-09T21:18:30Z"
+  },
+  {
+   "version": "2.219",
+   "releaseDateString": "2020-01-28T19:03:02Z"
+  },
+  {
+   "version": "2.204.2",
+   "releaseDateString": "2020-01-28T15:47:59Z"
+  },
+  {
+   "version": "2.218",
+   "releaseDateString": "2020-01-27T19:25:48Z"
+  },
+  {
+   "version": "2.217",
+   "releaseDateString": "2020-01-23T15:14:46Z"
+  },
+  {
+   "version": "2.216",
+   "releaseDateString": "2020-01-22T23:34:37Z"
+  },
+  {
+   "version": "2.215",
+   "releaseDateString": "2020-01-19T21:00:43Z"
+  },
+  {
+   "version": "2.214",
+   "releaseDateString": "2020-01-12T18:53:56Z"
+  },
+  {
+   "version": "2.213",
+   "releaseDateString": "2020-01-06T22:48:05Z"
+  },
+  {
+   "version": "2.212",
+   "releaseDateString": "2020-01-05T22:09:44Z"
+  },
+  {
+   "version": "2.211",
+   "releaseDateString": "2020-01-02T15:54:28Z"
+  },
+  {
+   "version": "2.210",
+   "releaseDateString": "2019-12-22T21:46:40Z"
+  },
+  {
+   "version": "2.204.1",
+   "releaseDateString": "2019-12-19T04:43:39Z"
+  },
+  {
+   "version": "2.209",
+   "releaseDateString": "2019-12-15T20:59:52Z"
+  },
+  {
+   "version": "2.208",
+   "releaseDateString": "2019-12-09T08:01:11Z"
+  },
+  {
+   "version": "2.207",
+   "releaseDateString": "2019-12-03T00:57:37Z"
+  },
+  {
+   "version": "2.206",
+   "releaseDateString": "2019-11-25T00:51:59Z"
+  },
+  {
+   "version": "2.190.3",
+   "releaseDateString": "2019-11-20T20:35:42Z"
+  },
+  {
+   "version": "2.205",
+   "releaseDateString": "2019-11-18T00:38:40Z"
+  },
+  {
+   "version": "2.204",
+   "releaseDateString": "2019-11-11T00:51:02Z"
+  },
+  {
+   "version": "2.203",
+   "releaseDateString": "2019-11-04T17:32:51Z"
+  },
+  {
+   "version": "2.202",
+   "releaseDateString": "2019-10-28T00:23:47Z"
+  },
+  {
+   "version": "2.190.2",
+   "releaseDateString": "2019-10-28T20:20:10Z"
+  },
+  {
+   "version": "2.201",
+   "releaseDateString": "2019-10-20T23:47:11Z"
+  },
+  {
+   "version": "2.200",
+   "releaseDateString": "2019-10-14T22:02:30Z"
+  },
+  {
+   "version": "2.199",
+   "releaseDateString": "2019-10-06T23:54:57Z"
+  },
+  {
+   "version": "2.198",
+   "releaseDateString": "2019-09-29T21:30:03Z"
+  },
+  {
+   "version": "2.197",
+   "releaseDateString": "2019-09-23T23:19:10Z"
+  },
+  {
+   "version": "2.190.1",
+   "releaseDateString": "2019-09-23T16:30:59Z"
+  },
+  {
+   "version": "2.176.4",
+   "releaseDateString": "2019-09-23T18:41:40Z"
+  },
+  {
+   "version": "2.196",
+   "releaseDateString": "2019-09-22T23:28:55Z"
+  },
+  {
+   "version": "2.195",
+   "releaseDateString": "2019-09-16T08:57:19Z"
+  },
+  {
+   "version": "2.194",
+   "releaseDateString": "2019-09-08T23:13:35Z"
+  },
+  {
+   "version": "2.193",
+   "releaseDateString": "2019-09-02T00:45:34Z"
+  },
+  {
+   "version": "2.192",
+   "releaseDateString": "2019-08-26T17:42:15Z"
+  },
+  {
+   "version": "2.191",
+   "releaseDateString": "2019-08-26T01:57:13Z"
+  },
+  {
+   "version": "2.176.3",
+   "releaseDateString": "2019-08-26T16:03:36Z"
+  },
+  {
+   "version": "2.190",
+   "releaseDateString": "2019-08-19T01:54:06Z"
+  },
+  {
+   "version": "2.189",
+   "releaseDateString": "2019-08-07T16:30:50Z"
+  },
+  {
+   "version": "2.187",
+   "releaseDateString": "2019-07-21T22:53:59Z"
+  },
+  {
+   "version": "2.186",
+   "releaseDateString": "2019-07-17T03:22:44Z"
+  },
+  {
+   "version": "2.176.2",
+   "releaseDateString": "2019-07-15T15:18:08Z"
+  },
+  {
+   "version": "2.185",
+   "releaseDateString": "2019-07-14T19:23:13Z"
+  },
+  {
+   "version": "2.184",
+   "releaseDateString": "2019-07-08T03:23:25Z"
+  },
+  {
+   "version": "2.183",
+   "releaseDateString": "2019-07-01T02:33:39Z"
+  },
+  {
+   "version": "2.182",
+   "releaseDateString": "2019-06-24T03:15:57Z"
+  },
+  {
+   "version": "2.181",
+   "releaseDateString": "2019-06-17T05:11:37Z"
+  },
+  {
+   "version": "2.176.1",
+   "releaseDateString": "2019-06-10T15:54:30Z"
+  },
+  {
+   "version": "2.180",
+   "releaseDateString": "2019-06-09T23:45:36Z"
+  },
+  {
+   "version": "2.179",
+   "releaseDateString": "2019-05-26T20:39:53Z"
+  },
+  {
+   "version": "2.178",
+   "releaseDateString": "2019-05-20T08:22:36Z"
+  },
+  {
+   "version": "2.177",
+   "releaseDateString": "2019-05-13T00:23:47Z"
+  },
+  {
+   "version": "2.164.3",
+   "releaseDateString": "2019-05-10T16:57:44Z"
+  },
+  {
+   "version": "2.176",
+   "releaseDateString": "2019-05-06T06:23:20Z"
+  },
+  {
+   "version": "2.175",
+   "releaseDateString": "2019-04-28T23:17:36Z"
+  },
+  {
+   "version": "2.174",
+   "releaseDateString": "2019-04-22T01:19:21Z"
+  },
+  {
+   "version": "2.173",
+   "releaseDateString": "2019-04-15T11:06:03Z"
+  },
+  {
+   "version": "2.172",
+   "releaseDateString": "2019-04-09T01:17:36Z"
+  },
+  {
+   "version": "2.164.2",
+   "releaseDateString": "2019-04-08T23:40:42Z"
+  },
+  {
+   "version": "2.171",
+   "releaseDateString": "2019-04-07T08:32:46Z"
+  },
+  {
+   "version": "2.170",
+   "releaseDateString": "2019-03-31T20:12:14Z"
+  },
+  {
+   "version": "2.169",
+   "releaseDateString": "2019-03-25T01:13:18Z"
+  },
+  {
+   "version": "2.164.1",
+   "releaseDateString": "2019-03-14T16:50:13Z"
+  },
+  {
+   "version": "2.168",
+   "releaseDateString": "2019-03-11T05:55:05Z"
+  },
+  {
+   "version": "2.167",
+   "releaseDateString": "2019-03-04T03:03:21Z"
+  },
+  {
+   "version": "2.166",
+   "releaseDateString": "2019-02-26T00:04:59Z"
+  },
+  {
+   "version": "2.165",
+   "releaseDateString": "2019-02-17T15:55:13Z"
+  },
+  {
+   "version": "2.150.3",
+   "releaseDateString": "2019-02-14T03:03:17Z"
+  },
+  {
+   "version": "2.164",
+   "releaseDateString": "2019-02-11T07:38:52Z"
+  },
+  {
+   "version": "2.163",
+   "releaseDateString": "2019-02-03T12:15:49Z"
+  },
+  {
+   "version": "2.162",
+   "releaseDateString": "2019-01-27T21:24:18Z"
+  },
+  {
+   "version": "2.161",
+   "releaseDateString": "2019-01-21T04:46:57Z"
+  },
+  {
+   "version": "2.160",
+   "releaseDateString": "2019-01-15T19:05:02Z"
+  },
+  {
+   "version": "2.150.2",
+   "releaseDateString": "2019-01-15T01:41:20Z"
+  },
+  {
+   "version": "2.159",
+   "releaseDateString": "2019-01-14T21:24:16Z"
+  },
+  {
+   "version": "2.158",
+   "releaseDateString": "2019-01-13T21:04:06Z"
+  },
+  {
+   "version": "2.157",
+   "releaseDateString": "2019-01-06T22:39:39Z"
+  },
+  {
+   "version": "2.156",
+   "releaseDateString": "2018-12-17T05:07:07Z"
+  },
+  {
+   "version": "2.155",
+   "releaseDateString": "2018-12-10T03:54:16Z"
+  },
+  {
+   "version": "2.154",
+   "releaseDateString": "2018-12-03T21:36:20Z"
+  },
+  {
+   "version": "2.150.1",
+   "releaseDateString": "2018-12-03T23:22:20Z"
+  },
+  {
+   "version": "2.138.4",
+   "releaseDateString": "2018-12-03T19:02:39Z"
+  },
+  {
+   "version": "2.153",
+   "releaseDateString": "2018-11-25T22:13:59Z"
+  },
+  {
+   "version": "2.152",
+   "releaseDateString": "2018-11-19T08:12:26Z"
+  },
+  {
+   "version": "2.151",
+   "releaseDateString": "2018-11-11T19:23:13Z"
+  },
+  {
+   "version": "2.138.3",
+   "releaseDateString": "2018-11-09T00:57:42Z"
+  },
+  {
+   "version": "2.150",
+   "releaseDateString": "2018-11-04T22:08:10Z"
+  },
+  {
+   "version": "2.149",
+   "releaseDateString": "2018-10-28T20:15:49Z"
+  },
+  {
+   "version": "2.148",
+   "releaseDateString": "2018-10-22T13:54:21Z"
+  },
+  {
+   "version": "2.147",
+   "releaseDateString": "2018-10-14T09:33:32Z"
+  },
+  {
+   "version": "2.146",
+   "releaseDateString": "2018-10-08T20:10:10Z"
+  },
+  {
+   "version": "2.145",
+   "releaseDateString": "2018-10-08T02:17:41Z"
+  },
+  {
+   "version": "2.138.2",
+   "releaseDateString": "2018-10-08T18:26:47Z"
+  },
+  {
+   "version": "2.144",
+   "releaseDateString": "2018-10-01T00:35:53Z"
+  },
+  {
+   "version": "2.143",
+   "releaseDateString": "2018-09-24T23:25:55Z"
+  },
+  {
+   "version": "2.142",
+   "releaseDateString": "2018-09-20T21:01:36Z"
+  },
+  {
+   "version": "2.138.1",
+   "releaseDateString": "2018-09-12T22:26:56Z"
+  },
+  {
+   "version": "2.141",
+   "releaseDateString": "2018-09-02T19:46:20Z"
+  },
+  {
+   "version": "2.140",
+   "releaseDateString": "2018-08-26T14:34:28Z"
+  },
+  {
+   "version": "2.138",
+   "releaseDateString": "2018-08-13T16:09:45Z"
+  },
+  {
+   "version": "2.137",
+   "releaseDateString": "2018-08-13T03:07:17Z"
+  },
+  {
+   "version": "2.121.3",
+   "releaseDateString": "2018-08-13T14:26:04Z"
+  },
+  {
+   "version": "2.136",
+   "releaseDateString": "2018-08-05T19:56:43Z"
+  },
+  {
+   "version": "2.135",
+   "releaseDateString": "2018-07-29T23:28:47Z"
+  },
+  {
+   "version": "2.134",
+   "releaseDateString": "2018-07-23T00:14:29Z"
+  },
+  {
+   "version": "2.133",
+   "releaseDateString": "2018-07-16T18:59:05Z"
+  },
+  {
+   "version": "2.121.2",
+   "releaseDateString": "2018-07-16T17:35:42Z"
+  },
+  {
+   "version": "2.132",
+   "releaseDateString": "2018-07-15T20:26:50Z"
+  },
+  {
+   "version": "2.131",
+   "releaseDateString": "2018-07-08T13:39:15Z"
+  },
+  {
+   "version": "2.130",
+   "releaseDateString": "2018-07-02T14:19:11Z"
+  },
+  {
+   "version": "2.129",
+   "releaseDateString": "2018-06-25T03:14:27Z"
+  },
+  {
+   "version": "2.128",
+   "releaseDateString": "2018-06-17T22:15:05Z"
+  },
+  {
+   "version": "2.127",
+   "releaseDateString": "2018-06-11T01:42:11Z"
+  },
+  {
+   "version": "2.121.1",
+   "releaseDateString": "2018-06-07T19:33:02Z"
+  },
+  {
+   "version": "2.126",
+   "releaseDateString": "2018-06-04T07:19:23Z"
+  },
+  {
+   "version": "2.125",
+   "releaseDateString": "2018-05-28T17:02:44Z"
+  },
+  {
+   "version": "2.124",
+   "releaseDateString": "2018-05-21T17:25:47Z"
+  },
+  {
+   "version": "2.122",
+   "releaseDateString": "2018-05-14T19:45:22Z"
+  },
+  {
+   "version": "2.121",
+   "releaseDateString": "2018-05-07T19:09:24Z"
+  },
+  {
+   "version": "2.107.3",
+   "releaseDateString": "2018-05-07T18:00:10Z"
+  },
+  {
+   "version": "2.120",
+   "releaseDateString": "2018-05-06T09:34:21Z"
+  },
+  {
+   "version": "2.119",
+   "releaseDateString": "2018-04-30T18:56:44Z"
+  },
+  {
+   "version": "2.118",
+   "releaseDateString": "2018-04-23T00:15:40Z"
+  },
+  {
+   "version": "2.117",
+   "releaseDateString": "2018-04-15T10:07:48Z"
+  },
+  {
+   "version": "2.116",
+   "releaseDateString": "2018-04-10T03:00:28Z"
+  },
+  {
+   "version": "2.115",
+   "releaseDateString": "2018-04-09T15:50:27Z"
+  },
+  {
+   "version": "2.107.2",
+   "releaseDateString": "2018-04-09T20:39:14Z"
+  },
+  {
+   "version": "2.114",
+   "releaseDateString": "2018-04-01T23:15:39Z"
+  },
+  {
+   "version": "2.113",
+   "releaseDateString": "2018-03-26T01:29:00Z"
+  },
+  {
+   "version": "2.112",
+   "releaseDateString": "2018-03-19T17:55:50Z"
+  },
+  {
+   "version": "2.107.1",
+   "releaseDateString": "2018-03-15T17:56:34Z"
+  },
+  {
+   "version": "2.111",
+   "releaseDateString": "2018-03-12T04:51:54Z"
+  },
+  {
+   "version": "2.110",
+   "releaseDateString": "2018-03-05T20:12:30Z"
+  },
+  {
+   "version": "2.109",
+   "releaseDateString": "2018-02-25T23:02:24Z"
+  },
+  {
+   "version": "2.108",
+   "releaseDateString": "2018-02-18T21:36:42Z"
+  },
+  {
+   "version": "2.107",
+   "releaseDateString": "2018-02-13T04:11:59Z"
+  },
+  {
+   "version": "2.89.4",
+   "releaseDateString": "2018-02-13T02:33:31Z"
+  },
+  {
+   "version": "2.106",
+   "releaseDateString": "2018-02-12T03:18:51Z"
+  },
+  {
+   "version": "2.105",
+   "releaseDateString": "2018-02-04T22:37:51Z"
+  },
+  {
+   "version": "2.104",
+   "releaseDateString": "2018-01-29T11:35:21Z"
+  },
+  {
+   "version": "2.103",
+   "releaseDateString": "2018-01-21T21:22:46Z"
+  },
+  {
+   "version": "2.89.3",
+   "releaseDateString": "2018-01-17T22:52:07Z"
+  },
+  {
+   "version": "2.102",
+   "releaseDateString": "2018-01-15T02:13:39Z"
+  },
+  {
+   "version": "2.101",
+   "releaseDateString": "2018-01-08T02:20:10Z"
+  },
+  {
+   "version": "2.100",
+   "releaseDateString": "2018-01-03T23:48:04Z"
+  },
+  {
+   "version": "2.99",
+   "releaseDateString": "2018-01-01T02:15:37Z"
+  },
+  {
+   "version": "2.98",
+   "releaseDateString": "2017-12-25T09:03:41Z"
+  },
+  {
+   "version": "2.97",
+   "releaseDateString": "2017-12-19T19:48:27Z"
+  },
+  {
+   "version": "2.96",
+   "releaseDateString": "2017-12-18T00:39:29Z"
+  },
+  {
+   "version": "2.95",
+   "releaseDateString": "2017-12-14T01:58:00Z"
+  },
+  {
+   "version": "2.89.2",
+   "releaseDateString": "2017-12-14T00:41:56Z"
+  },
+  {
+   "version": "2.94",
+   "releaseDateString": "2017-12-11T21:34:19Z"
+  },
+  {
+   "version": "2.89.1",
+   "releaseDateString": "2017-12-06T19:10:45Z"
+  },
+  {
+   "version": "2.93",
+   "releaseDateString": "2017-12-03T22:01:54Z"
+  },
+  {
+   "version": "2.92",
+   "releaseDateString": "2017-11-27T03:04:19Z"
+  },
+  {
+   "version": "2.91",
+   "releaseDateString": "2017-11-20T07:03:18Z"
+  },
+  {
+   "version": "2.90",
+   "releaseDateString": "2017-11-13T14:51:52Z"
+  },
+  {
+   "version": "2.89",
+   "releaseDateString": "2017-11-06T18:15:25Z"
+  },
+  {
+   "version": "2.88",
+   "releaseDateString": "2017-11-06T00:30:58Z"
+  },
+  {
+   "version": "2.73.3",
+   "releaseDateString": "2017-11-06T19:16:25Z"
+  },
+  {
+   "version": "2.87",
+   "releaseDateString": "2017-10-30T03:46:03Z"
+  },
+  {
+   "version": "2.86",
+   "releaseDateString": "2017-10-23T00:56:23Z"
+  },
+  {
+   "version": "2.85",
+   "releaseDateString": "2017-10-16T00:41:28Z"
+  },
+  {
+   "version": "2.84",
+   "releaseDateString": "2017-10-09T17:55:49Z"
+  },
+  {
+   "version": "2.73.2",
+   "releaseDateString": "2017-10-09T19:19:08Z"
+  },
+  {
+   "version": "2.83",
+   "releaseDateString": "2017-10-08T18:25:06Z"
+  },
+  {
+   "version": "2.82",
+   "releaseDateString": "2017-10-01T23:36:49Z"
+  },
+  {
+   "version": "2.81",
+   "releaseDateString": "2017-09-27T22:45:43Z"
+  },
+  {
+   "version": "2.80",
+   "releaseDateString": "2017-09-25T15:17:25Z"
+  },
+  {
+   "version": "2.79",
+   "releaseDateString": "2017-09-18T01:34:02Z"
+  },
+  {
+   "version": "2.73.1",
+   "releaseDateString": "2017-09-14T21:54:42Z"
+  },
+  {
+   "version": "2.78",
+   "releaseDateString": "2017-09-11T01:23:50Z"
+  },
+  {
+   "version": "2.77",
+   "releaseDateString": "2017-09-04T06:46:00Z"
+  },
+  {
+   "version": "2.76",
+   "releaseDateString": "2017-08-28T00:56:12Z"
+  },
+  {
+   "version": "2.75",
+   "releaseDateString": "2017-08-21T14:44:04Z"
+  },
+  {
+   "version": "2.60.3",
+   "releaseDateString": "2017-08-17T01:36:20Z"
+  },
+  {
+   "version": "2.74",
+   "releaseDateString": "2017-08-15T16:03:38Z"
+  },
+  {
+   "version": "2.73",
+   "releaseDateString": "2017-08-07T14:19:13Z"
+  },
+  {
+   "version": "2.72",
+   "releaseDateString": "2017-07-31T19:34:12Z"
+  },
+  {
+   "version": "2.71",
+   "releaseDateString": "2017-07-24T03:57:12Z"
+  },
+  {
+   "version": "2.60.2",
+   "releaseDateString": "2017-07-19T22:31:47Z"
+  },
+  {
+   "version": "2.70",
+   "releaseDateString": "2017-07-17T02:34:42Z"
+  },
+  {
+   "version": "2.69",
+   "releaseDateString": "2017-07-10T14:23:23Z"
+  },
+  {
+   "version": "2.68",
+   "releaseDateString": "2017-07-03T01:16:31Z"
+  },
+  {
+   "version": "2.67",
+   "releaseDateString": "2017-06-26T01:05:46Z"
+  },
+  {
+   "version": "2.60.1",
+   "releaseDateString": "2017-06-22T14:14:42Z"
+  },
+  {
+   "version": "2.66",
+   "releaseDateString": "2017-06-19T04:18:54Z"
+  },
+  {
+   "version": "2.65",
+   "releaseDateString": "2017-06-12T15:28:02Z"
+  },
+  {
+   "version": "2.64",
+   "releaseDateString": "2017-06-04T21:37:05Z"
+  },
+  {
+   "version": "2.63",
+   "releaseDateString": "2017-05-28T20:59:41Z"
+  },
+  {
+   "version": "2.46.3",
+   "releaseDateString": "2017-05-25T19:41:33Z"
+  },
+  {
+   "version": "2.62",
+   "releaseDateString": "2017-05-21T23:25:54Z"
+  },
+  {
+   "version": "2.61",
+   "releaseDateString": "2017-05-15T01:26:29Z"
+  },
+  {
+   "version": "2.60",
+   "releaseDateString": "2017-05-10T22:08:21Z"
+  },
+  {
+   "version": "2.59",
+   "releaseDateString": "2017-05-08T04:23:31Z"
+  },
+  {
+   "version": "2.58",
+   "releaseDateString": "2017-05-01T04:38:32Z"
+  },
+  {
+   "version": "2.57",
+   "releaseDateString": "2017-04-26T17:19:56Z"
+  },
+  {
+   "version": "2.46.2",
+   "releaseDateString": "2017-04-26T15:30:40Z"
+  },
+  {
+   "version": "2.56",
+   "releaseDateString": "2017-04-24T00:16:21Z"
+  },
+  {
+   "version": "2.55",
+   "releaseDateString": "2017-04-16T10:48:20Z"
+  },
+  {
+   "version": "2.54",
+   "releaseDateString": "2017-04-10T14:53:07Z"
+  },
+  {
+   "version": "2.53",
+   "releaseDateString": "2017-04-03T01:15:20Z"
+  },
+  {
+   "version": "2.46.1",
+   "releaseDateString": "2017-03-29T20:49:23Z"
+  },
+  {
+   "version": "2.52",
+   "releaseDateString": "2017-03-27T02:20:17Z"
+  },
+  {
+   "version": "2.51",
+   "releaseDateString": "2017-03-20T05:07:24Z"
+  },
+  {
+   "version": "2.50",
+   "releaseDateString": "2017-03-12T23:33:27Z"
+  },
+  {
+   "version": "2.49",
+   "releaseDateString": "2017-03-06T07:09:15Z"
+  },
+  {
+   "version": "2.32.3",
+   "releaseDateString": "2017-03-01T19:09:19Z"
+  },
+  {
+   "version": "2.48",
+   "releaseDateString": "2017-02-26T21:08:20Z"
+  },
+  {
+   "version": "2.47",
+   "releaseDateString": "2017-02-19T21:57:51Z"
+  },
+  {
+   "version": "2.46",
+   "releaseDateString": "2017-02-13T12:39:17Z"
+  },
+  {
+   "version": "2.45",
+   "releaseDateString": "2017-02-06T10:56:53Z"
+  },
+  {
+   "version": "2.44",
+   "releaseDateString": "2017-02-01T13:31:35Z"
+  },
+  {
+   "version": "2.32.2",
+   "releaseDateString": "2017-02-01T12:10:10Z"
+  },
+  {
+   "version": "2.43",
+   "releaseDateString": "2017-01-30T00:36:34Z"
+  },
+  {
+   "version": "2.42",
+   "releaseDateString": "2017-01-22T22:34:26Z"
+  },
+  {
+   "version": "2.41",
+   "releaseDateString": "2017-01-16T05:23:07Z"
+  },
+  {
+   "version": "2.40",
+   "releaseDateString": "2017-01-09T02:28:12Z"
+  },
+  {
+   "version": "2.39",
+   "releaseDateString": "2017-01-02T14:26:24Z"
+  },
+  {
+   "version": "2.38",
+   "releaseDateString": "2016-12-25T16:35:24Z"
+  },
+  {
+   "version": "2.32.1",
+   "releaseDateString": "2016-12-24T19:50:38Z"
+  },
+  {
+   "version": "2.37",
+   "releaseDateString": "2016-12-19T01:49:48Z"
+  },
+  {
+   "version": "2.36",
+   "releaseDateString": "2016-12-12T04:50:44Z"
+  },
+  {
+   "version": "2.35",
+   "releaseDateString": "2016-12-04T20:36:17Z"
+  },
+  {
+   "version": "2.19.4",
+   "releaseDateString": "2016-11-28T17:58:56Z"
+  },
+  {
+   "version": "2.34",
+   "releaseDateString": "2016-11-27T20:55:26Z"
+  },
+  {
+   "version": "2.33",
+   "releaseDateString": "2016-11-20T23:32:46Z"
+  },
+  {
+   "version": "2.32",
+   "releaseDateString": "2016-11-16T14:13:35Z"
+  },
+  {
+   "version": "2.19.3",
+   "releaseDateString": "2016-11-16T15:50:00Z"
+  },
+  {
+   "version": "2.31",
+   "releaseDateString": "2016-11-14T02:43:24Z"
+  },
+  {
+   "version": "2.30",
+   "releaseDateString": "2016-11-08T02:58:43Z"
+  },
+  {
+   "version": "2.29",
+   "releaseDateString": "2016-11-07T02:43:11Z"
+  },
+  {
+   "version": "2.19.2",
+   "releaseDateString": "2016-11-01T19:05:43Z"
+  },
+  {
+   "version": "2.28",
+   "releaseDateString": "2016-10-31T02:43:23Z"
+  },
+  {
+   "version": "2.27",
+   "releaseDateString": "2016-10-24T02:39:05Z"
+  },
+  {
+   "version": "2.26",
+   "releaseDateString": "2016-10-17T09:33:30Z"
+  },
+  {
+   "version": "2.25",
+   "releaseDateString": "2016-10-10T00:15:46Z"
+  },
+  {
+   "version": "2.24",
+   "releaseDateString": "2016-10-03T04:40:55Z"
+  },
+  {
+   "version": "2.19.1",
+   "releaseDateString": "2016-10-03T19:26:30Z"
+  },
+  {
+   "version": "2.23",
+   "releaseDateString": "2016-09-18T22:13:24Z"
+  },
+  {
+   "version": "2.22",
+   "releaseDateString": "2016-09-12T05:18:56Z"
+  },
+  {
+   "version": "2.7.4",
+   "releaseDateString": "2016-09-08T19:35:59Z"
+  },
+  {
+   "version": "2.21",
+   "releaseDateString": "2016-09-04T15:22:23Z"
+  },
+  {
+   "version": "2.7.3",
+   "releaseDateString": "2016-08-31T19:31:33Z"
+  },
+  {
+   "version": "2.20",
+   "releaseDateString": "2016-08-29T05:36:44Z"
+  },
+  {
+   "version": "2.19",
+   "releaseDateString": "2016-08-21T20:03:26Z"
+  },
+  {
+   "version": "2.18",
+   "releaseDateString": "2016-08-15T16:27:37Z"
+  },
+  {
+   "version": "2.17",
+   "releaseDateString": "2016-08-06T05:53:01Z"
+  },
+  {
+   "version": "2.7.2",
+   "releaseDateString": "2016-08-04T17:42:28Z"
+  },
+  {
+   "version": "2.16",
+   "releaseDateString": "2016-08-01T00:23:11Z"
+  },
+  {
+   "version": "2.15",
+   "releaseDateString": "2016-07-24T22:29:58Z"
+  },
+  {
+   "version": "2.14",
+   "releaseDateString": "2016-07-17T20:57:07Z"
+  },
+  {
+   "version": "2.13",
+   "releaseDateString": "2016-07-11T02:28:53Z"
+  },
+  {
+   "version": "2.7.1",
+   "releaseDateString": "2016-07-06T19:16:28Z"
+  },
+  {
+   "version": "2.12",
+   "releaseDateString": "2016-07-05T18:57:14Z"
+  },
+  {
+   "version": "2.11",
+   "releaseDateString": "2016-06-26T18:50:19Z"
+  },
+  {
+   "version": "2.10",
+   "releaseDateString": "2016-06-20T03:39:21Z"
+  },
+  {
+   "version": "1.651.3",
+   "releaseDateString": "2016-06-14T06:13:08Z"
+  },
+  {
+   "version": "2.9",
+   "releaseDateString": "2016-06-13T21:54:19Z"
+  },
+  {
+   "version": "2.8",
+   "releaseDateString": "2016-06-06T03:44:25Z"
+  },
+  {
+   "version": "2.7",
+   "releaseDateString": "2016-05-29T19:39:24Z"
+  },
+  {
+   "version": "2.6",
+   "releaseDateString": "2016-05-23T03:19:20Z"
+  },
+  {
+   "version": "2.5",
+   "releaseDateString": "2016-05-17T04:21:26Z"
+  },
+  {
+   "version": "2.4",
+   "releaseDateString": "2016-05-16T04:39:27Z"
+  },
+  {
+   "version": "2.3",
+   "releaseDateString": "2016-05-11T18:39:42Z"
+  },
+  {
+   "version": "1.651.2",
+   "releaseDateString": "2016-05-11T17:14:10Z"
+  },
+  {
+   "version": "2.2",
+   "releaseDateString": "2016-05-08T20:50:54Z"
+  },
+  {
+   "version": "2.1",
+   "releaseDateString": "2016-05-01T17:04:48Z"
+  },
+  {
+   "version": "2.0",
+   "releaseDateString": "2016-04-20T23:31:40Z"
+  },
+  {
+   "version": "1.658",
+   "releaseDateString": "2016-04-20T17:15:00Z"
+  },
+  {
+   "version": "1.657",
+   "releaseDateString": "2016-04-20T04:26:53Z"
+  },
+  {
+   "version": "1.651.1",
+   "releaseDateString": "2016-04-14T05:02:06Z"
+  },
+  {
+   "version": "1.656",
+   "releaseDateString": "2016-04-04T02:44:59Z"
+  },
+  {
+   "version": "1.642.4",
+   "releaseDateString": "2016-04-01T04:29:58Z"
+  },
+  {
+   "version": "1.655",
+   "releaseDateString": "2016-03-28T02:21:39Z"
+  },
+  {
+   "version": "1.654",
+   "releaseDateString": "2016-03-21T14:25:57Z"
+  },
+  {
+   "version": "1.642.3",
+   "releaseDateString": "2016-03-17T06:46:36Z"
+  },
+  {
+   "version": "1.653",
+   "releaseDateString": "2016-03-14T05:04:25Z"
+  },
+  {
+   "version": "1.652",
+   "releaseDateString": "2016-03-07T03:28:52Z"
+  },
+  {
+   "version": "1.651",
+   "releaseDateString": "2016-02-29T05:51:14Z"
+  },
+  {
+   "version": "1.650",
+   "releaseDateString": "2016-02-24T18:28:01Z"
+  },
+  {
+   "version": "1.642.2",
+   "releaseDateString": "2016-02-24T16:51:26Z"
+  },
+  {
+   "version": "1.649",
+   "releaseDateString": "2016-02-21T20:16:13Z"
+  },
+  {
+   "version": "1.648",
+   "releaseDateString": "2016-02-18T00:38:48Z"
+  },
+  {
+   "version": "1.647",
+   "releaseDateString": "2016-02-03T16:00:39Z"
+  },
+  {
+   "version": "1.646",
+   "releaseDateString": "2016-01-25T14:11:20Z"
+  },
+  {
+   "version": "1.642.1",
+   "releaseDateString": "2016-01-21T06:24:17Z"
+  },
+  {
+   "version": "1.645",
+   "releaseDateString": "2016-01-19T07:32:52Z"
+  },
+  {
+   "version": "1.644",
+   "releaseDateString": "2016-01-11T00:45:10Z"
+  },
+  {
+   "version": "1.643",
+   "releaseDateString": "2015-12-21T05:57:43Z"
+  },
+  {
+   "version": "1.642",
+   "releaseDateString": "2015-12-14T05:39:56Z"
+  },
+  {
+   "version": "1.641",
+   "releaseDateString": "2015-12-09T17:46:16Z"
+  },
+  {
+   "version": "1.625.3",
+   "releaseDateString": "2015-12-09T16:20:33Z"
+  },
+  {
+   "version": "1.640",
+   "releaseDateString": "2015-12-07T14:50:41Z"
+  },
+  {
+   "version": "1.639",
+   "releaseDateString": "2015-11-29T21:40:54Z"
+  },
+  {
+   "version": "1.638",
+   "releaseDateString": "2015-11-11T12:59:10Z"
+  },
+  {
+   "version": "1.625.2",
+   "releaseDateString": "2015-11-11T14:10:16Z"
+  },
+  {
+   "version": "1.637",
+   "releaseDateString": "2015-11-09T05:15:07Z"
+  },
+  {
+   "version": "1.636",
+   "releaseDateString": "2015-11-02T03:42:48Z"
+  },
+  {
+   "version": "1.635",
+   "releaseDateString": "2015-10-26T03:05:29Z"
+  },
+  {
+   "version": "1.634",
+   "releaseDateString": "2015-10-19T03:18:28Z"
+  },
+  {
+   "version": "1.625.1",
+   "releaseDateString": "2015-10-14T22:11:33Z"
+  },
+  {
+   "version": "1.633",
+   "releaseDateString": "2015-10-12T03:07:42Z"
+  },
+  {
+   "version": "1.632",
+   "releaseDateString": "2015-10-05T15:03:56Z"
+  },
+  {
+   "version": "1.631",
+   "releaseDateString": "2015-09-28T01:04:30Z"
+  },
+  {
+   "version": "1.630",
+   "releaseDateString": "2015-09-20T18:59:38Z"
+  },
+  {
+   "version": "1.629",
+   "releaseDateString": "2015-09-15T07:08:56Z"
+  },
+  {
+   "version": "1.628",
+   "releaseDateString": "2015-09-07T06:38:15Z"
+  },
+  {
+   "version": "1.609.3",
+   "releaseDateString": "2015-09-03T05:50:11Z"
+  },
+  {
+   "version": "1.627",
+   "releaseDateString": "2015-08-30T21:58:07Z"
+  },
+  {
+   "version": "1.626",
+   "releaseDateString": "2015-08-24T04:02:00Z"
+  },
+  {
+   "version": "1.625",
+   "releaseDateString": "2015-08-18T04:19:42Z"
+  },
+  {
+   "version": "1.624",
+   "releaseDateString": "2015-08-09T17:27:53Z"
+  },
+  {
+   "version": "1.623",
+   "releaseDateString": "2015-08-03T04:26:37Z"
+  },
+  {
+   "version": "1.609.2",
+   "releaseDateString": "2015-07-28T15:46:47Z"
+  },
+  {
+   "version": "1.622",
+   "releaseDateString": "2015-07-27T04:39:18Z"
+  },
+  {
+   "version": "1.621",
+   "releaseDateString": "2015-07-19T18:43:58Z"
+  },
+  {
+   "version": "1.620",
+   "releaseDateString": "2015-07-13T01:30:37Z"
+  },
+  {
+   "version": "1.619",
+   "releaseDateString": "2015-07-06T04:19:48Z"
+  },
+  {
+   "version": "1.618",
+   "releaseDateString": "2015-06-29T13:45:54Z"
+  },
+  {
+   "version": "1.617",
+   "releaseDateString": "2015-06-08T04:36:53Z"
+  },
+  {
+   "version": "1.616",
+   "releaseDateString": "2015-06-01T02:15:59Z"
+  },
+  {
+   "version": "1.609.1",
+   "releaseDateString": "2015-05-30T01:08:03Z"
+  },
+  {
+   "version": "1.615",
+   "releaseDateString": "2015-05-26T03:33:50Z"
+  },
+  {
+   "version": "1.596.3",
+   "releaseDateString": "2015-05-21T05:05:09Z"
+  },
+  {
+   "version": "1.614",
+   "releaseDateString": "2015-05-18T04:07:50Z"
+  },
+  {
+   "version": "1.613",
+   "releaseDateString": "2015-05-10T23:36:26Z"
+  },
+  {
+   "version": "1.612",
+   "releaseDateString": "2015-05-04T01:36:21Z"
+  },
+  {
+   "version": "1.611",
+   "releaseDateString": "2015-04-27T00:33:02Z"
+  },
+  {
+   "version": "1.610",
+   "releaseDateString": "2015-04-20T01:36:45Z"
+  },
+  {
+   "version": "1.609",
+   "releaseDateString": "2015-04-13T01:28:42Z"
+  },
+  {
+   "version": "1.608",
+   "releaseDateString": "2015-04-06T01:49:28Z"
+  },
+  {
+   "version": "1.607",
+   "releaseDateString": "2015-03-31T02:45:58Z"
+  },
+  {
+   "version": "1.606",
+   "releaseDateString": "2015-03-23T15:42:19Z"
+  },
+  {
+   "version": "1.596.2",
+   "releaseDateString": "2015-03-23T17:33:51Z"
+  },
+  {
+   "version": "1.605",
+   "releaseDateString": "2015-03-17T02:14:02Z"
+  },
+  {
+   "version": "1.604",
+   "releaseDateString": "2015-03-15T17:32:26Z"
+  },
+  {
+   "version": "1.602",
+   "releaseDateString": "2015-03-08T18:05:35Z"
+  },
+  {
+   "version": "1.601",
+   "releaseDateString": "2015-03-03T23:19:03Z"
+  },
+  {
+   "version": "1.600",
+   "releaseDateString": "2015-02-28T17:23:17Z"
+  },
+  {
+   "version": "1.596.1",
+   "releaseDateString": "2015-02-28T20:24:12Z"
+  },
+  {
+   "version": "1.599",
+   "releaseDateString": "2015-02-16T15:36:49Z"
+  },
+  {
+   "version": "1.580.3",
+   "releaseDateString": "2015-01-28T01:38:15Z"
+  },
+  {
+   "version": "1.598",
+   "releaseDateString": "2015-01-26T01:15:39Z"
+  },
+  {
+   "version": "1.597",
+   "releaseDateString": "2015-01-19T11:56:48Z"
+  },
+  {
+   "version": "1.596",
+   "releaseDateString": "2015-01-04T23:09:42Z"
+  },
+  {
+   "version": "1.595",
+   "releaseDateString": "2014-12-22T03:24:17Z"
+  },
+  {
+   "version": "1.594",
+   "releaseDateString": "2014-12-15T04:20:59Z"
+  },
+  {
+   "version": "1.580.2",
+   "releaseDateString": "2014-12-15T19:15:16Z"
+  },
+  {
+   "version": "1.593",
+   "releaseDateString": "2014-12-08T04:26:39Z"
+  },
+  {
+   "version": "1.592",
+   "releaseDateString": "2014-11-30T20:36:46Z"
+  },
+  {
+   "version": "1.591",
+   "releaseDateString": "2014-11-26T03:05:23Z"
+  },
+  {
+   "version": "1.590",
+   "releaseDateString": "2014-11-16T23:52:54Z"
+  },
+  {
+   "version": "1.589",
+   "releaseDateString": "2014-11-10T04:53:05Z"
+  },
+  {
+   "version": "1.588",
+   "releaseDateString": "2014-11-02T18:25:58Z"
+  },
+  {
+   "version": "1.587",
+   "releaseDateString": "2014-10-30T01:10:06Z"
+  },
+  {
+   "version": "1.580.1",
+   "releaseDateString": "2014-10-30T04:06:06Z"
+  },
+  {
+   "version": "1.586",
+   "releaseDateString": "2014-10-27T03:29:37Z"
+  },
+  {
+   "version": "1.585",
+   "releaseDateString": "2014-10-20T03:03:52Z"
+  },
+  {
+   "version": "1.584",
+   "releaseDateString": "2014-10-13T00:34:41Z"
+  },
+  {
+   "version": "1.583",
+   "releaseDateString": "2014-10-01T17:39:00Z"
+  },
+  {
+   "version": "1.565.3",
+   "releaseDateString": "2014-10-01T18:10:42Z"
+  },
+  {
+   "version": "1.582",
+   "releaseDateString": "2014-09-28T21:01:28Z"
+  },
+  {
+   "version": "1.581",
+   "releaseDateString": "2014-09-22T03:57:39Z"
+  },
+  {
+   "version": "1.580",
+   "releaseDateString": "2014-09-14T23:30:02Z"
+  },
+  {
+   "version": "1.579",
+   "releaseDateString": "2014-09-06T14:02:04Z"
+  },
+  {
+   "version": "1.565.2",
+   "releaseDateString": "2014-09-04T03:59:43Z"
+  },
+  {
+   "version": "1.578",
+   "releaseDateString": "2014-09-01T02:43:30Z"
+  },
+  {
+   "version": "1.577",
+   "releaseDateString": "2014-08-25T03:30:07Z"
+  },
+  {
+   "version": "1.576",
+   "releaseDateString": "2014-08-19T04:27:07Z"
+  },
+  {
+   "version": "1.575",
+   "releaseDateString": "2014-08-10T16:15:49Z"
+  },
+  {
+   "version": "1.565.1",
+   "releaseDateString": "2014-07-30T14:58:30Z"
+  },
+  {
+   "version": "1.574",
+   "releaseDateString": "2014-07-27T17:09:47Z"
+  },
+  {
+   "version": "1.573",
+   "releaseDateString": "2014-07-20T20:06:35Z"
+  },
+  {
+   "version": "1.572",
+   "releaseDateString": "2014-07-14T02:00:23Z"
+  },
+  {
+   "version": "1.571",
+   "releaseDateString": "2014-07-07T15:30:14Z"
+  },
+  {
+   "version": "1.554.3",
+   "releaseDateString": "2014-07-01T04:16:34Z"
+  },
+  {
+   "version": "1.570",
+   "releaseDateString": "2014-06-29T18:37:19Z"
+  },
+  {
+   "version": "1.569",
+   "releaseDateString": "2014-06-23T08:34:58Z"
+  },
+  {
+   "version": "1.568",
+   "releaseDateString": "2014-06-15T23:30:49Z"
+  },
+  {
+   "version": "1.567",
+   "releaseDateString": "2014-06-09T16:30:15Z"
+  },
+  {
+   "version": "1.566",
+   "releaseDateString": "2014-06-02T05:19:33Z"
+  },
+  {
+   "version": "1.554.2",
+   "releaseDateString": "2014-05-30T07:11:57Z"
+  },
+  {
+   "version": "1.565",
+   "releaseDateString": "2014-05-26T22:44:48Z"
+  },
+  {
+   "version": "1.564",
+   "releaseDateString": "2014-05-20T06:24:11Z"
+  },
+  {
+   "version": "1.563",
+   "releaseDateString": "2014-05-12T03:27:05Z"
+  },
+  {
+   "version": "1.562",
+   "releaseDateString": "2014-05-04T04:16:46Z"
+  },
+  {
+   "version": "1.554.1",
+   "releaseDateString": "2014-05-01T05:24:29Z"
+  },
+  {
+   "version": "1.561",
+   "releaseDateString": "2014-04-28T01:34:38Z"
+  },
+  {
+   "version": "1.560",
+   "releaseDateString": "2014-04-20T20:28:22Z"
+  },
+  {
+   "version": "1.559",
+   "releaseDateString": "2014-04-14T02:53:52Z"
+  },
+  {
+   "version": "1.532.3",
+   "releaseDateString": "2014-04-11T15:30:19Z"
+  },
+  {
+   "version": "1.558",
+   "releaseDateString": "2014-04-07T02:21:09Z"
+  },
+  {
+   "version": "1.557",
+   "releaseDateString": "2014-03-31T14:25:37Z"
+  },
+  {
+   "version": "1.556",
+   "releaseDateString": "2014-03-24T03:32:26Z"
+  },
+  {
+   "version": "1.555",
+   "releaseDateString": "2014-03-17T05:18:26Z"
+  },
+  {
+   "version": "1.554",
+   "releaseDateString": "2014-03-10T05:51:50Z"
+  },
+  {
+   "version": "1.553",
+   "releaseDateString": "2014-03-03T07:04:12Z"
+  },
+  {
+   "version": "1.552",
+   "releaseDateString": "2014-02-25T04:38:10Z"
+  },
+  {
+   "version": "1.532.2",
+   "releaseDateString": "2014-02-15T00:50:17Z"
+  },
+  {
+   "version": "1.551",
+   "releaseDateString": "2014-02-14T23:42:26Z"
+  },
+  {
+   "version": "1.550",
+   "releaseDateString": "2014-02-09T15:40:46Z"
+  },
+  {
+   "version": "1.549",
+   "releaseDateString": "2014-01-26T06:00:28Z"
+  },
+  {
+   "version": "1.548",
+   "releaseDateString": "2014-01-20T18:38:09Z"
+  },
+  {
+   "version": "1.547",
+   "releaseDateString": "2014-01-13T03:45:33Z"
+  },
+  {
+   "version": "1.546",
+   "releaseDateString": "2014-01-06T17:20:31Z"
+  },
+  {
+   "version": "1.545",
+   "releaseDateString": "2013-12-31T20:42:31Z"
+  },
+  {
+   "version": "1.544",
+   "releaseDateString": "2013-12-15T13:33:31Z"
+  },
+  {
+   "version": "1.543",
+   "releaseDateString": "2013-12-11T00:57:14Z"
+  },
+  {
+   "version": "1.542",
+   "releaseDateString": "2013-12-02T16:38:29Z"
+  },
+  {
+   "version": "1.541",
+   "releaseDateString": "2013-11-25T06:32:20Z"
+  },
+  {
+   "version": "1.532.1",
+   "releaseDateString": "2013-11-25T16:35:01Z"
+  },
+  {
+   "version": "1.540",
+   "releaseDateString": "2013-11-18T06:20:35Z"
+  },
+  {
+   "version": "1.539",
+   "releaseDateString": "2013-11-12T06:13:47Z"
+  },
+  {
+   "version": "1.538",
+   "releaseDateString": "2013-11-04T02:28:01Z"
+  },
+  {
+   "version": "1.537",
+   "releaseDateString": "2013-10-28T01:22:02Z"
+  },
+  {
+   "version": "1.536",
+   "releaseDateString": "2013-10-21T05:57:54Z"
+  },
+  {
+   "version": "1.535",
+   "releaseDateString": "2013-10-14T15:30:22Z"
+  },
+  {
+   "version": "1.509.4",
+   "releaseDateString": "2013-10-09T17:41:49Z"
+  },
+  {
+   "version": "1.534",
+   "releaseDateString": "2013-10-07T14:52:13Z"
+  },
+  {
+   "version": "1.533",
+   "releaseDateString": "2013-09-29T21:57:35Z"
+  },
+  {
+   "version": "1.532",
+   "releaseDateString": "2013-09-23T15:16:04Z"
+  },
+  {
+   "version": "1.531",
+   "releaseDateString": "2013-09-16T14:59:57Z"
+  },
+  {
+   "version": "1.509.3",
+   "releaseDateString": "2013-09-10T02:55:55Z"
+  },
+  {
+   "version": "1.530",
+   "releaseDateString": "2013-09-09T16:58:15Z"
+  },
+  {
+   "version": "1.529",
+   "releaseDateString": "2013-08-27T03:59:31Z"
+  },
+  {
+   "version": "1.528",
+   "releaseDateString": "2013-08-19T02:23:14Z"
+  },
+  {
+   "version": "1.527",
+   "releaseDateString": "2013-08-13T05:34:46Z"
+  },
+  {
+   "version": "1.526",
+   "releaseDateString": "2013-08-05T17:10:30Z"
+  },
+  {
+   "version": "1.525",
+   "releaseDateString": "2013-07-29T18:27:48Z"
+  },
+  {
+   "version": "1.524",
+   "releaseDateString": "2013-07-24T05:47:46Z"
+  },
+  {
+   "version": "1.523",
+   "releaseDateString": "2013-07-15T04:18:13Z"
+  },
+  {
+   "version": "1.522",
+   "releaseDateString": "2013-07-06T14:57:39Z"
+  },
+  {
+   "version": "1.521",
+   "releaseDateString": "2013-07-02T09:12:06Z"
+  },
+  {
+   "version": "1.509.2",
+   "releaseDateString": "2013-06-28T05:49:17Z"
+  },
+  {
+   "version": "1.520",
+   "releaseDateString": "2013-06-26T05:54:41Z"
+  },
+  {
+   "version": "1.519",
+   "releaseDateString": "2013-06-18T04:34:00Z"
+  },
+  {
+   "version": "1.518",
+   "releaseDateString": "2013-06-11T09:08:35Z"
+  },
+  {
+   "version": "1.517",
+   "releaseDateString": "2013-06-03T01:45:43Z"
+  },
+  {
+   "version": "1.516",
+   "releaseDateString": "2013-05-28T05:23:16Z"
+  },
+  {
+   "version": "1.515",
+   "releaseDateString": "2013-05-19T04:05:34Z"
+  },
+  {
+   "version": "1.514",
+   "releaseDateString": "2013-05-02T02:48:55Z"
+  },
+  {
+   "version": "1.509.1",
+   "releaseDateString": "2013-05-02T00:23:30Z"
+  },
+  {
+   "version": "1.513",
+   "releaseDateString": "2013-04-29T02:56:08Z"
+  },
+  {
+   "version": "1.512",
+   "releaseDateString": "2013-04-22T01:45:18Z"
+  },
+  {
+   "version": "1.511",
+   "releaseDateString": "2013-04-15T01:26:00Z"
+  },
+  {
+   "version": "1.510",
+   "releaseDateString": "2013-04-07T01:22:41Z"
+  },
+  {
+   "version": "1.509",
+   "releaseDateString": "2013-04-02T06:52:33Z"
+  },
+  {
+   "version": "1.508",
+   "releaseDateString": "2013-03-25T20:16:15Z"
+  },
+  {
+   "version": "1.507",
+   "releaseDateString": "2013-03-25T03:25:03Z"
+  },
+  {
+   "version": "1.506",
+   "releaseDateString": "2013-03-17T18:53:57Z"
+  },
+  {
+   "version": "1.505",
+   "releaseDateString": "2013-03-11T00:43:29Z"
+  },
+  {
+   "version": "1.504",
+   "releaseDateString": "2013-03-03T16:32:32Z"
+  },
+  {
+   "version": "1.503",
+   "releaseDateString": "2013-02-26T06:13:40Z"
+  },
+  {
+   "version": "1.502",
+   "releaseDateString": "2013-02-16T15:58:52Z"
+  },
+  {
+   "version": "1.480.3",
+   "releaseDateString": "2013-02-16T05:35:27Z"
+  },
+  {
+   "version": "1.501",
+   "releaseDateString": "2013-02-11T03:33:50Z"
+  },
+  {
+   "version": "1.500",
+   "releaseDateString": "2013-01-27T01:48:09Z"
+  },
+  {
+   "version": "1.499",
+   "releaseDateString": "2013-01-14T07:20:31Z"
+  },
+  {
+   "version": "1.498",
+   "releaseDateString": "2013-01-07T18:43:25Z"
+  },
+  {
+   "version": "1.497",
+   "releaseDateString": "2013-01-06T21:29:11Z"
+  },
+  {
+   "version": "1.480.2",
+   "releaseDateString": "2013-01-06T18:55:48Z"
+  },
+  {
+   "version": "1.496",
+   "releaseDateString": "2012-12-30T21:49:49Z"
+  },
+  {
+   "version": "1.495",
+   "releaseDateString": "2012-12-24T18:44:04Z"
+  },
+  {
+   "version": "1.494",
+   "releaseDateString": "2012-12-16T20:19:56Z"
+  },
+  {
+   "version": "1.493",
+   "releaseDateString": "2012-12-09T15:43:15Z"
+  },
+  {
+   "version": "1.492",
+   "releaseDateString": "2012-11-26T06:30:08Z"
+  },
+  {
+   "version": "1.491",
+   "releaseDateString": "2012-11-18T18:44:03Z"
+  },
+  {
+   "version": "1.480.1",
+   "releaseDateString": "2012-11-18T04:49:53Z"
+  },
+  {
+   "version": "1.490",
+   "releaseDateString": "2012-11-13T04:02:44Z"
+  },
+  {
+   "version": "1.489",
+   "releaseDateString": "2012-11-04T18:01:58Z"
+  },
+  {
+   "version": "1.488",
+   "releaseDateString": "2012-10-29T02:08:00Z"
+  },
+  {
+   "version": "1.487",
+   "releaseDateString": "2012-10-23T23:40:42Z"
+  },
+  {
+   "version": "1.486",
+   "releaseDateString": "2012-10-15T00:36:13Z"
+  },
+  {
+   "version": "1.485",
+   "releaseDateString": "2012-10-08T06:41:21Z"
+  },
+  {
+   "version": "1.484",
+   "releaseDateString": "2012-09-30T13:26:38Z"
+  },
+  {
+   "version": "1.483",
+   "releaseDateString": "2012-09-24T02:57:17Z"
+  },
+  {
+   "version": "1.482",
+   "releaseDateString": "2012-09-17T01:01:14Z"
+  },
+  {
+   "version": "1.466.2",
+   "releaseDateString": "2012-09-14T02:52:22Z"
+  },
+  {
+   "version": "1.481",
+   "releaseDateString": "2012-09-10T05:16:30Z"
+  },
+  {
+   "version": "1.480",
+   "releaseDateString": "2012-09-03T15:01:20Z"
+  },
+  {
+   "version": "1.479",
+   "releaseDateString": "2012-08-29T16:15:02Z"
+  },
+  {
+   "version": "1.478",
+   "releaseDateString": "2012-08-20T13:05:23Z"
+  },
+  {
+   "version": "1.477",
+   "releaseDateString": "2012-08-09T04:11:51Z"
+  },
+  {
+   "version": "1.466.1",
+   "releaseDateString": "2012-07-24T05:15:29Z"
+  },
+  {
+   "version": "1.475",
+   "releaseDateString": "2012-07-22T23:21:29Z"
+  },
+  {
+   "version": "1.474",
+   "releaseDateString": "2012-07-10T00:02:56Z"
+  },
+  {
+   "version": "1.473",
+   "releaseDateString": "2012-07-02T02:01:32Z"
+  },
+  {
+   "version": "1.472",
+   "releaseDateString": "2012-06-25T03:58:48Z"
+  },
+  {
+   "version": "1.471",
+   "releaseDateString": "2012-06-19T03:52:53Z"
+  },
+  {
+   "version": "1.470",
+   "releaseDateString": "2012-06-13T16:41:07Z"
+  },
+  {
+   "version": "1.469",
+   "releaseDateString": "2012-06-12T04:48:24Z"
+  },
+  {
+   "version": "1.468",
+   "releaseDateString": "2012-06-11T16:11:48Z"
+  },
+  {
+   "version": "1.447.2",
+   "releaseDateString": "2012-06-11T18:01:15Z"
+  },
+  {
+   "version": "1.467",
+   "releaseDateString": "2012-06-05T03:54:41Z"
+  },
+  {
+   "version": "1.466",
+   "releaseDateString": "2012-05-29T01:59:59Z"
+  },
+  {
+   "version": "1.465",
+   "releaseDateString": "2012-05-21T20:32:16Z"
+  },
+  {
+   "version": "1.464",
+   "releaseDateString": "2012-05-14T17:48:57Z"
+  },
+  {
+   "version": "1.463",
+   "releaseDateString": "2012-05-07T17:13:20Z"
+  },
+  {
+   "version": "1.462",
+   "releaseDateString": "2012-04-30T16:24:20Z"
+  },
+  {
+   "version": "1.461",
+   "releaseDateString": "2012-04-23T19:03:30Z"
+  },
+  {
+   "version": "1.460",
+   "releaseDateString": "2012-04-15T04:18:04Z"
+  },
+  {
+   "version": "1.459",
+   "releaseDateString": "2012-04-09T15:47:02Z"
+  },
+  {
+   "version": "1.458",
+   "releaseDateString": "2012-04-02T18:01:46Z"
+  },
+  {
+   "version": "1.447.1",
+   "releaseDateString": "2012-03-29T04:14:43Z"
+  },
+  {
+   "version": "1.457",
+   "releaseDateString": "2012-03-26T17:48:59Z"
+  },
+  {
+   "version": "1.456",
+   "releaseDateString": "2012-03-19T15:39:56Z"
+  },
+  {
+   "version": "1.455",
+   "releaseDateString": "2012-03-12T16:28:13Z"
+  },
+  {
+   "version": "1.424.6",
+   "releaseDateString": "2012-03-07T03:55:33Z"
+  },
+  {
+   "version": "1.454",
+   "releaseDateString": "2012-03-06T03:11:50Z"
+  },
+  {
+   "version": "1.424.5",
+   "releaseDateString": "2012-03-06T02:07:45Z"
+  },
+  {
+   "version": "1.453",
+   "releaseDateString": "2012-03-05T17:32:55Z"
+  },
+  {
+   "version": "1.424.4",
+   "releaseDateString": "2012-03-05T18:58:25Z"
+  },
+  {
+   "version": "1.452",
+   "releaseDateString": "2012-02-27T16:33:23Z"
+  },
+  {
+   "version": "1.424.3",
+   "releaseDateString": "2012-02-27T19:42:32Z"
+  },
+  {
+   "version": "1.451",
+   "releaseDateString": "2012-02-13T18:44:45Z"
+  },
+  {
+   "version": "1.450",
+   "releaseDateString": "2012-01-30T22:08:33Z"
+  },
+  {
+   "version": "1.449",
+   "releaseDateString": "2012-01-23T21:57:42Z"
+  },
+  {
+   "version": "1.448",
+   "releaseDateString": "2012-01-17T16:47:54Z"
+  },
+  {
+   "version": "1.424.2",
+   "releaseDateString": "2012-01-10T23:25:30Z"
+  },
+  {
+   "version": "1.447",
+   "releaseDateString": "2012-01-09T17:23:00Z"
+  },
+  {
+   "version": "1.446",
+   "releaseDateString": "2012-01-03T02:44:36Z"
+  },
+  {
+   "version": "1.445",
+   "releaseDateString": "2011-12-26T17:29:38Z"
+  },
+  {
+   "version": "1.444",
+   "releaseDateString": "2011-12-19T20:21:08Z"
+  },
+  {
+   "version": "1.443",
+   "releaseDateString": "2011-12-12T18:16:12Z"
+  },
+  {
+   "version": "1.442",
+   "releaseDateString": "2011-12-05T17:13:15Z"
+  },
+  {
+   "version": "1.424.1",
+   "releaseDateString": "2011-11-30T20:46:18Z"
+  },
+  {
+   "version": "1.441",
+   "releaseDateString": "2011-11-28T04:59:18Z"
+  },
+  {
+   "version": "1.440",
+   "releaseDateString": "2011-11-18T05:32:54Z"
+  },
+  {
+   "version": "1.439",
+   "releaseDateString": "2011-11-14T18:22:35Z"
+  },
+  {
+   "version": "1.409.3",
+   "releaseDateString": "2011-11-08T19:50:22Z"
+  },
+  {
+   "version": "1.438",
+   "releaseDateString": "2011-11-07T21:16:02Z"
+  },
+  {
+   "version": "1.437",
+   "releaseDateString": "2011-10-31T15:54:53Z"
+  },
+  {
+   "version": "1.436",
+   "releaseDateString": "2011-10-24T04:01:02Z"
+  },
+  {
+   "version": "1.435",
+   "releaseDateString": "2011-10-18T00:15:01Z"
+  },
+  {
+   "version": "1.434",
+   "releaseDateString": "2011-10-09T22:17:27Z"
+  },
+  {
+   "version": "1.433",
+   "releaseDateString": "2011-10-02T03:14:00Z"
+  },
+  {
+   "version": "1.432",
+   "releaseDateString": "2011-09-26T04:17:49Z"
+  },
+  {
+   "version": "1.431",
+   "releaseDateString": "2011-09-20T00:21:11Z"
+  },
+  {
+   "version": "1.409.2",
+   "releaseDateString": "2011-09-13T00:33:24Z"
+  },
+  {
+   "version": "1.430",
+   "releaseDateString": "2011-09-11T20:30:04Z"
+  },
+  {
+   "version": "1.429",
+   "releaseDateString": "2011-09-06T16:48:47Z"
+  },
+  {
+   "version": "1.428",
+   "releaseDateString": "2011-08-29T16:19:10Z"
+  },
+  {
+   "version": "1.427",
+   "releaseDateString": "2011-08-19T16:48:16Z"
+  },
+  {
+   "version": "1.426",
+   "releaseDateString": "2011-08-16T03:55:43Z"
+  },
+  {
+   "version": "1.425",
+   "releaseDateString": "2011-08-08T16:41:18Z"
+  },
+  {
+   "version": "1.424",
+   "releaseDateString": "2011-08-01T18:02:14Z"
+  },
+  {
+   "version": "1.423",
+   "releaseDateString": "2011-07-26T00:40:46Z"
+  },
+  {
+   "version": "1.422",
+   "releaseDateString": "2011-07-25T20:23:08Z"
+  },
+  {
+   "version": "1.421",
+   "releaseDateString": "2011-07-17T08:27:09Z"
+  },
+  {
+   "version": "1.420",
+   "releaseDateString": "2011-07-11T19:14:04Z"
+  },
+  {
+   "version": "1.419",
+   "releaseDateString": "2011-07-05T16:36:08Z"
+  },
+  {
+   "version": "1.418",
+   "releaseDateString": "2011-06-27T16:29:45Z"
+  },
+  {
+   "version": "1.417",
+   "releaseDateString": "2011-06-20T17:36:51Z"
+  },
+  {
+   "version": "1.416",
+   "releaseDateString": "2011-06-18T05:49:07Z"
+  },
+  {
+   "version": "1.409.1",
+   "releaseDateString": "2011-06-07T00:29:49Z"
+  }
  ]
 }
