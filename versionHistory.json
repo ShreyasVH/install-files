@@ -2251,6 +2251,14 @@
  ],
  "cockroach": [
   {
+   "version": "25.2.14",
+   "releaseDateString": "2026-03-04 00:22:35 UTC"
+  },
+  {
+   "version": "24.3.28",
+   "releaseDateString": "2026-03-03 23:56:46 UTC"
+  },
+  {
    "version": "26.1.0",
    "releaseDateString": "2026-02-17 23:13:15 UTC"
   },
@@ -5185,6 +5193,10 @@
  ],
  "e2fsprogs": [
   {
+   "version": "1.47.4",
+   "releaseDateString": "2026-03-06T19:50:29Z"
+  },
+  {
    "version": "1.47.3",
    "releaseDateString": "2025-07-08T22:14:01Z"
   },
@@ -7819,6 +7831,10 @@
  ],
  "erlang": [
   {
+   "version": "28.4",
+   "releaseDateString": "2026-03-04T07:46:39Z"
+  },
+  {
    "version": "28.3.3",
    "releaseDateString": "2026-02-26T17:14:09Z"
   },
@@ -9384,6 +9400,14 @@
   }
  ],
  "go": [
+  {
+   "version": "1.26.1",
+   "releaseDateString": "2026-03-06T00:26:39Z"
+  },
+  {
+   "version": "1.25.8",
+   "releaseDateString": "2026-03-06T00:26:43Z"
+  },
   {
    "version": "1.26.0",
    "releaseDateString": "2026-02-10T19:27:55Z"
@@ -13689,6 +13713,10 @@
  ],
  "libxml2": [
   {
+   "version": "2.15.2",
+   "releaseDateString": "2026-03-04 09:45:35 UTC"
+  },
+  {
    "version": "2.15.1",
    "releaseDateString": "2025-10-16T15:47:52Z"
   },
@@ -13954,6 +13982,10 @@
   }
  ],
  "maven": [
+  {
+   "version": "3.9.13",
+   "releaseDateString": "2026-03-03T13:12:33Z"
+  },
   {
    "version": "3.9.12",
    "releaseDateString": "2025-12-13 09:18:49 UTC"
@@ -22529,6 +22561,18 @@
  ],
  "node": [
   {
+   "version": "22.22.1",
+   "releaseDateString": "2026-03-05 14:09:45 UTC"
+  },
+  {
+   "version": "20.20.1",
+   "releaseDateString": "2026-03-05 14:01:02 UTC"
+  },
+  {
+   "version": "25.8.0",
+   "releaseDateString": "2026-03-03 15:53:33 UTC"
+  },
+  {
    "version": "25.7.0",
    "releaseDateString": "2026-02-24 15:26:16 UTC"
   },
@@ -30937,6 +30981,10 @@
  ],
  "proj": [
   {
+   "version": "9.8.0",
+   "releaseDateString": "2026-03-02T12:58:30Z"
+  },
+  {
    "version": "9.7.1",
    "releaseDateString": "2025-12-01T14:28:34Z"
   },
@@ -31126,6 +31174,18 @@
   }
  ],
  "python": [
+  {
+   "version": "3.12.13",
+   "releaseDateString": "2026-03-03 13:28:58 UTC"
+  },
+  {
+   "version": "3.11.15",
+   "releaseDateString": "2026-03-03 01:07:28 UTC"
+  },
+  {
+   "version": "3.10.20",
+   "releaseDateString": "2026-03-03 01:07:28 UTC"
+  },
   {
    "version": "3.14.3",
    "releaseDateString": "2026-02-03T15:32:20Z"
@@ -36097,6 +36157,10 @@
  ],
  "sbt": [
   {
+   "version": "1.12.5",
+   "releaseDateString": "2026-03-01 23:00:42 UTC"
+  },
+  {
    "version": "1.12.4",
    "releaseDateString": "2026-02-23 08:47:39 UTC"
   },
@@ -36900,6 +36964,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "3.52.0",
+   "releaseDateString": "2026-03-06T16:01:44Z"
+  },
   {
    "version": "3.51.2",
    "releaseDateString": "2026-01-09T17:27:48Z"
@@ -38655,6 +38723,10 @@
  ],
  "memcached": [
   {
+   "version": "1.6.41",
+   "releaseDateString": "2026-03-06T21:03:56Z"
+  },
+  {
    "version": "1.6.40",
    "releaseDateString": "2025-12-17T00:17:54Z"
   },
@@ -39923,6 +39995,10 @@
  ],
  "lsof": [
   {
+   "version": "4.99.6",
+   "releaseDateString": "2026-03-04T07:08:43Z"
+  },
+  {
    "version": "4.99.5",
    "releaseDateString": "2025-07-01T04:32:21Z"
   },
@@ -40180,6 +40256,10 @@
   }
  ],
  "sqlcmd": [
+  {
+   "version": "1.10.0",
+   "releaseDateString": "2026-03-02 19:00:32 UTC"
+  },
   {
    "version": "1.9.0",
    "releaseDateString": "2025-07-17 13:55:31 UTC"
@@ -42810,6 +42890,10 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "2.553",
+   "releaseDateString": "2026-03-03T06:46:01Z"
+  },
   {
    "version": "2.552",
    "releaseDateString": "2026-02-24T06:43:50Z"
