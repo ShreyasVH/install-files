@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ar" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="binutils-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/binutils/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/binutils/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "binutils-$VERSION" $VERSION

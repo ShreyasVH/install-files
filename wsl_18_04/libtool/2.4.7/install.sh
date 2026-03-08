@@ -33,7 +33,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION/bin/libtool" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="libtool-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/libtool/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/libtool/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "libtool-"$VERSION $VERSION
