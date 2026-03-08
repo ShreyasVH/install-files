@@ -26,8 +26,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="openssl-${VERSION}w.tar.gz"
-	curl -s -OL "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/$ARCHIVE_FILE"
-  print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	curl -OL "https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1w/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+  	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "openssl-${VERSION}w" $VERSION
 	cd $VERSION
