@@ -1,11 +1,11 @@
 # wget 1.24.5 path
 export PATH=
 
-# jq 1.7.1 path
+# jq 1.8.1 path
 export PATH=
 
-# node 16.13.0 path
-export PATH=$HOME/programs/node/16.13.0/bin:$PATH
+# node 25.6.1 path
+export PATH=
 
 export VERSION_MAP_PATH=
 export STATIC_VERSION_MAP_PATH=
@@ -35,3 +35,8 @@ export JENKINS_PASSWORD=
 
 export GITHUB_USERNAME=
 export GITHUB_TOKEN_JENKINS=
+
+export NGROK_TOKEN=
+
+export DOCKER_USERNAME=
+export DOCKER_TOKEN_JENKINS=
