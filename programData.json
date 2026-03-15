@@ -435,6 +435,14 @@
   "versionsLastUpdatedOn": 1773536032209,
   "scriptName": "github"
  },
+ "logstash": {
+  "tagsUrl": "https://github.com/elastic/logstash/tags",
+  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1773535950012,
+  "isEntryPoint": true,
+  "path": "/bin/logstash",
+  "scriptName": "github"
+ },
  "lsof": {
   "tagsUrl": "https://github.com/lsof-org/lsof/tags",
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
