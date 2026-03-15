@@ -42,6 +42,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/dotnet" ]; then
 	direnv allow
 	source .envrc
 
+	print_message "${bold}${green}Installing dotnet-outdated-tool${clear}" $((DEPTH))
+	dotnet tool install -g dotnet-outdated-tool > $HOME/logs/$FOLDER_NAME/$VERSION/dotnetOutdatedToolInstall.txt 2>&1
+
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
 	rm $ARCHIVE_FILE
 fi
