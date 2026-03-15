@@ -290,7 +290,7 @@
   "tagsUrl": "https://github.com/jenkinsci/jenkins/tags",
   "versionRegex": "jenkins-\\d+\\.\\d+(\\.\\d)*",
   "versionsLastUpdatedOn": 1773535945393,
-  "path": "/bin/jenkins.war",
+  "path": "/jenkins.war",
   "dependencies": [
    "java",
    "maven"
