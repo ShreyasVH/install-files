@@ -846,7 +846,8 @@
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1773536116860,
   "path": "/bin/sqlcmd",
-  "scriptName": "github"
+  "scriptName": "github",
+  "isEntryPoint": true
  },
  "sqlite3": {
   "tagsUrl": "https://github.com/sqlite/sqlite/tags",
