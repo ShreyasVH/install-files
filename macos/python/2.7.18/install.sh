@@ -1,0 +1,96 @@
+version_dir=$(dirname "$(realpath "$0")")
+
+VERSION=$(basename $version_dir)
+MAJOR_VERSION=$(echo $VERSION | cut -d '.' -f 1)
+MINOR_VERSION=$(echo $VERSION | cut -d '.' -f 2)
+
+program_dir=$(dirname "$version_dir")
+FOLDER_NAME=$(basename $program_dir)
+
+os_dir=$(dirname $program_dir)
+OS=$(basename $os_dir)
+
+DEPTH=1
+if [ $# -ge 1 ]; then
+    DEPTH=$1
+fi
+
+source $INSTALL_FILES_DIR/utils.sh
+
+cd $INSTALL_FILES_DIR
+
+PKG_CONFIG_FOLDER_NAME=pkg-config
+PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
+
+GETTEXT_FOLDER_NAME=gettext
+GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
+
+OPENSSL_FOLDER_NAME=openssl
+OPENSSL_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
+
+ZLIB_FOLDER_NAME=zlib
+ZLIB_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ZLIB_FOLDER_NAME" '.[$folder][$version][$name]')
+
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python2" ]; then
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
+
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
+
+	bash $INSTALL_FILES_DIR/$OS/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/install.sh $((DEPTH+1))
+
+	cd $HOME/sources/$FOLDER_NAME
+
+	export PATH="$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH"
+
+	export LDFLAGS="-L$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib"
+	export CPPFLAGS="-I$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include"
+
+	export CPPFLAGS="$CPPFLAGS -I$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/include"
+	export LDFLAGS="$LDFLAGS -L$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION/lib"
+
+	export CPPFLAGS="$CPPFLAGS -I$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/include"
+	export LDFLAGS="$LDFLAGS -L$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib"
+
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	ARCHIVE_FILE="Python-"$VERSION".tgz"
+	wget --show-progress "https://www.python.org/ftp/python/"$VERSION"/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	tar -xf $ARCHIVE_FILE
+	mv "Python-"$VERSION $VERSION
+	cd $VERSION
+	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
+	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	arch -x86_64 ./configure --with-pydebug --prefix="$HOME/programs/python/$VERSION" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	print_message "${bold}${green}Making${clear}" $((DEPTH))
+	make -s -j$PROCESS_COUNT > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
+	
+	bash $INSTALL_FILES_DIR/install.sh $FOLDER_NAME $VERSION $((DEPTH))
+
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python" ]; then
+		cd $HOME/programs/$FOLDER_NAME/$VERSION
+		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
+
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
+
+		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+
+		print_message "${bold}${green}Installing pip${clear}" $((DEPTH+1))
+		curl "https://bootstrap.pypa.io/pip/${MAJOR_VERSION}.${MINOR_VERSION}/get-pip.py" -o get-pip.py > $HOME/logs/$FOLDER_NAME/$VERSION/pipDownload.log 2>&1
+		python get-pip.py > $HOME/logs/$FOLDER_NAME/$VERSION/pipInstall.log 2>&1
+
+		print_message "${bold}${green}Installing requests${clear}" $((DEPTH+1))
+		pip install requests > $HOME/logs/$FOLDER_NAME/$VERSION/requestsInstall.log 2>&1
+
+		rm get-pip.py
+
+
+
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
+	fi
+fi

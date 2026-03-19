@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/iconv" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="libiconv-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/pub/gnu/libiconv/$ARCHIVE_FILE"
+	wget --show-progress "https://ftp.rediris.es/mirror/GNU/libiconv/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "libiconv-$VERSION" $VERSION

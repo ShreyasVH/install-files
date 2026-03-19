@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libncurses.a" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="ncurses-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/ncurses/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/ncurses/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "ncurses-$VERSION" $VERSION

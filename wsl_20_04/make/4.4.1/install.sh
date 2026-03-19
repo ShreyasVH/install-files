@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/make" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="make-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/make/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/make/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "make-$VERSION" $VERSION

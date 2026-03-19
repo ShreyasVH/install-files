@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/telnet" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="inetutils-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/inetutils/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/inetutils/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "inetutils-"$VERSION $VERSION

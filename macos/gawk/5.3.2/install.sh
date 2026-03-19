@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/gawk" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="gawk-$VERSION.tar.gz"
-	wget -q "https://ftp.gnu.org/gnu/gawk/$ARCHIVE_FILE"
+	wget -q "https://ftp.rediris.es/mirror/GNU/gawk/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "gawk-$VERSION" $VERSION
