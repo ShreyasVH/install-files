@@ -97,5 +97,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	cd ..
 	rm $ARCHIVE_FILE
 fi
-
-cd $HOME/install-files
