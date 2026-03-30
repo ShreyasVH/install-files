@@ -783,6 +783,10 @@
  ],
  "haproxy": [
   {
+   "version": "3.3.6",
+   "releaseDateString": "2026-03-19T15:50:00Z"
+  },
+  {
    "version": "3.3.5",
    "releaseDateString": "2026-03-09T15:04:00Z"
   },
@@ -1044,6 +1048,10 @@
   }
  ],
  "java": [
+  {
+   "version": "26",
+   "releaseDateString": "2026-03-17T00:00:00Z"
+  },
   {
    "version": "25.0.2",
    "releaseDateString": "2026-01-20T00:00:00Z"
