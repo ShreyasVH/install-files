@@ -38,7 +38,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	touch start.sh
 	echo 'PORT=1521' >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if ! SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
 	echo -e "\tdocker compose -p oracle -f docker-compose.yml up -d > /dev/null 2>&1" >> start.sh
 	echo 'fi' >> start.sh
@@ -46,7 +46,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/start.sh" ]; then
 	touch stop.sh
 	echo 'PORT=1521' >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if SUDO_ASKPASS=$HOME/askpass.sh sudo -A lsof -i :$PORT > /dev/null; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
 	echo -e "\tdocker compose -p oracle -f docker-compose.yml stop > /dev/null 2>&1" >> stop.sh
 	echo 'fi' >> stop.sh
