@@ -71,10 +71,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		ln -s ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/pg_hba.conf data/pg_hba.conf
 
 		touch start.sh
-		echo "pg_ctl start -D data > postgresStart.txt 2>&1" >> start.sh
+		echo 'if [ ! -e data/postmaster.pid ]; then' >> start.sh
+		echo -e '\techo "Starting"' >> start.sh
+		echo -e "\tpg_ctl start -D data > postgresStart.txt 2>&1" >> start.sh
+		echo 'fi' >> start.sh
 
 		touch stop.sh
-		echo 'pg_ctl stop -D data > postgresStop.txt 2>&1' >> stop.sh
+		echo 'if [ -e data/postmaster.pid ]; then' >> stop.sh
+		echo -e '\techo "Stopping"' >> stop.sh
+		echo -e '\tpg_ctl stop -D data > postgresStop.txt 2>&1' >> stop.sh
+		echo 'fi' >> stop.sh
 
 		print_message "${bold}${green}Initial Start${clear}" $((DEPTH))
 		bash start.sh
@@ -83,10 +89,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		createuser -p $PORT -s postgres > $HOME/logs/$FOLDER_NAME/$VERSION/postgresUserCreation.txt 2>&1
 		print_message "${bold}${green}Creating DB${clear}" $((DEPTH))
 		createdb -U postgres -p $PORT shreyas > $HOME/logs/$FOLDER_NAME/$VERSION/dbCreation.txt 2>&1
-		print_message "${bold}${green}Creating User${clear}" $((DEPTH))
-		psql -U postgres -p $PORT -w <<EOF
-CREATE USER shreyas WITH ENCRYPTED PASSWORD 'password' SUPERUSER;
-EOF
 
 		bash stop.sh
 
