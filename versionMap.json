@@ -31244,6 +31244,70 @@
    "pkg-config": "No version as per date"
   }
  },
+ "rabbitmqadmin": {
+  "2.30.0": {},
+  "2.29.0": {},
+  "2.28.0": {},
+  "2.27.0": {},
+  "2.26.0": {},
+  "2.25.0": {},
+  "2.24.0": {},
+  "2.23.0": {},
+  "2.22.0": {},
+  "2.21.0": {},
+  "2.20.0": {},
+  "2.19.0": {},
+  "2.18.0": {},
+  "2.17.0": {},
+  "2.16.0": {},
+  "2.15.0": {},
+  "2.14.0": {},
+  "2.13.0": {},
+  "2.12.0": {},
+  "2.11.0": {},
+  "2.10.0": {},
+  "2.9.0": {},
+  "2.8.2": {},
+  "2.8.1": {},
+  "2.8.0": {},
+  "2.7.2": {},
+  "2.7.1": {},
+  "2.7.0": {},
+  "2.6.0": {},
+  "2.5.0": {},
+  "2.4.0": {},
+  "2.3.0": {},
+  "2.2.1": {},
+  "2.2.0": {},
+  "2.1.0": {},
+  "2.0.0": {},
+  "0.29.0": {},
+  "0.28.0": {},
+  "0.27.1": {},
+  "0.27.0": {},
+  "0.26.0": {},
+  "0.25.0": {},
+  "0.24.0": {},
+  "0.23.0": {},
+  "0.22.0": {},
+  "0.21.0": {},
+  "0.20.1": {},
+  "0.20.0": {},
+  "0.19.0": {},
+  "0.18.0": {},
+  "0.17.0": {},
+  "0.16.0": {},
+  "0.15.0": {},
+  "0.14.0": {},
+  "0.13.0": {},
+  "0.12.0": {},
+  "0.11.0": {},
+  "0.10.0": {},
+  "0.9.0": {},
+  "0.8.1": {},
+  "0.8.0": {},
+  "0.7.0": {}
+ },
  "redis": {
   "8.6.3": {
    "pkg-config": "0.29.2"
@@ -31979,1002 +32043,1202 @@
   "4.3.0": {
    "elixir": "1.19.5",
    "erlang": "28.4.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.29.0"
   },
   "4.2.6": {
    "elixir": "1.19.5",
    "erlang": "28.4.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.29.0"
   },
   "4.2.5": {
    "elixir": "1.19.5",
    "erlang": "28.4.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.28.0"
   },
   "4.2.4": {
    "elixir": "1.19.5",
    "erlang": "28.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.25.0"
   },
   "4.2.3": {
    "elixir": "1.19.5",
    "erlang": "28.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.23.0"
   },
   "4.1.8": {
    "elixir": "1.19.5",
    "erlang": "28.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.23.0"
   },
   "4.2.2": {
    "elixir": "1.19.4",
    "erlang": "28.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.20.0"
   },
   "4.1.7": {
    "elixir": "1.19.4",
    "erlang": "28.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.17.0"
   },
   "4.2.1": {
    "elixir": "1.19.3",
    "erlang": "28.1.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.16.0"
   },
   "4.1.6": {
    "elixir": "1.19.3",
    "erlang": "28.1.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.16.0"
   },
   "4.2.0": {
    "elixir": "1.19.1",
    "erlang": "28.1.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.16.0"
   },
   "4.1.5": {
    "elixir": "1.19.1",
    "erlang": "28.1.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.16.0"
   },
   "4.1.4": {
    "elixir": "1.18.4",
    "erlang": "28.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.9.0"
   },
   "4.1.3": {
    "elixir": "1.18.4",
    "erlang": "28.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.7.1"
   },
   "4.1.2": {
    "elixir": "1.18.4",
    "erlang": "28.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.3.0"
   },
   "4.1.1": {
    "elixir": "1.18.4",
    "erlang": "28.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.1.0"
   },
   "4.1.0": {
    "elixir": "1.18.3",
    "erlang": "27.3.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.0.0"
   },
   "4.0.9": {
    "elixir": "1.18.3",
    "erlang": "27.3.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.0.0"
   },
   "4.0.8": {
    "elixir": "1.18.3",
    "erlang": "27.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "2.0.0"
   },
   "4.0.7": {
    "elixir": "1.18.2",
    "erlang": "27.2.4",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.24.0"
   },
   "4.0.6": {
    "elixir": "1.18.2",
    "erlang": "27.2.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.24.0"
   },
   "4.0.5": {
    "elixir": "1.17.3",
    "erlang": "27.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.12.0"
   },
   "4.0.4": {
    "elixir": "1.17.3",
    "erlang": "27.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.11.0"
   },
   "4.0.3": {
    "elixir": "1.17.3",
    "erlang": "27.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.10.0"
   },
   "4.0.2": {
    "elixir": "1.17.3",
    "erlang": "27.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.10.0"
   },
   "4.0.1": {
    "elixir": "1.17.3",
    "erlang": "27.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.10.0"
   },
   "4.0.0": {
    "elixir": "1.17.3",
    "erlang": "27.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.10.0"
   },
   "3.13.7": {
    "elixir": "1.17.2",
    "erlang": "27.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.10.0"
   },
   "3.13.6": {
    "elixir": "1.17.2",
    "erlang": "27.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.5": {
    "elixir": "1.17.2",
    "erlang": "27.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.4": {
    "elixir": "1.17.1",
    "erlang": "27.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.3": {
    "elixir": "1.16.3",
    "erlang": "27.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.14": {
    "elixir": "1.16.2",
    "erlang": "26.2.5",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.2": {
    "elixir": "1.16.2",
    "erlang": "26.2.4",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.1": {
    "elixir": "1.16.2",
    "erlang": "26.2.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.13.0": {
    "elixir": "1.16.1",
    "erlang": "26.2.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.13": {
    "elixir": "1.16.1",
    "erlang": "26.2.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.12": {
    "elixir": "1.16.0",
    "erlang": "26.2.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.11": {
    "elixir": "1.15.7",
    "erlang": "26.2.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.28": {
    "elixir": "1.15.7",
    "erlang": "26.2.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.27": {
    "elixir": "1.15.7",
    "erlang": "26.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.10": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.26": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.9": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.8": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.25": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.7": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.24": {
    "elixir": "1.15.7",
    "erlang": "26.1.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.6": {
    "elixir": "1.15.6",
    "erlang": "26.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.12.5": {
    "elixir": "1.15.6",
    "erlang": "26.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "0.8.0"
   },
   "3.11.23": {
    "elixir": "1.15.5",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.12.4": {
    "elixir": "1.15.4",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.22": {
    "elixir": "1.15.4",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.12.3": {
    "elixir": "1.15.4",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.21": {
    "elixir": "1.15.4",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.25": {
    "elixir": "1.15.3",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.12.2": {
    "elixir": "1.15.3",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.20": {
    "elixir": "1.15.3",
    "erlang": "26.0.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.12.1": {
    "elixir": "1.15.0",
    "erlang": "26.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.19": {
    "elixir": "1.15.0",
    "erlang": "26.0.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.18": {
    "elixir": "1.14.5",
    "erlang": "26.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.24": {
    "elixir": "1.14.5",
    "erlang": "26.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.12.0": {
    "elixir": "1.14.5",
    "erlang": "26.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.17": {
    "elixir": "1.14.5",
    "erlang": "26.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.23": {
    "elixir": "1.14.5",
    "erlang": "26.0",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.16": {
    "elixir": "1.14.4",
    "erlang": "25.3.2",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.15": {
    "elixir": "1.14.4",
    "erlang": "25.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.22": {
    "elixir": "1.14.4",
    "erlang": "25.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.14": {
    "elixir": "1.14.4",
    "erlang": "25.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.21": {
    "elixir": "1.14.4",
    "erlang": "25.3.1",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.13": {
    "elixir": "1.14.3",
    "erlang": "25.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.12": {
    "elixir": "1.14.3",
    "erlang": "25.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.20": {
    "elixir": "1.14.3",
    "erlang": "25.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.11": {
    "elixir": "1.14.3",
    "erlang": "25.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.29": {
    "elixir": "1.14.3",
    "erlang": "25.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.10": {
    "elixir": "1.14.3",
    "erlang": "25.2.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.19": {
    "elixir": "1.14.3",
    "erlang": "25.2.3",
-   "make": "4.4.1"
+   "make": "4.4.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.9": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.18": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.17": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.8": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.16": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.15": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.28": {
    "elixir": "1.14.3",
    "erlang": "25.2.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.7": {
    "elixir": "1.14.3",
    "erlang": "25.2.1",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.14": {
    "elixir": "1.14.3",
    "erlang": "25.2.1",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.6": {
    "elixir": "1.14.2",
    "erlang": "25.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.5": {
    "elixir": "1.14.2",
    "erlang": "25.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.13": {
    "elixir": "1.14.2",
    "erlang": "25.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.27": {
    "elixir": "1.14.2",
    "erlang": "25.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.4": {
    "elixir": "1.14.2",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.12": {
    "elixir": "1.14.2",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.26": {
    "elixir": "1.14.2",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.3": {
    "elixir": "1.14.1",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.11": {
    "elixir": "1.14.1",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.25": {
    "elixir": "1.14.1",
    "erlang": "25.1.2",
-   "make": "4.4"
+   "make": "4.4",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.2": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.10": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.24": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.1": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.9": {
    "elixir": "1.14.1",
    "erlang": "25.1.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.11.0": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.8": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.23": {
    "elixir": "1.14.0",
    "erlang": "25.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.7": {
    "elixir": "1.13.4",
    "erlang": "25.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.22": {
    "elixir": "1.13.4",
    "erlang": "25.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.6": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.21": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.35": {
    "elixir": "1.13.4",
    "erlang": "25.0.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.5": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.20": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.34": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.4": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.3": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.19": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.33": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.2": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.18": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.32": {
    "elixir": "1.13.4",
    "erlang": "25.0",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.1": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.17": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.31": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.10.0": {
    "elixir": "1.13.4",
    "erlang": "24.3.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.16": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.30": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.15": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.29": {
    "elixir": "1.13.4",
    "erlang": "24.3.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.14": {
    "elixir": "1.13.3",
    "erlang": "24.3.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.28": {
    "elixir": "1.13.3",
    "erlang": "24.3.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.13": {
    "elixir": "1.13.2",
    "erlang": "24.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.12": {
    "elixir": "1.13.1",
    "erlang": "24.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.27": {
    "elixir": "1.13.1",
    "erlang": "24.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.11": {
    "elixir": "1.12.3",
    "erlang": "24.1.7",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.10": {
    "elixir": "1.12.3",
    "erlang": "24.1.6",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.26": {
    "elixir": "1.12.3",
    "erlang": "24.1.6",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.25": {
    "elixir": "1.12.3",
    "erlang": "24.1.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.9": {
    "elixir": "1.12.3",
    "erlang": "24.1.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.24": {
    "elixir": "1.12.3",
    "erlang": "24.1.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.8": {
    "elixir": "1.12.3",
    "erlang": "24.1.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.7": {
    "elixir": "1.12.3",
    "erlang": "24.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.23": {
    "elixir": "1.12.3",
    "erlang": "24.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.6": {
    "elixir": "1.12.3",
    "erlang": "24.0.6",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.22": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.5": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.4": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.3": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.21": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.2": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.20": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.1": {
    "elixir": "1.12.2",
    "erlang": "24.0.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.9.0": {
    "elixir": "1.12.2",
    "erlang": "24.0.4",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.19": {
    "elixir": "1.12.2",
    "erlang": "24.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.18": {
    "elixir": "1.12.1",
    "erlang": "24.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.17": {
    "elixir": "1.12.1",
    "erlang": "24.0.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.16": {
    "elixir": "1.11.4",
    "erlang": "23.3.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.15": {
    "elixir": "1.11.4",
    "erlang": "23.3.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.14": {
    "elixir": "1.11.3",
    "erlang": "23.2.7",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.13": {
    "elixir": "1.11.3",
    "erlang": "23.2.6",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.12": {
    "elixir": "1.11.3",
    "erlang": "23.2.5",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.11": {
    "elixir": "1.11.3",
    "erlang": "23.2.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.10": {
    "elixir": "1.11.3",
    "erlang": "23.2.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.9": {
    "elixir": "1.10.4",
    "erlang": "23.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.8": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.7": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.28": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.6": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.27": {
    "elixir": "1.10.4",
    "erlang": "23.0.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.5": {
    "elixir": "1.10.3",
    "erlang": "23.0.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.4": {
    "elixir": "1.10.3",
    "erlang": "23.0.1",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.26": {
    "elixir": "1.10.3",
    "erlang": "22.3.3",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.25": {
    "elixir": "1.10.2",
    "erlang": "22.3.2",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.3": {
    "elixir": "1.10.2",
    "erlang": "22.2.8",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.24": {
    "elixir": "1.10.1",
    "erlang": "22.2.6",
-   "make": "4.3"
+   "make": "4.3",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.23": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.2": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.22": {
    "elixir": "1.9.4",
    "erlang": "22.1.8",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.21": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.1": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.20": {
    "elixir": "1.9.2",
    "erlang": "22.1.5",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.19": {
    "elixir": "1.9.1",
    "erlang": "22.1.1",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.8.0": {
    "elixir": "1.9.1",
    "erlang": "22.1.1",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.18": {
    "elixir": "1.9.1",
    "erlang": "22.0.7",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.17": {
    "elixir": "1.9.1",
    "erlang": "22.0.7",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.16": {
    "elixir": "1.9.0",
    "erlang": "22.0.5",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.15": {
    "elixir": "1.8.2",
    "erlang": "22.0.1",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.14": {
    "elixir": "1.8.1",
    "erlang": "21.3.2",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.13": {
    "elixir": "1.8.1",
    "erlang": "21.2.7",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.12": {
    "elixir": "1.8.1",
    "erlang": "21.2.5",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.11": {
    "elixir": "1.8.1",
    "erlang": "21.2.4",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.10": {
    "elixir": "1.7.4",
    "erlang": "21.2.2",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.9": {
    "elixir": "1.7.4",
    "erlang": "21.1.2",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.8": {
    "elixir": "1.7.3",
    "erlang": "21.0.9",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.7": {
    "elixir": "1.6.6",
    "erlang": "21.0.2",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.6": {
    "elixir": "1.6.5",
    "erlang": "20.3.8",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.5": {
    "elixir": "1.6.5",
    "erlang": "20.3.6",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.4": {
    "elixir": "1.6.2",
    "erlang": "20.2.4",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.3": {
    "elixir": "1.6.0",
    "erlang": "20.2.2",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.2": {
    "elixir": "1.5.2",
    "erlang": "20.2.1",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.1": {
    "elixir": "1.5.2",
    "erlang": "20.2.1",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   },
   "3.7.0": {
    "elixir": "1.5.2",
    "erlang": "20.1.7",
-   "make": "4.2.1"
+   "make": "4.2.1",
+   "rabbitmqadmin": "No version as per date"
   }
  },
  "rsyslog": {

@@ -751,6 +751,15 @@
   "path": "/bin/python3",
   "scriptName": "github"
  },
+ "rabbitmqadmin": {
+  "tagsUrl": "https://github.com/rabbitmq/rabbitmqadmin-ng/tags",
+  "dependencies": [],
+  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 0,
+  "isEntryPoint": false,
+  "path": "/sbin/rabbitmq-server",
+  "scriptName": "github"
+ },
  "redis": {
   "tagsUrl": "https://github.com/redis/redis/tags",
   "dependencies": [
@@ -767,7 +776,8 @@
   "dependencies": [
    "elixir",
    "erlang",
-   "make"
+   "make",
+   "rabbitmqadmin"
   ],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1778338514252,
