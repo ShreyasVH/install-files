@@ -101,7 +101,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	MANAGEMENT_PORT=$(grep 'management.tcp.port = ' $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print $3}')
 
 	rabbitmqadmin -P $MANAGEMENT_PORT  declare queue --name "trace" --durable true > $HOME/logs/$FOLDER_NAME/$VERSION/traceQueueCreation.txt 2>&1
-	rabbitmqadmin -P $MANAGEMENT_PORT declare binding --source "amq.rabbitmq.trace" --destination "trace" --routing_key "#" > $HOME/logs/$FOLDER_NAME/$VERSION/traceQueueBinding.txt 2>&1
+	rabbitmqadmin -P $MANAGEMENT_PORT declare binding --source "amq.rabbitmq.trace" --destination-type "queue" --destination "trace" --routing-key "#" > $HOME/logs/$FOLDER_NAME/$VERSION/traceQueueBinding.txt 2>&1
 
 	print_message "${bold}${green}Stopping RMQ${clear}" $((DEPTH))
 	bash stop.sh
