@@ -40,7 +40,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/nginx" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/nginx/$VERSION --without-http_rewrite_module > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/nginx/$VERSION --with-pcre=$HOME/programs/pcre2/10.47 > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
