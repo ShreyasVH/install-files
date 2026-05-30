@@ -306,6 +306,17 @@
   "path": "/bin/jq",
   "scriptName": "github"
  },
+ "kafka": {
+  "tagsUrl": "https://github.com/apache/kafka/tags",
+  "versionRegex": "\\d+\\.\\d+.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "path": "bin/kafka-server-start.sh",
+  "dependencies": [
+   "java"
+  ],
+  "scriptName": "github",
+  "isEntryPoint": true
+ },
  "kibana": {
   "tagsUrl": "https://github.com/elastic/kibana/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
