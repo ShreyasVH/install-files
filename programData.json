@@ -6,6 +6,17 @@
   "path": "index.php",
   "scriptName": "github"
  },
+ "akhq": {
+  "tagsUrl": "https://github.com/tchiotludo/akhq/tags",
+  "versionRegex": "\\d+\\.\\d+.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "path": "akhq.jar",
+  "dependencies": [
+   "java"
+  ],
+  "scriptName": "github",
+  "isEntryPoint": true
+ },
  "apache": {
   "tagsUrl": "https://github.com/apache/httpd/tags",
   "dependencies": [
