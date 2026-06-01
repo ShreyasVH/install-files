@@ -6,6 +6,17 @@
   "path": "index.php",
   "scriptName": "github"
  },
+ "akhq": {
+  "tagsUrl": "https://github.com/tchiotludo/akhq/tags",
+  "versionRegex": "\\d+\\.\\d+.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "path": "akhq.jar",
+  "dependencies": [
+   "java"
+  ],
+  "scriptName": "github",
+  "isEntryPoint": true
+ },
  "apache": {
   "tagsUrl": "https://github.com/apache/httpd/tags",
   "dependencies": [
@@ -305,6 +316,17 @@
   "isEntryPoint": true,
   "path": "/bin/jq",
   "scriptName": "github"
+ },
+ "kafka": {
+  "tagsUrl": "https://github.com/apache/kafka/tags",
+  "versionRegex": "\\d+\\.\\d+.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "path": "bin/kafka-server-start.sh",
+  "dependencies": [
+   "java"
+  ],
+  "scriptName": "github",
+  "isEntryPoint": true
  },
  "kibana": {
   "tagsUrl": "https://github.com/elastic/kibana/tags",
