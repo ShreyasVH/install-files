@@ -612,7 +612,8 @@
   "path": "/bin/openssl",
   "dependencies": [
    "zlib"
-  ]
+  ],
+  "scriptName": "github"
  },
  "pcre2": {
   "tagsUrl": "https://github.com/PCRE2Project/pcre2/tags",
