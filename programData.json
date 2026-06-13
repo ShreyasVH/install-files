@@ -3,14 +3,14 @@
   "tagsUrl": "https://github.com/vrana/adminer/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1780816573043,
-  "path": "index.php",
+  "path": "/index.php",
   "scriptName": "github"
  },
  "akhq": {
   "tagsUrl": "https://github.com/tchiotludo/akhq/tags",
   "versionRegex": "\\d+\\.\\d+.\\d+",
   "versionsLastUpdatedOn": 1780816575103,
-  "path": "akhq.jar",
+  "path": "/akhq.jar",
   "dependencies": [
    "java"
   ],
@@ -321,7 +321,7 @@
   "tagsUrl": "https://github.com/apache/kafka/tags",
   "versionRegex": "\\d+\\.\\d+.\\d+",
   "versionsLastUpdatedOn": 1780816715769,
-  "path": "bin/kafka-server-start.sh",
+  "path": "/bin/kafka-server-start.sh",
   "dependencies": [
    "java"
   ],
