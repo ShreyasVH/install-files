@@ -779,8 +779,8 @@
   "dependencies": [],
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1780816923061,
-  "isEntryPoint": false,
-  "path": "/sbin/rabbitmq-server",
+  "isEntryPoint": true,
+  "path": "/bin/rabbitmqadmin",
   "scriptName": "github"
  },
  "redis": {
