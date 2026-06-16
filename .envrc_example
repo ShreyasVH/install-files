@@ -4,7 +4,7 @@ export PATH=
 # jq 1.8.1 path
 export PATH=
 
-# node 26.3.0 path
+# node 25.8.1 path
 export PATH=
 
 export VERSION_MAP_PATH=
