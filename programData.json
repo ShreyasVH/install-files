@@ -719,6 +719,13 @@
   "tagsUrl": "",
   "path": "/bin/pkg-config"
  },
+ "play": {
+  "tagsUrl": "https://github.com/playframework/playframework/tags",
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "path": "",
+  "scriptName": "github"
+ },
  "postgis": {
   "tagsUrl": "https://github.com/postgis/postgis/tags",
   "dependencies": [
