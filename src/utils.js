@@ -40,6 +40,11 @@ const addPort = (title) => {
 
 	let newPort = '';
 	const updatedLines = lines.map((line, index) => {
+	    if (line === title && newPort === '') {
+	        newPort = index + 1;
+	        return title;
+	    }
+
 	    if (index > 1025 && line === '' && newPort === '') {
 	        newPort = index + 1;
 	        return title;
