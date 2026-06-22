@@ -552,11 +552,6 @@
  },
  "mysql": {
   "tagsUrl": "https://github.com/mysql/mysql-server/tags",
-  "dependencies": [
-   "cmake",
-   "openssl",
-   "bison"
-  ],
   "versionRegex": "mysql-\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1782044573674,
   "isEntryPoint": true,
@@ -663,36 +658,6 @@
   "isEntryPoint": true,
   "path": "/bin/php",
   "scriptName": "github"
- },
- "php-memcached": {
-  "tagsUrl": "https://github.com/php-memcached-dev/php-memcached/tags",
-  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1782044609581,
-  "scriptName": "github"
- },
- "php-phalcon": {
-  "tagsUrl": "https://pecl.php.net/package/phalcon",
-  "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1782044613177,
-  "scriptName": "pecl"
- },
- "php-redis": {
-  "tagsUrl": "https://github.com/phpredis/phpredis/tags",
-  "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1782044620666,
-  "scriptName": "github"
- },
- "php-sqlsrv": {
-  "tagsUrl": "https://pecl.php.net/package/sqlsrv",
-  "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1782044624241,
-  "scriptName": "pecl"
- },
- "php-xdebug": {
-  "tagsUrl": "https://pecl.php.net/package/xdebug",
-  "versionRegex": "\\d+\\.\\d+\\.\\d+",
-  "versionsLastUpdatedOn": 1782044626787,
-  "scriptName": "pecl"
  },
  "phpmemadmin": {
   "tagsUrl": "https://github.com/clickalicious/phpmemadmin/tags",
