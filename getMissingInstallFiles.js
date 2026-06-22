@@ -8,18 +8,23 @@ const fileNameParts = process.argv[1].split(path.sep);
 const fileName = fileNameParts[fileNameParts.length - 1];
 
 const getMissingInslallFiles = (programName, version) => {
+	const programDataFilePath = 'programData.json';
+	const programData = JSON.parse(fs.readFileSync(programDataFilePath).toString());
+
 	const allRequiredDependencies = getAllRequiredDependencies(programName, version);
 
 	const missingInstallFiles = {};
 
 	for (const [program, versions] of Object.entries(allRequiredDependencies)) {
 		for (const requiredVersion of versions) {
-			const installFilePath = process.env.HOME + '/workspace/myProjects/install-files/' + process.env.OS_FOLDER + '/' + program + '/' + requiredVersion + '/install.sh';
-			if (!fs.existsSync(installFilePath)) {
-				if (!missingInstallFiles.hasOwnProperty(program)) {
-					missingInstallFiles[program] = [];
+			if (programData.hasOwnProperty(program)) {
+				const installFilePath = process.env.HOME + '/workspace/myProjects/install-files/' + process.env.OS_FOLDER + '/' + program + '/' + requiredVersion + '/install.sh';
+				if (!fs.existsSync(installFilePath)) {
+					if (!missingInstallFiles.hasOwnProperty(program)) {
+						missingInstallFiles[program] = [];
+					}
+					missingInstallFiles[program].push(requiredVersion);
 				}
-				missingInstallFiles[program].push(requiredVersion);
 			}
 		}
 	}

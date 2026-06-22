@@ -4,6 +4,7 @@ for PROGRAM in $(cat latestVersions.json | jq -r 'keys[]'); do
   IS_ENTRY_POINT=$(cat programData.json | jq -r --arg k "$PROGRAM" '.[$k].isEntryPoint // false')
 
   if [[ $IS_ENTRY_POINT = "true" && -f $OS_FOLDER/$PROGRAM/$VERSION/install.sh ]]; then
+    zsh installMissingDependencies.sh ${PROGRAM} ${VERSION}
     zsh $OS_FOLDER/$PROGRAM/$VERSION/install.sh 2
   fi
 done

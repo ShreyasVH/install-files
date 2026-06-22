@@ -1573,15 +1573,15 @@ mongo 8.3.2
 neo4j 5.26.26 http
 neo4j 5.26.26 bolt
 postgres 18.4
-
-
-
-
-
-
-
-
-
+jenkins 2.569
+mongo 8.3.4
+mysql 9.7.1
+neo4j 5.26.27 http
+neo4j 5.26.27 bolt
+rmq 4.3.2 amqp
+rmq 4.3.2 management
+rmq 4.3.2 dist
+rmq 4.3.2 epmd
 
 
 
