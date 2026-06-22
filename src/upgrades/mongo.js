@@ -8,8 +8,6 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	const previousVersion = getPreviousVersion(program);
-
 	if (newVersion !== previousVersion) {
 
 		const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/mongod.conf`;

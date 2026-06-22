@@ -1,5 +1,5 @@
 node src/upgrades/apache.js $(jq -r '.apache' latestVersions.json)
-node src/upgrades/base.js dotnet-core $(jq -r '.dotnet-core' latestVersions.json)
+node src/upgrades/base.js dotnet-core $(jq -r '."dotnet-core"' latestVersions.json)
 node src/upgrades/base.js elixir $(jq -r '.elixir' latestVersions.json)
 node src/upgrades/base.js erlang $(jq -r '.erlang' latestVersions.json)
 node src/upgrades/jenkins.js $(jq -r '.jenkins' latestVersions.json)
