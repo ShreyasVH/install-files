@@ -8,31 +8,36 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/jenkins.conf`;
-	const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
-	const newConfigFilePath = `${newConfigFolder}/jenkins.conf`;
+	const previousVersion = getPreviousVersion(program);
 
-	// console.log(previousConfigFilePath);
-	// console.log(newConfigFilePath);
+	if (newVersion !== previousVersion) {
 
-	const newPort = addPort(`jenkins ${newVersion}`);
-	// console.log(newPort);
+		const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/jenkins.conf`;
+		const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
+		const newConfigFilePath = `${newConfigFolder}/jenkins.conf`;
 
-	fs.mkdirSync(newConfigFolder);
-	fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
+		// console.log(previousConfigFilePath);
+		// console.log(newConfigFilePath);
 
-	let content = fs.readFileSync(newConfigFilePath, 'utf8');
+		const newPort = addPort(`jenkins ${newVersion}`);
+		// console.log(newPort);
 
-	content = content.replace(/^port=.*$/m, `port=${newPort}`);
+		fs.mkdirSync(newConfigFolder);
+		fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
 
-	fs.writeFileSync(newConfigFilePath, content);
+		let content = fs.readFileSync(newConfigFilePath, 'utf8');
 
-	await copyInstallFile(program, newVersion);
+		content = content.replace(/^port=.*$/m, `port=${newPort}`);
 
-	const previousFolder = `${process.env.OS_FOLDER}/${program}/${previousVersion}`;
-	const newFolder = `${process.env.OS_FOLDER}/${program}/${newVersion}`
-	fs.copyFileSync(`${previousFolder}/createUser.groovy`, `${newFolder}/createUser.groovy`);
-	fs.copyFileSync(`${previousFolder}/createCredentials.groovy`, `${newFolder}/createCredentials.groovy`);
-	fs.copyFileSync(`${previousFolder}/fetchUpdateCenterData.groovy`, `${newFolder}/fetchUpdateCenterData.groovy`);
-	fs.copyFileSync(`${previousFolder}/createMultibranchPipeline.groovy`, `${newFolder}/createMultibranchPipeline.groovy`);
+		fs.writeFileSync(newConfigFilePath, content);
+
+		await copyInstallFile(program, newVersion);
+
+		const previousFolder = `${process.env.OS_FOLDER}/${program}/${previousVersion}`;
+		const newFolder = `${process.env.OS_FOLDER}/${program}/${newVersion}`
+		fs.copyFileSync(`${previousFolder}/createUser.groovy`, `${newFolder}/createUser.groovy`);
+		fs.copyFileSync(`${previousFolder}/createCredentials.groovy`, `${newFolder}/createCredentials.groovy`);
+		fs.copyFileSync(`${previousFolder}/fetchUpdateCenterData.groovy`, `${newFolder}/fetchUpdateCenterData.groovy`);
+		fs.copyFileSync(`${previousFolder}/createMultibranchPipeline.groovy`, `${newFolder}/createMultibranchPipeline.groovy`);
+	}
 })();

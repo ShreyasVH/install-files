@@ -8,22 +8,27 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/my.cnf`;
-	const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
-	const newConfigFilePath = `${newConfigFolder}/my.cnf`;
+	const previousVersion = getPreviousVersion(program);
 
-	// console.log(previousConfigFilePath);
-	// console.log(newConfigFilePath);
+	if (newVersion !== previousVersion) {
 
-	fs.mkdirSync(newConfigFolder);
-	fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
+		const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/my.cnf`;
+		const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
+		const newConfigFilePath = `${newConfigFolder}/my.cnf`;
 
-	const newPort = addPort(`mysql ${newVersion}`);
+		// console.log(previousConfigFilePath);
+		// console.log(newConfigFilePath);
 
-	let content = fs.readFileSync(newConfigFilePath, 'utf8');
-	content = content.replaceAll(`${previousVersion.replaceAll('.', '_')}`, `${newVersion.replaceAll('.', '_')}`);
-	content = content.replace(/^port=.*$/m, `port=${newPort}`);
-	fs.writeFileSync(newConfigFilePath, content);
+		fs.mkdirSync(newConfigFolder);
+		fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
 
-	await copyInstallFile(program, newVersion);
+		const newPort = addPort(`mysql ${newVersion}`);
+
+		let content = fs.readFileSync(newConfigFilePath, 'utf8');
+		content = content.replaceAll(`${previousVersion.replaceAll('.', '_')}`, `${newVersion.replaceAll('.', '_')}`);
+		content = content.replace(/^port=.*$/m, `port=${newPort}`);
+		fs.writeFileSync(newConfigFilePath, content);
+
+		await copyInstallFile(program, newVersion);
+	}
 })();

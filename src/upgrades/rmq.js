@@ -8,34 +8,39 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	const previousConfigFilePath1 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/rabbitmq.conf`;
-	const previousConfigFilePath2 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/rabbitmq-env.conf`;
-	const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
-	const newConfigFilePath1 = `${newConfigFolder}/rabbitmq.conf`;
-	const newConfigFilePath2 = `${newConfigFolder}/rabbitmq-env.conf`;
+	const previousVersion = getPreviousVersion(program);
 
-	// console.log(previousConfigFilePath);
-	// console.log(newConfigFilePath);
+	if (newVersion !== previousVersion) {
 
-	fs.mkdirSync(newConfigFolder);
-	fs.copyFileSync(previousConfigFilePath1, newConfigFilePath1);
-	fs.copyFileSync(previousConfigFilePath2, newConfigFilePath2);
+		const previousConfigFilePath1 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/rabbitmq.conf`;
+		const previousConfigFilePath2 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/rabbitmq-env.conf`;
+		const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
+		const newConfigFilePath1 = `${newConfigFolder}/rabbitmq.conf`;
+		const newConfigFilePath2 = `${newConfigFolder}/rabbitmq-env.conf`;
 
-	const newAmqpPort = addPort(`rmq ${newVersion} amqp`);
-	const newManagementPort = addPort(`rmq ${newVersion} management`);
-	const newDistPort = addPort(`rmq ${newVersion} dist`);
-	const newEpmdPort = addPort(`rmq ${newVersion} epmd`);
+		// console.log(previousConfigFilePath);
+		// console.log(newConfigFilePath);
 
-	let content = fs.readFileSync(newConfigFilePath1, 'utf8');
-	content = content.replace(/^listeners.tcp.default = .*$/m, `listeners.tcp.default = ${newAmqpPort}`);
-	content = content.replace(/^management.tcp.port = .*$/m, `management.tcp.port = ${newManagementPort}`);
-	content = content.replace(/^listeners.tcp.dist = .*$/m, `listeners.tcp.dist = ${newDistPort}`);
-	fs.writeFileSync(newConfigFilePath1, content);
+		fs.mkdirSync(newConfigFolder);
+		fs.copyFileSync(previousConfigFilePath1, newConfigFilePath1);
+		fs.copyFileSync(previousConfigFilePath2, newConfigFilePath2);
 
-	content = fs.readFileSync(newConfigFilePath2, 'utf8');
-	content = content.replace(/^RABBITMQ_DIST_PORT=.*$/m, `RABBITMQ_DIST_PORT=${newDistPort}`);
-	content = content.replaceAll(`${previousVersion.replaceAll('.', '')}`, `${newVersion.replaceAll('.', '')}`);
-	fs.writeFileSync(newConfigFilePath2, content);
+		const newAmqpPort = addPort(`rmq ${newVersion} amqp`);
+		const newManagementPort = addPort(`rmq ${newVersion} management`);
+		const newDistPort = addPort(`rmq ${newVersion} dist`);
+		const newEpmdPort = addPort(`rmq ${newVersion} epmd`);
 
-	await copyInstallFile(program, newVersion);
+		let content = fs.readFileSync(newConfigFilePath1, 'utf8');
+		content = content.replace(/^listeners.tcp.default = .*$/m, `listeners.tcp.default = ${newAmqpPort}`);
+		content = content.replace(/^management.tcp.port = .*$/m, `management.tcp.port = ${newManagementPort}`);
+		content = content.replace(/^listeners.tcp.dist = .*$/m, `listeners.tcp.dist = ${newDistPort}`);
+		fs.writeFileSync(newConfigFilePath1, content);
+
+		content = fs.readFileSync(newConfigFilePath2, 'utf8');
+		content = content.replace(/^RABBITMQ_DIST_PORT=.*$/m, `RABBITMQ_DIST_PORT=${newDistPort}`);
+		content = content.replaceAll(`${previousVersion.replaceAll('.', '')}`, `${newVersion.replaceAll('.', '')}`);
+		fs.writeFileSync(newConfigFilePath2, content);
+
+		await copyInstallFile(program, newVersion);
+	}
 })();

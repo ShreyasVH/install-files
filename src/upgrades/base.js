@@ -64,6 +64,10 @@ if (fileName === scriptName) {
 		const program = process.argv[2];
 		const newVersion = process.argv[3];
 
-		copyInstallFile(program, newVersion);
+		const previousVersion = getPreviousVersion(program);
+
+		if (newVersion !== previousVersion) {
+			copyInstallFile(program, newVersion);
+		}
 	})();
 }

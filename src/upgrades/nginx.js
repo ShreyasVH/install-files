@@ -8,15 +8,20 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/nginx.conf`;
-	const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
-	const newConfigFilePath = `${newConfigFolder}/nginx.conf`;
+	const previousVersion = getPreviousVersion(program);
 
-	// console.log(previousConfigFilePath);
-	// console.log(newConfigFilePath);
+	if (newVersion !== previousVersion) {
 
-	fs.mkdirSync(newConfigFolder);
-	fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
+		const previousConfigFilePath = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/nginx.conf`;
+		const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;
+		const newConfigFilePath = `${newConfigFolder}/nginx.conf`;
 
-	await copyInstallFile(program, newVersion);
+		// console.log(previousConfigFilePath);
+		// console.log(newConfigFilePath);
+
+		fs.mkdirSync(newConfigFolder);
+		fs.copyFileSync(previousConfigFilePath, newConfigFilePath);
+
+		await copyInstallFile(program, newVersion);
+	}
 })();
