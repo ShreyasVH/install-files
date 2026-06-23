@@ -20,7 +20,7 @@ cd $INSTALL_FILES_DIR
 JAVA_FOLDER_NAME=java
 JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
 
-SCALA_VERSION=$(cat "${STATIC_VERSION_MAP_PATH}" | jq -r --arg folder "${FOLDER_NAME}" --arg version "${VERSION}" '.[$folder][$version].scala')
+SCALA_VERSION=$(cat "${STATIC_VERSION_MAP_PATH}" | jq -r --arg folder "${FOLDER_NAME}" --arg version "${VERSION}" '.[$folder][$version].scalaVersion')
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/server.properties ]; then
 	printf "server.properties not found\n"
