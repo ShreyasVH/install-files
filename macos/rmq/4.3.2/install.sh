@@ -19,11 +19,9 @@ cd $INSTALL_FILES_DIR
 
 ERLANG_FOLDER_NAME=erlang
 ERLANG_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ERLANG_FOLDER_NAME" '.[$folder][$version][$name]')
-echo $ERLANG_VERSION
 
 ELIXIR_FOLDER_NAME=elixir
 ELIXIR_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ELIXIR_FOLDER_NAME" '.[$folder][$version][$name]')
-echo $ELIXIR_VERSION
 
 MAKE_FOLDER_NAME=make
 MAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAKE_FOLDER_NAME" '.[$folder][$version][$name]')

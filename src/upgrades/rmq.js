@@ -16,9 +16,6 @@ const fs = require('fs');
 		const newConfigFilePath1 = `${newConfigFolder}/rabbitmq.conf`;
 		const newConfigFilePath2 = `${newConfigFolder}/rabbitmq-env.conf`;
 
-		// console.log(previousConfigFilePath);
-		// console.log(newConfigFilePath);
-
 		fs.mkdirSync(newConfigFolder);
 		fs.copyFileSync(previousConfigFilePath1, newConfigFilePath1);
 		fs.copyFileSync(previousConfigFilePath2, newConfigFilePath2);

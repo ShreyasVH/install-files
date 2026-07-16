@@ -1582,16 +1582,16 @@ rmq 4.3.2 amqp
 rmq 4.3.2 management
 rmq 4.3.2 dist
 rmq 4.3.2 epmd
-
-
-
-
-
-
-
-
-
-
+elasticsearch 9.4.3 http
+elasticsearch 9.4.3 tcp
+kibana 9.4.3
+logstash 9.4.3 monitoring port
+kafka 4.3.1
+kafka 4.3.1 controller
+memcached 1.6.45
+jenkins 2.572
+neo4j 5.26.28 http
+neo4j 5.26.28 bolt
 
 
 
