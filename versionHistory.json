@@ -14191,6 +14191,10 @@
  ],
  "libtool": [
   {
+   "version": "2.6.2",
+   "releaseDateString": "2026-07-16 17:22:36 UTC"
+  },
+  {
    "version": "2.6.1",
    "releaseDateString": "2026-06-04 18:51:27 UTC"
   },
@@ -21015,6 +21019,14 @@
  ],
  "nginx": [
   {
+   "version": "1.31.3",
+   "releaseDateString": "2026-07-15T16:14:24Z"
+  },
+  {
+   "version": "1.30.4",
+   "releaseDateString": "2026-07-15T17:23:13Z"
+  },
+  {
    "version": "1.31.2",
    "releaseDateString": "2026-06-17T14:46:44Z"
   },
@@ -27258,6 +27270,10 @@
   }
  ],
  "perl": [
+  {
+   "version": "5.44.0",
+   "releaseDateString": "2026-07-15T11:51:01Z"
+  },
   {
    "version": "5.42.2",
    "releaseDateString": "2026-03-29T10:54:25Z"
@@ -36619,6 +36635,10 @@
  ],
  "ruby": [
   {
+   "version": "3.3.12",
+   "releaseDateString": "2026-07-16 04:03:48 UTC"
+  },
+  {
    "version": "3.4.10",
    "releaseDateString": "2026-06-30T10:54:35Z"
   },
@@ -37292,6 +37312,18 @@
   }
  ],
  "sbt": [
+  {
+   "version": "2.0.3",
+   "releaseDateString": "2026-07-16 23:01:31 UTC"
+  },
+  {
+   "version": "1.12.14",
+   "releaseDateString": "2026-07-16 22:20:30 UTC"
+  },
+  {
+   "version": "2.0.2",
+   "releaseDateString": "2026-07-13 03:55:24 UTC"
+  },
   {
    "version": "2.0.1",
    "releaseDateString": "2026-06-29 03:30:21 UTC"
@@ -40925,6 +40957,14 @@
  ],
  "adminer": [
   {
+   "version": "5.5.0",
+   "releaseDateString": "2026-07-17T13:02:10Z"
+  },
+  {
+   "version": "5.4.4",
+   "releaseDateString": "2026-07-11T18:35:27Z"
+  },
+  {
    "version": "5.4.3",
    "releaseDateString": "2026-07-09T11:13:43Z"
   },
@@ -44262,6 +44302,10 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "2.573",
+   "releaseDateString": "2026-07-14T06:08:12Z"
+  },
   {
    "version": "2.568.1",
    "releaseDateString": "2026-07-09T15:35:01Z"
