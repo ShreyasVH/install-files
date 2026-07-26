@@ -2689,6 +2689,10 @@
  ],
  "mongo": [
   {
+   "version": "r8.3.7",
+   "releaseDateString": "2026-07-24T00:06:56Z"
+  },
+  {
    "version": "r9.0.0-alpha1",
    "releaseDateString": "2026-07-08T02:29:12Z"
   },
@@ -27067,6 +27071,18 @@
  ],
  "perl": [
   {
+   "version": "v5.42.3-RC1",
+   "releaseDateString": "2026-07-22T19:11:44Z"
+  },
+  {
+   "version": "v5.40.5-RC1",
+   "releaseDateString": "2026-07-22T19:10:59Z"
+  },
+  {
+   "version": "v5.45.1",
+   "releaseDateString": "2026-07-21T19:56:47Z"
+  },
+  {
    "version": "v5.45.0",
    "releaseDateString": "2026-07-15T22:04:35Z"
   },
@@ -37041,6 +37057,10 @@
  ],
  "postgis": [
   {
+   "version": "3.7.0beta1",
+   "releaseDateString": "2026-07-21T00:56:20Z"
+  },
+  {
    "version": "3.7.0alpha1",
    "releaseDateString": "2026-07-05T08:20:11Z"
   },
@@ -43925,6 +43945,42 @@
  ],
  "redis": [
   {
+   "version": "8.8.1",
+   "releaseDateString": "2026-07-23T19:15:34Z"
+  },
+  {
+   "version": "8.6.5",
+   "releaseDateString": "2026-07-23T19:07:54Z"
+  },
+  {
+   "version": "8.4.5",
+   "releaseDateString": "2026-07-23T19:04:47Z"
+  },
+  {
+   "version": "8.2.8",
+   "releaseDateString": "2026-07-23T18:59:18Z"
+  },
+  {
+   "version": "7.4.10",
+   "releaseDateString": "2026-07-23T17:44:59Z"
+  },
+  {
+   "version": "7.2.15",
+   "releaseDateString": "2026-07-23T17:45:23Z"
+  },
+  {
+   "version": "6.2.23",
+   "releaseDateString": "2026-07-23T17:44:37Z"
+  },
+  {
+   "version": "8.10-rc2",
+   "releaseDateString": "2026-07-20T18:19:41Z"
+  },
+  {
+   "version": "8.10-rc1",
+   "releaseDateString": "2026-07-20T14:54:47Z"
+  },
+  {
    "version": "8.10-m04-int",
    "releaseDateString": "2026-07-16 20:16:20 UTC"
   },
@@ -45486,6 +45542,18 @@
   }
  ],
  "rmq": [
+  {
+   "version": "v4.3.4",
+   "releaseDateString": "2026-07-23T13:33:21Z"
+  },
+  {
+   "version": "v4.2.9",
+   "releaseDateString": "2026-07-19 14:40:36 UTC"
+  },
+  {
+   "version": "v4.3.3",
+   "releaseDateString": "2026-07-15 18:07:49 UTC"
+  },
   {
    "version": "v4.2.8",
    "releaseDateString": "2026-06-14 03:01:07 UTC"
@@ -55935,6 +56003,10 @@
  ],
  "scala": [
   {
+   "version": "3.9.0-RC4",
+   "releaseDateString": "2026-07-22 20:30:58 UTC"
+  },
+  {
    "version": "3.9.0-RC3",
    "releaseDateString": "2026-07-11 16:55:45 UTC"
   },
@@ -56856,6 +56928,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "version-3.53.4",
+   "releaseDateString": "2026-07-24T19:02:57Z"
+  },
   {
    "version": "version-3.53.3",
    "releaseDateString": "2026-06-26T20:14:12Z"
@@ -65653,6 +65729,26 @@
  ],
  "cockroach": [
   {
+   "version": "v24.1.32",
+   "releaseDateString": "2026-07-22 13:19:56 UTC"
+  },
+  {
+   "version": "v26.2.4",
+   "releaseDateString": "2026-07-22 13:20:44 UTC"
+  },
+  {
+   "version": "v26.1.7",
+   "releaseDateString": "2026-07-22 13:20:37 UTC"
+  },
+  {
+   "version": "v25.4.13",
+   "releaseDateString": "2026-07-22 13:20:26 UTC"
+  },
+  {
+   "version": "v25.2.21",
+   "releaseDateString": "2026-07-22 13:20:14 UTC"
+  },
+  {
    "version": "v24.3.34",
    "releaseDateString": "2026-07-03 20:41:17 UTC"
   },
@@ -71518,6 +71614,18 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "v9.4.4",
+   "releaseDateString": "2026-07-15 15:15:20 UTC"
+  },
+  {
+   "version": "v9.3.8",
+   "releaseDateString": "2026-07-15 11:03:05 UTC"
+  },
+  {
+   "version": "v8.19.19",
+   "releaseDateString": "2026-07-15 13:09:56 UTC"
+  },
   {
    "version": "v8.19.18",
    "releaseDateString": "2026-06-26 07:55:26 UTC"
@@ -79429,6 +79537,26 @@
  ],
  "kibana": [
   {
+   "version": "deploy@1784717518",
+   "releaseDateString": "2026-07-22T10:52:02Z"
+  },
+  {
+   "version": "deploy@1784527804",
+   "releaseDateString": "2026-07-20T06:10:09Z"
+  },
+  {
+   "version": "v9.4.4",
+   "releaseDateString": "2026-07-15 15:30:27 UTC"
+  },
+  {
+   "version": "v9.3.8",
+   "releaseDateString": "2026-07-15 20:09:47 UTC"
+  },
+  {
+   "version": "v8.19.19",
+   "releaseDateString": "2026-07-15 16:20:43 UTC"
+  },
+  {
    "version": "deploy@1784101249",
    "releaseDateString": "2026-07-15T07:40:54Z"
   },
@@ -83686,6 +83814,762 @@
   }
  ],
  "kotlin": [
+  {
+   "version": "build-2.5.0-dev-1497",
+   "releaseDateString": "2026-07-20T10:42:06Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1493",
+   "releaseDateString": "2026-07-20T11:53:25Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1490",
+   "releaseDateString": "2026-07-20T10:19:40Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1489",
+   "releaseDateString": "2026-07-20T10:16:02Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1477",
+   "releaseDateString": "2026-07-20T09:30:41Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1473",
+   "releaseDateString": "2026-07-20T09:03:20Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1470",
+   "releaseDateString": "2026-07-20T08:59:56Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-125",
+   "releaseDateString": "2026-07-20T19:18:49Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-122",
+   "releaseDateString": "2026-07-20T19:15:52Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1553",
+   "releaseDateString": "2026-07-20T16:06:32Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1548",
+   "releaseDateString": "2026-07-20T15:42:09Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1544",
+   "releaseDateString": "2026-07-20T15:32:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1540",
+   "releaseDateString": "2026-07-20T15:12:39Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1539",
+   "releaseDateString": "2026-07-20T15:15:03Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1531",
+   "releaseDateString": "2026-07-20T14:31:55Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1529",
+   "releaseDateString": "2026-07-20T14:07:19Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1525",
+   "releaseDateString": "2026-07-20T13:59:21Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1504",
+   "releaseDateString": "2026-07-20T11:28:03Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1500",
+   "releaseDateString": "2026-07-20T11:00:31Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1586",
+   "releaseDateString": "2026-07-21T07:22:44Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1584",
+   "releaseDateString": "2026-07-21T06:56:24Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1581",
+   "releaseDateString": "2026-07-21T01:07:53Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-127",
+   "releaseDateString": "2026-07-21T07:16:35Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-126",
+   "releaseDateString": "2026-07-21T01:05:22Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1564",
+   "releaseDateString": "2026-07-20T17:57:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1563",
+   "releaseDateString": "2026-07-20T17:29:33Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1560",
+   "releaseDateString": "2026-07-20T17:13:22Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1557",
+   "releaseDateString": "2026-07-20T16:50:56Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1556",
+   "releaseDateString": "2026-07-20T16:49:02Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1643",
+   "releaseDateString": "2026-07-21T11:44:48Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1640",
+   "releaseDateString": "2026-07-21T11:08:07Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1637",
+   "releaseDateString": "2026-07-21T10:58:23Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1625",
+   "releaseDateString": "2026-07-21T10:17:09Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1622",
+   "releaseDateString": "2026-07-21T09:50:00Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1615",
+   "releaseDateString": "2026-07-21T09:27:07Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1613",
+   "releaseDateString": "2026-07-21T09:24:14Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1611",
+   "releaseDateString": "2026-07-21T09:15:32Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1599",
+   "releaseDateString": "2026-07-21T08:34:24Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1598",
+   "releaseDateString": "2026-07-21T09:02:35Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1704",
+   "releaseDateString": "2026-07-21T14:50:46Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1699",
+   "releaseDateString": "2026-07-21T14:32:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1689",
+   "releaseDateString": "2026-07-21T13:59:43Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1686",
+   "releaseDateString": "2026-07-21T13:52:46Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1685",
+   "releaseDateString": "2026-07-21T13:49:23Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1680",
+   "releaseDateString": "2026-07-21T13:31:14Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1678",
+   "releaseDateString": "2026-07-21T13:24:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1676",
+   "releaseDateString": "2026-07-21T13:15:59Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1657",
+   "releaseDateString": "2026-07-21T12:37:58Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1656",
+   "releaseDateString": "2026-07-21T12:45:44Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1745",
+   "releaseDateString": "2026-07-21T19:06:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1744",
+   "releaseDateString": "2026-07-21T18:55:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1742",
+   "releaseDateString": "2026-07-21T18:29:02Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1738",
+   "releaseDateString": "2026-07-21T18:06:47Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1737",
+   "releaseDateString": "2026-07-21T17:40:28Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1730",
+   "releaseDateString": "2026-07-21T16:50:30Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1726",
+   "releaseDateString": "2026-07-21T16:21:50Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1716",
+   "releaseDateString": "2026-07-21T15:56:06Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1712",
+   "releaseDateString": "2026-07-21T15:44:23Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1709",
+   "releaseDateString": "2026-07-21T15:22:19Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1759",
+   "releaseDateString": "2026-07-22T05:19:45Z"
+  },
+  {
+   "version": "build-2.4.20-RC-132",
+   "releaseDateString": "2026-07-22T14:46:33Z"
+  },
+  {
+   "version": "build-2.4.20-RC-131",
+   "releaseDateString": "2026-07-22T14:37:37Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-release-128",
+   "releaseDateString": "2026-07-22T08:57:15Z"
+  },
+  {
+   "version": "build-2.4.20-Beta2-129",
+   "releaseDateString": "2026-07-22T02:01:05Z"
+  },
+  {
+   "version": "v2.4.20-Beta2",
+   "releaseDateString": "2026-07-21T07:11:27Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1756",
+   "releaseDateString": "2026-07-21T23:37:43Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1755",
+   "releaseDateString": "2026-07-21T23:10:00Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1749",
+   "releaseDateString": "2026-07-21T19:37:54Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1748",
+   "releaseDateString": "2026-07-21T20:02:27Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1821",
+   "releaseDateString": "2026-07-22T09:59:50Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1809",
+   "releaseDateString": "2026-07-22T09:20:00Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1804",
+   "releaseDateString": "2026-07-22T08:55:08Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1800",
+   "releaseDateString": "2026-07-22T08:44:25Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1796",
+   "releaseDateString": "2026-07-22T08:35:26Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1793",
+   "releaseDateString": "2026-07-22T08:25:06Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1790",
+   "releaseDateString": "2026-07-22T08:14:51Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1789",
+   "releaseDateString": "2026-07-22T08:14:50Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1785",
+   "releaseDateString": "2026-07-22T07:58:14Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1760",
+   "releaseDateString": "2026-07-22T02:06:42Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1880",
+   "releaseDateString": "2026-07-22T13:18:21Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1874",
+   "releaseDateString": "2026-07-22T13:02:48Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1866",
+   "releaseDateString": "2026-07-22T12:16:57Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1860",
+   "releaseDateString": "2026-07-22T11:49:06Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1853",
+   "releaseDateString": "2026-07-22T11:36:49Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1852",
+   "releaseDateString": "2026-07-22T11:33:46Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1849",
+   "releaseDateString": "2026-07-22T11:21:01Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1846",
+   "releaseDateString": "2026-07-22T11:10:42Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1841",
+   "releaseDateString": "2026-07-22T10:46:19Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1828",
+   "releaseDateString": "2026-07-22T10:13:59Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1937",
+   "releaseDateString": "2026-07-22T16:52:14Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1936",
+   "releaseDateString": "2026-07-22T16:47:16Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1931",
+   "releaseDateString": "2026-07-22T16:25:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1923",
+   "releaseDateString": "2026-07-22T16:07:07Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1913",
+   "releaseDateString": "2026-07-22T15:15:37Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1907",
+   "releaseDateString": "2026-07-22T15:15:17Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1891",
+   "releaseDateString": "2026-07-22T13:54:32Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1890",
+   "releaseDateString": "2026-07-22T13:47:24Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1889",
+   "releaseDateString": "2026-07-22T14:17:40Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1886",
+   "releaseDateString": "2026-07-22T13:42:35Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1985",
+   "releaseDateString": "2026-07-23T08:12:13Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1977",
+   "releaseDateString": "2026-07-23T07:19:00Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1974",
+   "releaseDateString": "2026-07-23T06:55:35Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1962",
+   "releaseDateString": "2026-07-23T01:54:16Z"
+  },
+  {
+   "version": "build-2.4.20-RC-138",
+   "releaseDateString": "2026-07-23T13:36:37Z"
+  },
+  {
+   "version": "build-2.4.20-RC-135",
+   "releaseDateString": "2026-07-23T01:53:58Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1949",
+   "releaseDateString": "2026-07-22T17:46:24Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1948",
+   "releaseDateString": "2026-07-22T18:12:32Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1941",
+   "releaseDateString": "2026-07-22T17:18:11Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1939",
+   "releaseDateString": "2026-07-22T17:03:02Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2041",
+   "releaseDateString": "2026-07-23T11:29:30Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2036",
+   "releaseDateString": "2026-07-23T11:15:18Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2030",
+   "releaseDateString": "2026-07-23T12:22:13Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2024",
+   "releaseDateString": "2026-07-23T10:34:10Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2016",
+   "releaseDateString": "2026-07-23T10:08:31Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2015",
+   "releaseDateString": "2026-07-23T10:27:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1998",
+   "releaseDateString": "2026-07-23T08:52:10Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1996",
+   "releaseDateString": "2026-07-23T09:19:10Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1991",
+   "releaseDateString": "2026-07-23T08:42:21Z"
+  },
+  {
+   "version": "build-2.5.0-dev-1986",
+   "releaseDateString": "2026-07-23T08:26:55Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2075",
+   "releaseDateString": "2026-07-23T12:59:36Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2073",
+   "releaseDateString": "2026-07-23T12:53:01Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2072",
+   "releaseDateString": "2026-07-23T12:51:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2067",
+   "releaseDateString": "2026-07-23T12:42:21Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2059",
+   "releaseDateString": "2026-07-23T12:28:13Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2057",
+   "releaseDateString": "2026-07-23T12:31:19Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2055",
+   "releaseDateString": "2026-07-23T12:18:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2050",
+   "releaseDateString": "2026-07-23T12:12:23Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2047",
+   "releaseDateString": "2026-07-23T11:46:13Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2042",
+   "releaseDateString": "2026-07-23T11:31:01Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2153",
+   "releaseDateString": "2026-07-23T19:57:51Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2131",
+   "releaseDateString": "2026-07-23T17:42:18Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2130",
+   "releaseDateString": "2026-07-23T17:42:17Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2109",
+   "releaseDateString": "2026-07-23T15:27:31Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2102",
+   "releaseDateString": "2026-07-23T15:21:09Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2100",
+   "releaseDateString": "2026-07-23T14:44:15Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2097",
+   "releaseDateString": "2026-07-23T14:29:05Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2088",
+   "releaseDateString": "2026-07-23T14:03:02Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2083",
+   "releaseDateString": "2026-07-23T13:44:21Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2077",
+   "releaseDateString": "2026-07-23T13:25:01Z"
+  },
+  {
+   "version": "build-2.4.20-RC-145",
+   "releaseDateString": "2026-07-24T12:10:55Z"
+  },
+  {
+   "version": "build-2.4.20-RC-140",
+   "releaseDateString": "2026-07-24T01:48:12Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2173",
+   "releaseDateString": "2026-07-23T22:42:12Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2169",
+   "releaseDateString": "2026-07-23T22:14:12Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2168",
+   "releaseDateString": "2026-07-23T22:03:48Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2167",
+   "releaseDateString": "2026-07-23T21:46:29Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2162",
+   "releaseDateString": "2026-07-23T20:54:51Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2159",
+   "releaseDateString": "2026-07-23T20:28:27Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2156",
+   "releaseDateString": "2026-07-23T20:21:05Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2155",
+   "releaseDateString": "2026-07-23T20:05:06Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2222",
+   "releaseDateString": "2026-07-24T10:51:34Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2217",
+   "releaseDateString": "2026-07-24T10:27:26Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2213",
+   "releaseDateString": "2026-07-24T10:11:49Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2211",
+   "releaseDateString": "2026-07-24T10:06:45Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2205",
+   "releaseDateString": "2026-07-24T09:50:36Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2191",
+   "releaseDateString": "2026-07-24T08:36:54Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2187",
+   "releaseDateString": "2026-07-24T08:09:18Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2178",
+   "releaseDateString": "2026-07-24T01:48:34Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2176",
+   "releaseDateString": "2026-07-24T00:41:58Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2175",
+   "releaseDateString": "2026-07-24T00:15:39Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2278",
+   "releaseDateString": "2026-07-24T16:07:41Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2275",
+   "releaseDateString": "2026-07-24T15:39:47Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2269",
+   "releaseDateString": "2026-07-24T14:18:08Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2267",
+   "releaseDateString": "2026-07-24T13:53:11Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2265",
+   "releaseDateString": "2026-07-24T13:07:26Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2261",
+   "releaseDateString": "2026-07-24T12:27:22Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2259",
+   "releaseDateString": "2026-07-24T12:23:18Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2240",
+   "releaseDateString": "2026-07-24T11:30:29Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2233",
+   "releaseDateString": "2026-07-24T11:18:08Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2227",
+   "releaseDateString": "2026-07-24T11:08:37Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2308",
+   "releaseDateString": "2026-07-24T22:31:48Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2306",
+   "releaseDateString": "2026-07-24T22:05:07Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2305",
+   "releaseDateString": "2026-07-24T21:42:20Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2304",
+   "releaseDateString": "2026-07-24T21:21:32Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2303",
+   "releaseDateString": "2026-07-24T20:53:57Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2302",
+   "releaseDateString": "2026-07-24T20:42:28Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2297",
+   "releaseDateString": "2026-07-24T19:24:14Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2294",
+   "releaseDateString": "2026-07-24T18:57:34Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2293",
+   "releaseDateString": "2026-07-24T18:43:19Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2289",
+   "releaseDateString": "2026-07-24T18:19:38Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2331",
+   "releaseDateString": "2026-07-26T01:05:29Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2327",
+   "releaseDateString": "2026-07-25T16:30:07Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2326",
+   "releaseDateString": "2026-07-25T16:37:36Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2321",
+   "releaseDateString": "2026-07-25T09:04:43Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2320",
+   "releaseDateString": "2026-07-25T08:37:12Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2317",
+   "releaseDateString": "2026-07-25T03:11:40Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2316",
+   "releaseDateString": "2026-07-25T03:38:36Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2315",
+   "releaseDateString": "2026-07-25T03:06:36Z"
+  },
+  {
+   "version": "build-2.5.0-dev-2312",
+   "releaseDateString": "2026-07-25T01:06:38Z"
+  },
+  {
+   "version": "build-2.4.20-RC-147",
+   "releaseDateString": "2026-07-25T01:05:59Z"
+  },
   {
    "version": "build-2.5.0-dev-576",
    "releaseDateString": "2026-07-13T10:49:27Z"
@@ -263883,6 +264767,10 @@
  ],
  "adminer": [
   {
+   "version": "v5.5.1",
+   "releaseDateString": "2026-07-21T17:08:17Z"
+  },
+  {
    "version": "v5.5.0",
    "releaseDateString": "2026-07-17T13:02:10Z"
   },
@@ -269916,6 +270804,14 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "jenkins-2.574",
+   "releaseDateString": "2026-07-21T06:02:06Z"
+  },
+  {
+   "version": "jenkins-2.568.2-rc",
+   "releaseDateString": "2026-07-19 12:15:21 UTC"
+  },
   {
    "version": "jenkins-2.573",
    "releaseDateString": "2026-07-14T06:08:12Z"
@@ -277582,6 +278478,18 @@
   }
  ],
  "logstash": [
+  {
+   "version": "v9.4.4",
+   "releaseDateString": "2026-07-14 19:50:46 UTC"
+  },
+  {
+   "version": "v9.3.8",
+   "releaseDateString": "2026-07-14 19:50:24 UTC"
+  },
+  {
+   "version": "v8.19.19",
+   "releaseDateString": "2026-07-14 19:50:34 UTC"
+  },
   {
    "version": "v9.3.7",
    "releaseDateString": "2026-06-24 17:55:26 UTC"
