@@ -1593,18 +1593,18 @@ jenkins 2.572
 neo4j 5.26.28 http
 neo4j 5.26.28 bolt
 jenkins 2.573
-
-
-
-
-
-
-
-
-
-
-
-
+redis 8.8.1
+sentinel 8.8.1
+elasticsearch 9.4.4 http
+elasticsearch 9.4.4 tcp
+jenkins 2.574
+kibana 9.4.4
+logstash 9.4.4 monitoring port
+mongo 8.3.7
+rmq 4.3.4 amqp
+rmq 4.3.4 management
+rmq 4.3.4 dist
+rmq 4.3.4 epmd
 
 
 
