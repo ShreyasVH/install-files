@@ -2315,6 +2315,26 @@
  ],
  "cockroach": [
   {
+   "version": "24.1.32",
+   "releaseDateString": "2026-07-22 13:19:56 UTC"
+  },
+  {
+   "version": "26.2.4",
+   "releaseDateString": "2026-07-22 13:20:44 UTC"
+  },
+  {
+   "version": "26.1.7",
+   "releaseDateString": "2026-07-22 13:20:37 UTC"
+  },
+  {
+   "version": "25.4.13",
+   "releaseDateString": "2026-07-22 13:20:26 UTC"
+  },
+  {
+   "version": "25.2.21",
+   "releaseDateString": "2026-07-22 13:20:14 UTC"
+  },
+  {
    "version": "24.3.34",
    "releaseDateString": "2026-07-03 20:41:17 UTC"
   },
@@ -5754,6 +5774,18 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "9.4.4",
+   "releaseDateString": "2026-07-15 15:15:20 UTC"
+  },
+  {
+   "version": "9.3.8",
+   "releaseDateString": "2026-07-15 11:03:05 UTC"
+  },
+  {
+   "version": "8.19.19",
+   "releaseDateString": "2026-07-15 13:09:56 UTC"
+  },
   {
    "version": "8.19.18",
    "releaseDateString": "2026-06-26 07:55:26 UTC"
@@ -10877,6 +10909,18 @@
  ],
  "kibana": [
   {
+   "version": "9.4.4",
+   "releaseDateString": "2026-07-15 15:30:27 UTC"
+  },
+  {
+   "version": "9.3.8",
+   "releaseDateString": "2026-07-15 20:09:47 UTC"
+  },
+  {
+   "version": "8.19.19",
+   "releaseDateString": "2026-07-15 16:20:43 UTC"
+  },
+  {
    "version": "8.19.17",
    "releaseDateString": "2026-06-18 09:57:33 UTC"
   },
@@ -14792,6 +14836,10 @@
   }
  ],
  "mongo": [
+  {
+   "version": "8.3.7",
+   "releaseDateString": "2026-07-24T00:06:56Z"
+  },
   {
    "version": "4.4.31",
    "releaseDateString": "2026-06-24T01:11:31Z"
@@ -33237,6 +33285,34 @@
  ],
  "redis": [
   {
+   "version": "8.8.1",
+   "releaseDateString": "2026-07-23T19:15:34Z"
+  },
+  {
+   "version": "8.6.5",
+   "releaseDateString": "2026-07-23T19:07:54Z"
+  },
+  {
+   "version": "8.4.5",
+   "releaseDateString": "2026-07-23T19:04:47Z"
+  },
+  {
+   "version": "8.2.8",
+   "releaseDateString": "2026-07-23T18:59:18Z"
+  },
+  {
+   "version": "7.4.10",
+   "releaseDateString": "2026-07-23T17:44:59Z"
+  },
+  {
+   "version": "7.2.15",
+   "releaseDateString": "2026-07-23T17:45:23Z"
+  },
+  {
+   "version": "6.2.23",
+   "releaseDateString": "2026-07-23T17:44:37Z"
+  },
+  {
    "version": "8.6.4",
    "releaseDateString": "2026-06-04T16:28:02Z"
   },
@@ -34226,6 +34302,18 @@
   }
  ],
  "rmq": [
+  {
+   "version": "4.3.4",
+   "releaseDateString": "2026-07-23T13:33:21Z"
+  },
+  {
+   "version": "4.2.9",
+   "releaseDateString": "2026-07-19 14:40:36 UTC"
+  },
+  {
+   "version": "4.3.3",
+   "releaseDateString": "2026-07-15 18:07:49 UTC"
+  },
   {
    "version": "4.2.8",
    "releaseDateString": "2026-06-14 03:01:07 UTC"
@@ -38185,6 +38273,10 @@
  ],
  "sqlite3": [
   {
+   "version": "3.53.4",
+   "releaseDateString": "2026-07-24T19:02:57Z"
+  },
+  {
    "version": "3.53.3",
    "releaseDateString": "2026-06-26T20:14:12Z"
   },
@@ -40956,6 +41048,10 @@
   }
  ],
  "adminer": [
+  {
+   "version": "5.5.1",
+   "releaseDateString": "2026-07-21T17:08:17Z"
+  },
   {
    "version": "5.5.0",
    "releaseDateString": "2026-07-17T13:02:10Z"
@@ -44302,6 +44398,10 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "2.574",
+   "releaseDateString": "2026-07-21T06:02:06Z"
+  },
   {
    "version": "2.573",
    "releaseDateString": "2026-07-14T06:08:12Z"
@@ -48304,6 +48404,18 @@
   }
  ],
  "logstash": [
+  {
+   "version": "9.4.4",
+   "releaseDateString": "2026-07-14 19:50:46 UTC"
+  },
+  {
+   "version": "9.3.8",
+   "releaseDateString": "2026-07-14 19:50:24 UTC"
+  },
+  {
+   "version": "8.19.19",
+   "releaseDateString": "2026-07-14 19:50:34 UTC"
+  },
   {
    "version": "9.3.7",
    "releaseDateString": "2026-06-24 17:55:26 UTC"

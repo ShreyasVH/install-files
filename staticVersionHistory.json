@@ -23,6 +23,26 @@
  ],
  "java": [
   {
+   "version": "26.0.2",
+   "releaseDateString": "2026-07-21T00:00:00Z"
+  },
+  {
+   "version": "25.0.4",
+   "releaseDateString": "2026-07-21T00:00:00Z"
+  },
+  {
+   "version": "21.0.12",
+   "releaseDateString": "2026-07-21T00:00:00Z"
+  },
+  {
+   "version": "17.0.20",
+   "releaseDateString": "2026-07-21T00:00:00Z"
+  },
+  {
+   "version": "11.0.32",
+   "releaseDateString": "2026-07-21T00:00:00Z"
+  },
+  {
    "version": "26.0.1",
    "releaseDateString": "2026-04-21T00:00:00Z"
   },
