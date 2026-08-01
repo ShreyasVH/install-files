@@ -1605,10 +1605,10 @@ rmq 4.3.4 amqp
 rmq 4.3.4 management
 rmq 4.3.4 dist
 rmq 4.3.4 epmd
-
-
-
-
+jenkins 2.575
+mysql 26.7.0
+redis 8.10.0
+sentinel 8.10.0
 
 
 
