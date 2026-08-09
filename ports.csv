@@ -1609,14 +1609,14 @@ jenkins 2.575
 mysql 26.7.0
 redis 8.10.0
 sentinel 8.10.0
-
-
-
-
-
-
-
-
+elasticsearch 9.5.0 http
+elasticsearch 9.5.0 tcp
+jenkins 2.576
+kibana 9.5.0
+logstash 9.5.0 monitoring port
+neo4j 5.26.29 http
+neo4j 5.26.29 bolt
+akhq 0.28.0
 
 
 
