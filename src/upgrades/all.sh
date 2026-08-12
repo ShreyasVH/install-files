@@ -1,3 +1,4 @@
+node src/upgrades/akhq.js $(jq -r '.akhq' latestVersions.json)
 node src/upgrades/apache.js $(jq -r '.apache' latestVersions.json)
 node src/upgrades/base.js dotnet-core $(jq -r '."dotnet-core"' latestVersions.json)
 node src/upgrades/elasticsearch.js $(jq -r '.elasticsearch' latestVersions.json)
