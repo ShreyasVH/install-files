@@ -534,7 +534,8 @@
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1787550593526,
   "path": "/bin/mongosh",
-  "scriptName": "github"
+  "scriptName": "github",
+  "isEntryPoint": true
  },
  "mpc": {
   "tagsUrl": "",
