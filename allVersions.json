@@ -2255,6 +2255,10 @@
  ],
  "maven": [
   {
+   "version": "archive/backport-12089-to-4.0.x",
+   "releaseDateString": "2026-05-19T10:02:57Z"
+  },
+  {
    "version": "maven-4.0.0-rc-6",
    "releaseDateString": "2026-07-30T15:06:00Z"
   },
@@ -2692,6 +2696,22 @@
   }
  ],
  "mongo": [
+  {
+   "version": "r9.1.0-alpha0",
+   "releaseDateString": "2026-08-11T13:55:47Z"
+  },
+  {
+   "version": "r8.3.8",
+   "releaseDateString": "2026-08-11T20:52:43Z"
+  },
+  {
+   "version": "r8.0.29",
+   "releaseDateString": "2026-08-11T19:15:30Z"
+  },
+  {
+   "version": "r7.0.40",
+   "releaseDateString": "2026-08-11T19:18:24Z"
+  },
   {
    "version": "r8.2.12",
    "releaseDateString": "2026-07-28T17:46:07Z"
@@ -8739,6 +8759,10 @@
  ],
  "mongo-cli-tools": [
   {
+   "version": "100.18.0",
+   "releaseDateString": "2026-08-12T16:43:14Z"
+  },
+  {
    "version": "100.17.0",
    "releaseDateString": "2026-05-08T17:02:30Z"
   },
@@ -10608,6 +10632,82 @@
   }
  ],
  "mongosh": [
+  {
+   "version": "@mongosh/docker-build-scripts@4.0.2",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/cli-repl@2.10.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "@mongosh/build@3.12.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "@mongosh/browser-runtime-core@5.7.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "@mongosh/browser-repl@5.7.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "@mongosh/autocomplete@5.5.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "@mongosh/arg-parser@5.4.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
+  {
+   "version": "v2.10.0",
+   "releaseDateString": "2026-08-12T10:05:49Z"
+  },
+  {
+   "version": "v2.10.0-draft.1",
+   "releaseDateString": "2026-08-12T21:35:43Z"
+  },
+  {
+   "version": "v2.11.0-draft.0",
+   "releaseDateString": "2026-08-21T11:24:54Z"
+  },
+  {
+   "version": "mongosh@2.10.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/testing@2.2.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/shell-evaluator@5.5.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/shell-bson@3.0.8",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/shell-api@5.5.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/service-provider-core@5.2.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/java-shell@4.3.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/i18n@2.24.0",
+   "releaseDateString": "2026-08-13T12:26:04Z"
+  },
+  {
+   "version": "@mongosh/e2e-tests@5.2.0",
+   "releaseDateString": "2026-08-13T12:26:03Z"
+  },
   {
    "version": "v2.10.0-draft.0",
    "releaseDateString": "2026-08-04 15:53:07 UTC"
@@ -20671,6 +20771,10 @@
  ],
  "nginx": [
   {
+   "version": "release-1.31.4",
+   "releaseDateString": "2026-08-19T14:33:33Z"
+  },
+  {
    "version": "release-1.31.3",
    "releaseDateString": "2026-07-15T16:14:24Z"
   },
@@ -27155,6 +27259,10 @@
  ],
  "perl": [
   {
+   "version": "v5.45.2",
+   "releaseDateString": "2026-08-20T23:28:06Z"
+  },
+  {
    "version": "v5.42.3",
    "releaseDateString": "2026-08-02T10:42:50Z"
   },
@@ -29196,6 +29304,18 @@
   }
  ],
  "php": [
+  {
+   "version": "php-8.6.0beta1",
+   "releaseDateString": "2026-08-11 17:47:33 UTC"
+  },
+  {
+   "version": "php-8.5.10RC1",
+   "releaseDateString": "2026-08-11 21:08:35 UTC"
+  },
+  {
+   "version": "php-8.4.25RC1",
+   "releaseDateString": "2026-08-11 18:52:22 UTC"
+  },
   {
    "version": "php-8.4.24",
    "releaseDateString": "2026-07-29 05:51:00 UTC"
@@ -37169,6 +37289,10 @@
  ],
  "postgis": [
   {
+   "version": "3.7.0beta2",
+   "releaseDateString": "2026-08-10T05:02:26Z"
+  },
+  {
    "version": "3.7.0beta1",
    "releaseDateString": "2026-07-21T00:56:20Z"
   },
@@ -38422,6 +38546,30 @@
   }
  ],
  "postgres": [
+  {
+   "version": "REL_18_6",
+   "releaseDateString": "2026-08-11T18:38:31Z"
+  },
+  {
+   "version": "REL_19_BETA3",
+   "releaseDateString": "2026-08-10T20:50:29Z"
+  },
+  {
+   "version": "REL_17_11",
+   "releaseDateString": "2026-08-10T20:54:09Z"
+  },
+  {
+   "version": "REL_16_15",
+   "releaseDateString": "2026-08-10T20:56:00Z"
+  },
+  {
+   "version": "REL_15_19",
+   "releaseDateString": "2026-08-10T20:57:41Z"
+  },
+  {
+   "version": "REL_14_24",
+   "releaseDateString": "2026-08-10T20:59:18Z"
+  },
   {
    "version": "REL_19_BETA2",
    "releaseDateString": "2026-07-13T20:03:24Z"
@@ -41411,6 +41559,18 @@
  ],
  "python": [
   {
+   "version": "v3.12.14",
+   "releaseDateString": "2026-08-12 18:51:59 UTC"
+  },
+  {
+   "version": "v3.11.16",
+   "releaseDateString": "2026-08-12 23:39:38 UTC"
+  },
+  {
+   "version": "v3.10.21",
+   "releaseDateString": "2026-08-12 23:39:34 UTC"
+  },
+  {
    "version": "v3.14.7",
    "releaseDateString": "2026-08-05T10:29:49Z"
   },
@@ -44069,6 +44229,38 @@
  ],
  "redis": [
   {
+   "version": "8.10.1",
+   "releaseDateString": "2026-08-17T16:41:23Z"
+  },
+  {
+   "version": "8.8.2",
+   "releaseDateString": "2026-08-17T16:40:01Z"
+  },
+  {
+   "version": "8.6.6",
+   "releaseDateString": "2026-08-17T16:38:29Z"
+  },
+  {
+   "version": "8.4.6",
+   "releaseDateString": "2026-08-17T16:36:52Z"
+  },
+  {
+   "version": "8.2.9",
+   "releaseDateString": "2026-08-17T16:34:50Z"
+  },
+  {
+   "version": "7.4.11",
+   "releaseDateString": "2026-08-17T13:28:51Z"
+  },
+  {
+   "version": "7.2.16",
+   "releaseDateString": "2026-08-17T12:29:53Z"
+  },
+  {
+   "version": "6.2.24",
+   "releaseDateString": "2026-08-17T09:33:34Z"
+  },
+  {
    "version": "8.10.0",
    "releaseDateString": "2026-07-29T17:14:07Z"
   },
@@ -45670,6 +45862,10 @@
   }
  ],
  "rmq": [
+  {
+   "version": "v4.3.5",
+   "releaseDateString": "2026-08-14 01:28:15 UTC"
+  },
   {
    "version": "v4.3.4",
    "releaseDateString": "2026-07-23T13:33:21Z"
@@ -47944,6 +48140,10 @@
   }
  ],
  "rsyslog": [
+  {
+   "version": "v8.2608.0",
+   "releaseDateString": "2026-08-18 15:56:07 UTC"
+  },
   {
    "version": "v8.2606.0",
    "releaseDateString": "2026-06-25 09:10:40 UTC"
@@ -54765,6 +54965,14 @@
  ],
  "sbt": [
   {
+   "version": "v2.0.7",
+   "releaseDateString": "2026-08-21 02:51:36 UTC"
+  },
+  {
+   "version": "v1.13.0",
+   "releaseDateString": "2026-08-21 01:52:29 UTC"
+  },
+  {
    "version": "v2.0.6",
    "releaseDateString": "2026-08-07 02:45:24 UTC"
   },
@@ -56147,6 +56355,10 @@
  ],
  "scala": [
   {
+   "version": "3.9.0-RC6",
+   "releaseDateString": "2026-08-19 13:23:10 UTC"
+  },
+  {
    "version": "3.9.0-RC5",
    "releaseDateString": "2026-08-07 14:14:32 UTC"
   },
@@ -57076,6 +57288,10 @@
   }
  ],
  "sqlite3": [
+  {
+   "version": "bug-2026-08-12T09_26_04Z",
+   "releaseDateString": "2026-08-12T13:23:52Z"
+  },
   {
    "version": "version-3.53.4",
    "releaseDateString": "2026-07-24T19:02:57Z"
@@ -58827,6 +59043,10 @@
  ],
  "apr-util": [
   {
+   "version": "1.6.5",
+   "releaseDateString": "2026-08-10T11:22:49Z"
+  },
+  {
    "version": "1.6.5-rc1-candidate",
    "releaseDateString": "2026-08-07T14:53:22Z"
   },
@@ -59432,6 +59652,10 @@
   }
  ],
  "curl": [
+  {
+   "version": "rc-8_22_0-2",
+   "releaseDateString": "2026-08-17 14:30:21 UTC"
+  },
   {
    "version": "rc-8_22_0-1",
    "releaseDateString": "2026-08-08 21:07:35 UTC"
@@ -60466,6 +60690,10 @@
   }
  ],
  "libexpat": [
+  {
+   "version": "R_2_8_3",
+   "releaseDateString": "2026-08-10 21:53:43 UTC"
+  },
   {
    "version": "R_2_8_2",
    "releaseDateString": "2026-06-25 14:11:45 UTC"
@@ -63552,6 +63780,10 @@
   }
  ],
  "boost": [
+  {
+   "version": "boost-1.92.0",
+   "releaseDateString": "2026-08-05T17:03:31Z"
+  },
   {
    "version": "boost-1.92.0.beta1",
    "releaseDateString": "2026-07-08T22:49:08Z"
@@ -71807,6 +72039,22 @@
  ],
  "elasticsearch": [
   {
+   "version": "v9.5.2",
+   "releaseDateString": "2026-08-18 08:20:57 UTC"
+  },
+  {
+   "version": "v9.5.1",
+   "releaseDateString": "2026-08-05 19:12:15 UTC"
+  },
+  {
+   "version": "v9.4.5",
+   "releaseDateString": "2026-08-05 19:36:44 UTC"
+  },
+  {
+   "version": "v8.19.20",
+   "releaseDateString": "2026-08-05 21:29:12 UTC"
+  },
+  {
    "version": "v9.5.0",
    "releaseDateString": "2026-07-29 16:56:08 UTC"
   },
@@ -76861,6 +77109,14 @@
  ],
  "geos": [
   {
+   "version": "3.15.0rc1",
+   "releaseDateString": "2026-08-20 16:16:48 UTC"
+  },
+  {
+   "version": "3.15.0beta3",
+   "releaseDateString": "2026-08-12T16:25:31Z"
+  },
+  {
    "version": "3.15.0beta2",
    "releaseDateString": "2026-07-14 17:53:54 UTC"
   },
@@ -77728,6 +77984,30 @@
   }
  ],
  "go": [
+  {
+   "version": "go1.27.0",
+   "releaseDateString": "2026-08-19T16:45:14Z"
+  },
+  {
+   "version": "go1.26.7",
+   "releaseDateString": "2026-08-19T14:43:46Z"
+  },
+  {
+   "version": "go1.25.14",
+   "releaseDateString": "2026-08-19T14:43:56Z"
+  },
+  {
+   "version": "go1.27rc3",
+   "releaseDateString": "2026-08-13T17:38:53Z"
+  },
+  {
+   "version": "go1.26.6",
+   "releaseDateString": "2026-08-13T17:25:07Z"
+  },
+  {
+   "version": "go1.25.13",
+   "releaseDateString": "2026-08-13T17:36:03Z"
+  },
   {
    "version": "go1.27rc2",
    "releaseDateString": "2026-07-07T19:42:34Z"
@@ -79760,6 +80040,46 @@
   }
  ],
  "kibana": [
+  {
+   "version": "deploy-fix@1787155978",
+   "releaseDateString": "2026-08-20 11:37:34 UTC"
+  },
+  {
+   "version": "deploy@1787155978",
+   "releaseDateString": "2026-08-19T16:13:02Z"
+  },
+  {
+   "version": "v9.5.2",
+   "releaseDateString": "2026-08-18 10:53:47 UTC"
+  },
+  {
+   "version": "deploy@1786946994",
+   "releaseDateString": "2026-08-17T06:10:00Z"
+  },
+  {
+   "version": "deploy@1786540559",
+   "releaseDateString": "2026-08-12T13:16:04Z"
+  },
+  {
+   "version": "deploy@1786393678",
+   "releaseDateString": "2026-08-10T20:28:03Z"
+  },
+  {
+   "version": "deploy@1786342180",
+   "releaseDateString": "2026-08-10T06:09:45Z"
+  },
+  {
+   "version": "v9.5.1",
+   "releaseDateString": "2026-08-06 08:22:55 UTC"
+  },
+  {
+   "version": "v9.4.5",
+   "releaseDateString": "2026-08-05 13:53:51 UTC"
+  },
+  {
+   "version": "v8.19.20",
+   "releaseDateString": "2026-08-05 18:07:23 UTC"
+  },
   {
    "version": "deploy-fix@1785737370",
    "releaseDateString": "2026-08-05 19:11:55 UTC"
@@ -266659,6 +266979,10 @@
  ],
  "adminer": [
   {
+   "version": "v6.0.1",
+   "releaseDateString": "2026-08-14T14:58:38Z"
+  },
+  {
    "version": "v6.0.0",
    "releaseDateString": "2026-08-07T14:46:11Z"
   },
@@ -272808,6 +273132,18 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "jenkins-2.578",
+   "releaseDateString": "2026-08-18T10:25:36Z"
+  },
+  {
+   "version": "jenkins-2.568.3-rc",
+   "releaseDateString": "2026-08-18 15:44:59 UTC"
+  },
+  {
+   "version": "jenkins-2.577",
+   "releaseDateString": "2026-08-11T06:10:43Z"
+  },
   {
    "version": "jenkins-2.576",
    "releaseDateString": "2026-08-03T16:48:08Z"
@@ -280495,6 +280831,22 @@
  ],
  "logstash": [
   {
+   "version": "v9.5.2",
+   "releaseDateString": "2026-08-17 18:08:21 UTC"
+  },
+  {
+   "version": "v9.5.1",
+   "releaseDateString": "2026-08-04 14:14:41 UTC"
+  },
+  {
+   "version": "v9.4.5",
+   "releaseDateString": "2026-08-04 17:38:21 UTC"
+  },
+  {
+   "version": "v8.19.20",
+   "releaseDateString": "2026-08-04 17:38:30 UTC"
+  },
+  {
    "version": "v9.5.0",
    "releaseDateString": "2026-07-29 17:32:41 UTC"
   },
@@ -282321,6 +282673,14 @@
  ],
  "rabbitmqadmin": [
   {
+   "version": "v2.34.0",
+   "releaseDateString": "2026-08-20 04:16:50 UTC"
+  },
+  {
+   "version": "v2.33.0",
+   "releaseDateString": "2026-08-18 01:57:29 UTC"
+  },
+  {
    "version": "v2.32.0",
    "releaseDateString": "2026-06-03 02:44:45 UTC"
   },
@@ -282578,6 +282938,10 @@
   }
  ],
  "kafka": [
+  {
+   "version": "4.4.0-rc0",
+   "releaseDateString": "2026-08-21T12:12:47Z"
+  },
   {
    "version": "4.3.1",
    "releaseDateString": "2026-06-23T21:27:59Z"
