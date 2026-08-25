@@ -214,8 +214,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		echo "xdebug.client_host=127.0.0.1" >> lib/php.ini
 		echo "xdebug.client_port=9001" >> lib/php.ini
 		echo "#xdebug.start_with_request=yes" >> lib/php.ini
-		echo "xdebug.log=/tmp/xdebug.log" >> lib/php.ini
-		echo "xdebug.log_level=7" >> lib/php.ini
+		echo "#xdebug.log=/tmp/xdebug.log" >> lib/php.ini
+		echo "#xdebug.log_level=7" >> lib/php.ini
 		echo "curl.cainfo=\"${HOME}/programs/openssl/${OPENSSL_VERSION}/ssl/cert.pem\"" >> lib/php.ini
 		echo "openssl.cafile=\"${HOME}/programs/openssl/${OPENSSL_VERSION}/ssl/cert.pem\"" >> lib/php.ini
 	
