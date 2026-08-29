@@ -50,18 +50,23 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/logstash" ]; then
 
 	touch start.sh
 	echo 'PORT=$(grep '\''api.http.port: '\'' config/logstash.yml | awk '\''{print $2}'\'')' >> start.sh
+	echo 'PID_FILE=logstash.pid' >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if [ ! -e ${PID_FILE} ]; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
 	echo -e "\tlogstash -f config/logstash.conf > logstash.log 2>&1 &" >> start.sh
+	echo -e "\tPID=\$!" >> start.sh
+	echo -e "\techo \${PID} > \${PID_FILE}" >> start.sh
 	echo 'fi' >> start.sh
 
 	touch stop.sh
 	echo 'PORT=$(grep '\''api.http.port: '\'' config/logstash.yml | awk '\''{print $2}'\'')' >> stop.sh
+	echo 'PID_FILE=logstash.pid' >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if [ -e ${PID_FILE} ]; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
-	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo -e '\tkill -9 $(cat ${PID_FILE})' >> stop.sh
+	echo -e '\trm ${PID_FILE}' >> stop.sh
 	echo 'fi' >> stop.sh
 
 	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
