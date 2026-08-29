@@ -46,20 +46,25 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/kibana" ]; then
 
 	touch start.sh
 	echo 'PORT=$(grep '\''server.port: '\'' config/kibana.yml | awk '\''{print $2}'\'')' >> start.sh
+	echo 'PID_FILE=kibana.pid' >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if [ ! -e ${PID_FILE} ]; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
 	echo -e "\tkibana serve > kibana.log 2>&1 &" >> start.sh
+	echo -e "\tPID=\$!" >> start.sh
+	echo -e "\techo \${PID} > \${PID_FILE}" >> start.sh
 	echo 'fi' >> start.sh
 
 	touch stop.sh
 	mv config/kibana.yml ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/kibana.yml.default
 	cp ~/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/kibana.yml config/kibana.yml
 	echo 'PORT=$(grep '\''server.port: '\'' config/kibana.yml | awk '\''{print $2}'\'')' >> stop.sh
+	echo 'PID_FILE=kibana.pid' >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if [ -e ${PID_FILE} ]; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
-	echo -e '\tkill -9 $(lsof -t -i:$PORT)' >> stop.sh
+	echo -e '\tkill -9 $(cat ${PID_FILE})' >> stop.sh
+	echo -e '\trm ${PID_FILE}' >> stop.sh
 	echo 'fi' >> stop.sh
 
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
