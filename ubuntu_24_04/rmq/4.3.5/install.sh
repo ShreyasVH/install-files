@@ -79,8 +79,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	touch start.sh
 	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> start.sh
+	echo "export RABBITMQ_PID_FILE=rmq.pid" >> start.sh
 	echo '' >> start.sh
-	echo 'if ! lsof -i :$PORT > /dev/null; then' >> start.sh
+	echo 'if [ ! -e ${RABBITMQ_PID_FILE} ]; then' >> start.sh
 	echo -e '\techo "Starting"' >> start.sh
 	echo -e "\trabbitmq-server -detached" >> start.sh
 	echo -e '\twhile [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]]; do :; done' >> start.sh
@@ -92,8 +93,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	touch stop.sh
 	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> stop.sh
+	echo "export RABBITMQ_PID_FILE=rmq.pid" >> stop.sh
 	echo '' >> stop.sh
-	echo 'if lsof -i :$PORT > /dev/null; then' >> stop.sh
+	echo 'if [ -e ${RABBITMQ_PID_FILE} ]; then' >> stop.sh
 	echo -e '\techo "Stopping"' >> stop.sh
 	echo -e "\trabbitmqctl stop > stopLog.log 2>&1" >> stop.sh
 	echo 'fi' >> stop.sh
