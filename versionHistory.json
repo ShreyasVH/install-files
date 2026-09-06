@@ -1289,6 +1289,18 @@
  ],
  "cmake": [
   {
+   "version": "4.3.5",
+   "releaseDateString": "2026-09-04 15:43:18 UTC"
+  },
+  {
+   "version": "4.2.8",
+   "releaseDateString": "2026-09-04 14:53:42 UTC"
+  },
+  {
+   "version": "4.4.3",
+   "releaseDateString": "2026-08-25 15:53:20 UTC"
+  },
+  {
    "version": "4.4.2",
    "releaseDateString": "2026-07-31 13:33:06 UTC"
   },
@@ -2322,6 +2334,30 @@
   }
  ],
  "cockroach": [
+  {
+   "version": "25.4.16",
+   "releaseDateString": "2026-09-02 17:32:58 UTC"
+  },
+  {
+   "version": "26.2.6",
+   "releaseDateString": "2026-08-26 21:26:03 UTC"
+  },
+  {
+   "version": "25.4.15",
+   "releaseDateString": "2026-08-26 21:42:20 UTC"
+  },
+  {
+   "version": "25.2.23",
+   "releaseDateString": "2026-08-26 20:55:19 UTC"
+  },
+  {
+   "version": "24.3.36",
+   "releaseDateString": "2026-08-26 22:04:44 UTC"
+  },
+  {
+   "version": "24.1.33",
+   "releaseDateString": "2026-08-26 23:11:57 UTC"
+  },
   {
    "version": "26.2.5",
    "releaseDateString": "2026-07-30 17:09:00 UTC"
@@ -3893,6 +3929,14 @@
  ],
  "composer": [
   {
+   "version": "2.10.3",
+   "releaseDateString": "2026-08-27 11:38:19 UTC"
+  },
+  {
+   "version": "2.2.30",
+   "releaseDateString": "2026-08-27 11:38:19 UTC"
+  },
+  {
    "version": "2.10.2",
    "releaseDateString": "2026-07-01 09:30:09 UTC"
   },
@@ -4710,6 +4754,10 @@
   }
  ],
  "curl": [
+  {
+   "version": "8.22.0",
+   "releaseDateString": "2026-09-02 05:49:24 UTC"
+  },
   {
    "version": "8.21.0",
    "releaseDateString": "2026-06-24 05:56:18 UTC"
@@ -5798,6 +5846,18 @@
   }
  ],
  "elasticsearch": [
+  {
+   "version": "9.5.3",
+   "releaseDateString": "2026-09-01 14:46:52 UTC"
+  },
+  {
+   "version": "9.4.6",
+   "releaseDateString": "2026-08-26 16:00:30 UTC"
+  },
+  {
+   "version": "8.19.21",
+   "releaseDateString": "2026-08-26 20:47:41 UTC"
+  },
   {
    "version": "9.5.2",
    "releaseDateString": "2026-08-18 08:20:57 UTC"
@@ -7681,6 +7741,18 @@
  ],
  "elixir": [
   {
+   "version": "1.20.4",
+   "releaseDateString": "2026-08-28T10:02:55Z"
+  },
+  {
+   "version": "1.19.6",
+   "releaseDateString": "2026-08-28T10:07:13Z"
+  },
+  {
+   "version": "1.18.5",
+   "releaseDateString": "2026-08-28T10:19:42Z"
+  },
+  {
    "version": "1.20.3",
    "releaseDateString": "2026-08-04T14:31:51Z"
   },
@@ -8254,6 +8326,10 @@
   }
  ],
  "erlang": [
+  {
+   "version": "29.0.6",
+   "releaseDateString": "2026-09-01T10:35:05Z"
+  },
   {
    "version": "29.0.5",
    "releaseDateString": "2026-08-03T09:34:26Z"
@@ -9349,6 +9425,10 @@
  ],
  "geos": [
   {
+   "version": "3.15.0",
+   "releaseDateString": "2026-09-01T13:02:01Z"
+  },
+  {
    "version": "3.14.1",
    "releaseDateString": "2025-10-27T15:07:37Z"
   },
@@ -9864,6 +9944,14 @@
   }
  ],
  "go": [
+  {
+   "version": "1.27.1",
+   "releaseDateString": "2026-09-01T19:52:53Z"
+  },
+  {
+   "version": "1.26.8",
+   "releaseDateString": "2026-09-01T19:56:19Z"
+  },
   {
    "version": "1.27.0",
    "releaseDateString": "2026-08-19T16:45:14Z"
@@ -10984,6 +11072,18 @@
   }
  ],
  "kibana": [
+  {
+   "version": "9.5.3",
+   "releaseDateString": "2026-09-01 14:03:13 UTC"
+  },
+  {
+   "version": "9.4.6",
+   "releaseDateString": "2026-08-26 16:07:26 UTC"
+  },
+  {
+   "version": "8.19.21",
+   "releaseDateString": "2026-08-26 17:36:14 UTC"
+  },
   {
    "version": "9.5.2",
    "releaseDateString": "2026-08-18 10:53:47 UTC"
@@ -12655,6 +12755,10 @@
  ],
  "kotlin": [
   {
+   "version": "2.4.10",
+   "releaseDateString": "2026-07-06T11:15:34Z"
+  },
+  {
    "version": "2.4.0",
    "releaseDateString": "2026-05-26T19:07:19Z"
   },
@@ -13181,6 +13285,10 @@
  ],
  "libfastjson": [
   {
+   "version": "1.2609.0",
+   "releaseDateString": "2026-09-01 14:15:47 UTC"
+  },
+  {
    "version": "1.2304.0",
    "releaseDateString": "2023-04-17T13:55:07Z"
   },
@@ -13226,6 +13334,10 @@
   }
  ],
  "libexpat": [
+  {
+   "version": "2.8.4",
+   "releaseDateString": "2026-08-31 13:26:22 UTC"
+  },
   {
    "version": "2.8.3",
    "releaseDateString": "2026-08-10 21:53:43 UTC"
@@ -13534,6 +13646,14 @@
   }
  ],
  "libgcrypt": [
+  {
+   "version": "1.12.3",
+   "releaseDateString": "2026-08-26T08:22:33Z"
+  },
+  {
+   "version": "1.8.14",
+   "releaseDateString": "2026-08-25T13:49:36Z"
+  },
   {
    "version": "1.11.3",
    "releaseDateString": "2026-04-21T09:49:36Z"
@@ -14420,6 +14540,10 @@
   }
  ],
  "libxml2": [
+  {
+   "version": "2.15.4",
+   "releaseDateString": "2026-09-04 16:39:31 UTC"
+  },
   {
    "version": "2.15.3",
    "releaseDateString": "2026-04-16 08:11:13 UTC"
@@ -17405,6 +17529,10 @@
  ],
  "mongosh": [
   {
+   "version": "2.11.0",
+   "releaseDateString": "2026-08-31T18:07:38Z"
+  },
+  {
    "version": "2.10.0",
    "releaseDateString": "2026-08-12T10:05:49Z"
   },
@@ -19857,6 +19985,10 @@
  ],
  "neo4j": [
   {
+   "version": "5.26.30",
+   "releaseDateString": "2026-08-21T14:13:38Z"
+  },
+  {
    "version": "5.26.29",
    "releaseDateString": "2026-08-03T14:31:56Z"
   },
@@ -21218,6 +21350,10 @@
   }
  ],
  "nginx": [
+  {
+   "version": "1.31.5",
+   "releaseDateString": "2026-09-02T11:47:06Z"
+  },
   {
    "version": "1.31.4",
    "releaseDateString": "2026-08-19T14:33:33Z"
@@ -23596,6 +23732,18 @@
   }
  ],
  "node": [
+  {
+   "version": "26.8.1",
+   "releaseDateString": "2026-08-26 22:08:25 UTC"
+  },
+  {
+   "version": "26.8.0",
+   "releaseDateString": "2026-08-26 14:22:50 UTC"
+  },
+  {
+   "version": "24.20.0",
+   "releaseDateString": "2026-08-26 14:22:50 UTC"
+  },
   {
    "version": "26.7.0",
    "releaseDateString": "2026-08-05 16:22:46 UTC"
@@ -27401,6 +27549,10 @@
  ],
  "pcre2": [
   {
+   "version": "10.48",
+   "releaseDateString": "2026-08-31T13:59:33Z"
+  },
+  {
    "version": "10.47",
    "releaseDateString": "2025-10-20T22:01:24Z"
   },
@@ -27800,6 +27952,14 @@
   }
  ],
  "php": [
+  {
+   "version": "8.5.10",
+   "releaseDateString": "2026-08-25 21:11:33 UTC"
+  },
+  {
+   "version": "8.4.25",
+   "releaseDateString": "2026-08-25 18:28:43 UTC"
+  },
   {
    "version": "8.4.24",
    "releaseDateString": "2026-07-29 05:51:00 UTC"
@@ -37689,6 +37849,10 @@
  ],
  "sbt": [
   {
+   "version": "2.0.8",
+   "releaseDateString": "2026-08-28 02:59:17 UTC"
+  },
+  {
    "version": "2.0.7",
    "releaseDateString": "2026-08-21 02:51:36 UTC"
   },
@@ -38334,6 +38498,10 @@
   }
  ],
  "scala": [
+  {
+   "version": "3.9.0",
+   "releaseDateString": "2026-08-26 12:43:36 UTC"
+  },
   {
    "version": "3.3.8",
    "releaseDateString": "2026-06-10T12:10:01Z"
@@ -41969,6 +42137,10 @@
  ],
  "sqlcmd": [
   {
+   "version": "0.0.1001",
+   "releaseDateString": "2026-09-01 08:54:39 UTC"
+  },
+  {
    "version": "1.10.0",
    "releaseDateString": "2026-03-02 19:00:32 UTC"
   },
@@ -42134,6 +42306,26 @@
   }
  ],
  "openssl": [
+  {
+   "version": "4.0.2",
+   "releaseDateString": "2026-08-25T11:39:23Z"
+  },
+  {
+   "version": "3.6.4",
+   "releaseDateString": "2026-08-25T11:49:21Z"
+  },
+  {
+   "version": "3.5.8",
+   "releaseDateString": "2026-08-25T11:57:30Z"
+  },
+  {
+   "version": "3.4.7",
+   "releaseDateString": "2026-08-25T12:06:59Z"
+  },
+  {
+   "version": "3.0.22",
+   "releaseDateString": "2026-08-25T12:14:59Z"
+  },
   {
    "version": "4.0.1",
    "releaseDateString": "2026-06-09T11:36:43Z"
@@ -44810,6 +45002,18 @@
   }
  ],
  "jenkins": [
+  {
+   "version": "2.580",
+   "releaseDateString": "2026-08-31T20:03:00Z"
+  },
+  {
+   "version": "2.568.3",
+   "releaseDateString": "2026-08-31T18:08:20Z"
+  },
+  {
+   "version": "2.579",
+   "releaseDateString": "2026-08-25T06:14:23Z"
+  },
   {
    "version": "2.578",
    "releaseDateString": "2026-08-18T10:25:36Z"
@@ -48836,6 +49040,18 @@
   }
  ],
  "logstash": [
+  {
+   "version": "9.5.3",
+   "releaseDateString": "2026-09-01 07:03:11 UTC"
+  },
+  {
+   "version": "9.4.6",
+   "releaseDateString": "2026-08-24 15:23:09 UTC"
+  },
+  {
+   "version": "8.19.21",
+   "releaseDateString": "2026-08-24 15:23:15 UTC"
+  },
   {
    "version": "9.5.2",
    "releaseDateString": "2026-08-17 18:08:21 UTC"

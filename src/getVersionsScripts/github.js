@@ -90,33 +90,41 @@ const getAllVersions = async (program, baseUrl) => {
     while (true) {
     	console.log(url);
     	const page = await browser.newPage();
-	    await page.goto(url, {
-	        waitUntil: 'networkidle2',
-	        timeout: 0
-	    });
-	    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-    	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
-    	// console.log(versionsResponse);
+    	try {
+		    await page.goto(url, {
+		        waitUntil: 'networkidle2',
+		        timeout: 0
+		    });
+		    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
-    	const existingVersions = allVersions.map(item => item.version);
-    	const existingVersionsReached = versionsResponse.versions.some(item => existingVersions.includes(item.version));
+	    	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
+	    	// console.log(versionsResponse);
 
-    	const newVersions = versionsResponse.versions.filter(item => !existingVersions.includes(item.version));
-    	// console.log(newVersions);
+	    	const existingVersions = allVersions.map(item => item.version);
+	    	const existingVersionsReached = versionsResponse.versions.some(item => existingVersions.includes(item.version));
+	    	console.log('existingVersionsReached', existingVersionsReached);
 
-    	if (originalVersionLength === 0) {
-    		allVersions = allVersions.concat(newVersions);
-    	} else {
-    		allVersions = newVersions.concat(allVersions);
-    	}
-    	// console.log('batch versions obtained');
-    	hasMoreVersions = hasMoreVersions && versionsResponse.hasMoreVersions;
-    	if (hasMoreVersions && !existingVersionsReached) {
-    		url = baseUrlParts[0] + '?after=' + encodeURIComponent(versionsResponse.versions[versionsResponse.versions.length - 1].version);
-    	} else {
-    		break;
-    	}
+	    	const newVersions = versionsResponse.versions.filter(item => !existingVersions.includes(item.version));
+	    	// console.log(newVersions);
+
+	    	if (originalVersionLength === 0) {
+	    		allVersions = allVersions.concat(newVersions);
+	    	} else {
+	    		allVersions = newVersions.concat(allVersions);
+	    	}
+	    	// console.log('batch versions obtained');
+	    	hasMoreVersions = hasMoreVersions && versionsResponse.hasMoreVersions;
+	    	console.log('hasMoreVersions', hasMoreVersions);
+	    	if (hasMoreVersions && !existingVersionsReached) {
+	    		url = baseUrlParts[0] + '?after=' + encodeURIComponent(versionsResponse.versions[versionsResponse.versions.length - 1].version);
+	    	} else {
+	    		break;
+	    	}
+	    } catch (ex) {
+	    	console.error(ex);
+	    }
+
     	await page.close();
     }
 
