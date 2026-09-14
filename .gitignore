@@ -11,5 +11,5 @@ missingVersions.json
 missingInstallFiles.json
 missedMigrations.json
 missedVersions.json
-npmInstallLog.log
+npmInstall.log
 ncuLog.txt
