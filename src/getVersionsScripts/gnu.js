@@ -117,7 +117,7 @@ const getAllVersions = async (program, url) => {
     page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
     let versionsResponse;
-    if (url.includes('rediris')) {
+    if (!url.includes('rediris')) {
     	versionsResponse = await page.evaluate(getAllVersionsFromHTML);
     } else {
     	versionsResponse = await page.evaluate(getAllVersionsFromHTMLFromMirror);

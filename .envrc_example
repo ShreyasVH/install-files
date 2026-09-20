@@ -1,10 +1,10 @@
 # wget 1.24.5 path
 export PATH=
 
-# jq 1.8.1 path
+# jq 1.8.2 path
 export PATH=
 
-# node 25.6.1 path
+# node 26.8.1 path
 export PATH=
 
 export VERSION_MAP_PATH=
@@ -40,3 +40,5 @@ export NGROK_TOKEN=
 
 export DOCKER_USERNAME=
 export DOCKER_TOKEN_JENKINS=
+
+export PUPPETEER_EXECUTABLE_PATH=
