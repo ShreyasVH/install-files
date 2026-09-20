@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 GETTEXT_FOLDER_NAME=gettext
-GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
+GETTEXT_VERSION=$(resolve_dependency_version ${FOLDER_NAME} ${VERSION} ${OS} ${GETTEXT_FOLDER_NAME})
 
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
