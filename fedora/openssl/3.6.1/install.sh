@@ -17,7 +17,7 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	cd $HOME/sources/$FOLDER_NAME
@@ -25,21 +25,30 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="pkg-config-$VERSION.tar.gz"
-	curl -kOL "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE" > $HOME/logs/${FOLDER_NAME}/${VERSION}/download.txt 2>&1
+	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
+	curl -s -OL "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE"
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
-	mv "pkg-config-$VERSION" $VERSION
+	mv "openssl-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
-	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	CFLAGS="-Wno-int-conversion" CXXFLAGS="-Wno-int-conversion" ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
+
+		touch .envrc
+		echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
+		echo "" >> .envrc
+		direnv allow
+
+		print_message "${bold}${green}Installing Certificate${clear}" $((DEPTH))
+		curl -s -O -L http://curl.haxx.se/ca/cacert.pem
+		echo $USER_PASSWORD | sudo -S -p '' mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
