@@ -23,6 +23,10 @@
  ],
  "java": [
   {
+   "version": "27",
+   "releaseDateString": "2026-09-15T00:00:00Z"
+  },
+  {
    "version": "26.0.2",
    "releaseDateString": "2026-07-21T00:00:00Z"
   },
