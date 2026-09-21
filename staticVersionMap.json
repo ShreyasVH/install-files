@@ -13,6 +13,11 @@
   }
  },
  "archlinux": {
+  "php": {
+    "8.5.10": {
+      "gettext": "1.0"
+    }
+  },
   "postgis": {
     "3.6.4": {
       "gettext": "1.0"

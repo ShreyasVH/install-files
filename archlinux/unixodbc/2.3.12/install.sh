@@ -17,27 +17,31 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
+ODBC_FOLDER_NAME=odbc
+ODBC_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ODBC_FOLDER_NAME" '.[$folder][$version][$name]')
+
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
+	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
+
+	bash $INSTALL_FILES_DIR/$OS/$ODBC_FOLDER_NAME/$ODBC_VERSION/install.sh $((DEPTH+1))
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
-
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
-	curl -OL "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE" > $HOME/logs/${FOLDER_NAME}/${VERSION}/download.txt 2>&1
+	ARCHIVE_FILE="unixODBC-$VERSION.tar.gz"
+	download_binary ${FOLDER_NAME} ${VERSION} "https://www.unixodbc.org/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
-	mv "openssl-$VERSION" $VERSION
+	mv "unixODBC-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
-	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		echo $USER_PASSWORD | sudo -S -p '' chown -R $(whoami) .
 
@@ -46,11 +50,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		print_message "${bold}${green}Installing Certificate${clear}" $((DEPTH))
-		curl -s -O -L http://curl.haxx.se/ca/cacert.pem
-		echo $USER_PASSWORD | sudo -S -p '' mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
+		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+
+		odbcinst -i -d -f /etc/odbcinst.ini > /dev/null 2>&1
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
 fi
-
