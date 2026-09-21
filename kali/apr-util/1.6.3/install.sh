@@ -28,9 +28,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/apu-1-config" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	export CPPFLAGS="-D_GNU_SOURCE ${CPPFLAGS:-}"
-	export LIBS="-lcrypt ${LIBS:-}"
-
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="apr-util-"$VERSION".tar.gz"
 	wget --show-progress "https://archive.apache.org/dist/apr/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
