@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="pkg-config-$VERSION.tar.gz"
-	curl -s -kOL "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE" "curl" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "pkg-config-$VERSION" $VERSION
