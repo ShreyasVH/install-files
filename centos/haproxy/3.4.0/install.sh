@@ -40,7 +40,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="haproxy-$VERSION.tar.gz"
-	wget -q "https://www.haproxy.org/download/$VERSION_STRING/src/$ARCHIVE_FILE"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://www.haproxy.org/download/$VERSION_STRING/src/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "haproxy-$VERSION" $VERSION
