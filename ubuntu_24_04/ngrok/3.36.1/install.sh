@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ngrok" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="ngrok-v${VERSION}-linux-amd64.zip"
-	wget --show-progress "https://bin.equinox.io/c/bNyj1mQVY4c/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary ${FOLDER_NAME} ${VERSION} "https://bin.equinox.io/c/bNyj1mQVY4c/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	mkdir $VERSION
 	mkdir $VERSION/bin

@@ -18,18 +18,18 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
-	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 	
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIEVE_FILE="mongodb-database-tools-ubuntu2004-x86_64-$VERSION.tgz"
-	wget -q "https://fastdl.mongodb.org/tools/db/$ARCHIEVE_FILE"
+	ARCHIEVE_FILE="mongodb-database-tools-rhel10-x86_64-${VERSION}.tgz"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://fastdl.mongodb.org/tools/db/$ARCHIEVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIEVE_FILE
-	mv "mongodb-database-tools-ubuntu2004-x86_64-$VERSION" $VERSION
+	mv "mongodb-database-tools-rhel10-x86_64-$VERSION" $VERSION
 	cd $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
