@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 GETTEXT_FOLDER_NAME=gettext
-GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
+GETTEXT_VERSION=$(resolve_dependency_version ${FOLDER_NAME} ${VERSION} ${OS} ${GETTEXT_FOLDER_NAME})
 
 OPENSSL_FOLDER_NAME=openssl
 OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
@@ -37,7 +37,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python3" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="Python-"$VERSION".tgz"
-	wget --show-progress "https://www.python.org/ftp/python/"$VERSION"/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://www.python.org/ftp/python/"$VERSION"/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "Python-"$VERSION $VERSION

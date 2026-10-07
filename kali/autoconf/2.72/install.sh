@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/autoconf" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="autoconf-$VERSION.tar.gz"
-	download_binary ${FOLDER_NAME} ${VERSION} "https://ftp.rediris.es/mirror/GNU/autoconf/$ARCHIVE_FILE" "wget" ${DEPTH}
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://ftp.rediris.es/mirror/GNU/autoconf/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "autoconf-$VERSION" $VERSION
