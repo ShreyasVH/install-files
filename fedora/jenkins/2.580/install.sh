@@ -45,7 +45,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="jenkins.war"
-	wget --show-progress "https://github.com/jenkinsci/jenkins/releases/download/jenkins-$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/jenkinsci/jenkins/releases/download/jenkins-$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	mkdir $VERSION
 	mv $ARCHIVE_FILE $VERSION
 	cd $VERSION
@@ -92,7 +92,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	done
 
 	print_message "${bold}${green}Downloading CLI${clear}" $((DEPTH))
-	curl -O -s "${JENKINS_URL}/jnlpJars/jenkins-cli.jar"
+	mkdir -p $HOME/logs/{$FOLDER_NAME}/${VERSION}/cli
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${JENKINS_URL}/jnlpJars/jenkins-cli.jar" "curl" ${DEPTH}
 
 	print_message "${bold}${green}Creating user${clear}" $((DEPTH))
 	java -jar jenkins-cli.jar -s $JENKINS_URL groovy = < $CREATE_USER_FILE_PATH $JENKINS_USERNAME $JENKINS_PASSWORD

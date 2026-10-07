@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongoexport" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIEVE_FILE="mongodb-database-tools-rhel10-x86_64-${VERSION}.tgz"
-	wget --show-progress "https://fastdl.mongodb.org/tools/db/$ARCHIEVE_FILE" > $HOME/logs/${FOLDER_NAME}/${VERSION}/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://fastdl.mongodb.org/tools/db/$ARCHIEVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIEVE_FILE
 	mv "mongodb-database-tools-rhel10-x86_64-$VERSION" $VERSION
