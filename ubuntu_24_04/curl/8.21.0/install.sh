@@ -31,14 +31,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/curl" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="curl-$VERSION.tar.gz"
-	wget --show-progress "https://curl.se/download/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary ${FOLDER_NAME} ${VERSION} "https://curl.se/download/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "curl-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ca-bundle=$HOME/workspace/myProjects/ssl/rootCA.crt --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION --without-libpsl --without-brotli --without-zstd > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib --with-ca-bundle=$HOME/workspace/myProjects/ssl/rootCA.crt --with-openssl=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION --without-libpsl --without-brotli --without-zstd > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 

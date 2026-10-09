@@ -29,7 +29,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 	mkdir $VERSION/bin
 	cd $VERSION
 	ARCHIVE_FILE="rabbitmqadmin-$VERSION-x86_64-unknown-linux-gnu"
-	wget --show-progress "https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/$ARCHIVE_FILE" "wget" ${DEPTH}
 	mv $ARCHIVE_FILE bin/rabbitmqadmin
 	chmod +x bin/rabbitmqadmin
 
