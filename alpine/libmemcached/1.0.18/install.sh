@@ -46,7 +46,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then
 	rm $HOME/sources/$FOLDER_NAME/$VERSION/configure
 	mv $HOME/sources/$FOLDER_NAME/$VERSION/configureCopy $HOME/sources/$FOLDER_NAME/$VERSION/configure
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chmod 755 $HOME/sources/$FOLDER_NAME/$VERSION/configure
-	sed -i 's/^static char \*\*environ;/extern char **environ;/' libtest/cmdline.cc
+	sed -i 's/^static char \*\*environ/extern char **environ/' libtest/cmdline.cc
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	sed -i 's/opt_servers == false/opt_servers == NULL/' $HOME/sources/$FOLDER_NAME/$VERSION/clients/memflush.cc
