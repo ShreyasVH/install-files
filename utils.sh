@@ -62,3 +62,13 @@ download_binary () {
 		curl -fL --retry 10 --retry-delay 5 --retry-all-errors --connect-timeout 30 -C - -O  "${URL}" > $HOME/logs/${FOLDER_NAME}/${VERSION}/download.txt 2>&1
 	fi
 }
+
+get_domain_for_binary () {
+	local ACTUAL_DOMAIN=$1
+	DOMAIN=${ACTUAL_DOMAIN}
+	if [[ "${LOCAL_PACKAGES}" = "Y" ]]; then
+		DOMAIN="packages.local.com"
+	fi
+
+	echo "${DOMAIN}"
+}
