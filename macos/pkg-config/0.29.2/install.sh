@@ -28,6 +28,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	LINK="https://$(get_domain_for_binary "pkgconfig.freedesktop.org")/releases/pkg-config-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
+	start_time_total=$(date +%s)
 	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "curl" "${DEPTH}"
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
@@ -59,5 +60,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
