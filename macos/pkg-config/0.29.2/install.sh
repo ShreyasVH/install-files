@@ -65,4 +65,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 	elapsed=$(( end_time_total - start_time_total ))
 	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
-
