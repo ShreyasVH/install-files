@@ -29,7 +29,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)
-	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "curl" "${DEPTH}"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2

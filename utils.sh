@@ -53,6 +53,7 @@ download_binary () {
 	         -c \
 	         --timeout=30 \
 	         --retry-connrefused \
+	         --no-check-certificate \
 	         "$URL" \
 	         > "$HOME/logs/$FOLDER_NAME/$VERSION/download.txt" 2>&1 && break
 
