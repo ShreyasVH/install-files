@@ -47,7 +47,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION no-docs --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
