@@ -14,4 +14,4 @@ start_time=$(date +%s)
 make -j$PROCESS_COUNT > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
 end_time=$(date +%s)
 elapsed=$(( end_time - start_time ))
-print_message " - ${elapsed}" 2
+print_message " - ${elapsed}s" 2

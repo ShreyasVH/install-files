@@ -26,4 +26,4 @@ if [ -d $HOME/sources/$FOLDER_NAME ] && [ $(ls -A "$HOME/sources/$FOLDER_NAME" |
 fi
 end_time=$(date +%s)
 elapsed=$(( end_time - start_time ))
-print_message " - ${elapsed}" 2
+print_message " - ${elapsed}s" 2

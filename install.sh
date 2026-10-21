@@ -14,4 +14,4 @@ start_time=$(date +%s)
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A LD_LIBRARY_PATH="$LD_LIBRARY_PATH" LD_RUN_PATH="$LD_RUN_PATH" make install > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
 end_time=$(date +%s)
 elapsed=$(( end_time - start_time ))
-print_message " - ${elapsed}" 2
+print_message " - ${elapsed}s" 2
