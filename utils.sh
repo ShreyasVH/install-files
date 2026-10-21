@@ -1,13 +1,19 @@
 print_message () {
 	local MESSAGE=$1
 	local DEPTH=$2
+	local NO_NEW_LINE=$3
 
-	for i in $(seq 2 $DEPTH); do
-		printf "\t"
-	done
+	# printf "DEPTH: ${DEPTH}"
+
+	for ((i = 0; i < DEPTH; i++)); do
+        printf "\t"
+    done
 
 	# printf "%s\n" "$MESSAGE"
-	printf "${MESSAGE}\n"
+	printf "${MESSAGE}"
+	if [[ "${NO_NEW_LINE}" != "Y" ]]; then
+		printf "\n"
+	fi
 }
 
 resolve_dependency_version () {

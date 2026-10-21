@@ -24,16 +24,31 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pkg-config" ]; then
 
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
 	ARCHIVE_FILE="pkg-config-$VERSION.tar.gz"
+	start_time=$(date +%s)
 	curl -s -kOL "https://pkgconfig.freedesktop.org/releases/$ARCHIVE_FILE"
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}" 2
+	
 	mv "pkg-config-$VERSION" $VERSION
 	cd $VERSION
-	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
+	
+	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	CFLAGS="-Wno-int-conversion" CXXFLAGS="-Wno-int-conversion" ./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-internal-glib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}" 2
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 

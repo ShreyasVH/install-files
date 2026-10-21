@@ -9,5 +9,9 @@ DEPTH=$3
 
 source $INSTALL_FILES_DIR/utils.sh
 
-print_message "${bold}${green}Making${clear}" $DEPTH
+print_message "${bold}${green}Making${clear}" $DEPTH "Y"
+start_time=$(date +%s)
 make -j$PROCESS_COUNT > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
+end_time=$(date +%s)
+elapsed=$(( end_time - start_time ))
+print_message " - ${elapsed}" 2
