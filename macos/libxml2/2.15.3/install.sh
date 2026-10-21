@@ -82,4 +82,3 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
 	elapsed=$(( end_time_total - start_time_total ))
 	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
-
