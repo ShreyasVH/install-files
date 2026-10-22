@@ -147,16 +147,33 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 	export PATH=$HOME/programs/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/bin:$PATH
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="php-$VERSION.tar.gz"
-	wget -q "https://www.php.net/distributions/$ARCHIVE_FILE"
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	tar -xf $ARCHIVE_FILE
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="https://$(get_domain_for_binary "www.php.net")/distributions/php-$VERSION.tar.gz"
+	ARCHIVE_FILE_MAIN="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	tar -xf $ARCHIVE_FILE_MAIN
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "php-"$VERSION $VERSION
 	cd $VERSION
-	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
+	
+	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/php/$VERSION --enable-fpm --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
@@ -191,18 +208,47 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 		cd tmp
 		print_message "${bold}${yellow}Installing xdebug extension${clear}" $((DEPTH+1))
-		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
-		wget -q "https://pecl.php.net/get/xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
-		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
+		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
+		ARCHIVE_FILE="$(basename ${LINK})"
+		start_time=$(date +%s)
+		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		tar -xf "xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		cd "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
-		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/configureOutput.txt 2>&1
-		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_XDEBUG_FOLDER_NAME/makeOutput.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		mv modules/xdebug.so $EXTENSION_DIR
 		cd ..
 		rm -rf "xdebug-$PHP_EXTENSION_XDEBUG_VERSION"
@@ -222,18 +268,47 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 		cd tmp
 		print_message "${bold}${yellow}Installing phalcon extension${clear}" $((DEPTH+1))
-		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
-		wget -q "https://pecl.php.net/get/phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
-		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
+		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
+		ARCHIVE_FILE="$(basename ${LINK})"
+		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		tar -xf "phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		cd "phalcon-$PHP_EXTENSION_PHALCON_VERSION"
-		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/configureOutput.txt 2>&1
-		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_PHALCON_FOLDER_NAME/makeOutput.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		mv modules/phalcon.so $EXTENSION_DIR
 		cd ..
 		rm -rf "phalcon-$PHP_EXTENSION_PHALCON_VERSION"
@@ -243,18 +318,47 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 		cd tmp
 		print_message "${bold}${yellow}Installing memcahced extension${clear}" $((DEPTH+1))
-		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
-		wget -q "https://pecl.php.net/get/memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
-		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
+
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
+		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
+		ARCHIVE_FILE="$(basename ${LINK})"
+		start_time=$(date +%s)
+		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		tar -xf "memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		cd "memcached-$PHP_EXTENSION_MEMCACHED_VERSION"
-		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure --with-libmemcached-dir=$HOME/programs/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION --with-zlib-dir=$HOME/programs/$ZLIB_FOLDER_NAME/$ZLIB_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/configureOutput.txt 2>&1
-		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_MEMCACHED_FOLDER_NAME/makeOutput.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		mv modules/memcached.so $EXTENSION_DIR
 		cd ..
 		rm -rf "memcached-$PHP_EXTENSION_MEMCACHED_VERSION"
@@ -264,18 +368,47 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 		cd tmp
 		print_message "${bold}${yellow}Installing redis extension${clear}" $((DEPTH+1))
-		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
-		wget -q "https://pecl.php.net/get/redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
-		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
+		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		ARCHIVE_FILE="$(basename ${LINK})"
+		start_time=$(date +%s)
+		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		tar -xf "redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		cd "redis-$PHP_EXTENSION_REDIS_VERSION"
-		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/configureOutput.txt 2>&1
-		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_REDIS_FOLDER_NAME/makeOutput.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		mv modules/redis.so $EXTENSION_DIR
 		cd ..
 		rm -rf "redis-$PHP_EXTENSION_REDIS_VERSION"
@@ -287,20 +420,48 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		export CPPFLAGS="-I$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/include"
 		export LDFLAGS="-L$HOME/programs/$UNIXODBC_FOLDER_NAME/$UNIXODBC_VERSION/lib"
 		print_message "${bold}${yellow}Installing sqlsrv extension${clear}" $((DEPTH+1))
-		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1))
-		wget -q "https://pecl.php.net/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
-		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
+		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		ARCHIVE_FILE="$(basename ${LINK})"
+		start_time=$(date +%s)
+		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Extracting source code${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		tar -xf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		cd "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
-		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1))
+		
+		print_message "${bold}${green}Running phpize${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		phpize > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/phpizeOutput.txt 2>&1
-		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Configuring${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureHelp.txt 2>&1
 		./configure > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/configureOutput.txt 2>&1
-		print_message "${bold}${green}Making${clear}" $((DEPTH+1))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Making${clear}" $((DEPTH+1)) "Y"
+		start_time=$(date +%s)
 		make > $HOME/logs/$FOLDER_NAME/$VERSION/extensions/$PHP_EXTENSION_SQLSRV_FOLDER_NAME/makeOutput.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		mv modules/sqlsrv.so $EXTENSION_DIR
-		ls modules
 		cd ..
 		rm -rf "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION"
 		rm "sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
@@ -311,12 +472,21 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		pear install Console_Table > $HOME/logs/$FOLDER_NAME/$VERSION/consoleTableInstallation.txt 2>&1
 
 		print_message "${bold}${green}Installing Composer${clear}" $((DEPTH))
+		start_time=$(date +%s)
 		php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" > $HOME/logs/$FOLDER_NAME/$VERSION/composerInstallation.txt 2>&1
-		print_message "${bold}${green}Setting up Composer${clear}" $((DEPTH))
+		print_message "${bold}${green}Setting up Composer${clear}" $((DEPTH)) "Y"
 		php composer-setup.php > $HOME/logs/$FOLDER_NAME/$VERSION/composerSetup.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+
 		mv composer.phar ~/programs/$FOLDER_NAME/$VERSION/bin/composer
 		rm composer-setup.php
 
-		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
+		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE_MAIN $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
