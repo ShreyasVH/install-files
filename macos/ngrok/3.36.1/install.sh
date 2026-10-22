@@ -24,13 +24,25 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ngrok" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="ngrok-v${VERSION}-darwin-arm64.zip"
-	wget --show-progress "https://bin.equinox.io/c/bNyj1mQVY4c/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="https://$(get_domain_for_binary "bin.equinox.io")/c/bNyj1mQVY4c/ngrok-v${VERSION}-darwin-arm64.zip"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	mkdir $VERSION
 	mkdir $VERSION/bin
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
 	mv ngrok $VERSION/bin
 	cd $VERSION
 
@@ -44,8 +56,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ngrok" ]; then
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 	ngrok config add-authtoken $NGROK_TOKEN > $HOME/logs/$FOLDER_NAME/$VERSION/addToken.log 2>&1
 
-	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-	cd ..
-	rm $ARCHIVE_FILE
+	bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
