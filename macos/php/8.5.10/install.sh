@@ -47,6 +47,9 @@ APACHE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --a
 POSTGRES_FOLDER_NAME=postgres
 POSTGRES_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$POSTGRES_FOLDER_NAME" '.[$folder][$version][$name]')
 
+LIBPQ_FOLDER_NAME=libpq
+LIBPQ_VERSION=${POSTGRES_VERSION}
+
 GETTEXT_FOLDER_NAME=gettext
 GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
 
@@ -111,7 +114,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$ONIGURUMA_FOLDER_NAME/$ONIGURUMA_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$APACHE_FOLDER_NAME/$APACHE_VERSION/install.sh $((DEPTH+1))
-	bash $INSTALL_FILES_DIR/$OS/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/install.sh $((DEPTH+1))
+	bash $INSTALL_FILES_DIR/$OS/$LIBPQ_FOLDER_NAME/$LIBPQ_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/install.sh $((DEPTH+1))
@@ -148,7 +151,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	export PATH=$HOME/programs/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/bin:$PATH
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "www.php.net")/distributions/php-$VERSION.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "www.php.net")/distributions/php-$VERSION.tar.gz"
 	ARCHIVE_FILE_MAIN="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)
@@ -170,7 +173,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/php/$VERSION --enable-fpm --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/php/$VERSION --enable-fpm --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$LIBPQ_FOLDER_NAME/$LIBPQ_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
@@ -210,7 +213,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		print_message "${bold}${yellow}Installing xdebug extension${clear}" $((DEPTH+1))
 		
 		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
-		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
+		LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "pecl.php.net")/get/xdebug-$PHP_EXTENSION_XDEBUG_VERSION.tgz"
 		ARCHIVE_FILE="$(basename ${LINK})"
 		start_time=$(date +%s)
 		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
@@ -271,7 +274,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		
 		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
 		start_time=$(date +%s)
-		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
+		LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "pecl.php.net")/get/phalcon-$PHP_EXTENSION_PHALCON_VERSION.tgz"
 		ARCHIVE_FILE="$(basename ${LINK})"
 		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
 		end_time=$(date +%s)
@@ -320,7 +323,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		print_message "${bold}${yellow}Installing memcahced extension${clear}" $((DEPTH+1))
 
 		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
-		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
+		LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "pecl.php.net")/get/memcached-$PHP_EXTENSION_MEMCACHED_VERSION.tgz"
 		ARCHIVE_FILE="$(basename ${LINK})"
 		start_time=$(date +%s)
 		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
@@ -370,7 +373,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		print_message "${bold}${yellow}Installing redis extension${clear}" $((DEPTH+1))
 		
 		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
-		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
+		LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "pecl.php.net")/get/redis-$PHP_EXTENSION_REDIS_VERSION.tgz"
 		ARCHIVE_FILE="$(basename ${LINK})"
 		start_time=$(date +%s)
 		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
@@ -422,7 +425,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		print_message "${bold}${yellow}Installing sqlsrv extension${clear}" $((DEPTH+1))
 		
 		print_message "${bold}${green}Downloading source code${clear}" $((DEPTH+1)) "Y"
-		LINK="https://$(get_domain_for_binary "pecl.php.net")/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
+		LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "pecl.php.net")/get/sqlsrv-$PHP_EXTENSION_SQLSRV_VERSION.tgz"
 		ARCHIVE_FILE="$(basename ${LINK})"
 		start_time=$(date +%s)
 		download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"

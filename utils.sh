@@ -74,8 +74,18 @@ get_domain_for_binary () {
 	local ACTUAL_DOMAIN=$1
 	DOMAIN=${ACTUAL_DOMAIN}
 	if [[ "${LOCAL_PACKAGES}" = "Y" ]]; then
-		DOMAIN="packages.local.com"
+		DOMAIN="packages.local.com:1643"
 	fi
 
 	echo "${DOMAIN}"
+}
+
+get_protocol_for_binary () {
+	local ACTUAL_PROTOCOL=$1
+	PROTOCOL=${ACTUAL_PROTOCOL}
+	if [[ "${LOCAL_PACKAGES}" = "Y" ]]; then
+		PROTOCOL="http"
+	fi
+
+	echo "${PROTOCOL}"
 }

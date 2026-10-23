@@ -40,7 +40,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/wget" ]; then
 	cd $HOME/sources/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "ftp.rediris.es")/mirror/GNU/wget/wget-$VERSION.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "ftp.rediris.es")/mirror/GNU/wget/wget-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

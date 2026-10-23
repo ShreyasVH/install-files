@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sqlcmd" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/microsoft/go-sqlcmd/releases/download/v$VERSION/sqlcmd-darwin-amd64.tar.bz2"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/microsoft/go-sqlcmd/releases/download/v$VERSION/sqlcmd-darwin-amd64.tar.bz2"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

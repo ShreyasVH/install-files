@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/bell-sw/Liberica/releases/download/${VERSION}+13/bellsoft-jdk${VERSION}+13-macos-aarch64.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/bell-sw/Liberica/releases/download/${VERSION}+13/bellsoft-jdk${VERSION}+13-macos-aarch64.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

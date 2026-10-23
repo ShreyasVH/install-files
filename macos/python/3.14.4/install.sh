@@ -43,7 +43,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/python3" ]; then
 	export CPPFLAGS="-I$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include"
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "www.python.org")/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "www.python.org")/ftp/python/"$VERSION"/Python-"$VERSION".tgz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

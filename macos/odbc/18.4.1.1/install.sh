@@ -26,7 +26,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libmsodbcsql.$MAJOR_VERSION.
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "download.microsoft.com")/download/f/0/e/f0e1f86e-1647-480f-b649-27741eea9642/msodbcsql$MAJOR_VERSION-$VERSION-arm64.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "download.microsoft.com")/download/f/0/e/f0e1f86e-1647-480f-b649-27741eea9642/msodbcsql$MAJOR_VERSION-$VERSION-arm64.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

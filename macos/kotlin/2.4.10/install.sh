@@ -30,7 +30,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/JetBrains/kotlin/releases/download/v$VERSION/kotlin-compiler-$VERSION.zip"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/JetBrains/kotlin/releases/download/v$VERSION/kotlin-compiler-$VERSION.zip"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

@@ -43,7 +43,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/onig-config" ]; then
 	export LIBTOOL=$HOME/programs/$LIBTOOL_FOLDER_NAME/$LIBTOOL_VERSION/bin/libtool
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/kkos/oniguruma/releases/download/v$VERSION/$ARCHIVE_FILE/onig-$VERSION.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/kkos/oniguruma/releases/download/v$VERSION/$ARCHIVE_FILE/onig-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

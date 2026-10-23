@@ -32,7 +32,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sqlite3" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "www.sqlite.org")/$VERSION_YEAR/sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "www.sqlite.org")/$VERSION_YEAR/sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

@@ -23,7 +23,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jq" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/jqlang/jq/releases/download/jq-$VERSION/jq-macos-arm64"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/jqlang/jq/releases/download/jq-$VERSION/jq-macos-arm64"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "curl" "${DEPTH}"

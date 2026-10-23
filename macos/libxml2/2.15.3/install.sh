@@ -42,7 +42,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
 	export PYTHON_CFLAGS="-I$HOME/programs/$PYTHON_FOLDER_NAME/$PYTHON_VERSION/include/python3.11d"
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "download.gnome.org")/sources/libxml2/$VERSION_STRING/libxml2-$VERSION.tar.xz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "download.gnome.org")/sources/libxml2/$VERSION_STRING/libxml2-$VERSION.tar.xz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

@@ -45,7 +45,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/jenkinsci/jenkins/releases/download/jenkins-$VERSION/jenkins.war"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/jenkinsci/jenkins/releases/download/jenkins-$VERSION/jenkins.war"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

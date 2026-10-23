@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/openssl/openssl/releases/download/openssl-$VERSION/openssl-$VERSION.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/openssl/openssl/releases/download/openssl-$VERSION/openssl-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)
@@ -66,7 +66,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 		print_message "${bold}${green}Installing Certificate${clear}" $((DEPTH)) "Y"
 		mkdir -p $HOME/logs/${FOLDER_NAME}/${VERSION}/cert
 		start_time=$(date +%s)
-		LINK="http://$(get_domain_for_binary "curl.haxx.se")/ca/cacert.pem"
+		LINK="$(get_protocol_for_binary "http")://$(get_domain_for_binary "curl.haxx.se")/ca/cacert.pem"
 		download_binary "${FOLDER_NAME}" "${VERSION}/cert" "${LINK}" "curl" "${DEPTH}"
 		end_time=$(date +%s)
 		elapsed=$(( end_time - start_time ))

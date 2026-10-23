@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ngrok" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "bin.equinox.io")/c/bNyj1mQVY4c/ngrok-v${VERSION}-darwin-arm64.zip"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "bin.equinox.io")/c/bNyj1mQVY4c/ngrok-v${VERSION}-darwin-arm64.zip"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

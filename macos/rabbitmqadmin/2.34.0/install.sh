@@ -28,7 +28,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 	mkdir $VERSION
 	mkdir $VERSION/bin
 	cd $VERSION
-	LINK="https://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/rabbitmqadmin-${VERSION}-aarch64-apple-darwin"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/rabbitmqadmin-${VERSION}-aarch64-apple-darwin"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

@@ -35,7 +35,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/index.php" ]; then
 	cd $HOME/programs/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "files.phpmyadmin.net")/phpMyAdmin/$VERSION/phpMyAdmin-$VERSION-all-languages.zip"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "files.phpmyadmin.net")/phpMyAdmin/$VERSION/phpMyAdmin-$VERSION-all-languages.zip"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

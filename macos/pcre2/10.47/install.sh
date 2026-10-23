@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pcre2-config" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "github.com")/PCRE2Project/pcre2/releases/download/pcre2-"$VERSION"/pcre2-"$VERSION".tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/PCRE2Project/pcre2/releases/download/pcre2-"$VERSION"/pcre2-"$VERSION".tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)

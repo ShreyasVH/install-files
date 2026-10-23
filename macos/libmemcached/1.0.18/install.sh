@@ -30,7 +30,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-	LINK="https://$(get_domain_for_binary "launchpad.net")/libmemcached/$VERSION_STRING/$VERSION/+download/libmemcached-$VERSION.tar.gz"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "launchpad.net")/libmemcached/$VERSION_STRING/$VERSION/+download/libmemcached-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)
