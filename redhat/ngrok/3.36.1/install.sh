@@ -38,7 +38,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ngrok" ]; then
 	start_time=$(date +%s)
 	mkdir $VERSION
 	mkdir $VERSION/bin
-	tar -xf $ARCHIVE_FILE
+	unzip $ARCHIVE_FILE > /dev/null 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2

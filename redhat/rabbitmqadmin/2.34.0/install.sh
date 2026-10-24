@@ -28,7 +28,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 	mkdir $VERSION
 	mkdir $VERSION/bin
 	cd $VERSION
-	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/rabbitmqadmin-${VERSION}-unknown-linux-gnu"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/rabbitmqadmin-${VERSION}-x86_64-unknown-linux-gnu"
 	ARCHIVE_FILE="$(basename ${LINK})"
 	start_time=$(date +%s)
 	start_time_total=$(date +%s)
@@ -40,7 +40,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 	mv $ARCHIVE_FILE bin/rabbitmqadmin
 	
 	chmod +x bin/rabbitmqadmin
-	SUDO_ASKPASS=$HOME/askpass.sh sudo -A xattr -rd com.apple.quarantine bin/rabbitmqadmin
 
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 

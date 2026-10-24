@@ -41,7 +41,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
 	
-	mv "mongosh-$VERSION-darwin-arm64" $VERSION
+	mv "mongosh-$VERSION-linux-x64" $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongosh" ]; then
 		cd $VERSION

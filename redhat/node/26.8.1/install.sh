@@ -41,7 +41,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
 	
-	mv "node-v$VERSION-darwin-arm64" $VERSION
+	mv "node-v$VERSION-linux-x64" $VERSION
 	cd $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/node" ]; then

@@ -60,7 +60,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/haproxy" ]; then
 	
 	print_message "${bold}${green}Making${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
-	make -j$PROCESS_COUNT PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION TARGET=linux-glib USE_OPENSSL=1 SSL_INC=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/include SSL_LIB=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
+	make -j$PROCESS_COUNT PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION TARGET=linux-glibc USE_OPENSSL=1 SSL_INC=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/include SSL_LIB=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2

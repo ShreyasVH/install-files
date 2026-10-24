@@ -66,7 +66,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
 
-	sed -i '' 's/opt_servers == false/opt_servers == NULL/' $HOME/sources/$FOLDER_NAME/$VERSION/clients/memflush.cc
+	sed -i 's/opt_servers == false/opt_servers == NULL/' $HOME/sources/$FOLDER_NAME/$VERSION/clients/memflush.cc
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then

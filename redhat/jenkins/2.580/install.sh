@@ -18,8 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 JAVA_FOLDER_NAME=java
-# JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
-JAVA_VERSION=25.0.2
+JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
 
 MAVEN_FOLDER_NAME=maven
 MAVEN_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAVEN_FOLDER_NAME" '.[$folder][$version][$name]')
@@ -37,10 +36,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$JAVA_FOLDER_NAME/$JAVA_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$MAVEN_FOLDER_NAME/$MAVEN_VERSION/install.sh $((DEPTH+1))
 
-	CREATE_USER_FILE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createUser.groovy)
-	CREATE_CREDENTIALS_FILE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createCredentials.groovy)
-	FETCH_UPDATE_CENTER_DATA_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/fetchUpdateCenterData.groovy)
-	CREATE_MULTI_BRANCH_PIPELINE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createMultibranchPipeline.groovy)
+	CREATE_USER_FILE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createUser.groovy)
+	CREATE_CREDENTIALS_FILE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createCredentials.groovy)
+	FETCH_UPDATE_CENTER_DATA_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/fetchUpdateCenterData.groovy)
+	CREATE_MULTI_BRANCH_PIPELINE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createMultibranchPipeline.groovy)
 
 	cd $HOME/programs/$FOLDER_NAME
 
@@ -90,6 +89,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	echo "fi" >> stop.sh
 
 	export JAVA_HOME=$HOME/programs/$JAVA_FOLDER_NAME/$JAVA_VERSION
+	export PATH=$JAVA_HOME/bin:$PATH
 	zsh start.sh
 
 	JENKINS_URL="http://localhost:$PORT"

@@ -26,7 +26,7 @@ PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME"
 PYTHON_FOLDER_NAME=python
 PYTHON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PYTHON_FOLDER_NAME" '.[$folder][$version][$name]')
 
-if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
+if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/xml2-config" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
@@ -71,7 +71,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libxml2.dylib" ]; then
+	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/xml2-config" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
 		SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
