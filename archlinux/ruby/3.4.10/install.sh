@@ -38,7 +38,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ruby" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="ruby-$VERSION.tar.gz"
-	wget -q "https://cache.ruby-lang.org/pub/ruby/$VERSION_STRING/$ARCHIVE_FILE"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://cache.ruby-lang.org/pub/ruby/$VERSION_STRING/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "ruby-$VERSION" $VERSION

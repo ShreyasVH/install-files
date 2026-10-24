@@ -25,15 +25,15 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/iconv" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="libiconv-$VERSION.tar.gz"
-	download_binary ${FOLDER_NAME} ${VERSION} "https://ftp.gnu.org/pub/gnu/libiconv/$ARCHIVE_FILE" "wget" ${DEPTH}
+	ARCHIVE_FILE="libiconv-${VERSION}.tar.gz"
+	download_binary ${FOLDER_NAME} ${VERSION} "https://ftp.rediris.es/mirror/GNU/libiconv/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "libiconv-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 

@@ -31,7 +31,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="libmemcached-$VERSION.tar.gz"
-	wget --show-progress "https://launchpad.net/libmemcached/$VERSION_STRING/$VERSION/+download/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary ${FOLDER_NAME} ${VERSION} "https://launchpad.net/libmemcached/$VERSION_STRING/$VERSION/+download/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "libmemcached-$VERSION" $VERSION
@@ -47,7 +47,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/memflush" ]; then
 	mv $HOME/sources/$FOLDER_NAME/$VERSION/configureCopy $HOME/sources/$FOLDER_NAME/$VERSION/configure
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chmod 755 $HOME/sources/$FOLDER_NAME/$VERSION/configure
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	sed -i 's/opt_servers == false/opt_servers == NULL/' $HOME/sources/$FOLDER_NAME/$VERSION/clients/memflush.cc
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))

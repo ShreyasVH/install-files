@@ -1640,7 +1640,7 @@ kibana 9.5.3
 logstash 9.5.3 monitoring port
 neo4j 5.26.30 http
 neo4j 5.26.30 bolt
-
+packages server
 
 
 

@@ -33,7 +33,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/sqlite3" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="sqlite-autoconf-$VERSION_FULLFORM.tar.gz"
-	wget -q "https://www.sqlite.org/$VERSION_YEAR/$ARCHIVE_FILE"
+	download_binary ${FOLDER_NAME} ${VERSION} "https://www.sqlite.org/$VERSION_YEAR/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "sqlite-autoconf-"$VERSION_FULLFORM $VERSION

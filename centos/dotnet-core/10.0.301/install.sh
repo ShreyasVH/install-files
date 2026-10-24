@@ -27,7 +27,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/dotnet" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="dotnet-sdk-$VERSION-linux-x64.tar.gz"
-	wget --show-progress "https://builds.dotnet.microsoft.com/dotnet/Sdk/$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://builds.dotnet.microsoft.com/dotnet/Sdk/$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	mkdir $VERSION
 	mv $ARCHIVE_FILE $VERSION/"dotnet-sdk-$VERSION-linux-x64.tar.gz"
 	cd $VERSION

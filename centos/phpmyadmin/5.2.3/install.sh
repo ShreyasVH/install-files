@@ -36,7 +36,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/index.php" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE=phpMyAdmin-$VERSION-all-languages.zip
-	wget --show-progress "https://files.phpmyadmin.net/phpMyAdmin/$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://files.phpmyadmin.net/phpMyAdmin/$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	unzip $ARCHIVE_FILE > /dev/null 2>&1
 	mv "phpMyAdmin-$VERSION-all-languages" $VERSION

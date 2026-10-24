@@ -26,14 +26,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libyaml.so" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="yaml-$VERSION.tar.gz"
-	wget -q "https://github.com/yaml/libyaml/releases/download/$VERSION/$ARCHIVE_FILE"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/yaml/libyaml/releases/download/$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "yaml-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 

@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 PHP_FOLDER_NAME=php
-PHP_VERSION=8.4.17
+PHP_VERSION=$(jq -r --arg folder "${PHP_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/config.inc.php ]; then
 	print_message "config.inc.php not found" $((DEPTH))
@@ -36,7 +36,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/index.php" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE=phpMyAdmin-$VERSION-all-languages.zip
-	wget --show-progress "https://files.phpmyadmin.net/phpMyAdmin/$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://files.phpmyadmin.net/phpMyAdmin/$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	unzip $ARCHIVE_FILE > /dev/null 2>&1
 	mv "phpMyAdmin-$VERSION-all-languages" $VERSION

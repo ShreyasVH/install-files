@@ -10,7 +10,8 @@ DEPTH=$4
 
 source $INSTALL_FILES_DIR/utils.sh
 
-print_message "${bold}${green}Clearing${clear}" $DEPTH
+print_message "${bold}${green}Clearing${clear}" $DEPTH "Y"
+start_time=$(date +%s)
 cd $HOME/sources/$FOLDER_NAME
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm -rf $VERSION
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm $ARCHIVE_FILE
@@ -23,3 +24,6 @@ if [ -d $HOME/sources/$FOLDER_NAME ] && [ $(ls -A "$HOME/sources/$FOLDER_NAME" |
 	cd ..
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm -rf $HOME/sources/$FOLDER_NAME
 fi
+end_time=$(date +%s)
+elapsed=$(( end_time - start_time ))
+print_message " - ${elapsed}s" 2

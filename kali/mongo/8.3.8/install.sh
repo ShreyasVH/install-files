@@ -34,7 +34,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIEVE_FILE="mongodb-linux-x86_64-rhel10-${VERSION}.tgz"
-	wget --show-progress "https://fastdl.mongodb.org/linux/$ARCHIEVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://fastdl.mongodb.org/linux/$ARCHIEVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIEVE_FILE
 	mv "mongodb-linux-x86_64-rhel10-$VERSION" $VERSION

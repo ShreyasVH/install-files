@@ -44,9 +44,6 @@ AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" -
 APACHE_FOLDER_NAME=apache
 APACHE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APACHE_FOLDER_NAME" '.[$folder][$version][$name]')
 
-POSTGRES_FOLDER_NAME=postgres
-POSTGRES_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$POSTGRES_FOLDER_NAME" '.[$folder][$version][$name]')
-
 GETTEXT_FOLDER_NAME=gettext
 GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
 
@@ -111,7 +108,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$ONIGURUMA_FOLDER_NAME/$ONIGURUMA_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$AUTOCONF_FOLDER_NAME/$AUTOCONF_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$APACHE_FOLDER_NAME/$APACHE_VERSION/install.sh $((DEPTH+1))
-	bash $INSTALL_FILES_DIR/$OS/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$LIBMEMCACHED_FOLDER_NAME/$LIBMEMCACHED_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/install.sh $((DEPTH+1))
@@ -119,7 +115,11 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
+	SYSTEM_PKG_CONFIG_BINARY_PATH=$(which pkg-config)
 	export PATH=$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH
+
+	SYSTEM_PKG_CONFIG_PATH=$(${SYSTEM_PKG_CONFIG_BINARY_PATH} --variable pc_path pkg-config)
+	export PKG_CONFIG_PATH="$SYSTEM_PKG_CONFIG_PATH${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 
 	export PKG_CONFIG_PATH=$HOME/programs/$LIBXML_FOLDER_NAME/$LIBXML_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
 	export LIBXML_CFLAGS=$(pkg-config --cflags libxml-2.0)
@@ -156,7 +156,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/php/$VERSION --with-apxs2=$HOME/programs/$APACHE_FOLDER_NAME/$APACHE_VERSION/bin/apxs --enable-fpm --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql=$HOME/programs/$POSTGRES_FOLDER_NAME/$POSTGRES_VERSION --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/php/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib --with-apxs2=$HOME/programs/$APACHE_FOLDER_NAME/$APACHE_VERSION/bin/apxs --enable-fpm --with-curl --with-openssl --with-pear --enable-mbstring --with-pdo-mysql --with-pdo-pgsql --with-mysqli --with-gettext=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION --with-iconv=$HOME/programs/$LIBICONV_FOLDER_NAME/$LIBICONV_VERSION --enable-sockets --with-zlib > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
