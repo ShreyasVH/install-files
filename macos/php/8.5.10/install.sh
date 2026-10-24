@@ -267,7 +267,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 		echo "#xdebug.log_level=7" >> lib/php.ini
 		echo "curl.cainfo=\"${HOME}/programs/openssl/${OPENSSL_VERSION}/ssl/cert.pem\"" >> lib/php.ini
 		echo "openssl.cafile=\"${HOME}/programs/openssl/${OPENSSL_VERSION}/ssl/cert.pem\"" >> lib/php.ini
-	
 
 		cd tmp
 		print_message "${bold}${yellow}Installing phalcon extension${clear}" $((DEPTH+1))

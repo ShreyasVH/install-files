@@ -18,7 +18,8 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 JAVA_FOLDER_NAME=java
-JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
+# JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
+JAVA_VERSION=25.0.2
 
 MAVEN_FOLDER_NAME=maven
 MAVEN_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAVEN_FOLDER_NAME" '.[$folder][$version][$name]')
@@ -36,16 +37,23 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	bash $INSTALL_FILES_DIR/$OS/$JAVA_FOLDER_NAME/$JAVA_VERSION/install.sh $((DEPTH+1))
 	bash $INSTALL_FILES_DIR/$OS/$MAVEN_FOLDER_NAME/$MAVEN_VERSION/install.sh $((DEPTH+1))
 
-	CREATE_USER_FILE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createUser.groovy)
-	CREATE_CREDENTIALS_FILE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createCredentials.groovy)
-	FETCH_UPDATE_CENTER_DATA_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/fetchUpdateCenterData.groovy)
-	CREATE_MULTI_BRANCH_PIPELINE_PATH=$(realpath $OS/$FOLDER_NAME/$VERSION/createMultibranchPipeline.groovy)
+	CREATE_USER_FILE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createUser.groovy)
+	CREATE_CREDENTIALS_FILE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createCredentials.groovy)
+	FETCH_UPDATE_CENTER_DATA_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/fetchUpdateCenterData.groovy)
+	CREATE_MULTI_BRANCH_PIPELINE_PATH=$(realpath macos/$FOLDER_NAME/$VERSION/createMultibranchPipeline.groovy)
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="jenkins.war"
-	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/jenkinsci/jenkins/releases/download/jenkins-$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/jenkinsci/jenkins/releases/download/jenkins-$VERSION/jenkins.war"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mkdir $VERSION
 	mv $ARCHIVE_FILE $VERSION
 	cd $VERSION
@@ -82,42 +90,77 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	echo "fi" >> stop.sh
 
 	export JAVA_HOME=$HOME/programs/$JAVA_FOLDER_NAME/$JAVA_VERSION
-	export PATH=$JAVA_HOME/bin:$PATH
 	zsh start.sh
 
-	print_message "${bold}${green}Waiting for jenkins to start${clear}" $((DEPTH))
 	JENKINS_URL="http://localhost:$PORT"
+	echo $JENKINS_URL
+	print_message "${bold}${green}Waiting for jenkins to start${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	until curl -s -o /dev/null -w "%{http_code}" "$JENKINS_URL/login" | grep -q "200"; do
 	  sleep 2
 	done
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Downloading CLI${clear}" $((DEPTH))
-	mkdir -p $HOME/logs/{$FOLDER_NAME}/${VERSION}/cli
-	download_binary "${FOLDER_NAME}" "${VERSION}" "${JENKINS_URL}/jnlpJars/jenkins-cli.jar" "curl" ${DEPTH}
+	print_message "${bold}${green}Downloading CLI${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	curl -O -s "${JENKINS_URL}/jnlpJars/jenkins-cli.jar"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Creating user${clear}" $((DEPTH))
+	print_message "${bold}${green}Creating user${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	java -jar jenkins-cli.jar -s $JENKINS_URL groovy = < $CREATE_USER_FILE_PATH $JENKINS_USERNAME $JENKINS_PASSWORD
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Fetching update center data${clear}" $((DEPTH))
+	print_message "${bold}${green}Fetching update center data${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" groovy = < $FETCH_UPDATE_CENTER_DATA_PATH
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Installing default plugins${clear}" $((DEPTH))
-	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view basic-branch-build-strategies
+	print_message "${bold}${green}Installing default plugins${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD install-plugin credentials plain-credentials workflow-multibranch workflow-aggregator branch-api github-branch-source cloudbees-folder pipeline-stage-view basic-branch-build-strategies > $HOME/logs/${FOLDER_NAME}/${VERSION}/pluginInstall.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Restarting${clear}" $((DEPTH))
+	print_message "${bold}${green}Restarting${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	java -jar jenkins-cli.jar -s "$JENKINS_URL" -auth "$JENKINS_USERNAME:$JENKINS_PASSWORD" safe-restart
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Waiting for jenkins to start${clear}" $((DEPTH))
+	print_message "${bold}${green}Waiting for jenkins to start${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	JENKINS_URL="http://localhost:$PORT"
 	until curl -s -o /dev/null -w "%{http_code}" "$JENKINS_URL/login" | grep -q "200"; do
 	  sleep 2
 	done
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Setting github credentials${clear}" $((DEPTH))
+	print_message "${bold}${green}Setting github credentials${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $GITHUB_USERNAME $GITHUB_TOKEN_JENKINS "github-creds" "Github credentials"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Setting docker credentials${clear}" $((DEPTH))
+	print_message "${bold}${green}Setting docker credentials${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	java -jar jenkins-cli.jar -s $JENKINS_URL -auth $JENKINS_USERNAME:$JENKINS_PASSWORD groovy = < $CREATE_CREDENTIALS_FILE_PATH $DOCKER_USERNAME $DOCKER_TOKEN_JENKINS "docker-creds" "Docker credentials"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	zsh stop.sh
 
@@ -127,7 +170,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/jenkins.war" ]; then
 	    SUDO_ASKPASS=$HOME/askpass.sh sudo -A sh -c "echo '127.0.0.1 ' $DOMAIN_NAME >> /etc/hosts"
 	fi
 
-	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-	cd ..
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
