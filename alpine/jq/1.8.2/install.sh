@@ -22,11 +22,18 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/jq" ]; then
 
 	print_message "${bold}${yellow}Installing $FOLDER_NAME $VERSION${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/jqlang/jq/releases/download/jq-$VERSION/jq-linux-amd64" "curl" ${DEPTH}
-	echo $USER_PASSWORD | sudo -S -p '' chmod +x jq-linux-amd64
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/jqlang/jq/releases/download/jq-$VERSION/jq-linux-amd64"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "curl" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	echo $USER_PASSWORD | sudo -S -p '' chmod +x "${ARCHIVE_FILE}"
 	mkdir "$HOME/programs/$FOLDER_NAME/$VERSION/bin"
-	mv jq-linux-amd64 bin/jq
+	mv "${ARCHIVE_FILE}" bin/jq
 
 	touch .envrc
 	echo 'export PATH=$HOME/programs/'"$FOLDER_NAME/$VERSION/bin:"'$PATH' >> .envrc
