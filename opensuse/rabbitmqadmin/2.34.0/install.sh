@@ -24,13 +24,21 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
 	mkdir $VERSION
 	mkdir $VERSION/bin
 	cd $VERSION
-	ARCHIVE_FILE="rabbitmqadmin-$VERSION-x86_64-unknown-linux-gnu"
-	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/$ARCHIVE_FILE" "wget" ${DEPTH}
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmqadmin-ng/releases/download/v${VERSION}/rabbitmqadmin-${VERSION}-x86_64-unknown-linux-gnu"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv $ARCHIVE_FILE bin/rabbitmqadmin
+	
 	chmod +x bin/rabbitmqadmin
 
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
@@ -38,5 +46,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/rabbitmqadmin" ]; then
 	touch .envrc
 	echo "export PATH=\$HOME/programs/$FOLDER_NAME/$VERSION/bin:\$PATH" >> .envrc
 	direnv allow
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
