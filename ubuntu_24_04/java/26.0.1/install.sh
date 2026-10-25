@@ -24,11 +24,23 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="bellsoft-jdk$VERSION+10-linux-amd64.tar.gz"
-	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/bell-sw/Liberica/releases/download/$VERSION+10/$ARCHIVE_FILE" "wget" ${DEPTH}
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/bell-sw/Liberica/releases/download/${VERSION}+10/bellsoft-jdk${VERSION}+10-linux-amd64.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "jdk-$VERSION" $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
@@ -41,10 +53,17 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 		direnv allow
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
+		print_message "${bold}${green}Importing local cert${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		keytool -import -alias dev-server -keystore lib/security/cacerts -file $HOME/workspace/myProjects/ssl/server.pem -storepass changeit -noprompt > /dev/null 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
 
-		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-		cd ..
-		rm $ARCHIVE_FILE
+		bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi

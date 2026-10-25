@@ -24,20 +24,35 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-cli" ]; then
 
   cd $HOME/programs/$FOLDER_NAME
 
-  print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-  ARCHIVE_FILE="install.sh"
-  download_binary ${FOLDER_NAME} ${VERSION} "https://packages.redis.io/redis-cli/$ARCHIVE_FILE" "wget" ${DEPTH}
-  print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+  print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+  LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "packages.redis.io")/redis-cli/install.sh"
+  ARCHIVE_FILE="$(basename ${LINK})"
+  start_time=$(date +%s)
+  start_time_total=$(date +%s)
+  download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+  end_time=$(date +%s)
+  elapsed=$(( end_time - start_time ))
+  print_message " - ${elapsed}s" 2
+  
+  print_message "${bold}${green}Installing${clear}" $((DEPTH)) "Y"
+  start_time=$(date +%s)
   REDIS_CLI_VERSION=$VERSION REDIS_CLI_INSTALL_DIR="$HOME/programs/${FOLDER_NAME}/${VERSION}/bin" zsh $ARCHIVE_FILE > $HOME/logs/${FOLDER_NAME}/${VERSION}/install.txt
+  end_time=$(date +%s)
+  elapsed=$(( end_time - start_time ))
+  print_message " - ${elapsed}s" 2
+  
   cd $VERSION
+  
   SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
 
   touch .envrc
   echo "export PATH=\$HOME/programs/$FOLDER_NAME/$VERSION/bin:\$PATH" >> .envrc
   direnv allow
 
-  print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-  cd ..
-  rm $ARCHIVE_FILE
+  bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
+
+  end_time_total=$(date +%s)
+  elapsed=$(( end_time_total - start_time_total ))
+  print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
