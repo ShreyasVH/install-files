@@ -24,11 +24,23 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIEVE_FILE="mongosh-$VERSION-linux-x64.tgz"
-	wget --show-progress "https://downloads.mongodb.com/compass/$ARCHIEVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
-	tar -xf $ARCHIEVE_FILE
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "downloads.mongodb.com")/compass/mongosh-$VERSION-linux-x64.tgz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	tar -xf "$ARCHIVE_FILE"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "mongosh-$VERSION-linux-x64" $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/mongosh" ]; then
@@ -40,9 +52,11 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-		cd ..
-		rm $ARCHIEVE_FILE
+		bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
