@@ -24,7 +24,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/gettext" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	export CC=gcc
+	export CC=gcc-13
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
 	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "ftp.rediris.es")/mirror/GNU/gettext/gettext-$VERSION.tar.gz"
 	ARCHIVE_FILE="$(basename ${LINK})"
