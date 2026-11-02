@@ -25,7 +25,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/usql" ]; then
   cd $HOME/programs/$FOLDER_NAME
 
   print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
-  LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/xo/usql/releases/download/v${VERSION}/usql-${VERSION}-linux-amd64.tar.bz2"
+  LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/xo/usql/releases/download/v${VERSION}/usql_static-${VERSION}-linux-amd64.tar.bz2"
   ARCHIVE_FILE="$(basename ${LINK})"
   start_time=$(date +%s)
   start_time_total=$(date +%s)
@@ -44,6 +44,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/usql" ]; then
   
   cd $VERSION
   SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .
+  SUDO_ASKPASS=$HOME/askpass.sh sudo -A ln -s $HOME/programs/${FOLDER_NAME}/${VERSION}/usql_static $HOME/programs/${FOLDER_NAME}/${VERSION}/usql
 
   touch .envrc
   echo "export PATH=\$HOME/programs/$FOLDER_NAME/$VERSION:\$PATH" >> .envrc
