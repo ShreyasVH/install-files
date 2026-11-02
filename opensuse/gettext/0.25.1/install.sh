@@ -48,7 +48,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/gettext" ]; then
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --disable-silent-rules --with-included-glib --with-included-libcroco --with-included-libunistring --with-included-libxml --with-emacs --with-lispdir=#{elisp} --disable-java --disable-csharp --without-git --without-cvs --without-xz --with-included-gettext > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --libdir=$HOME/programs/$FOLDER_NAME/$VERSION/lib --disable-silent-rules --with-included-glib --with-included-libcroco --with-included-libunistring --with-included-libxml --with-emacs --with-lispdir=#{elisp} --disable-java --disable-csharp --without-git --without-cvs --without-xz --with-included-gettext > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2

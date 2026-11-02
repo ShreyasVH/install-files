@@ -59,7 +59,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/ruby" ]; then
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --without-baseruby --with-openssl-dir=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION --with-libyaml-dir=$HOME/programs/$LIBYAML_FOLDER_NAME/$LIBYAML_VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --without-baseruby --with-openssl-dir=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION --with-openssl-lib=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib --with-libyaml-dir=$HOME/programs/$LIBYAML_FOLDER_NAME/$LIBYAML_VERSION --with-libyaml-lib="$HOME/programs/$LIBYAML_FOLDER_NAME/$LIBYAML_VERSION/lib" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
