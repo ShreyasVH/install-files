@@ -26,7 +26,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIEVE_FILE="mongosh-$VERSION-linux-x64.tgz"
-	wget --show-progress "https://downloads.mongodb.com/compass/$ARCHIEVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://downloads.mongodb.com/compass/$ARCHIEVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIEVE_FILE
 	mv "mongosh-$VERSION-linux-x64" $VERSION

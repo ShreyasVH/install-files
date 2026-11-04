@@ -53,7 +53,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE=rabbitmq-server-generic-unix-$VERSION.tar.xz
-	wget --show-progress "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "rabbitmq_server-$VERSION" $VERSION

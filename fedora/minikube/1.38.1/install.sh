@@ -27,7 +27,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/minikube" ]; then
 	mkdir $HOME/programs/$FOLDER_NAME/$VERSION/bin
 	cd $HOME/programs/$FOLDER_NAME/$VERSION
 	ARCHIVE_FILE="minikube-linux-amd64"
-	wget --show-progress "https://github.com/kubernetes/minikube/releases/download/v${VERSION}/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/kubernetes/minikube/releases/download/v${VERSION}/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Installing${clear}" $((DEPTH))
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A install minikube-linux-amd64 $HOME/programs/$FOLDER_NAME/$VERSION/bin/minikube > $HOME/logs/$FOLDER_NAME/$VERSION/install.txt 2>&1
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) $HOME/programs/$FOLDER_NAME/$VERSION

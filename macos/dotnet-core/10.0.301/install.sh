@@ -25,14 +25,26 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/dotnet" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="dotnet-sdk-$VERSION-osx-arm64.tar.gz"
-	wget --show-progress "https://builds.dotnet.microsoft.com/dotnet/Sdk/$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "builds.dotnet.microsoft.com")/dotnet/Sdk/$VERSION/dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mkdir $VERSION
-	mv $ARCHIVE_FILE $VERSION/"dotnet-sdk-$VERSION-osx-arm64.tar.gz"
+	mv $ARCHIVE_FILE $VERSION
 	cd $VERSION
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	echo $USER_PASSWORD | sudo -S -p "" chown -R $(whoami) .
 
@@ -42,10 +54,17 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/dotnet" ]; then
 	direnv allow
 	source .envrc
 
-	print_message "${bold}${green}Installing dotnet-outdated-tool${clear}" $((DEPTH))
+	print_message "${bold}${green}Installing dotnet-outdated-tool${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	dotnet tool install -g dotnet-outdated-tool > $HOME/logs/$FOLDER_NAME/$VERSION/dotnetOutdatedToolInstall.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
-	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-	rm $ARCHIVE_FILE
+	cd host
+	bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
-

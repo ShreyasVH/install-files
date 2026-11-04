@@ -26,14 +26,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="openssl-$VERSION.tar.gz"
-	curl -s -OL "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE"
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/openssl/openssl/releases/download/openssl-$VERSION/$ARCHIVE_FILE" "curl" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "openssl-$VERSION" $VERSION
 	cd $VERSION
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
 	./config --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./config --prefix=$HOME/programs/openssl/$VERSION --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./config --prefix=$HOME/programs/openssl/$VERSION no-docs --libdir=lib shared zlib-dynamic > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
@@ -47,7 +47,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/openssl" ]; then
 		direnv allow
 
 		print_message "${bold}${green}Installing Certificate${clear}" $((DEPTH))
-		curl -s -O -L http://curl.haxx.se/ca/cacert.pem
+		mkdir -p $HOME/logs/${FOLDER_NAME}/${VERSION}/cert
+		download_binary "${FOLDER_NAME}" "$VERSION/cert" "http://curl.haxx.se/ca/cacert.pem" "curl" ${DEPTH}
 		echo $USER_PASSWORD | sudo -S -p '' mv cacert.pem $HOME/programs/$FOLDER_NAME/$VERSION/ssl/cert.pem
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))

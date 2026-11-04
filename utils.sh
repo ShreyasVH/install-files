@@ -1,13 +1,19 @@
 print_message () {
 	local MESSAGE=$1
 	local DEPTH=$2
+	local NO_NEW_LINE=$3
 
-	for i in $(seq 2 $DEPTH); do
-		printf "\t"
-	done
+	# printf "DEPTH: ${DEPTH}"
+
+	for ((i = 0; i < DEPTH; i++)); do
+        printf "\t"
+    done
 
 	# printf "%s\n" "$MESSAGE"
-	printf "${MESSAGE}\n"
+	printf "${MESSAGE}"
+	if [[ "${NO_NEW_LINE}" != "Y" ]]; then
+		printf "\n"
+	fi
 }
 
 resolve_dependency_version () {
@@ -47,6 +53,7 @@ download_binary () {
 	         -c \
 	         --timeout=30 \
 	         --retry-connrefused \
+	         --no-check-certificate \
 	         "$URL" \
 	         > "$HOME/logs/$FOLDER_NAME/$VERSION/download.txt" 2>&1 && break
 
@@ -61,4 +68,24 @@ download_binary () {
 	elif [[ "${TYPE}" = "curl" ]]; then
 		curl -fL --retry 10 --retry-delay 5 --retry-all-errors --connect-timeout 30 -C - -O  "${URL}" > $HOME/logs/${FOLDER_NAME}/${VERSION}/download.txt 2>&1
 	fi
+}
+
+get_domain_for_binary () {
+	local ACTUAL_DOMAIN=$1
+	DOMAIN=${ACTUAL_DOMAIN}
+	if [[ "${LOCAL_PACKAGES}" = "Y" ]]; then
+		DOMAIN="packages.local.com:1643"
+	fi
+
+	echo "${DOMAIN}"
+}
+
+get_protocol_for_binary () {
+	local ACTUAL_PROTOCOL=$1
+	PROTOCOL=${ACTUAL_PROTOCOL}
+	if [[ "${LOCAL_PACKAGES}" = "Y" ]]; then
+		PROTOCOL="http"
+	fi
+
+	echo "${PROTOCOL}"
 }

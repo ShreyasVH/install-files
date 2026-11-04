@@ -37,7 +37,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/erl" ]; then
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
 	ARCHIVE_FILE="otp_src_$VERSION.tar.gz"
-	wget --show-progress "https://github.com/erlang/otp/releases/download/OTP-$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	download_binary "${FOLDER_NAME}" "${VERSION}" "https://github.com/erlang/otp/releases/download/OTP-$VERSION/$ARCHIVE_FILE" "wget" ${DEPTH}
 	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
 	tar -xf $ARCHIVE_FILE
 	mv "otp_src_$VERSION" $VERSION
