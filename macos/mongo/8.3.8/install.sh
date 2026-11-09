@@ -82,9 +82,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo -e '\trm mongod.pid' >> stop.sh
 		echo 'fi' >> stop.sh
 
-		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-		cd ..
-		rm $ARCHIVE_FILE
+		bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
 
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 		cd $VERSION
