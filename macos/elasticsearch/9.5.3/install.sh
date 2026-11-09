@@ -78,6 +78,25 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	    printf "."
 	done
 	print_message "\n" $((DEPTH))
+	print_message "${bold}${green}Waiting for elasticsearch to be stable${clear}" $((DEPTH))
+
+	MAX_RETRIES=120
+	RETRY=0
+
+	until curl -ks "https://localhost:$PORT/" >/dev/null 2>&1; do
+	    sleep 1
+	    RETRY=$((RETRY + 1))
+
+	    if [ "$RETRY" -ge "$MAX_RETRIES" ]; then
+	        echo "Elasticsearch failed to start"
+	        tail -100 elastic.log
+	        exit 1
+	    fi
+
+	    printf "."
+	done
+
+	echo
 
 	print_message "${bold}${green}Setting default password${clear}" $((DEPTH))
 	./bin/elasticsearch-setup-passwords auto --batch --url "https://localhost:$PORT" > es_passwords.txt
