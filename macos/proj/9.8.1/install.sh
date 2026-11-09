@@ -49,17 +49,35 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libproj.dylib" ]; then
 
 	cd $HOME/sources/$FOLDER_NAME
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="proj-$VERSION.tar.gz"
-	wget -q "https://download.osgeo.org/proj/$ARCHIVE_FILE"
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "download.osgeo.org")/proj/proj-$VERSION.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "proj-$VERSION" $VERSION
 	cd $VERSION
+	
 	mkdir bld
 	cd bld
-	print_message "${bold}${green}Running cmake${clear}" $((DEPTH))
+	
+	print_message "${bold}${green}Running cmake${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	cmake .. -DCMAKE_INSTALL_PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION -DCMAKE_PREFIX_PATH=$HOME/programs/$SQLITE_FOLDER_NAME/$SQLITE_VERSION -DTIFF_LIBRARY_RELEASE=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/lib/libtiff.dylib -DTIFF_INCLUDE_DIR=$HOME/programs/$LIBTIFF_FOLDER_NAME/$LIBTIFF_VERSION/include -DCURL_LIBRARY=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/lib/libcurl.dylib -DCURL_INCLUDE_DIR=$HOME/programs/$CURL_FOLDER_NAME/$CURL_VERSION/include > $HOME/logs/$FOLDER_NAME/$VERSION/cmakeOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
@@ -69,4 +87,8 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/lib/libproj.dylib" ]; then
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
