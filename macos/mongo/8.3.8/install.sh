@@ -84,6 +84,7 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 
 		bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
 
+		cd $HOME/programs/$FOLDER_NAME
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 		cd $VERSION
 		bash start.sh > /dev/null 2>&1

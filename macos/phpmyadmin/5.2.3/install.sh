@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 PHP_FOLDER_NAME=php
-PHP_VERSION=8.2.14
+PHP_VERSION=$(jq -r --arg folder "${PHP_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/config.inc.php ]; then
 	print_message "config.inc.php not found" $((DEPTH))
