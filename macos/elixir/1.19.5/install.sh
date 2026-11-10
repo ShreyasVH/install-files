@@ -31,14 +31,25 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 
 	export PATH=$HOME/programs/$ERLANG_FOLDER_NAME/$ERLANG_VERSION/bin:$PATH
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
 	git clone -q https://github.com/elixir-lang/elixir.git
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	cd elixir
 	git checkout -q "v"$VERSION
-	print_message "${bold}${green}Making${clear}" $((DEPTH))
-	make > $HOME/logs/$FOLDER_NAME/$VERSION/makeOutput.txt 2>&1
-	print_message "${bold}${green}Installing${clear}" $((DEPTH))
+	
+	bash $INSTALL_FILES_DIR/make.sh $FOLDER_NAME $VERSION $((DEPTH))
+	
+	print_message "${bold}${green}Installing${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
@@ -51,9 +62,13 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 		echo "" >> .envrc
 		direnv allow
 
-		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
+		print_message "${bold}${green}Clearing${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		cd $HOME/sources/$FOLDER_NAME
 		rm -rf elixir
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
 
 		if [ -e "$HOME/sources/$FOLDER_NAME/.DS_Store" ]; then
 			rm "$HOME/sources/$FOLDER_NAME/.DS_Store"
@@ -64,5 +79,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 			rm -rf $HOME/sources/$FOLDER_NAME
 		fi
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 

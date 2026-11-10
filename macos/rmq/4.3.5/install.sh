@@ -51,11 +51,23 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	export PATH=$HOME/programs/$MAKE_FOLDER_NAME/$MAKE_VERSION/bin:$PATH
 	export PATH=$HOME/programs/$RABBITMQADMIN_FOLDER_NAME/$RABBITMQADMIN_VERSION/bin:$PATH
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=rabbitmq-server-generic-unix-$VERSION.tar.xz
-	wget --show-progress "https://github.com/rabbitmq/rabbitmq-server/releases/download/v$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/rabbitmq/rabbitmq-server/releases/download/v$VERSION/rabbitmq-server-generic-unix-$VERSION.tar.xz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "rabbitmq_server-$VERSION" $VERSION
 	cd $VERSION
 
@@ -74,8 +86,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/sbin:$PATH
 
-	print_message "${bold}${green}Enabling Management${clear}" $((DEPTH))
+	print_message "${bold}${green}Enabling Management${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	rabbitmq-plugins enable rabbitmq_management > $HOME/logs/$FOLDER_NAME/$VERSION/managementEnable.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	touch start.sh
 	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> start.sh
@@ -88,8 +104,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	echo -e "\trabbitmqctl trace_on -p / > traceEnable.log 2>&1" >> start.sh
 	echo 'fi' >> start.sh
 
-	print_message "${bold}${green}Starting RMQ${clear}" $((DEPTH))
-	bash start.sh
+	print_message "${bold}${green}Starting RMQ${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	bash start.sh > /dev/null
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	touch stop.sh
 	echo "PORT=\$(grep 'listeners.tcp.default = ' etc/rabbitmq/rabbitmq.conf | awk '{print \$3}')" >> stop.sh
@@ -102,11 +122,16 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 
 	MANAGEMENT_PORT=$(grep 'management.tcp.port = ' $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/rabbitmq.conf | awk '{print $3}')
 
+	start_time=$(date +%s)
 	rabbitmqadmin -P $MANAGEMENT_PORT  declare queue --name "trace" --durable true > $HOME/logs/$FOLDER_NAME/$VERSION/traceQueueCreation.txt 2>&1
 	rabbitmqadmin -P $MANAGEMENT_PORT declare binding --source "amq.rabbitmq.trace" --destination-type "queue" --destination "trace" --routing-key "#" > $HOME/logs/$FOLDER_NAME/$VERSION/traceQueueBinding.txt 2>&1
 
-	print_message "${bold}${green}Stopping RMQ${clear}" $((DEPTH))
-	bash stop.sh
+	print_message "${bold}${green}Stopping RMQ${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	bash stop.sh > /dev/null
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	VERSION_STRING=$(echo "$VERSION" | sed 's/\./_/g')
 	DOMAIN_NAME=rmq_$VERSION_STRING.local.com
@@ -114,8 +139,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/sbin/rabbitmq-server" ]; then
 	    SUDO_ASKPASS=$HOME/askpass.sh sudo -A sh -c "echo '127.0.0.1' $DOMAIN_NAME >> /etc/hosts"
 	fi
 
-	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-	cd ..
-	rm $ARCHIVE_FILE
+	bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 

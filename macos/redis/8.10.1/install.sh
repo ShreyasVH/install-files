@@ -41,19 +41,35 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 
 	export PATH=$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="$VERSION.tar.gz"
-	wget --show-progress "https://github.com/redis/redis/archive/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/redis/redis/archive/$VERSION.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
 	tar -xf $ARCHIVE_FILE
-	mv "redis-$VERSION" $VERSION
-	cd $VERSION
-	sed -i '' 's/#ifdef __APPLE__/#ifdef __APPLE__\n#define _DARWIN_C_SOURCE/' src/config.h
 	
+	mv "redis-$VERSION" $VERSION
+	start_time=$(date +%s)
+	cd $VERSION
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	sed -i '' 's/#ifdef __APPLE__/#ifdef __APPLE__\n#define _DARWIN_C_SOURCE/' src/config.h
 	bash $INSTALL_FILES_DIR/make.sh $FOLDER_NAME $VERSION $((DEPTH))
 
-	print_message "${bold}${green}Installing${clear}" $((DEPTH))
+	print_message "${bold}${green}Installing${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	echo $USER_PASSWORD | sudo -S -p '' make install PREFIX=$HOME/programs/$FOLDER_NAME/$VERSION > $HOME/logs/$FOLDER_NAME/$VERSION/installOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 		cd $HOME/programs/$FOLDER_NAME/$VERSION
@@ -99,5 +115,9 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-server" ]; then
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
 	fi
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 
