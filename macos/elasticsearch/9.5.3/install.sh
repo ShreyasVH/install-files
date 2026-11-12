@@ -29,11 +29,23 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=elasticsearch-$VERSION-darwin-x86_64.tar.gz
-	wget --show-progress "https://artifacts.elastic.co/downloads/elasticsearch/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "artifacts.elastic.co")/downloads/elasticsearch/elasticsearch-$VERSION-darwin-x86_64.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "elasticsearch-$VERSION" $VERSION
 	cd $VERSION
 
@@ -71,25 +83,59 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	cp $HOME/workspace/myProjects/ssl/server.key config
 	cp $HOME/workspace/myProjects/ssl/rootCA.crt config
 	
+	start_time=$(date +%s)
 	bash start.sh > /dev/null 2>&1
 	print_message "${bold}${green}Waiting for elasticsearch to start${clear}" $((DEPTH))
+	print_message "" $((DEPTH)) "Y"
 	while [[ ! $(lsof -i:$PORT -t | wc -l) -gt 0 ]];
 	do
 	    printf "."
+	    sleep 1
 	done
-	print_message "\n" $((DEPTH))
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Waiting for elasticsearch to be stable${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	MAX_RETRIES=120
+	RETRY=0
 
-	print_message "${bold}${green}Setting default password${clear}" $((DEPTH))
+	until curl -ks "https://localhost:$PORT/" >/dev/null 2>&1; do
+	    sleep 1
+	    RETRY=$((RETRY + 1))
+
+	    if [ "$RETRY" -ge "$MAX_RETRIES" ]; then
+	        echo "Elasticsearch failed to start"
+	        tail -100 elastic.log
+	        exit 1
+	    fi
+
+	    printf "."
+	done
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	print_message "${bold}${green}Setting default password${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	./bin/elasticsearch-setup-passwords auto --batch --url "https://localhost:$PORT" > es_passwords.txt
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	ELASTIC_PASSWORD=$(grep 'PASSWORD elastic =' es_passwords.txt | awk '{print $4}')
 	KIBANA_PASSWORD=$(grep 'PASSWORD kibana =' es_passwords.txt | awk '{print $4}')
 	PASSWORD="password"
 
-	print_message "${bold}${green}Setting password${clear}" $((DEPTH))
-	curl -X POST "https://localhost:$PORT/_security/user/elastic/_password" -u "elastic:$ELASTIC_PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}"
+	print_message "${bold}${green}Setting password${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
+	curl -X POST "https://localhost:$PORT/_security/user/elastic/_password" -u "elastic:$ELASTIC_PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}" > $HOME/logs/setPassword.txt 2>&1
 
-	curl -X POST "https://localhost:$PORT/_security/user/kibana_system/_password" -u "elastic:$PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}"
+	curl -X POST "https://localhost:$PORT/_security/user/kibana_system/_password" -u "elastic:$PASSWORD" -H "Content-Type: application/json" -k -d "{\"password\":\"$PASSWORD\"}" >> $HOME/logs/setPassword.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 
 	bash stop.sh > /dev/null 2>&1
 
@@ -99,8 +145,10 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elasticsearch" ]; then
 	    SUDO_ASKPASS=$HOME/askpass.sh sudo -A sh -c "echo '127.0.0.1 ' $DOMAIN_NAME >> /etc/hosts"
 	fi
 
-	print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-	cd ..
-	rm $ARCHIVE_FILE
+	bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
+
+	end_time_total=$(date +%s)
+	elapsed=$(( end_time_total - start_time_total ))
+	print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 fi
 

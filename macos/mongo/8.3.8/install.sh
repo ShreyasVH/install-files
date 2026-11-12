@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 MONGO_SH_FOLDER_NAME=mongosh
-MONGO_SH_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MONGO_SH_FOLDER_NAME" '.[$folder][$version][$name]')
+MONGO_SH_VERSION=$(jq -r --arg folder "${MONGO_SH_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/mongod.conf ]; then
 	printf "mongod.conf not found\n"
@@ -26,17 +26,29 @@ if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/mo
 fi
 
 if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
-	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 0
+	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 0 1
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
 	cd $HOME/programs/$FOLDER_NAME
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE=mongodb-macos-arm64-$VERSION.tgz
-	wget -q "https://fastdl.mongodb.org/osx/$ARCHIVE_FILE"
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "fastdl.mongodb.org")/osx/mongodb-macos-arm64-$VERSION.tgz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
 	mv "mongodb-macos-aarch64--$VERSION" $VERSION
 	cd $VERSION
 
@@ -70,10 +82,9 @@ if [ ! -d "$HOME/programs/$FOLDER_NAME/$VERSION" ]; then
 		echo -e '\trm mongod.pid' >> stop.sh
 		echo 'fi' >> stop.sh
 
-		print_message "${bold}${green}Clearing${clear}" $((DEPTH))
-		cd ..
-		rm $ARCHIVE_FILE
+		bash $INSTALL_FILES_DIR/clearBinary.sh $ARCHIVE_FILE $((DEPTH))
 
+		cd $HOME/programs/$FOLDER_NAME
 		export PATH=$HOME/programs/$FOLDER_NAME/$VERSION/bin:$PATH
 		cd $VERSION
 		bash start.sh > /dev/null 2>&1

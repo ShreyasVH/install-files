@@ -37,16 +37,33 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="postgresql-$VERSION.tar.gz"
-	wget --show-progress "https://ftp.postgresql.org/pub/source/v$VERSION/$ARCHIVE_FILE" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
-	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH))
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "ftp.postgresql.org")/pub/source/v$VERSION/postgresql-$VERSION.tar.gz"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
+	print_message "${bold}${green}Extracting source code${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	tar -xf $ARCHIVE_FILE
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+	
 	mv "postgresql-"$VERSION $VERSION
 	cd $VERSION
-	print_message "${bold}${green}Configuring${clear}" $((DEPTH))
+	
+	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
+	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
 	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --without-readline --without-icu CFLAGS="-Wno-unguarded-availability-new" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
 	
 	bash $INSTALL_FILES_DIR/makeAndInstall.sh $FOLDER_NAME $VERSION $((DEPTH))
 
@@ -62,8 +79,12 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		direnv allow
 
 		mkdir data
-		print_message "${bold}${green}Initializing DB${clear}" $((DEPTH))
+		print_message "${bold}${green}Initializing DB${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		initdb -d data > $HOME/logs/$FOLDER_NAME/$VERSION/dbInitialization.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
 
 		mv data/postgresql.conf $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf.default
 		ln -s $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/postgresql.conf data/postgresql.conf
@@ -86,17 +107,35 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/pg_ctl" ]; then
 		echo -e '\tpg_ctl stop -D data > postgresStop.txt 2>&1' >> stop.sh
 		echo 'fi' >> stop.sh
 
-		print_message "${bold}${green}Initial Start${clear}" $((DEPTH))
+		print_message "${bold}${green}Initial Start${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		bash start.sh > /dev/null 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
 		PORT=$(grep 'port = ' data/postgresql.conf | awk '{print $3}')
-		print_message "${bold}${green}Creating Postgres User${clear}" $((DEPTH))
+		print_message "${bold}${green}Creating Postgres User${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		createuser -p $PORT -s postgres > $HOME/logs/$FOLDER_NAME/$VERSION/postgresUserCreation.txt 2>&1
-		print_message "${bold}${green}Creating DB${clear}" $((DEPTH))
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
+		
+		print_message "${bold}${green}Creating DB${clear}" $((DEPTH)) "Y"
+		start_time=$(date +%s)
 		createdb -U postgres -p $PORT shreyas > $HOME/logs/$FOLDER_NAME/$VERSION/dbCreation.txt 2>&1
+		end_time=$(date +%s)
+		elapsed=$(( end_time - start_time ))
+		print_message " - ${elapsed}s" 2
 
 		bash stop.sh > /dev/null 2>&1
 
 		bash $INSTALL_FILES_DIR/clearSourceFolders.sh $FOLDER_NAME $VERSION $ARCHIVE_FILE $((DEPTH))
+
+		end_time_total=$(date +%s)
+		elapsed=$(( end_time_total - start_time_total ))
+		print_message "${bold}${yellow}Total${clear} - ${elapsed}s" $((DEPTH))
 
 		bash $INSTALL_FILES_DIR/$OS/$POSTGIS_FOLDER_NAME/$POSTGIS_VERSION/install.sh $VERSION $((DEPTH+1))
 	fi
