@@ -276743,6 +276743,26 @@
  ],
  "php-redis": [
   {
+   "version": "6.0.0RC2",
+   "releaseDateString": "2023-08-20"
+  },
+  {
+   "version": "6.0.0RC1",
+   "releaseDateString": "2023-08-01"
+  },
+  {
+   "version": "4.0.0RC2",
+   "releaseDateString": "2018-03-03"
+  },
+  {
+   "version": "3.1.4RC3",
+   "releaseDateString": "2017-09-13"
+  },
+  {
+   "version": "3.1.4RC2",
+   "releaseDateString": "2017-09-13"
+  },
+  {
    "version": "6.3.0",
    "releaseDateString": "2025-11-06T19:53:47Z"
   },
@@ -277249,6 +277269,134 @@
  ],
  "php-memcached": [
   {
+   "version": "3.4.0",
+   "releaseDateString": "2025-10-13"
+  },
+  {
+   "version": "3.3.0",
+   "releaseDateString": "2024-10-17"
+  },
+  {
+   "version": "3.3.0RC1",
+   "releaseDateString": "2024-10-04"
+  },
+  {
+   "version": "3.2.0",
+   "releaseDateString": "2022-03-24"
+  },
+  {
+   "version": "3.2.0RC2",
+   "releaseDateString": "2022-03-09"
+  },
+  {
+   "version": "3.2.0RC1",
+   "releaseDateString": "2022-03-07"
+  },
+  {
+   "version": "3.1.5",
+   "releaseDateString": "2019-12-03"
+  },
+  {
+   "version": "3.1.4",
+   "releaseDateString": "2019-10-06"
+  },
+  {
+   "version": "3.1.3",
+   "releaseDateString": "2018-12-24"
+  },
+  {
+   "version": "3.1.2",
+   "releaseDateString": "2018-12-22"
+  },
+  {
+   "version": "3.1.1",
+   "releaseDateString": "2018-12-21"
+  },
+  {
+   "version": "3.1.0",
+   "releaseDateString": "2018-12-21"
+  },
+  {
+   "version": "3.0.4",
+   "releaseDateString": "2017-11-21"
+  },
+  {
+   "version": "3.0.3",
+   "releaseDateString": "2017-02-20"
+  },
+  {
+   "version": "3.0.2",
+   "releaseDateString": "2017-02-12"
+  },
+  {
+   "version": "3.0.0",
+   "releaseDateString": "2017-02-08"
+  },
+  {
+   "version": "3.0.1",
+   "releaseDateString": "2017-02-08"
+  },
+  {
+   "version": "2.1.0",
+   "releaseDateString": "2012-08-07"
+  },
+  {
+   "version": "2.0.1",
+   "releaseDateString": "2012-03-03"
+  },
+  {
+   "version": "2.0.0",
+   "releaseDateString": "2012-03-02"
+  },
+  {
+   "version": "2.0.0b2",
+   "releaseDateString": "2011-06-24"
+  },
+  {
+   "version": "2.0.0b1",
+   "releaseDateString": "2011-03-13"
+  },
+  {
+   "version": "1.0.2",
+   "releaseDateString": "2010-05-03"
+  },
+  {
+   "version": "1.0.1",
+   "releaseDateString": "2010-03-11"
+  },
+  {
+   "version": "1.0.0",
+   "releaseDateString": "2009-07-07"
+  },
+  {
+   "version": "0.2.0",
+   "releaseDateString": "2009-06-04"
+  },
+  {
+   "version": "0.1.5",
+   "releaseDateString": "2009-03-31"
+  },
+  {
+   "version": "0.1.4",
+   "releaseDateString": "2009-02-13"
+  },
+  {
+   "version": "0.1.3",
+   "releaseDateString": "2009-02-06"
+  },
+  {
+   "version": "0.1.2",
+   "releaseDateString": "2009-02-06"
+  },
+  {
+   "version": "0.1.1",
+   "releaseDateString": "2009-02-02"
+  },
+  {
+   "version": "0.1.0",
+   "releaseDateString": "2009-01-29"
+  },
+  {
    "version": "v3.4.0",
    "releaseDateString": "2025-10-13T05:03:44Z"
   },
@@ -277472,6 +277620,14 @@
   }
  ],
  "php-sqlsrv": [
+  {
+   "version": "5.13.3",
+   "releaseDateString": "2026-08-07"
+  },
+  {
+   "version": "5.13.2",
+   "releaseDateString": "2026-08-03"
+  },
   {
    "version": "5.13.1",
    "releaseDateString": "2026-04-30"
@@ -283432,6 +283588,54 @@
   }
  ],
  "php-phalcon": [
+  {
+   "version": "5.23.0",
+   "releaseDateString": "2026-10-16"
+  },
+  {
+   "version": "5.22.1",
+   "releaseDateString": "2026-10-03"
+  },
+  {
+   "version": "5.22.0",
+   "releaseDateString": "2026-09-23"
+  },
+  {
+   "version": "5.21.0",
+   "releaseDateString": "2026-09-18"
+  },
+  {
+   "version": "5.20.3",
+   "releaseDateString": "2026-08-27"
+  },
+  {
+   "version": "5.20.2",
+   "releaseDateString": "2026-08-25"
+  },
+  {
+   "version": "5.20.1",
+   "releaseDateString": "2026-08-25"
+  },
+  {
+   "version": "5.20.0",
+   "releaseDateString": "2026-08-23"
+  },
+  {
+   "version": "5.19.0",
+   "releaseDateString": "2026-08-19"
+  },
+  {
+   "version": "5.18.0",
+   "releaseDateString": "2026-07-31"
+  },
+  {
+   "version": "5.17.0",
+   "releaseDateString": "2026-07-20"
+  },
+  {
+   "version": "5.16.0",
+   "releaseDateString": "2026-06-23"
+  },
   {
    "version": "5.15.0",
    "releaseDateString": "2026-06-19"
@@ -298715,6 +298919,58 @@
  ],
  "dotnet-core": [
   {
+   "version": "10.0.404",
+   "releaseDateString": "November 10, 2026"
+  },
+  {
+   "version": "10.0.115",
+   "releaseDateString": "November 10, 2026"
+  },
+  {
+   "version": "10.0.403",
+   "releaseDateString": "October 25, 2026"
+  },
+  {
+   "version": "10.0.114",
+   "releaseDateString": "October 25, 2026"
+  },
+  {
+   "version": "10.0.402",
+   "releaseDateString": "October 13, 2026"
+  },
+  {
+   "version": "10.0.113",
+   "releaseDateString": "October 13, 2026"
+  },
+  {
+   "version": "10.0.401",
+   "releaseDateString": "September 8, 2026"
+  },
+  {
+   "version": "10.0.112",
+   "releaseDateString": "September 8, 2026"
+  },
+  {
+   "version": "10.0.400",
+   "releaseDateString": "August 11, 2026"
+  },
+  {
+   "version": "10.0.303",
+   "releaseDateString": "August 11, 2026"
+  },
+  {
+   "version": "10.0.111",
+   "releaseDateString": "August 11, 2026"
+  },
+  {
+   "version": "10.0.302",
+   "releaseDateString": "July 14, 2026"
+  },
+  {
+   "version": "10.0.110",
+   "releaseDateString": "July 14, 2026"
+  },
+  {
    "version": "10.0.301",
    "releaseDateString": "June 9, 2026"
   },
@@ -301443,6 +301699,116 @@
   {
    "version": "0.01",
    "releaseDateString": "07-Apr-2005 21:25"
+  }
+ ],
+ "gmp": [
+  {
+   "version": "gmp-6.3.0",
+   "releaseDateString": "2023-07-30 14:20"
+  },
+  {
+   "version": "gmp-5.1.3",
+   "releaseDateString": "2013-09-30 20:43"
+  },
+  {
+   "version": "gmp-5.0.2",
+   "releaseDateString": "2011-05-08 11:51"
+  },
+  {
+   "version": "gmp-5.0.1",
+   "releaseDateString": "2010-02-06 13:59"
+  },
+  {
+   "version": "gmp-5.0.0",
+   "releaseDateString": "2010-01-08 12:29"
+  },
+  {
+   "version": "gmp-4.3.2",
+   "releaseDateString": "2010-01-08 12:25"
+  },
+  {
+   "version": "gmp-4.3.1",
+   "releaseDateString": "2009-05-12 11:17"
+  },
+  {
+   "version": "gmp-4.3.0",
+   "releaseDateString": "2009-04-14 22:12"
+  },
+  {
+   "version": "gmp-4.2.4",
+   "releaseDateString": "2008-09-20 12:15"
+  },
+  {
+   "version": "gmp-4.2.3",
+   "releaseDateString": "2008-08-03 23:42"
+  },
+  {
+   "version": "gmp-4.2.2",
+   "releaseDateString": "2007-09-11 19:00"
+  },
+  {
+   "version": "gmp-4.2.1",
+   "releaseDateString": "2006-05-04 19:22"
+  },
+  {
+   "version": "gmp-4.2",
+   "releaseDateString": "2006-03-26 18:36"
+  },
+  {
+   "version": "gmp-4.1.4",
+   "releaseDateString": "2004-09-24 00:18"
+  },
+  {
+   "version": "gmp-4.1.3",
+   "releaseDateString": "2004-05-06 04:50"
+  },
+  {
+   "version": "gmp-4.1.2",
+   "releaseDateString": "2002-12-31 02:45"
+  },
+  {
+   "version": "gmp-4.1.1",
+   "releaseDateString": "2002-12-01 17:05"
+  },
+  {
+   "version": "gmp-4.1",
+   "releaseDateString": "2002-05-24 17:46"
+  },
+  {
+   "version": "gmp-4.0.1",
+   "releaseDateString": "2002-01-22 17:39"
+  },
+  {
+   "version": "gmp-4.0",
+   "releaseDateString": "2001-12-04 18:01"
+  },
+  {
+   "version": "gmp-3.1.1",
+   "releaseDateString": "2000-10-13 19:53"
+  },
+  {
+   "version": "gmp-3.1",
+   "releaseDateString": "2000-08-03 19:40"
+  },
+  {
+   "version": "gmp-3.0.1",
+   "releaseDateString": "2000-04-27 17:05"
+  },
+  {
+   "version": "gmp-3.0",
+   "releaseDateString": "2000-04-18 19:12"
+  },
+  {
+   "version": "gmp-2.0.2",
+   "releaseDateString": "1996-06-06 09:00"
+  },
+  {
+   "version": "gmp-2.0",
+   "releaseDateString": "1996-04-29 09:00"
+  },
+  {
+   "version": "gmp-1.3.2",
+   "releaseDateString": "1993-05-21 09:00"
   }
  ]
 }

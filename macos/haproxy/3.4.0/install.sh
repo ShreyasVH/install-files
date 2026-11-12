@@ -18,7 +18,7 @@ MINOR_VERSION=$(echo $VERSION | cut -d '.' -f 2)
 VERSION_STRING=$MAJOR_VERSION"."$MINOR_VERSION
 
 OPENSSL_FOLDER_NAME=openssl
-OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
+OPENSSL_VERSION=$(jq -r --arg folder "${OPENSSL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 source $INSTALL_FILES_DIR/utils.sh
 

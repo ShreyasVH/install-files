@@ -234,12 +234,14 @@
   "tagsUrl": ""
  },
  "gmp": {
-  "tagsUrl": "",
+  "tagsUrl": "https://ftp.rediris.es/mirror/GNU/gmp/?C=M;O=D",
+  "versionRegex": "gmp-\\d+\\.\\d+(\\.\\d+)*",
   "dependencies": [
    "m4"
   ],
-  "versionRegex": "",
-  "path": "/lib/libgmp.dylib"
+  "path": "/include/gmp.h",
+  "scriptName": "gnu",
+  "versionsLastUpdatedOn": 1794481506205
  },
  "go": {
   "tagsUrl": "https://github.com/golang/go/tags",
@@ -660,6 +662,51 @@
   "path": "/bin/php",
   "scriptName": "github"
  },
+ "php-memcached": {
+  "tagsUrl": "https://pecl.php.net/package/memcached",
+  "dependencies": [],
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1794489598838,
+  "isEntryPoint": false,
+  "path": "",
+  "scriptName": "pecl"
+ },
+ "php-phalcon": {
+  "tagsUrl": "https://pecl.php.net/package/phalcon",
+  "dependencies": [],
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1794486171025,
+  "isEntryPoint": false,
+  "path": "",
+  "scriptName": "pecl"
+ },
+ "php-redis": {
+  "tagsUrl": "https://pecl.php.net/package/redis",
+  "dependencies": [],
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1794489601380,
+  "isEntryPoint": false,
+  "path": "",
+  "scriptName": "pecl"
+ },
+ "php-sqlsrv": {
+  "tagsUrl": "https://pecl.php.net/package/sqlsrv",
+  "dependencies": [],
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1794490489136,
+  "isEntryPoint": false,
+  "path": "",
+  "scriptName": "pecl"
+ },
+ "php-xdebug": {
+  "tagsUrl": "https://pecl.php.net/package/xdebug",
+  "dependencies": [],
+  "versionRegex": "\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1794489604564,
+  "isEntryPoint": false,
+  "path": "",
+  "scriptName": "pecl"
+ },
  "phpmemadmin": {
   "tagsUrl": "https://github.com/clickalicious/phpmemadmin/tags",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
@@ -708,7 +755,8 @@
   ],
   "versionRegex": "\\d+\\.\\d+\\.\\d+",
   "versionsLastUpdatedOn": 1794399211006,
-  "scriptName": "github"
+  "scriptName": "github",
+  "path": "/bin/postgis"
  },
  "postgres": {
   "tagsUrl": "https://github.com/postgres/postgres/tags",

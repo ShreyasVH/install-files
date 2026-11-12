@@ -39,6 +39,8 @@ const filterVersions = (programName, programDetails, allVersions) => {
 		return matches !== null && matches[0] === item.version;
 	});
 
+	console.log(filteredVersions);
+
 	return filteredVersions.map(item => ({
 		version: getVersionString(programName, programDetails, item.version),
 		releaseDateString: item.releaseDateString
@@ -70,7 +72,7 @@ const getAllVersions = async (program, url) => {
         waitUntil: 'networkidle2',
         timeout: 0
     });
-    page.on('console', msg => console.log('PAGE LOG:', msg.text()));
+    // page.on('console', msg => console.log('PAGE LOG:', msg.text()));
 
 	const versionsResponse = await page.evaluate(getAllVersionsFromHTML);
 	// console.log(JSON.stringify(versionsResponse, null, ' '));
@@ -80,7 +82,7 @@ const getAllVersions = async (program, url) => {
 	const newVersions = versionsResponse.versions.filter(item => !existingVersions.includes(item.version));
 
 	allVersions = newVersions.concat(allVersions);
-	console.log(allVersions);
+	// console.log(allVersions);
 	await page.close();
 
     await browser.close();

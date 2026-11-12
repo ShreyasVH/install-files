@@ -15,7 +15,7 @@ const fs = require('fs');
 	};
 	for (const [programName, details] of Object.entries(programData)) {
 		// console.log(programName);
-		if (details.tagsUrl && (!details.versionsLastUpdatedOn || (details.versionsLastUpdatedOn < ((new Date).getTime() - (24 * 3600 * 1000))))) {
+		if (details.tagsUrl && (!details.versionsLastUpdatedOn || (details.versionsLastUpdatedOn < ((new Date).getTime() - (48 * 3600 * 1000))))) {
 			console.log(programName);
 			if (details.scriptName) {
 				const scriptName = `getAllVersions${capitalize(details.scriptName)}`;
