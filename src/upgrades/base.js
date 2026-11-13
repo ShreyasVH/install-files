@@ -25,12 +25,17 @@ const compareVersions = (a, b) => {
 };
 
 const getPreviousVersion = (program) => {
+	let previousVersion = null;
 	const folderPath = path.resolve(__dirname, '../../') + '/' + process.env.OS_FOLDER + '/' + program;
 
-	const folders = getFolders(folderPath);
+	if (fs.existsSync(folderPath)) {
+		const folders = getFolders(folderPath);
 
-	folders.sort(compareVersions);
-	return folders[folders.length - 1];
+		folders.sort(compareVersions);
+		previousVersion = folders[folders.length - 1];
+	}
+
+	return previousVersion;
 };
 
 const copyInstallFile = (program, newVersion) => {
@@ -66,8 +71,10 @@ if (fileName === scriptName) {
 
 		const previousVersion = getPreviousVersion(program);
 
-		if (newVersion !== previousVersion) {
-			copyInstallFile(program, newVersion);
+		if (previousVersion) {
+			if (newVersion !== previousVersion) {
+				copyInstallFile(program, newVersion);
+			}
 		}
 	})();
 }
