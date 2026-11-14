@@ -71,10 +71,8 @@ if (fileName === scriptName) {
 
 		const previousVersion = getPreviousVersion(program);
 
-		if (previousVersion) {
-			if (newVersion !== previousVersion) {
-				copyInstallFile(program, newVersion);
-			}
+		if (previousVersion && newVersion !== previousVersion) {
+			copyInstallFile(program, newVersion);
 		}
 	})();
 }
