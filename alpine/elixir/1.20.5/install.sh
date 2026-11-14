@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 ERLANG_FOLDER_NAME=erlang
-ERLANG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ERLANG_FOLDER_NAME" '.[$folder][$version][$name]')
+ERLANG_VERSION=$(jq -r --arg folder "${ERLANG_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/elixir" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1

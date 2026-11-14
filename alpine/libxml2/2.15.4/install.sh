@@ -21,10 +21,10 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 PKG_CONFIG_FOLDER_NAME=pkg-config
-PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
+PKG_CONFIG_VERSION=$(jq -r --arg folder "${PKG_CONFIG_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 PYTHON_FOLDER_NAME=python
-PYTHON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PYTHON_FOLDER_NAME" '.[$folder][$version][$name]')
+PYTHON_VERSION=$(jq -r --arg folder "${PYTHON_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/xml2-config" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1

@@ -14,7 +14,7 @@ if [ $# -ge 1 ]; then
 fi
 
 APR_FOLDER_NAME=apr
-APR_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APR_FOLDER_NAME" '.[$folder][$version][$name]')
+APR_VERSION=$(jq -r --arg folder "${APR_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 source $INSTALL_FILES_DIR/utils.sh
 
