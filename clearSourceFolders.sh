@@ -14,7 +14,9 @@ print_message "${bold}${green}Clearing${clear}" $DEPTH "Y"
 start_time=$(date +%s)
 cd $HOME/sources/$FOLDER_NAME
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm -rf $VERSION
-SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm $ARCHIVE_FILE
+if [[ "${ARCHIVE_FILE}" != "" && -e "${ARCHIVE_FILE}" ]]; then
+	SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm $ARCHIVE_FILE
+fi
 
 if [ -e "$HOME/sources/$FOLDER_NAME/.DS_Store" ]; then
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A rm "$HOME/sources/$FOLDER_NAME/.DS_Store"

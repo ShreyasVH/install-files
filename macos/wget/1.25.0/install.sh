@@ -14,10 +14,11 @@ if [ $# -ge 1 ]; then
 fi
 
 PKG_CONFIG_FOLDER_NAME="pkg-config"
-PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
+PKG_CONFIG_VERSION=$(jq -r --arg folder "${PKG_CONFIG_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 OPENSSL_FOLDER_NAME=openssl
-OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
+OPENSSL_VERSION=$(jq -r --arg folder "${OPENSSL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
+OPENSSL_MAJOR_VERSION=$(echo $OPENSSL_VERSION | cut -d '.' -f 1)
 
 source $INSTALL_FILES_DIR/utils.sh
 
@@ -59,6 +60,14 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/wget" ]; then
 	mv "wget-$VERSION" $VERSION
 	cd $VERSION
 	
+	if [[ "${OPENSSL_MAJOR_VERSION}" != "3" ]]; then
+		NEW_LINE='#if !defined OPENSSL_NO_SSL3_METHOD && OPENSSL_VERSION_NUMBER < 0x40000000L'
+		sed -i '' "/#ifndef OPENSSL_NO_SSL3_METHOD/c\\
+		$NEW_LINE
+		" src/openssl.c
+		unset NEW_LINE
+	fi
+
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1

@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 JAVA_FOLDER_NAME=java
-JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
+JAVA_VERSION=$(jq -r --arg folder "${JAVA_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/application.yml ]; then
 	printf "application.yml not found\n"
@@ -38,9 +38,18 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/$BINARY_PATH" ]; then
 	mkdir ${VERSION}
 	cd ${VERSION}
 
-	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH))
-	ARCHIVE_FILE="akhq-${VERSION}-all.jar"
-	wget --show-progress "https://github.com/tchiotludo/akhq/releases/download/${VERSION}/${ARCHIVE_FILE}" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
+	ARCHIVE_FILE=""
+	wget --show-progress "" > $HOME/logs/$FOLDER_NAME/$VERSION/download.txt 2>&1
+	LINK="$(get_protocol_for_binary "https")://$(get_domain_for_binary "github.com")/tchiotludo/akhq/releases/download/${VERSION}/akhq-${VERSION}-all.jar"
+	ARCHIVE_FILE="$(basename ${LINK})"
+	start_time=$(date +%s)
+	start_time_total=$(date +%s)
+	download_binary "${FOLDER_NAME}" "${VERSION}" "${LINK}" "wget" "${DEPTH}"
+	end_time=$(date +%s)
+	elapsed=$(( end_time - start_time ))
+	print_message " - ${elapsed}s" 2
+
 	mv ${ARCHIVE_FILE} "akhq.jar"
 
 	SUDO_ASKPASS=$HOME/askpass.sh sudo -A chown -R $(whoami) .

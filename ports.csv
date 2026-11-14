@@ -1644,24 +1644,24 @@ packages server
 verdaccio
 local maven repository
 local sbt repository
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+elasticsearch 9.5.6 http
+elasticsearch 9.5.6 tcp
+jenkins 2.590
+kafka 4.4.0
+kafka 4.4.0 controller
+kibana 9.5.6
+logstash 9.5.6 monitoring port
+mongo 9.0.8
+mysql 26.10.0
+neo4j 5.26.33 http
+neo4j 5.26.33 bolt
+postgres 18.7
+redis 8.10.3
+sentinel 8.10.3
+rmq 4.4.0 amqp
+rmq 4.4.0 management
+rmq 4.4.0 dist
+rmq 4.4.0 epmd
 
 
 

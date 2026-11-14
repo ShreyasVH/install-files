@@ -18,13 +18,13 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 AUTOCONF_FOLDER_NAME=autoconf
-AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
+AUTOCONF_VERSION=$(jq -r --arg folder "${AUTOCONF_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 AUTOMAKE_FOLDER_NAME=automake
-AUTOMAKE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOMAKE_FOLDER_NAME" '.[$folder][$version][$name]')
+AUTOMAKE_VERSION=$(jq -r --arg folder "${AUTOMAKE_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 LIBTOOL_FOLDER_NAME=libtool
-LIBTOOL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBTOOL_FOLDER_NAME" '.[$folder][$version][$name]')
+LIBTOOL_VERSION=$(jq -r --arg folder "${LIBTOOL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/onig-config" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1

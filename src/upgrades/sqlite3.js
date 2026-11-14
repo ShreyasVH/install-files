@@ -9,7 +9,7 @@ const path = require('path');
 
 	const previousVersion = getPreviousVersion(program);
 
-	if (newVersion !== previousVersion) {
+	if (previousVersion && newVersion !== previousVersion) {
 
 		const filePath = path.resolve(__dirname, '../../staticVersionMap.json');
 		const details = JSON.parse(fs.readFileSync(filePath).toString());
