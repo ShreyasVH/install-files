@@ -41,7 +41,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
 	
-	mv "jdk-$VERSION+10" $VERSION
+	mv "jdk-$VERSION+35" $VERSION
 
 	if [ -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/java" ]; then
 		cd $VERSION
