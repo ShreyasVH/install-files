@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 OPENSSL_FOLDER_NAME=openssl
-OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
+OPENSSL_VERSION=$(jq -r --arg folder "${OPENSSL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/curl" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
