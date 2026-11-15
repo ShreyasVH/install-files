@@ -18,57 +18,57 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 LIBXML_FOLDER_NAME=libxml2
-LIBXML_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBXML_FOLDER_NAME" '.[$folder][$version][$name]')
+LIBXML_VERSION=$(jq -r --arg folder "${LIBXML_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 OPENSSL_FOLDER_NAME=openssl
-OPENSSL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$OPENSSL_FOLDER_NAME" '.[$folder][$version][$name]')
+OPENSSL_VERSION=$(jq -r --arg folder "${OPENSSL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 PKG_CONFIG_FOLDER_NAME="pkg-config"
-PKG_CONFIG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PKG_CONFIG_FOLDER_NAME" '.[$folder][$version][$name]')
+PKG_CONFIG_VERSION=$(jq -r --arg folder "${PKG_CONFIG_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 ZLIB_FOLDER_NAME=zlib
-ZLIB_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ZLIB_FOLDER_NAME" '.[$folder][$version][$name]')
+ZLIB_VERSION=$(jq -r --arg folder "${ZLIB_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 CURL_FOLDER_NAME=curl
-CURL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$CURL_FOLDER_NAME" '.[$folder][$version][$name]')
+CURL_VERSION=$(jq -r --arg folder "${CURL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 SQLITE_FOLDER_NAME=sqlite3
-SQLITE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$SQLITE_FOLDER_NAME" '.[$folder][$version][$name]')
+SQLITE_VERSION=$(jq -r --arg folder "${SQLITE_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 ONIGURUMA_FOLDER_NAME=oniguruma
-ONIGURUMA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ONIGURUMA_FOLDER_NAME" '.[$folder][$version][$name]')
+ONIGURUMA_VERSION=$(jq -r --arg folder "${ONIGURUMA_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 AUTOCONF_FOLDER_NAME=autoconf
-AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
+AUTOCONF_VERSION=$(jq -r --arg folder "${AUTOCONF_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 APACHE_FOLDER_NAME=apache
-APACHE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APACHE_FOLDER_NAME" '.[$folder][$version][$name]')
+APACHE_VERSION=$(jq -r --arg folder "${APACHE_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 GETTEXT_FOLDER_NAME=gettext
-GETTEXT_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$GETTEXT_FOLDER_NAME" '.[$folder][$version][$name]')
+GETTEXT_VERSION=$(jq -r --arg folder "${GETTEXT_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 LIBINTL_LIB=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/lib
 LIBINTL_INC=$HOME/programs/$GETTEXT_FOLDER_NAME/$GETTEXT_VERSION/include
 
 LIBICONV_FOLDER_NAME=libiconv
-LIBICONV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBICONV_FOLDER_NAME" '.[$folder][$version][$name]')
+LIBICONV_VERSION=$(jq -r --arg folder "${LIBICONV_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 LIBMEMCACHED_FOLDER_NAME=libmemcached
-LIBMEMCACHED_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$LIBMEMCACHED_FOLDER_NAME" '.[$folder][$version][$name]')
+LIBMEMCACHED_VERSION=$(jq -r --arg folder "${LIBMEMCACHED_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 UNIXODBC_FOLDER_NAME=unixodbc
-UNIXODBC_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$UNIXODBC_FOLDER_NAME" '.[$folder][$version][$name]')
+UNIXODBC_VERSION=$(jq -r --arg folder "${UNIXODBC_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 PHP_EXTENSION_MEMCACHED_FOLDER_NAME=php-memcached
-PHP_EXTENSION_MEMCACHED_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_MEMCACHED_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_MEMCACHED_VERSION=$(jq -r --arg folder "${PHP_EXTENSION_MEMCACHED_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 PHP_EXTENSION_XDEBUG_FOLDER_NAME=php-xdebug
-PHP_EXTENSION_XDEBUG_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_XDEBUG_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_XDEBUG_VERSION=$(jq -r --arg folder "${PHP_EXTENSION_XDEBUG_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 PHP_EXTENSION_PHALCON_FOLDER_NAME=php-phalcon
-PHP_EXTENSION_PHALCON_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_PHALCON_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_PHALCON_VERSION=$(jq -r --arg folder "${PHP_EXTENSION_PHALCON_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 PHP_EXTENSION_REDIS_FOLDER_NAME=php-redis
-PHP_EXTENSION_REDIS_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_REDIS_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_REDIS_VERSION=$(jq -r --arg folder "${PHP_EXTENSION_REDIS_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 PHP_EXTENSION_SQLSRV_FOLDER_NAME=php-sqlsrv
-PHP_EXTENSION_SQLSRV_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_EXTENSION_SQLSRV_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_EXTENSION_SQLSRV_VERSION=$(jq -r --arg folder "${PHP_EXTENSION_SQLSRV_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/php" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
