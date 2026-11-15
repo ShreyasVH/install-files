@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 ODBC_FOLDER_NAME=odbc
-ODBC_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$ODBC_FOLDER_NAME" '.[$folder][$version][$name]')
+ODBC_VERSION=$(jq -r --arg folder "${ODBC_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/isql" ]; then
 	print_message "${bold}${yellow}Installing ${FOLDER_NAME} ${VERSION}${clear}" $((DEPTH))
