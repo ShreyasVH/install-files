@@ -18,13 +18,13 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 APR_FOLDER_NAME=apr
-APR_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APR_FOLDER_NAME" '.[$folder][$version][$name]')
+APR_VERSION=$(jq -r --arg folder "${APR_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 APR_UTIL_FOLDER_NAME=apr-util
-APR_UTIL_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$APR_UTIL_FOLDER_NAME" '.[$folder][$version][$name]')
+APR_UTIL_VERSION=$(jq -r --arg folder "${APR_UTIL_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 PCRE_FOLDER_NAME=pcre2
-PCRE_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PCRE_FOLDER_NAME" '.[$folder][$version][$name]')
+PCRE_VERSION=$(jq -r --arg folder "${PCRE_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/httpd.conf ]; then
 	printf "httpd.conf not found\n"
