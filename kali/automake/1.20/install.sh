@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 AUTOCONF_FOLDER_NAME=autoconf
-AUTOCONF_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$AUTOCONF_FOLDER_NAME" '.[$folder][$version][$name]')
+AUTOCONF_VERSION=$(jq -r --arg folder "${AUTOCONF_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/automake" ]; then
 	bash $INSTALL_FILES_DIR/createRequiredFolders.sh $FOLDER_NAME $VERSION 1 1
