@@ -33,10 +33,6 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/wget" ]; then
 
 	export PATH=$HOME/programs/$PKG_CONFIG_FOLDER_NAME/$PKG_CONFIG_VERSION/bin:$PATH
 
-	export PKG_CONFIG_PATH=$HOME/programs/$OPENSSL_FOLDER_NAME/$OPENSSL_VERSION/lib/pkgconfig:$PKG_CONFIG_PATH
-	export OPENSSL_CFLAGS=$(pkg-config --cflags openssl)
-	export OPENSSL_LIBS=$(pkg-config --libs openssl)
-
 	cd $HOME/sources/$FOLDER_NAME
 
 	print_message "${bold}${green}Downloading source code${clear}" $((DEPTH)) "Y"
@@ -58,11 +54,19 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/wget" ]; then
 	
 	mv "wget-$VERSION" $VERSION
 	cd $VERSION
+
+	if [[ "${OPENSSL_MAJOR_VERSION}" != "3" ]]; then
+		NEW_LINE='#if !defined OPENSSL_NO_SSL3_METHOD && OPENSSL_VERSION_NUMBER < 0x40000000L'
+		sed -i "/#ifndef OPENSSL_NO_SSL3_METHOD/c\\
+		$NEW_LINE
+		" src/openssl.c
+		unset NEW_LINE
+	fi
 	
 	print_message "${bold}${green}Configuring${clear}" $((DEPTH)) "Y"
 	start_time=$(date +%s)
 	./configure --help > $HOME/logs/$FOLDER_NAME/$VERSION/configureHelp.txt 2>&1
-	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ssl=openssl > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
+	./configure --prefix=$HOME/programs/$FOLDER_NAME/$VERSION --with-ssl=openssl --with-libssl-prefix="$HOME/programs/${OPENSSL_FOLDER_NAME}/${OPENSSL_VERSION}" > $HOME/logs/$FOLDER_NAME/$VERSION/configureOutput.txt 2>&1
 	end_time=$(date +%s)
 	elapsed=$(( end_time - start_time ))
 	print_message " - ${elapsed}s" 2
