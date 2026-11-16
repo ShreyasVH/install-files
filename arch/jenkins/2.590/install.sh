@@ -18,10 +18,10 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 JAVA_FOLDER_NAME=java
-JAVA_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$JAVA_FOLDER_NAME" '.[$folder][$version][$name]')
+JAVA_VERSION=$(jq -r --arg folder "${JAVA_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 MAVEN_FOLDER_NAME=maven
-MAVEN_VERSION=$(cat "$VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$MAVEN_FOLDER_NAME" '.[$folder][$version][$name]')
+MAVEN_VERSION=$(jq -r --arg folder "${MAVEN_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/jenkins.conf ]; then
 	printf "jenkins.conf not found\n"
