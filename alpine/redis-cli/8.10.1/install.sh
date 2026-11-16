@@ -36,7 +36,7 @@ if [ ! -e "$HOME/programs/$FOLDER_NAME/$VERSION/bin/redis-cli" ]; then
   
   print_message "${bold}${green}Installing${clear}" $((DEPTH)) "Y"
   start_time=$(date +%s)
-  REDIS_CLI_VERSION=$(jq -r --arg folder "${  REDIS_CLI_FOLDER_NAME}" '.[$folder]' latestVersions.json)
+  REDIS_CLI_VERSION=$VERSION REDIS_CLI_INSTALL_DIR="$HOME/programs/${FOLDER_NAME}/${VERSION}/bin" zsh $ARCHIVE_FILE > $HOME/logs/${FOLDER_NAME}/${VERSION}/install.txt
   end_time=$(date +%s)
   elapsed=$(( end_time - start_time ))
   print_message " - ${elapsed}s" 2
