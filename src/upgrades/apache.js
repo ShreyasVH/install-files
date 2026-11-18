@@ -8,7 +8,7 @@ const fs = require('fs');
 
 	const previousVersion = getPreviousVersion(program);
 
-	if (newVersion !== previousVersion) {
+	if (previousVersion && newVersion !== previousVersion) {
 		const previousConfigFilePath1 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/httpd.conf`;
 		const previousConfigFilePath2 = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${previousVersion}/httpd-vhosts.conf`;
 		const newConfigFolder = `${process.env.HOME}/workspace/myProjects/config-samples/${process.env.OS_FOLDER}/${program}/${newVersion}`;

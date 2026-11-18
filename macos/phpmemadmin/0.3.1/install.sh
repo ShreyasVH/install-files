@@ -18,7 +18,7 @@ source $INSTALL_FILES_DIR/utils.sh
 cd $INSTALL_FILES_DIR
 
 PHP_FOLDER_NAME=php
-PHP_VERSION=$(cat "$STATIC_VERSION_MAP_PATH" | jq -r --arg folder "$FOLDER_NAME" --arg version "$VERSION" --arg name "$PHP_FOLDER_NAME" '.[$folder][$version][$name]')
+PHP_VERSION=$(jq -r --arg folder "${PHP_FOLDER_NAME}" '.[$folder]' latestVersions.json)
 
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/.config ]; then
 	print_message ".config not found" $((DEPTH))
