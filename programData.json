@@ -139,6 +139,14 @@
   "path": "/bin/bash",
   "scriptName": "gnu"
  },
+ "direnv": {
+  "tagsUrl": "https://github.com/direnv/direnv/tags",
+  "versionRegex": "v\\d+\\.\\d+\\.\\d+",
+  "versionsLastUpdatedOn": 1,
+  "isEntryPoint": true,
+  "path": "/direnv",
+  "scriptName": "github"
+ },
  "dotnet-core": {
   "tagsUrl": "",
   "versionRegex": "v\\d+\\.\\d+\\.\\d+",
