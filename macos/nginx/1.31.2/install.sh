@@ -17,8 +17,6 @@ source $INSTALL_FILES_DIR/utils.sh
 
 cd $INSTALL_FILES_DIR
 
-cd $INSTALL_FILES_DIR
-
 if [ ! -e $HOME/workspace/myProjects/config-samples/$OS/$FOLDER_NAME/$VERSION/nginx.conf ]; then
 	print_message "${red}${bold}nginx.conf not found${clear}" $((DEPTH))
 	exit
